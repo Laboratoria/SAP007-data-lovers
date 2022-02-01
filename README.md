@@ -523,12 +523,7 @@ ajudar:
 
 Quando estiver pronta para codar, sugerimos começar desta forma:
 
-1. Uma das integrantes da dupla deve fazer um :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório de sua
-   turma (a equipe de formação fornecerá o link). A outra integrante da dupla
-   deve fazer um fork **a partir do repositório de sua companheira** e
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um `remote`
-   a partir dele.
+1. Uma das integrantes da dupla deve fazer um 🍴 [fork](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) do repositório de sua turma (a equipe de formação fornecer o link) e irá adicionar a outra integrante da dupla como [colaboradora do repositório](https://docs.github.com/pt/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
 2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    seu *fork* para seu computador (cópia local).
 3. Instale as dependências do projeto com o comando `npm install`, assumindo que

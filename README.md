@@ -445,8 +445,8 @@ com o DOM. Operações como criação de nós, registro de manejadores de evento
 Esta não é a única forma de dividir seu código. Pode utilizar mais arquivos e
 pastas, sempre e quando a estrutura estiver clara para suas colegas.
 
-Neste arquivo você encontrará uma séris de _imports comentados_. Para carregar
-diferentes fontes de dados, você deverá "descomentar" estos _imports_. Cada um
+Neste arquivo você encontrará uma série de _imports comentados_. Para carregar
+diferentes fontes de dados, você deverá "descomentar" esses _imports_. Cada um
 destes _imports_ criará uma variável `data` com os dados correspondentes à fonte
 escolhida.
 
@@ -482,7 +482,7 @@ obter, processar e manipular dados (suas funções):
 - `computeStats(data)`: essa função nos permite fazer cálculos estatísticos
   básicos para serem exibidos de acordo com o que os dados permitem.
 
-Estes nomes de funções e parâmetros são somente referência, o que vocês decidir
+Estes nomes de funções e parâmetros são somente referência, o que vocês decidirem
 utilizar vai depender da sua implementação.
 
 Estas funções devem ser
@@ -527,9 +527,9 @@ ajudar:
 
 Quando estiver pronta para codar, sugerimos começar desta forma:
 
-1. Uma das integrantes da dupla deve fazer um 🍴 [fork](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) do repositório de sua turma (a equipe de formação fornecer o link) e irá adicionar a outra integrante da dupla como [colaboradora do repositório](https://docs.github.com/pt/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   seu _fork_ para seu computador (cópia local).
+1. Uma das integrantes da dupla deve fazer um 🍴 [fork](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) do repositório de sua turma e irá adicionar a outra integrante da dupla como [colaboradora do repositório](https://docs.github.com/pt/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
+2. :arrow*down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+   seu \_fork* para seu computador (cópia local).
 3. Instale as dependências do projeto com o comando `npm install`, assumindo que
    já tenha instalado o [Node.js](https://nodejs.org/) (que inclui
    [npm](https://docs.npmjs.com/)).

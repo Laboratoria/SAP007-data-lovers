@@ -1,7 +1,4 @@
-import { example } from "./data.js";
-
-
-import data from "./data/ghibli/ghibli.js";
-
-
-console.log(example, data);
+import dadosGhibli from "./data/ghibli/ghibli.js";
+import { qualquercoisa } from "./data.js";
+console.log(dadosGhibli);
+qualquercoisa();

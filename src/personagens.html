@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Personagens</title>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
+  <header>
+    cabeçalho
+  </header>
 
-        cabeçalho
+  <main>
+    <h1>Personagens</h1>
+    <section class="filtrar">
+      <form>
+        <label for="filtro-genero">Fitrar por gênero</label>
+        <select class="selecione-genero">
+          <option value="todos"></option>
+          <option value="feminino"> Feminino</option>
+          <option value="masculino">Masculino</option>
+        </select>
 
-    </header>
+        <label for="filtro-filmes">Fitrar por filmes</label>
+        <select class="selecione-filme">
+          <option value="todos"></option>
+          <option value="">Castelo no Céu</option>
+          <option value="">Meu Vizinho Totoro</option>
+          <option value="">Serviço de entrega da Kiki</option>
+          <option value="">Túmulo dos Vagalumes</option>
+          <option value="">Somente ontem</option>
+          <option value="">Porco Rosso</option>
+          <option value="">Pom Poko</option>
+          <option value="">Sussurro do Coração</option>
+          <option value="">Princesa Mononoke</option>
+          <option value="">Meus Vizinhos os Yamadas</option>
+          <option value="">A Viagem de Chihiro</option>
+          <option value="">O Retorno do Gato</option>
+          <option value="">Castelo em Movimento do Uivo</option>
+          <option value="">Contos do Mar da Terra</option>
+          <option value="">Ponyo no penhasco à beira-mar</option>
+          <option value="">O Mundo Secreto de Arrietty</option>
+          <option value="">De cima de Poppy Hill</option>
+          <option value="">O Vento Sobe</option>
+          <option value="">O Conto da Princesa Kaguya</option>
+          <option value="">Quando Marnie estava lá</option>
+        </select>
+      </form>
+    </section>
 
-    <main>
-        <h2>Personagens</h2>
+    <section class="galeria-de-cards">
+      <h2> IMAGENS</h2>
+    </section>
+  </main>
 
-        <section class="filtrar">
+  <footer>
+    Rodapé
+  </footer>
 
-            <form action="">
-                <label for="">Filtar por gênero</label>
-                <select class="opçoes-menu" >
-                    <option value=""></option>
-                    <option value="Todos">Todos</option>
-                    <option value="Feminino"> Feminino</option>
-                    <option value="Masculino">Masculino</option>
-
-
-
-            </form>
-
-
-
-        </section>
-
-    </main>
-
-    <footer>
-        Rodapé
-    </footer>
-
-
-    <script src="main.js" type="module"></script>
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>

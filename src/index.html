@@ -6,11 +6,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+        <h1>Título</h1>
+        <img id="logo">
+        <nav>
+            <a>Personagens</a>
+            <a>Grafico</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Descricao</h2>
+    </section>
+    <section>
+        
+        <label for="filtro">Filtrar por:</label>
+        <input list="filtro" />
+        <datalist id="filtro">
+            <option value="Diretor" id="diretor">
+            <option value="Produtor" id="produtor">
+        </datalist>
 
+    </section>
 
-<h1> TESTE COMMIT </h1>
-<h2>teste 2</h2>
+    <section>
+        <ul>
+            <li>
+                <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
+                <p id="descricao">Descricao item</p>
+            </li>
+            <li id="item"></li>
+        </ul>
+    </section>
+
+    <footer>
+        Rodape
+    </footer>
+
+    
 
     <script src="main.js" type="module"></script>
   </body>

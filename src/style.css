@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(./bg1.gif) no-repeat center center fixed;
+    background-size: cover;
+}    
+
+.page2 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(./bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}   
+
+.enterClass {
+    position: absolute;
+    top: 150px;
+    left: 565px;
+    width: 150px;
+    background-color: rgb(68, 185, 53); 
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 6px;
+    color: rgb(31, 29, 29);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.searchField {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(./bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}    
+ 
+.enterClass {
+    position: absolute;
+    top: 150px;
+    left: 565px;
+    width: 150px;
+    background-color: rgb(68, 185, 53); 
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 6px;
+    color: rgb(31, 29, 29);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.inputSearchClass {
+    Position: absolute;
+    Width: 196px;
+    Height: 35px;
+    Top: 350px;
+    Left: 100px;
+    Background: #FFFFFF;
+    
+}
+    
+.inputFilterClass {
+    Position: absolute;
+    Width: 196px;
+    Height: 35px;
+    Top: 350px;
+    Right: 100px;
+    Background: #FFFFFF;
+    
+}

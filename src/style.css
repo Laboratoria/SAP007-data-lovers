@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.imagembanner {
+  margin-left: 0;
+  width: 100%;
+
+}
+
+.menu {
+  display: flex; 
+
+}
+
+.button {
+
+    font-family:'Architects Daughter', cursive;
+    font-size: 20px;
+    color:rgb(182, 3, 0);
+    border-radius: 5px;
+    
+}

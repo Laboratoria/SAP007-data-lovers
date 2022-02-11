@@ -6,6 +6,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header-banner">
+      <section class="Banner1">
+      <img src="Banner1.jpeg" alt="Banner1" class="imagembanner">
+      </section>
+    </header>
+      <aside class="menu">
+        <select class="select-az-za button">A-Z/Z-A>
+          <option value="A-Z/Z-A" selected disabled>A-Z/Z-A</option>
+          <option class="sel-az/za" value="AZ">A-Z</option>
+          <option class="sel-az/za" value="ZA">Z-A</option>
+        </select>
+        <select class="selec-genero button">
+          <option value="genero" selected disabled>Gênero</option>
+          <option class="sel-genero" value="macho">Macho</option>
+          <option class="sel-genero" value="femea">Fêmea</option>
+          <option class="sel-genero" value="indefinido">Indefinido</option>
+        </select>
+        <select class="sel-status button">
+          <option value="status" selected disabled>Status</option>
+          <option class="sel-status" value="vivo">Vivo</option>
+          <option class="sel-status" value="morto">Morto</option>
+          <option class="sel-status" value="indefinido">Indefinido</option>
+        </select>
+        <select class="sel-especie button">
+          <option value="especie" selected disabled>Espécie</option>
+          <option class="sel-status" value="humano">Humano</option>
+          <option class="sel-status" value="humanoide">Humanóide</option>
+          <option class="sel-status" value="animal">Animal</option>
+          <option class="sel-status" value="alien">Alien</option>
+        </select>
+        <input type="text" id="inputtext" class="inputtext" placeholder="Nome do personagem">
+      </aside>
+      <main>
+        
+      </main>
+       
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

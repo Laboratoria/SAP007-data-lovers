@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">Sobre</a></li>
+      <li class="menu">
+        <a href="#" class="submenu">Personagens</a>
+        <div class="menu-conteudo">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+      <li><a href="#news">Contato</a></li>
+    </ul>
+
+    
+    <header class="banner"></header>
+    <div id="root"><p id="teste">Conteudo</p></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
+

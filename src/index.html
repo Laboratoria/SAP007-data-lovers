@@ -7,11 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <div class="page1"></div>
-   <a href="page2.html"><button name="enter" class="enterClass" id="enterId">ENTER</button></a>
+<body class="home">
+  <section class="campo-de-busca">
+     <input class="input-buscar" id="input-buscar-id" type="search" 
+     placeholder="  Busca por nome" value="" >
+  </section>
+
+  <section class="campo-de-filtro">
+     <select class="selecao-filtro" id="selecao-filtro-id">
+      <option id="campo-vazio">Filtro</option>
+      <option id="vida" value="status">Estado de vida</option>
+      <option id="especie" value="species">Espécie</option>
+      <option id="genero" value="gender">Gênero</option>
+      <option id="origem" value="origin">Local de origem</option>
+      <option id="localizacao" value="location">Lugar onde vive</option>
+      <option id="episodio" value="episode">Episódios em que aparece</option>
+  </section>
   
-   <script src="page2.html" type="module"></script>
+  <script src="main.js" type="module"></script>
 </body>
-  
 </html>
+
+
+<!----->

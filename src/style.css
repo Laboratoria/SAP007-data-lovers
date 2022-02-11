@@ -6,17 +6,53 @@
     font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-    position: relative;
+.home {
+    position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 100vw;  
+    background: url(./image/bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
-.page1 {
+.campo-de-busca {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;   
+}    
+ 
+.input-buscar {
+    Position: absolute;
+    Width: 196px;
+    Height: 35px;
+    Top: 280px;
+    Left: 100px;
+    Background: #ffffff60;
+    border-radius: 6px; 
+}
+
+::placeholder {
+    color: black;
+}
+    
+.selecao-filtro {
+    Position: absolute;
+    Width: 196px;
+    Height: 35px;
+    Top: 280px;
+    Right: 100px;
+    Background: #FFFFFF60;
+    border-radius: 6px;
+}
+
+
+
+
+
+/*.page1 {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: url(./bg1.gif) no-repeat center center fixed;
+    background: url(./image/bg1.gif) no-repeat center center fixed;
     background-size: cover;
 }    
 
@@ -24,7 +60,7 @@ body {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: url(./bg.jpg) no-repeat center center fixed;
+    background: url(./image/bg2.jpg) no-repeat center center fixed;
     background-size: cover;
 }   
 
@@ -43,14 +79,6 @@ body {
     cursor: pointer;
 }
 
-.searchField {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background: url(./bg.jpg) no-repeat center center fixed;
-    background-size: cover;
-}    
- 
 .enterClass {
     position: absolute;
     top: 150px;
@@ -65,24 +93,4 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
-
-.inputSearchClass {
-    Position: absolute;
-    Width: 196px;
-    Height: 35px;
-    Top: 350px;
-    Left: 100px;
-    Background: #FFFFFF;
-    
-}
-    
-.inputFilterClass {
-    Position: absolute;
-    Width: 196px;
-    Height: 35px;
-    Top: 350px;
-    Right: 100px;
-    Background: #FFFFFF;
-    
-}
+*/

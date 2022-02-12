@@ -1,8 +1,12 @@
 import { example } from './data.js';
 import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
+
+let namePokemon = document.getElementById('name-pokemon')
+let image = document.getElementById('img-pokemon')
+let numPokemon = document.getElementById('num-pokemon')
+let typePokemon = document.getElementById('type-pokemon')
+let weaknessesPokemon = document.getElementById('weaknesses-pokemon')
+
+
 
 console.log(example, data);

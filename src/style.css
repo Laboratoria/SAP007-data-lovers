@@ -20,7 +20,7 @@
   flex-direction: row;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .navBar {
     flex-direction: column;
   }
@@ -34,7 +34,7 @@
   gap: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .logoContainer {
     height: 8vh;
   }
@@ -45,7 +45,7 @@
   margin-left: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .logoContainer img {
     height: 8vh;
   }
@@ -54,6 +54,11 @@
 #pageName {
   font-family: "Comforter", cursive;
   font-size: 5vmin;
+}
+@media (max-width: 480px) {
+  #pageName {
+    font-size: 4vmax;
+  }
 }
 
 .navBar a {
@@ -70,12 +75,12 @@
   margin-right: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .navList {
     display: flex;
     flex-direction: column;
     height: 82vh;
-    width: 50vw;
+    /* width: 50vw; */
     justify-content: flex-start;
     display: none;
     position: absolute;
@@ -85,24 +90,36 @@
     margin-right: 0;
   }
 }
+@media (max-width: 480px) {
+  .navList {
+    width: 100vw;
+  }
+}
 .listItem {
+  font-size: 4vmin;
 }
 
 /* .listItem:hover,
 .listItem:active {
   border-bottom: 2px solid #efefef;
 } */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .listItem {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
     /* border-top: 1px solid white; */
+    font-size: 4vmin;
+  }
+}
+@media (max-width: 480px) {
+  .listItem {
+    font-size: 4vmax;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .listItem:hover,
   .listItem:active {
     background-color: rgba(255, 255, 255, 0.15);
@@ -115,7 +132,7 @@
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .menu {
     display: block;
 
@@ -131,7 +148,7 @@
   margin-bottom: 4px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 767px) {
 }
 
 .mainContainer {
@@ -139,7 +156,7 @@
   background-color: #efefef;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .mainContainer {
     min-height: 82vh;
   }
@@ -155,6 +172,11 @@
   font-size: 2.8vmin;
 }
 
+@media (max-width: 480px) {
+  .footerContainer {
+    font-size: 4vmin;
+  }
+}
 /* span {
   display: inline;
   margin-right: 4px;
@@ -165,7 +187,7 @@ a {
   color: #efefef;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .active {
     /* display: block; */
     display: flex;

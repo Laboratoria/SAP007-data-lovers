@@ -1,11 +1,15 @@
 *{  margin: 0;}
+body{
+    font-size: 1.0em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 30px 0 30px;
     overflow: hidden;
-    background-color: #111;
+    background-color: #60BFBF
   }
   
   li {  float: left;}
@@ -19,7 +23,7 @@
   }
   
   li a:hover, .menu:hover .submenu {
-    background-color: #333;
+    background-color: #55ABAB;
   }
   
   li.menu {
@@ -48,3 +52,11 @@
   .menu:hover .menu-conteudo {
     display: block;
   }
+
+
+
+.banner{   /* APAGAR assim que inserir imagem do banner */
+    height: 50vh;
+    background-color: grey;
+}
+

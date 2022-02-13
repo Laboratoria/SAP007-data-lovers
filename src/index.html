@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <title>Jiji Movies</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo.svg" alt="logo" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header class="headerContainer">
+        <nav class="navBar">
+          <picture class="logoContainer">
+            <img src="assets/logo.svg" alt="logo" />
+            <p>Jiji Movies</p>
+          </picture>
+          <ul class="navList" id="navList">
+            <li class="listItem">
+              <a>Home</a>
+            </li>
+            <li class="listItem">
+              <a>Movies</a>
+            </li>
+            <li class="listItem">
+              <a>Characters</a>
+            </li>
+          </ul>
+          <div class="menu" id="toggleButton">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+          </div>
+        </nav>
+      </header>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

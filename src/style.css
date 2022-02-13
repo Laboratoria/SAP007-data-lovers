@@ -107,6 +107,15 @@
 @media all and (max-width: 480px) {
 }
 
+.footerContainer {
+  background-color: #015249;
+  color: #efefef;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* span {
   display: inline;
   margin-right: 4px;

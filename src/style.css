@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
 }
 
-/* .headerContainer {
-  background-color: #ff3b3f;
+.headerContainer {
+  /* background-color: #ff3b3f;
   color: #efefef;
-  height: 15vh;
-} */
+  height: 15vh; */
+}
 
 .navBar {
   background-color: #ff3b3f;
@@ -49,6 +51,11 @@
   }
 }
 
+#pageName {
+  font-family: "Comforter", cursive;
+  font-size: 5vmin;
+}
+
 .navBar a {
   text-decoration: none;
 }
@@ -65,15 +72,26 @@
 
 @media (max-width: 480px) {
   .navList {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-    height: 75vh;
-    width: 100vw;
+    height: 82vh;
+    width: 50vw;
     justify-content: flex-start;
     display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ff3b3f;
+    top: 8vh;
+    margin-right: 0;
   }
 }
-/* .navList .listItem  */
+.listItem {
+}
+
+/* .listItem:hover,
+.listItem:active {
+  border-bottom: 2px solid #efefef;
+} */
 @media (max-width: 480px) {
   .listItem {
     display: flex;
@@ -81,6 +99,15 @@
     justify-content: center;
     padding: 30px;
     /* border-top: 1px solid white; */
+  }
+}
+
+@media (max-width: 480px) {
+  .listItem:hover,
+  .listItem:active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    width: 50%;
   }
 }
 
@@ -107,6 +134,17 @@
 @media all and (max-width: 480px) {
 }
 
+.mainContainer {
+  min-height: 75vh;
+  background-color: #efefef;
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    min-height: 82vh;
+  }
+}
+
 .footerContainer {
   background-color: #015249;
   color: #efefef;
@@ -114,17 +152,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2.8vmin;
 }
 
 /* span {
   display: inline;
   margin-right: 4px;
-}
+} */
 
 a {
   text-decoration: none;
   color: #efefef;
-} */
+}
 
 @media (max-width: 480px) {
   .active {

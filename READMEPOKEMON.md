@@ -12,23 +12,23 @@
 
 ---
   
-## Índice
+## ÍNDICE
 
-- [1. Produto](#1-produto)
+- [1. PRODUTO](#1-produto)
   - [1.1. Pokémon](#11-pokémon)
   - [1.2. Histórias de Usuários](#12-histórias-de-usuários)
   - [1.3. Onpokemon](#13-onpokemon)
-- [2. Protótipos](#2-protótipos)
+- [2. PROTÓTIPOS](#2-protótipos)
   - [2.1 Protótipo de Baixa Fidelidade](#21-protótipo-de-baixa-fidelidade)
   - [2.2 Protótipo de Alta Fidelidade](#22-protótipo-de-alta-fidelidade)
-- [3. Teste de Usabilidade](#3-teste-de-usabilidade)
-- [4. Ferramentas Utilizadas](#4-ferramentas-utilizadas)
-- [5. Checklist](#5-checklist)
-- [6. Autoras](#6-autoras)
+- [3. TESTE DE USABILIDADE](#3-teste-de-usabilidade)
+- [4. FERRAMENTAS UTILIZADAS](#4-ferramentas-utilizadas)
+- [5. CHECKLIST](#5-checklist)
+- [6. AUTORAS](#6-autoras)
 
 ---
   
-## 1. Produto
+## 1. PRODUTO
 
 ### 1.1 Pokémon
 
@@ -40,24 +40,43 @@ Os Pokémons têm diferentes tipos e fraquezas em combate. Estas característica
 
 ### 1.2. Histórias de Usuários
 
-"Eu, como treinadora iniciante do jogo [Pokémon Go](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR&gl=US), desejo pesquisar os meus Pokémons, filtrando-os por tipos e fraquezas, para escolher os mais adequados para as minhas batalhas no jogo.
+> "Eu, como treinadora iniciante do jogo [Pokémon Go](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR&gl=US), desejo pesquisar os meus Pokémons, filtrando-os por tipos e fraquezas, para escolher os mais adequados para as minhas batalhas no jogo.
   
-"Como treinador do jogo Pokémon Go, quero buscar mais de um nome dos meus Pokémons, ordenando-os por tipos e visualizando mais informações sobre cada um deles, descobrindo suas fraquezas, desse modo poderei batalhar mais confiante para ser um mestre Pokémon."
+> "Como treinador do jogo Pokémon Go, quero buscar mais de um nome dos meus Pokémons, ordenando-os por tipos e visualizando mais informações sobre cada um deles, descobrindo suas fraquezas, desse modo poderei batalhar mais confiante para ser um mestre Pokémon."
   
 ### 1.3. OnPokemon
 
-OnPokemon é um site de filtragem em Pokémons por: nome, tipos e fraquezas de cada um deles. Os resultados da pesquisa são mostrados na tela, ordenados por números da [Pokédex Nacional](https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional), por nomes em ordem alfabética crescente e decrescente e, podendo serem mesclados pela maior ou menor quantidade de fraquezas.
+_OnPokemon_ é um site de filtragem em Pokémons por: nome, tipos e fraquezas de cada um deles. Os resultados da pesquisa são mostrados na tela, ordenados por números da [Pokédex Nacional](https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional), por nomes em ordem alfabética crescente e decrescente e, podendo serem mesclados pela maior ou menor quantidade de fraquezas.
 
-Os principais usuários do OnPokemon, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémons e poder visualizá-los em qualquer lugar, como em celular, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
+Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémons e poder visualizá-los em qualquer lugar, como em celular, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
   
-## 2. Protótipos
-  
+## 2. PROTÓTIPOS
+
+- OnPokemon é um projeto desenvolvido em 2022, para o bootcamp da Laboratoria Brasil.
+- Esse projeto é baseado nas instruções apresentadas pelo README do [Data-love](https://github.com/Laboratoria/SAP007-data-lovers).
+- Para iniciar o projeto, iniciamos com um planejamento realizado no site Trello, com base em [Babys Steps](https://blogprisma.com.br/baby-steps/) e na metodologia [Scrum](http://www.desenvolvimentoagil.com.br/scrum/), com sprints de uma semana, totalizando em quatro sprints.
+
 ### 2.1. Protótipo de Baixa Fidelidade
 
-  statcounter - site de pesquisa de tela de celular, tablet e desktop
-  
-  A prática do mobile first leva os desenvolvedores a pensarem em quais elementos são prioridade na exibição para o usuário e quais podem ser descartados. A tendência é que essa cultura crie sites mais limpos, bonitos visualmente e funcionais.
-  
+- Para realizar o projeto do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. Nesse protótipo, foi pensado no conceito de [Mobile First](https://www.chiefofdesign.com.br/design-responsivo/mobile-first/) que prioriza quais elementos são prioridade na exibição para o usuário e quais podem ser descartados.
+
+ - _**PARA MOBILE (CELULAR):**_
+ 
+
+    <div>
+         <img alt="prototipo" height="400" src="src/img/to-readme/mobile-01.png">
+    </div>
+    <div>
+        <img alt="prototipo" height="400" src="src/img/to-readme/mobile-02.png">
+    </div>
+
+ - _**PARA DESKTOP (NOTEBOOK):**_
+ 
+
+    <div>
+         <img alt="prototipo" height="800" src="src/img/to-readme/prototype01.png">
+    </div>
+    
 ### 2.2. Protótipo de Alta Fidelidade
   
   ESTILO
@@ -71,11 +90,16 @@ Os principais usuários do OnPokemon, são os jogadores (treinadores) que deseja
 contraste
 alinhamento
 hierarquia
+- A sua criação foi dividido em: _**telas, explicações e mensagens, arquitetura de informação.**_
 
+
+
+  statcounter - site de pesquisa de tela de celular, tablet e desktop
   
-## 3. Teste de Usabilidade
+  
+## 3. TESTE DE USABILIDADE
 
-## 4. Ferramentas Utilizadas
+## 4. FERRAMENTAS UTILIZADAS
   
 - **Planejamento:**
 
@@ -91,7 +115,7 @@ hierarquia
 - **Web:**
   - **Editor:** _[Visual Studio Code](https://code.visualstudio.com/)_
   
-## 5. Checklist
+## 5. CHECKLIST
 
 - [ ] Usar VanillaJS.
 - [ ] Passa pelo linter (`npm run pretest`)
@@ -108,7 +132,7 @@ hierarquia
 - [ ] UI: Permite filtrar dados com base em uma condição.
 - [ ] UI: É _responsivo_.
 
-## 6. Autoras 
+## 6. AUTORAS 
 
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 

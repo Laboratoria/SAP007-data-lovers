@@ -121,7 +121,7 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
   - As cores escolhidas para o site foram pensadas em cores neutras para combinarem com as cores das imagens dos Pokémons, além de cores que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos textos, dos botões e pop-ups.
 
       <div>
-        <img alt="Cor-do-OnPokemon" height="80" src="/src/img/to-readme/site-color.png">
+        <img alt="Cor-do-OnPokemon" src="/src/img/to-readme/site-color.png">
       </div>
 
   

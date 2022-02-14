@@ -21,7 +21,7 @@
 - [2. PROTÓTIPOS](#2-protótipos)
   - [2.1. Protótipo de Baixa Fidelidade](#21-protótipo-de-baixa-fidelidade)
   - [2.2. UX (Experiência do Usuário) e UI (Design de Interface)](#22-ux-experiência-do-usuário-e-ui-design-de-interface)
-  - [2.3. Protótipos de Alta Fidelidade](#23-protótipo-de-alta-fidelidade)
+  - [2.3. Protótipos de Alta Fidelidade](#23-protótipos-de-alta-fidelidade)
 - [3. TESTE DE USABILIDADE](#3-teste-de-usabilidade)
 - [4. FERRAMENTAS UTILIZADAS](#4-ferramentas-utilizadas)
 - [5. CHECKLIST](#5-checklist)
@@ -37,19 +37,19 @@ Pokémon são criaturas de todas as formas e tamanhos que podem ser selvagens ou
 
 Há 18 tipos diferentes de Pokémon e cada um pode ter até dois, como no caso do Bulbasaur, que é grama e venenoso. Cada tipo tem maior ou menor chance do golpe usado causar dano no inimigo, o resultado dependerá do tipo do adversário e se o seu ataque é do seu mesmo tipo.
   
-Os Pokémons têm diferentes tipos e fraquezas em combate. Estas características são importantes na escolha do Pokémon mais adequado para sua batalha. Às vezes, você tem que escolher aqueles com menos fraquezas e saber de que tipo eles são. Portanto, é importante que um mestre de Pokémon seja capaz de ordená-los por essas 2 características.
+Os Pokémon têm diferentes tipos e fraquezas em combate. Estas características são importantes na escolha do Pokémon mais adequado para sua batalha. Às vezes, você tem que escolher aqueles com menos fraquezas e saber de que tipo eles são. Portanto, é importante que um mestre de Pokémon seja capaz de ordená-los por essas duas características.
 
 ### 1.2. Histórias de Usuários
 
-> "Eu, como treinadora iniciante do jogo [Pokémon Go](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR&gl=US), desejo pesquisar os meus Pokémons, filtrando-os por tipos e fraquezas, para escolher os mais adequados para as minhas batalhas no jogo.
+> "Eu, como treinadora iniciante do jogo [Pokémon Go](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR&gl=US), desejo pesquisar os meus Pokémon, filtrando-os por tipos e fraquezas, para escolher os mais adequados para as minhas batalhas no jogo.
   
-> "Como treinador do jogo Pokémon Go, quero buscar mais de um nome dos meus Pokémons, ordenando-os por tipos e visualizando mais informações sobre cada um deles, descobrindo suas fraquezas, desse modo poderei batalhar mais confiante para ser um mestre Pokémon."
+> "Como treinador do jogo Pokémon Go, quero buscar mais de um nome dos meus Pokémon, ordenando-os por tipos e visualizando mais informações sobre cada um deles, descobrindo suas fraquezas, desse modo poderei batalhar mais confiante para ser um mestre Pokémon."
   
 ### 1.3. OnPokemon
 
 _OnPokemon_ é um site de filtragem em Pokémons por: nome, tipos e fraquezas de cada um deles. Os resultados da pesquisa são mostrados na tela, ordenados por números da [Pokédex Nacional](https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional), por nomes em ordem alfabética crescente e decrescente e, podendo serem mesclados pela maior ou menor quantidade de fraquezas.
 
-Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémons e poder visualizá-los em qualquer lugar, como em smartphone, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
+Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémon e poder visualizá-los em qualquer lugar, como em smartphone, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
   
 ## 2. PROTÓTIPOS
 
@@ -127,12 +127,12 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 - _**Tipografia e Hierarquia**_
 
   - A [tipografia](https://www.chiefofdesign.com.br/tipografia/) escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
-  - Para visualizar a hierarquia, foi usado fontes grandes para títulos de páginas, como o logo da página home e os títulos: FILTRAS e RESULTADOS . Para destacar os últimos dois títulos, o tamanho do logo foi diminuido e aumentado nos deles, assim, não interferirá drasticamente de um título para desktop para um mobile que poderia ocupar grande parte de sua tela. 
-  - Para os demais textos, obdecem a hierarquia em relação ao título da página e ao tipo de tela em que será exibido.
+  - Para visualizar a hierarquia, foi usado fontes grandes para títulos de páginas, como o logo da página home e os títulos: FILTRAR e RESULTADOS . Para destacar os últimos dois títulos, o tamanho do logo foi diminuido e aumentado nos deles, assim, não interferirá drasticamente de um título para desktop para um mobile que poderia ocupar grande parte de sua tela. 
+  - Para os demais textos, obedecem a hierarquia em relação ao título da página e ao tipo de tela em que será exibido.
 
 - _**Cores e Contrastes**_
 
-  - As cores escolhidas para o site foram pensadas em cores neutras para combinarem com as cores das imagens dos Pokémons, além de cores que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos textos, dos botões e pop-ups.
+  - As cores escolhidas para o site foram pensadas em cores neutras para combinarem com as cores das imagens dos Pokémon, além de cores que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos textos, dos botões e pop-ups.
 
       <div>
         <img alt="Cartela de cores do site OnPokemon" src="/src/img/to-readme/site-color.png">
@@ -216,9 +216,10 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 <a href = "mailto:adriana.t.watanabe@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 <a href="https://www.linkedin.com/in/adrianatwatanabe" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   
-### [Beatriz de Souza Carvalho](https://github.com/BeaSCarvalho)
+### [Beatriz de Sousa Carvalho](https://github.com/BeaSCarvalho)
 
 **Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
 
 <a href = "mailto:beaproscarva@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+<a href = "https://www.linkedin.com/in/beatriz-de-sousa-carvalho-94a595137/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 

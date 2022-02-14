@@ -226,7 +226,7 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
   <div align= "center">
     <img alt="Beatriz de Souza Carvalho" height="150" src="https://avatars.githubusercontent.com/u/99045620?v=4"> 
   </div>
-  <h3 align="center"><a href="https://github.com/BeaSCarvalho">Adriana Tiemi Watanabe</a></h3>
+  <h3 align="center"><a href="https://github.com/BeaSCarvalho">Beatriz de Souza Carvalho</a></h3>
   <h4 align="center">Projeto do Bootcamp da <em><a href="https://hub.laboratoria.la/br">Laboratoria</a></em></h4>
   <div align="center">
     <a href = "mailto:beaproscarva@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>

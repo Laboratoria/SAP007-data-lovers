@@ -1,0 +1,57 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+  }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #716844;
+    /* position: fixed;  // Tentei fixar o a header pra ela descer junto com a rolagem 
+    left: 0;
+    right: 0; */
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao {
+    padding: 0;
+    list-style: none;
+    font-size: 10px;
+    margin: 0 100px 0 100px;
+}
+
+main {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    margin: 80px 120px;
+}
+
+.oQueEhSG {
+    width: 70%;
+    padding: 20px;
+}
+
+.dadosTecnicos {
+    width: 30%;
+    background-color: #2d2b46;
+    color: #ffffff;
+    padding: 80px 10px 20px 10px;
+}
+
+.historiaSG{
+    
+}
+
+footer {
+    background-color: #1a1c1d;
+    height: 40px;
+    color: #ffffff;
+}

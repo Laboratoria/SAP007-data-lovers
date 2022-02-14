@@ -59,38 +59,36 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 ### 2.1. Protótipo de Baixa Fidelidade
 
 - Para realizar o projeto do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. Nesse protótipo, foi pensado no conceito de [Mobile First](https://www.chiefofdesign.com.br/design-responsivo/mobile-first/) que prioriza quais elementos são prioridade na exibição para o usuário e quais podem ser descartados.
+- No _OnPokemon_ foi priorizado as informações essenciais, como: explicação sobre o uso do site, explicações para preenchimento do formulário de filtragem e nos resultados visualizado.
 
- - _**PARA MOBILE (CELULAR):**_
+    - _**PARA MOBILE (CELULAR):**_
  
 
-    <div>
-         <img alt="prototipo" height="400" src="src/img/to-readme/mobile-01.png">
-    </div>
-    <div>
-        <img alt="prototipo" height="400" src="src/img/to-readme/mobile-02.png">
-    </div>
+         <div>
+               <img alt="prototipo" height="400" src="src/img/to-readme/mobile-01.png">
+         </div>
+         <div>
+             <img alt="prototipo" height="400" src="src/img/to-readme/mobile-02.png">
+         </div>
 
- - _**PARA DESKTOP (NOTEBOOK):**_
+    - _**PARA DESKTOP (NOTEBOOK):**_
  
 
-    <div>
-         <img alt="prototipo" height="800" src="src/img/to-readme/prototype01.png">
-    </div>
+        <div>
+             <img alt="prototipo" height="835" src="src/img/to-readme/prototype01.png">
+        </div>
     
 ### 2.2. Protótipo de Alta Fidelidade
   
-  ESTILO
+
+ 
+ ESTILO
+ RESPONSIVIDADE
   TIPOGRAFIA E HIERARQUIA
   CORES E CONTRASTES
   
   TELAS MENSAGENS E BOTÕES
   ARQUITETURA DE INFORMAÇÃO
-  
-  
-contraste
-alinhamento
-hierarquia
-- A sua criação foi dividido em: _**telas, explicações e mensagens, arquitetura de informação.**_
 
 
 

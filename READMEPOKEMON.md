@@ -48,7 +48,7 @@ Os Pokémons têm diferentes tipos e fraquezas em combate. Estas característica
 
 _OnPokemon_ é um site de filtragem em Pokémons por: nome, tipos e fraquezas de cada um deles. Os resultados da pesquisa são mostrados na tela, ordenados por números da [Pokédex Nacional](https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional), por nomes em ordem alfabética crescente e decrescente e, podendo serem mesclados pela maior ou menor quantidade de fraquezas.
 
-Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémons e poder visualizá-los em qualquer lugar, como em celular, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
+Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémons e poder visualizá-los em qualquer lugar, como em smartphone, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
   
 ## 2. PROTÓTIPOS
 
@@ -61,7 +61,7 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 - Para realizar o projeto do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. Nesse protótipo, foi pensado no conceito de [Mobile First](https://www.chiefofdesign.com.br/design-responsivo/mobile-first/) que prioriza quais elementos são prioridade na exibição para o usuário e quais podem ser descartados.
 - No _OnPokemon_ foi priorizado as informações essenciais, como: explicação sobre o uso do site, explicações para preenchimento do formulário de filtragem e nos resultados visualizado.
 
-    - _**PARA MOBILE (CELULAR):**_
+    - _**PARA MOBILE (smartphones e tablets):**_
  
 
          <div>
@@ -71,7 +71,7 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
              <img alt="prototipo" height="400" src="src/img/to-readme/mobile-02.png">
          </div>
 
-    - _**PARA DESKTOP (NOTEBOOK):**_
+    - _**PARA DESKTOP (computador e nootbook):**_
  
 
         <div>
@@ -80,20 +80,50 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
     
 ### 2.2. Protótipo de Alta Fidelidade
   
+- _**Estilo**_
 
- 
- ESTILO
- RESPONSIVIDADE
-  TIPOGRAFIA E HIERARQUIA
-  CORES E CONTRASTES
+  - OnPokemon é do estilo _**[skeumórfico](https://www.chiefofdesign.com.br/ui-design/)**_, que utiliza artifícios como texturas, sombras, gradientes e proporções, para simular os objetos reais e é muito utilizado em jogos, como o Pokémon Go. Já para o site OnPokemon, foi usado no logo para o desenho da [pokebola](https://pokepedia.fandom.com/pt/wiki/Pokeb%C3%B3la#:~:text=Este%20item%20caracteriza%20a%20s%C3%A9rie,Pok%C3%A9mon%20em%20um%20pequeno%20espa%C3%A7o.), além das imagens da [pokédex](https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex) fechada e aberta, dos ícones e dos campos do formulário. 
+
+- _**Responsividade**_
+
+  - Os tamanhos de telas utilizados no site, foram escolhidos segundo as estatísticas encontradas no site Statcounter, com base em dados coletados mundialmente. Os aparelhos eletrônicos escolhidos foram: [smartphone](https://pt.wikipedia.org/wiki/Smartphone), [tablet](https://pt.wikipedia.org/wiki/Tablet) e [desktop](https://en.wikipedia.org/wiki/Desktop_computer). 
   
-  TELAS MENSAGENS E BOTÕES
-  ARQUITETURA DE INFORMAÇÃO
+    - _**Smartphone na Vertical:**_ 360 x 640 pixels
+    - _**Smartphones na Horizontal:**_ 640 x 360 pixels
+    - _**Tablet na Vertical:**_ 600 x 962 pixels
+    - _**Table na Horizontal:**_ 962 x 600 pixels
+    - _**Desktop:**_ 1280 x 720 pixels
 
+- _**Telas, Mensagens e Botões**_
 
+  - As informações necessárias são apresentadas em formas de textos, a qual ocupam toda a extensão da largura da tela dentro de retângulos. Para as informações secundárias, são utilizados [modal ou pop-up](https://tecnoblog.net/responde/o-que-e-pop-up/) para as  informações sobre o site e contato com a equipe OnPokemon, localizados na página inicial (home), sem precisar ir para outra página.
 
-  statcounter - site de pesquisa de tela de celular, tablet e desktop
+  - Conforme a tela do aparelho aumenta, o formulário, as escolhas das ordenações e os cards das respostas são realocados para ocuparem os espaços vazios encontrados no lado direito da tela. Cada um será feito em uma página que seguirá o seguinte caminho de navegação:
   
+       - Home
+          - Mais informações
+          - Filtrar
+            - Ordenação
+              - Respostas   
+
+  - Já os botões são representados em forma de ícones com símbolos universais em formato circular, mas ao passar o mouse ou o dedo sobre o ícone, ele deslizará para a esquerda, mostrando o nome da ação que o botão fará.
+
+
+
+- _**Tipografia e Hierarquia**_
+
+  - A [tipografia](https://www.chiefofdesign.com.br/tipografia/) escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
+  - Para visualizar a hierarquia, foi usado fontes grandes para títulos de páginas, como o logo da página home e os títulos: FILTRAS e RESULTADOS . Para destacar os últimos dois títulos, o tamanho do logo foi diminuido e aumentado nos deles, assim, não interferirá drasticamente de um título para desktop para um mobile que poderia ocupar grande parte de sua tela. 
+  - Para os demais textos, obdecem a hierarquia em relação ao título da página e ao tipo de tela em que será exibido.
+
+- _**Cores e Contrastes**_
+
+  - As cores escolhidas para o site foram pensadas em cores neutras para combinarem com as cores das imagens dos Pokémons, além de cores que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos textos, dos botões e pop-ups.
+
+      <div>
+        <img alt="Cor-do-OnPokemon" height="80" src="/src/img/to-readme/site-color.png">
+      </div>
+
   
 ## 3. TESTE DE USABILIDADE
 

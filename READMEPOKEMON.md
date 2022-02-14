@@ -14,76 +14,51 @@
   
 ## Índice
 
-- [1. Introdução](#1-introdução)
-- [2. Histórias de Usuários](#2-histórias-de-usuários)
-- [3. Funcionalidades](#3-funcionalidades)
-- [4. Protótipos](#4-protótipos)
-  - [4.1 Protótipo de Baixa Fidelidade](#41-protótipo-de-baixa-fidelidade)
-  - [4.2 Protótipo de Alta Fidelidade](#42-protótipo-de-alta-fidelidade)
-- [5. Teste de Usabilidade](#5-teste-de-usabilidade)
-- [6. Checklist](#6-checklist)
-- [7. Autoras](#7-autoras)
+- [1. Produto](#1-produto)
+  - [1.1. Pokémon](#11-pokémon)
+  - [1.2. Histórias de Usuários](#12-histórias-de-usuários)
+  - [1.3. Onpokemon](#13-onpokemon)
+- [2. Protótipos](#2-protótipos)
+  - [2.1 Protótipo de Baixa Fidelidade](#21-protótipo-de-baixa-fidelidade)
+  - [2.2 Protótipo de Alta Fidelidade](#22-protótipo-de-alta-fidelidade)
+- [3. Teste de Usabilidade](#3-teste-de-usabilidade)
+- [4. Ferramentas Utilizadas](#4-ferramentas-utilizadas)
+- [5. Checklist](#5-checklist)
+- [6. Autoras](#6-autoras)
 
 ---
+  
+## 1. Produto
 
-  
-## 1. Introdução
-  
-  
-DEFINIÇÃO DE PRODUTO
-como foi o processo de desenho e como você acredita que o produto possa resolver o problema (ou problemas) de seu usuário.
-  
-  A prática do mobile first leva os desenvolvedores a pensarem em quais elementos são prioridade na exibição para o usuário e quais podem ser descartados. A tendência é que essa cultura crie sites mais limpos, bonitos visualmente e funcionais.
+### 1.1 Pokémon
 
-Quem são os usuários principais do produto?
+Pokémon são criaturas de todas as formas e tamanhos que podem ser selvagens ou então aparecer ao lado de seus parceiros treinadores. Durante suas aventuras, os Pokémon crescem e se tornam mais experientes e evoluem para se tornarem Pokémon ainda mais fortes. Centenas de Pokémon conhecidos habitam o universo Pokémon, com números incontáveis esperando para serem descobertos!
 
-Quais são os objetivos dos usuários com relação ao produto?
-
-Quais são os dados mais relevantes que querem ver na interface e por quê?
-
-Quando utilizam ou utilizariam o produto?
-
-## 2. Histórias de Usuários
-  história de usuário com critérios de aceitação e definição de pronto
+Há 18 tipos diferentes de Pokémon e cada um pode ter até dois, como no caso do Bulbasaur, que é grama e venenoso. Cada tipo tem maior ou menor chance do golpe usado causar dano no inimigo, o resultado dependerá do tipo do adversário e se o seu ataque é do seu mesmo tipo.
   
-  HISTÓRIAS DE USUÁRIO:
-EU, <papel do interessado>, DESEJO <o que>, PARA <justificativa>
-Eu, como administrador, desejo uma maior organização no agendamento das escolhas e montagem dos móveis, para poder vincular os dias com os dados dos clientes, sem que haja conflitos de horários e confusão de informações cadastrais.
+Os Pokémons têm diferentes tipos e fraquezas em combate. Estas características são importantes na escolha do Pokémon mais adequado para sua batalha. Às vezes, você tem que escolher aqueles com menos fraquezas e saber de que tipo eles são. Portanto, é importante que um mestre de Pokémon seja capaz de ordená-los por essas 2 características.
 
-BDD - BEHAVIOUR DRIVEN DEVELOPMENT:
-  DADA <condição> E ...
-  QUANDO <ação> E ...
-  ENTÃO <o que> DADA <condição> E ...
-  QUANDO <ação> E ...
-  ENTÃO <o que>
-  
-  Há 18 tipos diferentes de Pokémon e cada um pode ter até dois, como no caso do Bulbasaur, que é grama e venenoso. Cada tipo tem maior ou menor chance do golpe usado causar dano no inimigo, o resultado dependerá do tipo do adversário e se o seu ataque é do seu mesmo tipo.
-  
-  Os Pokémons têm diferentes tipos e fraquezas em combate. Estas características são importantes na escolha do Pokémon mais adequado para sua batalha. Às vezes, você tem que escolher aqueles com menos fraquezas e saber de que tipo eles são. Portanto, é importante que um mestre de Pokémon seja capaz de ordená-los por essas 2 características.
+### 1.2. Histórias de Usuários
 
+"Eu, como treinadora iniciante do jogo [Pokémon Go](https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=pt_BR&gl=US), desejo pesquisar os meus Pokémons, filtrando-os por tipos e fraquezas, para escolher os mais adequados para as minhas batalhas no jogo.
   
-  A prática do mobile first leva os desenvolvedores a pensarem em quais elementos são prioridade na exibição para o usuário e quais podem ser descartados. A tendência é que essa cultura crie sites mais limpos, bonitos visualmente e funcionais.
+"Como treinador do jogo Pokémon Go, quero buscar mais de um nome dos meus Pokémons, ordenando-os por tipos e visualizando mais informações sobre cada um deles, descobrindo suas fraquezas, desse modo poderei batalhar mais confiante para ser um mestre Pokémon."
+  
+### 1.3. OnPokemon
 
+OnPokemon é um site de filtragem em Pokémons por: nome, tipos e fraquezas de cada um deles. Os resultados da pesquisa são mostrados na tela, ordenados por números da [Pokédex Nacional](https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional), por nomes em ordem alfabética crescente e decrescente e, podendo serem mesclados pela maior ou menor quantidade de fraquezas.
 
+Os principais usuários do OnPokemon, são os jogadores (treinadores) que desejam saber informações sobre seus Pokémons para batalhar com outros treinadores no jogo Pokémon Go. Para eles, é essencial saber o tipo e fraquezas de seus Pokémons e poder visualizá-los em qualquer lugar, como em celular, tablet e notebook, sem alterar as configurações visuais dos dados mostrados na tela.
+  
+## 2. Protótipos
+  
+### 2.1. Protótipo de Baixa Fidelidade
 
-"Como um <papel>, eu quero <meta/desejo> de modo que <benefício>"
-
-"Como <quem> <quando> <onde>, eu <o que>, porque <por que>."
-  
-  
-## 3. Funcionalidades
-  
-  FILTRAR, MOSTRAR DADOS, FAZER CALCULO....
-  
-  mobile first
-  
   statcounter - site de pesquisa de tela de celular, tablet e desktop
   
-## 4. Protótipos
+  A prática do mobile first leva os desenvolvedores a pensarem em quais elementos são prioridade na exibição para o usuário e quais podem ser descartados. A tendência é que essa cultura crie sites mais limpos, bonitos visualmente e funcionais.
   
-### 4.1. Protótipo de Baixa Fidelidade
-  
-### 4.2. Protótipo de Alta Fidelidade
+### 2.2. Protótipo de Alta Fidelidade
   
   ESTILO
   TIPOGRAFIA E HIERARQUIA
@@ -98,12 +73,42 @@ alinhamento
 hierarquia
 
   
-## 5. Teste de Usabilidade
+## 3. Teste de Usabilidade
+
+## 4. Ferramentas Utilizadas
   
-## 6. Checklist
+- **Planejamento:**
 
+  - **Scrum:** _[Trello](https://trello.com)_
 
-## 7. Autoras 
+- **UX/UI**:
+
+  - **Edição de Imagens:** _[Canvas](https://www.canva.com/pt_br/)_
+  - **Paleta de Cores com Acessibilidade:** _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_
+  - **Protótipo:** _[Figma](https://www.figma.com/)_
+  - **Para fazer Gif:** _[Canvas](https://www.canva.com/pt_br/)_
+
+- **Web:**
+  - **Editor:** _[Visual Studio Code](https://code.visualstudio.com/)_
+  
+## 5. Checklist
+
+- [ ] Usar VanillaJS.
+- [ ] Passa pelo linter (`npm run pretest`)
+- [ ] Passa pelos testes (`npm test`)
+- [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
+      branches.
+- [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
+- [ ] Inclui histórias de usuário no `README.md`.
+- [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
+- [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
+      `README.md`.
+- [ ] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
+- [ ] UI: Permite ordenar dados por um ou mais campos (asc e desc).
+- [ ] UI: Permite filtrar dados com base em uma condição.
+- [ ] UI: É _responsivo_.
+
+## 6. Autoras 
 
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 

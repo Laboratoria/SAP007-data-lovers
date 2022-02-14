@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      crossorigin="anonymous"
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta charset="utf-8" />
+    <title>Jiji Movies</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="icon" href="assets/logo.svg" alt="logo" />
   </head>
   <body>
-    <select name="inputSelect" id="inputSelect" title="inputSelect">
+    <div id="root">
+      <header class="headerContainer">
+        <nav class="navBar">
+          <a href="#">
+            <picture class="logoContainer">
+              <img src="assets/logo.svg" alt="logo" />
+              <p id="pageName">Jiji Movies</p>
+            </picture>
+          </a>
+          <ul class="navList" id="navList">
+            <li class="listItem">
+              <a href="#">Home</a>
+            </li>
+            <li class="listItem">
+              <a href="#">Movies</a>
+            </li>
+            <li class="listItem">
+              <a href="#">Characters</a>
+            </li>
+          </ul>
+          <div class="menu" id="toggleButton">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+          </div>
+        </nav>
+      </header>
+      <main class="mainContainer"> 
+     <select name="inputSelect" id="inputSelect" title="inputSelect">
       <option value="A-Z">A-Z</option>
       <option value="Z-A">Z-A</option>
       <option value="highestScore">Highest score</option>
@@ -23,7 +43,11 @@
       <option value="maisnovo">Mais Novo</option>
       <option value="maisvelho">Mais velho</option>
     </select>
-
+      </main>
+      <footer class="footerContainer">
+        Created by Karina Mel and Ludmila Magalhães
+      </footer>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

@@ -2,6 +2,13 @@ import dataGhibli from "./data/ghibli/ghibli.js";
 import { importToMain } from "./data.js";
 console.log(dataGhibli);
 importToMain();
+let toggleButton = document.getElementById("toggleButton");
+let navList = document.getElementById("navList");
+
+toggleButton.addEventListener("click", () => {
+  navList.classList.toggle("active");
+  });
+
 
 const cardsContainer = document.createElement("section");
 cardsContainer.classList.add("cardsContainer");
@@ -82,3 +89,8 @@ function renderScreen(data) {
 }
 filterArray();
 document.getElementById("inputSelect").addEventListener("change", filterArray); //usar addEventListener pq o tipo modulo n deixa usar onchance no html :c
+
+
+
+
+

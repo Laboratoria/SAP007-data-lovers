@@ -7,3 +7,4 @@ export const pokemonNameData = () => {
 export const anotherExample = () => {
   return 'OMG';
 };
+

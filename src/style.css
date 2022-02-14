@@ -73,6 +73,7 @@
   justify-content: space-around;
   align-items: center;
   margin-right: 20px;
+  z-index: 2;
 }
 
 @media (max-width: 767px) {
@@ -162,30 +163,25 @@
   }
 }
 
-
-#inputSelect{
-  position:relative;
+#inputSelect {
+  position: relative;
   left: 60.5rem;
   width: 10.62rem;
   margin-top: 10px;
 }
-.cardsContainer{
- 
- display: grid;
- justify-content: center;
- 
- grid-template-columns: repeat(4, 1fr);
- grid-gap: 30px;
- 
- 
+.cardsContainer {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
 }
 .cardsContainer .cards:nth-child(n) {
-  margin: 10px auto ;
-  
+  margin: 10px auto;
 }
-.cards{
-  position:relative;
-  background-color: #CAEBF2;
+.cards {
+  position: relative;
+  background-color: #caebf2;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -194,32 +190,27 @@
   padding-bottom: 30px;
   padding-top: 30px;
 }
-.poster{
+.poster {
   width: 150px;
   border-radius: 10px;
-  
-
 }
-.divTitle{
+.divTitle {
   position: absolute;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height:3.125rem;
+  height: 3.125rem;
   width: 100%;
   bottom: 0;
   background: rgba(196, 196, 196, 0.47);
   border-radius: 0px 0px 13.8889px 13.8889px;
 }
-.titleWithinCard{
+.titleWithinCard {
   position: absolute;
   font-size: 1.18rem;
   font-family: Montserrat;
-  text-align:center;
-  
+  text-align: center;
 }
-
-
 
 .footerContainer {
   background-color: #015249;
@@ -252,4 +243,3 @@ a {
     display: flex;
   }
 }
-

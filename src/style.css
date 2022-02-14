@@ -1,0 +1,56 @@
+:root{
+    --pokedex: #D63025;
+    --cards: #C4C4C4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general{
+    background: white;
+}
+
+.pokedex{
+    background: var(--pokedex);
+    position: absolute;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: lfr lfr ;
+    grid-template-rows: lfr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-pokemon{
+    grid-column: ;
+    grid-row: ;
+    grid-area: ;
+
+}
+
+.img-pokemon{
+    
+}
+
+.name-pokemon{
+
+}
+
+.num-pokemon{
+
+}
+
+.type-pokemon{
+
+}
+
+.card-pokemon{
+
+}
+

@@ -7,7 +7,6 @@ let numPokemon = document.getElementById('num-pokemon')
 let typePokemon = document.getElementById('type-pokemon')
 let weaknessesPokemon = document.getElementById('weaknesses-pokemon')*/
 
-
 const pokemon = data.pokemon;
 
 
@@ -21,10 +20,3 @@ const pokemonFilter = () => {
 }
 
 pokemonFilter ()
-
-document.getElementById('buttonPollination').addEventListener("click", pollination);
-
-
-
-
-//console.log(example, data);

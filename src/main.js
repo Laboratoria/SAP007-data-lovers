@@ -3,6 +3,12 @@ import { importToMain } from "./data.js";
 console.log(dataGhibli);
 importToMain();
 
+let toggleButton = document.getElementById("toggleButton");
+let navList = document.getElementById("navList");
+
+toggleButton.addEventListener("click", () => {
+  navList.classList.toggle("active");
+
 dataGhibli.films.map((items) => {
   let card = document.createElement("ul");
   let title = document.createElement("h1");

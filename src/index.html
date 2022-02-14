@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <title>Jiji Movies</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo.svg" alt="logo" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header class="headerContainer">
+        <nav class="navBar">
+          <a href="#">
+            <picture class="logoContainer">
+              <img src="assets/logo.svg" alt="logo" />
+              <p id="pageName">Jiji Movies</p>
+            </picture>
+          </a>
+          <ul class="navList" id="navList">
+            <li class="listItem">
+              <a href="#">Home</a>
+            </li>
+            <li class="listItem">
+              <a href="#">Movies</a>
+            </li>
+            <li class="listItem">
+              <a href="#">Characters</a>
+            </li>
+          </ul>
+          <div class="menu" id="toggleButton">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+          </div>
+        </nav>
+      </header>
+      <main class="mainContainer"></main>
+      <footer class="footerContainer">
+        Created by Karina Mel and Ludmila Magalhães
+      </footer>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

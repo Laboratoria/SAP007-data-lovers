@@ -136,7 +136,7 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 
       <div>
         <img alt="Cartela de cores do site OnPokemon" src="/src/img/to-readme/site-color.png">
-      </div>
+     </div>
       
 ## 2.3 Protótipos de Alta Fidelidade
 

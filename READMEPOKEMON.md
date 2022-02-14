@@ -1,5 +1,5 @@
 <div align="center">
-   <img alt="logo-OnPokemon" src="/src/img/to-readme/logo.png">
+   <img alt="Logo OnPokemon" src="/src/img/to-readme/logo.png">
 
 ## Escolha os seus pokemóns para combate, filtrando por tipo e fraqueza.
 
@@ -19,8 +19,9 @@
   - [1.2. Histórias de Usuários](#12-histórias-de-usuários)
   - [1.3. Onpokemon](#13-onpokemon)
 - [2. PROTÓTIPOS](#2-protótipos)
-  - [2.1 Protótipo de Baixa Fidelidade](#21-protótipo-de-baixa-fidelidade)
-  - [2.2 Protótipo de Alta Fidelidade](#22-protótipo-de-alta-fidelidade)
+  - [2.1. Protótipo de Baixa Fidelidade](#21-protótipo-de-baixa-fidelidade)
+  - [2.2. UX (Experiência do Usuário) e UI (Design de Interface)](#22-ux-experiência-do-usuário-e-ui-design-de-interface)
+  - [2.3. Protótipos de Alta Fidelidade](#23-protótipo-de-alta-fidelidade)
 - [3. TESTE DE USABILIDADE](#3-teste-de-usabilidade)
 - [4. FERRAMENTAS UTILIZADAS](#4-ferramentas-utilizadas)
 - [5. CHECKLIST](#5-checklist)
@@ -30,7 +31,7 @@
   
 ## 1. PRODUTO
 
-### 1.1 Pokémon
+### 1.1. Pokémon
 
 Pokémon são criaturas de todas as formas e tamanhos que podem ser selvagens ou então aparecer ao lado de seus parceiros treinadores. Durante suas aventuras, os Pokémon crescem e se tornam mais experientes e evoluem para se tornarem Pokémon ainda mais fortes. Centenas de Pokémon conhecidos habitam o universo Pokémon, com números incontáveis esperando para serem descobertos!
 
@@ -65,20 +66,20 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
  
 
          <div>
-               <img alt="prototipo" height="400" src="src/img/to-readme/mobile-01.png">
+               <img alt="Protótipo de baixa fidelidade para smartphone - Parte 1" height="400" src="src/img/to-readme/mobile-01.png">
          </div>
          <div>
-             <img alt="prototipo" height="400" src="src/img/to-readme/mobile-02.png">
+             <img alt="Protótipo de baixa fidelidade para smartphone - Parte 2"  height="400" src="src/img/to-readme/mobile-02.png">
          </div>
 
     - _**PARA DESKTOP (computador e nootbook):**_
  
 
         <div>
-             <img alt="prototipo" height="835" src="src/img/to-readme/prototype01.png">
+             <img alt="Protótipo de baixa fidelidade para desktop" height="835" src="src/img/to-readme/prototype01.png">
         </div>
     
-### 2.2. Protótipo de Alta Fidelidade
+### 2.2. UX (Experiência do Usuário) e UI (Design de Interface)
   
 - _**Estilo**_
 
@@ -88,13 +89,13 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 
   - Os tamanhos de telas utilizados no site, foram escolhidos segundo as estatísticas encontradas no site Statcounter, com base em dados coletados mundialmente. Os aparelhos eletrônicos escolhidos foram: [smartphone](https://pt.wikipedia.org/wiki/Smartphone), [tablet](https://pt.wikipedia.org/wiki/Tablet) e [desktop](https://en.wikipedia.org/wiki/Desktop_computer). 
   
-    - _**Smartphone na Vertical:**_ 360 x 640 pixels
-    - _**Smartphones na Horizontal:**_ 640 x 360 pixels
-    - _**Tablet na Vertical:**_ 600 x 962 pixels
-    - _**Table na Horizontal:**_ 962 x 600 pixels
+    - _**Smartphone na posição vertical:**_ 360 x 640 pixels
+    - _**Smartphones na posição horizontal:**_ 640 x 360 pixels
+    - _**Tablet na posição vertical:**_ 600 x 962 pixels
+    - _**Table na posição horizontal:**_ 962 x 600 pixels
     - _**Desktop:**_ 1280 x 720 pixels
 
-- _**Telas, Mensagens e Botões**_
+- _**Telas e Mensagens**_
 
   - As informações necessárias são apresentadas em formas de textos, a qual ocupam toda a extensão da largura da tela dentro de retângulos. Para as informações secundárias, são utilizados [modal ou pop-up](https://tecnoblog.net/responde/o-que-e-pop-up/) para as  informações sobre o site e contato com a equipe OnPokemon, localizados na página inicial (home), sem precisar ir para outra página.
 
@@ -106,9 +107,22 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
             - Ordenação
               - Respostas   
 
-  - Já os botões são representados em forma de ícones com símbolos universais em formato circular, mas ao passar o mouse ou o dedo sobre o ícone, ele deslizará para a esquerda, mostrando o nome da ação que o botão fará.
+- _**Botões**_
+  
+  - Os botões são representados em forma de ícones com símbolos universais em formato circular, mas ao passar o mouse ou o dedo sobre o ícone, ele deslizará para a esquerda, mostrando o nome da ação que o botão fará.
 
-
+      <div>
+        <img alt="Botão filtrar" src="/src/img/to-readme/check-button-360.png">
+        <img alt="Botão filtrar expandido" src="/src/img/to-readme/slide-check.png">
+      </div>
+       <div>
+        <img alt="Botão descer" src="/src/img/to-readme/down-button-360.png">
+        <img alt="Botão descer expandido" src="/src/img/to-readme/slide-down.png">
+      </div>
+       <div>
+        <img alt="Botão voltar" src="/src/img/to-readme/back-button-360.png">
+        <img alt="Botão voltar expandido" src="/src/img/to-readme/slide-back.png">
+      </div>
 
 - _**Tipografia e Hierarquia**_
 
@@ -121,10 +135,43 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
   - As cores escolhidas para o site foram pensadas em cores neutras para combinarem com as cores das imagens dos Pokémons, além de cores que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos textos, dos botões e pop-ups.
 
       <div>
-        <img alt="Cor-do-OnPokemon" src="/src/img/to-readme/site-color.png">
+        <img alt="Cartela de cores do site OnPokemon" src="/src/img/to-readme/site-color.png">
       </div>
+      
+## 2.3 Protótipos de Alta Fidelidade
 
+- Para o desenvolvimento do protótipo de alta fidelidade, foi usado uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
+
+### 2.3.1 Smartphone na Posição Vertical
+
+<div>
+  <img alt="Protótipo de Smartphone com orientação vertical" src="/src/img/to-readme/smartphone-vertical.png">
+</div>
+
+### 2.3.2 Smartphones na Posição Horizontal
+
+<div>
+  <img alt="Protótipo de Smartphone com orientação horizontal" src="/src/img/to-readme/smartphone-horizontal.png">
+</div>
+
+### 2.3.3 Tablet na Posição Vertical
+
+<div>
+  <img alt="Protótipo de Tablet com orientação vertical" src="/src/img/to-readme/tablet-vertical.png">
+</div>
+
+### 2.3.4. Table na Posição Horizontal
+
+<div>
+  <img alt="Protótipo de Tablet com orientação horizontal" src="/src/img/to-readme/tablet-horizontal.png">
+</div>
+
+### 2.3.5. Desktop
   
+<div>
+  <img alt="Protótipo de Desktop" src="/src/img/to-readme/desktop.png">
+</div>
+
 ## 3. TESTE DE USABILIDADE
 
 ## 4. FERRAMENTAS UTILIZADAS

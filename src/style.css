@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    min-height: 100vh;
+    background-color: #fcfcfc
 }
 
 header {
@@ -15,28 +15,33 @@ header {
     right: 0; */
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
-}
-
 .navegacao {
+    display: flex;
+    justify-content: space-around;
     padding: 0;
     list-style: none;
     font-size: 10px;
-    margin: 0 100px 0 100px;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
     background-color: #fcfcfc;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 80px 120px;
+}
+
+.introSG {
+    display: flex;
+    flex-direction: row;
 }
 
 .oQueEhSG {
     width: 70%;
-    padding: 20px;
+    padding-right: 20px;
 }
 
 .dadosTecnicos {

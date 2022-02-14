@@ -15,6 +15,10 @@ header {
     right: 0; */
 }
 
+audio {
+    
+}
+
 .navegacao {
     display: flex;
     justify-content: space-around;

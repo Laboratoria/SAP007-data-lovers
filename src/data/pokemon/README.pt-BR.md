@@ -31,3 +31,5 @@ fizemos uma investigação rápida (pesquisa) e estas são algumas das descobert
   quais evoluções eles têm antes e depois.
 - Pokémon comem _candies_ e um mestre Pokémon precisa saber quantos _candies_ um
   Pokémon precisa para evoluir.
+
+

@@ -55,8 +55,35 @@ body{
 
 
 
-.banner{   /* APAGAR assim que inserir imagem do banner */
-    height: 50vh;
+.banner{   /* APAGAR assim que inserir imagens */
+    height: 60vh;
     background-color: grey;
 }
 
+
+
+   /* FLEXBOX */
+
+
+.flexbox{
+    padding: 20px 38px 20px 38px;
+    font-size: 0.9em;
+    }
+
+.box {
+    display: flex;
+  }
+
+  .one {
+    flex: 1;
+  }
+
+  .two {
+    flex: 6;
+  }
+
+.img{
+    padding: 5px 10px 5px 1px;
+}
+
+  

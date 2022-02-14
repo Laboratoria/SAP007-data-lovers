@@ -33,6 +33,7 @@ export const filterData = (data ) => {                                          
     return movies;
 };
 
+//testeFiltrobranch
 
 //funcao que filtra e retorna dados de personagens
 export const filterCharacter = (data) =>{                                   // exporta a funcao; recebe dados

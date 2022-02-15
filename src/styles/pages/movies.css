@@ -1,6 +1,6 @@
 @import "/src/styles/reset.css";
-@import "/src/styles/header.css";
-@import "/src/styles/footer.css";
+@import "/src/styles/components/header.css";
+@import "/src/styles/components/footer.css";
 
 #inputSelect {
   position: relative;

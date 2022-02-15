@@ -2,11 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ONPOKEMON</title>
+    <link rel="stylesheet" href="/img/style.css" />
   </head>
+
   <body>
-    <div id="root">Pokémon</div>
+    <header>
+      <image class="logo" src="logo.png"></image> 
+    </header>
+
+    <main>
+      <h1 class="results">RESULTADOS</h1>
+      <p>000 Pokémons ordenados por:</p>
+      <select class="order">
+        <option value="number">Número</option>
+        <option value="name-az">Nome(a-z)</option>
+        <option value="name-za">Nome(z-a)</option>
+      </select>
+
+      <select class="calculation">
+        <option value="more-weakness">Maior quantidade de fraquezas</option>
+        <option value="less-weakness">Menor quantidade de fraquezas</option>    
+      </select>
+      
+      <p class="show-results" id="show-results"></p>
+
+      <button type="button" id="back" class="back-button">simbolo de seta</button>
+    </main>
+
+
+
+
     <script src="main.js" type="module"></script>
   </body>
 </html>

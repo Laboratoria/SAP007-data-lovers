@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/filmes.css">
+    <title>Filmes</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navegacaoFilmes">
+          <a href="./index.html" class="NavegacaoItem">Home</a>
+          <a href="./personagens.html" class="NavegacaoItem">Personagens</a>
+          <a href="" class="NavegacaoItem">Sobre Nós</a>
+        </nav>
+  
+        <div>
+             <img id="imagemFilmes" src="./imagens/ghibli1.png" alt="banner">
+        </div>
+  
+      </header>
+        
+      <section class="filtrosConteiner">
+          <div class="filter-individual-container" id="pesquisaConteiner">
+            <input type="search" class="filter-item" id="inputFilterByName" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
+          </div>
+          
+          <div class="filter-individual-container" id="filter-by-type">
+            <select id="filterByType-options" class="filter-item">
+              <option value="">Ordem Afabética</option>
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+            </select>
+          </div>
+  
+          <div class="filter-individual-container" id="filter-order-by" >
+            <select id="orderBy-options" class="filter-item" >
+              <option value="">Popularidade</option>
+              <option value="Lowest Number">Mais Popular</option>
+              <option value="Highest Number">Menos Popular</option>
+            </select>
+          </div>
+  
+          <div class="filter-individual-container" id="sort-by" >
+            <select id="sort-by-order" class="filter-item" >
+              <option value="">Diretor</option>
+              <option value="descendingCp">Hayao Miyazaki</option>
+              <option value="ascendingCp">Isao Takahata</option>
+              <option value="descendingHp">Yoshifumi Kondō</option>
+              <option value="ascendingHp">Hiroyuki Morita</option>
+              <option value="descendingCp">Gorō Miyazaki</option>
+              <option value="ascendingCp">Hiromasa Yonebayashi</option>
+            </select>
+        </div>
+
+        <div class="filter-individual-container" id="filter-order-be" >
+          <select id="orderBy-options" class="filter-item" >
+            <option value="">Lançamento</option>
+            <option value="Lowest Number">1986</option>
+            <option value="Highest Number">1988</option>
+            <option value="A-Z">1989</option>
+            <option value="Z-A">1991</option>
+            <option value="Lowest Number">1992</option>
+            <option value="Highest Number">1994</option>
+            <option value="A-Z">1995</option>
+            <option value="Z-A">1997</option>
+            <option value="Lowest Number">1999</option>
+            <option value="Highest Number">2001</option>
+            <option value="A-Z">2002</option>
+            <option value="Z-A">2004</option>
+            <option value="Lowest Number">2006</option>
+            <option value="Highest Number">2008</option>
+            <option value="A-Z">2010</option>
+            <option value="Z-A">2011</option>
+            <option value="Lowest Number">2013</option>
+            <option value="Highest Number">2014</option>
+          </select>
+        </div>
+
+          <div class="filter-individual-container"  >
+            <button type="button" class="button" id="refresh">Recarregar</button>
+          </div>
+  
+      </section>
+  
+      <main> 
+  
+      <div class="pokemones-main">
+        <div class="pokemones-quantity" >
+          <p>Total( <spam id="quantity"></spam> )</p>
+        </div>
+  
+        <div id="container-card"></div>  
+        <div class="container-modal"></div>
+      </div>
+  
+      </main>
+
+      <script src="main.js" type="module"></script>
+    </body>
+  </html>

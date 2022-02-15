@@ -7,12 +7,12 @@ let navList = document.getElementById("navList");
 
 toggleButton.addEventListener("click", () => {
   navList.classList.toggle("active");
-  });
-
+});
 
 const cardsContainer = document.createElement("section");
+document.getElementById("mainContainer").appendChild(cardsContainer);
 cardsContainer.classList.add("cardsContainer");
-document.body.appendChild(cardsContainer);
+
 function filterArray() {
   let selectValueDropDown = document.getElementById("inputSelect").value;
   dataGhibli.films.sort((a, b) => {
@@ -89,8 +89,3 @@ function renderScreen(data) {
 }
 filterArray();
 document.getElementById("inputSelect").addEventListener("change", filterArray); //usar addEventListener pq o tipo modulo n deixa usar onchance no html :c
-
-
-
-
-

@@ -1,7 +1,8 @@
-import dataGhibli from "./data/ghibli/ghibli.js";
+import dataGhibli from "../data/ghibli/ghibli.js";
 import { importToMain } from "./data.js";
 console.log(dataGhibli);
 importToMain();
+
 let toggleButton = document.getElementById("toggleButton");
 let navList = document.getElementById("navList");
 

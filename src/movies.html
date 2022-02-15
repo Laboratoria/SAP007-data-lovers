@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Jiji Movies</title>
-    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/movies.css" />
     <link rel="icon" href="assets/logo.svg" alt="logo" />
   </head>
   <body>
@@ -34,12 +34,19 @@
           </div>
         </nav>
       </header>
-
+      <select name="inputSelect" id="inputSelect" title="inputSelect">
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+        <option value="highestScore">Highest score</option>
+        <option value="lowestScore">Lowest score</option>
+        <option value="maisnovo">Mais Novo</option>
+        <option value="maisvelho">Mais velho</option>
+      </select>
       <main id="mainContainer"></main>
       <footer class="footerContainer">
         Created by Karina Mel and Ludmila Magalhães
       </footer>
     </div>
-    <script src="/src/js/main.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

@@ -24,3 +24,10 @@ body {
     border-radius: 5px;
     
 }
+.main{
+  margin: 0 20px;
+}
+
+footer{
+  align-items: center;
+}

@@ -1,5 +1,5 @@
 <div align="center">
-   <img alt="Logo OnPokemon" src="/src/img/to-readme/logo.png">
+   <img alt="Logo OnPokemon" src="/src/img/logo.png">
 
 ## Escolha os seus Pokemóns para combate, filtrando por tipo e fraqueza.
 

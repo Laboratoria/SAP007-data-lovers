@@ -3,11 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="shortcut icon" type="image/x-icon" href="./image/favicom.ico">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="home">
+<body>
+  <div class="menu">
+    <nav class="nav-menu">
+      <a href="index.html">Página inicial</a>
+      <a href="episode.html">Episódios</a>
+      <a href="personagens.html">Personagens</a>
+    </nav>
+  </div>
+
+  <div class="home"></div>
+  <img class="logo" src="./image/logo.png">
   <section class="campo-de-busca">
      <input class="input-buscar" id="input-buscar-id" type="search" 
      placeholder="  Busca por nome" value="" >
@@ -15,15 +27,22 @@
 
   <section class="campo-de-filtro">
      <select class="selecao-filtro" id="selecao-filtro-id">
-      <option id="campo-vazio">Filtro</option>
-      <option id="vida" value="status">Estado de vida</option>
-      <option id="especie" value="species">Espécie</option>
-      <option id="genero" value="gender">Gênero</option>
-      <option id="origem" value="origin">Local de origem</option>
-      <option id="localizacao" value="location">Lugar onde vive</option>
-      <option id="episodio" value="episode">Episódios em que aparece</option>
+      <option value="campo-vazio">Filtro</option>
+      <option value="status">Estado de vida</option>
+      <option value="species">Espécie</option>
+      <option value="gender">Gênero</option>
+      <option value="origin">Local de origem</option>
+      <option value="location">Lugar onde vive</option>
+      <option value="episode">Episódios em que aparece</option>
   </section>
-  
+
+  <main>
+    <section class="info-card" id="info-card">
+        <h1>Rick and Morty</h1>
+        <ul data-rickandmorty="randm" class="randm"></ul>
+    </section>
+  </main>
+
   <script src="main.js" type="module"></script>
 </body>
 </html>

@@ -36,10 +36,10 @@ function filterArray() {
     if (selectValueDropDown == "lowestScore") {
       return ordenar(ratingA, ratingB);
     }
-    if (selectValueDropDown == "maisnovo") {
+    if (selectValueDropDown == "Newest") {
       return ordenarInvers(DataA, DataB);
     }
-    if (selectValueDropDown == "maisvelho") {
+    if (selectValueDropDown == "Oldest") {
       return ordenar(DataA, DataB);
     }
   });

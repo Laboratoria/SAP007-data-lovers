@@ -7,23 +7,23 @@
     align-items: center;
     justify-content: center;
     font-size: 19px;
-    background-color: #6d93ac;   
+    background-color: #dcd4ce;   
 }
 
-.NavegacaoItem {
+.navegacaoItem {
     padding: 12px 14px;
     width: 100px;
     text-align: center;
-    color: rgb(248, 241, 241);
+    color: black;
     font-weight: bold;
     text-shadow: #474141;
     text-decoration:none;
     font-weight:500;
 } 
 
-.NavegacaoItem:hover {
-     background-color: #c3d7f5ef;
-     color: rgb(42, 59, 90); 
+.navegacaoItem:hover {
+     background-color: #000000ef;
+     color: #dcd4ce; 
  }
 
 #imagemFilmes{
@@ -39,7 +39,7 @@
     max-width: 1000px;   
 }
 
-.filter-individual-container {
+.filtroConteinerIndividual {
     padding: 8px ;
 }
 
@@ -48,8 +48,8 @@
     padding:0;
     }
 
-.filter-item {
-    background: #CFE9F1;
+.filtroItem {
+    background: #dcd4ce;
     padding: 10px 2px;
     border-radius: 15px; 
     border-style: 2px solid ;
@@ -59,53 +59,60 @@
     text-align:center;
 }
 
-.filter-item:focus{
+.filtroItem:focus{
     outline: none; 
 }
 
-.filter-item:focus::placeholder{
+.filtroItem:focus::placeholder{
     visibility: hidden;
 }
 
-.filter-item {
-    padding: 6px 2px;
+.filtroItem {
+    padding: 7px 2px;
     width:100%;
     font-size: 18px;
     text-align:center;
    }
 
-#refresh{
+#recarregar{
     width: 108%;
     height:36px;
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
     border-radius: 15px;
-    background-color: #6d93ac;
-    color: rgb(238, 241, 245); 
+    background-color: #dcd4ce;
+    color: rgb(0, 0, 0); 
     cursor: pointer;
  }
 
- #refresh:hover {
-     background-color: #c3d7f5ef;
-     color: rgb(42, 59, 90);   
+ #recarregar:hover {
+     background-color: black;
+     color: #dcd4ce;   
  }
 
  #pesquisaConteiner {
     width:100%;
   }
   
-  #filter-by-type {
+  #ordenacaoAlfabetica {
    width:20%;
   }
   
-  #filter-order-by{
+  #ordenacaoPopularidade{
    width:20%;
   }
   
-  #sort-by{
+  #filtroDiretor{
    width:20%;
   }
 
-  #filter-order-be{
+  #filtroLancamento{
     width:20%;
-   }  
+   }
+
+   #footer { position: fixed;
+    bottom: 0px;
+    font-size: 20px;
+    width: 100%;
+    margin: 0px;
+    background-color: #dcd4ce;}

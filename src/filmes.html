@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,92 +10,94 @@
   <body>
     <header>
         <nav class="navegacaoFilmes">
-          <a href="./index.html" class="NavegacaoItem">Home</a>
-          <a href="./personagens.html" class="NavegacaoItem">Personagens</a>
-          <a href="" class="NavegacaoItem">Sobre Nós</a>
+          <a href="./index.html" class="navegacaoItem">Home</a>
+          <a href="./personagens.html" class="navegacaoItem">Personagens</a>
+          <a href="" class="navegacaoItem">Sobre Nós</a>
         </nav>
   
         <div>
-             <img id="imagemFilmes" src="./imagens/ghibli1.png" alt="banner">
+             <img id="imagemFilmes" src="./imagens/ghibli3.jpg" alt="banner">
         </div>
   
       </header>
         
       <section class="filtrosConteiner">
-          <div class="filter-individual-container" id="pesquisaConteiner">
-            <input type="search" class="filter-item" id="inputFilterByName" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
+          <div class="filtroConteinerIndividual" id="pesquisaConteiner">
+            <input type="search" class="filtroItem" id="pesquisaConteinerItem" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
           </div>
           
-          <div class="filter-individual-container" id="filter-by-type">
-            <select id="filterByType-options" class="filter-item">
+          <div class="filtroConteinerIndividual" id="ordenacaoAlfabetica">
+            <select class="filtroItem" id="ordenacaoAlfabeticaItem">
               <option value="">Ordem Afabética</option>
               <option value="A-Z">A-Z</option>
               <option value="Z-A">Z-A</option>
             </select>
           </div>
   
-          <div class="filter-individual-container" id="filter-order-by" >
-            <select id="orderBy-options" class="filter-item" >
+          <div class="filtroConteinerIndividual" id="ordenacaoPopularidade">
+            <select class="filtroItem" id="ordenacaoPopularidadeItem">
               <option value="">Popularidade</option>
-              <option value="Lowest Number">Mais Popular</option>
-              <option value="Highest Number">Menos Popular</option>
+              <option value="Mais Popular">Mais Popular</option>
+              <option value="Menos Popular">Menos Popular</option>
             </select>
           </div>
   
-          <div class="filter-individual-container" id="sort-by" >
-            <select id="sort-by-order" class="filter-item" >
+          <div class="filtroConteinerIndividual" id="filtroDiretor">
+            <select class="filtroItem" id="filtroDiretorItem">
               <option value="">Diretor</option>
-              <option value="descendingCp">Hayao Miyazaki</option>
-              <option value="ascendingCp">Isao Takahata</option>
-              <option value="descendingHp">Yoshifumi Kondō</option>
-              <option value="ascendingHp">Hiroyuki Morita</option>
-              <option value="descendingCp">Gorō Miyazaki</option>
-              <option value="ascendingCp">Hiromasa Yonebayashi</option>
+              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+              <option value="Isao Takahata">Isao Takahata</option>
+              <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+              <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+              <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+              <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
             </select>
         </div>
 
-        <div class="filter-individual-container" id="filter-order-be" >
-          <select id="orderBy-options" class="filter-item" >
+        <div class="filtroConteinerIndividual" id="filtroLancamento">
+          <select class="filtroItem" id="filtroLancamentoItem">
             <option value="">Lançamento</option>
-            <option value="Lowest Number">1986</option>
-            <option value="Highest Number">1988</option>
-            <option value="A-Z">1989</option>
-            <option value="Z-A">1991</option>
-            <option value="Lowest Number">1992</option>
-            <option value="Highest Number">1994</option>
-            <option value="A-Z">1995</option>
-            <option value="Z-A">1997</option>
-            <option value="Lowest Number">1999</option>
-            <option value="Highest Number">2001</option>
-            <option value="A-Z">2002</option>
-            <option value="Z-A">2004</option>
-            <option value="Lowest Number">2006</option>
-            <option value="Highest Number">2008</option>
-            <option value="A-Z">2010</option>
-            <option value="Z-A">2011</option>
-            <option value="Lowest Number">2013</option>
-            <option value="Highest Number">2014</option>
+            <option value="1986">1986</option>
+            <option value="1988">1988</option>
+            <option value="1989">1989</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1997">1997</option>
+            <option value="1999">1999</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2004">2004</option>
+            <option value="2006">2006</option>
+            <option value="2008">2008</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
           </select>
         </div>
 
-          <div class="filter-individual-container"  >
-            <button type="button" class="button" id="refresh">Recarregar</button>
+          <div class="filtroConteinerIndividual">
+            <button type="button" class="button" id="recarregar">Recarregar</button>
           </div>
   
       </section>
   
       <main> 
   
-      <div class="pokemones-main">
-        <div class="pokemones-quantity" >
-          <p>Total( <spam id="quantity"></spam> )</p>
+      <div class="quantidadeMain">
+        <div class="quantidadeConteiner" >
+          <p>Total( <spam id="quantidadeItem"></spam> )</p>
         </div>
   
-        <div id="container-card"></div>  
-        <div class="container-modal"></div>
-      </div>
+        <div id="containerCard"></div>  
+        <div class="containerCardItem"></div>
+        </div>
   
       </main>
+
+      <footer id="footer">RODAPÉ</footer>
 
       <script src="main.js" type="module"></script>
     </body>

@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Studio Ghibli</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <menu>
+      <ul id="menu">
+        <li><a class="home" href="index.html">PÁGINA INICIAL</a></li>
+        <li><a href="characters.html">PERSONAGENS</a></li>
+        <!--<li><a href="infos.html">INFOS</a></li>
+        <li><a id="right" href="about.html">ABOUT US</a></li>-->
+      </ul>
+    </menu>
+  </header>
+
+
+  <div class="container" id="container">
+
+    <div class="filters" id="sort">
+      <select class="select" id="sortAZ">
+        <option selected disabled value="">Ordenar</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+    </div>
+
+    <div class="filters" id="film">
+      <select class="select" id="selectFilm">
+        <option selected disabled value="">Selecionar Filme</option>
+        <option value="">Castle in the Sky</option>
+        <option value="">My Neighbor Totoro</option>
+        <option value="">Kiki's Delivery Service</option>
+        <option value="">Grave of the Fireflies</option>
+        <option value="">Only Yesterday</option>
+        <option value="">Porco Rosso</option>
+        <option value="">Pom Poko</option>
+        <option value="">Whisper of the Heart</option>
+        <option value="">Princess Mononoke</option>
+        <option value="">My Neighbors the Yamadas</option>
+        <option value="">Spirited Away</option>
+        <option value="">The Cat Returns</option>
+        <option value="">Howl's Moving Castle</option>
+        <option value="">Tales from Earthsea</option>
+        <option value="">Ponyo on the Cliff by the Sea</option>
+        <option value="">The Secret World of Arrietty</option>
+        <option value="">From Up on Poppy Hill</option>
+        <option value="">The Wind Rises</option>
+        <option value="">The Tale of the Princess Kaguya</option>
+        <option value="">When Marnie Was There</option>
+      </select>
+    </div>
+  
+  </div>
+
+  <main>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="main.js" type="module"></script>
+
+</body>
+
 </html>

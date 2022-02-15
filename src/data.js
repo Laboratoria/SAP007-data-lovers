@@ -1,4 +1,4 @@
-// estas funciones son de ejemplo
+// estas funciones son de ejemplo (fazer a conexao com api)
 
 export const example = () => {
   return 'example';

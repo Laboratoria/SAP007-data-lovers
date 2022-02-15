@@ -14,50 +14,62 @@
 
 <body>
     <header>
-        <h1>Studio Ghibli</h1>
-        <img id="logo">
+        <img src="./imagens/logo.JPG" alt="imagem do logo - studio ghibli + icone de pincel">
         <nav>
             <a href="personagens.html">Personagens</a>
-            <a href="grafico.html">Gráfico</a>
+            <a href="grafico.html">Gráficos</a>
         </nav>
     </header>
-    <section>
-        <h2>Descricao</h2>
 
-    </section>
-    <section>
+    <main>
+        <section>
+            <h2 class="tituloPagina">Uma incrível forma de contar histórias</h2>
+            <p class="descriçãoPagina">O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao
+                Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma. Ele conta com 20 longas-metragens e se
+                destaca ao provar que a animação não é só para crianças, bem como pela representatividade feminina em
+                seus personagens.<br>
+                Seus filmes tratam de diversos temas, desde aqueles que são normalmente abordados em obras direcionadas
+                a crianças, como amizade, amor e família. Até temáticas que não aparecem com frequência, como
+                amadurecimento, medo, guerra, consciência ecológica e muitos outros.
+            <p>
+        </section>
 
-        <label for="filtro">Filtrar por:</label>
-        <input list="filtro" />
-        <datalist id="filtro">
-            <option value="Diretor" id="diretor">
-            <option value="Produtor" id="produtor">
-        </datalist>
+        <section class="filtraFilmes">
+            <label for="filtro">Filtrar por:</label>
+            <input list="filtro" />
+            <datalist id="filtro">
+                <option value="Diretor" id="diretor">
+                <option value="Produtor" id="produtor">
+            </datalist>
+        </section>
 
-    </section>
+        <section class="ordenaFilmes">
+            <label for="ordenacao">Ordenar por:</label>
+            <input list="ordenacao" />
+            <datalist id="ordenacao">
+                <option value="A &#8594 Z" id="A &#8594 Z">
+                <option value="Laçamentos mais recentes" id="">
+                <option value="Laçamentos mais antigos" id=""></option>
+            </datalist>
 
-    <section>
+        </section class="listaFilmes">
         <ul id="listaFilmes">
-            <li>
-                <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
-                <p id="descricao">Descricao item</p>
-            </li>
-            <li id="item"></li>
         </ul>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div>Desenvolvido por Taize Santos & Keila Hamada</div>
-        <div><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a> 
-             <a href="https://github.com/hadamakei">Github</a></div>
-        <div><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>  
-            <a href="https://github.com/taizesantos">Github</a></div>
+        <div><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+            <a href="https://github.com/hadamakei">Github</a>
+        </div>
+        <div><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+            <a href="https://github.com/taizesantos">Github</a>
+        </div>
         <div><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
         <div>SAP007 | 2022</div>
     </footer>
-
-
-
+    
     <script src="main.js" type="module"></script>
 </body>
 

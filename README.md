@@ -33,9 +33,9 @@
 
 ### 1.1. Pokémon
 
-Pokémon são criaturas de todas as formas e tamanhos que podem ser selvagens ou então aparecer ao lado de seus parceiros treinadores. Durante suas aventuras, os Pokémon crescem e se tornam mais experientes e evoluem para se tornarem Pokémon ainda mais fortes. Centenas de Pokémon conhecidos habitam o universo Pokémon, com números incontáveis esperando para serem descobertos!
+Pokémons são criaturas de todas as formas e tamanhos que podem ser selvagens ou então aparecer ao lado de seus parceiros treinadores. Durante suas aventuras, os Pokémons crescem e se tornam mais experientes e evoluem para se tornarem Pokémons ainda mais fortes. Centenas de Pokémon conhecidos habitam o universo Pokémons, com números incontáveis esperando para serem descobertos!
 
-Há 18 tipos diferentes de Pokémon e cada um pode ter até dois, como no caso do Bulbasaur, que é grama e venenoso. Cada tipo tem maior ou menor chance do golpe usado causar dano no inimigo, o resultado dependerá do tipo do adversário e se o seu ataque é do seu mesmo tipo.
+Há 18 tipos diferentes de Pokémons e cada um pode ter até dois, como no caso do Bulbasaur, que é grama e venenoso. Cada tipo tem maior ou menor chance do golpe usado causar dano no inimigo, o resultado dependerá do tipo do adversário e se o seu ataque é do seu mesmo tipo.
   
 Os Pokémons têm diferentes tipos e fraquezas em combate. Estas características são importantes na escolha do Pokémon mais adequado para sua batalha. Às vezes, você tem que escolher aqueles com menos fraquezas e saber de que tipo eles são. Portanto, é importante que um mestre de Pokémon seja capaz de ordená-los por essas 2 características.
 
@@ -224,12 +224,13 @@ Os principais usuários do _OnPokemon_, são os jogadores (treinadores) que dese
 
 <td>
   <div align= "center">
-    <img alt="Beatriz de Souza Carvalho" height="150" src="https://avatars.githubusercontent.com/u/99045620?v=4"> 
+    <img alt="Beatriz de Sousa Carvalho" height="150" src="https://avatars.githubusercontent.com/u/99045620?v=4"> 
   </div>
-  <h3 align="center"><a href="https://github.com/BeaSCarvalho">Beatriz de Souza Carvalho</a></h3>
+  <h3 align="center"><a href="https://github.com/BeaSCarvalho">Beatriz de Sousa Carvalho</a></h3>
   <h4 align="center">Projeto do Bootcamp da <em><a href="https://hub.laboratoria.la/br">Laboratoria</a></em></h4>
   <div align="center">
     <a href = "mailto:beaproscarva@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+     <a href="https://www.linkedin.com/in/beatriz-de-sousa-carvalho-94a595137/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   </div>
 </td>
 </table>

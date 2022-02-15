@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+  
+.home {
+    position: absolute;  
+    height: 100vh;
+    width: 100vw;  
+    background: url(./image/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logo {
+    position: relative;
+    height: 20;
+    width: 20;  
+    background-size: cover;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.input-buscar {
+    Position: absolute;
+    Width: 196px;
+    Height: 35px;
+    Top: 280px;
+    Left: 100px;
+    Background: #d4e4e7a8;
+    border-radius: 6px; 
+    border: white 0.1em;
+    border-style: outset;
+    box-shadow: 0.3em 0.3em 0.3em rgb(43, 44, 44);
+}
+
+::placeholder {
+    color: rgb(38, 39, 39);
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.1em white;
+    letter-spacing: 1px;
+}
+    
+.selecao-filtro {
+    Position: absolute;
+    Width: 196px;
+    Height: 35px;
+    Top: 280px;
+    Right: 100px;
+    Background: #FFFFFF60;
+    border-radius: 6px;
+    border: black;
+    color: rgb(38, 39, 39);
+    border-style: double;
+    font-weight: bold;
+    letter-spacing: 2px; 
+    text-shadow: 0.15em 0.15em 0.1em #9acfee;
+    border: white 0.1em;
+    border-style: outset;
+    box-shadow: 0.15em 0.15em 0.3em rgb(43, 44, 44);
+    
+}
+
+
+
+
+
+/*CORES:
+CINZA BOX: #FFFFFF60;
+AZUL DA SOMBRA #1981bd94
+SOMBRA rgb(43, 44, 44);
+VERDE rgb(150, 231, 74);
+AZUL rgb(87, 190, 204);
+VERDE TRANSPARENTE PERFEITO rgba(109, 180, 43, 0.329);
+
+
+
+
+
+
+
+
+
+/* CÓDIGO COPIADO VIDEO YOUTUBE
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+
+
+
+/* PAGINAS COM O GIF
+
+.page1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(./image/bg1.gif) no-repeat center center fixed;
+    background-size: cover;
+}    
+
+.page2 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(./image/bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}   
+
+.enterClass {
+    position: absolute;
+    top: 150px;
+    left: 565px;
+    width: 150px;
+    background-color: rgb(68, 185, 53); 
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 6px;
+    color: rgb(31, 29, 29);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enterClass {
+    position: absolute;
+    top: 150px;
+    left: 565px;
+    width: 150px;
+    background-color: rgb(68, 185, 53); 
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 6px;
+    color: rgb(31, 29, 29);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+*/

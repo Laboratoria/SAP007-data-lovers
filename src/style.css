@@ -1,15 +1,21 @@
-*{  margin: 0;}
+*{  margin: 0;}    /* ZEREI MARGENS */
+
 body{
     font-size: 1.0em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DEEFE7;
 }
+
+
+   /* BARRA DE NAVEGAÇÃO */
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0 30px 0 30px;
     overflow: hidden;
-    background-color: #60BFBF
+    background-color: #159A9C;
+    font-weight: 600;
   }
   
   li {  float: left;}
@@ -18,7 +24,7 @@ body{
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
   }
   
@@ -33,7 +39,7 @@ body{
   .menu-conteudo {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #DEEFE7;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -53,37 +59,32 @@ body{
     display: block;
   }
 
+    /* BANNER */
 
-
-.banner{   /* APAGAR assim que inserir imagens */
-    height: 60vh;
-    background-color: grey;
-}
-
-
-
-   /* FLEXBOX */
-
-
-.flexbox{
-    padding: 20px 38px 20px 38px;
-    font-size: 0.9em;
-    }
-
-.box {
-    display: flex;
-  }
-
-  .one {
-    flex: 1;
-  }
-
-  .two {
-    flex: 6;
-  }
-
-.img{
-    padding: 5px 10px 5px 1px;
-}
-
+.banner-ram{
+  width: 100%;
+  border-bottom: 14px solid #F2D335;
   
+}
+
+/* FLEXBOX */
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px 40px 10px 40px;
+  height: 30px; 
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+  
+}
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

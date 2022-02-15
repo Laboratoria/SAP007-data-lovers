@@ -50,11 +50,13 @@ items.forEach(function(movie){                                                  
 
 
 //funca de mostrar imagem
-function displayImage(src/*, width, height*/, alt) {                                                        //pega os parametos da imagem, fonte e alt
+function displayImage(src, /*width, height*/  alt) {                                                        //pega os parametos da imagem, fonte e alt
     let picture = document.createElement("img");                                                            // cria elemento de img        
     picture.src = src;
-    /*a.width = width;
-    a.height = height;*/
+    
+    //picture.style.width= "250px";
+    /*picture.style.height = "250px";*/
+    
     picture.alt = alt;
     return picture;
 }

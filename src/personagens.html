@@ -2,67 +2,81 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta charset="utf-8">
+	<title>Data Lovers Studio Ghibli</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@100;400;700 & family= Open+Sans:wght@400;700 & display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    cabeçalho
-  </header>
+	<header>
+		<h1>Studio Ghibli</h1>
+		<img id="logo">
+		<nav>
+			<a href="index.html">Filmes</a>
+			<a href="grafico.html">Grafico</a>
+		</nav>
+	</header>
 
-  <main>
-    <h1>Personagens</h1>
-    <section class="filtrar">
-      <form>
-        <label for="filtro-genero">Fitrar por gênero</label>
-        <select class="selecione-genero">
-          <option value="todos"></option>
-          <option value="feminino"> Feminino</option>
-          <option value="masculino">Masculino</option>
-        </select>
+	<main>
+		<h1>Personagens</h1>
+		<section class="filtrar">
+			<form>
+				<label for="filtro-genero">Fitrar por gênero</label>
+				<select class="selecione-genero">
+					<option value="todos"></option>
+					<option value="feminino"> Feminino</option>
+					<option value="masculino">Masculino</option>
+				</select>
 
-        <label for="filtro-filmes">Fitrar por filmes</label>
-        <select class="selecione-filme">
-          <option value="todos"></option>
-          <option value="">Castelo no Céu</option>
-          <option value="">Meu Vizinho Totoro</option>
-          <option value="">Serviço de entrega da Kiki</option>
-          <option value="">Túmulo dos Vagalumes</option>
-          <option value="">Somente ontem</option>
-          <option value="">Porco Rosso</option>
-          <option value="">Pom Poko</option>
-          <option value="">Sussurro do Coração</option>
-          <option value="">Princesa Mononoke</option>
-          <option value="">Meus Vizinhos os Yamadas</option>
-          <option value="">A Viagem de Chihiro</option>
-          <option value="">O Retorno do Gato</option>
-          <option value="">Castelo em Movimento do Uivo</option>
-          <option value="">Contos do Mar da Terra</option>
-          <option value="">Ponyo no penhasco à beira-mar</option>
-          <option value="">O Mundo Secreto de Arrietty</option>
-          <option value="">De cima de Poppy Hill</option>
-          <option value="">O Vento Sobe</option>
-          <option value="">O Conto da Princesa Kaguya</option>
-          <option value="">Quando Marnie estava lá</option>
-        </select>
-      </form>
-    </section>
+				<label for="filtro-filmes">Fitrar por filmes</label>
+				<select class="selecione-filme">
+					<option value="todos"></option>
+					<option value="">Castelo no Céu</option>
+					<option value="">Meu Vizinho Totoro</option>
+					<option value="">Serviço de entrega da Kiki</option>
+					<option value="">Túmulo dos Vagalumes</option>
+					<option value="">Somente ontem</option>
+					<option value="">Porco Rosso</option>
+					<option value="">Pom Poko</option>
+					<option value="">Sussurro do Coração</option>
+					<option value="">Princesa Mononoke</option>
+					<option value="">Meus Vizinhos os Yamadas</option>
+					<option value="">A Viagem de Chihiro</option>
+					<option value="">O Retorno do Gato</option>
+					<option value="">Castelo em Movimento do Uivo</option>
+					<option value="">Contos do Mar da Terra</option>
+					<option value="">Ponyo no penhasco à beira-mar</option>
+					<option value="">O Mundo Secreto de Arrietty</option>
+					<option value="">De cima de Poppy Hill</option>
+					<option value="">O Vento Sobe</option>
+					<option value="">O Conto da Princesa Kaguya</option>
+					<option value="">Quando Marnie estava lá</option>
+				</select>
+			</form>
+		</section>
 
-    <section class="galeria-de-cards">
-      <h2> IMAGENS</h2>
-      <ul id="cardPeople">
+		<section class="galeria-de-cards">
+			<h2> IMAGENS</h2>
+			<ul id="cardPeople">
 
-      </ul>
-    </section>
-  </main>
+			</ul>
+		</section>
+	</main>
 
-  <footer>
-    Rodapé
-  </footer>
+	<footer>
+        <div>Desenvolvido por Taize & Keila</div>
+        <div><a href="">Linkedin</a>  <a href="">Github</a></div>
+        <div><a href="">Linkedin</a>  <a href="">Github</a></div>
+        <div><a href="https://talento.laboratoria.la/" target="_blank">Laboratória</a></div>
+        <div>2022</div>
+    </footer>
 
-  <script src="personagens.js" type="module"></script>   <!-- conecta com js de personagem-->
+	<script src="personagens.js" type="module"></script> <!-- conecta com js de personagem-->
 </body>
 
 </html>

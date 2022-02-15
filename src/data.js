@@ -72,3 +72,25 @@ export const filterCharacter = (data) =>{                                   // e
 
 //sortData(data, sortBy, sortOrder)
 //computeStats(data)
+
+/*export const ordenar = (data) => {
+
+    let ordenaTituloAZ = [data["title"]]
+
+    ordenaTituloAZ.sort(function(a, b){
+        let ta = a.title,
+            tb = b.title;
+
+        if (ta < tb) {
+            return -1;
+        }
+        if (ta > tb) {
+            return 1;
+        }
+        return 
+        
+
+    })
+    ordenaTituloAZ.push
+    console.log(ordenaTituloAZ)
+};*/

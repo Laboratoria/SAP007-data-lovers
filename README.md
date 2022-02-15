@@ -1,5 +1,5 @@
 <div align="center">
-   <img alt="Logo OnPokemon" src="/src/img/to-readme/logo.png">
+   <img alt="Logo OnPokemon" src="/src/img/to-readme/logo-readme.png">
 
 ## Escolha os seus Pokemóns para combate, filtrando por tipo e fraqueza.
 
@@ -14,6 +14,8 @@
   
 ## ÍNDICE
 
+- [Escolha os seus Pokemóns para combate, filtrando por tipo e fraqueza.](#escolha-os-seus-pokemóns-para-combate-filtrando-por-tipo-e-fraqueza)
+- [ÍNDICE](#índice)
 - [1. PRODUTO](#1-produto)
   - [1.1. Pokémon](#11-pokémon)
   - [1.2. Histórias de Usuários](#12-histórias-de-usuários)
@@ -21,7 +23,12 @@
 - [2. PROTÓTIPOS](#2-protótipos)
   - [2.1. Protótipo de Baixa Fidelidade](#21-protótipo-de-baixa-fidelidade)
   - [2.2. UX (Experiência do Usuário) e UI (Design de Interface)](#22-ux-experiência-do-usuário-e-ui-design-de-interface)
-  - [2.3. Protótipos de Alta Fidelidade](#23-protótipos-de-alta-fidelidade)
+- [2.3 Protótipos de Alta Fidelidade](#23-protótipos-de-alta-fidelidade)
+  - [2.3.1 Smartphone na Posição Vertical](#231-smartphone-na-posição-vertical)
+  - [2.3.2 Smartphones na Posição Horizontal](#232-smartphones-na-posição-horizontal)
+  - [2.3.3 Tablet na Posição Vertical](#233-tablet-na-posição-vertical)
+  - [2.3.4. Table na Posição Horizontal](#234-table-na-posição-horizontal)
+  - [2.3.5. Desktop](#235-desktop)
 - [3. TESTE DE USABILIDADE](#3-teste-de-usabilidade)
 - [4. FERRAMENTAS UTILIZADAS](#4-ferramentas-utilizadas)
 - [5. CHECKLIST](#5-checklist)

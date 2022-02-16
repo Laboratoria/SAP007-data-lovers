@@ -2,8 +2,15 @@
 @import "/src/styles/components/header.css";
 @import "/src/styles/components/footer.css";
 
-#inputSelect {
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+ 
+}
+#inputSelect {
+  
   left: 60.5rem;
   width: 10.62rem;
   margin-top: 10px;
@@ -12,8 +19,8 @@
 .cardsContainer {
   display: grid;
   justify-content: center;
-
   grid-template-columns: repeat(4, 1fr);
+  grid
   grid-gap: 30px;
 }
 .cardsContainer .cards:nth-child(n) {
@@ -22,7 +29,7 @@
 .cards {
   position: relative;
   background-color: #caebf2;
-  width: 200px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +38,7 @@
   padding-top: 30px;
 }
 .poster {
-  width: 150px;
+  width: 60%;
   border-radius: 10px;
 }
 .divTitle {
@@ -47,7 +54,20 @@
 }
 .titleWithinCard {
   position: absolute;
-  font-size: 1.18rem;
+  font-size: 100%;
   font-family: Montserrat;
   text-align: center;
+}
+
+@media (max-width: 767px){
+  .cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

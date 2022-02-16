@@ -8,7 +8,6 @@ const cardsContainer = document.createElement("section");
 menu();
 
 export function renderScreen(data) {
-  console.log("dksksk");
   document.getElementById("mainContainer").appendChild(cardsContainer);
   cardsContainer.classList.add("cardsContainer");
   cardsContainer.innerHTML = "";

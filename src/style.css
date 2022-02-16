@@ -10,6 +10,7 @@
 }
 
 .container-main{
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 15vh 75vh 10vh;
@@ -31,7 +32,8 @@
 .pokedex{
     background: var(--pokedex);
     grid-area: p;
-    overflow 
+    overflow-y: auto;
+    display: flex;
 }
 
 .filters{

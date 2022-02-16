@@ -13,74 +13,84 @@
 </head>
 
 <body>
-  <main>
-    <section id="card-pokemon" class="big-card">
+  <div class="container-main">
+    <header class="header-menu">
+    </header>
+    <main class="big-card">
 
-      <img id="img-pokemon" class="img-pokemon" />
+      <section id="card-pokemon" class="big-card">
 
-      <p id="name-pokemon" class="name-pokemon">
+        <img id="img-pokemon" class="img-pokemon" />
 
-      </p>
+        <p id="name-pokemon" class="name-pokemon">
 
-      <p id="num-pokemon" class="num-pokemon">
+        </p>
 
-      </p>
-      <p id="type-pokemon" class="type-pokemon">
+        <p id="num-pokemon" class="num-pokemon">
 
-      </p>
+        </p>
+        <p id="type-pokemon" class="type-pokemon">
 
-      <p id="weaknesses-pokemon" class="weaknesses-pokemon">
+        </p>
 
-      </p>
+        <p id="weaknesses-pokemon" class="weaknesses-pokemon">
 
-    </section class="pokedex">
+        </p>
 
-    <section>
-      <section>
-        <legend>Pokemon filter:</legend>
-        <select>
-          <option id="candys">Candy Cost</option>
-          <!--os botões vao ser para os filtros dos tipos do pokemon, spawn chance, candy cost (não precisa ser botão só aparecer)-->
-          <option id="pokemons-type">Pokemon Type</option>
-          <option id="spawn-chance">Spawn Chance</option>
-          <!--colocar tipo de grid "onselect"-->
-        </select>
       </section>
+    </main> 
+    <aside class="pokedex">
+      <section >
+          <legend>Pokemon filter:</legend>
+          <select>
+            <option id="candys">Candy Cost</option>
+            <!--os botões vao ser para os filtros dos tipos do pokemon, spawn chance, candy cost (não precisa ser botão só aparecer)-->
+            <option id="pokemons-type">Pokemon Type</option>
+            <option id="spawn-chance">Spawn Chance</option>
+            <!--colocar tipo de grid "onselect"-->
+          </select>
+        
+        <div class="container">
 
-      <div class="container">
-        <section id="card-pokemon" class="card-pokemon">
+          <section id="card-pokemon" class="card-pokemon">
 
-          <p id="0" class="img-pokemon"> </p>
+            <p id="0" class="img-pokemon"> </p>
 
-          <p id="name-pokemon" class="name-pokemon">
+            <p id="name-pokemon" class="name-pokemon">
 
-          </p>
+            </p>
 
-          <p id="num-pokemon" class="num-pokemon">
+            <p id="num-pokemon" class="num-pokemon">
 
-          </p>
+            </p>
 
-          <p id="type-pokemon" class="type-pokemon">
+            <p id="type-pokemon" class="type-pokemon">
 
-          </p>
+            </p>
 
-          <p id="weaknesses-pokemon" class="weaknesses-pokemon">
+            <p id="weaknesses-pokemon" class="weaknesses-pokemon">
 
-          </p>
-        </section>
-      </div>
-    </section>
+            </p>
 
-  </main>
+          </section>
 
-  <footer>
-    <p>Developed by</p>
-    <a href="https://github.com/natalieiss" target="_blank">
-      <strong class="github">@natalieiss</strong>
-    </a><strong>&</strong><a href="https://github.com/MonicaGuimaraes" target="_blank">
-      <strong class="github">@MonicaGuimaraes</strong>
-    </a>
-  </footer>
+        </div>
+
+      </section>
+    </aside>
+    
+
+    <footer class="baseboard">
+      <p>Developed by</p>
+      <a href="https://github.com/natalieiss" target="_blank">
+        <strong class="github">@natalieiss</strong>
+      </a><strong>&</strong><a href="https://github.com/MonicaGuimaraes" target="_blank">
+        <strong class="github">@MonicaGuimaraes</strong>
+      </a>
+    </footer>
+
+  </div>
+
   <script src="main.js" type="module"></script>
 </body>
 

@@ -9,25 +9,52 @@
     box-sizing: border-box;
 }
 
-.general{
+.container-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: "h h" "b p" "f f";
+    grid-column-gap: 10px;
+}
+
+.header-menu{
     background: white;
+    grid-area: h;
+
+}
+
+.big-card{
+    background: var(--cards);
+    grid-area: b;
 }
 
 .pokedex{
     background: var(--pokedex);
-    position: absolute;
+    grid-area: p;
+    overflow 
 }
 
-.container{
+.filters{
+    position: absolute;
+    display: hidden; 
+}
+.baseboard{
+    background-color: bisque;
+    grid-area: f;
+}
+
+/* .container{
+    position: absolute;
     display: grid;
     grid-template-columns: lfr lfr ;
     grid-template-rows: lfr;
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
-}
+} */
 
-.card-pokemon{
+/* .card-pokemon{
+    background: var(--cards);
     grid-column: ;
     grid-row: ;
     grid-area: ;
@@ -52,5 +79,5 @@
 
 .card-pokemon{
 
-}
+} */
 

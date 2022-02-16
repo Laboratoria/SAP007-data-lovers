@@ -1,16 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100&display=swap");
-
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
-}
-
-.headerContainer {
-  /* background-color: #ff3b3f;
-  color: #efefef;
-  height: 15vh; */
-}
+@import "../variables.css";
 
 .navBar {
   background-color: #ff3b3f;
@@ -100,17 +88,12 @@
   font-size: 4vmin;
 }
 
-/* .listItem:hover,
-.listItem:active {
-  border-bottom: 2px solid #efefef;
-} */
 @media (max-width: 767px) {
   .listItem {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
-    /* border-top: 1px solid white; */
     font-size: 4vmin;
   }
 }
@@ -163,75 +146,6 @@
   }
 }
 
-#inputSelect {
-  position: relative;
-  left: 60.5rem;
-  width: 10.62rem;
-  margin-top: 10px;
-}
-.cardsContainer {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-}
-.cardsContainer .cards:nth-child(n) {
-  margin: 10px auto;
-}
-.cards {
-  position: relative;
-  background-color: #caebf2;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-.poster {
-  width: 150px;
-  border-radius: 10px;
-}
-.divTitle {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 3.125rem;
-  width: 100%;
-  bottom: 0;
-  background: rgba(196, 196, 196, 0.47);
-  border-radius: 0px 0px 13.8889px 13.8889px;
-}
-.titleWithinCard {
-  position: absolute;
-  font-size: 1.18rem;
-  font-family: Montserrat;
-  text-align: center;
-}
-
-.footerContainer {
-  background-color: #015249;
-  color: #efefef;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.8vmin;
-}
-
-@media (max-width: 480px) {
-  .footerContainer {
-    font-size: 4vmin;
-  }
-}
-/* span {
-  display: inline;
-  margin-right: 4px;
-} */
-
 a {
   text-decoration: none;
   color: #efefef;
@@ -239,7 +153,6 @@ a {
 
 @media (max-width: 767px) {
   .active {
-    /* display: block; */
     display: flex;
   }
 }

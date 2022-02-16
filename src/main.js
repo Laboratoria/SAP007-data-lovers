@@ -1,7 +1,7 @@
 //import { example } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
-const pokemon = data.pokemon; 
+const pokemon = data.pokemon;
 
 let namePokemon = document.getElementById('name-pokemon')
 let image = document.getElementById('img-pokemon')
@@ -18,17 +18,17 @@ let sectionWeaknessesBig = document.getElementById('weaknesses-pokemon-big')
 
 const smallCardPokemon = () => {
     let i = 0
-    for (let onePokemon of pokemon){
-        if (onePokemon === pokemon[0]){
+    for (let onePokemon of pokemon) {
+        if (onePokemon === pokemon[0]) {
             image.insertAdjacentHTML('afterbegin', `<img src="${onePokemon.img}" alt="Imagem Pokemon" class="">`)
-            namePokemon.textContent = onePokemon.name  
+            namePokemon.textContent = onePokemon.name
             console.log(onePokemon)
         }
     }
 }
 
 pokemon.forEach((value) => {
-    if (value === pokemon[0]) {
+    if (value === pokemon[2]) {
         console.log(value.name)
         const typeAtribute = value.type //com iterar
         for (let eachTypeOfValue of typeAtribute) {
@@ -46,10 +46,51 @@ pokemon.forEach((value) => {
             console.log(eachSpecialAttack['name'], eachSpecialAttack['type'], eachSpecialAttack['base-damage'], eachSpecialAttack['energy'], eachSpecialAttack['move-duration-seg'])
         }
 
+        console.log(value.evolution.candy)
+        if (value.evolution['next-evolution']) {
+            const nextEvolutionValue = value.evolution['next-evolution']
+            for (let evolutionValue of nextEvolutionValue) {
+                console.log(evolutionValue['num'], evolutionValue['name'], evolutionValue['candy-cost'])
+                if (evolutionValue["evolution-item"]) {
+                    console.log(evolutionValue["evolution-item"].name, evolutionValue["evolution-item"].img)
+                }
 
-        const nextEvolutionValue = value.evolution['next-evolution']
-        console.log(nextEvolutionValue[0].name) //assim que transformar 
+                if (evolutionValue['next-evolution']) {
+                    let secondNextEvolutionValue = evolutionValue['next-evolution']
+                    for (let evolutionValueTwo of secondNextEvolutionValue) {
+                        console.log(evolutionValueTwo['num'], evolutionValueTwo['name'], evolutionValueTwo['candy-cost'])
 
+                        if (evolutionValueTwo["evolution-item"]) {
+                            console.log(evolutionValueTwo["evolution-item"].name, evolutionValueTwo["evolution-item"].img)
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+        if (value.evolution['prev-evolution']) {
+            const prevEvolution = value.evolution['prev-evolution']
+            for(let valuePrevEvolution of prevEvolution){
+                console.log(valuePrevEvolution['num'],valuePrevEvolution['name'],valuePrevEvolution['candy-cost'])
+                if (valuePrevEvolution["evolution-item"]) {
+                    console.log(valuePrevEvolution["evolution-item"].name, valuePrevEvolution["evolution-item"].img)
+                }
+                if (valuePrevEvolution['prev-evolution']) {
+                    const prevPrevEvolution = valuePrevEvolution['prev-evolution']
+                    for(let valuePrevEvolutionTwo of prevPrevEvolution){
+                        console.log(valuePrevEvolutionTwo['num'],valuePrevEvolutionTwo['name'],valuePrevEvolutionTwo['candy-cost'])
+                        if (valuePrevEvolutionTwo["evolution-item"]) {
+                            console.log(valuePrevEvolutionTwo["evolution-item"].name, valuePrevEvolutionTwo["evolution-item"].img)
+                        }
+                    }
+                }
+            }
+            
+        }
+        //const prevEvolution = value.evolution['prev-evolution']
+        //console.log(prevEvolution['num'])
 
         const generationPokemon = value.generation
         console.log(generationPokemon['num'])
@@ -73,3 +114,5 @@ pokemon.forEach((value) => {
         console.log(value['buddy-distance-km'])
     }
 })
+
+/*console.log(nextEvolutionValue[0].num,nextEvolutionValue[0].name,nextEvolutionValue[0]['candy-cost'],nextEvolutionValue[0].name)//assim que transformar em array selecionar o elemento com colchetes, assim ele ira virar um objeto: sendo um objeto utilizar o . e o nome do valor que quer acessar.*/

@@ -8,6 +8,8 @@ export const anotherExample = () => {
   return 'OMG';
 };
 
+let imagePokemon = document.getElementById("img-pokemon")
+
 export const showPokemons = (pokemonsList) => pokemonsList.slice(0, 251);
 
 // Filtrar Pokémons por nome através do input text

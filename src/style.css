@@ -26,6 +26,7 @@
 .big-card{
     background: var(--cards);
     grid-area: b;
+    display: flex;
 }
 
 .pokedex{

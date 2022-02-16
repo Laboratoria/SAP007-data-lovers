@@ -27,14 +27,14 @@
 .big-card{
     background: var(--cards);
     grid-area: b;
-    display: flex;
 }
 
 .pokedex{
+    margin-top: 10px;
     background: var(--pokedex);
     grid-area: p;
     overflow-y: auto;
-    display: flex;
+    display: grid;
 }
 
 .filters{

@@ -2,9 +2,10 @@ import dataGhibli from "../data/ghibli/ghibli.js";
 import { renderScreen } from "../js/pages/movies.js";
 console.log(dataGhibli);
 
-const sortArray = {
-   filterArray() {
-    let selectValueDropDown = document.getElementById("inputSelect").value;
+export const sortArray = {
+  filterArray(inputValue) {
+    let selectValueDropDown = inputValue;
+
     dataGhibli.films.sort((a, b) => {
       let titleA = a.title.toLowerCase(),
         titleB = b.title.toLowerCase(),
@@ -14,29 +15,27 @@ const sortArray = {
         DataB = parseInt(b.release_date);
 
       if (selectValueDropDown == "A-Z") {
-        return ordenar(titleA, titleB);
+        return sortArray.ordenar(titleA, titleB);
       }
       if (selectValueDropDown == "Z-A") {
-        return ordenarInvers(titleA, titleB);
+        return sortArray.ordenarInvers(titleA, titleB);
       }
       if (selectValueDropDown == "highestScore") {
-        return ordenarInvers(ratingA, ratingB);
+        return sortArray.ordenarInvers(ratingA, ratingB);
       }
       if (selectValueDropDown == "lowestScore") {
-        return ordenar(ratingA, ratingB);
+        return sortArray.ordenar(ratingA, ratingB);
       }
-      if (selectValueDropDown == "maisnovo") {
-        return ordenarInvers(DataA, DataB);
+      if (selectValueDropDown == "Newest") {
+        return sortArray.ordenarInvers(DataA, DataB);
       }
-      if (selectValueDropDown == "maisvelho") {
-        return ordenar(DataA, DataB);
+      if (selectValueDropDown == "Oldest") {
+        return sortArray.ordenar(DataA, DataB);
       }
     });
-    console.log(dataGhibli);
 
     renderScreen(dataGhibli);
-  }
-
+  },
   ordenar(a, b) {
     if (a < b) {
       return -1;
@@ -45,8 +44,8 @@ const sortArray = {
       return 1;
     }
     return 0;
-  }
-   ordenarInvers(a, b) {
+  },
+  ordenarInvers(a, b) {
     if (a < b) {
       return 1;
     }
@@ -54,6 +53,5 @@ const sortArray = {
       return -1;
     }
     return 0;
-  }
-}
-filterArray();
+  },
+};

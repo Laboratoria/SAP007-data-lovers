@@ -4,14 +4,14 @@ import { menu } from "../components/header.js";
 
 console.log(menu);
 console.log(dataGhibli);
+const cardsContainer = document.createElement("section");
 menu();
 
 export function renderScreen(data) {
-  const cardsContainer = document.createElement("section");
+  console.log("dksksk");
   document.getElementById("mainContainer").appendChild(cardsContainer);
   cardsContainer.classList.add("cardsContainer");
   cardsContainer.innerHTML = "";
-
   data.films.map((items) => {
     const card = document.createElement("ul");
     const title = document.createElement("h1");
@@ -32,5 +32,7 @@ export function renderScreen(data) {
     title.innerHTML = items.title;
   });
 }
-sortArray();
-document.getElementById("inputSelect").addEventListener("change", filterArray); //usar addEventListener pq o tipo modulo n deixa usar onchance no html :c
+renderScreen(dataGhibli);
+document.getElementById("inputSelect").addEventListener("change", (e) => {
+  sortArray.filterArray(e.target.value);
+});

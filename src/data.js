@@ -9,7 +9,6 @@ export const anotherExample = () => {
 };
 
 // export const showPokemons = (pokemonsList) => pokemonsList.slice(0, 251);
-
 // // Filtrar Pokémons por nome através do input text
 // export const filterByName = (pokemonsList, pokemonsName) => {
 //   const lowerCaseName = pokemonsName.toLowerCase();

@@ -6,58 +6,41 @@ body{
     background-color: #DEEFE7;
 }
 
+/* NAVBAR */
 
-   /* BARRA DE NAVEGAÇÃO */
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 30px 0 30px;
-    overflow: hidden;
-    background-color: #159A9C;
-    font-weight: 600;
-  }
-  
-  li {  float: left;}
-  
-  li a, .submenu {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover, .menu:hover .submenu {
-    background-color: #55ABAB;
-  }
-  
-  li.menu {
-    display: inline-block;
-  }
-  
-  .menu-conteudo {
-    display: none;
-    position: absolute;
-    background-color: #DEEFE7;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .menu-conteudo a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.navbar {
+  width: 100wh;
+  background-color: #159A9C;
+  overflow: auto;
+  padding: 5px 0px 5px 40px;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-decoration: none;
+
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #55ABAB;
+}
+
+.active {
+  background-color: #159A9C;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
     display: block;
-    text-align: left;
+    padding: 5px;
   }
-  
-  .menu-conteudo a:hover {background-color: #f1f1f1;}
-  
-  .menu:hover .menu-conteudo {
-    display: block;
-  }
+}
 
     /* BANNER */
 
@@ -75,6 +58,7 @@ body{
   flex: 1;
   padding: 10px 40px 10px 40px;
   height: 30px; 
+  text-align: center;
 }
 .row {
   display: -webkit-flex;
@@ -88,3 +72,6 @@ body{
     flex-direction: column;
   }
 }
+
+
+

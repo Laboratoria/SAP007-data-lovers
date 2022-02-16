@@ -9,24 +9,18 @@
 </head>
 <body>
     <!--AQUI COMEÇA BARRA DE NAV  --> 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Rick and Morty</a></li>
-        <li class="menu">
-          <a href="/src/explore.html" class="submenu">Explorar</a>
-          <div class="menu-conteudo">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-          </div>
-        </li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+ 
+    <div class="navbar">
+      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+      <a href="#"><i class="fa fa-fw fa-search"></i>Rick and Morty</a> 
+      <a href="explore.html"><i class="fa fa-fw fa-envelope"></i> Explorar</a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> Contato</a>
+    </div>
 
-      <div id="root"><p id="teste">Conteudo</p></div>
+
+      <div id="root">
+        <div id="teste">Conteudo</div>
+      </div>
 
       <script src="main.js" type="module"></script>
 </body>

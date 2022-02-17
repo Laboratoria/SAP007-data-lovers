@@ -67,6 +67,21 @@ export const filterCharacter = (data) =>{                                   // e
     return people;
 }
 
+export const ordenar = (data, condicao) => {
+
+    let ordenaTituloAZ = [data["title"]]
+
+   let teste = ordenaTituloAZ.sort((a,b) =>{
+       return a.title.localeCompare(b.title);
+       
+   });
+   
+console.log(teste);
+    
+    
+export function ordenar = (data) => {
+ const ordenarAnoAsc = (a,b)
+
 
 
 

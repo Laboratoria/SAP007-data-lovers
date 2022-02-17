@@ -17,8 +17,8 @@
         <img src="./imagens/logo.JPG" alt="imagem do logo - studio ghibli + icone de pincel">
         <nav>
             <ul>
-                <li><a href="personagens.html">Personagens</a></li>
-                <li><a href="grafico.html">Gráficos</a></li>
+                <li  ><a href="personagens.html">Personagens</a></li>
+                <li ><a href="grafico.html">Gráficos</a></li>
             </ul>
         </nav>
     </header>
@@ -37,22 +37,27 @@
         </section>
 
         <section class="filtraFilmes">
-            <label for="filtro">Filtrar por:</label>
-            <input list="filtro" />
-            <datalist id="filtro">
-                <option value="Diretor" id="diretor">
-                <option value="Produtor" id="produtor">
-            </datalist>
+            <form>
+                <label for="filtro">Filtrar por:</label>
+                <select id="selecao" >
+                    
+            <!-- <input list="filtro" />
+                    <datalist id="filtro" >-->
+                        <option class= "opcao" value="Diretor" id="diretor" >Diretor</option>
+                        <option class= "opcao" value="Produtor" id="produtor">Produtor</option>
+                    <!-- </datalist>-->
+                </select>
+            </form>
         </section>
 
         <section class="ordenaFilmes">
             <label for="ordenacao">Ordenar por:</label>
-            <input list="ordenacao" />
-            <datalist id="ordenacao">
-                <option value="A &#8594 Z" id="A &#8594 Z">
-                <option value="Laçamentos mais recentes" id="">
-                <option value="Laçamentos mais antigos" id=""></option>
-            </datalist>
+            <select>
+                <option selected disabled>Selecione</option>
+                <option  value="" id="A &#8594 Z">ordem alfabetica</option>
+                <option value="" id="">Laçamentos mais recentes</option>
+                <option value="" id="">laçamentos mais antigos</option>
+            </select>
 
         </section class="listaFilmes">
         <ul id="listaFilmes">

@@ -32,7 +32,25 @@ body {
     text-decoration: underline;
     color: #fefefe
 }
+.secao-sinopse {
 
+
+}
+.sinopse {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 1em;
+    color: #472009;
+   
+}
+.texto-sinopse {
+    margin: 0 0 1em;  
+}
+.video {
+    
+
+}
 
 
 

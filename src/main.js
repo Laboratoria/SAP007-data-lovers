@@ -7,6 +7,7 @@ let namePokemon = document.getElementById('name-pokemon')
 let image = document.getElementById('0')
 let numPokemon = document.getElementById('num-pokemon')
 let typePokemon = document.getElementById('type-pokemon')
+let cardSmall = document.getElementById('card-pokemon')
 
 let showPokemonBig = document.getElementById('card-pokemon-big')
 let sectionImgBig = document.getElementById('img-pokemon-big')
@@ -20,7 +21,7 @@ const smallCardPokemon = () => {
   let i = 0
   for (let onePokemon of pokemon) {
     if (onePokemon === pokemon[0]) {
-      image.insertAdjacentHTML('beforebegin', `<img src="${onePokemon.img}" alt="Imagem Pokemon" class="img-pokemon">`)
+      image.insertAdjacentHTML('afterbegin', `<img src="${onePokemon.img}" alt="Imagem Pokemon" class="img-pokemon">`)
       numPokemon.textContent = onePokemon.num
       namePokemon.textContent = onePokemon.name.toUpperCase()
       let saveType = ""
@@ -28,9 +29,15 @@ const smallCardPokemon = () => {
         saveType += (" " + oneTypePokemon.toUpperCase())
         typePokemon.textContent = saveType
       }
+    } else {
+      let saveType = ""
+      for (let oneTypePokemon of onePokemon.type) {
+        saveType += (" " + oneTypePokemon.toUpperCase())
+      }
+      cardSmall.insertAdjacentHTML("beforeend", `<div class="card-pokemon" id="${i += 1}"> <img src="${onePokemon.img}" alt="Imagem Pokemon" class="img-pokemon">
+    <p class="paragraph-card">${onePokemon.num}</p> <p class="paragraph-card">${onePokemon.name.toUpperCase()}</p> <p class="paragraph-card">${saveType}</p> </div>`)
     }
   }
-}
 }
 
 smallCardPokemon()

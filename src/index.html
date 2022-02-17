@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Universo Ghibli</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="data" href="ghibli.js" />
+        <link rel="home" href="home.html">
+    </head>
+    <body>
+        <header>
+            <h1 class="tittle-header-page-data">Universo Ghibli</h1>
+            <nav class="dropdown">
+             <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="#">News</a>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <main class="main-page-data">
+             
+                <nav class="dropdown">
+                    <ul class="dropbtn">
+                       <!--- <li class="dropdown-content"><a href="#">Filmes</a></li> -->
+                        <li><a href="#" class="director" id="name">Diretor</a>
+                            <select class="select">
+                                <option class="lista" type="button" id="#"><a href="#">Hayo Miyazaki</a></option>
+                                <option class="lista" type="button" id="#"><a href="#">Yoshifumi Kondo</a></option>
+                                <option class="lista" type="button" id="#"><a href="#">Hiroyuki Morita</a></option>
+                                <option class="lista" type="button" id="#"><a href="#">Goró Miyazaki</a></option>
+                                <option class="lista" type="button" id="#"><a href="#">Hiromasa Yonebayashi</a></option>
+                                <option class="lista" type="button" id="#"><a href="#">Isao Takahata</a></option>
+                            </select>
+                        </li>
+                    </ul>    
+                    <ul class="dropbtn">    
+                        <li><a href="#" class="producer" id="name">Produtor</a>
+                            <select class="select">
+                                <option class="#" type="button" id="#"><a href="#">Hayo Miyazaki</a></option>
+                                <option class="#" type="button" id="#"><a href="#">Isao Takahata</a></option>
+                                <option class="#" type="button" id="#"><a href="#">Toru Hara</a></option>
+                                <option class="#" type="button" id="#"><a href="#">Toshio Suzuki</a></option>
+                                <option class="#" type="button" id="#"><a href="#">Yoshiaki Nishimura</a></option>
+                                <option class="#" type="button" id="#"><a href="#">Hiromasa Yonebayashi</a></option>
+                            </select>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <button class="dropbtn" type="button">Personagens</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="A-Z" id="name">A-Z</a>
+                         <a href="#" class="Z-A" id="name">Z-A</a>
+                    </div>
+                </nav>
+                <input class="ipt-search" type="text" id="ipt-search" placeholder="&#128269">
+                <button class="btn-search" type="reset" id="btn-reset">Limpar</button>
+            </main>
+            <figure class="img-cards">
+                <img>
+            </figure>
+            <p div="resposta"></p>
+       </section>
+        <footer class="footer">
+            <h4>Conheça as Devs
+                <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
+                <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
+            </h4>
+
+        </footer>
+        <script src="main.js" type="module"></script>
+    </body>
+
 </html>

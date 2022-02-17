@@ -1,9 +1,14 @@
-// estas funciones son de ejemplo
+export const filterData = (dataGhibli, condition) => {
+  if (condition == "filme 1") {
+      return film.films[0].title
+  }
+}
 
-export const example = () => {
-  return 'example';
-};
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
+
+
+//const filterData = (data, prop, name) => {
+//const filterData = data.filter(data => data[prop] === name)
+//  return filterData;
+//};

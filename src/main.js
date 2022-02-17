@@ -4,10 +4,9 @@ import data from './data/pokemon/pokemon.js';
 const pokemon = data.pokemon;
 
 let namePokemon = document.getElementById('name-pokemon')
-let image = document.getElementById('img-pokemon')
+let image = document.getElementById('0')
 let numPokemon = document.getElementById('num-pokemon')
 let typePokemon = document.getElementById('type-pokemon')
-let weaknessesPokemon = document.getElementById('weaknesses-pokemon')
 
 let showPokemonBig = document.getElementById('card-pokemon-big')
 let sectionImgBig = document.getElementById('img-pokemon-big')
@@ -20,12 +19,19 @@ const smallCardPokemon = () => {
     let i = 0
     for (let onePokemon of pokemon) {
         if (onePokemon === pokemon[0]) {
-            image.insertAdjacentHTML('afterbegin', `<img src="${onePokemon.img}" alt="Imagem Pokemon" class="">`)
-            namePokemon.textContent = onePokemon.name
-            console.log(onePokemon)
+            image.insertAdjacentHTML('beforebegin', `<img src="${onePokemon.img}" alt="Imagem Pokemon" class="img-pokemon">`)
+            numPokemon.textContent = onePokemon.num
+            namePokemon.textContent = onePokemon.name.toUpperCase()
+            let saveType = ""
+            for(let oneTypePokemon of onePokemon.type){
+                saveType += (" " + oneTypePokemon.toUpperCase())
+                typePokemon.textContent = saveType
+            }
         }
     }
 }
+
+smallCardPokemon()
 
 pokemon.forEach((value) => {
     if (value === pokemon[2]) {

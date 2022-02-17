@@ -10,6 +10,7 @@ body {
     font-family: 'Actor', sans-serif;
     color: #ffffff;
 }
+
 .tittle-header-page-data {
     text-align: center;
     font-size: 50pt;
@@ -20,12 +21,13 @@ body {
     color: #ffffff;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border-radius: 15px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display:flex;
+    justify-content: right;
+    align-content: flex-start;
 }
 
 .dropdown-content {
@@ -34,20 +36,8 @@ body {
     background-color: #c0c0c0;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.lista {
-    display:flex;
-    align-items: center;
-    float: left;
-    
-      
-}
-.select{
-display:flex;
-align-items: center;
-float: left;
+    z-index: 2;
+    border-radius: 15px;
 }
 
 .dropdown-content a {
@@ -69,13 +59,27 @@ float: left;
     background-color: #757575;
 }
 
+.film{
+    margin-left: 75px;
+}
+
+.select{
+    border-radius: 15px;
+    display: inline;
+    align-items: center;
+    height: 6vh;
+    width: 15vh;
+    margin-left: 15px;
+
+}
+
 .main-page-data {
-    background: #ffffff;
+    background: #184E77;
     height: 12vh;
     display: flex;
-   
-    
+    align-items: center;
 }
+
 .ipt-search {
     height: 5vh;
     width: 55vh;
@@ -83,8 +87,9 @@ float: left;
     border-radius: 10px;
     background: #c0c0c0;
     font-size: 15pt;
-   
+    margin-left: 10px;
 }
+
 .btn-search {
     margin-top: 3vh;
     margin-left: 3vh;
@@ -95,7 +100,8 @@ float: left;
     background: #c0c0c0;	    
     color: #184E77;	    
     font-size: 15pt;	    
-}	
+}
+
 .footer {
     font-size: 20pt;	    
     color: #184E77;	    
@@ -107,7 +113,6 @@ float: left;
     align-items: center;
     justify-content: center;
     align-content: flex-end;
-   
 }
 
 a:link {

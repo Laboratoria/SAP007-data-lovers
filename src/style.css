@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+
+  background-image: url("imagens/fundoram2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+
+}
+.RickMorty{
+  width: auto;
+  height: 60%;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+
+}
+.logo{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+
+}

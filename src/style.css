@@ -32,20 +32,30 @@ body {
     text-decoration: underline;
     color: #fefefe
 }
-.secao-sinopse {
 
-
+.sobre-secao {
+   
 }
-.sinopse {
+.imagem-sobre {
+    width: 120px;
+    float: right;
+    margin: 0 20px 20px 0;
+}
+.sobre {
     text-align: center;
-    font-size: 22px;
     text-transform: uppercase;
     padding: 1em;
     color: #472009;
+    font-size: 22px;
+    margin: 0 0 1em;
+    clear: right;  
+}   
+
+
+
+.texto-sobre {
+    
    
-}
-.texto-sinopse {
-    margin: 0 0 1em;  
 }
 .video {
     
@@ -67,7 +77,7 @@ body {
     background: #FFFF6B;
     padding: 2rem;
 }
-.texto-centro {
+.texto-rodape {
     text-align: center;
     font-size: 12px;
     color: #472009;    

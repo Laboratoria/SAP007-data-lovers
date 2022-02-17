@@ -55,13 +55,17 @@
 
 .container{
     grid-area: c;
-    display: flex;
-    flex-direction: row;
+}
+
+.card-pokemon-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card-pokemon{
     border-radius: 10px;
-    margin: 4%;
+    margin: 5px;
     background: var(--cards);
     width: 170px;
     height: 220px;
@@ -102,7 +106,7 @@
 }
 
 .img-pokemon{
-    
+
 }
 
 .name-pokemon{

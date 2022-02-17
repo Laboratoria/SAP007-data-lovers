@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Author" content="Natalie I S. Santos e Monica Guimarães">
+  <meta name="Author" content="Natalie Silva e Mônica Guimarães">
   <meta name="description" content="Gopedia">
   <title>Gopedia</title>
   <link rel="stylesheet" href="style.css" />
@@ -16,9 +16,9 @@
   <div class="container-main">
     <header class="header-menu">
     </header>
-    <main class="big-card">
+    <main id="card-pokemon-big" class="big-card margin">
 
-      <section id="card-pokemon-big" class="big-card">
+      <section id="card-pokemon-big" class="card-big margin">
 
         <img id="img-pokemon-big" class="img-pokemon-big" />
 
@@ -29,8 +29,6 @@
         </p>
         <p id="type-pokemon-big" class="type-pokemon-big">
         </p>
-        <p id="type-pokemon" class="type-pokemon-big">
-        </p>
         <p id="weaknesses-pokemon-big" class="weaknesses-pokemon-big">
         </p>
         <p id="resistant-pokemon-big" class="resistant-pokemon-big"></p>
@@ -39,7 +37,7 @@
 
     </main>
 
-    <aside class="pokedex">
+    <aside class="pokedex margin">
       <section>
         <legend>Pokemon filter:</legend>
         <select>
@@ -49,34 +47,31 @@
           <option id="spawn-chance">Spawn Chance</option>
           <!--colocar tipo de grid "onselect"-->
         </select>
-
-        <div class="container">
-
-          <section id="card-pokemon" class="card-pokemon">
-
-            <p id="0" class="img-pokemon"> </p>
-
-            <p id="name-pokemon" class="name-pokemon">
-
-            </p>
-
-            <p id="num-pokemon" class="num-pokemon">
-
-            </p>
-
-            <p id="type-pokemon" class="type-pokemon">
-
-            </p>
-
-            <p id="weaknesses-pokemon" class="weaknesses-pokemon">
-
-            </p>
-
-          </section>
-
-        </div>
-
       </section>
+      <div class="container">
+
+        <section id="card-pokemon" class="card-pokemon">
+
+          <div id="0" class="img-pokemon">
+            <div>
+
+              <p id="name-pokemon" class="name-pokemon paragraph-card">
+
+              </p>
+
+              <p id="num-pokemon" class="num-pokemon paragraph-card">
+
+              </p>
+
+              <p id="type-pokemon" class="type-pokemon paragraph-card">
+
+              </p>
+
+        </section>
+
+      </div>
+
+
     </aside>
 
 

@@ -13,7 +13,7 @@
     background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-rows: 10vh 82vh 8vh;
     grid-template-areas: "h h" "b p" "f f";
     grid-column-gap: 10px;
 }
@@ -25,24 +25,61 @@
 }
 
 .big-card{
+    margin-left: 3%;
+    margin-right: 1%;
+    align-items: center;
     background: var(--cards);
     grid-area: b;
 }
 
+.margin{
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
 .pokedex{
-    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 3%;
     background: var(--pokedex);
     grid-area: p;
     overflow-y: auto;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
 }
 
 .filters{
-    position: absolute;
-    display: hidden; 
+    grid-area: t;
 }
+
+.container{
+    grid-area: c;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-pokemon{
+    border-radius: 10px;
+    margin: 4%;
+    background: var(--cards);
+    width: 170px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.paragraph-card{
+    margin-top: 4px;
+}
+
 .baseboard{
-    background-color: bisque;
+    text-align: center;
+    text-justify: center;
+    background-color: black;
     grid-area: f;
 }
 

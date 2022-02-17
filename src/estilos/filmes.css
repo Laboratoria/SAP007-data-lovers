@@ -28,6 +28,7 @@
 
 #imagemFilmes{
     width: 100%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .filtrosConteiner {
@@ -57,6 +58,8 @@
     width:100%;
     font-size:14px;
     text-align:center;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(0.8rem);
 }
 
 .filtroItem:focus{
@@ -76,13 +79,15 @@
 
 #recarregar{
     width: 108%;
-    height:36px;
+    height:38px;
     font-size: 18px;
     text-align: center;
     border-radius: 15px;
     background-color: #dcd4ce;
     color: rgb(0, 0, 0); 
     cursor: pointer;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(0.8rem);
  }
 
  #recarregar:hover {
@@ -92,6 +97,7 @@
 
  #pesquisaConteiner {
     width:100%;
+    margin-bottom: 10px;
   }
   
   #ordenacaoAlfabetica {

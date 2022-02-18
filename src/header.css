@@ -1,4 +1,28 @@
-header{
+/* header{
     background-color: #bfb093;
-    
-}
+} */
+
+body{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .cabecalho{
+    height: 80%;
+    background-color:#fff8ea;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-nav a{
+    text-decoration: none; 
+    color:#85d7e2;
+    font-weight: bold;
+    font-size: 100%; 
+    text-transform: uppercase; 
+   
+  }
+  
+  .menu-nav a:hover{
+    text-decoration: underline;
+  }
+

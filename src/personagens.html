@@ -4,40 +4,35 @@
 <head>
 	<meta charset="utf-8">
 	<title>Personagens Studio Ghibli</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@100;400;700 & family= Open+Sans:wght@400;700 & display=swap"
-		rel="stylesheet">
+	<link rel="stylesheet" href="personagens.css" />
 </head>
 
 <body>
-
-	<header>
-        <img src="./imagens/logo.JPG" alt="imagem do logo - studio ghibli + icone de pincel">
-        <nav>
-            <ul>
-                <li><a href="index.html">Filmes</a></li>
-                <li><a href="grafico.html">Gráfico</a></li>
-            </ul>
-        </nav>
-    </header>
+	<header class="cabecalho">
+		<img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli">
+		<nav class="menu-nav">
+			<ul>
+				<li><a href="index.html">Filmes</a></li>
+				<li><a href="grafico.html">Gráfico</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<main>
 		<h1>Personagens</h1>
-		<section class="filtrar">
-			<form>
-				<label for="filtro-genero">Fitrar por gênero</label>
-				<select class="selecione-genero">
-					<option value="todos"></option>
-					<option value="feminino"> Feminino</option>
-					<option value="masculino">Masculino</option>
+
+		<form>
+			<section class="filtrar-personagens">
+				<label for="filtraGenero">Filtrar por gênero</label>
+				<select id="selecionaGenero">
+					<option selected disabled>Selecione</option>
+					<option value="feminino" id="feminino"> Feminino</option>
+					<option value="masculino" id="masculino">Masculino</option>
 				</select>
 
-				<label for="filtro-filmes">Fitrar por filmes</label>
-				<select class="selecione-filme">
-					<option value="todos"></option>
+				<label for="filtraPersonagensPorFilme">Fitrar por filmes</label>
+				<select id="selecionaPersonagemPorFilme">
+					<option selected disabled>Selecione</option>
 					<option value="">Castelo no Céu</option>
 					<option value="">Meu Vizinho Totoro</option>
 					<option value="">Serviço de entrega da Kiki</option>
@@ -59,28 +54,29 @@
 					<option value="">O Conto da Princesa Kaguya</option>
 					<option value="">Quando Marnie estava lá</option>
 				</select>
-			</form>
-		</section>
+			</section>
+		</form>
 
 		<section class="galeria-de-cards">
 			<h2> IMAGENS</h2>
 			<ul id="cardPeople">
-
 			</ul>
 		</section>
 	</main>
 
-	<footer>
-        <div>Desenvolvido por Taize Santos & Keila Hamada</div>
-        <div><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a> 
-             <a href="https://github.com/hadamakei">Github</a></div>
-        <div><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>  
-            <a href="https://github.com/taizesantos">Github</a></div>
-        <div><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
-        <div>SAP007 | 2022</div>
-    </footer>
+	<footer class="rodape">
+		<div class="texto-rodape">Desenvolvido por Taize Santos & Keila Hamada</div>
+		<div class="link-sites-keila"><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+			<a href="https://github.com/hadamakei">Github</a>
+		</div>
+		<div class="link-sites-taize"><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+			<a href="https://github.com/taizesantos">Github</a>
+		</div>
+		<div class="link-lab"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
+		<div class="texto-rodape">SAP007 | 2022</div>
+	</footer>
 
-	<script src="personagens.js" type="module"></script> <!-- conecta com js de personagem-->
+	<script src="personagens.js" type="module"></script>
 </body>
 
 </html>

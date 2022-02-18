@@ -2,40 +2,53 @@
 @import "../components/header.css";
 @import "../components/footer.css";
 
-.inputs {
+.mainContainer {
+  min-height: 75vh;
+  background-color: #efefef;
+  width: 100%;
+  padding: 30px;
+}
+
+.inputContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
 }
-#inputSelect {
-  left: 60.5rem;
-  width: 10.62rem;
-  margin-top: 10px;
+
+.inputs {
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 38px;
+  padding-left: 15px;
 }
+
 .cardsContainer {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-
   grid-gap: 30px;
 }
+
 .cardsContainer .cards:nth-child(n) {
   margin: 10px auto;
 }
+
 .cards {
   position: relative;
   background-color: #caebf2;
-  width: 70%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 16px;
 }
+
 .poster {
-  width: 60%;
+  height: 150px;
+  /* width: 80px; */
   border-radius: 10px;
 }
 .divTitle {
@@ -60,6 +73,10 @@
   .cardsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainContainer {
+    min-height: 82vh;
   }
 }
 @media (max-width: 480px) {

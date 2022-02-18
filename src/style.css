@@ -60,19 +60,18 @@
     flex-direction: column;
 }
 
-.filters{
-    grid-area: t;
-}
-
-.container{
-    grid-area: c;
-    display: flex;
-    flex-direction: row;
+.card-pokemon-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .card-pokemon{
     border-radius: 10px;
-    margin: 4%;
+    margin: 5px;
     background: var(--cards);
     width: 170px;
     height: 220px;

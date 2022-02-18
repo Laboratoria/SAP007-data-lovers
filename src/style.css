@@ -1,5 +1,5 @@
 body {
-    font-family: 'Source Serif 4', sans-serif;
+    font-family: 'Amatic SC', cursive;
 }
 .cabecalho {
     align-items: center;
@@ -22,7 +22,7 @@ body {
     margin-right: 1.25rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 35px;
 }
 .itens:active {
     color: #ADFFFC;
@@ -33,34 +33,24 @@ body {
     color: #fefefe
 }
 
-.sobre-secao {
-   
-}
-.imagem-sobre {
-    width: 120px;
-    float: right;
-    margin: 0 20px 20px 0;
-}
+/*pagina home*/
 .sobre {
+    padding: 0.5em;
     text-align: center;
     text-transform: uppercase;
-    padding: 1em;
     color: #472009;
-    font-size: 22px;
-    margin: 0 0 1em;
-    clear: right;  
-}   
-
-
-
-.texto-sobre {
-    
-   
+    font-size: 35px;
 }
-.video {
-    
-
+.sobre-secao p {
+    text-align: justify;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #472009;
+    padding: 1rem;
+ 
 }
+
+
 
 
 
@@ -74,8 +64,8 @@ body {
 
 
 .rodape {
-    background: #FFFF6B;
     padding: 2rem;
+    background: #FFFF6B;
 }
 .texto-rodape {
     text-align: center;

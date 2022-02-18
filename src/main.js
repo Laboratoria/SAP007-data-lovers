@@ -9,12 +9,7 @@ let numPokemon = document.getElementById('num-pokemon')
 let typePokemon = document.getElementById('type-pokemon')
 
 let showPokemonBig = document.getElementById('card-pokemon-big')
-let sectionImgBig = document.getElementById('img-pokemon-big')
-let sectionNameBig = document.getElementById('name-pokemon-big')
-let sectionNumBig = document.getElementById('num-pokemon-big')
-let showTypeBig = document.getElementById('type-pokemon-big')
-let sectionWeaknessesBig = document.getElementById('weaknesses-pokemon-big')
-let resistantBig = document.getElementById('resistant-pokemon-big')
+
 
 const smallCardPokemon = () => {
   let i = 0
@@ -31,54 +26,62 @@ const smallCardPokemon = () => {
     }
   }
 }
-}
 
 smallCardPokemon()
 
 pokemon.forEach((value) => {
-  if (value === pokemon[89]) {
+  if (value === pokemon[80]) {
 
-    sectionNameBig.textContent = "Name: " + value.name.toUpperCase()
-
+    let resistantType = ""
     const resistantAtribute = value.resistant
     for (let resistantValue of resistantAtribute) {
-      resistantBig.textContent = "Resistant: " + resistantValue
+      resistantType += (" " + resistantValue)
     }
 
+    let weaknessesType = ""
+    const weaknessesAtribute = value.weaknesses
+    for (let weaknessesValue of weaknessesAtribute) {
+      weaknessesType += (" " + weaknessesValue)
+    }
+
+    let pokemonType = ""
     const typeAtribute = value.type
     for (let eachTypeOfValue of typeAtribute) {
-      showTypeBig.textContent = "Type: " + eachTypeOfValue
+      pokemonType = "Type: " + eachTypeOfValue
     }
 
+    showPokemonBig.insertAdjacentHTML('beforeend', `<img src="${value.img}" alt="Imagem Pokemon" class="image-big"> <p class="paragraph-big">About: ${value.about}</p> <p class="paragraph-big">Name: ${value.name.toUpperCase()}</p> <p class="paragraph-big">Number: ${value.num}</p> <p class="paragraph-big">Eggs: ${value.egg}</p> <p class="paragraph-big">${resistantType}</p> <p class="paragraph-big">${weaknessesType}</p> <p class="paragraph-big">${pokemonType}</p> <p class="paragraph-big">Pokemon rarity: ${value['pokemon-rarity']}</p> <p class="paragraph-big">Spawn Chance: ${value['spawn-chance']}</p> <p class="paragraph-big">Buddy distance km: ${value['buddy-distance-km']}</p>`)
+
+    let quickMoveType = ""
     const quickMoveAtribute = value['quick-move']
     for (let eachQuickMoveOfValue of quickMoveAtribute) {
-      console.log(eachQuickMoveOfValue['name'], eachQuickMoveOfValue['type'], eachQuickMoveOfValue['base-damage'], eachQuickMoveOfValue['energy'], eachQuickMoveOfValue['move-duration-seg']
-      )
+      showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Name: ${eachQuickMoveOfValue['name']}</p> <p class="paragraph-big">Type: ${eachQuickMoveOfValue['type']}</p> <p class="paragraph-big">Base damage: ${eachQuickMoveOfValue['base-damage']}</p> <p class="paragraph-big">Energy: ${eachQuickMoveOfValue['energy']}</p> <p class="paragraph-big">Move duration seg: ${eachQuickMoveOfValue['move-duration-seg']}</p>`)
+
     }
 
     const specialAttackAtribute = value['special-attack']
     for (let eachSpecialAttack of specialAttackAtribute) {
-      console.log(eachSpecialAttack['name'], eachSpecialAttack['type'], eachSpecialAttack['base-damage'], eachSpecialAttack['energy'], eachSpecialAttack['move-duration-seg'])
+      showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Name: ${eachSpecialAttack['name']}</p> <p class="paragraph-big">Type: ${eachSpecialAttack['type']}</p> <p class="paragraph-big">Base damage: ${eachSpecialAttack['base-damage']}</p> <p class="paragraph-big">Energy: ${eachSpecialAttack['energy']}</p> <p class="paragraph-big">Move duration: seg${eachSpecialAttack['move-duration-seg']}</p>`)
     }
 
-    console.log(value.evolution.candy)
+    showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big>Evolution: ${value.evolution.candy}</p>`)
+
     if (value.evolution['next-evolution']) {
       const nextEvolutionValue = value.evolution['next-evolution']
       for (let evolutionValue of nextEvolutionValue) {
-        console.log(evolutionValue['num'], evolutionValue['name'], evolutionValue['candy-cost'])
+        showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Number: ${evolutionValue['num']}</p> <p class="paragraph-big">Name: ${evolutionValue['name']}</p> <p class="paragraph-big">Candy cost: ${evolutionValue['candy-cost']}</p>`)
         if (evolutionValue["evolution-item"]) {
-          console.log(evolutionValue["evolution-item"].name, evolutionValue["evolution-item"].img)
+          showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Evolution item name: ${evolutionValue["evolution-item"].name}</p> <p class="paragraph-big">Evolution item image: ${evolutionValue["evolution-item"].img}</p>`)
         }
 
         if (evolutionValue['next-evolution']) {
           let secondNextEvolutionValue = evolutionValue['next-evolution']
           for (let evolutionValueTwo of secondNextEvolutionValue) {
-            console.log(evolutionValueTwo['num'], evolutionValueTwo['name'], evolutionValueTwo['candy-cost'])
+            showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Number: ${evolutionValueTwo['num']}</p> <p class="paragraph-big">Name: ${evolutionValueTwo['name']}</p> <p class="paragraph-big">Candy cost: ${evolutionValueTwo['candy-cost']}</p>`)
 
             if (evolutionValueTwo["evolution-item"]) {
-              console.log(evolutionValueTwo["evolution-item"].name, evolutionValueTwo["evolution-item"].img)
+              showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Evolution item name: ${evolutionValueTwo["evolution-item"].name}</p> <p class="paragraph-big">Evolution item image: ${evolutionValueTwo["evolution-item"].img}</p>`)
             }
-
           }
 
         }
@@ -88,49 +91,33 @@ pokemon.forEach((value) => {
     if (value.evolution['prev-evolution']) {
       const prevEvolution = value.evolution['prev-evolution']
       for (let valuePrevEvolution of prevEvolution) {
-        console.log(valuePrevEvolution['num'], valuePrevEvolution['name'], valuePrevEvolution['candy-cost'])
+        showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Number: ${valuePrevEvolution['num']}</p> <p class="paragraph-big">Name: ${valuePrevEvolution['name']}</p> <p class="paragraph-big">Candy cost: ${valuePrevEvolution['candy-cost']}</p>`)
         if (valuePrevEvolution["evolution-item"]) {
-          console.log(valuePrevEvolution["evolution-item"].name, valuePrevEvolution["evolution-item"].img)
+          showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Evolution item name: ${valuePrevEvolution["evolution-item"].name}</p> <p class="paragraph-big">Evolution item image: ${valuePrevEvolution["evolution-item"].img}</p>`)
         }
         if (valuePrevEvolution['prev-evolution']) {
           const prevPrevEvolution = valuePrevEvolution['prev-evolution']
           for (let valuePrevEvolutionTwo of prevPrevEvolution) {
-            console.log(valuePrevEvolutionTwo['num'], valuePrevEvolutionTwo['name'], valuePrevEvolutionTwo['candy-cost'])
+            showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Number: ${valuePrevEvolutionTwo['num']}</p> <p class="paragraph-big">Name: ${valuePrevEvolutionTwo['name']}</p> <p class="paragraph-big">Candy cost: ${valuePrevEvolutionTwo['candy-cost']}</p>`)
             if (valuePrevEvolutionTwo["evolution-item"]) {
-              console.log(valuePrevEvolutionTwo["evolution-item"].name, valuePrevEvolutionTwo["evolution-item"].img)
+              showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Evolution item: ${valuePrevEvolutionTwo["evolution-item"].name}</p> <p class="paragraph-big">Evolution item image: ${valuePrevEvolutionTwo["evolution-item"].img}</p>`)
             }
           }
         }
       }
 
     }
-    //const prevEvolution = value.evolution['prev-evolution']
-    //console.log(prevEvolution['num'])
-
 
     const generationPokemon = value.generation
-    console.log(generationPokemon['num'])
-    console.log(generationPokemon['name'])
+    showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Number: ${generationPokemon['num']}</p> <p class="paragraph-big">Name: ${generationPokemon['name']}</p>`)
 
     const sizePokemon = value.size
-    console.log(sizePokemon['height'])
-    console.log(sizePokemon['weight'])
+    showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Height: ${sizePokemon['height']}</p> <p class="paragraph-big">Weight: ${sizePokemon['weight']}</p>`)
 
     const encounterPokemon = value.encounter
-    console.log(encounterPokemon['base-flee-rate'], encounterPokemon['base-capture-rate'])
+    showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Base flee rate: ${encounterPokemon['base-flee-rate']}</p> <p class="paragraph-big">Base capture rate: ${encounterPokemon['base-capture-rate']}</p>`)
 
     const statsPokemon = value.stats
-    console.log(statsPokemon['base-attack'], statsPokemon['base-defense'], statsPokemon['base-stamina'], statsPokemon['max-cp'], statsPokemon['max-hp'])
-
-    console.log(value.about)
-    sectionImgBig.insertAdjacentHTML('beforebegin', `<img src="${value.img}" alt="Imagem Pokemon" class="">`)//console.log(value.img) //insert adjacent html
-    console.log(value['pokemon-rarity'])
-    console.log(value['spawn-chance'])
-    console.log(value.egg)
-    console.log(value['buddy-distance-km'])
-    //console.log(value['num'])
-    sectionNumBig.textContent = "Number: " + value['num']
+    showPokemonBig.insertAdjacentHTML('beforeend', `<p class="paragraph-big">Base atack: ${statsPokemon['base-attack']}</p> <p class="paragraph-big">Base defense: ${statsPokemon['base-defense']}</p> <p class="paragraph-big">Base stamina: ${statsPokemon['base-stamina']}</p> <p class="paragraph-big">Max cp: ${statsPokemon['max-cp']}</p> <p class="paragraph-big">Max hp: ${statsPokemon['max-hp']}</p>`)
   }
 })
-
-/*console.log(nextEvolutionValue[0].num,nextEvolutionValue[0].name,nextEvolutionValue[0]['candy-cost'],nextEvolutionValue[0].name)//assim que transformar em array selecionar o elemento com colchetes, assim ele ira virar um objeto: sendo um objeto utilizar o . e o nome do valor que quer acessar.*/

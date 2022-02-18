@@ -1,5 +1,11 @@
-import { example } from './data';
+import { example } from './data.js';
 
-import data from './data/ghibli/ghibli';
+import data from './data/ghibli/ghibli.js';
 
-console.log(example, data);
+
+
+
+
+
+console.log (data);
+

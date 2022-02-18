@@ -1,26 +1,23 @@
-@import "/src/styles/reset.css";
-@import "/src/styles/components/header.css";
-@import "/src/styles/components/footer.css";
+@import "../reset.css";
+@import "../components/header.css";
+@import "../components/footer.css";
 
-.inputs{
+.inputs {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
- 
 }
 #inputSelect {
-  
   left: 60.5rem;
   width: 10.62rem;
   margin-top: 10px;
-  
 }
 .cardsContainer {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  grid
+
   grid-gap: 30px;
 }
 .cardsContainer .cards:nth-child(n) {
@@ -59,14 +56,14 @@
   text-align: center;
 }
 
-@media (max-width: 767px){
-  .cardsContainer{
+@media (max-width: 767px) {
+  .cardsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
-  .cardsContainer{
+  .cardsContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }

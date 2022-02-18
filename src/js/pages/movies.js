@@ -2,7 +2,6 @@ import dataGhibli from "../../data/ghibli/ghibli.js";
 import { sortArray } from "../data.js";
 import { menu } from "../components/header.js";
 
-console.log(menu);
 console.log(dataGhibli);
 const cardsContainer = document.createElement("section");
 menu();

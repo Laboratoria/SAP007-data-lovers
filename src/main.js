@@ -3,36 +3,37 @@ import data from './data/pokemon/pokemon.js';
 
 //console.log(example, data);
 
-function showResults(event){
-    event.preventDefault();
+function showResults(event) {
+  event.preventDefault();
 
-    for(let i = 0; i < data.pokemon.length; i++){
-       let allDatas = data.pokemon[i];
-       
-       <section class="show-the-cards">
+  for (let i = 0; i < data.pokemon.length; i++) {
+    let allDatas = data.pokemon[i];
+
+    let pokemonCard =
+    `
+    <section class="show-the-cards">
       <div class="img-box">
-        <img src="naosei.img" alt=""></img>
+        <img src= "${allDatas.img}" alt=${allDatas.name}>
       </div>
          
       <div class="text-box">
-        <p class="poke-name">Nome</p>
-        <p class="poke-number">N°</p>
-        <p class="poke-type">Tipo</p>
-        <p class="poke-weaknesses">Fraqueza</p>
+        <p class="poke-name">Nome ${allDatas.name} </p>
+        <p class="poke-number">N° ${allDatas.num} </p>
+        <p class="poke-type">Tipo ${allDatas.type}</p>
+        <p class="poke-weaknesses">Fraqueza ${allDatas.weaknesses}</p>
       </div>
     </section>
-       
-       allDatas.num
-       allDatas.name
-       allDatas.type
-       allDatas.weaknesses
-       allDatas.img
-    }   
-}   
+    `;
 
-document.getElementById("confirm-button").addEventListener("click",showResults);
+    const sectionResults = document.createElement("section");
+    document.body.appendChild(sectionResults);
+    sectionResults.innerHTML = pokemonCard;
+  }
+}
+
+document.getElementById("confirm-button").addEventListener("click", showResults);
 
 
-    
+
 
 

@@ -6,6 +6,7 @@
   min-height: 75vh;
   background-color: #efefef;
   width: 100%;
+  padding: 30px;
 }
 
 .inputContainer {
@@ -13,7 +14,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
 }
 
 .inputs {
@@ -21,6 +21,7 @@
   background: #ffffff;
   border-radius: 10px;
   height: 38px;
+  padding-left: 15px;
 }
 
 .cardsContainer {
@@ -42,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding: 30px;
+  padding: 16px;
 }
 
 .poster {

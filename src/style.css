@@ -49,18 +49,13 @@
     flex-direction: column;
 }
 
-.filters{
-    grid-area: t;
-}
-
-.container{
-    grid-area: c;
-}
-
 .card-pokemon-section{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .card-pokemon{

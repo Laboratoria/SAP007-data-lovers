@@ -30,7 +30,18 @@
     align-items: center;
     background: var(--cards);
     grid-area: b;
+    overflow-y: auto;
 }
+
+.card-big {
+  display: flex;
+  flex-direction: row;
+}
+
+/*.paragraph-big {
+  padding: 50px;
+  background: rgb(68, 65, 65);
+}*/
 
 .margin{
     border-radius: 10px;

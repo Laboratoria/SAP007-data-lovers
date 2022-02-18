@@ -1,8 +1,30 @@
-import { example } from './data.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
+//import { } from './data.js';
 
-console.log(example, data);
+import data from './data/ghibli/ghibli.js';
+const films = data.films
+const mostrarFilmes = document.getElementById("printfilme");
+const mostrarFilmes2 = document.getElementById("printParagrafo");
+const primeiroElemento = films[2]
+//console.log(films)
+console.log(primeiroElemento)
+
+
+const elementoCard = `
+    <div class="card"> 
+        <img src="${primeiroElemento.poster}" alt="" class="cardImage" > 
+        <p class="cardTitle">${primeiroElemento.title} </p>
+    </div>
+
+`
+mostrarFilmes.innerHTML = elementoCard
+
+function mostrarCoisas() {
+
+}
+
+
+//mostrarCoisas()
+
+
+
+//console.log(example, data);

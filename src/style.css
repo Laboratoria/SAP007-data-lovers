@@ -49,7 +49,10 @@ body {
     padding: 1rem;
  
 }
-
+/*pagina personagens*/
+    .butonns {
+        display: flex;
+    }
 
 
 

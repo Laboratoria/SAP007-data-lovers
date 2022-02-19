@@ -12,38 +12,45 @@
 
 </head>
 
-<body>
-  <div class="container-main">
-    <header class="header-menu">
-    </header>
-    <main id="card-pokemon-big" class="big-card margin">
+<body class="body">
+  <header class="header-menu">
+    <img alt="GOPEDIA" src="./img/logo.png" class="img-header">
+  </header>
 
-      <section id="card-pokemon-big" class="card-big margin">
+  <section id="filters" class="filters">
+    <legend>Pokemon filter:</legend>
+    <select>
+      <option id="candys">Candy Cost</option>
+      <!--os botões vao ser para os filtros dos tipos do pokemon, spawn chance, candy cost (não precisa ser botão só aparecer)-->
+      <option id="pokemons-type">Pokemon Type</option>
+      <option id="spawn-chance">Spawn Chance</option>
+      <!--colocar tipo de grid "onselect"-->
+    </select>
+  </section>
+
+  <div class="container-main">
+    <main id="pokemons-search" class="main">
+
+
+
+      <section id="card-pokemon-big" class="big-card margin">
+
+      </section>
+
+
+      <section class="pokedex margin">
+
+
+        <div class="container">
+
+          <section id="card-pokemon" class="card-pokemon-section">
+          </section>
+
+        </div>
 
       </section>
 
     </main>
-
-    <aside class="pokedex margin">
-      <section>
-        <legend>Pokemon filter:</legend>
-        <select>
-          <option id="candys">Candy Cost</option>
-          <!--os botões vao ser para os filtros dos tipos do pokemon, spawn chance, candy cost (não precisa ser botão só aparecer)-->
-          <option id="pokemons-type">Pokemon Type</option>
-          <option id="spawn-chance">Spawn Chance</option>
-          <!--colocar tipo de grid "onselect"-->
-        </select>
-      </section>
-      <div class="container">
-
-        <section id="card-pokemon" class="card-pokemon-section">
-        </section>
-
-      </div>
-
-
-    </aside>
 
 
     <footer class="baseboard">

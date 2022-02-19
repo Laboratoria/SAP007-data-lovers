@@ -31,27 +31,29 @@
             <p>
         </section>
 
-        <form>
-            <section class="filtra-filmes">
-                <label for="filtraFilmes">Filtrar por:</label>
-                <select id="selecionaFiltro">
-                    <option selected disabled>Selecione</option>
-                    <optgroup label="Diretor">
-                        <option class="" value="diretor" id="diretor">Gorõ Miyazaki</option>
-                        <option class="" value="diretor" id="diretor">Hayao Miyazaki</option>
-                        <option class="" value="diretor" id="diretor">Hiromasa Yonebayashi</option>
-                        <option class="" value="diretor" id="diretor">Hiroyuki Morita</option>
-                        <option class="" value="diretor" id="diretor">Yoshifumi Kondõ</option>
-                    </optgroup>
-                    <optgroup label="Produtor">
-                        <option class="" value="produtor" id="produtor">Hayao Miyazaki</option>
-                        <option class="" value="produtor" id="produtor">Isao Takahata</option>
-                        <option class="" value="produtor" id="produtor">Toru Hara</option>
-                        <option class="" value="produtor" id="produtor">Toshio Suzuki</option>
-                        <option class="" value="produtor" id="produtor">Yoshiaki Nishimura</option>
-                    </optgroup>
-                </select>
-            </section>
+        <section class="filtraFilmes">
+            <form>
+                    <label for="filtro">Filtrar por:</label>
+                    <select id="selecao" >
+                        <option selected disabled>Selecione</option>
+                            <optgroup label="Diretor:" id="diretorOptgroup">
+                           
+                        </optgroup> 
+                        <optgroup label="Produtor:" id="produtorOptgroup">
+                           
+                        </optgroup> 
+                    </select>
+            </form>
+        </section>
+
+        <section class="ordenaFilmes">
+            <label for="ordenacao">Ordenar por:</label>
+            <select>
+                <option selected disabled>Selecione</option>
+                <option  value="" id="A &#8594 Z">ordem alfabetica</option>
+                <option value="" id="">Laçamentos mais recentes</option>
+                <option value="" id="">laçamentos mais antigos</option>
+            </select>
 
             <section class="ordena-filmes">
                 <label for="ordenaFilmes">Ordenar por:</label>

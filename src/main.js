@@ -25,7 +25,6 @@ const smallCardPokemon = () => {
 smallCardPokemon()
 
 
-console.log(sectionCardsPokemon)
 
 sectionCardsPokemon.addEventListener("click", (e) => {
 

@@ -1,5 +1,7 @@
 //funcao filtar filmes e retorna dados dos filmes
-export const filterData = (data, opcaoEscolhida ) => {                                          
+export const filterData = (data, valorEscolhido ) => {         
+    console.log("FILTRANDO")
+    console.log(valorEscolhido)                                 
     
     //cria array pra guardar os filmes
     let movies = [];                                                            

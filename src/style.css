@@ -8,56 +8,67 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.body{
+  background: black;
+}
 .container-main{
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 10vh 82vh 8vh;
-    grid-template-areas: "h h" "b p" "f f";
-    grid-column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .header-menu{
+    height: 80px ;
     background: white;
-    grid-area: h;
+}
+
+.img-header{
+  height: 60px;
+  margin: 1%;
+}
+
+.filters{
+  background-color: white;
+  border-top: 4px solid snow;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
 }
 
 .big-card{
-    margin-left: 3%;
     margin-right: 1%;
+    width: 46vw;
     align-items: center;
     background: var(--cards);
-    grid-area: b;
     overflow-y: auto;
 }
 
-.card-big {
-  display: flex;
-  flex-direction: row;
-}
-
-/*.paragraph-big {
-  padding: 50px;
-  background: rgb(68, 65, 65);
-}*/
-
 .margin{
     border-radius: 10px;
-    margin-top: 4%;
+    margin-top: 15px;
 }
 
 .pokedex{
     margin-left: 1%;
-    margin-right: 3%;
+    height:  70vh;
+    width: 46vw;
     background: var(--pokedex);
-    grid-area: p;
-    overflow-y: auto;
     display: flex;
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .card-pokemon-section{
@@ -90,44 +101,30 @@
     text-align: center;
     text-justify: center;
     background-color: black;
-    grid-area: f;
 }
 
-/* .container{
-    position: absolute;
-    display: grid;
-    grid-template-columns: lfr lfr ;
-    grid-template-rows: lfr;
-    grid-gap: 10px;
-    justify-items: center;
-    align-items: center;
-} */
+@media only screen and (max-width: 600px) {
+  .container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+  }
 
-/* .card-pokemon{
-    background: var(--cards);
-    grid-column: ;
-    grid-row: ;
-    grid-area: ;
+  .header-menu{
 
+
+  }
+
+  .big-card{
+    display: none;
+  }
+
+  .pokedex{
+    height: 70vh;
+    width: 98%;
 }
 
-.img-pokemon{
-
+.baseboard{
+  margin-top: auto;
 }
-
-.name-pokemon{
-
-}
-
-.num-pokemon{
-
-}
-
-.type-pokemon{
-
-}
-
-.card-pokemon{
-
-} */
-

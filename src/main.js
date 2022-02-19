@@ -4,7 +4,7 @@ import data from './data/ghibli/ghibli.js';
 const films = data.films
 const mostrarFilmes = document.getElementById("printfilme");
 const mostrarFilmes2 = document.getElementById("printParagrafo");
-const primeiroElemento = films[2]
+const primeiroElemento = films[0]
 //console.log(films)
 console.log(primeiroElemento)
 

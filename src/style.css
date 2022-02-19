@@ -38,13 +38,11 @@
   align-items: center;
 }
 
-
 .main{
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .card-big {

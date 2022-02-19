@@ -34,14 +34,15 @@
 }
 
 .card-big {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
+  flex-wrap: wrap;*/
 }
 
-/*.paragraph-big {
-  padding: 50px;
-  background: rgb(68, 65, 65);
-}*/
+.paragraph-big {
+  padding: 10px;
+  align-items: stretch;
+}
 
 .margin{
     border-radius: 10px;

@@ -1,6 +1,5 @@
-import { example } from './data.js';
-
 import data from './data/rickandmorty/rickandmorty.js';
+import { filterData } from './data.js';
 
 
-console.log(example, data);
+console.log(filterData, data);

@@ -1,9 +1,15 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
+export const filterData = (data, condition) =>  {
+ return (data.filter === condition);
 };
 
-export const anotherExample = () => {
-  return 'OMG';
+ 
+
+
+export const sortData = (data, sortBy, sortOrder) => {
+  return 'sortData';
+};
+
+export const computeStats= (data) => {
+  return'computeStats';
+
 };

@@ -43,7 +43,17 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
 
+.card-big {
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+}
+
+.paragraph-big {
+  padding: 10px;
+  align-items: stretch;
 }
 
 .big-card{

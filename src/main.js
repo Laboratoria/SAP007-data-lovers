@@ -1,85 +1,76 @@
-import { filterData } from './data.js';
+import { filterData, pegaDiretores, pegaProdutores } from './data.js';
 import data from './data/ghibli/ghibli.js';
-
-/*const recebeData = data;                                                        //salva dados
-recebeData["films"].forEach(function(filme) {                                      //entra obj film; percorre com foreach             
-    console.log(filme["title"]);                                                  // dentro do obj films tras o title  propriedade  
-    filme["people"].forEach(function(people){                                     // dentro do obj filme percorre e tras o obj people          
-        console.log(people["name"]);                                              // dentro do obj peolple tras propriedade name          
-    })
-});
-
-recebeData["films"][1]["title"];
-console.log(recebeData["films"][1]["title"]);*/
-
-const filtro = document.getElementById("selecao");
-filtro.addEventListener("change", function()  {
-    const valor = filtro.value;
-    console.log(valor)
-})
-
- function escolha (opcao){
-    let escolhido = []
-     switch(opcao){
-         case "Diretor": document.getElementById("diretor");
-         escolhido.push
-         break;
-         case "Produtor": document.getElementById("produtor");
-         escolhido.push
-         break;
-     }
-     //escolhido = document.forms[0].selecao.value;
-     //return escolhido;
-     console.log(escolhido)
- }
- 
-    
 
 //funcao que manda pro filtro de filme os dados e recebe o array com todos os filmes
 function getMovies () {      
-    //let filters = [{"text" : "poko"}];                                                       // passa dados pra filtro
-    /*let filtro = document.getElementsByClassName("opcao").value;
-    if (filtro === "Diretor"){
-        return filtro = [{director: "Hayao Miyazaki" || "Isao Takahata" || "Yoshifumi Kondō" || "Hiroyuki Morita" || "Gorō Miyazaki"|| "Hiromasa Yonebayashi" || " "}]
-    }*/
+    const filtroFilme = document.getElementById("selecao");
+    filtroFilme.addEventListener("change", function()  {
+        const opcaoEscolhida = filtroFilme.value;
+        console.log(opcaoEscolhida)
+    })
    
-    return filterData(data, escolha );
+    return filterData(data);
     
 }
 console.log(getMovies());
 
 
-
 //pega elemento pelo id da lista e guarda no card
-let card = document.getElementById("listaFilmes");                                     // pega id lista
+let card = document.getElementById("listaFilmes");                                     
 
 //guarda no items o array de filmes
-let items = getMovies();                                                                // guarda o array de obj(atributos) dos filmes
-let li;                                                                                  // var de item de lista
+let items = getMovies();                                                                
+let li;   
+let diretores = pegaDiretores(data);   
+console.log(diretores)
+let produtores = pegaProdutores(data);
+console.log(produtores)                                                                            
+const filtroDiretor = document.getElementById("diretorOptgroup");
+const filtroProdutor = document.getElementById("produtorOptgroup")
+let option;
 
+//cria filtro de diretores no html
+diretores.forEach(function(diretor){
+    option = document.createElement("option");
+    option.setAttribute("id", diretor);
+    option.setAttribute("value", diretor);
+    option.textContent = diretor;
+    filtroDiretor.appendChild(option)
+});
+
+//cria filtro de produtores no html
+produtores.forEach(function(produtor){
+    option = document.createElement("option");
+    option.setAttribute("id", produtor);
+    option.setAttribute("value", produtor);
+    option.textContent = produtor;
+    filtroProdutor.appendChild(option)
+});
+
+//cria itens dos cards dos filmes no html
 //percorre cada item do array ; 
-items.forEach(function(movie){                                                                      //percorre cada item 
+items.forEach(function(movie){       
 
     //cria item na lista
-    li = document.createElement("li");                                                                 //cria elemento na lista 
+    li = document.createElement("li");                                                                  
 
     //add conteudo no item criado
-    li.appendChild(document.createTextNode(movie["title"] + "(" + movie["year"] + "). " ));            // add no novo li com conteudo                 
+    li.appendChild(document.createTextNode(movie["title"] + "(" + movie["year"] + "). " ));                             
     li.appendChild(document.createTextNode(" Nota de avaliaçāo: "+ movie["score"] + "."));
     li.appendChild(document.createTextNode(" Direçāo: " + movie["director"] + ". Produção: " + movie["producer"]+ "."));
 
     //add img no li; passa pra funcao de img os parametos de src e alt
-    li.appendChild(displayImage(movie["poster"],movie["title"]));                                           //add no novo li a img, chama funcao da img e passa parametros
+    li.appendChild(displayImage(movie["poster"],movie["title"]));                                           
 
     //manda pra variavel da lista os itens criados
-    card.appendChild(li);                                                                                   //add li criado na lista   
+    card.appendChild(li);                                                                                      
 
 });
 
 
 //funca de mostrar imagem
-function displayImage(src, /*width, height*/  alt) {                                                        //pega os parametos da imagem, fonte e alt
-    let picture = document.createElement("img");                                                            // cria elemento de img        
+function displayImage(src, /*width, height*/  alt) {                                                        
+    let picture = document.createElement("img");                                                                    
     picture.src = src;
     
     //picture.style.width= "250px";
@@ -89,23 +80,3 @@ function displayImage(src, /*width, height*/  alt) {                            
     return picture;
 }
 
-
-
-
-
-
-
-//const recebeTitulo = films.find(films.title);
-//console.log(recebeTitulo);
-
-
-/*let dados = data.films
-
- const recebeData = data.films.filter(title);
-console.log(recebeData);
-
-//console.log(example, data);*/
-
-
-
-// \\TESSSTE

@@ -1,4 +1,5 @@
-import { filterCharacter } from './data.js';
+import { filterCharacter, pegaTitulo } from './data.js';
+
 import data from './data/ghibli/ghibli.js';
 
 //funcao manda pra filtro de personagens os dados; recebe array com os personagens
@@ -12,6 +13,19 @@ let cardPeolple = document.getElementById("cardPeople");                        
 //salva o array de personagens q veio do filtro
 let characters = getCharacter();                                                        // pega resultado(array de personagens) do filtro
 let li;                                                                                  // var de item da lista   
+let filmes = pegaTitulo(data);
+console.log(filmes);
+const filtroFilme = document.getElementById("selecioneFilme");
+let opcao;
+
+filmes.forEach(function(titulo){
+    opcao = document.createElement("option");
+    opcao.setAttribute("id", titulo);
+    opcao.setAttribute("value", titulo);
+    opcao.textContent = titulo;
+    filtroFilme.appendChild(opcao);
+});
+
 
 //percorre cada personagem do array 
 characters.forEach(function(character){                                                     // percorre o array de todos os personagens

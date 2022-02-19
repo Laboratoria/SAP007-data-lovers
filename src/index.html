@@ -38,15 +38,21 @@
 
         <section class="filtraFilmes">
             <form>
-                <label for="filtro">Filtrar por:</label>
-                <select id="selecao" >
-                    
-            <!-- <input list="filtro" />
-                    <datalist id="filtro" >-->
-                        <option class= "opcao" value="Diretor" id="diretor" >Diretor</option>
-                        <option class= "opcao" value="Produtor" id="produtor">Produtor</option>
-                    <!-- </datalist>-->
-                </select>
+                    <label for="filtro">Filtrar por:</label>
+                    <select id="selecao" >
+                        <option selected disabled>Selecione</option>
+                            <optgroup label="Diretor:" id="diretorOptgroup">
+                            <!-- <option class= "opcao" value="Diretor" id="Diretor" >Hayao Miyazaki</option>
+                            <option class= "opcao" value="Diretor" id="Diretor">Isao Takahata</option>
+                            <option class= "opcao" value="Diretor" id="Diretor">Yoshifumi Kondō</option>
+                            <option class= "opcao" value="Diretor" id="Diretor">Hiroyuki Morita</option>
+                            <option class= "opcao" value="Diretor" id="Diretor">Gorō Miyazaki</option>
+                            <option class= "opcao" value="Diretor" id="Diretor">diretor 2</option> -->
+                        </optgroup> 
+                        <optgroup label="Produtor:" id="produtorOptgroup">
+                           
+                        </optgroup> 
+                    </select>
             </form>
         </section>
 

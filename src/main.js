@@ -10,20 +10,10 @@ filtro.addEventListener("change", function()  {
     exibeFilmes(valorEscolhido);
 })
 
-
-
 //funcao que manda pro filtro de filme os dados e recebe o array com todos os filmes
 function getMovies (valorEscolhido) {      
-   
     return filterData(data, valorEscolhido );
-    
 }
-
-
-//pega elemento pelo id da lista e guarda no card
-                                   
-
-//guarda no items o array de filmes
 
 let diretores = pegaDiretores(data);   
 console.log(diretores)
@@ -51,8 +41,6 @@ produtores.forEach(function(produtor){
     filtroProdutor.appendChild(option)
 });
 
-
-
 function exibeFilmes (valorEscolhido){
     let card = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
@@ -79,7 +67,6 @@ function exibeFilmes (valorEscolhido){
 
     });
 }
-
 
 //funca de mostrar imagem
 function displayImage(src, /*width, height*/  alt) {                                                        

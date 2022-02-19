@@ -4,29 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>Data Lovers Studio Ghibli</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@100;400;700 & family= Open+Sans:wght@400;700 & display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="filmes.css" />
 </head>
 
 <body>
-    <header>
-        <img src="./imagens/logo.JPG" alt="imagem do logo - studio ghibli + icone de pincel">
-        <nav>
+    <header class="cabecalho">
+        <img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli">
+        <nav class="menu-nav">
             <ul>
-                <li  ><a href="personagens.html">Personagens</a></li>
-                <li ><a href="grafico.html">Gráficos</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="grafico.html">Gráficos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2 class="tituloPagina">Uma incrível forma de contar histórias</h2>
-            <p class="descriçãoPagina">O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao
+            <h2 class="titulo-pagina">Uma incrível forma de contar histórias</h2>
+            <p class="descrição-pagina">O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao
                 Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma. Ele conta com 20 longas-metragens e se
                 destaca ao provar que a animação não é só para crianças, bem como pela representatividade feminina em
                 seus personagens.<br>
@@ -65,22 +60,33 @@
                 <option value="" id="">laçamentos mais antigos</option>
             </select>
 
-        </section class="listaFilmes">
-        <ul id="listaFilmes">
-        </ul>
-        </section>
+            <section class="ordena-filmes">
+                <label for="ordenaFilmes">Ordenar por:</label>
+                <select id="selecionaOrdem">
+                    <option selected disabled>Selecione</option>
+                    <option value="ordemAlfabetica" id="">A &#8594 Z</option>
+                    <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
+                    <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
+                </select>
+        </form>
+        <div class="container-filmes ">
+            <article class="filmes">
+                <ul id="listaFilmes">
+                </ul>
+            </article>
+        </div>
     </main>
 
-    <footer>
-        <div>Desenvolvido por Taize Santos & Keila Hamada</div>
-        <div><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+    <footer class="rodape">
+        <div class="texto-rodape">Desenvolvido por Taize Santos & Keila Hamada</div>
+        <div class="link-sites-keila"><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
             <a href="https://github.com/hadamakei">Github</a>
         </div>
-        <div><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+        <div class="link-sites-taize"><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
             <a href="https://github.com/taizesantos">Github</a>
         </div>
-        <div><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
-        <div>SAP007 | 2022</div>
+        <div class="link-lab"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
+        <div class="texto-rodape">SAP007 | 2022</div>
     </footer>
 
     <script src="main.js" type="module"></script>

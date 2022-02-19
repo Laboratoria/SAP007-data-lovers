@@ -82,8 +82,6 @@ export const filterCharacter = (data) =>{
            //manda pro array de people o conteudo de pessoas
             people.push(                                                            
                 {
-
-                    //propriedade q vai usar no personagens js: parametro[valor da propridade, nome igual o q esta no data]
                     "name": person["name"],
                     "age": person["age"],                                               
                     "gender": person["gender"],
@@ -97,45 +95,17 @@ export const filterCharacter = (data) =>{
     return people;
 }
 
-/*export const ordenar = (data, condicao) => {
+//export const ordenar = (data, condicao) => {
 
-    let ordenaTituloAZ = [data["title"]]
+//     let ordenaTituloAZ = [data["title"]]
 
-   let teste = ordenaTituloAZ.sort((a,b) =>{
-       return a.title.localeCompare(b.title);
+//    let teste = ordenaTituloAZ.sort((a,b) =>{
+//        return a.title.localeCompare(b.title);
        
-   });
+//    });
    
-console.log(teste);
+// console.log(teste);
     
     
-export function ordenar = (data) => {
- const ordenarAnoAsc = (a,b)
-
-
-
-
-//sortData(data, sortBy, sortOrder)
-//computeStats(data)
-
-/*export const ordenar = (data) => {
-
-    let ordenaTituloAZ = [data["title"]]
-
-    ordenaTituloAZ.sort(function(a, b){
-        let ta = a.title,
-            tb = b.title;
-
-        if (ta < tb) {
-            return -1;
-        }
-        if (ta > tb) {
-            return 1;
-        }
-        return 
-        
-
-    })
-    ordenaTituloAZ.push
-    console.log(ordenaTituloAZ)
-};*/
+// export function ordenar = (data) => {
+//  const ordenarAnoAsc = (a,b)

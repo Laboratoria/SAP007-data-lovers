@@ -1,6 +1,29 @@
 import { filterData, pegaDiretores, pegaProdutores } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
+
+const filtro = document.getElementById("selecionaFiltro");
+filtro.addEventListener("change", function()  {
+    const valor = filtro.value;
+    console.log(valor)
+})
+
+ function escolha (opcao){
+    let escolhido = []
+     switch(opcao){
+         case "Diretor": document.getElementById("diretor");
+         escolhido.push
+         break;
+         case "Produtor": document.getElementById("produtor");
+         escolhido.push
+         break;
+     }
+     //escolhido = document.forms[0].selecionaFiltro.value;
+     //return escolhido;
+     console.log(escolhido)
+ }
+ 
+
 //funcao que manda pro filtro de filme os dados e recebe o array com todos os filmes
 function getMovies () {      
     const filtroFilme = document.getElementById("selecao");
@@ -72,10 +95,8 @@ items.forEach(function(movie){
 function displayImage(src, /*width, height*/  alt) {                                                        
     let picture = document.createElement("img");                                                                    
     picture.src = src;
-    
     //picture.style.width= "250px";
     /*picture.style.height = "250px";*/
-    
     picture.alt = alt;
     return picture;
 }

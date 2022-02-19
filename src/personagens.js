@@ -8,22 +8,24 @@ const filmes = pegaTitulo(data);
 console.log(filmes);
 
 //salva o array de personagens q veio do filtro                                                        
-exibePersonagens([],[]);  
+
 
 
 const filtroFilme = document.getElementById("selecioneFilme");
-filtroFilme.addEventListener("change", function(){
-    const tituloEscolhido = filtroFilme.value;
-    console.log(tituloEscolhido)
-    exibePersonagens(tituloEscolhido, []);
-})
-
 const filtroGenero = document.getElementById("selecioneGenero");
-filtroGenero.addEventListener("change", function(){
-    const generoEscolhido = filtroGenero.value;
-    console.log(generoEscolhido);
-    exibePersonagens([], generoEscolhido);
-})
+
+let filtroGeral = function(){
+    let tituloEscolhido = filtroFilme.value;
+    let generoEscolhido = filtroGenero.value;
+    console.log(tituloEscolhido)
+    exibePersonagens(tituloEscolhido, generoEscolhido);
+}
+
+filtroGeral()
+
+filtroFilme.addEventListener("change", filtroGeral)
+
+filtroGenero.addEventListener("change", filtroGeral)
 
 function getCharacter(tituloEscolhido, generoEscolhido){                                                  
     return filterCharacter(data, tituloEscolhido, generoEscolhido);

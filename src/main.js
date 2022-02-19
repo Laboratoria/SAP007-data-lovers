@@ -5,7 +5,7 @@ exibeFilmes([]);
 const filtro = document.getElementById("selecao");
 filtro.addEventListener("change", function()  {
     let valorEscolhido = filtro.value;
-    valorEscolhido = valorEscolhido.split(".");
+    valorEscolhido = valorEscolhido.split("."); //["diretor" "nome"]
     console.log(valorEscolhido)
     exibeFilmes(valorEscolhido);
 })
@@ -26,7 +26,6 @@ let option;
 //cria filtro de diretores no html
 diretores.forEach(function(diretor){
     option = document.createElement("option");
-    option.setAttribute("id", diretor);
     option.setAttribute("value", "diretor." +diretor);
     option.textContent = diretor;
     filtroDiretor.appendChild(option)
@@ -35,35 +34,34 @@ diretores.forEach(function(diretor){
 //cria filtro de produtores no html
 produtores.forEach(function(produtor){
     option = document.createElement("option");
-    option.setAttribute("id", produtor);
     option.setAttribute("value","produtor." + produtor);
     option.textContent = produtor;
     filtroProdutor.appendChild(option)
 });
 
 function exibeFilmes (valorEscolhido){
-    let card = document.getElementById("listaFilmes");  
+    let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
-    let li;   
+    let liCard;   
 
-    card.innerHTML = "";
+    listaFilmes.innerHTML = "";
     //cria itens dos cards dos filmes no html
 //percorre cada item do array ; 
     items.forEach(function(movie){       
 
         //cria item na lista
-        li = document.createElement("li");                                                                  
+        liCard = document.createElement("li");                                                                  
 
         //add conteudo no item criado
-        li.appendChild(document.createTextNode(movie["title"] + "(" + movie["year"] + "). " ));                             
-        li.appendChild(document.createTextNode(" Nota de avaliaçāo: "+ movie["score"] + "."));
-        li.appendChild(document.createTextNode(" Direçāo: " + movie["director"] + ". Produção: " + movie["producer"]+ "."));
+        liCard.appendChild(document.createTextNode(movie["title"] + "(" + movie["year"] + "). " ));                             
+        liCard.appendChild(document.createTextNode(" Nota de avaliaçāo: "+ movie["score"] + "."));
+        liCard.appendChild(document.createTextNode(" Direçāo: " + movie["director"] + ". Produção: " + movie["producer"]+ "."));
 
         //add img no li; passa pra funcao de img os parametos de src e alt
-        li.appendChild(displayImage(movie["poster"],movie["title"]));                                           
+        liCard.appendChild(displayImage(movie["poster"],movie["title"]));                                           
 
         //manda pra variavel da lista os itens criados
-        card.appendChild(li);                                                                                      
+        listaFilmes.appendChild(liCard);                                                                                      
 
     });
 }

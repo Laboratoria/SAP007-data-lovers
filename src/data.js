@@ -87,43 +87,29 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
             //dentro de filmes; entra em pessoas e percorre cada um 
             film["people"].forEach(function (person) {
                 // console.log(people["name"]);
+                let filtroGenero = (generoEscolhido.length == 0 || generoEscolhido == person["gender"] || (generoEscolhido == "NA" && (person["gender"] != "Male" && person["gender"] != "Female")));
+                if (filtroGenero){
 
                 //manda pro array de people o conteudo de pessoas
-                people.push(
-                    
-                    {
-                        "name": person["name"],
-                        "age": person["age"],
-                        "gender": person["gender"],
-                        "specie": person["specie"],
-                        "title": film["title"],
-                        "img": person["img"],
+                    people.push(
                         
-                    }
-                    
-                );
+                        {
+                            "name": person["name"],
+                            "age": person["age"],
+                            "gender": person["gender"],
+                            "specie": person["specie"],
+                            "title": film["title"],
+                            "img": person["img"],
+                            
+                        }
+                        
+                    );
+                }
             })
         }
-        // film["people"].forEach(function (person) {
-        //     let filtroGenero = (generoEscolhido.length == 0 || (generoEscolhido == person["gender"]));
-        //     if (filtroGenero){
-        //         people.push(
-                    
-        //             {
-        //                 "name": person["name"],
-        //                 "age": person["age"],
-        //                 "gender": person["gender"],
-        //                 "specie": person["specie"],
-        //                 "title": film["title"],
-        //                 "img": person["img"],
-                        
-        //             }
-                    
-        //         );
-
-        //     }
-        // })
+        
     });
+    
     return people;
 }
 

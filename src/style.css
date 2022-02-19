@@ -1,6 +1,8 @@
 :root{
     --pokedex: #D63025;
     --cards: #C4C4C4;
+    --pattern: rgba(94, 92, 90, 0.397)
+
 }
 
 *{
@@ -45,23 +47,50 @@
   justify-content: center;
 }
 
-.card-big {
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;*/
-}
-
 .paragraph-big {
   padding: 10px;
-  align-items: stretch;
+  padding-top: 1%;
+  margin: auto;
+  text-justify: auto;
+}
+
+.paragraph-big-about{
+  width: 80%;
+  padding-top: 2%;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 2%;
+}
+
+.image-big{
+  /*padding-left: 10%;*/
+  border-style: groove;
+  border-image: round;
+  border-radius: 10%;
 }
 
 .big-card{
     margin-right: 1%;
     width: 46vw;
-    align-items: center;
+    height:  70vh;
     background: var(--cards);
     overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem;
+
+}
+
+.pattern{
+  background-color: var(--pattern);
+  margin: 4px;
+  height: auto;
+  width: 150px;
+  border-style: groove;
+  border-image: round;
+  border-radius: 3%;
 }
 
 .margin{

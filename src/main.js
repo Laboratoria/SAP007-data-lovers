@@ -1,30 +1,25 @@
 //import { } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
-const films = data.films
-const mostrarFilmes = document.getElementById("printfilme");
-const mostrarFilmes2 = document.getElementById("printParagrafo");
-const primeiroElemento = films[0]
-//console.log(films)
-console.log(primeiroElemento)
 
+const movies = data.films
+const printMovies = document.getElementById("printMoviesId");
 
-const elementoCard = `
-    <div class="card"> 
-        <img src="${primeiroElemento.poster}" alt="" class="cardImage" > 
-        <p class="cardTitle">${primeiroElemento.title} </p>
+const novoArray = movies.map(movie => 
+    
+    `
+<div class="rotateCard">
+    <div class="innerCard">
+        <div class="frontCard"> 
+            <img src="${movie.poster}" alt="" class="cardImage" > 
+            <p class="cardTitle">${movie.title} </p> 
+        </div>          
     </div>
-
-`
-mostrarFilmes.innerHTML = elementoCard
-
-function mostrarCoisas() {
-
-}
+</div>
+    `
+);
 
 
-//mostrarCoisas()
+printMovies.innerHTML = novoArray
 
 
-
-//console.log(example, data);

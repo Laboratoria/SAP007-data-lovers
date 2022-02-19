@@ -1,32 +1,21 @@
-//import {filtroGenero, filtroEspecie, filtroStatus, ordemAlfabetica, buscarNome, calcularPorcentagem} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
-//////////////////FUNÇÃO DE IMPRIMIR AS INFORMAÇÕES NA TELA
-function infoCardsTela (data) {
-  document.getElementById("info-card").innerHTML = data.map((item) => `
-  <li class="cards">
-  <img class="card-img"> src="${item.image}"</img>
-    <h2 class="card-title"> src="${item.name}"</h2>
-  </li>
-`).join('')
+function mostrarCards(data) {
+    document.getElementById('recebe-card').innerHTML = data.map((item) => `
+  <div class="card">
+    <div class="card-interno">
+        <div class="card-frente">
+         <img class="imagem-card" src="${item.image}">
+         <h3><b> ${item.name}</b></h3>
+          <div class="outras-infos">
+          <h4><b> ${item.species}</b></h4>
+          <h5><b> ${item.status}</b></h5>
+          <h5><b> ${item.gender}</b></h5>
+          </div> 
+        </div> 
+    </div>
+  </div>  
+`)
 }
-infoCardsTela(data.results);
 
-
-
-//teste
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+mostrarCards(data.results);

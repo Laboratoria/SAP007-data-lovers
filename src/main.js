@@ -9,6 +9,8 @@ function showResults(event) {
   for (let i = 0; i < data.pokemon.length; i++) {
     let allDatas = data.pokemon[i];
 
+    allDatas.replace(/poison/g,"veneno");
+
     let pokemonCard =
     `
     <section class="show-the-cards">
@@ -24,11 +26,13 @@ function showResults(event) {
       </div>
     </section>
     `;
-
+    
+     
     const sectionResults = document.createElement("section");
-    document.body.appendChild(sectionResults);
+    document.getElementById("result").appendChild(sectionResults);
     sectionResults.innerHTML = pokemonCard;
   }
+ 
 }
 
 document.getElementById("confirm-button").addEventListener("click", showResults);

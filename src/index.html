@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
- 
-    <img src="imagens/imagemfundo2 (2).png" class="RickMorty" alt="rickMorty">
-    <img src="imagens/rickmorty.png" class="logo" alt="logo">
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <img src="imagens/imagemfundo2 (2).png" class="RickMorty" alt="rickMorty">
+  <img src="imagens/rickmorty.png" class="logo" alt="logo">
 
   <main>
     <div id="root">
@@ -16,18 +18,18 @@
         <div class="nav_menus">
           <select id="menu_filter" class="options_filters">
             <option value="selected-filter" selected>Filtros</option>
-            <option value="name" selected>Nome</option>
-            <option value="life" selected>Estado de vida</option>
-            <option value="species" selected>Espécie</option>
-            <option value="planet" selected>Local de origem</option>
-            <option value="place-live" selected>Lugar onde vive</option>
+            <option value="all-characters">Todos os personagens</option>
+            <option value="life">Estado de vida</option>
+            <option value="species">Espécie</option>
+            <option value="planet">Local de origem</option>
+            <option value="place-live">Lugar onde vive</option>
           </select>
         </div>
 
         <div class="nav_menus">
           <select id="menu_sort" class="sort">
             <option value="selected-sort" selected>Ordenar</option>
-            <option value="alphabetic" selected>Ordem alfabética</option>
+            <option value="alphabetic">Ordem alfabética</option>
           </select>
 
           <div class="nav_menus">
@@ -38,6 +40,8 @@
             <input id="src_character" type="text" name="name_search" placeholder="Pesquisar">
             <button id="src_btn" class="src_name"></button>
           </div>
+        </div>
+
 
       </nav>
 
@@ -48,5 +52,6 @@
   </main>
 
   <script src="main.js" type="module"></script>
-  </body>
+</body>
+
 </html>

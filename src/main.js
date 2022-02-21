@@ -47,18 +47,22 @@ function exibeFilmes (valorEscolhido){
     listaFilmes.innerHTML = "";
     //cria itens dos cards dos filmes no html
 //percorre cada item do array ; 
-    items.forEach(function(movie){       
+    
+    items.forEach(function(movie){    
+          
 
         //cria item na lista
         liCard = document.createElement("li");                                                                  
 
         //add conteudo no item criado
-        liCard.appendChild(document.createTextNode(movie["title"] + "(" + movie["year"] + "). " ));                             
-        liCard.appendChild(document.createTextNode(" Nota de avaliaçāo: "+ movie["score"] + "."));
-        liCard.appendChild(document.createTextNode(" Direçāo: " + movie["director"] + ". Produção: " + movie["producer"]+ "."));
-
         //add img no li; passa pra funcao de img os parametos de src e alt
-        liCard.appendChild(displayImage(movie["poster"],movie["title"]));                                           
+        liCard.appendChild(displayImage(movie["poster"],movie["title"]));    
+        liCard.appendChild(document.createTextNode(movie["titulo"] + "(" + movie["ano"] + "). " ));                             
+        liCard.appendChild(document.createTextNode(" Nota de avaliaçāo: "+ movie["avaliacao"] + "."));
+        liCard.appendChild(document.createTextNode(" Direçāo: " + movie["diretor"] + ". Produção: " + movie["produtor"]+ "."));
+        liCard.setAttribute("class", "infoFilme" )
+
+                                               
 
         //manda pra variavel da lista os itens criados
         listaFilmes.appendChild(liCard);                                                                                      

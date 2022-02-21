@@ -51,12 +51,16 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
 
     cardPeolple.innerHTML = "";
     //percorre cada personagem do array 
+    if (characters.length == 0){
+        cardPeolple.innerHTML = "Sem resultados. Tente outros filtros."
+    }
     characters.forEach(function(character){                                                     
 
         //cria um item da lista
         li = document.createElement("li");                                                                             
 
         //preenche cada item da lista com o conteudo 
+        //li.setAttribute(class = "personagem"// "class", nomeclasse)
         li.appendChild(document.createTextNode("Nome: "+ character["name"]+ ". " + "Idade: " + character["age"]));          
         li.appendChild(document.createTextNode(". Gênero: " + character["gender"] + ". Espécie: " + character["specie"]));      
         li.appendChild(document.createTextNode(". Filme: " + character["title"]));                                                 

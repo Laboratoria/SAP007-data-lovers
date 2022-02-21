@@ -19,12 +19,12 @@ export const filterData = (data, valorEscolhido) => {
                     //movie["producer"])   
 
                     //propriedade q vai usar no main: parameto[valor nome = do data]                                                             
-                    "title": movie["title"],
+                    "titulo": movie["title"],
                     "poster": movie["poster"],
-                    "year": movie["release_date"],
-                    "score": movie["rt_score"],
-                    "director": movie["director"],
-                    "producer": movie["producer"],
+                    "ano": movie["release_date"],
+                    "avaliacao": movie["rt_score"],
+                    "diretor": movie["director"],
+                    "produtor": movie["producer"],
                 }
             );
         }
@@ -33,6 +33,7 @@ export const filterData = (data, valorEscolhido) => {
     return movies;
 };
 
+//filtra nome dos filmes pagina personagens
 export const pegaTitulo = (data) => {
     let titulo = [];
     data["films"].forEach((nome) => {
@@ -42,6 +43,7 @@ export const pegaTitulo = (data) => {
     return titulo;
 };
 
+//filtra diretores pagina filme
 export const pegaDiretores = (data) => {
     let diretores = [];
     data["films"].forEach((filme) => {
@@ -55,6 +57,7 @@ export const pegaDiretores = (data) => {
     return diretores;
 }
 
+//Filtra produtores pagina filme
 export const pegaProdutores = (data) => {
     let produtores = [];
     data["films"].forEach((produtor) => {
@@ -109,7 +112,7 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
         }
         
     });
-    
+
     return people;
 }
 

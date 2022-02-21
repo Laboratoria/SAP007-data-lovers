@@ -1,0 +1,14 @@
+body {
+ display: contents;
+}
+
+header {
+    height: 20%;
+    width: 100%;
+    padding: 5%;
+    background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+}

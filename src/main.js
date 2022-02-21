@@ -2,31 +2,94 @@ import { example } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 
-//Um objeto é um conjunto de pares “chave: valor”, dentro de chaves {  }
 
 console.log(data.info["count"]);
 console.log(data.info["pages"]);
 console.log(data.info["next"]);
 console.log(data.info["prev"]);
-
-console.log(data.results[0]);
-
-
-document.getElementById("teste").innerHTML = data.info["next"] 
+console.log(data.results[0].name); //Nome <<<<<<<<<<
+console.log(data.results); //Devolve o Array com todas as informações
+//console.log(data.results[""]);
 
 
 
 
-// const x = Object.values(data.info);
-// document.getElementById("teste").innerHTML = x;
+
+
+const dados = data.results;
+
+for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do Array
+    console.log(dados[i].species);
+
+    
+}
 
 
 
-//document.getElementById("mobile-menu").addEventListener("click", navbar); 
 
 
 
-// console.log(data.info["next"]); // IMPRIME NO CONSOLE 
+
+// const nomePersonagem = data.results;
+// //let escreverNome = document.getElementById("name");
 
 
-//document.getElementById("teste").innerHTML = data.results["id"]   // CHAMA A FUNÇÃO em data.js
+
+// function retornaGender (value){
+//     if (value.gender == "male")
+//     return value;
+// }
+// var genderMale = nomePersonagem.filter(retornaGender);
+// genderMale.forEach(malePersonagem => { 
+//     console.log(malePersonagem);
+// })
+
+
+
+
+
+// function genderPersonagem(gender) {
+//     if (gender === "male" ){
+//         return true
+//     } else {
+//         return false
+    
+//     }
+    
+// }
+
+// Array.filter(x => x.startsWith("b")) //Filtro array começando com a letra B
+
+
+
+// for (let idPersonagem = data.results[0].id; idPersonagem <= 492; idPersonagem = idPersonagem + 1){
+//     console.log(idPersonagem); // Imprime todas os Id no console.log
+// }
+
+
+
+
+
+
+//console.log(data.results[0].gender);
+
+// const personagem = data.results["image"]
+// let mostrarPersonagem = document.getElementById("printPersonagem");
+// let mostrarPersonagem2 = document.getElementById("printParagrafo");
+
+
+// function mostrarCoisas() {
+//     personagem.forEach(value) => {
+//         if (value === personagem[0]) {
+//             mostrarPersonagem.insertAdjacentHTML("afterbegin", '<img src="${value.image}" class="print">')
+//             for (let personagem of value.name){
+//                 mostrarPersonagem2.textContent= (personagem["gender"] + personagem["status"])
+//             }
+            
+//         }
+//     })
+
+// }
+
+//mostrarCoisas()
+

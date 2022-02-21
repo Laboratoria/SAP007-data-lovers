@@ -4,24 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="explore.css" />
     <title>Explorar</title>
 </head>
 <body>
-    <!--AQUI COMEÇA BARRA DE NAV  --> 
- 
-    <div class="navbar">
-      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-      <a href="#"><i class="fa fa-fw fa-search"></i>Rick and Morty</a> 
-      <a href="explore.html"><i class="fa fa-fw fa-envelope"></i> Explorar</a> 
-      <a href="#"><i class="fa fa-fw fa-user"></i> Contato</a>
-    </div>
+    
+     <!--BARRA DE NAV  --> 
+
+     <nav class="navbar">
+      <ul class="border">   
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="#">Rick and Morty</a></li>
+      <li><a href="explore.html"> Personagens</a></li>
+      <li><a href="#"> Epsódios</a></li>
+      </ul>
+    </nav>
+  
+    <header class="rick-and-morty">
+      <div class="box"><img src="./img/bg.png" class="image-bg" alt=""></div>
+    </header>
 
 
-      <div id="root">
-        <div id="teste">Conteudo</div>
-      </div>
+      <main>
+       
+
+        <div class="container">
+          <div class="slide"></div>
+
+          <label for="cards">Filtro: </label>
+          <select name="filtar" id="filtro">
+            <option value="Humano">HUMANO</option>
+            <option value="Humanoide">HUMANOIDE</option>
+            <option value="alien">ALIEN</option>
+            <option value="x">Poopybutthole</option>
+            <option value="mitologico">MITOLOGICO</option>
+            <option value="animal">ANIMAL</option>
+            <option value="vampiro">VAMPIRO</option>
+            <option value="Robotico">ROBOTICO</option>
+            <option value="Cronenberg">Cronenberg</optio
+          </select>
+          </div>
+    
+          <section class="cards border">
+            <div id="card border"></div>
+          </section>
+
+          <script src="main.js" type="module"></script>
+        </div>
+      </main>
 
       <script src="main.js" type="module"></script>
+    
 </body>
 </html>

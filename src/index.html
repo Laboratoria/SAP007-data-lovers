@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-  <img src="imagens/imagemfundo2 (2).png" class="RickMorty" alt="rickMorty">
-  <img src="imagens/rickmorty.png" class="logo" alt="logo">
-
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="imagens/rickM.png" class="RickMorty" alt="rickMorty">
+    <img src="imagens/rickmorty.png" class="logo" alt="logo">
   <main>
-    <div id="root">
       <nav class="menus">
         <div class="nav_menus">
-          <select id="menu_filter" class="options_filters">
+          <select id="menu_filter" class="options_filters box">
             <option value="selected-filter" selected>Filtros</option>
+
             <option value="all-characters">Todos os personagens</option>
             <option value="life">Estado de vida</option>
             <option value="species">Espécie</option>
@@ -27,31 +23,27 @@
         </div>
 
         <div class="nav_menus">
-          <select id="menu_sort" class="sort">
+          <select id="menu_sort" class="sort box">
             <option value="selected-sort" selected>Ordenar</option>
             <option value="alphabetic">Ordem alfabética</option>
           </select>
-
-          <div class="nav_menus">
-            <button id="analysis" class="button_analysis">Análises</button>
-          </div>
-
-          <div class="search_container">
-            <input id="src_character" type="text" name="name_search" placeholder="Pesquisar">
-            <button id="src_btn" class="src_name"></button>
-          </div>
         </div>
 
+        <div class="nav_menus">
+          <button id="analysis" class="button_analysis box">Análises</button>
+        </div>
+
+        <div class="nav_menus search_container">
+          <input id="src_character" type="text" name="name_search" class="input_name box" placeholder="Pesquisar">
+          <button id="src_btn" class="src_name box"> 🔎 </button>
+        </div>
 
       </nav>
-
-    </div>
-
-    <footer>Desenvolvido por Gabriela Medrado e Suelen Escorcio - 2022</footer>
 
   </main>
 
   <script src="main.js" type="module"></script>
-</body>
 
+  <footer>Desenvolvido por Gabriela Medrado e Suelen Escorcio - 2022</footer>
+</body>
 </html>

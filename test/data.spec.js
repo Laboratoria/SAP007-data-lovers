@@ -1,9 +1,9 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterData, sortData, computeStats } from '../src/data.js';
 
 
-describe('example', () => {
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterData).toBe('function');
   });
 
   it('returns `example`', () => {
@@ -12,9 +12,19 @@ describe('example', () => {
 });
 
 
-describe('anotherExample', () => {
+describe('sortData', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof sortData).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(anotherExample()).toBe('OMG');
+  });
+});
+
+describe('computeStats', () => {
+  it('is a function', () => {
+    expect(typeof computeStats).toBe('function');
   });
 
   it('returns `anotherExample`', () => {

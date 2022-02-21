@@ -21,7 +21,7 @@ const dados = data.results;
 for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do Array
     console.log(dados[i].species);
 
-    
+
 }
 
 
@@ -30,17 +30,13 @@ for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do A
 
 
 
-// const nomePersonagem = data.results;
-// //let escreverNome = document.getElementById("name");
-
-
 
 // function retornaGender (value){
 //     if (value.gender == "male")
 //     return value;
 // }
 // var genderMale = nomePersonagem.filter(retornaGender);
-// genderMale.forEach(malePersonagem => { 
+// genderMale.forEach(malePersonagem => {
 //     console.log(malePersonagem);
 // })
 
@@ -53,19 +49,10 @@ for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do A
 //         return true
 //     } else {
 //         return false
-    
+
 //     }
-    
+
 // }
-
-// Array.filter(x => x.startsWith("b")) //Filtro array começando com a letra B
-
-
-
-// for (let idPersonagem = data.results[0].id; idPersonagem <= 492; idPersonagem = idPersonagem + 1){
-//     console.log(idPersonagem); // Imprime todas os Id no console.log
-// }
-
 
 
 
@@ -85,7 +72,7 @@ for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do A
 //             for (let personagem of value.name){
 //                 mostrarPersonagem2.textContent= (personagem["gender"] + personagem["status"])
 //             }
-            
+
 //         }
 //     })
 

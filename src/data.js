@@ -17,11 +17,7 @@ export const anotherExample = () => {
 
 
 
-
-//const ordenar = personagem.sort((a,b) => a.year > b.year ? 1 : -1));
-
-
-// Ordenar por Genero 
+// Ordenar por Genero
 
 // const generoPersonagem = function (gender){
 //   if (gender === male){
@@ -36,17 +32,3 @@ export const anotherExample = () => {
 
 
 
-
-// export const ordenar = () => {
-//   return '';
-// }
-
-
-// export const example = (a, b) => {
-//   if(a > b) return 1;
-//   if (a === b) return 0;
-//   return -1;
-// };
-
-
-//export const example = (a, b) =>{}

@@ -1,34 +1,10 @@
+
 article main {
   margin: 0;
+  padding: 0;
 }
 
 
-/* NAVBAR */
-
-.navbar {
-  list-style:none;
-  background-color: #159A9C;
-  overflow: auto;
-
-}
-
-.navbar a {
-  float: left;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 15px;
-  text-align: center;
-
-}
-
-.navbar a:hover {
-  background-color: #55ABAB;
-}
-
-.active {
-  background-color: #159A9C;
-}
 
 /* CONTEUDO */
 

@@ -25,13 +25,13 @@
     <header>
       <div class="theme">
         <h1 class="themeGhibli">Ghibli Explore</h1>
-        <h3 class="themefilm">Encontre o seu filme favorito</h3>
-
+        <h3 class="subTheme">Encontre o seu filme favorito</h3>
       </div>
     </header>
 
 
-    <div class="container">
+    <div class="containerFilters">
+
       <div class="filters1" id="filterSortSelect">
         <select class="select" id="sortAZ">
           <option selected disabled value="">Ordem alfabética</option>
@@ -85,42 +85,24 @@
           <option value="100">100</option>
         </select>
       </div>
+
     </div>
-      <main>
-        <div class="print" id="printfilme">
-          <div class="card"> 
-            <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg" alt="" class="cardImage" > 
-            <p class="cardTitle"> Castle in the Sky </p>
-          </div>
 
-          <div class="card"> 
-            <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg" alt="" class="cardImage" > 
-            <p class="cardTitle"> Castle in the Sky </p>
-          </div>
+    <main class="mainContent" id="mainContentId">
+        
+      <div class="printMovies" id="printMoviesId">
 
-          <div class="card"> 
-            <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg" alt="" class="cardImage" > 
-            <p class="cardTitle"> Castle in the Sky </p>
-          </div>
+        <div class="card">
 
-          <div class="card"> 
-            <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg" alt="" class="cardImage" > 
-            <p class="cardTitle"> Castle in the Sky </p>
-          </div>
-
-          <div class="card"> 
-            <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg" alt="" class="cardImage" > 
-            <p class="cardTitle"> Castle in the Sky </p>
-          </div>
-
-          <!-- <p class="printP" id="printParagrafo" ></p> -->
-          
         </div>
-      </main>
+         
+      </div>
       
-      <footer class="footer">Desenvolvido por Elizenai Silva e Lidianne Romão para Laboratória - 2022.</footer>
+    </main>
+      
+    <footer class="footer">Desenvolvido por Elizenai Silva e Lidianne Romão para Laboratória - 2022.</footer>
 
-      <script src="main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 
 </html>

@@ -2,14 +2,12 @@ body {
     background: url("img/imgfloresta.jpg") right top fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 
 .menu {
     position: relative;
     float:inline-start;
-
 }
 
 li {
@@ -17,7 +15,6 @@ li {
     font-size:larger;
     font-family: 'Arial Narrow', Arial, sans-serif;   
     margin: 0 50px 0 0;
-
 }
 
 li a {
@@ -25,21 +22,18 @@ li a {
     font-weight: bold;
     transition: 1s all;
     cursor: pointer;
-    
 }
 
 li a:hover {
     color: red;
     transform: scale(1.2);
-
 }
 
 .theme {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     margin-top: 10px;
-    top: 20px;
-    
+    top: 20px;    
 }
 
 .themeGhibli {
@@ -47,27 +41,24 @@ li a:hover {
     font-size: 80px;
     padding: 5px;
     margin: 28px 0px 0px;
-
 }
 
-.themefilm {
-    color: white;
+.subTheme {
+    color: white;;
     font-size: 30px;
     margin: 10px;
 }
 
-.container {
+.containerFilters {
     display: flex;
     justify-content: center;
     height: 50px;
     padding-top: 20px;
     background: black;
-      
 }
 
 .filters1 {
     margin-right: 50px;
-
 }
 
 .filters3 {
@@ -80,31 +71,43 @@ li a:hover {
     
 }
 
-.footer{
-    color:white;
-    text-align: center;
-    position:fixed;
-    bottom:20px;
-    width: 95%;
-    font-size: 17px;
-    
-}
-.branco{
-    color: white;
-}
-
-
 .cardImage {
     border: 5px solid white;
     border-radius: 15px;
-
+    width: 200px;
+    height: 300px;
+    
 }
 
 .cardTitle {
     color: white;
 }
 
-.card{
-    padding: 100px;
+.Year {
+    color: white;
+}
 
+.printMovies {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center; 
+    box-sizing: border-box; 
+    object-fit: cover;
+    width: clamp(200px, 100%, 3000px); 
+}
+
+.frontCard {
+    margin: 8vh;
+}
+
+.footer {
+    color:white;
+    text-align: center;
+    position:fixed;
+    bottom:20px;
+    width: 95%;
+    font-size: 17px;    
 }

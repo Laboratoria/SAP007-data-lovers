@@ -1,9 +1,31 @@
-// estas funciones son de ejemplo
+/*import { allDatas } from './main.js';
 
-export const example = () => {
-  return 'example';
-};
+export const filtering = {
+  
+  filterData: function(allDatas) {
+    const newArray = [];
+    document.querySelector("input[type=checkbox]:checked");
+    for(let i=0; i < checkboxes.length; i++){
+      newArray.push(checkboxes[i].value)
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+      console.log(newArray);
+
+    }
+
+
+
+
+
+  },
+
+  //sortData: function(){
+
+  //},
+
+  //computerStats: function()
+  
+}*/
+
+ 
+
+  

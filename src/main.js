@@ -1,17 +1,26 @@
-import { example } from './data.js';
+//import { filtering } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
-//console.log(example, data);
+//console.log(typeof(data));
+
+document.getElementById("confirm-button").addEventListener("click", showResults);
 
 function showResults(event) {
   event.preventDefault();
 
   for (let i = 0; i < data.pokemon.length; i++) {
-    let allDatas = data.pokemon[i];
+    let allDatas = data.pokemon[i]; 
+    console.log(typeof(allDatas));
 
-    allDatas.replace(/poison/g,"veneno");
+    /*Primeira letra do nome maiuscula - deixar para fazer no final para nao atrapalhar o sort() 
+    const alteredName = allDatas.name[0].toUpperCase() + allDatas.name.substring(1);*/
 
-    let pokemonCard =
+    let arrayPokemon = new Array();
+    arrayPokemon = [allDatas.name, allDatas.num, allDatas.type, allDatas.weaknesses];
+    console.log(typeof(arrayPokemon));
+
+    // card dos pokemons string
+    const pokemonCard =
     `
     <section class="show-the-cards">
       <div class="img-box">
@@ -26,18 +35,18 @@ function showResults(event) {
       </div>
     </section>
     `;
-    
-     
+
     const sectionResults = document.createElement("section");
     document.getElementById("result").appendChild(sectionResults);
     sectionResults.innerHTML = pokemonCard;
   }
- 
+  
 }
 
-document.getElementById("confirm-button").addEventListener("click", showResults);
 
 
 
-
+/*const sectionResults = document.createElement("section");
+    document.getElementById("result").appendChild(sectionResults);
+    sectionResults.innerHTML = pokemonCard;*/
 

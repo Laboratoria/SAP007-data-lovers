@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body{
+  background-color: #003563;
+  font-family: 'Didact Gothic';
+  color: white;
+}
+
+header[role="banner"].logo{
+  display: inline-flex;
+  background-color:#003563;
+  width: 100%;
+}
+
+.botao{
+  background: #003563;
+  color: white;
+  font: 'Didact Gothic', medium;
+  border: none;
+  cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  width:auto;
+  height: auto;
+}
+
+.imagemchihiro{
+  display: flex;
+  float: center;
+  position: center;
+  max-width: 50%;
+  max-height: 50%;
+  margin: auto;
+  border: auto;
+}
+
+hr{
+  border: none;
+  margin: 30px;
+}
+
+footer{
+  background-color: #003563;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}

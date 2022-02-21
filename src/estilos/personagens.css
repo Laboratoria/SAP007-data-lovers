@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    margin-right: 0px;
+    background-color: #f1fcfd;
+  }
+  
+  .navegacaoFilmes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    background-color: #c9e4fb;
+  }
+  
+  .navegacaoItem {
+    background-color: #c9e4fb;
+    padding: 12px 14px;
+    width: 100px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-shadow: #474141;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .navegacaoItem:hover {
+    background-color: #000000ef;
+    color: #e8f8fa;
+  }
+  
+  #imagemFilmes {
+    width: 100%;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .conteinerMain {
+    background-color: #e8f8fa;
+  }
+  
+  .filtrosConteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6px;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    max-width: 1000px;
+  }
+  
+  .filtroConteinerIndividual {
+    padding: 8px;
+  }
+  
+  .filtroItem {
+    background: #c9e4fb;
+    padding: 10px 2px;
+    border-radius: 15px;
+    border-style: 2px solid;
+    border-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.8rem);
+  }
+  
+  .filtroItem:focus {
+    outline: none;
+  }
+  
+  .filtroItem:focus::placeholder {
+    visibility: hidden;
+  }
+  
+  .filtroItem {
+    padding: 7px 2px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  #recarregar {
+    width: 108%;
+    height: 38px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #c9e4fb;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.8rem);
+  }
+  
+  #recarregar:hover {
+    background-color: black;
+    color: #c9e4fb;
+  }
+  
+  #pesquisaConteiner {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #ordenacaoAlfabetica {
+    width: 20%;
+  }
+  
+  #ordenacaoPopularidade {
+    width: 20%;
+  }
+  
+  #filtroDiretor {
+    width: 20%;
+  }
+  
+  #filtroLancamento {
+    width: 20%;
+  }
+  
+  #containerCardItem {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    padding: 1em 1em;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+  }
+  
+  .containerCardIndividual {
+    box-shadow: 0 0 9px 0 #afcdeb;
+    background-color: #e8f8fa;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    max-width:300px;
+    min-width: 200px;
+    cursor: pointer;
+  }
+  
+  .containerCardIndividual:hover{ 
+    box-shadow: 0 0 9px 0 #7194b6;
+    background-color: #bee4e9d3;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    max-width:300px;
+    min-width: 200px;
+    cursor: pointer;
+    transform: scale(1.075);
+  }
+  
+  .rodape {
+    flex-shrink: 0;
+    font-size: 17px;
+    background-color: #c9e4fb;
+    color: black;
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+  }
+  
+  .rodape a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #c9e4fb;
+  }
+  .rodape p {
+    background-color: #c9e4fb;
+  }
+  

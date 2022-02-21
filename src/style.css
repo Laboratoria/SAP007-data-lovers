@@ -7,46 +7,59 @@
 body{
   background-color: #003563;
   font-family: 'Didact Gothic';
-  color: white;
+  color: black;
 }
 
-header[role="banner"].logo{
+header{
+  width: 100vw;
+  height: 10vh;
+}
+
+.header{
+  margin: auto;
+  height: 20%;
   display: inline-flex;
-  background-color:#003563;
   width: 100%;
 }
 
-.botao{
+button{
   background: #003563;
   color: white;
-  font: 'Didact Gothic', medium;
+  font: 'Didact Gothic';
+  margin: auto;
   border: none;
+  font-size: 100%;
+  text-align: center;
   cursor: pointer;
+
 }
 
 .logo{
-  display: flex;
   width:auto;
-  height: auto;
+  position: center;
+  height: 15vh;
+  padding-bottom: 1vh;
 }
 
-.imagemchihiro{
+.imagemChihiro{
   display: flex;
   float: center;
   position: center;
-  max-width: 50%;
-  max-height: 50%;
+  width: auto;
+  height: 75vh;
   margin: auto;
-  border: auto;
+  border-radius: 1%
 }
 
 hr{
-  border: none;
-  margin: 30px;
+  width: 100vw;
+  height: 2vh;
+  background-color: transparent;
 }
 
 footer{
-  background-color: #003563;
+  background-color: #133f66;
+  border: #133f66 ;
   text-align: center;
   font-size: 15px;
   padding: 10px;

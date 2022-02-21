@@ -7,9 +7,9 @@ body{
 }
 
 .border{
-  padding: 0px 50px; 
+  padding: 0px 50px;
   list-style: none;
-} 
+}
 
 .center{
   text-align: center;
@@ -45,7 +45,7 @@ body{
 
 .box{
   background-color:#1e2838;
-  
+
 }
 
 .image-bg{
@@ -56,7 +56,7 @@ body{
 /* CONTAINER */
 
 .container{
-  padding: 20px 85px 0px 85px; 
+  padding: 20px 85px 0px 85px;
   float: right;
 }
 
@@ -84,7 +84,12 @@ body{
     display: block;
   }
 
-  .image { 
+  .image {
     width: 20%;
   }
+}
+
+
+.verde{
+  color: green;
 }

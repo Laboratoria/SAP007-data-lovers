@@ -3,26 +3,37 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 
 
-console.log(data.info["count"]);
-console.log(data.info["pages"]);
-console.log(data.info["next"]);
-console.log(data.info["prev"]);
-console.log(data.results[0].name); //Nome <<<<<<<<<<
-console.log(data.results); //Devolve o Array com todas as informações
-//console.log(data.results[""]);
+// console.log(data.info["count"]);
+// console.log(data.info["pages"]);
+// console.log(data.info["next"]);
+// console.log(data.info["prev"]);
+//console.log(data.results[0].name); //Nome <<<<<<<<<<
+// console.log(data.results); //Devolve o Array com todas as informações
+// //console.log(data.results[""]);
+
+
+const filtroEspecie = document.querySelector("#filtro");
+filtroEspecie.addEventListener("change", function (event) {
+  console.log(event.target.value)
+})
+
+const cardsSection = document.querySelector("#cards-section");
+cardsSection.innerHTML = `
+    <div id="card border" class="verde">
+      <img src="${data.results[1].image}">
+      <p>${data.results[1].name}</p>
+    </div>
+`
 
 
 
+// const dados = data.results;
+
+// for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do Array
+//     console.log(dados[i].species);
 
 
-
-const dados = data.results;
-
-for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do Array
-    console.log(dados[i].species);
-
-
-}
+// }
 
 
 

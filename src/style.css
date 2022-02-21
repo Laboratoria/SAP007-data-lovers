@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  background: url("/img/rick_and_morty_fundo\ 1pg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: "Rowdies", "cursive";
+  overflow-x: hidden;
+}
+
+.main_pag1 {
+  display: flex;
+}
+
+.button-pag1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 47vw;
+   justify-content: space-between;
+}
+
+.container{
+  margin-top: 20px;
+  color: white;
+  width: 40vw;
+  height: 47vw;
+  text-align: center;
+  line-height: 35px;
+}
+
+.container h2{
+  color: #D4E6E5;
+}
+
+.button-pag1 button {
+  margin-bottom: 50px;
+  padding: 15px;
+  border-radius: 24px;
+  color: #263E5D;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  cursor: pointer;
+  width: 200px;
+  background: rgb(117,250,242);
+  background: linear-gradient(0deg, rgba(117,250,242,1) 0%, rgba(38,62,93,1) 100%);
+  border: none;
+}
+
+button:hover{
+  background: rgb(38,62,93);
+  background: linear-gradient(0deg, rgba(38,62,93,1) 0%, rgba(117,250,242,1) 100%);
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  color: #A0C0C2;
+}
+

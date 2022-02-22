@@ -1,7 +1,6 @@
-export const filterData = (data, condition) => data.filter((species) => {
-  return (species.Human == condition)
-  
-});
+  export const filterData = (data, Human) => {
+   return data.filter(species == Human)
+  };
 
 
 

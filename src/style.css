@@ -1,5 +1,6 @@
 body {
     font-family: 'Amatic SC', cursive;
+
 }
 .cabecalho {
     align-items: center;
@@ -50,19 +51,24 @@ body {
  
 }
 /*pagina personagens*/
-    .butonns {
+.botaos {
         display: flex;
-    }
-
-
-
-
-
-
-
-
-
-
+}
+.cards {
+    display: flex;
+    padding: 1rem;
+}
+#lista-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mostrar-cards {
+    padding: 0.5rem;
+    border: #472009 solid;
+    border-radius: 10px;
+    margin: 2px;
+}
 
 
 

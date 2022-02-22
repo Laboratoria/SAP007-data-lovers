@@ -30,7 +30,23 @@ export function renderScreen(data) {
     title.innerHTML = items.title;
   });
 }
+
 renderScreen(dataGhibli);
 document.getElementById("inputSelect").addEventListener("change", (e) => {
   sortArray.filterArray(e.target.value);
+});
+
+const inputSearch = document.getElementById("inputSearch");
+let ghibliMovies = [];
+// console.log(inputSearch);
+
+inputSearch.addEventListener("keyup", (e) => {
+  console.log(e.target.value, "inputValue");
+
+  const searchString = e.target.value.toLowerCase();
+  const filterMovies = ghibliMovies.filter((movies) => {
+    return movies.films.title.toLowerCase().includes(searchString);
+  });
+
+  console.log(filterMovies, "/////");
 });

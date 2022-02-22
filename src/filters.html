@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css" />
   <title>Filtrar Pokémons</title>
-  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <img class="logo" alt="Logo do OnPokemon" src="img/big-logo.png"></img>
+    <a href="index.html">
+      <img class="logo" alt="Logo do OnPokemon" src="img/logo.png">
+    </a>
   </header>
 
   <main>
@@ -74,8 +76,10 @@
       <input type="checkbox" class="checkbox" name="weakness" value="ice-weak">
     </form>
 
-    <button type="button" id="confirm-button" class="confirm-button"><img src="img/button-confirm.png"></button>
-    
+    <button type="button" id="confirm-button" class="confirm-button">
+      <img src="img/button-confirm.png">
+    </button>
+
     <section class="results-order">
       <h1 class="results">RESULTADOS</h1>
 
@@ -92,25 +96,13 @@
           <option value="less-weakness">Menor quantidade de fraquezas</option>
         </select>
       </form>
+
+      <a href="#filters.html" id="back" class="back-button">
+        <img src="img/button-return.png">
+      </a>
     </section>
 
-    <section class="show-the-cards">
-      <div class="img-box">
-        <img src="naosei.img" alt="">
-      </div>
-         
-      <div class="text-box">
-        <p class="poke-name">Nome</p>
-        <p class="poke-number">N°</p>
-        <p class="poke-type">Tipo</p>
-        <p class="poke-weaknesses">Fraqueza</p>
-      </div>
-    </section>
-
-    <a href="filters.html" id="back" class="back-button"><img src="img/button-return.png"></a>
   </main>
-
-  <script src="main.js" type="module"></script>
 </body>
 
 </html>

@@ -1,38 +1,73 @@
-import { example } from './data.js';
-import data from './data/pokemon/pokemon.js';
+import data from "./data/pokemon/pokemon.js";
 
-//console.log(example, data);
+startPageHome();
 
-function showResults(event){
-    event.preventDefault();
+document
+  .getElementById("confirm-button")
+  .addEventListener("click", showResults);
 
-    for(let i = 0; i < data.pokemon.length; i++){
-       let allDatas = data.pokemon[i];
-       
-       <section class="show-the-cards">
+function showResults(event) {
+  event.preventDefault();
+
+  for (let i = 0; i < data.pokemon.length; i++) {
+    let allDatas = data.pokemon[i];
+    console.log(typeof allDatas);
+
+    /*Primeira letra do nome maiuscula - deixar para fazer no final para nao atrapalhar o sort() 
+    const alteredName = allDatas.name[0].toUpperCase() + allDatas.name.substring(1);*/
+
+    let arrayPokemon = new Array();
+    arrayPokemon = [
+      allDatas.name,
+      allDatas.num,
+      allDatas.type,
+      allDatas.weaknesses,
+    ];
+    console.log(typeof arrayPokemon);
+
+    // card dos pokemons string
+    const pokemonCard = `
+    <section class="show-the-cards">
       <div class="img-box">
-        <img src="naosei.img" alt=""></img>
+        <img src= "${allDatas.img}" alt=${allDatas.name}>
       </div>
          
       <div class="text-box">
-        <p class="poke-name">Nome</p>
-        <p class="poke-number">N°</p>
-        <p class="poke-type">Tipo</p>
-        <p class="poke-weaknesses">Fraqueza</p>
+        <p class="poke-name">Nome ${allDatas.name} </p>
+        <p class="poke-number">N° ${allDatas.num} </p>
+        <p class="poke-type">Tipo ${allDatas.type}</p>
+        <p class="poke-weaknesses">Fraqueza ${allDatas.weaknesses}</p>
       </div>
     </section>
-       
-       allDatas.num
-       allDatas.name
-       allDatas.type
-       allDatas.weaknesses
-       allDatas.img
-    }   
-}   
+    `;
 
-document.getElementById("confirm-button").addEventListener("click",showResults);
+    const sectionResults = document.createElement("section");
+    document.getElementById("result").appendChild(sectionResults);
+    sectionResults.innerHTML = pokemonCard;
+  }
+}
 
+/*const sectionResults = document.createElement("section");
+    document.getElementById("result").appendChild(sectionResults);
+    sectionResults.innerHTML = pokemonCard;*/
 
-    
+function startPageHome() {
+  heightWindow();
+  screen.orientation.onchange = function (e) {
+    let containerMain = document.querySelector(".main-home");
+    containerMain.style.height = "";
+    heightWindow();
+  };
+}
 
-
+function heightWindow() {
+  let heightWindow = Number(window.innerHeight);
+  let heightLogo = Number(document.querySelector(".header-home").offsetHeight);
+  let heightTextBox = Number(
+    document.querySelector(".intro-text").offsetHeight
+  );
+  let heightTab = Number(document.querySelector(".details-info").offsetHeight);
+  let sumAll = heightWindow - heightLogo - heightTextBox - heightTab;
+  let containerMain = document.querySelector(".main-home");
+  containerMain.style.height = sumAll + "px";
+}

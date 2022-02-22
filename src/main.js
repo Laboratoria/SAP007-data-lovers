@@ -15,7 +15,8 @@ function heightWindow() {
   containerMain.style.height = sumAll + "px";
 }
 
-screen.orientation.onchange = function(e){
-//função que captura a rotação da tela e muda o valor do height da função heightWindow
-}
-
+screen.orientation.onchange = function (e) {
+  let containerMain = document.querySelector(".main-home");
+  containerMain.style.height = "";
+  heightWindow();
+};

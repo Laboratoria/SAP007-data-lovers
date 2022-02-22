@@ -1,17 +1,67 @@
 import { example } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
+var interval = 0;
 
-const imagens = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
-let idx = 0;
-function carrosel() {
-  idx++;
-  if (idx > img.length - 1) {
-    idx = 0;
+var maxSlider = document.querySelectorAll(".box-image").length - 1;
+
+sumir();
+
+function sumir() {
+  let img = document.querySelectorAll(".box-image img");
+  let span = document.querySelector(".bolinhas");
+
+  img[1].style.display = "none";
+  img[2].style.display = "none";
+
+  for (var i = 0; i < maxSlider + 1; i++) {
+    if (i == 0) {
+      span.innerHTML += '<span class="marcador"></span>';
+    } else {
+      span.innerHTML += "<span></span>";
+    }
   }
-  imagens.style.transform = `translatex(${-idx * 500}px)`;
 }
-setInterval(carrosel, 4000);
+
+acao();
+
+function acao() {
+  let img = document.querySelectorAll(".box-image img");
+  let span = document.querySelectorAll(".bolinhas span");
+
+  setInterval(function () {
+    img[interval].style.display = "none";
+    span[interval].classList.remove("marcador");
+    interval++;
+    if (interval > maxSlider) {
+      interval = 0;
+    }
+    img[interval].style.display = "block";
+    span[interval].classList.add("marcador");
+  }, 5000);
+}
+
+controlador();
+
+function controlador() {
+  let img = document.querySelectorAll(".box-image img");
+  document.querySelectorAll(".bolinhas span").forEach(function (valor, index) {
+    valor.addEventListener("click", function () {
+      img[interval].style.display = "none";
+      interval = index;
+      img[interval].style.display = "block";
+
+      let div = document.querySelectorAll(".bolinhas span").length;
+
+      if (div == 5) {
+        document.querySelectorAll(".bolinhas span").forEach(function (valor) {
+          valor.classList.remove("marcador");
+        });
+      }
+
+      valor.classList.add("marcador");
+    });
+  });
+}
 
 console.log(example, data);

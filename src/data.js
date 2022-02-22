@@ -1,5 +1,5 @@
 export const buscarNome = (data, busca) => { 
-    const resultadoNomes = data.filter((personagem) => personagem.name.toLowerCase().includes(busca.toLowerCase())); 
+    const resultadoNomes = data.filter((personagem) => personagem.name.toUpperCase().includes(busca.toUpperCase())); 
     return resultadoNomes; 
 }; 
 

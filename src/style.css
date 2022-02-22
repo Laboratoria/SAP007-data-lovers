@@ -99,22 +99,25 @@ header {
     box-shadow: 8px 8px 8px black;
 }
 
+.todos-cards {
+    margin-top: 300px;
+}
+
 .card {
     background-color:rgba(17, 50, 53, 0.904);
     display: inline-flex;
     padding: 15px;
     margin-bottom: 15px;
     width: 180px;
-    height: 280px;
+    height: 290px;
     border: 5px solid #D4D952;
     border-radius: 9px;
     text-align: center;
     cursor: pointer;
-    margin: 40px 5px 0px 30px;
+    margin: 10px 5px 20px 35px;
     box-shadow: 50px;
     box-shadow: 8px 8px 8px black;
     justify-content: space-evenly;
-    margin-top: 300px;
 }
 
 .card-interno {
@@ -141,7 +144,7 @@ header {
     font-weight: bold;
     color: #31B0CC;
     margin-top: 5px;
-}
+}    
 
 footer {
     font-size: 14px;

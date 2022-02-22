@@ -296,7 +296,7 @@ export default {
         {
           "id": "c491755a-407d-4d6e-b58a-240ec78b5061",
           "name": "Chibi Totoro",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c5/Little_Totoro_spirit_moving.gif",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYo9F5C14Irm60DA14C9b0H_xe_x18xUkA4bwVcavVTI-oQb62RD0yzGp68h57GecT9A&usqp=CAU",
           "gender": "NA",
           "age": "",
           "eye_color": "Black",
@@ -710,7 +710,7 @@ export default {
         {
           "id": "4a2e2cee-08ca-4d44-9564-2b3e5421bafb",
           "name": "Fio Piccolo",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/16/Fio_%282%29.jpg",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXzY34lPuGIUOO9QvBOaxeVsitswkTSSeqtT4dfkQbyCxZsxAO0ib6KpjrB3-oAiphWn0&usqp=CAU",
           "gender": "Female",
           "age": "17",
           "eye_color": "Brown",
@@ -1021,7 +1021,7 @@ export default {
         {
           "id": "34277bec-7401-43fa-a00a-5aee64b45b08",
           "name": "Eboshi",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9f/Eboshi.png",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQImiOs8-kQjlhMoLpJ58IaVaUNjXIiTgCDn5mJooywOwLCBu80K_Aj_MImqGhnR1IdmJg&usqp=CAU",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Hazel",
@@ -1497,7 +1497,7 @@ export default {
         {
           "id": "1287b275-6c32-4113-947f-519316d4a6be",
           "name": "Witch of the Waste",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e1/Howls-moving-castle-disneyscreencaps.com-10507.jpg",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqUA9vMrSsjBb2qUZcDb_eNxLuZUD97AYui_7jEjRP10mrLRBeQSRm162u-bbE1ve-U5I&usqp=CAU",
           "gender": "Female",
           "age": "59",
           "eye_color": "Brown",
@@ -1527,7 +1527,7 @@ export default {
         {
           "id": "45237428-93bf-4dd6-97ce-f10647300429",
           "name": "Prince Justin or Turnip Head",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d9/Prince_Justin.png",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqPZGelNbqENstsP8ZiZrBGgoxLZTM0a3QOMsX4gUIbru3nWMWcD5Sy8JnGX75JH1VGM&usqp=CAU",
           "gender": "Male",
           "age": "20-30",
           "eye_color": "Grey",
@@ -1865,7 +1865,7 @@ export default {
       "description": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items 'borrowed' from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
       "director": "Hiromasa Yonebayashi",
       "producer": "Toshio Suzuki",
-      "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikL9ZiDqwcyMnkLcv7vFZGoOPy1lPDTPBwFqNyCUMdJ1eRt0nBbISt-YmcqngLjokiSg&usqp=CAU",
       "release_date": "2010",
       "rt_score": "95",
       "people": [
@@ -2330,7 +2330,7 @@ export default {
         {
           "id": "28d07ace-c309-48c6-b48e-ae2ece3a238c",
           "name": "Anna Sasaki",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ae/Anna.png",
+          "img": "https://static.wixstatic.com/media/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png",
           "gender": "Female",
           "age": "12",
           "eye_color": "Blue",
@@ -2360,7 +2360,7 @@ export default {
         {
           "id": "66bca178-9920-4ec3-91e9-0d5b8a76dba1",
           "name": "Setsu Oiwa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6e/Setsu.jpg",
+          "img": "https://static.wixstatic.com/media/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png",
           "gender": "Female",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2370,7 +2370,7 @@ export default {
         {
           "id": "5b8e4413-f943-40ba-8f9f-0ba059a401f0",
           "name": "Hisako",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/93/Hisako.png",
+          "img": "https://static.wixstatic.com/media/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Dark brown",
@@ -2400,7 +2400,7 @@ export default {
         {
           "id": "31b49ef6-ee60-4603-b983-e67fa0718aa9",
           "name": "Kiyomasa Ōiwa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d7/Kiyomasa.jpg",
+          "img": "https://static.wixstatic.com/media/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png",
           "gender": "Male",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2410,7 +2410,7 @@ export default {
         {
           "id": "5d52d16f-ce72-41bd-8d88-436e206d9449",
           "name": "Doctor Yamashita",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8a/Yamashita.jpg",
+          "img": "https://static.wixstatic.com/media/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png/v1/fill/w_1000,h_667,al_c,usm_0.66_1.00_0.01/b70a6d_e90a149a340241eeabbe9391c554b92b~mv2.png",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",

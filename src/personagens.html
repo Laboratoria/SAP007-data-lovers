@@ -4,58 +4,64 @@
 <head>
 	<meta charset="utf-8">
 	<title>Personagens Studio Ghibli</title>
-	<link rel="stylesheet" href="personagens.css" />
+	<link rel="stylesheet" href="personagens.css"/>
+	<link rel="stylesheet" href="reset.css" />
 </head>
 
 <body>
 	<header class="cabecalho">
-		<img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli">
+		<div><img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli"></div>
 		<nav class="menu-nav">
 			<ul>
 				<li><a href="index.html">Filmes</a></li>
-				<li><a href="grafico.html">Gráfico</a></li>
+				<li><a href="grafico.html">Gráficos</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
-		<h1 class="titulo-pagina">Personagens</h1>
+		<h1 class="titulo">Personagens</h1>
+
 		<section class="filtrar">
 			<form>
-				<label for="filtro-genero">Fitrar por gênero</label>
-				<select class="selecione-genero" id="selecioneGenero">
-					<option selected value="">Todos</option>
-					<option value="Female"> Feminino</option>
-					<option value="Male">Masculino</option>
-					<option value="NA">Indefinido</option>
-				</select>
+				<div class="div-filtra-personagens">
+					<select class="personagens-label" id="selecioneGenero">
+						<option selected value="">Fitrar por gênero</option>
+						<option value="Female"> Feminino</option>
+						<option value="Male">Masculino</option>
+						<option value="NA">Indefinido</option>
+					</select>
 
-				<label for="filtro-filmes">Fitrar por filmes</label>
-				<select class="selecione-filme" id="selecioneFilme">
-					 <option selected value="">Todos</option>
-				</select>
-			</section>
-		</form>
+					<select class="personagens-label" id="selecioneFilme">
+						<option selected value="">Fitrar por filmes</option>
+					</select>
+				</div>
+			</form>
+		</section>
 
 		<section class=" itens">
-			<h2> IMAGENS</h2>
 			<article class="personagens borda">
 				<ul id="cardPeople" class="cardpeople">
 				</ul>
-			</article>	
+			</article>
 		</section>
+
 	</main>
 
 	<footer class="rodape">
-		<div class="texto-rodape">Desenvolvido por Taize Santos & Keila Hamada</div>
-		<div class="link-sites-keila"><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+		<div class="texto-rodape">Desenvolvido por: </div>
+		<div class="link-sites">
+			<p>Keila Hamada</p>
+			<a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
 			<a href="https://github.com/hadamakei">Github</a>
 		</div>
-		<div class="link-sites-taize"><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+		<div class="link-sites">
+			<p>Taize Santos</p>
+			<a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
 			<a href="https://github.com/taizesantos">Github</a>
 		</div>
-		<div class="link-lab"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
-		<div class="texto-rodape">SAP007 | 2022</div>
+		<div class="link-sites"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
+		<div class="texto-rodape"></div>
 	</footer>
 
 	<script src="personagens.js" type="module"></script>

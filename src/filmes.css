@@ -1,9 +1,53 @@
  @import url(padrao.css);
  
+
+ .titulo-pagina{
+  color:#b3c235;
+  font-weight: bold;
+  font-size: 40px; 
+  text-align: center;
+  font-size: 2.7rem;
+  padding-top: 2%;
+ }
+
 .descrição-pagina{ 
-  font-size: 18px;
-  color: #1b2738;
+  font-size: 1.3rem;
+  color: rgb(31, 31, 31);
+  text-align: center;
+  padding-top: 1%;
+  
 }
+
+.div-filtra-ordena-filmes{
+  display:flex;
+  align-items:center;
+  width:20%;
+  margin-left: 60%;
+  /* justify-content: flex-end; */
+  margin-bottom:20px;
+  margin-top: 40px;
+  /* margin-right: 5px; */
+}
+
+.filmes-label{
+font-size: 18px;
+text-align: center;
+color: #1b2738;
+margin-right: 5%;
+padding: 2px 2px;
+border-radius: 5px;
+border-color:#b3c235 ;
+}
+
+
+/* .container-filmes {
+  margin: 0 auto;
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+} */
 
 .filmes{
   display:flex;
@@ -11,22 +55,24 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 0px 14px 4px #8e8e9eb3; 
 }
 
-.listaFilmes{
+.lista-filmes{
     display:flex; 
     width: 25vw;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    
 }
 
-.liFilme{
+.li-filme{
     display:flex;
     width:100%;
-       
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    box-shadow: 0px 0px 14px 4px #8e8e9eb3; 
   }
 

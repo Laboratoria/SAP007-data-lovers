@@ -2,3 +2,11 @@
 @import url(footer.css);
 
 
+.titulo{
+    color:#b3c235;
+    font-weight: bold;
+    font-size: 40px; 
+    text-align: center;
+    font-size: 2.7rem;
+    padding-top: 2%;
+   }

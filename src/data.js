@@ -25,6 +25,7 @@ export const filterData = (data, valorEscolhido) => {
                     "avaliacao": movie["rt_score"],
                     "diretor": movie["director"],
                     "produtor": movie["producer"],
+                    "description": movie["description"]
                 }
             );
         }
@@ -71,7 +72,6 @@ export const pegaProdutores = (data) => {
     return produtores;
 }
 
-
 //funcao que filtra e retorna dados de personagens
 export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
     console.log(generoEscolhido)
@@ -95,7 +95,6 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
 
                 //manda pro array de people o conteudo de pessoas
                     people.push(
-                        
                         {
                             "name": person["name"],
                             "age": person["age"],
@@ -117,16 +116,10 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
 }
 
 //export const ordenar = (data, condicao) => {
-
 //     let ordenaTituloAZ = [data["title"]]
-
 //    let teste = ordenaTituloAZ.sort((a,b) =>{
 //        return a.title.localeCompare(b.title);
-
 //    });
-
 // console.log(teste);
-
-
 // export function ordenar = (data) => {
 //  const ordenarAnoAsc = (a,b)

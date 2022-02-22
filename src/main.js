@@ -59,23 +59,22 @@ function exibeFilmes (valorEscolhido){
         //add conteudo no item criado
         //add img no li; passa pra funcao de img os parametos de src e alt
         divImagem.appendChild(displayImage(movie["poster"],movie["title"]));    
-        divInfo.appendChild(textoFilme("Título: " + movie["titulo"] + "." ));   
-        divInfo.appendChild(textoFilme("Data de Lançamento: "+ movie["ano"]));                                  
-        divInfo.appendChild(textoFilme(" Nota de avaliaçāo: "+ movie["avaliacao"] + "."));
-        divInfo.appendChild(textoFilme(" Direçāo: " + movie["diretor"] + "."));
-        divInfo.appendChild(textoFilme("Produção: " + movie["produtor"]+ "."));
-
+        divInfo.appendChild(textoFilme(" Título: " + movie["titulo"]));   
+        divInfo.appendChild(textoFilme(" Data de Lançamento: " + movie["ano"]));                                  
+        divInfo.appendChild(textoFilme(" Nota de avaliaçāo: " + movie["avaliacao"]));
+        divInfo.appendChild(textoFilme(" Sinopse: " + movie["description"]));
+        divInfo.appendChild(textoFilme(" Direçāo: " + movie["diretor"]));
+        divInfo.appendChild(textoFilme(" Produção: " + movie["produtor"]));
         
-        divImagem.setAttribute("class", "posterFilme" );
-        divInfo.setAttribute("class", "infoFilme info");
-        liCard.setAttribute("class", "liFilme borda");
+        divImagem.setAttribute("class", "poster-filme" );
+        divInfo.setAttribute("class", "info-filme info");
+        liCard.setAttribute("class", "li-filme borda");
 
         liCard.appendChild(divImagem);                                 
         liCard.appendChild(divInfo);
         
         //manda pra variavel da lista os itens criados
         listaFilmes.appendChild(liCard);                                                                                      
-
     });
 }
 

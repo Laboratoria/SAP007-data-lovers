@@ -1,19 +1,27 @@
 .rodape{
-    margin-top: 60px;
-    text-align: center;
-    color:#85d7e2;
-    padding: 15px 0;
-    background-color:#fff8ea;
-    bottom: 0;
-    width: 100%;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#fff8ea;
-    font-weight: bold;
-    font-size: 100%; 
-  }
+  margin-top: 60px;
+  text-align: center;
+  color:#B3C235;
+  padding: 15px 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #454259;
+  font-weight: bold;
+  font-size: 100%; 
+}
 
+.link-sites a{
+  color:#B3C235;
+  margin: 12px;
+}
+
+.link-sites a:hover{
+  text-decoration: underline;
+  color: white;
+}
 
   

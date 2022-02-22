@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <title>Data Lovers Studio Ghibli</title>
     <link rel="stylesheet" href="filmes.css" />
+    <link rel="stylesheet" href="reset.css" />
+
 </head>
 
 <body>
     <header class="cabecalho">
-        <img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli">
+        <div><img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli"></div>
         <nav class="menu-nav">
             <ul>
                 <li><a href="personagens.html">Personagens</a></li>
@@ -22,60 +24,59 @@
         <section>
             <h2 class="titulo-pagina">Uma incrível forma de contar histórias</h2>
             <p class="descrição-pagina">O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao
-                Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma. Ele conta com 20 longas-metragens e se
+                Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma.<br> Ele conta com 20 longas-metragens e se
                 destaca ao provar que a animação não é só para crianças, bem como pela representatividade feminina em
                 seus personagens.<br>
                 Seus filmes tratam de diversos temas, desde aqueles que são normalmente abordados em obras direcionadas
-                a crianças, como amizade, amor e família. Até temáticas que não aparecem com frequência, como
+                a crianças, como amizade, amor e família.<br> Até temáticas que não aparecem com frequência, como
                 amadurecimento, medo, guerra, consciência ecológica e muitos outros.
             <p>
         </section>
 
-        <section class="filtraFilmes">
+        <section>
             <form>
-                <label for="filtro">Filtrar por:</label>
-                <select id="selecao">
-                    <option selected disabled>Selecione</option>
-                    <optgroup label="Diretor:" id="diretorOptgroup">
-                            
-                    </optgroup>
-                    <optgroup label="Produtor:" id="produtorOptgroup">
+                <div class="div-filtra-ordena-filmes">
+                    <select class="filmes-label" id="selecao">
+                        <option selected disabled>Filtrar por</option>
+                        <optgroup label="Diretor:" id="diretorOptgroup">
+                        </optgroup>
+                        <optgroup label="Produtor:" id="produtorOptgroup">
+                        </optgroup>
+                    </select>
 
-                    </optgroup>
-                </select>
+                    <select class="filmes-label" id="selecionaOrdem">
+                        <option selected disabled>Ordenar por</option>
+                        <option value="ordemAlfabetica" id="">A &#8594 Z</option>
+                        <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
+                        <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
+                    </select>
+                </div>
             </form>
         </section>
 
-        <section class="ordena-filmes">
-            <form>
-                <label for="ordenaFilmes">Ordenar por:</label>
-                <select id="selecionaOrdem">
-                    <option selected disabled>Selecione</option>
-                    <option value="ordemAlfabetica" id="">A &#8594 Z</option>
-                    <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
-                    <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
-                </select>
-            </form>
-        </section>
             <div class=" itens">
                 <article class="filmes borda">
-                    <ul id="listaFilmes" class="listaFilmes">
+                    <ul id="listaFilmes" class="lista-filmes">
 
                     </ul>
                 </article>
             </div>
     </main>
 
-    <footer class="rodape">
-        <div class="texto-rodape">Desenvolvido por Taize Santos & Keila Hamada</div>
-        <div class="link-sites-keila"><a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+   <footer class="rodape">
+        <div class="texto-rodape">Desenvolvido por: </div>
+        <div class="link-sites">
+            <p>Keila Hamada</p>
+            <a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
             <a href="https://github.com/hadamakei">Github</a>
         </div>
-        <div class="link-sites-taize"><a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+        <div class="link-sites">
+            <p>Taize Santos</p>
+            <a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
             <a href="https://github.com/taizesantos">Github</a>
         </div>
-        <div class="link-lab"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
-        <div class="texto-rodape">SAP007 | 2022</div>
+        <div class="link-sites"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
+        <div class="texto-rodape"></div>
     </footer>
 
     <script src="main.js" type="module"></script>

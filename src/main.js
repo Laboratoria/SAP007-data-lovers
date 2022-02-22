@@ -51,6 +51,9 @@ function showResults(event) {
     document.getElementById("result").appendChild(sectionResults);
     sectionResults.innerHTML = pokemonCard;*/
 
+
+
+    
 function startPageHome() {
   heightWindow();
   screen.orientation.onchange = function (e) {

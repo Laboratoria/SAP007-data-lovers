@@ -1,10 +1,7 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {filterData} from './data.js';
+import {filterData, btFiltroA, btFiltroZ} from './data.js';
 
-
- console.log(data,filterData);
-
- function aparecerCards(data) {
+function aparecerCards(data) {
      document.getElementById("lista-cards").innerHTML = data.map((item) => `
      <div class="Cards">
      <img src="${item.image}">
@@ -20,3 +17,20 @@ import {filterData} from './data.js';
 
 aparecerCards(data.results);
 
+// function orderA(e){
+//   e.preventDefault();
+//   const filteOrderAZ = orderAZ(data.results);
+
+//   aparecerCards(filterOrderAZ);
+// }
+document.getElementById("btFiltroA").addEventListener("click", (element) => {
+  element.preventDefault();
+  const sortedData = btFiltroA(data.results);
+  aparecerCards(sortedData);
+});
+
+document.getElementById("btFiltroZ").addEventListener("click", (element) => {
+  element.preventDefault();
+  const sortedData = btFiltroZ(data.results);
+  aparecerCards(sortedData);
+});

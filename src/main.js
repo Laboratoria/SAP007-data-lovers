@@ -19,7 +19,6 @@ function allCards(data) {
             <li>Gênero: ${dado.gender}</li>
             <li>Espécie: ${dado.species}</li>
             <li>Origem: ${dado.origin}</li>
-            <li>Tipo: ${dado.type}</li>
           </ul>
         </div>
       `

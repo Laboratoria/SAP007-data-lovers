@@ -1,8 +1,5 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import { filterData } from './data.js';
-
-
-console.log(data, filterData);
+import {filterData, btFiltroA, btFiltroZ} from './data.js';
 
 function aparecerCards(data) {
     document.getElementById("lista-cards").innerHTML = data.map((item) => `
@@ -23,11 +20,14 @@ function aparecerCards(data) {
 
 aparecerCards(data.results);
 
-function mostrarCards(especie) {
-    return (filterData.especie.Human)
+document.getElementById("btFiltroA").addEventListener("click", (element) => {
+  element.preventDefault();
+  const sortedData = btFiltroA(data.results);
+  aparecerCards(sortedData);
+});
 
-}
-
-mostrarCards(data.results)
-
-console.log(mostrarCards)
+document.getElementById("btFiltroZ").addEventListener("click", (element) => {
+  element.preventDefault();
+  const sortedData = btFiltroZ(data.results);
+  aparecerCards(sortedData);
+});

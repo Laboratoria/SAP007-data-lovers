@@ -1,8 +1,13 @@
-  export const filterData = (data, Human) => {
-   return data.filter(species == Human)
-  };
 
+const btFiltroA = (data) => data.sort((a, b) => (a.name < b.name) ? - 1 : 1);
 
+const btFiltroZ = (data) => data.sort((a, b) => (a.name > b.name) ? - 1 : 1);
+
+export {
+  btFiltroA,
+  btFiltroZ,
+  filterData
+}
 
 // // export const sortData = (data, sortBy, sortOrder) => {
 // //   return 'sortData';//};

@@ -2,9 +2,9 @@ import data from "../data/ghibli/ghibli.js";
 
 const containerAnimes = document.getElementById("containerCardItem");
 
-console.log(data.films);
+let filmesData = data.films;
 
-data.films.forEach(mostrarFilmes);
+filmesData.forEach(mostrarFilmes);
 
 function mostrarFilmes(data) {
   const cardAnime = document.createElement("div");

@@ -77,8 +77,8 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
         divImagem.appendChild(displayImage(character["img"], character["name"]));                                                          
         
         divImagem.className = "imagemPersonagem";
-        divInfo.setAttribute("class", "infoPersonagem info");
-        liPersonagens.setAttribute("class", "liPersonagem borda")
+        divInfo.setAttribute("class", "info-personagem info");
+        liPersonagens.setAttribute("class", "li-personagem borda")
 
         liPersonagens.appendChild(divImagem);
         liPersonagens.appendChild(divInfo);

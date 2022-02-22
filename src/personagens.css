@@ -39,7 +39,7 @@
     box-shadow: 0px 0px 14px 4px #8e8e9eb3; 
 }
 
-.liPersonagem{
+.li-personagem{
     display:flex;
     width:100%;  
     flex-wrap: wrap; 
@@ -49,7 +49,7 @@
     box-shadow: 0px 0px 14px 4px #8e8e9eb3; 
 }
 
-.infoPersonagem {
+.info-personagem {
     color: #1b2738;
     font-weight: bold;
     

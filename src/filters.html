@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="home" href="index.html" />
+  <link rel="stylesheet" href="css/home.css" />
   <title>Filtrar Pokémons</title>
 </head>
 
 <body>
   <header>
     <a href="index.html">
-      <img class="logo" alt="Logo do OnPokemon" src="img/big-logo.png">
+      <img class="logo" alt="Logo do OnPokemon" src="img/logo.png">
     </a>
   </header>
 
@@ -30,7 +29,6 @@
       <input type="checkbox" class="checkbox" name="weakness" value="fire-weak">
       <p class="water">Água</p>
       <input type="checkbox" class="checkbox" name="type" value="water-type">
-      <input type="checkbox" class="checkbox" name="weakness" value="water-weak">
       <p class="grass">Planta</p>
       <input type="checkbox" class="checkbox" name="type" value="grass-type">
       <input type="checkbox" class="checkbox" name="weakness" value="grass-weak">
@@ -76,13 +74,15 @@
       <p class="ice">Gelo</p>
       <input type="checkbox" class="checkbox" name="type" value="ice-type">
       <input type="checkbox" class="checkbox" name="weakness" value="ice-weak">
-      <button type="button" id="confirm-button" class="confirm-button">
-        <img src="img/button-confirm.png">
-      </button>
     </form>
+
+    <button type="button" id="confirm-button" class="confirm-button">
+      <img src="img/button-confirm.png">
+    </button>
 
     <section class="results-order">
       <h1 class="results">RESULTADOS</h1>
+
       <form class="order-filter">
         <p>000 Pokémons ordenados por:</p>
         <select class="order">
@@ -90,21 +90,19 @@
           <option value="name-az">Nome (A-Z)</option>
           <option value="name-za">Nome (Z-A)</option>
         </select>
+
         <select class="calculation">
           <option value="more-weakness">Maior quantidade de fraquezas</option>
           <option value="less-weakness">Menor quantidade de fraquezas</option>
         </select>
       </form>
+
+      <a href="#filters.html" id="back" class="back-button">
+        <img src="img/button-return.png">
+      </a>
     </section>
 
-    <section class="show-the-cards" id="result">
-    </section>
-
-    <a href="filters.html" id="back" class="back-button">
-      <img src="img/button-return.png">
-    </a>
-
-    <script src="main.js" type="module"></script>
+  </main>
 </body>
 
 </html>

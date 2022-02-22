@@ -37,16 +37,17 @@ document.getElementById("inputSelect").addEventListener("change", (e) => {
 });
 
 const inputSearch = document.getElementById("inputSearch");
-let ghibliMovies = [];
+// let ghibliMovies = dataGhibli.films;
 // console.log(inputSearch);
 
 inputSearch.addEventListener("keyup", (e) => {
   console.log(e.target.value, "inputValue");
 
   const searchString = e.target.value.toLowerCase();
-  const filterMovies = ghibliMovies.filter((movies) => {
-    return movies.films.title.toLowerCase().includes(searchString);
+  const filterMovies = dataGhibli.films.filter((movies) => {
+    return movies.title.toLowerCase().includes(searchString);
   });
 
   console.log(filterMovies, "/////");
+  renderScreen(filterMovies);
 });

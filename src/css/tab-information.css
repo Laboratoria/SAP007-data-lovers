@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.details-info {
+  width: 100%;
+  background-color: #471f1f;
+}
+
+.details-info > .tab-title {
+  display: block;
+  color: #ffdbac;
+  padding: 20px;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details-info > .tab-text {
+  background-color: #471f1f;
+  color: #ffdbac;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.tab-title::before {
+  content: "+ MAIS ";
+}
+
+.details-info[open] .tab-title::before {
+  content: "- MENOS ";
+}
+
+@media screen and (min-width: 360px) and (orientation: landscape) {
+  .details-info > .tab-title {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-height: 600px) and (orientation: landscape) {
+  .details-info > .tab-title {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-height: 720px) {
+  .details-info > .tab-title {
+    font-size: 1.2rem;
+  }
+  .details-info > .tab-text {
+    padding: 25px;
+    font-size: 1.2rem;
+  }
+}

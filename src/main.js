@@ -1,32 +1,21 @@
-import { example } from './data.js';
-import data from './data/pokemon/pokemon.js';
+import { example } from "./data.js";
+import data from "./data/pokemon/pokemon.js";
 
-//console.log(example, data);
+heightWindow();
 
-function showResults(event){
-    event.preventDefault();
+function heightWindow() {
+  let heightWindow = Number(window.innerHeight);
+  let heightLogo = Number(document.querySelector(".header-home").clientHeight);
+  let heightTextBox = Number(
+    document.querySelector(".intro-text").clientHeight
+  );
+  let heightTab = Number(document.querySelector(".details-info").clientHeight);
+  let sumAll = heightWindow - heightLogo - heightTextBox - heightTab;
+  let containerMain = document.querySelector(".main-home");
+  containerMain.style.height = sumAll + "px";
+}
 
-    for(let i = 0; i < data.pokemon.length; i++){
-       let allDatas = data.pokemon[i];
-       let onlyNecessaryInfos = allDatas.num + allDatas.name + allDatas.type + allDatas.weaknesses + allDatas.img;
-       let pokemonCard = document.createElement("div");
-       pokemonCard.innerText = onlyNecessaryInfos;
-       document.body.appendChild(pokemonCard);
-       pokemonCard.classList.add(".style-para-o-elemento-recem-criado");
-       console.log(typeof(onlyNecessaryInfos));
-    }   
-}   
-
-document.getElementById("confirm-button").addEventListener("click",showResults);
-
-
-    /*const pokemonNumber = allDatas.num;
-    console.log(pokemonNumber);
-    const pokemonName = allDatas.name;
-    console.log(pokemonName);
-    const pokemonType = allDatas.type;
-    console.log(pokemonType);
-    const pokemonWeaknesses = allDatas.weaknesses;
-    console.log(pokemonWeaknesses);*/
-
+screen.orientation.onchange = function(e){
+//função que captura a rotação da tela e muda o valor do height da função heightWindow
+}
 

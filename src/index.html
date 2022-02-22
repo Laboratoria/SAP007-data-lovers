@@ -5,43 +5,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ONPOKEMON</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-  <header>
-    <img class="logo" alt="Logo do OnPokemon" src="img/big-logo.png"></img>
-  </header>
+<body class="body-home">
+  <div class="container-general">
 
-  <main>
-    <a href="filters.html"><img alt="Pokédex fechada" src="img/big-pokedex-close.png"></a>
+    <section class="container-pokemon">
+      <header class="header-home">
+        <a href="index.html">
+          <img class="logo-onpokemon" alt="Logo do OnPokemon" src="img/big-logo.png">
+        </a>
+      </header>
+      <main class="main-home">
+        <a href="filters.html" class="pokedex">
+          <img class="pokedex-close" alt="Clique na Pokédex fechada" src="img/big-pokedex-close.png">
+        </a>
+      </main>
+    </section>
+
     <section class="intro-text">
-      <p>Olá Treinadora!!!!<br>
-        Aqui você consegue ver os tipos e fraquezas de seus Pokémons para se preparar para combate.
+      <p>Olá Treinadora!<br>
+        Aqui você consegue ver os tipos e fraquezas de seus Pokémons para se preparar para o combate.
       </p>
     </section>
-  </main>
 
-  <details class="more-info-tab">
-    <summary>MAIS INFORMAÇÕES</summary>
-    <p class="tab-text">
-      <br><br>
-      <strong>ONPOKEMON</strong> é um site para filtrar dados sobre pokémons,
-      separando-os por tipo e fraqueza. Esses dados podem ser ordenados pelo número do pokémon,
-      por ordem alfabética os nomes e pelas maiores e menores quantidades de Fraquezas.
-      <br><br>
-      Para mais informações, envie um e-mail para:
-      <br><br>
-      Adriana Tiemi Watanabe -
-      <br>
-      adriana.t.watanabe@gmail.com
-      <br><br>
-      Beatriz de Sousa Carvalho -
-      <br>
-      beaproscarva@gmail.com
-    </p>
-  </details>
-
+    <details class="details-info">
+      <summary class="tab-title">INFORMAÇÕES</summary>
+      <p class="tab-text">
+        <strong>ONPOKEMON</strong> é um site para filtrar dados sobre pokémons,
+        separando-os por tipo e fraqueza. Esses dados podem ser ordenados pelo número do pokémon,
+        por ordem alfabética os nomes e pelas maiores e menores quantidades de Fraquezas.
+        <br><br>
+        Para mais informações, envie um e-mail para:
+        <br><br>
+        Adriana Tiemi Watanabe -
+        <br>
+        adriana.t.watanabe@gmail.com
+        <br><br>
+        Beatriz de Sousa Carvalho -
+        <br>
+        beaproscarva@gmail.com
+      </p>
+    </details>
+  </div>
   <script src="main.js" type="module"></script>
 </body>
 

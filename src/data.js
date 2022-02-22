@@ -1,7 +1,3 @@
-const filterData = (data, condition) => data.filter((species) => {
-  return (species.Human == condition)
-  
-});
 
 const btFiltroA = (data) => data.sort((a, b) => (a.name < b.name) ? - 1 : 1);
 

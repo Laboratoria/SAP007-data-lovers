@@ -1,2 +1,26 @@
-@import url(header.css);
-@import url(footer.css);
+@import url(padrao.css);
+
+    
+.personagens{
+    display:flex;
+    width:100%;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.liPersonagem{
+    display:flex;
+    width:100%;  
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.infoPersonagem {
+    color: red;
+    
+    
+}
+  

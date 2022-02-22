@@ -45,9 +45,12 @@ inputSearch.addEventListener("keyup", (e) => {
 
   const searchString = e.target.value.toLowerCase();
   const filterMovies = dataGhibli.films.filter((movies) => {
-    return movies.title.toLowerCase().includes(searchString);
+    return (
+      movies.title.toLowerCase().includes(searchString) ||
+      movies.producer.toLowerCase().includes(searchString) ||
+      movies.director.toLowerCase().includes(searchString)
+    );
   });
 
   console.log(filterMovies, "/////");
-  renderScreen(filterMovies);
 });

@@ -5,25 +5,15 @@ exibeFilmes([]);
 const filtro = document.getElementById("selecao");
 filtro.addEventListener("change", function()  {
     let valorEscolhido = filtro.value;
-    valorEscolhido = valorEscolhido.split(".");
+    valorEscolhido = valorEscolhido.split("."); //["diretor" "nome"]
     console.log(valorEscolhido)
     exibeFilmes(valorEscolhido);
 })
 
-
-
 //funcao que manda pro filtro de filme os dados e recebe o array com todos os filmes
 function getMovies (valorEscolhido) {      
-   
     return filterData(data, valorEscolhido );
-    
 }
-
-
-//pega elemento pelo id da lista e guarda no card
-                                   
-
-//guarda no items o array de filmes
 
 let diretores = pegaDiretores(data);   
 console.log(diretores)
@@ -36,7 +26,6 @@ let option;
 //cria filtro de diretores no html
 diretores.forEach(function(diretor){
     option = document.createElement("option");
-    option.setAttribute("id", diretor);
     option.setAttribute("value", "diretor." +diretor);
     option.textContent = diretor;
     filtroDiretor.appendChild(option)
@@ -45,41 +34,56 @@ diretores.forEach(function(diretor){
 //cria filtro de produtores no html
 produtores.forEach(function(produtor){
     option = document.createElement("option");
-    option.setAttribute("id", produtor);
     option.setAttribute("value","produtor." + produtor);
     option.textContent = produtor;
     filtroProdutor.appendChild(option)
 });
 
-
-
 function exibeFilmes (valorEscolhido){
-    let card = document.getElementById("listaFilmes");  
+    let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
-    let li;   
+    let liCard;   
+    let divImagem;
+    let divInfo;
 
-    card.innerHTML = "";
+    listaFilmes.innerHTML = "";
     //cria itens dos cards dos filmes no html
 //percorre cada item do array ; 
-    items.forEach(function(movie){       
-
+    
+    items.forEach(function(movie){    
         //cria item na lista
-        li = document.createElement("li");                                                                  
+        liCard = document.createElement("li");    
+        divImagem = document.createElement("div");
+        divInfo = document.createElement("div");                                                              
 
         //add conteudo no item criado
-        li.appendChild(document.createTextNode(movie["title"] + "(" + movie["year"] + "). " ));                             
-        li.appendChild(document.createTextNode(" Nota de avaliaçāo: "+ movie["score"] + "."));
-        li.appendChild(document.createTextNode(" Direçāo: " + movie["director"] + ". Produção: " + movie["producer"]+ "."));
-
         //add img no li; passa pra funcao de img os parametos de src e alt
-        li.appendChild(displayImage(movie["poster"],movie["title"]));                                           
+        divImagem.appendChild(displayImage(movie["poster"],movie["title"]));    
+        divInfo.appendChild(textoFilme("Título: " + movie["titulo"] + "." ));   
+        divInfo.appendChild(textoFilme("Data de Lançamento: "+ movie["ano"]));                                  
+        divInfo.appendChild(textoFilme(" Nota de avaliaçāo: "+ movie["avaliacao"] + "."));
+        divInfo.appendChild(textoFilme(" Direçāo: " + movie["diretor"] + "."));
+        divInfo.appendChild(textoFilme("Produção: " + movie["produtor"]+ "."));
 
+        
+        divImagem.setAttribute("class", "posterFilme" );
+        divInfo.setAttribute("class", "infoFilme info");
+        liCard.setAttribute("class", "liFilme borda");
+
+        liCard.appendChild(divImagem);                                 
+        liCard.appendChild(divInfo);
+        
         //manda pra variavel da lista os itens criados
-        card.appendChild(li);                                                                                      
+        listaFilmes.appendChild(liCard);                                                                                      
 
     });
 }
 
+function textoFilme(texto){
+    let filmeInfo = document.createElement("p");
+    filmeInfo.textContent = texto;
+    return filmeInfo
+}
 
 //funca de mostrar imagem
 function displayImage(src, /*width, height*/  alt) {                                                        

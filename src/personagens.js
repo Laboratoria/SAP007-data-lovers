@@ -3,19 +3,36 @@ import { filterCharacter, pegaTitulo } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 //funcao manda pra filtro de personagens os dados; recebe array com os personagens
-function getCharacter(){                                                    //manda dados pro filtro
-    return filterCharacter(data);
+
+const filmes = pegaTitulo(data);
+console.log(filmes);
+
+//salva o array de personagens q veio do filtro                                                        
+
+
+
+const filtroFilme = document.getElementById("selecioneFilme");
+const filtroGenero = document.getElementById("selecioneGenero");
+
+let filtroGeral = function(){
+    let tituloEscolhido = filtroFilme.value;
+    let generoEscolhido = filtroGenero.value;
+    console.log(tituloEscolhido)
+    exibePersonagens(tituloEscolhido, generoEscolhido);
 }
 
-//pega e salva o elemento com o id da lista na variavel cardPeople
-let cardPeolple = document.getElementById("cardPeople");                                // pega id da lista de personagens
+filtroGeral()
 
-//salva o array de personagens q veio do filtro
-let characters = getCharacter();                                                        // pega resultado(array de personagens) do filtro
-let li;                                                                                  // var de item da lista   
-let filmes = pegaTitulo(data);
-console.log(filmes);
-const filtroFilme = document.getElementById("selecioneFilme");
+filtroFilme.addEventListener("change", filtroGeral)
+
+filtroGenero.addEventListener("change", filtroGeral)
+
+function getCharacter(tituloEscolhido, generoEscolhido){                                                  
+    return filterCharacter(data, tituloEscolhido, generoEscolhido);
+}
+
+
+
 let opcao;
 
 filmes.forEach(function(titulo){
@@ -26,34 +43,64 @@ filmes.forEach(function(titulo){
     filtroFilme.appendChild(opcao);
 });
 
+function exibePersonagens(tituloEscolhido, generoEscolhido){
+    //pega e salva o elemento com o id da lista na variavel cardPeople
+    let cardPeolple = document.getElementById("cardPeople");
+    let liPersonagens;  
+    let characters = getCharacter(tituloEscolhido, generoEscolhido);
+    let divImagem;
+    let divInfo;
 
-//percorre cada personagem do array 
-characters.forEach(function(character){                                                     // percorre o array de todos os personagens
 
-    //cria um item da lista
-    li = document.createElement("li");                                                                              // cria item da lista
+    cardPeolple.innerHTML = "";
+    //percorre cada personagem do array 
+    if (characters.length == 0){
+        cardPeolple.innerHTML = "Sem resultados. Tente outros filtros."
+    }
+    characters.forEach(function(character){                                                     
+        //cria um item da lista
+        liPersonagens = document.createElement("li"); 
+        divImagem = document.createElement("div");
+        divInfo = document.createElement("div");                                                                            
 
-    //preenche cada item da lista com o conteudo 
-    li.appendChild(document.createTextNode("Nome: "+ character["name"]+ ". " + "Idade: " + character["age"]));          // preenche item criado com nome e idade
-    li.appendChild(document.createTextNode(". Gênero: " + character["gender"] + ". Espécie: " + character["specie"]));      // poe no item genero e especie
-    li.appendChild(document.createTextNode(". Filme: " + character["title"]));                                                 // poe o titulo 
+        //preenche cada item da lista com o conteudo 
+        //li.setAttribute(class = "personagem"// "class", nomeclasse)
+        //divInfo.appendChild(document.createTextNode("Nome: "+ character["name"]+ ". " + "Idade: " + character["age"]));
+        
+        divInfo.appendChild(textoPersonagem("Nome: "+ character["name"]));
+        divInfo.appendChild(textoPersonagem("Idade: " + character["age"]));        
+        divInfo.appendChild(textoPersonagem("Gênero: " + character["gender"])); 
+        divInfo.appendChild(textoPersonagem("Espécie: " + character["specie"]));     
+        divInfo.appendChild(textoPersonagem("Filme: " + character["title"]));                                                 
 
-    //chama funcao da img; passa parametros e manda img pro item
-    li.appendChild(displayImage(character["img"], character["name"]));                                                          //chama a funca da imagem e passa os parametos e passa pro item 
-    
-    //manda pra lista o item q foi criado e preenchido com os dados
-    cardPeolple.appendChild(li);                                                                                                // passa o item criado e preenchido pra lista
-});
+        //chama funcao da img; passa parametros e manda img pro item
+        divImagem.appendChild(displayImage(character["img"], character["name"]));                                                          
+        
+        divImagem.className = "imagemPersonagem";
+        divInfo.setAttribute("class", "infoPersonagem info");
+        liPersonagens.setAttribute("class", "liPersonagem borda")
+
+        liPersonagens.appendChild(divImagem);
+        liPersonagens.appendChild(divInfo);
+
+        //manda pra lista o item q foi criado e preenchido com os dados
+        cardPeolple.appendChild(liPersonagens);                                                                                                
+    });
+}
+
+function textoPersonagem(texto) {
+    let personagemInfo = document.createElement("p");
+    personagemInfo.textContent = texto;
+
+    return personagemInfo;
+}
 
 //funcao pra pegar a fonte e a descricao da imagem
-function displayImage(src, alt) {                                                        //pega os parametos da imagem, fonte e alt
-    let picture = document.createElement("img");                                                            // cria elemento de img        
+function displayImage(src, alt) {                                                        
+    let picture = document.createElement("img");                                                              
     picture.src = src;
     picture.style.width= "250px";
     picture.style.height = "250px";
     picture.alt = alt;
     return picture;
 }
-
-
-//page js pra personagens

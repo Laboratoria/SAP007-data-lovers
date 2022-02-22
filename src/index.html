@@ -33,29 +33,21 @@
 
         <section class="filtraFilmes">
             <form>
-                    <label for="filtro">Filtrar por:</label>
-                    <select id="selecao" >
-                        <option selected disabled>Selecione</option>
-                            <optgroup label="Diretor:" id="diretorOptgroup">
-                           
-                        </optgroup> 
-                        <optgroup label="Produtor:" id="produtorOptgroup">
-                           
-                        </optgroup> 
-                    </select>
+                <label for="filtro">Filtrar por:</label>
+                <select id="selecao">
+                    <option selected disabled>Selecione</option>
+                    <optgroup label="Diretor:" id="diretorOptgroup">
+                            
+                    </optgroup>
+                    <optgroup label="Produtor:" id="produtorOptgroup">
+
+                    </optgroup>
+                </select>
             </form>
         </section>
 
-        <section class="ordenaFilmes">
-            <label for="ordenacao">Ordenar por:</label>
-            <select>
-                <option selected disabled>Selecione</option>
-                <option  value="" id="A &#8594 Z">ordem alfabetica</option>
-                <option value="" id="">Laçamentos mais recentes</option>
-                <option value="" id="">laçamentos mais antigos</option>
-            </select>
-
-            <section class="ordena-filmes">
+        <section class="ordena-filmes">
+            <form>
                 <label for="ordenaFilmes">Ordenar por:</label>
                 <select id="selecionaOrdem">
                     <option selected disabled>Selecione</option>
@@ -63,13 +55,15 @@
                     <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
                     <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
                 </select>
-        </form>
-        <div class="container-filmes ">
-            <article class="filmes">
-                <ul id="listaFilmes">
-                </ul>
-            </article>
-        </div>
+            </form>
+        </section>
+            <div class=" itens">
+                <article class="filmes borda">
+                    <ul id="listaFilmes" class="listaFilmes">
+
+                    </ul>
+                </article>
+            </div>
     </main>
 
     <footer class="rodape">

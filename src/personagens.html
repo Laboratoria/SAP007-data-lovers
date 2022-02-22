@@ -19,28 +19,30 @@
 	</header>
 
 	<main>
-		<h1>Personagens</h1>
+		<h1 class="titulo-pagina">Personagens</h1>
 		<section class="filtrar">
 			<form>
 				<label for="filtro-genero">Fitrar por gênero</label>
-				<select class="selecione-genero">
-					<option selected disabled>Selecione: </option>
-					<option value="feminino"> Feminino</option>
-					<option value="masculino">Masculino</option>
-					<option value="semGenero">Indefinido</option>
+				<select class="selecione-genero" id="selecioneGenero">
+					<option selected value="">Todos</option>
+					<option value="Female"> Feminino</option>
+					<option value="Male">Masculino</option>
+					<option value="NA">Indefinido</option>
 				</select>
 
 				<label for="filtro-filmes">Fitrar por filmes</label>
 				<select class="selecione-filme" id="selecioneFilme">
-					 <option selected disabled>Selecione: </option>
+					 <option selected value="">Todos</option>
 				</select>
 			</section>
 		</form>
 
-		<section class="galeria-de-cards">
+		<section class=" itens">
 			<h2> IMAGENS</h2>
-			<ul id="cardPeople">
-			</ul>
+			<article class="personagens borda">
+				<ul id="cardPeople" class="cardpeople">
+				</ul>
+			</article>	
 		</section>
 	</main>
 

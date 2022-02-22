@@ -1,9 +1,23 @@
-// estas funciones son de ejemplo
+const filterData = (data, condition) => data.filter((species) => {
+  return (species.Human == condition)
+  
+});
 
-export const example = () => {
-  return 'example';
-};
+const btFiltroA = (data) => data.sort((a, b) => (a.name < b.name) ? - 1 : 1);
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+const btFiltroZ = (data) => data.sort((a, b) => (a.name > b.name) ? - 1 : 1);
+
+export {
+  btFiltroA,
+  btFiltroZ,
+  filterData
+}
+
+// // export const sortData = (data, sortBy, sortOrder) => {
+// //   return 'sortData';//};
+
+// export const computeStats= (data) => {
+//   return'computeStats';
+
+// };
+

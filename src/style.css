@@ -1,0 +1,82 @@
+body {
+    font-family: 'Amatic SC', cursive;
+}
+.cabecalho {
+    align-items: center;
+    background: #FFFF6B;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 0 2rem;
+}
+.imagem-rickemorty {
+    max-width: 300px;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+}
+.menu-lista {
+    display: flex;
+}
+.itens {
+    color: #472009;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.itens:active {
+    color: #ADFFFC;
+    font-weight: bold;
+}
+.itens:hover {
+    text-decoration: underline;
+    color: #fefefe
+}
+
+/*pagina home*/
+.sobre {
+    padding: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #472009;
+    font-size: 35px;
+}
+.sobre-secao p {
+    text-align: justify;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #472009;
+    padding: 1rem;
+ 
+}
+/*pagina personagens*/
+    .butonns {
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rodape {
+    padding: 2rem;
+    background: #FFFF6B;
+}
+.texto-rodape {
+    text-align: center;
+    font-size: 12px;
+    color: #472009;   
+}
+.links {
+    text-decoration: none;
+    color:#472009;
+}
+

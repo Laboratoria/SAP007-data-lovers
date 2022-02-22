@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-width: 100vh;
+}
+.carrosel {
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  height: 70%;
+  width: 80%;
+}
+.container {
+  display: flex;
+  transition: 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+img {
+  object-fit: cover;
+  height: 500px;
+  width: 700px;
+}

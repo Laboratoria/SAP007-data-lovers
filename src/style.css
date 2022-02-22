@@ -28,8 +28,10 @@ footer {
   color: white;
   text-align: center;
   padding: 6px;
-  position: relative;
-  top:66%;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  bottom: 0;
 }
 .nav_menus{
   padding: 5px;

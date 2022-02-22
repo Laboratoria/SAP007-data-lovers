@@ -6,7 +6,6 @@ const btFiltroZ = (data) => data.sort((a, b) => (a.name > b.name) ? - 1 : 1);
 export {
   btFiltroA,
   btFiltroZ,
-  filterData
 }
 
 // // export const sortData = (data, sortBy, sortOrder) => {

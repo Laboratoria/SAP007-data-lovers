@@ -1,5 +1,5 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {filterData, btFiltroA, btFiltroZ} from './data.js';
+import {btFiltroA, btFiltroZ} from './data.js';
 
 function aparecerCards(data) {
     document.getElementById("lista-cards").innerHTML = data.map((item) => `

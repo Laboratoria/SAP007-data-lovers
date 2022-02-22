@@ -3,6 +3,12 @@ import data from "./data/pokemon/pokemon.js";
 
 heightWindow();
 
+screen.orientation.onchange = function (e) {
+  let containerMain = document.querySelector(".main-home");
+  containerMain.style.height = "";
+  heightWindow();
+};
+
 function heightWindow() {
   let heightWindow = Number(window.innerHeight);
   let heightLogo = Number(document.querySelector(".header-home").clientHeight);
@@ -14,9 +20,3 @@ function heightWindow() {
   let containerMain = document.querySelector(".main-home");
   containerMain.style.height = sumAll + "px";
 }
-
-screen.orientation.onchange = function (e) {
-  let containerMain = document.querySelector(".main-home");
-  containerMain.style.height = "";
-  heightWindow();
-};

@@ -1,0 +1,9 @@
+.menus {
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgback {
+  width: 10%;
+  height: 20%;
+  position: fixed;
+}

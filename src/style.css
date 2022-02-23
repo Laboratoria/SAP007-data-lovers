@@ -24,7 +24,7 @@ body {
   left: 35%;
 }
 footer {
-  background-color: #011C40;
+  background-color: #011c40;
   color: white;
   text-align: center;
   padding: 6px;
@@ -33,17 +33,20 @@ footer {
   width: 100%;
   bottom: 0;
 }
-.nav_menus{
-  padding: 5px;
-  display:flex;
-  flex-direction: column;
-  width: 20%;
-  margin: auto;
-
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 40%;
 }
-.box{
+.nav_menus {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.box {
   padding: 10px;
-  background-color: #90BF49;
+  background-color: #90bf49;
   color: #022601;
   border: none;
   text-decoration: none;
@@ -57,12 +60,11 @@ footer {
 }
 
 .search_container > input {
-  border: none
+  border: none;
 }
 
 .search_container > button {
-  background: #90BF49;
+  background: #90bf49;
   border: none;
-  padding: 4px 10px
+  padding: 4px 10px;
 }
-

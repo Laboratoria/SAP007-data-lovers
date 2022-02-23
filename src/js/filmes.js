@@ -21,7 +21,7 @@ function mostrarFilmes(data) {
       </div>
       <div id="diretor">${data.director}</div>
       `;
-
+  console.log(cardAnime)
   containerAnimes.appendChild(cardAnime);
 }
 

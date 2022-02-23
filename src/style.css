@@ -1,14 +1,28 @@
 body {
- display: contents;
+ 
 }
 
 header {
-    height: 20%;
-    width: 100%;
-    padding: 5%;
-    background-repeat: no-repeat;
+  height: 20%;
+  width: 100%;
+  padding: 5%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .title {
   text-align: center;
+}
+
+.poke {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 5em;
+  position: relative;
+  display:inline-block;
+}
+
+.img-pokemon{
+  height: 25rem;
 }

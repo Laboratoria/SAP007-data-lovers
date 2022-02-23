@@ -30,7 +30,7 @@ for (let i = 0; i < filmesData.length; i++) {
       <!--<div class="lançamento">${personagens[j].age}</div>-->
       </div>
       <div id="diretor">${personagens[j].specie}</div>
-      `; //transforma o conteúdo das propriedades mencioadas em strings
+      `; //o template ${} transforma o conteúdo das propriedades mencioadas em strings
 
     containerAnimes.appendChild(cardAnime); //método appendChild adiciona um elemento
     // filho (cardAnime) ao elemento do HTML pai (containerAnimes)

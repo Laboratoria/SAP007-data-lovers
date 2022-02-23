@@ -1,3 +1,5 @@
+
+//import { example } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 startPageHome();
@@ -71,3 +73,12 @@ function heightWindow() {
   let containerMain = document.querySelector(".main-home");
   containerMain.style.height = sumAll + "px";
 }
+
+
+
+
+/*const sectionResults = document.createElement("section");
+    document.getElementById("result").appendChild(sectionResults);
+    sectionResults.innerHTML = pokemonCard;*/
+
+

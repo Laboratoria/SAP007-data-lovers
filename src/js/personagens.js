@@ -1,7 +1,7 @@
 import data from "../data/ghibli/ghibli.js";
 
 //const que captura o valor do elemento HTML a ser preenchido pela div cardAnime
-const containerAnimes = document.getElementById("containerCardItem"); //const que captura o valor do elemento
+const containerAnimes = document.getElementById("containerCardItem");
 
 //let que armazena a propriedade films de ghibli.js
 let filmesData = data.films;

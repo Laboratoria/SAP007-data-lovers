@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="imagens/imagemfundo2 (2).png">
@@ -12,38 +13,24 @@
   <main>
       <nav class="menus">
         <div class="nav_menus">
-          <select id="menu_filter" class="options_filters box">
-            <option value="selected-filter" selected>Filtros</option>
-            <option value="all-characters">Todos os personagens</option>
-            <option value="life">Estado de vida</option>
-            <option value="species">Espécie</option>
-            <option value="planet">Local de origem</option>
-            <option value="place-live">Lugar onde vive</option>
-          </select>
+          <a type="button" id="characters" class="button_characters box" href="cards.html">Personagens</a>
         </div>
 
         <div class="nav_menus">
-          <select id="menu_sort" class="sort box">
-            <option value="selected-sort" selected>Ordenar</option>
-            <option value="alphabetic">Ordem alfabética</option>
-          </select>
+          <a type="button" id="watch" class="button_watch box">Onde Assistir?</a>
         </div>
 
         <div class="nav_menus">
-          <button id="analysis" class="button_analysis box">Análises</button>
-        </div>
-
-        <div class="nav_menus search_container">
-          <input id="src_character" type="text" name="name_search" class="input_name box" placeholder="Pesquisar">
-          <button id="src_btn" class="src_name box"> 🔎 </button>
+          <a id="analysis" type="button" class="button_analysis box">Análises</a>
         </div>
 
       </nav>
-      <div class="result">
-
-      </div>
 
   </main>
+
+   <div class="result">
+
+   </div>
 
   <footer>Desenvolvido por Gabriela Medrado e Suelen Escorcio - 2022</footer>
   <script src="main.js" type="module"></script>

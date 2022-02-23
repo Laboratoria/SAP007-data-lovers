@@ -2,7 +2,7 @@ import { dataRickMorty } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
 
-document.getElementById("analysis").addEventListener("click", () => {
+document.getElementById("characters").addEventListener("click", () => {
   allCards(data.results)
 })
 
@@ -23,6 +23,6 @@ function allCards(data) {
         </div>
       `
     );
-  .join("");
+  join("");
 }
 

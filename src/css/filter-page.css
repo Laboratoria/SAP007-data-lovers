@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.filters {
+  background-color: #ffdbac;
+  color: #471f1f;
+}
+
+.header-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #471f1f;
+  padding: 20px;
+}
+
+.logo-onpokemon {
+  width: 337px;
+  height: 40px;
+  padding: 10px 0px;
+}
+
+.main-filters {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 40px;
+}  
+
+.by-name {
+  font-size: 1.5rem;
+  padding-top: 30px;
+  padding-bottom:10px;
+}
+
+.input-name {
+  background-color: #E9A588;
+  border: 3px inset #E9A588 ;
+  border-radius: 10px;
+  width: 20%;
+  font-size: 1.2rem;
+  color: #471f1f;
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 4%;
+}
+
+.input-name::placeholder {
+  color: #5a3b3b;
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+}
+
+.name {
+  display: flex;
+  font-size: 1.3rem;
+  padding-right: 30px;
+}
+
+.checkbox {
+  display: flex;
+  height: 20px;
+  width: 20px;
+}
+
+
+
+
+
+

@@ -24,5 +24,6 @@ function allCards(data) {
       `
     );
   join("");
+
 }
 

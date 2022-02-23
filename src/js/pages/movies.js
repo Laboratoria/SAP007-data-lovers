@@ -1,5 +1,5 @@
 import dataGhibli from "../../data/ghibli/ghibli.js";
-import { sortArray } from "../data.js";
+import { sortArray, searchMovies } from "../data.js";
 import { menu } from "../components/header.js";
 
 console.log(dataGhibli);
@@ -31,26 +31,13 @@ export function renderScreen(data) {
   });
 }
 
-renderScreen(dataGhibli);
 document.getElementById("inputSelect").addEventListener("change", (e) => {
   sortArray.filterArray(e.target.value);
 });
 
 const inputSearch = document.getElementById("inputSearch");
-// let ghibliMovies = dataGhibli.films;
-// console.log(inputSearch);
 
 inputSearch.addEventListener("keyup", (e) => {
-  console.log(e.target.value, "inputValue");
-
-  const searchString = e.target.value.toLowerCase();
-  const filterMovies = dataGhibli.films.filter((movies) => {
-    return (
-      movies.title.toLowerCase().includes(searchString) ||
-      movies.producer.toLowerCase().includes(searchString) ||
-      movies.director.toLowerCase().includes(searchString)
-    );
-  });
-
-  console.log(filterMovies, "/////");
+  searchMovies.filterMovies(e, dataGhibli);
 });
+renderScreen(dataGhibli);

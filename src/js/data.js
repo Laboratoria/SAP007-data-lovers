@@ -55,3 +55,20 @@ export const sortArray = {
     return 0;
   },
 };
+
+export const searchMovies = {
+  filterMovies(e, dataGhibli) {
+    const searchString = e.target.value.toLowerCase();
+    const data = {
+      films: dataGhibli.films.filter((movie) => {
+        return (
+          movie.title.toLowerCase().includes(searchString) ||
+          movie.producer.toLowerCase().includes(searchString) ||
+          movie.director.toLowerCase().includes(searchString)
+        );
+      }),
+    };
+    console.log(data, "seen");
+    renderScreen(data);
+  },
+};

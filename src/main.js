@@ -29,8 +29,8 @@ let selecaoEspecie = document.getElementById('filtro-especies');
 let selecaoOrdem = document.getElementById('filtro-ordem');
 
 
-function pesquisarNomes(e) {
-  return mostrarCards(buscarNome(data.results, e.target.value))
+function pesquisarNomes() {
+  return mostrarCards(buscarNome(data.results, filtroPesquisar.value))
 }
 
 
@@ -40,15 +40,15 @@ function filtrarEspecie(e) {
 
 
 function limparFiltros(){
-  window.location.reload();
-  }
+  window.location.reload()
+}
   
 
 
 //EVENTOS  -- MUDAR TODAS AS ASPAS PARA SIMPLES
-filtroPesquisar = addEventListener('keypress', pesquisarNomes);
-limparBusca = addEventListener('click', limparFiltros);
-selecaoEspecie = addEventListener('change', filtrarEspecie);
-selecaoOrdem = addEventListener('change')
+filtroPesquisar.addEventListener('keypress', pesquisarNomes);
+limparBusca.addEventListener('click', limparFiltros);
+selecaoEspecie.addEventListener('change', filtrarEspecie);
+selecaoOrdem.addEventListener('change')
 
 

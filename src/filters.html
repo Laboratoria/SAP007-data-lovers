@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/filter-page.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="home" href="index.html" />
+
   <title>Filtrar Pokémons</title>
 </head>
 
 <body class="filters">
   <header class="header-filters">
     <a href="index.html">
-      <img class="logo" alt="Logo do OnPokemon" src="img/big-logo.png">
+      <img class="logo" alt="Logo do OnPokemon" src="img/logo.png">
     </a>
   </header>
 
@@ -23,6 +25,7 @@
     <input type="text" id="inputText" class="input-name" placeholder="Insira o nome do Pokemon">
 
     <form action="/main.js" class="full-checkbox">
+
       <div class="container">
         <section class="item">
           <p class="name">Normal</p>
@@ -120,8 +123,13 @@
       </button>
     </form>
 
+    <button type="button" id="confirm-button" class="confirm-button">
+      <img src="img/button-confirm.png">
+    </button>
+
     <section class="results-order">
       <h1 class="results">RESULTADOS</h1>
+
       <form class="order-filter">
         <p>000 Pokémons ordenados por:</p>
         <select class="order">
@@ -129,21 +137,19 @@
           <option value="name-az">Nome (A-Z)</option>
           <option value="name-za">Nome (Z-A)</option>
         </select>
+
         <select class="calculation">
           <option value="more-weakness">Maior quantidade de fraquezas</option>
           <option value="less-weakness">Menor quantidade de fraquezas</option>
         </select>
       </form>
+
+      <a href="#filters.html" id="back" class="back-button">
+        <img src="img/button-return.png">
+      </a>
     </section>
 
-    <section class="show-the-cards" id="result">
-    </section>
-
-    <a href="filters.html" id="back" class="back-button">
-      <img src="img/button-return.png">
-    </a>
-
-    <script src="main.js" type="module"></script>
+  </main>
 </body>
 
 </html>

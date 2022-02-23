@@ -1,9 +1,12 @@
 @charset "utf-8";
+@import url("reset.css");
 @import url("tab-information.css");
 
 /* width: 360px height: 640px */
 .body-home {
-  background-color: #858f31;
+  background-color: #bfb63b;
+  margin: 0px;
+  padding: 0px;
   font-family: "Segoe UI", Helvetica, Arial, Verdana;
 }
 
@@ -18,9 +21,8 @@
 
 .container-pokemon {
   width: 100%;
-  background-image: url(../img/pokemon-background.png);
+  background-image: url(../img/pokemon-background.jpeg);
   background-repeat: no-repeat;
-  background-position: -1100px top;
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -32,38 +34,72 @@
   align-items: center;
 }
 
-.logo-onpokemon {
-  width: 337px;
-  height: 40px;
-  padding: 10px 0px;
-}
-
 .main-home {
   width: 100%;
+  /*height: */
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.pokedex-close {
-  width: 160px;
-  height: 230px;
-  margin-left: 45vw;
-  padding: 30px 0px;
-}
-
 .intro-text {
   font-family: Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
   font-weight: 600;
-  font-size: 1.125rem;
   color: #471f1f;
   background-color: #ffdbac;
-  padding: 20px 4%;
+}
+
+@media screen and (min-height: 300px) and (orientation: portrait) {
+  .container-pokemon {
+    background-position: -940px top;
+  }
+  .logo-onpokemon {
+    width: 337px;
+    height: 40px;
+    padding: 10px 0px;
+  }
+  .pokedex-close {
+    width: 160px;
+    height: 230px;
+    margin-left: 45vw;
+    padding: 30px 0px;
+  }
+
+  .intro-text {
+    font-size: 1.125rem;
+    padding: 20px 4%;
+  }
+}
+
+@media screen and (min-height: 960px) and (orientation: portrait) {
+  .container-pokemon {
+    background-position: -640px top;
+  }
+  .logo-onpokemon {
+    width: 406px;
+    height: 50px;
+    padding: 30px 0px;
+  }
+  .pokedex-close {
+    width: 244px;
+    height: 349px;
+    margin-left: 300px;
+    margin-top: 200px;
+  }
+  .intro-text {
+    font-size: 1.6rem;
+    padding: 20px 6%;
+  }
 }
 
 @media screen and (min-height: 360px) and (orientation: landscape) {
   .container-pokemon {
     background-position: center top;
+  }
+  .logo-onpokemon {
+    width: 337px;
+    height: 40px;
+    padding: 10px 0px;
   }
   .pokedex-close {
     width: 91px;
@@ -98,13 +134,13 @@
   }
 }
 
-@media screen and (min-height: 600px) and (orientation: portrait) {
-  .container-pokemon {
-    background-position: -650px top;
+@media screen and (min-height: 720px) and (orientation: landscape) {
+  .container-general {
+    margin: auto auto;
   }
-}
-
-@media screen and (min-height: 720px) {
+  .container-pokemon {
+    background-position: center top;
+  }
   .logo-onpokemon {
     width: 406px;
     height: 50px;
@@ -113,8 +149,8 @@
   .pokedex-close {
     width: 244px;
     height: 349px;
-    padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
+    margin-bottom: 3vh;
   }
   .intro-text {
     font-size: 1.6rem;

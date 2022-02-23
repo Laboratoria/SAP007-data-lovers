@@ -7,7 +7,7 @@
 body{
   background-color: #003563;
   font-family: 'Didact Gothic';
-  color: black;
+  color: white;
 }
 
 header{
@@ -22,7 +22,7 @@ header{
   width: 100%;
 }
 
-button{
+a{
   background: #003563;
   color: white;
   font: 'Didact Gothic';
@@ -31,6 +31,7 @@ button{
   font-size: 100%;
   text-align: center;
   cursor: pointer;
+  text-decoration-line: none;
 
 }
 
@@ -58,9 +59,10 @@ hr{
 }
 
 footer{
-  background-color: #133f66;
-  border: #133f66 ;
+  background-color: #003563;
   text-align: center;
   font-size: 15px;
   padding: 10px;
 }
+
+

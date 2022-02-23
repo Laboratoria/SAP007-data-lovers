@@ -39,12 +39,11 @@ produtores.forEach(function(produtor){
     filtroProdutor.appendChild(option)
 });
 
-function exibeFilmes (valorEscolhido){
+function exibeFilmes ( valorEscolhido){
     let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
     let liCard;   
-    let divImagem;
-    let divInfo;
+    
 
     listaFilmes.innerHTML = "";
     //cria itens dos cards dos filmes no html
@@ -53,44 +52,25 @@ function exibeFilmes (valorEscolhido){
     items.forEach(function(movie){    
         //cria item na lista
         liCard = document.createElement("li");    
-        divImagem = document.createElement("div");
-        divInfo = document.createElement("div");                                                              
-
-        //add conteudo no item criado
-        //add img no li; passa pra funcao de img os parametos de src e alt
-        divImagem.appendChild(displayImage(movie["poster"],movie["title"]));    
-        divInfo.appendChild(textoFilme(" Título: " + movie["titulo"]));   
-        divInfo.appendChild(textoFilme(" Data de Lançamento: " + movie["ano"]));                                  
-        divInfo.appendChild(textoFilme(" Nota de avaliaçāo: " + movie["avaliacao"]));
-        divInfo.appendChild(textoFilme(" Sinopse: " + movie["description"]));
-        divInfo.appendChild(textoFilme(" Direçāo: " + movie["diretor"]));
-        divInfo.appendChild(textoFilme(" Produção: " + movie["produtor"]));
+           
+        liCard.innerHTML=
+        `<figure class="">
+            <img class="poster-filme" src=${movie.poster} alt="">
+        </figure>
+        <div class="informacoes-filme">
+            <p>Título: ${movie.title}</p>
+            <p>Ano de lançamento: ${movie.release_date}</p>
+            <p>Avaliação: ${movie.rt_score}</p>
+            <p>Diretor: ${movie.director}</p>
+            <p>Produtor: ${movie.producer}</p>
+        </div>
+        <div class="sinopse-filme" >
+            <p class="texto-sinpose">Sinopse: ${movie.description}</p>
+        </div>`
         
-        divImagem.setAttribute("class", "poster-filme" );
-        divInfo.setAttribute("class", "info-filme info");
-        liCard.setAttribute("class", "li-filme borda");
-
-        liCard.appendChild(divImagem);                                 
-        liCard.appendChild(divInfo);
-        
-        //manda pra variavel da lista os itens criados
-        listaFilmes.appendChild(liCard);                                                                                      
-    });
+       listaFilmes.appendChild(liCard);                                                                                      
+        });
 }
 
-function textoFilme(texto){
-    let filmeInfo = document.createElement("p");
-    filmeInfo.textContent = texto;
-    return filmeInfo
-}
 
-//funca de mostrar imagem
-function displayImage(src, /*width, height*/  alt) {                                                        
-    let picture = document.createElement("img");                                                                    
-    picture.src = src;
-    //picture.style.width= "250px";
-    /*picture.style.height = "250px";*/
-    picture.alt = alt;
-    return picture;
-}
 

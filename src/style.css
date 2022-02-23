@@ -1,10 +1,21 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100&family=Inter:wght@600&family=Mali:ital,wght@1,700&family=Mochiy+Pop+P+One&family=Roboto:ital,wght@1,500&family=Yanone+Kaffeesatz:wght@200;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-
+.search {
+  
+}
 .box {
   width: 600px;
   height: 500px;
@@ -30,7 +41,8 @@ body {
 }
 
 .bolinhas {
-  margin-left: 400px;
+  margin-left: 700px;
+  margin-bottom: 700px;
 }
 
 .bolinhas span {
@@ -49,13 +61,12 @@ body {
 footer {
   background-color: #11aebf;
   opacity: 60%;
-  align-items: left;
   font-size: large;
-}
-
-.criadoras {
+  margin-top: 3rem;
   text-align: center;
-}
-.icones {
-  display: inline-flex;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

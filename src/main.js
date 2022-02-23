@@ -2,14 +2,14 @@ import { dataRickMorty } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
 
-document.getElementById("analysis").addEventListener("click", () =>{
+document.getElementById("characters").addEventListener("click", () => {
   allCards(data.results)
 })
 
 function allCards(data) {
   document.querySelector(".result").innerHTML = data
-  .map(
-    (dado) => `
+    .map(
+      (dado) => `
 
         <div class="cards">
           <img src="${dado.image}"></img>
@@ -22,7 +22,8 @@ function allCards(data) {
           </ul>
         </div>
       `
-  );
-  join(" ");
+    );
+  join("");
+
 }
 

@@ -1,9 +1,10 @@
 import { example } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
-var interval = 0;
 
-var maxSlider = document.querySelectorAll(".box-image").length - 1;
+let interval = 0;
+
+let maxSlider = document.querySelectorAll(".box-image").length - 1;
 
 sumir();
 
@@ -14,7 +15,7 @@ function sumir() {
   img[1].style.display = "none";
   img[2].style.display = "none";
 
-  for (var i = 0; i < maxSlider + 1; i++) {
+  for (let i = 0; i < maxSlider + 1; i++) {
     if (i == 0) {
       span.innerHTML += '<span class="marcador"></span>';
     } else {
@@ -53,7 +54,7 @@ function controlador() {
 
       let div = document.querySelectorAll(".bolinhas span").length;
 
-      if (div == 5) {
+      if (div == 3) {
         document.querySelectorAll(".bolinhas span").forEach(function (valor) {
           valor.classList.remove("marcador");
         });

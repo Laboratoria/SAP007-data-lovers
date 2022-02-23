@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #BF9A78;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+  .banner {
+    width: 40%;
+    height: 20%;
+    margin: 2em;
+    border-radius:1em;
+  
+  }
+
+  section {
+    margin: 3em; 
+    padding:3em;
+  }
+  
+  aside {
+    background-color: #F2F0F0;
+    width: 100%;
+    height:80%;
+    padding: 3em; 
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-left: 20px;
+   border-radius: 10px;
+   margin-bottom: 20px;
+  }
+
+.botao_nav {
+  text-align: center;
+
+}
+  .btn_inicial  {
+    width: 8em;
+    height: 3em;
+    background-color: #BF584E;
+    border: none;
+    border-radius: 0.8em;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 1.2em;
+   
+  }
+  .btn_inicial:hover {
+  background-color:#731A1A;
+  transform: scale(1.05);
+}
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  footer {
+    background-color: #731A1A;
+    height:5em;
+    align-items: center;
+    }
+
+    .github {
+      text-align: center;
+      padding: 1.3em;
+      font-weight: bold;
+      line-height:1.2em;
+    }
+
+  

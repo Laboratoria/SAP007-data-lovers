@@ -4,6 +4,8 @@ body{
     font-size: 1.0em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #DEEFE7;
+    height: 100%;
+    width: 100%;
 }
 
 .border{
@@ -53,22 +55,32 @@ body{
 }
 
 
+
+
 /* CONTAINER */
 
-.container{
+#container {
+  overflow: hidden;
   padding: 20px 85px 0px 85px;
-  float: right;
+  position: relative;
+
 }
 
 /* CARDS */
 
+.cards-imagens{
+
+
+
+}
+
 .cards{
   text-align: center;
   display: block;
-  margin: 60px auto;
+  margin: 20px auto;
   background-color: white;
   box-shadow: 0 5px 40px rgba(0,0,0,0.2);
-  width: 90%;
+
 }
 
 
@@ -92,4 +104,5 @@ body{
 
 .verde{
   color: green;
+  text-align: center;
 }

@@ -3,91 +3,25 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 
 
-// console.log(data.info["count"]);
-// console.log(data.info["pages"]);
-// console.log(data.info["next"]);
-// console.log(data.info["prev"]);
-//console.log(data.results[0].name); //Nome <<<<<<<<<<
-// console.log(data.results); //Devolve o Array com todas as informações
-// //console.log(data.results[""]);
+// FOR OF não precisamos dizer quando o loop tem que parar: ele faz isso automaticamente a partir do tamanho da array
 
 
-const filtroEspecie = document.querySelector("#filtro");
-filtroEspecie.addEventListener("change", function (event) {
-  console.log(event.target.value)
-})
+const dados = data.results; // A const dados armazena o Array com os dados puxados do objeto rickandmorty.js
 
-const cardsSection = document.querySelector("#cards-section");
-cardsSection.innerHTML = `
-    <div id="card border" class="verde">
-      <img src="${data.results[1].image}">
-      <p>${data.results[1].name}</p>
-    </div>
-`
-
-
-
-// const dados = data.results;
-
-// for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do Array
-//     console.log(dados[i].species);
+let mostrarCard = ""; //Condição: para cada elemento da array, adicionar um card (DIV com as propriedas LINHA 13)
+for (let cards of dados) {  // cards é a variavel [i] usado para iniciar o loop
+  mostrarCard += cards = `<div>
+  <img src="${cards.image}">
+  <p>Nome: ${cards.name}</p>
+  <p>Status: ${cards.status}</p>
+  <p>Especie: ${cards.species}</p>
+  <p>Gênero: ${cards.gender}</p>
+  <p>Origen: ${cards.origin.name}</p>
+  </div>`;
+}
 
 
-// }
+document.getElementById("demo").innerHTML = mostrarCard; // Imprimir os Cards no HTML
 
 
-
-
-
-
-
-
-// function retornaGender (value){
-//     if (value.gender == "male")
-//     return value;
-// }
-// var genderMale = nomePersonagem.filter(retornaGender);
-// genderMale.forEach(malePersonagem => {
-//     console.log(malePersonagem);
-// })
-
-
-
-
-
-// function genderPersonagem(gender) {
-//     if (gender === "male" ){
-//         return true
-//     } else {
-//         return false
-
-//     }
-
-// }
-
-
-
-
-
-//console.log(data.results[0].gender);
-
-// const personagem = data.results["image"]
-// let mostrarPersonagem = document.getElementById("printPersonagem");
-// let mostrarPersonagem2 = document.getElementById("printParagrafo");
-
-
-// function mostrarCoisas() {
-//     personagem.forEach(value) => {
-//         if (value === personagem[0]) {
-//             mostrarPersonagem.insertAdjacentHTML("afterbegin", '<img src="${value.image}" class="print">')
-//             for (let personagem of value.name){
-//                 mostrarPersonagem2.textContent= (personagem["gender"] + personagem["status"])
-//             }
-
-//         }
-//     })
-
-// }
-
-//mostrarCoisas()
 

@@ -7,9 +7,9 @@ body{
 }
 
 .border{
-  padding: 0px 50px; 
+  padding: 0px 50px;
   list-style: none;
-} 
+}
 
 .center{
   text-align: center;
@@ -47,8 +47,8 @@ body{
 
 .banner-ram{
   width: 100%;
-  border-bottom: 5px solid #4e29; 
-  
+  border-bottom: 5px solid #4e29;
+
 }
 
 /* FLEXBOX */
@@ -58,7 +58,7 @@ body{
   -ms-flex: 1;
   flex: 1;
   padding: 10px 40px 10px 40px;
-  height: 20px; 
+  height: 20px;
 }
 .row {
   display: -webkit-flex;
@@ -81,7 +81,7 @@ body{
     display: block;
   }
 
-  .image { 
+  .image {
     width: 20%;
   }
 }

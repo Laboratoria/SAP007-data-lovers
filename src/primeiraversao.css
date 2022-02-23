@@ -5,32 +5,31 @@
   font-family: Arial, Helvetica, sans-serif;
 }  
 
-
-@media screen and (min-width: 1024px){
-
 body {
   background: url(./image/bg-purple.jpg) no-repeat;
   width: 100%;
-  background-color: rgb(213, 172, 161);
+  background-color: rgb(36, 36, 36);
 }
 
 header {
+  margin-top: 5px;
   display: flex;
   align-items: center;
 }
 
 .logo-img {
   width: 25%;
+  margin-top: 30px;
   margin-left: 50px;
 }
 
 .menu {
   width: 40%;
-  background-color: #3e9bb7;  
-  padding: 0.2rem;
-  margin-left: 380px;
-  border: 2px solid #D4D952;
-  box-shadow: 0.2em 0.2em 0.2em #D4D952;
+  background-color: rgba(223, 223, 223, 0.068);  
+  padding: 0.5rem;
+  margin-top: 30px;
+  margin-left: 290px;
+  box-shadow: 0.3em 0.3em 0.3em #D4D952;
   border-radius: 10px;
 }
   
@@ -54,8 +53,6 @@ header {
   position: absolute;
   display: flex;
   border-radius: 10px;
-  margin-top: 225px;
-  align-items: baseline;
 }
 
 .pesquisar {
@@ -65,6 +62,7 @@ header {
   padding: 5px;
   margin-left: 50px;
   border-radius: 5px;
+  margin-top: 15px;
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;}
 
@@ -73,9 +71,10 @@ header {
   color: white;
   font-size: 16px;
   width: 130px;
-  padding: 6px;
+  padding: 5px;
   margin-left: 5px;
   border-radius: 5px;
+  margin-top: 15px;
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;}
 
@@ -83,7 +82,7 @@ header {
   padding: 5px;
   background-color: white;
   font-size: 16px;
-  margin-left: 650px;
+  margin-left: 350px;
   border-radius: 5px;
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;
@@ -102,25 +101,21 @@ header {
   box-shadow: 8px 8px 8px black;
 }
 
-.todos-cards {
-  margin-top: 300px;
-}
-
 .card {
   background-color:rgba(17, 50, 53, 0.904);
-  display: inline-flex;
+  display: inline-block;
   padding: 15px;
   margin-bottom: 15px;
   width: 180px;
-  height: 290px;
+  height: 280px;
   border: 5px solid #D4D952;
   border-radius: 9px;
   text-align: center;
   cursor: pointer;
-  margin: 10px 5px 20px 35px;
+  margin: 40px 5px 0px 30px;
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;
-  justify-content: space-evenly;
+  margin-top: 200px;
 }
 
 .card-interno {
@@ -147,7 +142,7 @@ header {
   font-weight: bold;
   color: #31B0CC;
   margin-top: 5px;
-}    
+}
 
 footer {
   font-size: 14px;
@@ -168,35 +163,3 @@ footer a {
     color: #fff;
     text-decoration: underline
 }
-
-}
-
-
-@media screen and (min-width: 768px) {
-
-body {
-  background: url(./image/bg-purple.jpg) no-repeat;
-  width: 100%;
-  background-color: rgb(213, 172, 161);
-}
-  
-header {
-  display: flex;
-  align-items: center;
-}
-  
-.logo-img {
-  width: 25%;
-  margin-left: 50px;
-}    
-
-
-
-
-
-
-
-/* @media screen and (min-width: 480px) {
-  
-}
-*/

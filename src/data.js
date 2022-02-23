@@ -1,27 +1,25 @@
-export const buscarNome = (data, busca) => {
-  const resultadoNomes = data.filter((personagem) =>
-    personagem.name.toLowerCase().includes(busca.toLowerCase())
-  );
-  return resultadoNomes;
-};
+export const buscarNome = (data, busca) => { 
+  const resultadoNomes = data.filter((personagem) => personagem.name.toUpperCase().includes(busca.toUpperCase())); 
+  return resultadoNomes; 
+}; 
 
-export const buscarEspecie = (data, especie) => {
-  const resultadoEspecie = data.filter(
-    (personagem) => personagem.species.toLowerCase() === especie.toLowerCase()
-  );
-  return resultadoEspecie;
-};
 
-export const ordem = (data) => {
-  const resultadoOrdem = data.sort(function (a, z) {
-    if (a.name < z.name) return -1;
-    if (a.name > z.name) return 1;
-  });
-
-  return resultadoOrdem;
-};
+export const buscarEspecie = (data, especie) => { 
+  const resultadoEspecie = data.filter((personagem) => personagem.species.toLowerCase() === especie.toLowerCase()); 
+  return resultadoEspecie; 
+}; 
 
 /*
+export const ordem = (data) => {
+  const resultadoOrdem = data.sort(function (a, z) {
+    if (a.name < z.name) return -1
+    if (a.name > z.name) return 1
+  })
+
+  return resultadoOrdem
+}
+
+
 export const buscarNome = (data, condition) => {
   return 'example';
 };

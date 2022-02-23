@@ -8,19 +8,17 @@ Neste arquivo você encontrará uma série de imports comentados.
 Para carregar diferentes fontes de dados, você deverá "descomentar" esses imports.
  Cada um destes imports criará uma variável DATA com os dados correspondentes à fonte escolhida.
 */
-import { buscarNome, buscarEspecie, ordem } from "./data.js";
-import data from "./data/rickandmorty/rickandmorty.js";
+import { buscarNome, buscarEspecie } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
 function mostrarCards(data) {
-  document.getElementById("recebe-card").innerHTML = data
-    .map(
-      (item) => `
-  <div class="card">
-    <div class="card-interno">
-        <div class="card-frente">
-         <img class="imagem-card" src="${item.image}">
+  document.getElementById('recebe-card').innerHTML = data.map((item) => `
+  <div class='card'>
+    <div class='card-interno'>
+        <div class='card-frente'>
+          <img class= 'imagem-card' src='${item.image}' loading='lazy'>
          <h3><b> ${item.name}</b></h3>
-          <div class="outras-infos">
+          <div class= 'outras-infos'>
             <h4><b> ${item.species}</b></h4>
             <h5><b> ${item.status} ● <b> ${item.gender}</b></h5>
             <h5><b> ${item.location.name}</b></h5>
@@ -28,36 +26,37 @@ function mostrarCards(data) {
         </div> 
     </div>
   </div>  
-`
-    )
-    .join("");
+`)
+.join('')
 }
 
 mostrarCards(data.results);
 
+
+let filtroPesquisar = document.getElementById('pesquisar');
+let limparBusca = document.getElementById('limpar');
+let selecaoEspecie = document.getElementById('filtro-especies');
+let selecaoOrdem = document.getElementById('filtro-ordem');
+
+
 function pesquisarNomes() {
-  return mostrarCards(buscarNome(data.results, filtroPesquisar.value));
+  return mostrarCards(buscarNome(data.results, filtroPesquisar.value))
 }
+
 
 function filtrarEspecie(e) {
-  return mostrarCards(buscarEspecie(data.results, e.target.value));
+  return mostrarCards(buscarEspecie(data.results, e.target.value))
 }
 
-function limparFiltros() {
-  window.location.reload();
-}
 
-function ordenarAZ() {
-  return mostrarCards(ordem(data.results, selecaoOrdem.value));
+function limparFiltros(){
+  window.location.reload()
 }
+  
 
-let filtroPesquisar = document.getElementById("pesquisar");
-let limparBusca = document.getElementById("limpar");
-let selecaoEspecie = document.getElementById("selecao-especies");
-let selecaoOrdem = document.getElementById("selecao-ordem");
 
 //EVENTOS  -- MUDAR TODAS AS ASPAS PARA SIMPLES
-filtroPesquisar = addEventListener("keypress", pesquisarNomes);
-limparBusca = addEventListener("click", limparFiltros);
-selecaoEspecie = addEventListener("chance", filtrarEspecie);
-selecaoOrdem = addEventListener("chance", ordenarAZ);
+filtroPesquisar.addEventListener('keypress', pesquisarNomes);
+limparBusca.addEventListener('click', limparFiltros);
+selecaoEspecie.addEventListener('change', filtrarEspecie);
+selecaoOrdem.addEventListener('change');

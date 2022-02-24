@@ -36,7 +36,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    box-shadow: 0px 0px 14px 4px #8e8e9eb3; 
+    /* box-shadow: 0px 0px 14px 4px #8e8e9eb3;  */
 }
 
 .li-personagem{

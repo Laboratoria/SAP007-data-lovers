@@ -9,8 +9,6 @@ console.log(filmes);
 
 //salva o array de personagens q veio do filtro                                                        
 
-
-
 const filtroFilme = document.getElementById("selecioneFilme");
 const filtroGenero = document.getElementById("selecioneGenero");
 
@@ -24,23 +22,22 @@ let filtroGeral = function(){
 filtroGeral()
 
 filtroFilme.addEventListener("change", filtroGeral)
-
 filtroGenero.addEventListener("change", filtroGeral)
 
 function getCharacter(tituloEscolhido, generoEscolhido){                                                  
     return filterCharacter(data, tituloEscolhido, generoEscolhido);
 }
 
-
-
 let opcao;
 
 filmes.forEach(function(titulo){
-    opcao = document.createElement("option");
-    opcao.setAttribute("id", titulo);
-    opcao.setAttribute("value", titulo);
-    opcao.textContent = titulo;
-    filtroFilme.appendChild(opcao);
+    // opcao = document.createElement("option");
+    // opcao.setAttribute("id", titulo);
+    // opcao.setAttribute("value", titulo);
+    // opcao.textContent = titulo;
+    // filtroFilme.appendChild(opcao);
+    filtroFilme.insertAdjacentHTML('beforeend',
+    `<option value= "${titulo}">${titulo}</option>` )
 });
 
 function exibePersonagens(tituloEscolhido, generoEscolhido){
@@ -48,59 +45,91 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
     let cardPeolple = document.getElementById("cardPeople");
     let liPersonagens;  
     let characters = getCharacter(tituloEscolhido, generoEscolhido);
-    let divImagem;
-    let divInfo;
+   // let divImagem;
+   // let divInfo;
 
-
-    cardPeolple.innerHTML = "";
+    console.log(characters);
+    cardPeolple.innerHTML= " ";
     //percorre cada personagem do array 
     if (characters.length == 0){
         cardPeolple.innerHTML = "Sem resultados. Tente outros filtros."
     }
-    characters.forEach(function(character){                                                     
-        //cria um item da lista
-        liPersonagens = document.createElement("li"); 
-        divImagem = document.createElement("div");
-        divInfo = document.createElement("div");                                                                            
-
-        //preenche cada item da lista com o conteudo 
-        //li.setAttribute(class = "personagem"// "class", nomeclasse)
-        //divInfo.appendChild(document.createTextNode("Nome: "+ character["name"]+ ". " + "Idade: " + character["age"]));
-        
-        divInfo.appendChild(textoPersonagem("Nome: "+ character["name"]));
-        divInfo.appendChild(textoPersonagem("Idade: " + character["age"]));        
-        divInfo.appendChild(textoPersonagem("Gênero: " + character["gender"])); 
-        divInfo.appendChild(textoPersonagem("Espécie: " + character["specie"]));     
-        divInfo.appendChild(textoPersonagem("Filme: " + character["title"]));                                                 
-
-        //chama funcao da img; passa parametros e manda img pro item
-        divImagem.appendChild(displayImage(character["img"], character["name"]));                                                          
-        
-        divImagem.className = "imagemPersonagem";
-        divInfo.setAttribute("class", "info-personagem info");
-        liPersonagens.setAttribute("class", "li-personagem borda")
-
-        liPersonagens.appendChild(divImagem);
-        liPersonagens.appendChild(divInfo);
-
-        //manda pra lista o item q foi criado e preenchido com os dados
-        cardPeolple.appendChild(liPersonagens);                                                                                                
+    characters.forEach(function(character){  
+    // cardPeolple.innerHTML = characters.length == 0 ? `Sem resultados. Tente outros filtros. ` : " ";
+    //cardPeolple.innerHTML += tituloEscolhido.length > 0 ? `Filtrando por filme ${tituloEscolhido}` : "";
+    liPersonagens = document.createElement("li"); 
+    liPersonagens.insertAdjacentHTML("beforeend",
+    // `${characters.map(character =>
+        `<figure class "figuraPersonagem">
+            <img class="imagemPersonagem" src=${character.img} alt="personagem: ${character.name} style=" height = "250px", width= "250px"" >
+        </figure>  
+        <div class= "info-personagem info">
+            <p>Nome: ${character.name}</p>
+            <p>Idade: ${character.age}</p>
+            <p>Gênero:${character.gender}</p>
+            <p>Espécie: ${character.specie}</p>
+            <p>Filme: ${character.title}</p>
+        </div>
+        `
+        )/*}`*/   
+        liPersonagens.setAttribute("class", "li-personagem borda") ;
+    cardPeolple.appendChild(liPersonagens);
     });
+    
 }
 
-function textoPersonagem(texto) {
-    let personagemInfo = document.createElement("p");
-    personagemInfo.textContent = texto;
 
-    return personagemInfo;
-}
+    let opcaoRecarregar = document.getElementsByClassName("opcaoSelecionar");
+    opcaoRecarregar.addEventListener("click", function(){
+        location.reload()
+    });
 
-//funcao pra pegar a fonte e a descricao da imagem
-function displayImage(src, alt) {                                                        
-    let picture = document.createElement("img");                                                              
-    picture.src = src;
-    picture.style.width= "250px";
-    picture.style.height = "250px";
-    picture.alt = alt;
-    return picture;
-}
+
+
+//     characters.forEach(function(character){                                                     
+//         //cria um item da lista
+//         liPersonagens = document.createElement("li"); 
+//         divImagem = document.createElement("div");
+//         divInfo = document.createElement("div");                                                                            
+
+//         //preenche cada item da lista com o conteudo 
+//         //li.setAttribute(class = "personagem"// "class", nomeclasse)
+//         //divInfo.appendChild(document.createTextNode("Nome: "+ character["name"]+ ". " + "Idade: " + character["age"]));
+        
+//         divInfo.appendChild(textoPersonagem("Nome: "+ character["name"]));
+//         divInfo.appendChild(textoPersonagem("Idade: " + character["age"]));        
+//         divInfo.appendChild(textoPersonagem("Gênero: " + character["gender"])); 
+//         divInfo.appendChild(textoPersonagem("Espécie: " + character["specie"]));     
+//         divInfo.appendChild(textoPersonagem("Filme: " + character["title"]));                                                 
+
+//         //chama funcao da img; passa parametros e manda img pro item
+//         divImagem.appendChild(displayImage(character["img"], character["name"]));                                                          
+        
+//         divImagem.className = "imagemPersonagem";
+//         divInfo.setAttribute("class", "info-personagem info");
+//         liPersonagens.setAttribute("class", "li-personagem borda")
+
+//         liPersonagens.appendChild(divImagem);
+//         liPersonagens.appendChild(divInfo);
+
+//         //manda pra lista o item q foi criado e preenchido com os dados
+//         cardPeolple.appendChild(liPersonagens);                                                                                                
+//     });
+// }
+
+// function textoPersonagem(texto) {
+//     let personagemInfo = document.createElement("p");
+//     personagemInfo.textContent = texto;
+
+//     return personagemInfo;
+// }
+
+// //funcao pra pegar a fonte e a descricao da imagem
+// function displayImage(src, alt) {                                                        
+//     let picture = document.createElement("img");                                                              
+//     picture.src = src;
+//     picture.style.width= "250px";
+//     picture.style.height = "250px";
+//     picture.alt = alt;
+//     return picture;
+// }

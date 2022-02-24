@@ -21,76 +21,59 @@ let produtores = pegaProdutores(data);
 console.log(produtores)                                                                            
 const filtroDiretor = document.getElementById("diretorOptgroup");
 const filtroProdutor = document.getElementById("produtorOptgroup")
-let option;
+//let option;
 
 //cria filtro de diretores no html
 diretores.forEach(function(diretor){
-    option = document.createElement("option");
-    option.setAttribute("value", "diretor." +diretor);
-    option.textContent = diretor;
-    filtroDiretor.appendChild(option)
+    // option = document.createElement("option");
+    // option.setAttribute("value", "diretor." +diretor);
+    // option.textContent = diretor;
+    // filtroDiretor.appendChild(option)
+    filtroDiretor.innerHTML += `<option value= "diretor.${diretor}">${diretor}</option>`
 });
 
 //cria filtro de produtores no html
 produtores.forEach(function(produtor){
-    option = document.createElement("option");
-    option.setAttribute("value","produtor." + produtor);
-    option.textContent = produtor;
-    filtroProdutor.appendChild(option)
+    // option = document.createElement("option");
+    // option.setAttribute("value","produtor." + produtor);
+    // option.textContent = produtor;
+    filtroProdutor.insertAdjacentHTML('beforeend',
+    `<option value= "produtor.${produtor}"> ${produtor}</option>`)
+    //filtroProdutor.appendChild(option)
 });
 
-function exibeFilmes (valorEscolhido){
+function exibeFilmes ( valorEscolhido){
     let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
     let liCard;   
-    let divImagem;
-    let divInfo;
 
     listaFilmes.innerHTML = "";
-    //cria itens dos cards dos filmes no html
-//percorre cada item do array ; 
+    //percorre cada item do array ; 
     
     items.forEach(function(movie){    
         //cria item na lista
         liCard = document.createElement("li");    
-        divImagem = document.createElement("div");
-        divInfo = document.createElement("div");                                                              
-
-        //add conteudo no item criado
-        //add img no li; passa pra funcao de img os parametos de src e alt
-        divImagem.appendChild(displayImage(movie["poster"],movie["title"]));    
-        divInfo.appendChild(textoFilme(" Título: " + movie["titulo"]));   
-        divInfo.appendChild(textoFilme(" Data de Lançamento: " + movie["ano"]));                                  
-        divInfo.appendChild(textoFilme(" Nota de avaliaçāo: " + movie["avaliacao"]));
-        divInfo.appendChild(textoFilme(" Sinopse: " + movie["description"]));
-        divInfo.appendChild(textoFilme(" Direçāo: " + movie["diretor"]));
-        divInfo.appendChild(textoFilme(" Produção: " + movie["produtor"]));
-        
-        divImagem.setAttribute("class", "poster-filme" );
-        divInfo.setAttribute("class", "info-filme info");
-        liCard.setAttribute("class", "li-filme borda");
-
-        liCard.appendChild(divImagem);                                 
-        liCard.appendChild(divInfo);
-        
-        //manda pra variavel da lista os itens criados
-        listaFilmes.appendChild(liCard);                                                                                      
+           
+        liCard.insertAdjacentHTML("beforeend",
+       // `${items.map(movie =>
+        `<figure class="figuraFilme">
+            <img class="poster-filme" src=${movie.poster} alt="Poster filme: ${movie.title}">
+         </figure>
+         <div class="informacoes-filme">
+            <p>Título: ${movie.title}</p>
+            <p>Ano de lançamento: ${movie.release_date}</p>
+            <p>Avaliação: ${movie.rt_score}</p>
+            <p>Diretor: ${movie.director}</p>
+            <p>Produtor: ${movie.producer}</p>
+         </div>
+         <div class="sinopse-filme" >
+            <p class="texto-sinpose">Sinopse: ${movie.description}</p>
+         </div>`)/*}); */
+        liCard.setAttribute("class", "li-filme borda")
+       listaFilmes.appendChild(liCard);                                                                                      
     });
+    
 }
 
-function textoFilme(texto){
-    let filmeInfo = document.createElement("p");
-    filmeInfo.textContent = texto;
-    return filmeInfo
-}
 
-//funca de mostrar imagem
-function displayImage(src, /*width, height*/  alt) {                                                        
-    let picture = document.createElement("img");                                                                    
-    picture.src = src;
-    //picture.style.width= "250px";
-    /*picture.style.height = "250px";*/
-    picture.alt = alt;
-    return picture;
-}
 

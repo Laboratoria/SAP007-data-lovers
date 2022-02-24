@@ -2,10 +2,11 @@
 
 body{
     font-size: 1.0em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #DEEFE7;
     height: 100%;
     width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .border{
@@ -13,18 +14,12 @@ body{
   list-style: none;
 }
 
-.center{
-  text-align: center;
-}
-
-
 /* NAVBAR */
 
 .navbar {
   list-style:none;
   background-color: #159A9C;
   overflow: auto;
-
 }
 
 .navbar a {
@@ -55,34 +50,44 @@ body{
 }
 
 
-
-
 /* CONTAINER */
 
 #container {
-  overflow: hidden;
-  padding: 20px 85px 0px 85px;
-  position: relative;
+  padding: 20px 85px 20px 85px;
 
 }
 
 /* CARDS */
 
-.cards-imagens{
+.image-card{
+  width: 200px;
+  height: 200px;
+}
 
+.p-card{
+  font-size: 0.7em;
+}
+.p-name-card{
+  font-size: 0.9em;
+  padding-bottom: 3px;
+  font-weight: 600;
+}
 
-
+.card-board{
+  width: 90vw;
+  margin: auto;
 }
 
 .cards{
-  text-align: center;
-  display: block;
-  margin: 20px auto;
+  display: inline-table;
+  padding: 5px;
+  margin: 0 10px 20px 10px;
   background-color: white;
-  box-shadow: 0 5px 40px rgba(0,0,0,0.2);
-
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
 
 
 @media (max-width: 600px) {
@@ -96,13 +101,15 @@ body{
     display: block;
   }
 
+  #demo{
+    text-align: center;
+  }
+
+  #container {
+    text-align: center;
+  }
+
   .image {
     width: 20%;
   }
-}
-
-
-.verde{
-  color: green;
-  text-align: center;
 }

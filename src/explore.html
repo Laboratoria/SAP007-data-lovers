@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="explore.css" />
-    <title>Explorar</title>
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="./img/favicon.ico">
+      <link rel="stylesheet" href="explore.css" />
+      <title>Explorar</title>
+  </head>
 <body>
 
      <!--BARRA DE NAV  -->
-
-     <nav class="navbar">
+    <nav class="navbar">
       <ul class="border">
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="about.html">Rick and Morty</a></li>
@@ -25,41 +24,32 @@
       <div class="box"><img src="./img/bg.png" class="image-bg" alt=""></div>
     </header>
 
+    <main>
 
-      <main>
+      <div id="container">
+        <label for="cards">Filtro: </label>
+        <select name="filtar" id="filtro">
+            <option value="Human">HUMANO</option>
+            <option value="Humanoid">HUMANOIDE</option>
+            <option value="Alien">ALIEN</option>
+            <option value="Poopybutthole">Poopybutthole</option>
+            <option value="Mytholog">MITOLOGICO</option>
+            <option value="Animal">ANIMAL</option>
+            <option value="Vampire">VAMPIRO</option>
+            <option value="Robot">ROBOTICO</option>
+            <option value="Cronenberg">Cronenberg</option>
+        </select>
+      </div>
 
-
-          <div id="container">
-
-              <label for="cards">Filtro: </label>
-              <select name="filtar" id="filtro">
-                <option value="Human">HUMANO</option>
-                <option value="Humanoid">HUMANOIDE</option>
-                <option value="Alien">ALIEN</option>
-                <option value="Poopybutthole">Poopybutthole</option>
-                <option value="Mytholog">MITOLOGICO</option>
-                <option value="Animal">ANIMAL</option>
-                <option value="Vampire">VAMPIRO</option>
-                <option value="Robot">ROBOTICO</option>
-                <option value="Cronenberg">Cronenberg</option>
-              </select>
-          </div>
-
-
-
-
-          <div class="cards-imagem">
-            <section id="cards"></section>
-            <p id="demo"></p>
-          </div>
-
-
-
-          <script src="main.js" type="module"></script>
-        </div>
-      </main>
+      <div class="card-board">
+        <p id="demo"></p>
+      </div>
 
       <script src="main.js" type="module"></script>
+
+    </main>
+
+    <script src="main.js" type="module"></script>
 
 </body>
 </html>

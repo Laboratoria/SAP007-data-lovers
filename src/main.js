@@ -10,13 +10,13 @@ const dados = data.results; // A const dados armazena o Array com os dados puxad
 
 let mostrarCard = ""; //Condição: para cada elemento da array, adicionar um card (DIV com as propriedas LINHA 13)
 for (let cards of dados) {  // cards é a variavel [i] usado para iniciar o loop
-  mostrarCard += cards = `<div>
-  <img src="${cards.image}">
-  <p>Nome: ${cards.name}</p>
-  <p>Status: ${cards.status}</p>
-  <p>Especie: ${cards.species}</p>
-  <p>Gênero: ${cards.gender}</p>
-  <p>Origen: ${cards.origin.name}</p>
+  mostrarCard += cards = `<div class="cards">
+  <img src="${cards.image}" class="image-card">
+  <p class="p-name-card">${cards.name}</p>
+  <p class="p-card">Status: ${cards.status}</p>
+  <p class="p-card">Especie: ${cards.species}</p>
+  <p class="p-card">Gênero: ${cards.gender}</p>
+  <p class="p-card">Origen: ${cards.origin.name}</p>
   </div>`;
 }
 

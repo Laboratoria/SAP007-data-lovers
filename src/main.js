@@ -1,14 +1,4 @@
-/*
-Recomendamos que utilize src/main.js 
-para todos os códigos que tenham a ver com a exibição dos dados na tela. 
-Com isto nos referimos basicamente à interação com o DOM. Operações como criação de nós, 
-registro de manejadores de eventos (event listeners ou event handlers) e etc.
-
-Neste arquivo você encontrará uma série de imports comentados. 
-Para carregar diferentes fontes de dados, você deverá "descomentar" esses imports.
- Cada um destes imports criará uma variável DATA com os dados correspondentes à fonte escolhida.
-*/
-import { buscarNome, buscarEspecie } from './data.js';
+import { buscarNome, buscarEspecie, SortOrdem } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 function mostrarCards(data) {
@@ -32,11 +22,11 @@ function mostrarCards(data) {
 
 mostrarCards(data.results);
 
-
+//LIGAÇÃO COM HTML 
 let filtroPesquisar = document.getElementById('pesquisar');
 let limparBusca = document.getElementById('limpar');
 let selecaoEspecie = document.getElementById('filtro-especies');
-let selecaoOrdem = document.getElementById('filtro-ordem');
+let selecaoOrdem = document.querySelector('.filtro-ordem');
 
 
 function pesquisarNomes() {
@@ -52,11 +42,17 @@ function filtrarEspecie(e) {
 function limparFiltros(){
   window.location.reload()
 }
+
+function filtroOrdem(){
+  const ordemValue = selecaoOrdem.value 
+  const ordenacao = SortOrdem(data.results, ordemValue)
+  return mostrarCards(ordenacao)
+}
   
 
 
-//EVENTOS  -- MUDAR TODAS AS ASPAS PARA SIMPLES
-filtroPesquisar.addEventListener('keypress', pesquisarNomes);
-limparBusca.addEventListener('click', limparFiltros);
-selecaoEspecie.addEventListener('change', filtrarEspecie);
-selecaoOrdem.addEventListener('change');
+//EVENTOS 
+filtroPesquisar.addEventListener('keypress', pesquisarNomes)
+limparBusca.addEventListener('click', limparFiltros)
+selecaoEspecie.addEventListener('change', filtrarEspecie)
+selecaoOrdem.addEventListener('change', filtroOrdem)

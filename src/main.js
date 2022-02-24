@@ -26,21 +26,21 @@ function allCards(data) {
     .join(" ")
 }
 
-allCards(data.results)
+allCards(data.results);
 
 
 //Seletores
 
 const lifeSelect = document.getElementById("menu_filter_life");
 const genderSelect = document.getElementById("menu_filter_gender");
-const sortSelect = document.getElementById("menu_sort");
+//const sortSelect = document.getElementById("menu_sort");
 
 
 //Funções
 function printStatus(e) {
   const statusResult = statusFilter(data.results, e.target.value);
   console.log(statusResult)
-  //return allCards(statusResult);
+  return allCards(statusResult);
 }
 lifeSelect.addEventListener("change", printStatus);
 
@@ -48,7 +48,7 @@ lifeSelect.addEventListener("change", printStatus);
 function printGender(e) {
   const genderResult = genderFilter(data.results, e.target.value);
   console.log(genderResult);
-  //return allCards(genderResult);
+  return allCards(genderResult);
 }
 
 genderSelect.addEventListener("change", printGender);

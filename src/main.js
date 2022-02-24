@@ -2,11 +2,9 @@ import { statusFilter, genderFilter } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
-
-/*document.getElementById("characters").addEventListener("click", () => {
-  window.location.href = "cards.html"
-  allCards(data.results)
-})*/
+document.querySelector(".imgback").addEventListener("click", () => {
+  window.location.href = "index.html"
+});
 
 function allCards(data) {
   document.querySelector(".result").innerHTML = data
@@ -25,9 +23,10 @@ function allCards(data) {
         </div>
       `
     )
-    .join("");
-
+    .join(" ")
 }
+
+allCards(data.results)
 
 
 //Seletores

@@ -50,14 +50,14 @@ function exibeFilmes ( valorEscolhido){
     listaFilmes.innerHTML = "";
     //percorre cada item do array ; 
     
-    //items.forEach(function(movie){    
+    items.forEach(function(movie){    
         //cria item na lista
         liCard = document.createElement("li");    
            
         liCard.insertAdjacentHTML("beforeend",
-        `${items.map(movie =>
-        `<figure class="">
-            <img class="poster-filme" src=${movie.poster} alt="">
+       // `${items.map(movie =>
+        `<figure class="figuraFilme">
+            <img class="poster-filme" src=${movie.poster} alt="Poster filme: ${movie.title}">
          </figure>
          <div class="informacoes-filme">
             <p>Título: ${movie.title}</p>
@@ -68,10 +68,11 @@ function exibeFilmes ( valorEscolhido){
          </div>
          <div class="sinopse-filme" >
             <p class="texto-sinpose">Sinopse: ${movie.description}</p>
-         </div>`)}`);
+         </div>`)/*}); */
         liCard.setAttribute("class", "li-filme borda")
        listaFilmes.appendChild(liCard);                                                                                      
-      //  });
+    });
+    
 }
 
 

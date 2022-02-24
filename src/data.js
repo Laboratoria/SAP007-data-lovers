@@ -69,7 +69,8 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
     let personagens = []
      //dentro dos dados; entra em filmes e percorre cada um
     data.films.map(film => { 
-        film.people.map(person => {
+        film.people.map(person => {    
+
             personagens.push({ 
             "name": person["name"],
             "age": person["age"],

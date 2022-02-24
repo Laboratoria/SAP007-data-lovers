@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap');
+
+/* Funçao para a pagina toda */
 * {
   margin: 0px;
   padding: 0px;
 }
+/* fundo */
 body {
   background-image: url("imagens/fundoram2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
-  position: relative;
 }
+/* imagens */
 .RickMorty {
   height: 50%;
   position: absolute;
@@ -33,38 +37,26 @@ footer {
   width: 100%;
   bottom: 0;
 }
+/* botões */
 main {
   display: flex;
   justify-content: center;
   position: relative;
   top: 40%;
 }
-.nav_menus {
-  padding: 5px;
+.menus{
   display: flex;
-  flex-direction: column;
+}
+.nav_menus {
+  padding: 20px;
 }
 .box {
-  padding: 10px;
+  padding: 10px 40px;
   background-color: #90bf49;
   color: #022601;
-  border: none;
   text-decoration: none;
   cursor: pointer;
+  font-family: "Josefin Sans";
+  font-size: x-large;
   border-radius: 8px;
-  position: relative;
-}
-.search_container {
-  display: block;
-  padding: 4px;
-}
-
-.search_container > input {
-  border: none;
-}
-
-.search_container > button {
-  background: #90bf49;
-  border: none;
-  padding: 4px 10px;
 }

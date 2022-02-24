@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .filters {
-  background-color: #ffdbac;
+  background-color: #bfb63b;
   color: #471f1f;
 }
 
@@ -20,10 +20,12 @@
 }
 
 .main-filters {
+  background-color: #ffdbac;
   max-width: 1060px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 
 .title {
@@ -40,41 +42,97 @@
 
 .input-name {
   background-color: #E9A588;
-  border: 3px inset #E9A588 ;
+  border: 3px inset #E9A588;
   border-radius: 10px;
   width: 20%;
   font-size: 1.2rem;
   color: #471f1f;
   padding: 10px;
   width: 30%;
-  margin-bottom: 4%;
+  margin-bottom: 30px;
 }
 
 .input-name::placeholder {
+  display: inline;
   color: #5a3b3b;
   font-size: 1.2em;
 }
 
-.container {
+.checkbox-title {
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+.specify-type {
+  margin-left:155px;
+}
+
+.specify-weaknesses {
+  margin-left:35px;
+}
+
+.container-checkboxes {
+  height: 220px;
   display: flex;
   flex-direction: column;
-}
-
-.item {
-  display: flex;
-}
+  flex-wrap: wrap;
+}  
 
 .name {
-  display: flex;
   font-size: 1.3rem;
-  padding-right: 30px;
+  padding-bottom: 10px;
 }
 
 .checkbox {
-  display: flex;
+  margin-right: 70px;
   height: 20px;
   width: 20px;
+  float: right;
 }
+
+/*.checkbox:hover {
+  .checkbox:checked*/
+  
+.confirm-button {
+  float: right;
+
+}  
+
+.results {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.quantify {
+  font-size: 1.2rem;
+  padding: 10px 0px 5px 0px; 
+}
+
+.order-calculation {
+  font-size: 1.3rem;
+  background-color: #E9A588;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 10px 10px 0px;
+
+}
+
+.order-calculation:hover {
+  background-color: #A96F57;
+}
+
+.order-calculation select {
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
 
 
 

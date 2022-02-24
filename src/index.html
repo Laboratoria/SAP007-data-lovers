@@ -2,43 +2,69 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo Ghibli</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="data" href="ghibli.js" />
+    <link rel="home" href="home.html" />
+    <link rel="news" href="news.html" />
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>Universo Ghibli</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Menu</a></li>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-                </ul>
-            </nav>
-        </div>
+        <h1 class="tittle-header-page-data">Universo Ghibli</h1>
+        <nav class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="#">News</a>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <h2 class="film">Filmes</h2>
+    <main class="main-page-data">
         <section>
-            <input class="#" id="#" type="text" placeholder="Encontre um filme ou personagem">
-            <button class="#" id="#" type="button">Filtrar</button>
-            <button class="#" id="#" type="button">Buscar</button>
-            <button class="#" id="#" type="reset">Limpar</button>
+            <form id="form">
+                <input class="select ipt-search" type="text" id="ipt-search" placeholder="&#128269">
+                <select class="select" type="text" id="director">
+                    <option class="#" value="" disabled selected id="#">Diretores</option>
+                    <option class="lista" type="button" id="#">Hayao Miyazaki</option>
+                    <option class="lista" type="button" id="#">Yoshifumi Kondō</option>
+                    <option class="lista" type="button" id="#">Hiroyuki Morita</option>
+                    <option class="lista" type="button" id="#">Gorō Miyazaki</option>
+                    <option class="lista" type="button" id="#">Hiromasa Yonebayashi</option>
+                    <option class="lista" type="button" id="#">Isao Takahata</option>
+                </select>
+                <select class="select" type="text" id="producer">
+                    <option class="#"  value="" disabled selected id="#">Produtores</option>
+                    <option class="#" type="button" id="#">Hayao Miyazaki</option>
+                    <option class="#" type="button" id="#">Isao Takahata</option>
+                    <option class="#" type="button" id="#">Toru Hara</option>
+                    <option class="#" type="button" id="#">Toshio Suzuki</option>
+                    <option class="#" type="button" id="#">Yoshiaki Nishimura</option>
+                    <option class="#" type="button" id="#">Hiromasa Yonebayashi</option>
+                </select>
+                <select class="select" type="text">
+					<option class="#"  value="" disabled selected id="#">Personagens</option>
+					<option class="#" type="button" id="#">A > Z</option>
+					<option class="#" type="button" id="#">Z > A</option>
+                </select>
+            </form>
         </section>
+        <button class="btn-search" type="reset" id="btn-reset">Limpar</button>
     </main>
+    <div id="card">
 
-    <footer>
-        <address>Conheças as desenvolvedoras:<a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_blank">Anna Ferraz</a> e <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_blank">Thaís Bonalume</a></address>
+    </div>
+
+    <footer class="footer">
+        <h4>Conheça as Devs
+            <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
+            <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
+        </h4>
     </footer>
-
-
-
-
     <script src="main.js" type="module"></script>
 </body>
 

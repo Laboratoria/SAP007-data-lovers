@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(./img/Chihiro.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    font-family: 'Actor', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+@media screen and (min-width:600px){
+    .header{ font-size: 25px;
+     }
+ }
+ 
+@media screen and (max-width:600px){
+   .header{ font-size: 10px;
+    }
+}
+
+.header {
+  
+    font-size: 25px;
+    color: #184E77;
+    align-items: center;
+    display: flex;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background: #168AAD;
+    background-size: contain;
+    font-size: 20pt;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+   
+}
+
+a:link {
+    text-decoration: none;
+}

@@ -22,7 +22,7 @@ header{
   width: 100%;
 }
 
-a{
+button{
   background: #003563;
   color: white;
   font: 'Didact Gothic';
@@ -52,6 +52,55 @@ a{
   border-radius: 1%
 }
 
+.hidden{
+  display: none;
+}
+
+.pageAbout{
+  background-color: #95bad7;
+  border-radius: 1%;
+  width: 60vw;
+  margin: 2% auto auto auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  color: #003563;
+}
+
+.headerAbout{
+  width: 30vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.spirits{
+  height: 15vh;
+}
+
+.refletir{
+  transform: rotateY(180deg);
+}
+
+.titleAbout{
+  padding: 2%;
+  font-size: 200%;
+}
+
+.about{
+  text-align: center;
+  color: #003563;
+  font-size: 100%;
+  margin: 1% 10% 10% 10%;
+}
+
+.totoro{
+  display: flex;
+  height: 20vh;
+}
+
 hr{
   width: 100vw;
   height: 2vh;
@@ -59,10 +108,14 @@ hr{
 }
 
 footer{
+  display: flex;
   background-color: #003563;
   text-align: center;
   font-size: 15px;
-  padding: 10px;
+  justify-content: center;
+  align-self: flex-end;
 }
+
+
 
 

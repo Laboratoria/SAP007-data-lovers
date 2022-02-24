@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +19,7 @@
   </header>
   <section class="filter-menu">
     <select class="status-btn">
-      <option value="status"selected disabled >Status</option>
+      <option value="status" selected disabled>Status</option>
       <option class="select-status" value="alive">Vivo</option>
       <option class="select-status" value="dead">Morto</option>
       <option class="select-status" value="unknown">Indefinido</option>
@@ -27,16 +28,20 @@
       <option value="specie" selected disabled>Espécie</option>
       <option class="select-specie" value="human">Humano</option>
       <option class="select-specie" value="humanoid">Humanoide</option>
-      <option class="select-specie" value="animal" id="specie-filter">Animal</option>
+      <option class="select-specie" value="animal">Animal</option>
       <option class="select-specie" value="alien">Alienígena</option>
     </select>
     <select class="gender-btn">
       <option value="gender" selected disabled>Gênero</option>
       <option class="select-gender" value="unknown">Indefinido</option>
-      <option class="select-gender" value="female">Fêmea</option><option class="select-gender" value="male">Macho</option>
+      <option class="select-gender" value="female">Fêmea</option>
+      <option class="select-gender" value="male">Macho</option>
     </select>
     <input type="text" class="name-search" placeholder="Filtar por Nome" id="name-seach">
   </section>
-
+  <section id="cards">
+  </section>
+  <script src="main.js" type="module"></script>
 </body>
+
 </html>

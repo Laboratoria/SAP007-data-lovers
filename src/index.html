@@ -26,10 +26,21 @@
   <main>
     
     <section class="botaos" id="botao"> 
-      <button class="filtro" id="btFiltroA"> Ordenar A-Z </button>
-      <button class="filtro" id="btFiltroZ">Ordenar Z-A</button>
+      <button class="btn-filtro" id="btFiltroA"> Ordenar A-Z </button>
+      <button class="btn-filtro" id="btFiltroZ">Ordenar Z-A</button>
+      <select id="select-genero" class="btn-filtro">
+        <option class="filtrar-genero" value="" selected disabled>Genero</option>
+        <option class="filtrar-genero" value="Female">Femea</option>
+        <option class="filtrar-genero" value="Male">Macho</option>
+        <option class="filtrar-genero"value="unknown">Indefinido</option>
+      </select>
+      <select id="select-especie" class="btn-filtro">
+        <option class="filtrar-genero" value="" selected disabled>Especie</option>
+        <option class="filtrar-genero" value="unknown">Desconhecido</option>
+        <option class="filtrar-genero" value="Human">Humano</option>
+        <option class="filtrar-genero"value="Alien">Alien</option>
+      </select>
     </section>
-
     <section class="cards">
       <div id="lista-cards">
         

@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+}
+.cabecalho{
+    background-color: violet;
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content: space-around;
+}
+
+.titulosite{
+    display:flex;
+    align-items: center;
+}
+
+.listapaginas{
+    background-color:lightcoral; 
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content:space-around;
+    
+}
+
+.navbarradepesquisa{
+    display: flex;
+    justify-content:center;
+}
+.barra_pesquisa{
+    background-color:cornflowerblue;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: fit-content;
+}
+
+.menufiltros{
+    background-color:darkseagreen;
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 1em;
+    display:flex;
+    justify-content: space-between;
+    padding: 00.8em;
+    width: fit-content;
+}
+.categoriailtro{
+    font-weight: bold;
+    line-height: 01.8em;
+    background-color:rgb(58, 176, 223);
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+
+}
+
+.organize_A-Z{
+    background-color: blueviolet;
+    font-family: 'Poppins', sans-serif;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inputA-Z{
+    width: fit-content;
+font-family: 'Poppins';
+font: 0.2em;
+border: black 0.1em;
+border-radius: 0.1em;
+background: #c1d177;
+line-height: 00.05em;
+}
+
+
+
+.rodape{
+    background-color: tomato;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+

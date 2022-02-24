@@ -1,9 +1,9 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
 
 export const anotherExample = () => {
   return 'OMG';
 };
+//filmes
+//diretor
+//melhor filme
+// mais novos
+//mais antigos

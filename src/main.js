@@ -1,8 +1,16 @@
-import { example } from './data.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
+//DOM, event listeners, event handlers
 
-console.log(example, data);
+
+import { ordemAlfabetica } from "./data.js"; 
+import data from "./data/rickandmorty/rickandmorty.js";
+
+
+
+console.log(ordemAlfabetica, data);
+
+const btnAZ = document.getElementById('btn-az')
+
+function buttonAZ (e){
+  e.preventDefault();
+  //como retornar o resultado?
+}

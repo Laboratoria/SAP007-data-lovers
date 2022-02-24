@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Shlop";
+  src: url("font/shlop\ rg.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-font: "Share Tech", sans-serif;
+  --green-neon: #5fe431;
+  --light-green: #85d97aa8;
+  --light-blue: #11aebf;
+}
+
+.background {
+  background-image: url(img/background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Shlop", sans-serif;
+}
+
+.box-logo {
+  width: 25vw;
+  display: flex;
+  margin: auto auto 1.5rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.box-image img {
+  width: 40vw;
+  animation: anima;
+  animation-duration: 800ms;
+}
+
+@keyframes anima {
+  from {
+    transform: translate(-50px, 00);
+  }
+  to {
+    transform: translate(0px, 00);
+  }
+}
+
+.bolinhas {
+  justify-content: center;
+  display: flex;
+}
+
+.bolinhas span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--light-green);
+}
+
+.bolinhas span.marcador {
+  background-color: var(--green-neon);
+}
+
+footer {
+  background-color: var(--light-blue);
+  opacity: 60%;
+  font-size: large;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .criadoras {
+  color: #000000;
+  text-shadow: 1px 1px 2px var(--green-neon);
+}

@@ -71,6 +71,11 @@
   background-color: var(--green-neon);
 }
 
+.options-specie {
+  text-align: center;
+  color: #5fe431;
+}
+
 footer {
   background-color: var(--light-blue);
   opacity: 60%;

@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick and Morty</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="background">
-    <header>
-      <div><img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQOxGMxzPfr3lvtrDxZ9ahcGCw4wMQsdBljUXHiuon2Oa1SmjgGWYx-QWkyLuFwEaguoI3yaq592H-XkHzLbtgh5Pu9ljDJV6AzS.png?r=1ab" alt="" class="box-logo"></div>
-      <div class="box">
-        <div class="box-image"><img src="img/hate.gif" /></div>
-        <div class="box-image"><img src="img/clones.gif" /></div>
-        <div class="box-image"><img src="img/briga.gif" /></div>
-      </div>
-      <section class="bolinhas"></section>
-   
-    </header>
 
-    <main>
-      <form>
-        <button class="btn-az" id="btn-az">A-Z</button>
-        <button class="btn-za" id="btn-za">Z-A</button>
-      <section class="search">
-        <input type="search" placeholder="Digite a sua pesquisa.." />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="background">
+  <header>
+    <div><img
+        src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQOxGMxzPfr3lvtrDxZ9ahcGCw4wMQsdBljUXHiuon2Oa1SmjgGWYx-QWkyLuFwEaguoI3yaq592H-XkHzLbtgh5Pu9ljDJV6AzS.png?r=1ab"
+        alt="" class="box-logo"></div>
+    <div class="box">
+      <div class="box-image"><img src="img/hate.gif" /></div>
+      <div class="box-image"><img src="img/clones.gif" /></div>
+      <div class="box-image"><img src="img/briga.gif" /></div>
+    </div>
+    <section class="bolinhas"></section>
+
+  </header>
+
+  <main>
+    <form>
+      <button class="btn-az" id="btn-az">A-Z</button>
+      <button class="btn-za" id="btn-za">Z-A</button>
+
       </section>
+      <select name="select-type" id="filters-specie" class="options-specie">
+        <option selected disabled> Selecione a espécie</option>
+        <option value="Alien">Alien</option>
+        <option value="Animal"> Animal</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="unknown">Desconhecido</option>
+        <option value="Disease">Disease</option>
+        <option value="Human">Humano</option>
+        <option value="Mytholog">Mytholog</option>
+        <option value="Parasite">Parasita</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Robot">Robô</option>
+        <option value="Vampire">Vampire</option>
 
-      
+        </section>
+        <label> <input type="text-area" id="filters-name" placeholder="ex:Humano" class="filters-name"></label>
     </form>
 
-    </main>
+  </main>
 
-    <footer>
-      <p class="criadoras">Created by Julia Benedicto and Marione Pereira</p>
-      <section class="icones">
-        <a href="https://github.com/juliabb" target="_blank"
-          ><img src="img/ju.ico" alt="imgem Ju"
-        /></a>
+  <footer>
+    <p class="criadoras">Created by Julia Benedicto and Marione Pereira</p>
+    <section class="icones">
+      <a href="https://github.com/juliabb" target="_blank"><img src="img/ju.ico" alt="imgem Ju" /></a>
 
-        <a
-          href="https://www.linkedin.com/in/julia-cruz-7aa339183/"
-          target="_blank"
-          ><img src="img/logolinkedin.ico" alt="Logo Linkedin"
-        /></a>
-      </section>
+      <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/" target="_blank"><img src="img/logolinkedin.ico"
+          alt="Logo Linkedin" /></a>
+    </section>
 
-      <section>
-        <a href="https://github.com/Marione-Tainara" target="_blank"
-          ><img src="img/mari.ico" alt="img Mari"
-        /></a>
+    <section>
+      <a href="https://github.com/Marione-Tainara" target="_blank"><img src="img/mari.ico" alt="img Mari" /></a>
 
-        <a
-          href="https://www.linkedin.com/in/marione-tainara-da-sp/"
-          target="_blank"
-          ><img src="img/logolinkedin.ico" alt="Logo Linkedin"
-        /></a>
-      </section>
-    </footer>
-    <script src="slide.js" type="module"></script>
-    <script src="main.js" type="module"></script>
-  </body>
+      <a href="https://www.linkedin.com/in/marione-tainara-da-sp/" target="_blank"><img src="img/logolinkedin.ico"
+          alt="Logo Linkedin" /></a>
+    </section>
+  </footer>
+  <script src="slide.js" type="module" defer></script>
+  <script src="main.js" type="module" defer></script>
+</body>
+
 </html>

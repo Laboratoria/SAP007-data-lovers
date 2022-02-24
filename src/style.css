@@ -8,18 +8,19 @@ body{
   background-color: #003563;
   font-family: 'Didact Gothic';
   color: white;
+  overflow-x:hidden;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 header{
-  width: 100vw;
-  height: 10vh;
-}
-
-.header{
-  margin: auto;
-  height: 20%;
-  display: inline-flex;
   width: 100%;
+  height: 20%;
+  margin: auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items:center;
+  text-align: center;
 }
 
 button{
@@ -28,18 +29,19 @@ button{
   font: 'Didact Gothic';
   margin: auto;
   border: none;
-  font-size: 100%;
-  text-align: center;
+  font-size: 2vmax;
   cursor: pointer;
   text-decoration-line: none;
-
 }
 
 .logo{
-  width:auto;
-  position: center;
-  height: 15vh;
+  display:flex;
+  float:center;
   padding-bottom: 1vh;
+  height: 10%;
+  margin: auto;
+  width: auto;
+  max-width: 30%;
 }
 
 .imagemChihiro{
@@ -47,9 +49,10 @@ button{
   float: center;
   position: center;
   width: auto;
-  height: 75vh;
+  max-width: 70%;
+  max-height: max-content;
   margin: auto;
-  border-radius: 1%
+  border-radius: 1%;
 }
 
 .hidden{
@@ -72,6 +75,7 @@ button{
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }

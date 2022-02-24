@@ -9,8 +9,6 @@ console.log(filmes);
 
 //salva o array de personagens q veio do filtro                                                        
 
-
-
 const filtroFilme = document.getElementById("selecioneFilme");
 const filtroGenero = document.getElementById("selecioneGenero");
 
@@ -24,14 +22,11 @@ let filtroGeral = function(){
 filtroGeral()
 
 filtroFilme.addEventListener("change", filtroGeral)
-
 filtroGenero.addEventListener("change", filtroGeral)
 
 function getCharacter(tituloEscolhido, generoEscolhido){                                                  
     return filterCharacter(data, tituloEscolhido, generoEscolhido);
 }
-
-
 
 let opcao;
 
@@ -51,12 +46,14 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
     let divImagem;
     let divInfo;
 
-
-    cardPeolple.innerHTML = "";
+    console.log(characters);
+    cardPeolple.innerHTML= " ";
     //percorre cada personagem do array 
     if (characters.length == 0){
         cardPeolple.innerHTML = "Sem resultados. Tente outros filtros."
     }
+    // cardPeolple.innerHTML = characters.length == 0 ? `Sem resultados. Tente outros filtros. ` : " ";
+    // cardPeolple.innerHTML += tituloEscolhido.length > 0 ? `Filtrando por filme ${tituloEscolhido}` : " ";
     characters.forEach(function(character){                                                     
         //cria um item da lista
         liPersonagens = document.createElement("li"); 

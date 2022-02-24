@@ -21,55 +21,57 @@ let produtores = pegaProdutores(data);
 console.log(produtores)                                                                            
 const filtroDiretor = document.getElementById("diretorOptgroup");
 const filtroProdutor = document.getElementById("produtorOptgroup")
-let option;
+//let option;
 
 //cria filtro de diretores no html
 diretores.forEach(function(diretor){
-    option = document.createElement("option");
-    option.setAttribute("value", "diretor." +diretor);
-    option.textContent = diretor;
-    filtroDiretor.appendChild(option)
+    // option = document.createElement("option");
+    // option.setAttribute("value", "diretor." +diretor);
+    // option.textContent = diretor;
+    // filtroDiretor.appendChild(option)
+    filtroDiretor.innerHTML += `<option value= "diretor.${diretor}">${diretor}</option>`
 });
 
 //cria filtro de produtores no html
 produtores.forEach(function(produtor){
-    option = document.createElement("option");
-    option.setAttribute("value","produtor." + produtor);
-    option.textContent = produtor;
-    filtroProdutor.appendChild(option)
+    // option = document.createElement("option");
+    // option.setAttribute("value","produtor." + produtor);
+    // option.textContent = produtor;
+    filtroProdutor.insertAdjacentHTML('beforeend',
+    `<option value= "produtor.${produtor}"> ${produtor}</option>`)
+    //filtroProdutor.appendChild(option)
 });
 
 function exibeFilmes ( valorEscolhido){
     let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
     let liCard;   
-    
 
     listaFilmes.innerHTML = "";
-    //cria itens dos cards dos filmes no html
-//percorre cada item do array ; 
+    //percorre cada item do array ; 
     
-    items.forEach(function(movie){    
+    //items.forEach(function(movie){    
         //cria item na lista
         liCard = document.createElement("li");    
            
-        liCard.innerHTML=
+        liCard.insertAdjacentHTML("beforeend",
+        `${items.map(movie =>
         `<figure class="">
             <img class="poster-filme" src=${movie.poster} alt="">
-        </figure>
-        <div class="informacoes-filme">
+         </figure>
+         <div class="informacoes-filme">
             <p>Título: ${movie.title}</p>
             <p>Ano de lançamento: ${movie.release_date}</p>
             <p>Avaliação: ${movie.rt_score}</p>
             <p>Diretor: ${movie.director}</p>
             <p>Produtor: ${movie.producer}</p>
-        </div>
-        <div class="sinopse-filme" >
+         </div>
+         <div class="sinopse-filme" >
             <p class="texto-sinpose">Sinopse: ${movie.description}</p>
-        </div>`
-        
+         </div>`)}`);
+        liCard.setAttribute("class", "li-filme borda")
        listaFilmes.appendChild(liCard);                                                                                      
-        });
+      //  });
 }
 
 

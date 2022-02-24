@@ -2,13 +2,13 @@ export const filterData = (data, valorEscolhido) => { //Recebe array de dados e 
     let filmes = data["films"].map(filme => { //Mapeia o array e retorna um novo de objetos com seus atributos
         return { //Retorna um objeto para cada elemento do novo array
             //propriedade q vai usar no main: parameto[valor nome = do data]                                                             
-            "title": filme["title"],
-            "poster": filme["poster"],
-            "release_date": filme["release_date"],
-            "rt_score": filme["rt_score"],
-            "director": filme["director"],
-            "producer": filme["producer"],
-            "description": filme["description"]
+            "title": filme.title,
+            "poster": filme.poster,
+            "release_date": filme.release_date,
+            "rt_score": filme.rt_score,
+            "director": filme.director,
+            "producer": filme.producer,
+            "description": filme.description 
         };
     }).filter(filme => { //Filtra o novo array 
         let verificaFiltroDiretor = (valorEscolhido.length == 0 || (valorEscolhido[0] == "diretor" && valorEscolhido[1] == filme["director"]))
@@ -66,49 +66,26 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
     console.log(generoEscolhido)
     console.log(tituloEscolhido)
     //cria array pra guardar personagens
-    //let people = [];
-    //dentro dos dados; entra em filmes e percorre cada um
-    let personagens = data["films"].map(film => {
-        // console.log(filme["title"]);    
+    let personagens = []
+     //dentro dos dados; entra em filmes e percorre cada um
+    data.films.map(film => { 
         film.people.map(person => {
-
-            return {
-            
+            personagens.push({ 
             "name": person["name"],
             "age": person["age"],
             "gender": person["gender"],
             "specie": person["specie"],
             "title": film["title"],
             "img": person["img"]  
-            }
+            })
         })
-        console.log(film.people)
-        
-
-//(inventor => `${inventor.first} ${inventor.last}`);
-        //let filtroTitulo = (tituloEscolhido.length == 0 || (tituloEscolhido == film["title"]))
-        // let filtroGenero = (generoEscolhido.length == 0 || (generoEscolhido == (film["title"](person["gender"]))));
-           // if(filtroTitulo) {
-
-                //dentro de filmes; entra em pessoas e percorre cada um 
-            //     film.["people"].forEach(function (person) {
-            //         // console.log(people["name"]);
-            //         let filtroGenero = (generoEscolhido.length == 0 || generoEscolhido == person["gender"] || (generoEscolhido == "NA" && (person["gender"] != "Male" && person["gender"] != "Female")));
-            //         if (filtroGenero) {
-            //             //manda pro array de people o conteudo de pessoas
-
-            //             "name": person["name"],
-            //             "age": person["age"],
-            //             "gender": person["gender"],
-            //             "specie": person["specie"],
-            //             "title": film["title"],
-            //             "img": person["img"]  
-                        
-            //        }
-            //    });
-            //}
-       // }
     });
+    
+    personagens = personagens.filter(personagem =>{
+        let filtroTitulo = (tituloEscolhido.length == 0 || (tituloEscolhido == personagem["title"]))
+        let filtroGenero = (generoEscolhido.length == 0 || (generoEscolhido == personagem["gender"]));
+        return filtroTitulo && filtroGenero
+    })
     return personagens
 }
 

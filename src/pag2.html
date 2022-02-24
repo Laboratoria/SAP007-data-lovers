@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +11,9 @@
 <body>
   <header class="title">
     <div class="main">
-      <img class="img-header" src="/img/rick_and_morty_2pag.jpeg" alt="Rick and Morty 1-img">
-      <img class="logo" src="/img/Rick_and_Morty_logo.png" alt="Logo Rick and Morty">
-      <img class="img2-header" src="/img/Rick_and_morty-3.png" alt="Rick and Morty 2-img">
+      <img class="img-header" src="/src/img/rick_and_morty_2pag.jpeg" alt="Rick and Morty 1-img">
+      <img class="logo" src="/src/img/Rick_and_Morty_logo.png" alt="Logo Rick and Morty">
+      <img class="img2-header" src="/src/img/Rick_and_morty-3.png" alt="Rick and Morty 2-img">
     </div>
   </header>
   <section class="filter-menu">
@@ -22,13 +21,13 @@
       <option value="status"selected disabled >Status</option>
       <option class="select-status" value="alive">Vivo</option>
       <option class="select-status" value="dead">Morto</option>
-      <option class="select-status" value="unknown">Indefinido</option>
+      <option class="select-status" value="unkno<section class="filter-menu">wn">Indefinido</option>
     </select>
     <select class="especie-btn">
       <option value="specie" selected disabled>Espécie</option>
       <option class="select-specie" value="human">Humano</option>
       <option class="select-specie" value="humanoid">Humanoide</option>
-      <option class="select-specie" value="animal">Animal</option>
+      <option class="select-specie" value="animal" id="specie-filter">Animal</option>
       <option class="select-specie" value="alien">Alienígena</option>
     </select>
     <select class="gender-btn">
@@ -36,9 +35,8 @@
       <option class="select-gender" value="unknown">Indefinido</option>
       <option class="select-gender" value="female">Fêmea</option><option class="select-gender" value="male">Macho</option>
     </select>
-    <input type="text" class="name-search" placeholder="Filtar por Nome">
+    <input type="text" class="name-search" placeholder="Filtar por Nome" id="name-seach">
   </section>
 
 </body>
-
 </html>

@@ -7,7 +7,6 @@
 }
 
  body {
-  background: url("/img/rick_and_morty_fundo\ 1pg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -18,14 +17,16 @@
 
 .main_pag1 {
   display: flex;
+  justify-content: space-between;
+  background-color: black;
 }
 
 .button-pag1 {
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 47vw;
    justify-content: space-between;
+   margin-left: 100px;
 }
 
 .container{
@@ -35,6 +36,7 @@
   height: 47vw;
   text-align: center;
   line-height: 35px;
+
 }
 
 .container h2{
@@ -42,7 +44,7 @@
 }
 
 .button-pag1 button {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding: 15px;
   border-radius: 24px;
   color: #263E5D;
@@ -56,6 +58,12 @@
   border: none;
 }
 
+@media screen and (max-width: 1349px){
+  .button-pag1 button {
+    margin-top: 30px;
+  }
+}
+
 button:hover{
   background: rgb(38,62,93);
   background: linear-gradient(0deg, rgba(38,62,93,1) 0%, rgba(117,250,242,1) 100%);
@@ -67,3 +75,12 @@ footer{
   color: #A0C0C2;
 }
 
+.bg-portal{
+  width: 300px;
+  position: absolute;
+  margin-top: 250px;
+}
+
+.logo{
+  width: 600px;
+}

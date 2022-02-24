@@ -52,3 +52,21 @@ body {
   border: none;
 }
 
+.filter-menu{
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-top: 1%;
+
+}
+
+.name-search{
+width: 30%;
+height: 30%;
+margin: 9px 0px;
+margin-top: 1%;
+}
+

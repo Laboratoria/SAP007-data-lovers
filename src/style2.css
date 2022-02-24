@@ -1,9 +1,29 @@
-.menus {
-  display: flex;
-  justify-content: space-evenly;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap');
+/* botão imagem */
 .imgback {
   width: 10%;
   height: 20%;
   position: fixed;
+}
+/* fundo */
+body {
+  background-image: url("imagens/fundoram2.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+/* select */
+.box {
+  padding: 10px;
+  background-color: #90bf49;
+  color: #022601;
+  border: none;
+  font-family: "Josefin Sans";
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.menus {
+  display: flex;
+  justify-content: space-evenly;
 }

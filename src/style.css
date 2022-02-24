@@ -1,18 +1,17 @@
-
-
-header {
-
+.logo {
+  padding: 15px;
   text-align: center;
   background-color: #0096C7;
 }
 
 body {
-
-  background-color: #00B4D8 ;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #00B4D8;
 
 }
 
-
-
-
-
+.directorsFilter {
+  padding: 10px;
+}

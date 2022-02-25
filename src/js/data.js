@@ -1,11 +1,11 @@
-import dataGhibli from "../data/ghibli/ghibli.js";
-import { renderScreen } from "../js/pages/movies.js";
+// import dataGhibli from "../data/ghibli/ghibli.js";
+// import { renderScreen } from "../js/pages/movies.js";
 // import { makeCharacterCards } from "../js/pages/characters.js";
 
-console.log(dataGhibli);
+// console.log(dataGhibli);
 
 export const sortArray = {
-  filterArray(inputValue) {
+  filterArray(inputValue, dataGhibli) {
     let selectValueDropDown = inputValue;
 
     dataGhibli.films.sort((a, b) => {
@@ -36,7 +36,7 @@ export const sortArray = {
       }
     });
 
-    renderScreen(dataGhibli);
+    // renderScreen(dataGhibli);
   },
   ordenar(a, b) {
     if (a < b) {
@@ -71,20 +71,27 @@ export const searchMovies = {
       }),
     };
     console.log(data, "seen");
-    renderScreen(data);
+    // renderScreen(data);
   },
 };
 
-export const searchCharacters = {
-  filterCharacters(e, dataGhibli) {
-    const searchString = e.target.value.toLowerCase();
-    const data = {
-      films: dataGhibli.films.filter((character) => {
-        return character.title.toLowerCase().includes(searchString);
-      }),
-    };
-    console.log(data, "characters");
-    return data;
-    // makeCharacterCards(data);
-  },
+export const filterCharacters = (searchTitle, films) => {
+  const filteredfilms = films.filter((character) => {
+    console.log(character.title.toLowerCase().includes(searchTitle), "//////");
+    return character.title.toLowerCase().includes(searchTitle);
+  });
+  const characters = getCharacters(filteredfilms);
+  // console.log(data, "characters");
+  console.log(characters, "characters");
+  return characters;
+  // makeCharacterCards(data);
 };
+
+export function getCharacters(films) {
+  const charactersAll = films.map((films) => {
+    return films.people;
+  });
+
+  const people = charactersAll.flat();
+  return people;
+}

@@ -32,7 +32,7 @@ export function renderScreen(data) {
 }
 
 document.getElementById("inputSelect").addEventListener("change", (e) => {
-  sortArray.filterArray(e.target.value);
+  sortArray.filterArray(e.target.value, dataGhibli);
 });
 
 const inputSearch = document.getElementById("inputSearch");

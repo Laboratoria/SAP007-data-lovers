@@ -1,6 +1,6 @@
-let interval = 0;
+let interval = 0; //começa do indice 0
 
-let maxSlider = document.querySelectorAll(".box-image").length - 1;
+let maxSlider = document.querySelectorAll(".box-image").length - 1; // é valor máximo/tamanho (3), uso o querSelectorAll para pegar todas a imagens/box-image (ele retorna um array), coloco -1 pois o indice começa no 0 (ou seja, tenho as posições 0,1,2)
 
 sumir();
 
@@ -23,11 +23,11 @@ function sumir() {
 acao();
 
 function acao() {
-  let img = document.querySelectorAll(".box-image img");
+  let img = document.querySelectorAll(".box-image img"); //pega as img em si
   let span = document.querySelectorAll(".bolinhas span");
 
   setInterval(function () {
-    img[interval].style.display = "none";
+    img[interval].style.display = "none"; //some com a imagem que recebe o intervalo
     span[interval].classList.remove("marcador");
     interval++;
     if (interval > maxSlider) {

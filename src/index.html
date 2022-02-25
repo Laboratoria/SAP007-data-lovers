@@ -25,29 +25,56 @@
 
   <main>
     <form>
-      <button class="btn-az" id="btn-az">A-Z</button>
-      <button class="btn-za" id="btn-za">Z-A</button>
+      <section>
+        <button class="btn-az" id="btn-az">A-Z</button>
+        <button class="btn-za" id="btn-za">Z-A</button>
+
+
+        <select id="filters-specie" class="options-menus">
+          <option value=""> Selecione a espécie</option>
+          <option value="Alien">Alien</option>
+          <option value="Animal"> Animal</option>
+          <option value="Cronenberg">Cronenberg</option>
+          <option value="unknown">Desconhecido</option>
+          <option value="Disease">Disease</option>
+          <option value="Human">Humano</option>
+          <option value="Mytholog">Mytholog</option>
+          <option value="Parasite">Parasita</option>
+          <option value="Poopybutthole">Poopybutthole</option>
+          <option value="Robot">Robô</option>
+          <option value="Vampire">Vampiro</option>
+        </select>
+
+        <select id="filters-gender" class="options-menus">
+          <option value=""> Selecione o gênero</option>
+          <option value="Man">Homem</option>
+          <option value="Woman"> Mulher</option>
+          <option value="Genderless">Sem gênero</option>
+          <option value="unknown">Desconhecido</option>
+        </select>
 
       </section>
-      <select name="select-type" id="filters-specie" class="options-specie">
-        <option selected disabled> Selecione a espécie</option>
-        <option value="Alien">Alien</option>
-        <option value="Animal"> Animal</option>
-        <option value="Cronenberg">Cronenberg</option>
-        <option value="unknown">Desconhecido</option>
-        <option value="Disease">Disease</option>
-        <option value="Human">Humano</option>
-        <option value="Mytholog">Mytholog</option>
-        <option value="Parasite">Parasita</option>
-        <option value="Poopybutthole">Poopybutthole</option>
-        <option value="Robot">Robô</option>
-        <option value="Vampire">Vampire</option>
 
-        </section>
-        <label> <input type="text-area" id="filters-name" placeholder="ex:Humano" class="filters-name"></label>
+
+      <label> <input type="search" id="filters-name" placeholder="ex:Rick" class="filters-name"></label>
+      </section>
     </form>
 
+    <section>
+      <div class="cards" id="cards"></div>
+    </section>
+
+
+
+
+
+
   </main>
+
+
+
+
+
 
   <footer>
     <p class="criadoras">Created by Julia Benedicto and Marione Pereira</p>

@@ -105,6 +105,23 @@ body {
     margin-left: 15px;
 }
 
+.section-card{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.card-section{
+    width: 15vw;
+    height: 50vh;
+    font-size: 12px;
+    margin: 20px;
+   
+    
+}
+
 .footer {
     font-size: 20pt;
     color: #184E77;

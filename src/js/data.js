@@ -1,5 +1,7 @@
 import dataGhibli from "../data/ghibli/ghibli.js";
 import { renderScreen } from "../js/pages/movies.js";
+// import { makeCharacterCards } from "../js/pages/characters.js";
+
 console.log(dataGhibli);
 
 export const sortArray = {
@@ -70,5 +72,19 @@ export const searchMovies = {
     };
     console.log(data, "seen");
     renderScreen(data);
+  },
+};
+
+export const searchCharacters = {
+  filterCharacters(e, dataGhibli) {
+    const searchString = e.target.value.toLowerCase();
+    const data = {
+      films: dataGhibli.films.filter((character) => {
+        return character.title.toLowerCase().includes(searchString);
+      }),
+    };
+    console.log(data, "characters");
+    return data;
+    // makeCharacterCards(data);
   },
 };

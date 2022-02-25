@@ -1,3 +1,50 @@
 @import "../reset.css";
 @import "../components/header.css";
 @import "../components/footer.css";
+
+.mainContainer {
+  min-height: 75vh;
+  background-color: #efefef;
+  width: 100%;
+  padding: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputs {
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 38px;
+  padding-left: 15px;
+}
+
+#inputSearch {
+  width: 40vw;
+}
+
+#inputSearch:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    min-height: 82vh;
+  }
+}
+@media (max-width: 480px) {
+  .inputContainer {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  #inputSearch {
+    width: 100%;
+  }
+}

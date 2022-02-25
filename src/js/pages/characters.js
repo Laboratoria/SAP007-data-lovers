@@ -1,5 +1,6 @@
 import data from "../../data/ghibli/ghibli.js";
 import { menu } from "../components/header.js";
+import { searchCharacters } from "../data.js";
 
 menu();
 
@@ -20,4 +21,14 @@ function makeCharacterCards(dataAll) {
     )
     .join("");
 }
+
+const inputSearch = document.getElementById("inputSearch");
+
+inputSearch.addEventListener("keyup", (e) => {
+  const dataFiltered = searchCharacters.filterCharacters(e, data);
+  makeCharacterCards(dataFiltered);
+});
+
+console.log(data);
 makeCharacterCards(data);
+// makeCharacterCards(data);

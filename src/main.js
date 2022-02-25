@@ -1,4 +1,4 @@
-import { statusFilter, genderFilter } from "./data.js";
+import { statusFilter, genderFilter, sortNamesFilter } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -29,31 +29,37 @@ function allCards(data) {
 allCards(data.results);
 
 
-//Seletores
 
 const lifeSelect = document.getElementById("menu_filter_life");
-const genderSelect = document.getElementById("menu_filter_gender");
-//const sortSelect = document.getElementById("menu_sort");
 
-
-//Funções
-function printStatus(e) {
-  const statusResult = statusFilter(data.results, e.target.value);
-  console.log(statusResult)
+function printStatus(event) {
+  const statusResult = statusFilter(data.results, event.target.value);
   return allCards(statusResult);
 }
 lifeSelect.addEventListener("change", printStatus);
 
 
-function printGender(e) {
-  const genderResult = genderFilter(data.results, e.target.value);
-  console.log(genderResult);
+const genderSelect = document.getElementById("menu_filter_gender");
+
+function printGender(event) {
+  const genderResult = genderFilter(data.results, event.target.value);
   return allCards(genderResult);
 }
 
 genderSelect.addEventListener("change", printGender);
 
+
 // event.target.value = buscar diretamente o valor definido no seletor
+
+const alphaSelect = document.getElementById("menu_sort");
+
+function sortAlphabetical(event) {
+  const sortNameSelect = sortNamesFilter(data.results, event.target.value)
+  return allCards(sortNameSelect);
+
+};
+
+alphaSelect.addEventListener("change", sortAlphabetical);
 
 
 

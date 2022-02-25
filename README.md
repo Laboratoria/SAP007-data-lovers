@@ -1,4 +1,7 @@
 # Data Lovers
+![ghipy](https://media.giphy.com/media/3sjOADyw19Pa/giphy.gif)
+
+ ---
 
 ## Índice
 
@@ -35,18 +38,40 @@ parte direita.
 
 ### Definição de produto
 
-Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
-contando como foi o processo de desenho e como você acredita que o produto possa
-resolver o problema (ou problemas) de seu usuário.
+Este projeto consistem em ordenar e filtras alguns dados e eventualmente mostrar um valor agregado referente a temática escolhida.
+Para este novo desafio optei por construir uma interação sobre o Studio Ghibli, onde o usuário poderá classificar suas pesquisa por Título dos filmes, Diretor, Personagens ou o ano de seu lançamento.
+
 
 ### Histórias de usuário
 
+**Historia 1**
+![mulheres](./img-readme/mulher.png)
+
+**História 2**
+<br>
+![jovem](./img-readme/jovem.png)
+
 ### Desenho de interface do usuário
+
+Gráficos Form
+64% dos entrevistados se declararam como mulher e estimasse que a sua faixa etária está entre 25 e +30 anos.
+
+![gênero](./img-readme/genero.png)
+![idade](./img-readme/idade.png)
+![info_pesquisa](./img-readme/info_site.png)
+
+A paleta de cores a ser utilizada será do filme The Secret World of Arrietty.
+![paleta](./img-readme/paleta.jpg)
 
 #### Protótipo de baixa fidelidade
 
+![prototipo-baixa-fidelidade](./img-readme/home_baixa_fidelidade.jpg)
 
 #### Protótipo de alta fidelidade
+
+![prototipo_home](./img-readme/home_prototipo.png)
+
+![prototipo_index](./img-readme/index_prototipo.png)
 
 
 #### Testes de usabilidade

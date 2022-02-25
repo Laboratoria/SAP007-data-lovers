@@ -51,25 +51,20 @@ li a:hover {
 
 .containerFilters {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 50px;
     padding-top: 20px;
     background: black;
-}
-
-.filters1 {
-    margin-right: 50px;
-}
-
-.filters3 {
-    margin-left: 50px ;
+    flex-wrap: wrap;
 }
 
 .select {
-    font-size: 20px;
+    height: 25px;
     width: 200px;
+    font-size: larger;
     
 }
+
 
 .cardImage {
     border: 5px solid white;

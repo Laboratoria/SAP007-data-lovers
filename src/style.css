@@ -8,3 +8,23 @@
 body {
   background-color:#BF9A78;
 }
+
+.filtros_filmes {
+  background-color: #798C32;
+  width: 100%;
+  padding: 1em;
+}
+
+button {
+  background-color: #731F35;
+  width:9em;
+  height: 3em;
+  color: white;
+  border-radius: 0.8em;
+}
+
+.buscar_titulo .diretor {
+  width: 10em;
+  text-align: center;
+  font-size: 1em;
+}

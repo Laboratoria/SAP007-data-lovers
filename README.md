@@ -33,6 +33,8 @@ parte direita.
 
 ## 2. Resumo do projeto
 
+<iframe src="https://giphy.com/embed/3sjOADyw19Pa" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3sjOADyw19Pa">via GIPHY</a></p>
+
 ### Definição de produto
 
 Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,

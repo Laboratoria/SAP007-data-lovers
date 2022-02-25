@@ -25,43 +25,51 @@
 
   <main>
     <form>
+      
       <section>
-        <button class="btn-az" id="btn-az">A-Z</button>
-        <button class="btn-za" id="btn-za">Z-A</button>
+        <p class="statistics" id="statistics-infos"></p>
+      </section>
+
+      <select class="options-menus" id="alphabetic-sequence">
+        <option value="">Ordem</option>
+        <option value="AZ">A-Z</option>
+        <option value="ZA">Z-A</option>
+      </select>
 
 
-        <select id="filters-specie" class="options-menus">
-          <option value=""> Selecione a espécie</option>
-          <option value="Alien">Alien</option>
-          <option value="Animal"> Animal</option>
-          <option value="Cronenberg">Cronenberg</option>
-          <option value="unknown">Desconhecido</option>
-          <option value="Disease">Disease</option>
-          <option value="Human">Humano</option>
-          <option value="Mytholog">Mytholog</option>
-          <option value="Parasite">Parasita</option>
-          <option value="Poopybutthole">Poopybutthole</option>
-          <option value="Robot">Robô</option>
-          <option value="Vampire">Vampiro</option>
-        </select>
+      <select id="filters-species" class="options-menus">
+        <option value=""> Selecione a espécie</option>
+        <option value="Alien">Alien</option>
+        <option value="Animal"> Animal</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="unknown">Desconhecido</option>
+        <option value="Disease">Disease</option>
+        <option value="Human">Humano</option>
+        <option value="Mytholog">Mytholog</option>
+        <option value="Parasite">Parasita</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Robot">Robô</option>
+        <option value="Vampire">Vampiro</option>
+      </select>
 
-        <select id="filters-gender" class="options-menus">
-          <option value=""> Selecione o gênero</option>
-          <option value="Man">Homem</option>
-          <option value="Woman"> Mulher</option>
-          <option value="Genderless">Sem gênero</option>
-          <option value="unknown">Desconhecido</option>
-        </select>
+      <select id="filters-genders" class="options-menus">
+        <option value=""> Selecione o gênero</option>
+        <option value="Man">Homem</option>
+        <option value="Woman"> Mulher</option>
+        <option value="Genderless">Sem gênero</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
 
       </section>
 
 
-      <label> <input type="search" id="filters-name" placeholder="ex:Rick" class="filters-name"></label>
+      <label> <input type="search" id="filters-names" placeholder="ex:Rick" class="filters-name"></label>
+      
       </section>
     </form>
 
     <section>
-      <div class="cards" id="cards"></div>
+      <div class="cards" id="card-information"></div>
     </section>
 
 
@@ -70,11 +78,6 @@
 
 
   </main>
-
-
-
-
-
 
   <footer>
     <p class="criadoras">Created by Julia Benedicto and Marione Pereira</p>

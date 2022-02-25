@@ -10,19 +10,28 @@ export const filterGender = (data, condition) => {
   console.log(resultGender);
 };
 
-export const filterSpecie = (data, condition) => {
+export const filterSpecies = (data, condition) => {
   const resultSpecies = data.filter(
     (personagem) => personagem.species.toLowerCase() === condition.toLowerCase()
   );
   console.log(resultSpecies);
 };
 export const searchName = (data, condition) => {
-  const resultNames = data.filter((personagem) =>
+  const screenSearch = data.filter((personagem) =>
     personagem.name.toLowerCase().includes(condition.toLowerCase())
   );
-  console.log(resultNames);
+  return screenSearch;
 };
-export const  buscarNome = (data, condition) => {
-  const resultadoLocalizacao = data.filter((personagem) => personagem.name.toLowerCase().includes(condition.toLowerCase()));
-  return resultadoLocalizacao;
+
+export const orderResults = (data, orderResults) => {
+  if (orderResults === "AZ") {
+    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
+  } else {
+    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
+  }
+};
+
+export const percentage = (total, portion) => {
+  const resultPercentage = Math.round((portion * 100) / total);
+  return resultPercentage;
 };

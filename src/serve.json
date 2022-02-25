@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/filme", "destination": "filme.html" },
+      { "source": "/", "destination": "index.html" }
+    ]
+  }

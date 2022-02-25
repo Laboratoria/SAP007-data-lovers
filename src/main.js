@@ -1,6 +1,6 @@
-import { filmFilter } from './data.js';
+import { filmFilter, printMovies } from './data.js';
 import data from './data/ghibli/ghibli.js';
-
+// import { ordemMovies } from './data.js'
 
 const filmes = data.films;
 function printTela(data) {
@@ -14,6 +14,9 @@ function printTela(data) {
 
 printTela(filmes);
 
+printMovies();
+
+// ordemMovies();
 
 //chamando evento seletor filtragem 
 const order = document.getElementById("order")
@@ -24,6 +27,3 @@ order.addEventListener("change", (event) => {
     printTela(filterAz);
 
 });
-
-
-

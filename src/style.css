@@ -1,0 +1,61 @@
+
+
+header {
+
+  text-align: center;
+  background-color: #0096C7;
+  margin: 0% 0;
+  color:#0096C7 ;
+}
+
+body {
+
+  background-color: #00B4D8 ;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#kiki{
+
+  height: auto;
+ position: absolute;
+ right: 140px;
+ top: 250px;
+ max-width: 100%
+
+}
+
+#sem_rosto{
+
+  position: absolute;
+  left: 160px;
+  top: 270px;
+
+}
+
+#fogo{
+ height: auto;
+ position: absolute;
+ bottom: 0;
+ max-width: 3%;
+
+}
+
+footer{
+
+  position: absolute;
+  bottom: 0;
+  background-color: #48CAE4;
+  color: #FFF;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+
+}
+
+
+
+
+

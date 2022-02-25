@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.central-container{
   background-color: #263E5D;
 }
 
@@ -53,14 +53,9 @@ body {
 }
 
 .filter-menu{
-  width: 1000px;
+  width: 100%;
   height: 100px;
   display: flex;
-  text-align: center;
-  justify-content: space-between;
-  margin-left: 15%;
-  margin-top: 1%;
-
 }
 
 .name-search{
@@ -69,12 +64,24 @@ height: 30%;
 margin: 9px 0px;
 margin-top: 1%;
 }
+
+.main-container{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
 .card-container{
+  margin-left: 50px;
+  margin-top: 50px;
   color: black;
   text-align: center;
   display:flex;
   justify-content: center;
   flex-direction:column;
+  flex-wrap: wrap;
   background-color:#75FAF2;
   padding:10px;
   width:25%;

@@ -11,11 +11,11 @@ import data from "./data/rickandmorty/rickandmorty.js";
 function showOnCards(data) {
   document.getElementById("card-information").innerHTML = data
     .map(
-      (item) => ` <div class="cards">
-       <div class="front-image">
-       <img class="image-card" src="${item.imagem}">
-  
-  </div>
+      (item) =>
+        ` <div class="cards">
+<div class="front-image">
+<img class="image-card" src="${item.image}">
+</div>
   <div class="front-text">
   <ul class="text-cards">
   <li>Nome: ${item.name}</li>

@@ -1,7 +1,5 @@
-
-
-header {
-
+.logo {
+  padding: 15px;
   text-align: center;
   background-color: #0096C7;
   margin: 0% 0;
@@ -47,7 +45,6 @@ footer{
   position: absolute;
   bottom: 0;
   background-color: #48CAE4;
-  color: #FFF;
   width: 100%;
   height: 100px;
   text-align: center;
@@ -55,7 +52,6 @@ footer{
 
 }
 
-
-
-
-
+.directorsFilter {
+  padding: 10px;
+}

@@ -1,32 +1,31 @@
-
-
-header {
-
+.logo {
+  padding: 15px;
   text-align: center;
   background-color: #0096C7;
   margin: 0% 0;
-  color:#0096C7 ;
+  color: #0096C7;
 }
 
 body {
-
-  background-color: #00B4D8 ;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #00B4D8;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-#kiki{
+#kiki {
 
   height: auto;
- position: absolute;
- right: 140px;
- top: 250px;
- max-width: 100%
-
+  position: absolute;
+  right: 140px;
+  top: 250px;
+  max-width: 100%
 }
 
-#sem_rosto{
+#sem_rosto {
 
   position: absolute;
   left: 160px;
@@ -34,15 +33,15 @@ body {
 
 }
 
-#fogo{
- height: auto;
- position: absolute;
- bottom: 0;
- max-width: 3%;
+#fogo {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  max-width: 3%;
 
 }
 
-footer{
+footer {
 
   position: absolute;
   bottom: 0;
@@ -52,10 +51,8 @@ footer{
   height: 100px;
   text-align: center;
   line-height: 100px;
-
 }
 
-
-
-
-
+.directorsFilter {
+  padding: 10px;
+}

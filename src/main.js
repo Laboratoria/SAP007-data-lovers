@@ -1,4 +1,3 @@
-
 //import { example } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
@@ -17,15 +16,6 @@ function showResults(event) {
 
     /*Primeira letra do nome maiuscula - deixar para fazer no final para nao atrapalhar o sort() 
     const alteredName = allDatas.name[0].toUpperCase() + allDatas.name.substring(1);*/
-
-    let arrayPokemon = new Array();
-    arrayPokemon = [
-      allDatas.name,
-      allDatas.num,
-      allDatas.type,
-      allDatas.weaknesses,
-    ];
-    console.log(typeof arrayPokemon);
 
     // card dos pokemons string
     const pokemonCard = `
@@ -48,10 +38,6 @@ function showResults(event) {
     sectionResults.innerHTML = pokemonCard;
   }
 }
-
-/*const sectionResults = document.createElement("section");
-    document.getElementById("result").appendChild(sectionResults);
-    sectionResults.innerHTML = pokemonCard;*/
 
 function startPageHome() {
   heightWindow();
@@ -76,9 +62,5 @@ function heightWindow() {
 
 
 
-
-/*const sectionResults = document.createElement("section");
-    document.getElementById("result").appendChild(sectionResults);
-    sectionResults.innerHTML = pokemonCard;*/
 
 

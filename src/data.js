@@ -1,11 +1,13 @@
 export const filterData = (dataGhibli, condition) => {
     const filterDirector = dataGhibli.films.filter(film => (film.director.includes(condition)))
-        //console.log(filterDirector)
+    console.log(filterDirector)
 
-    const filterProducer = dataGhibli.films.filter(film => (film.producer.includes(condition)))
-        //console.log(filterProducer)
+
 }
-
+export const filterDataDois = (dataGhibli, condition) => {
+    const filterProducer = dataGhibli.films.filter(film => (film.producer.includes(condition)))
+    console.log(filterProducer)
+}
 
 
 

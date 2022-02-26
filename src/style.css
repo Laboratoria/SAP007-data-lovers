@@ -105,6 +105,14 @@ body {
     margin-left: 15px;
 }
 
+.card-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+
 .footer {
     font-size: 20pt;
     color: #184E77;

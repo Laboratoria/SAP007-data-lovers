@@ -76,9 +76,9 @@ export const searchMovies = {
 };
 
 export const filterCharacters = (searchTitle, films) => {
-  const filteredfilms = films.filter((character) => {
-    console.log(character.title.toLowerCase().includes(searchTitle), "//////");
-    return character.title.toLowerCase().includes(searchTitle);
+  const filteredfilms = films.filter((film) => {
+    console.log(film.title.toLowerCase().includes(searchTitle), "//////");
+    return film.title.toLowerCase().includes(searchTitle);
   });
   const characters = getCharacters(filteredfilms);
   // console.log(data, "characters");
@@ -88,10 +88,20 @@ export const filterCharacters = (searchTitle, films) => {
 };
 
 export function getCharacters(films) {
-  const charactersAll = films.map((films) => {
-    return films.people;
+  const charactersAll = films.map((film) => {
+    return film.people;
   });
 
   const people = charactersAll.flat();
   return people;
 }
+
+// export const sortNamesFilter = (data, order) => {
+//   if (order == "alphabetic") {
+//     console.log("A-Z")
+//     return data.sort((a, z) => a.name > z.name ? 1 : -1);
+//   } else {
+//     console.log("Z-A")
+//     return data.sort((a, z) => a.name > z.name ? -1 : 1);
+//   }
+// };

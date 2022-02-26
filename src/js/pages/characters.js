@@ -32,4 +32,3 @@ inputSearch.addEventListener("keyup", (e) => {
 
 console.log(charactersAll);
 makeCharacterCards(charactersAll);
-// makeCharacterCards(data);

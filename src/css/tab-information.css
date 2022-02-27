@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url("src/main.js");
 
 .details-info {
   width: 100%;
@@ -9,7 +8,7 @@
 .details-info > .tab-title {
   display: block;
   color: #ffdbac;
-  padding: 20px;
+  padding: 15px;
   font-size: 0.875rem;
   text-align: center;
   font-weight: 600;
@@ -32,7 +31,7 @@
   content: "- MENOS ";
 }
 
-@media screen and (min-width: 360px) and (orientation: landscape) {
+@media screen and (min-width: 360px) and (max-width: 599px) and (orientation: landscape) {
   .details-info > .tab-title {
     font-size: 0.75rem;
   }
@@ -47,6 +46,7 @@
 @media screen and (min-height: 720px) {
   .details-info > .tab-title {
     font-size: 1.2rem;
+    padding: 20px;
   }
   .details-info > .tab-text {
     padding: 25px;

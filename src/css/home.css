@@ -2,11 +2,13 @@
 @import url("reset.css");
 @import url("tab-information.css");
 
-/* width: 360px height: 640px */
-.body-home {
-  background-color: #bfb63b;
+* {
   margin: 0px;
   padding: 0px;
+}
+
+.body-home {
+  background-color: #bfb63b;
   font-family: "Segoe UI", Helvetica, Arial, Verdana;
 }
 
@@ -36,7 +38,6 @@
 
 .main-home {
   width: 100%;
-  /*height: */
   display: grid;
   justify-content: center;
   align-items: center;
@@ -49,9 +50,9 @@
   background-color: #ffdbac;
 }
 
-@media screen and (min-height: 300px) and (orientation: portrait) {
+@media screen and (min-height: 300px) and (max-height: 899px) and (orientation: portrait) {
   .container-pokemon {
-    background-position: -940px top;
+    background-position: -970px top;
   }
   .logo-onpokemon {
     width: 337px;
@@ -61,8 +62,7 @@
   .pokedex-close {
     width: 160px;
     height: 230px;
-    margin-left: 45vw;
-    padding: 30px 0px;
+    margin-left: 160px;
   }
 
   .intro-text {
@@ -71,9 +71,9 @@
   }
 }
 
-@media screen and (min-height: 960px) and (orientation: portrait) {
+@media screen and (min-height: 900px) and (orientation: portrait) {
   .container-pokemon {
-    background-position: -640px top;
+    background-position: -650px top;
   }
   .logo-onpokemon {
     width: 406px;
@@ -83,8 +83,8 @@
   .pokedex-close {
     width: 244px;
     height: 349px;
-    margin-left: 300px;
-    margin-top: 200px;
+    padding-left: 280px;
+    padding-top: 150px;
   }
   .intro-text {
     font-size: 1.6rem;
@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (min-height: 360px) and (orientation: landscape) {
+@media screen and (min-height: 360px) and (max-height: 599px) and (orientation: landscape) {
   .container-pokemon {
     background-position: center top;
   }
@@ -113,7 +113,7 @@
   }
 }
 
-@media screen and (min-height: 600px) and (orientation: landscape) {
+@media screen and (min-height: 600px) and (max-height: 719px) and (orientation: landscape) {
   .container-pokemon {
     background-position: center top;
   }
@@ -126,7 +126,6 @@
     width: 160px;
     height: 230px;
     margin: 0 auto;
-    margin-bottom: 3vh;
   }
   .intro-text {
     font-size: 1.5rem;
@@ -150,7 +149,6 @@
     width: 244px;
     height: 349px;
     margin: 0 auto;
-    margin-bottom: 3vh;
   }
   .intro-text {
     font-size: 1.6rem;

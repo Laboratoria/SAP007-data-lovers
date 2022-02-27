@@ -7,14 +7,14 @@ export const filterGender = (data, condition) => {
   const resultGender = data.filter(
     (personagem) => personagem.gender.toLowerCase() === condition.toLowerCase()
   );
-  console.log(resultGender);
+  return resultGender;
 };
 
 export const filterSpecies = (data, condition) => {
   const resultSpecies = data.filter(
     (personagem) => personagem.species.toLowerCase() === condition.toLowerCase()
   );
-  console.log(resultSpecies);
+  return resultSpecies;
 };
 export const searchName = (data, condition) => {
   const screenSearch = data.filter((personagem) =>

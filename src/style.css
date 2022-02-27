@@ -88,3 +88,23 @@ footer .criadoras {
   color: #000000;
   text-shadow: 1px 1px 2px var(--green-neon);
 }
+
+/* === CARDS === */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  width: 15vw;
+}
+
+.front-text {
+  background: var(--green-neon);
+  display: flex;
+}
+.text-cards {
+  text-align: inherit;
+  list-style-type: none;
+}

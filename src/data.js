@@ -1,31 +1,8 @@
-/*import { allDatas } from './main.js';
-
-export const filtering = {
-  
-  filterData: function(allDatas) {
-    const newArray = [];
-    document.querySelector("input[type=checkbox]:checked");
-    for(let i=0; i < checkboxes.length; i++){
-      newArray.push(checkboxes[i].value)
-
-      console.log(newArray);
-
-    }
-
-
-
-
-
-  },
-
-  //sortData: function(){
-
-  //},
-
-  //computerStats: function()
-  
-}*/
-
- 
-
-  
+export const dataPokemon = () => {
+  fetch("data/pokemon.json")
+    .then((data) => data.json())
+    .then((objectData) => {
+      return objectData;
+    });
+  return false;
+};

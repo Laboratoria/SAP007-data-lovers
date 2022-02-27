@@ -1,11 +1,11 @@
 
 export const sortAz = (data, order) => {
-  if (order === "A-Z"){
+  if (order === "A-Z") {
     return data.sort((a, z) => a.title > z.title ? 1 : -1);
-   } else {
-     return data.sort((a, z) => a.title > z.title ? -1 : 1);
-   }
-  };
+  } else {
+    return data.sort((a, z) => a.title > z.title ? -1 : 1);
+  }
+};
 
 
 export const filterTitle = (films, selectedFilm) => {
@@ -20,7 +20,7 @@ export const filterRating = (films, selectedRating) => {
 export const filterProducer = (films, selectedProducer) => {
   return films.filter(film => film.producer === selectedProducer)
 };
-  
-  
+
+
 
 

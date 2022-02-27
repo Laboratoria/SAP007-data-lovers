@@ -1,60 +1,66 @@
-import {sortAz} from './data.js';
-
-import {filterTitle, filterRating, filterProducer} from './data.js';
-
+import { sortAz } from './data.js';
+import { filterTitle, filterRating, filterProducer } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const movies = data.films
-const printMovies = document.getElementById("printMoviesId");
+const moviesContainer = document.getElementById("moviesContainer");
+function showCards(movies) {
+    moviesContainer.innerHTML = movies.map(movie =>
 
-function mostrandoCards(movies) {
-
- printMovies.innerHTML = movies.map(movie => 
-    
+        `        
+        <div class="innerCard"> 
+            <img src="${movie.poster}" alt="Imagem do poster" class="cardImage"  id="cardImage"> 
+            <p class="cardTitle">${movie.title} </p>   
+        </div>        
         `
-    <div class="rotateCard">
-        <div class="innerCard">
-            <div class="frontCard"> 
-                <img src="${movie.poster}" alt="" class="cardImage" > 
-                <p class="cardTitle">${movie.title} </p> 
-            </div>          
-        </div>
-    </div>
-        `
-)};
 
-mostrandoCards(movies)
+    ).join('')
+}
+
+showCards(movies)
+
 
 const sortOrder = document.getElementById("selectAZ");
 
 sortOrder.addEventListener("change", (event) => {
     const selectedSort = event.target.value;
     const filterAz = sortAz(movies, selectedSort);
-    mostrandoCards(filterAz);
+    showCards(filterAz);
 
 });
 
 const selectTitle = document.getElementById("selectTitle")
 selectTitle.addEventListener("change", (event) => {
     const resultTitle = filterTitle(movies, event.target.value)
-    mostrandoCards(resultTitle);
+    showCards(resultTitle);
 });
 
 const selectRating = document.getElementById("selectRating")
 selectRating.addEventListener("change", (event) => {
     const resultRating = filterRating(movies, event.target.value)
-    mostrandoCards(resultRating);
+    showCards(resultRating);
 });
 
 const selectProducer = document.getElementById("selectProducer")
 selectProducer.addEventListener("change", (event) => {
     const resultProducer = filterProducer(movies, event.target.value)
-    mostrandoCards(resultProducer);
+    showCards(resultProducer);
 });
 
+const buttonOpen = document.querySelector('.cardImage');
+const modalContainer = document.querySelector('.modalContainer');
+const buttonHide = document.querySelector('.hideModal');
 
 
+buttonOpen.forEach((item) => {
+    item.addEventListener('click', () => {
+        modalContainer.classList.add('show');
+    });
+});
 
+buttonHide.addEventListener("click", () => {
+    modalContainer.classList.remove('show');
+});
 
 
 

@@ -1,9 +1,11 @@
-import dataGhibli from "../data/ghibli/ghibli.js";
-import { renderScreen } from "../js/pages/movies.js";
-console.log(dataGhibli);
+// import dataGhibli from "../data/ghibli/ghibli.js";
+// import { renderScreen } from "../js/pages/movies.js";
+// import { makeCharacterCards } from "../js/pages/characters.js";
+
+// console.log(dataGhibli);
 
 export const sortArray = {
-  filterArray(inputValue) {
+  filterArray(inputValue, dataGhibli) {
     let selectValueDropDown = inputValue;
 
     dataGhibli.films.sort((a, b) => {
@@ -34,7 +36,7 @@ export const sortArray = {
       }
     });
 
-    renderScreen(dataGhibli);
+    // renderScreen(dataGhibli);
   },
   ordenar(a, b) {
     if (a < b) {
@@ -55,3 +57,51 @@ export const sortArray = {
     return 0;
   },
 };
+
+export const searchMovies = {
+  filterMovies(e, dataGhibli) {
+    const searchString = e.target.value.toLowerCase();
+    const data = {
+      films: dataGhibli.films.filter((movie) => {
+        return (
+          movie.title.toLowerCase().includes(searchString) ||
+          movie.producer.toLowerCase().includes(searchString) ||
+          movie.director.toLowerCase().includes(searchString)
+        );
+      }),
+    };
+    console.log(data, "seen");
+    // renderScreen(data);
+  },
+};
+
+export const filterCharacters = (searchTitle, films) => {
+  const filteredfilms = films.filter((film) => {
+    console.log(film.title.toLowerCase().includes(searchTitle), "//////");
+    return film.title.toLowerCase().includes(searchTitle);
+  });
+  const characters = getCharacters(filteredfilms);
+  // console.log(data, "characters");
+  console.log(characters, "characters");
+  return characters;
+  // makeCharacterCards(data);
+};
+
+export function getCharacters(films) {
+  const charactersAll = films.map((film) => {
+    return film.people;
+  });
+
+  const people = charactersAll.flat();
+  return people;
+}
+
+// export const sortNamesFilter = (data, order) => {
+//   if (order == "alphabetic") {
+//     console.log("A-Z")
+//     return data.sort((a, z) => a.name > z.name ? 1 : -1);
+//   } else {
+//     console.log("Z-A")
+//     return data.sort((a, z) => a.name > z.name ? -1 : 1);
+//   }
+// };

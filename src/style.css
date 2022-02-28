@@ -1,83 +1,153 @@
-*{
-    margin:0;
-    list-style: none;
-    text-decoration: none;
-}
-.cabecalho{
-    background-color: violet;
-    font-family: 'Poppins', sans-serif;
-    display:flex;
-    justify-content: space-around;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Helvetica, Arial, Verdana;
+  text-decoration: none;
+  list-style: none;
 }
 
-.titulosite{
-    display:flex;
-    align-items: center;
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  background-color: #a4eebe;
+  align-items: center;
 }
 
-.listapaginas{
-    background-color:lightcoral; 
-    font-family: 'Poppins', sans-serif;
-    display:flex;
-    justify-content:space-around;
-    
+.logo {
+  width: 15%;
+  height: 15%;
 }
 
-.navbarradepesquisa{
-    display: flex;
-    justify-content:center;
-}
-.barra_pesquisa{
-    background-color:cornflowerblue;
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    width: fit-content;
+.listapaginas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+  margin-top: 2%;
+  font-size: 1.5rem;
 }
 
-.menufiltros{
-    background-color:darkseagreen;
-    border: 0.2em solid black;
-    border-radius: 0.5em;
-    font-family: 'Poppins', sans-serif;
-    padding-left: 1em;
-    display:flex;
-    justify-content: space-between;
-    padding: 00.8em;
-    width: fit-content;
-}
-.categoriailtro{
-    font-weight: bold;
-    line-height: 01.8em;
-    background-color:rgb(58, 176, 223);
-    border: 0.2em solid black;
-    border-radius: 0.5em;
-
+.barra_pesquisa {
+  border-radius: 0.3em;
+  background: #ffffff;
+  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
+  width: fit-content;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0.1em;
+  font-size: 1em;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
 }
 
-.organize_A-Z{
-    background-color: blueviolet;
-    font-family: 'Poppins', sans-serif;
-    align-items: flex-end;
-    display: flex;
-    justify-content: flex-end;
+.containersearch {
+  display: flex;
+  justify-content: space-around;
 }
 
-.inputA-Z{
-    width: fit-content;
-font-family: 'Poppins';
-font: 0.2em;
-border: black 0.1em;
-border-radius: 0.1em;
-background: #c1d177;
-line-height: 00.05em;
+.icon {
+  width: 1em;
+}
+.btnsearch {
+  border-radius: 0.3em;
+  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
+  width: fit-content;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  float: left;
+  width: 20%;
+  padding: 1em;
+  background: #2196f3;
+  color: white;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
 }
 
+form.containersearch button:hover {
+  background: #0b7dda;
+}
+/* Clear floats */
+form.containersearch::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+form.containersearch {
+  margin: auto;
+  max-width: 300px;
+}
 
-.rodape{
-    background-color: tomato;
-    font-family: 'Poppins', sans-serif;
-    
+.container_filtros_search_ordem {
+  background: #ffffff;
+  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
+  border-radius: 0.3em;
+  width: fit-content;
+  margin-top: 5%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin:0 auto;
+  margin-top:5%;
+  
+}
+
+.container_filtros {
+  display: flex;
+  justify-content: space-around;
+}
+
+.organize_A-Z {
+  display: flex;
+  width: 10%;
+  padding: 0.5em;
+  flex-direction: column;
+  align-items: stretch;
+  float: right;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 0.3em;
+  background: #faf8f8;
+  
+}
+
+.boxfiltros {
+  border-radius: 0.3em;
+  background: #faf8f8;
+  width: fit-content;
+  padding: 2%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.select_input {
+  background-color: #bebebe;
+}
+.btnfiltros{
+  margin-right: 1%;
+  margin-left: 1%;
+  background-color: #0b7dda;
+  width: 20%;
+}
+.btnfiltros.reset{
+background-color: #05f258;
+width: 20%;
+margin-right: 1%;
+margin-left: 1%;
+}
+.rodape {
+  background-color: #05f258;
+  position: fixed;
+  padding: 1em 1em 0 1em;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 2.5em;
+  text-align: center;
 }
 
 

@@ -33,28 +33,37 @@
       <p>
     </div>
 
-    <form>
-      <div class="div-filtra-ordena">
-        <select class="label-filtra-ordena" id="selecao">
-          <option selected disabled>Filtrar por</option>
-          <optgroup label="Diretor:" id="diretorOptgroup">
-          </optgroup>
-          <optgroup label="Produtor:" id="produtorOptgroup">
-          </optgroup>
-        </select>
+    <section>
+        <form>
+            <div class="div-filtra-ordena-filmes">
+                <select class="filmes-label" id="selecao">
+                    <option selected disabled>Filtrar por</option>
+                    <optgroup label="Diretor:" id="diretorOptgroup">
+                    </optgroup>
+                    <optgroup label="Produtor:" id="produtorOptgroup">
+                    </optgroup>
+                </select>
 
-        <select class="label-filtra-ordena" id="selecionaOrdem">
-          <option selected disabled>Ordenar por</option>
-          <option value="ordemAlfabetica" id="">Título de A &#8594 Z</option>
-          <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
-          <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
-        </select>
-      </div>
-    </form>
+                <select class="filmes-label" id="selecionaOrdem">
+                    <option selected disabled>Ordenar por</option>
+                    <option class="opcaoOrdem" value="ordemAlfabetica" id="">A &#8594 Z</option>
+                    <option class="opcaoOrdem" value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
+                    <option class="opcaoOrdem" value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
+                </select>
+            </div>
+        </form>
+    </section>
+    <p id="resultadoCalculo">
 
-    <article class="caixa-galeria-filmes" id="listaFilmes" class="">
-    </article>
-  </main>
+    </p>
+        <div class=" itens">
+            <article class="filmes borda">
+                <ul id="listaFilmes" class="lista-filmes">
+
+                </ul>
+            </article>
+        </div>
+</main>
 
 
   <footer class="rodape">

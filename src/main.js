@@ -1,4 +1,4 @@
-import { filterData, pegaDiretores, pegaProdutores } from './data.js';
+import { filterData, pegaDiretores, pegaProdutores, calculo } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 exibeFilmes([]);
@@ -38,6 +38,9 @@ function exibeFilmes ( valorEscolhido){
     let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
     let liCard;   
+
+    exibeContas(items);
+
     listaFilmes.innerHTML = "";
     //percorre cada item do array ; 
     items.forEach(function(movie){    
@@ -69,5 +72,32 @@ function exibeFilmes ( valorEscolhido){
     
 }
 
+// function ordenaItem(){
+//     let opcao= document.getElementsByClassName("opcaoOrdem");
+//     let opcao= opcao.value
+//     opcao.addEventListener("click",)
+// }
+
+// function grafico (){
+//     return calculo(data);
+// }
+
+// grafico();
+
+// function exibeGrafico(){
+//     let resultado = document.getElementById("resultadoCalculo");
+//     let valor= grafico()
+//     resultado.innerHTML= `${valor}`
+// }
+
+// exibeGrafico();
 
 
+function exibeContas(items){
+    let resultado = document.getElementById("resultadoCalculo");
+    let valor= calculo(items)
+    console.log(valor)
+    resultado.innerHTML= `<p> A média da avaliação dos filmes é ${valor["mediaNotas"]}
+    .</p><p> A média de idade dos personagens é ${valor["mediaIdade"]} anos.</p><p> O personagem mais novo tem ${valor["maisJovem"]} anos.</p><p> E o personagem mais velho tem ${valor["maisVelho"]} anos.</p>` 
+    return resultado
+}

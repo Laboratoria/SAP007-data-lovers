@@ -1,16 +1,5 @@
 export const filterData = (data, valorEscolhido) => { //Recebe array de dados e valor escolhido de filtros
-    let filmes = data["films"].map(filme => { //Mapeia o array e retorna um novo de objetos com seus atributos
-        return { //Retorna um objeto para cada elemento do novo array
-            //propriedade q vai usar no main: parameto[valor nome = do data]                                                             
-            "title": filme.title,
-            "poster": filme.poster,
-            "release_date": filme.release_date,
-            "rt_score": filme.rt_score,
-            "director": filme.director,
-            "producer": filme.producer,
-            "description": filme.description 
-        };
-    }).filter(filme => { //Filtra o novo array 
+    let filmes = data["films"].filter(filme => { //Filtra o novo array 
         let verificaFiltroDiretor = (valorEscolhido.length == 0 || (valorEscolhido[0] == "diretor" && valorEscolhido[1] == filme["director"]))
         let verificaFiltroProdutor = (valorEscolhido.length == 0 || (valorEscolhido[0] == "produtor" && valorEscolhido[1] == filme["producer"]))
         return verificaFiltroDiretor || verificaFiltroProdutor; //Caso seja true, mantém o elemento, caso false, o retira do novo array
@@ -90,7 +79,7 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
     return personagens
 }
 
-//export const ordenar = (data, condicao) => {
+// export const ordenar = (data, condicao) => {
 //     let ordenaTituloAZ = [data["title"]]
 //    let teste = ordenaTituloAZ.sort((a,b) =>{
 //        return a.title.localeCompare(b.title);
@@ -98,3 +87,36 @@ export const filterCharacter = (data, tituloEscolhido, generoEscolhido) => {
 // console.log(teste);
 // export function ordenar = (data) => {
 //  const ordenarAnoAsc = (a,b)
+
+
+export const calculo = (getMovies) => {
+    let somaNota = 0
+    let retornoCalculos = []
+    let somaIdade = 0
+    let contadorPersonagens = 0
+    let maisJovem = 0 
+    let maisVelho = 0
+    // let dados = data["films"];
+    getMovies.map(filme =>{
+        somaNota += parseFloat(filme["rt_score"])
+        filme.people.map(personagem => {
+            if (parseInt(personagem.age)) {
+                somaIdade += parseInt(personagem.age)
+                contadorPersonagens++
+                maisJovem = (maisJovem > personagem.age) || maisJovem == 0 ? personagem.age : maisJovem
+                maisVelho = maisVelho < personagem.age ? personagem.age : maisVelho
+            }
+            
+        })
+    });
+
+    retornoCalculos["mediaNotas"] = (somaNota/getMovies.length).toFixed(2)
+    retornoCalculos["mediaIdade"] = (somaIdade/contadorPersonagens).toFixed(0)
+    retornoCalculos["maisJovem"] = maisJovem
+    retornoCalculos["maisVelho"] = maisVelho
+    
+    // mediaNotas = notas / 2 
+    return retornoCalculos
+    
+}
+//console.log(calculo())

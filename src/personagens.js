@@ -83,10 +83,11 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
     });
 }
 
-    let opcaoRecarregar = document.getElementsByClassName("opcaoSelecionar");
-    opcaoRecarregar.addEventListener("click", function(){
-        location.reload()
-    });
+
+    // let opcaoRecarregar = document.getElementsByClassName("opcaoSelecionar");
+    // opcaoRecarregar.addEventListener("click", function(){
+    //     location.reload()
+    // });
 
 
 

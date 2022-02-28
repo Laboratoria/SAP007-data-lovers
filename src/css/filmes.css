@@ -1,0 +1,73 @@
+ @import url(padrao.css);
+
+ body{
+   width: 100%;
+ }
+
+ .descrição-pagina{ 
+  font-size: 1.1rem;
+  color: rgb(88, 92, 87);
+  text-align: justify;
+  padding-top: 1%;
+  margin-left: 2%;
+}
+ 
+ .caixa-galeria-filmes {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.caixa-filmes{
+  display:flex;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px 1px rgba(122, 129, 228, 0.7); 
+  padding:2rem;    
+  box-sizing: border-box;   
+  margin-bottom:3rem;    
+  border-radius: 10px;   
+}
+
+.filme-img{
+  width:12rem;
+  border-radius:4%;
+
+}
+
+.filme-informacoes{
+display: flex;
+flex-direction:column;
+padding-left: 1.8rem;
+width:100%;
+color: #736356;
+font-size: 1.2rem;
+margin-top:20px;
+text-align:left
+}
+
+
+.caixa.sinopse{
+  margin-top:100px;
+}
+
+.titulo-sinpose{
+  margin-top: 60px;
+  text-decoration:underline;
+  color: #736356;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+.texto-sinpose{
+  color: #736356;
+  font-size: 1.0rem;
+  margin-top:0.5rem;
+  padding:0;
+  align-items: center;
+  text-align: justify;
+  max-width: 900px;
+}

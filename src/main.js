@@ -25,51 +25,45 @@ const filtroProdutor = document.getElementById("produtorOptgroup")
 
 //cria filtro de diretores no html
 diretores.forEach(function(diretor){
-    // option = document.createElement("option");
-    // option.setAttribute("value", "diretor." +diretor);
-    // option.textContent = diretor;
-    // filtroDiretor.appendChild(option)
     filtroDiretor.innerHTML += `<option value= "diretor.${diretor}">${diretor}</option>`
 });
 
 //cria filtro de produtores no html
 produtores.forEach(function(produtor){
-    // option = document.createElement("option");
-    // option.setAttribute("value","produtor." + produtor);
-    // option.textContent = produtor;
     filtroProdutor.insertAdjacentHTML('beforeend',
     `<option value= "produtor.${produtor}"> ${produtor}</option>`)
-    //filtroProdutor.appendChild(option)
 });
 
 function exibeFilmes ( valorEscolhido){
     let listaFilmes = document.getElementById("listaFilmes");  
     let items = getMovies(valorEscolhido);                                                                
     let liCard;   
-
     listaFilmes.innerHTML = "";
     //percorre cada item do array ; 
-    
     items.forEach(function(movie){    
         //cria item na lista
-        liCard = document.createElement("li");    
+        liCard = document.createElement("div");    
            
         liCard.insertAdjacentHTML("beforeend",
-       // `${items.map(movie =>
-        `<figure class="figuraFilme">
-            <img class="poster-filme" src=${movie.poster} alt="Poster filme: ${movie.title}">
+        `
+        <section class="caixa-filmes" id=${movie.id} >  
+        <figure>
+            <img class="filme-img" src=${movie.poster} alt="imagens dos filmes: ${movie.title}">
          </figure>
-         <div class="informacoes-filme">
+         <div class="filme-informacoes">
             <p>Título: ${movie.title}</p>
             <p>Ano de lançamento: ${movie.release_date}</p>
             <p>Avaliação: ${movie.rt_score}</p>
             <p>Diretor: ${movie.director}</p>
             <p>Produtor: ${movie.producer}</p>
          </div>
-         <div class="sinopse-filme" >
-            <p class="texto-sinpose">Sinopse: ${movie.description}</p>
-         </div>`)/*}); */
-        liCard.setAttribute("class", "li-filme borda")
+         <div class="caixa-sinopse" >
+            <p class="titulo-sinpose">Sinopse:</p> 
+            <p class="texto-sinpose">${movie.description}</p>
+         </div>
+         </section>
+         `)
+        liCard.setAttribute("class", "lista-filme")
        listaFilmes.appendChild(liCard);                                                                                      
     });
     

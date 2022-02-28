@@ -1,5 +1,10 @@
+.caixa-rodape{
+  background-color:#454259;
+  width: 100%;
+}
+
 .rodape{
-  margin-top: 60px;
+  margin-top: 20%;
   text-align: center;
   color:#B3C235;
   padding: 15px 0;
@@ -9,19 +14,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #454259;
   font-weight: bold;
   font-size: 100%; 
 }
 
-.link-sites a{
+  
+.rodape-lista-contatos a, .link-lab a{
   color:#B3C235;
-  margin: 12px;
 }
 
-.link-sites a:hover{
+.rodape-lista-contatos a:hover, .link-lab a:hover{
   text-decoration: underline;
   color: white;
 }
-
   
+.div-img-rodape{
+  margin-left: 50%;
+}
+
+.img-rodape{
+  width: 30%;
+  height: 300%;
+}

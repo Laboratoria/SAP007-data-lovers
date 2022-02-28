@@ -2,69 +2,71 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Personagens Studio Ghibli</title>
-	<link rel="stylesheet" href="personagens.css"/>
-	<link rel="stylesheet" href="reset.css" />
+  <meta charset="utf-8">
+  <title>Personagens Studio Ghibli</title>
+  <link rel="stylesheet" href="./css/personagens.css" />
 </head>
 
 <body>
-	<header class="cabecalho">
-		<div><img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli"></div>
-		<nav class="menu-nav">
-			<ul>
-				<li><a href="index.html">Filmes</a></li>
-				<li><a href="grafico.html">Gráficos</a></li>
-			</ul>
-		</nav>
-	</header>
+  <header class="caixa-cabecalho">
+    <div><img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli"></div>
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="index.html">Filmes</a></li>
+        <li><a href="grafico.html">Gráficos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<main>
-		<h1 class="titulo">Personagens</h1>
+  <main>
+    <h1 class="titulo-pagina">Personagens</h1>
 
-		<section class="filtrar">
-			<form>
-				<div class="div-filtra-personagens">
-					<select class="personagens-label" id="selecioneGenero">
-						<option class="opcaoSelecionar" selected value="">Fitrar por gênero</option>
-						<option value="Female"> Feminino</option>
-						<option value="Male">Masculino</option>
-						<option value="NA">Indefinido</option>
-					</select>
+    <form>
+      <div class="div-filtra-ordena">
+        <select class="label-filtra-ordena" id="selecioneGenero">
+          <option class="opcaoSelecionar" selected value="">Fitrar por gênero</option>
+          <option value="Female"> Feminino</option>
+          <option value="Male">Masculino</option>
+          <option value="NA">Indefinido</option>
+        </select>
 
-					<select class="personagens-label" id="selecioneFilme">
-						<option class="opcaoSelecionar" selected value="">Fitrar por filmes</option>
-					</select>
-				</div>
-			</form>
-		</section>
+        <select class="label-filtra-ordena" id="selecioneFilme">
+          <option class="opcaoSelecionar" selected value="">Fitrar por filmes</option>
+        </select>
 
-		<section class=" itens">
-			<article class="personagens ">
-				<ul id="cardPeople" class="card-personagens">
-				</ul>
-			</article>
-		</section>
+        <select class="label-filtra-ordena" id="selecionaOrdem">
+          <option selected disabled>Ordenar por</option>
+          <option value="ordemAlfabetica" id="">A &#8594 Z</option>
+        </select>
+      </div>
+    </form>
 
-	</main>
+    <article id="cardPersonagens" class="caixa-galeria-personagens">
+    </article>
+  </main>
 
-	<footer class="rodape">
-		<div class="texto-rodape">Desenvolvido por: </div>
-		<div class="link-sites">
-			<p>Keila Hamada</p>
-			<a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
-			<a href="https://github.com/hadamakei">Github</a>
-		</div>
-		<div class="link-sites">
-			<p>Taize Santos</p>
-			<a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
-			<a href="https://github.com/taizesantos">Github</a>
-		</div>
-		<div class="link-sites"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
-		<div class="texto-rodape"></div>
-	</footer>
+  <footer class="rodape">
+    <div class="caixa-rodape">
+      <p class="subtitulo">Desenvolvido Por:</p>
+      <div class="rodape-lista-contatos">
+        <p class="rodape-lista-contatos-link">Keila Hamada</p>
+        <a class="rodape-lista-contatos-link" href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+        <a class="rodape-lista-contatos-link" href="https://github.com/hadamakei">Github</a>
+        <p class="rodape-lista-contatos-link">Taize Santos</p>
+        <a class="rodape-lista-contatos-link" href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+        <a class="rodape-lista-contatos-link" href="https://github.com/taizesantos">Github</a>
+      </div>
+      <div class="link-lab">
+        <a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a>
+        <p class="subtitulo">SAP007 | 2022</p>
+      </div>
+      <figure class="div-img-rodape">
+        <img class="img-rodape" src="./imagens/totoros.png" alt="imagem-totoros">
+      </figure>
+    </div>
+  </footer>
 
-	<script src="personagens.js" type="module"></script>
+  <script src="personagens.js" type="module"></script>
 </body>
 
 </html>

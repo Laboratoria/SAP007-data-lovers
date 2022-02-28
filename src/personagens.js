@@ -28,7 +28,7 @@ function getCharacter(tituloEscolhido, generoEscolhido){
     return filterCharacter(data, tituloEscolhido, generoEscolhido);
 }
 
-let opcao;
+// let opcao;
 
 filmes.forEach(function(titulo){
     // opcao = document.createElement("option");
@@ -42,7 +42,7 @@ filmes.forEach(function(titulo){
 
 function exibePersonagens(tituloEscolhido, generoEscolhido){
     //pega e salva o elemento com o id da lista na variavel cardPeople
-    let cardPeolple = document.getElementById("cardPeople");
+    let cardPeolple = document.getElementById("cardPersonagens");
     let liPersonagens;  
     let characters = getCharacter(tituloEscolhido, generoEscolhido);
    // let divImagem;
@@ -55,29 +55,33 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
         cardPeolple.innerHTML = "Sem resultados. Tente outros filtros."
     }
     characters.forEach(function(character){  
-    // cardPeolple.innerHTML = characters.length == 0 ? `Sem resultados. Tente outros filtros. ` : " ";
-    //cardPeolple.innerHTML += tituloEscolhido.length > 0 ? `Filtrando por filme ${tituloEscolhido}` : "";
-    liPersonagens = document.createElement("li"); 
+    liPersonagens = document.createElement("div"); 
     liPersonagens.insertAdjacentHTML("beforeend",
-    // `${characters.map(character =>
-        `<figure class "figuraPersonagem">
-            <img class="imagemPersonagem" src=${character.img} alt="personagem: ${character.name} style=" height = "250px", width= "250px"" >
-        </figure>  
-        <div class= "info-personagem info">
-            <p>Nome: ${character.name}</p>
-            <p>Idade: ${character.age}</p>
-            <p>Gênero:${character.gender}</p>
-            <p>Espécie: ${character.specie}</p>
-            <p>Filme: ${character.title}</p>
+        `
+        <div class="card">
+         <div class="card-interno">
+             <div class="card-frente">
+                 <figure>
+                 <img class="card-img" src=${character.img} alt="imagem dos personagens: ${character.name} style=" height = "240px", width= "250px
+                 100%"" >
+                 </figure>  
+                 <div class="card-nome-frente"><p>${character.name}</p></div>
+             </div>
+               
+             <div class= "card-verso">
+              <p class="card-texto-verso">Nome: ${character.name}</p>
+              <p class="card-texto-verso">Idade: ${character.age}</p>
+              <p class="card-texto-verso">Gênero :${character.gender}</p>
+              <p class="card-texto-verso">Espécie: ${character.specie}</p>
+              <p class="card-texto-verso">Filme: ${character.title}</p>
+             </div>
+            </div>
         </div>
         `
-        )/*}`*/   
-        liPersonagens.setAttribute("class", "li-personagem borda") ;
+        )
     cardPeolple.appendChild(liPersonagens);
     });
-    
 }
-
 
     let opcaoRecarregar = document.getElementsByClassName("opcaoSelecionar");
     opcaoRecarregar.addEventListener("click", function(){
@@ -86,50 +90,3 @@ function exibePersonagens(tituloEscolhido, generoEscolhido){
 
 
 
-//     characters.forEach(function(character){                                                     
-//         //cria um item da lista
-//         liPersonagens = document.createElement("li"); 
-//         divImagem = document.createElement("div");
-//         divInfo = document.createElement("div");                                                                            
-
-//         //preenche cada item da lista com o conteudo 
-//         //li.setAttribute(class = "personagem"// "class", nomeclasse)
-//         //divInfo.appendChild(document.createTextNode("Nome: "+ character["name"]+ ". " + "Idade: " + character["age"]));
-        
-//         divInfo.appendChild(textoPersonagem("Nome: "+ character["name"]));
-//         divInfo.appendChild(textoPersonagem("Idade: " + character["age"]));        
-//         divInfo.appendChild(textoPersonagem("Gênero: " + character["gender"])); 
-//         divInfo.appendChild(textoPersonagem("Espécie: " + character["specie"]));     
-//         divInfo.appendChild(textoPersonagem("Filme: " + character["title"]));                                                 
-
-//         //chama funcao da img; passa parametros e manda img pro item
-//         divImagem.appendChild(displayImage(character["img"], character["name"]));                                                          
-        
-//         divImagem.className = "imagemPersonagem";
-//         divInfo.setAttribute("class", "info-personagem info");
-//         liPersonagens.setAttribute("class", "li-personagem borda")
-
-//         liPersonagens.appendChild(divImagem);
-//         liPersonagens.appendChild(divInfo);
-
-//         //manda pra lista o item q foi criado e preenchido com os dados
-//         cardPeolple.appendChild(liPersonagens);                                                                                                
-//     });
-// }
-
-// function textoPersonagem(texto) {
-//     let personagemInfo = document.createElement("p");
-//     personagemInfo.textContent = texto;
-
-//     return personagemInfo;
-// }
-
-// //funcao pra pegar a fonte e a descricao da imagem
-// function displayImage(src, alt) {                                                        
-//     let picture = document.createElement("img");                                                              
-//     picture.src = src;
-//     picture.style.width= "250px";
-//     picture.style.height = "250px";
-//     picture.alt = alt;
-//     return picture;
-// }

@@ -2,84 +2,82 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Data Lovers Studio Ghibli</title>
-    <link rel="stylesheet" href="filmes.css" />
-    <link rel="stylesheet" href="reset.css" />
-
+  <meta charset="utf-8">
+  <title>Data Lovers Studio Ghibli</title>
+  <link rel="stylesheet" href="./css/filmes.css" />
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div><img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli"></div>
-        <nav class="menu-nav">
-            <ul>
-                <li><a href="personagens.html">Personagens</a></li>
-                <li><a href="grafico.html">Gráficos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="caixa-cabecalho">
+    <div><img class="img-logo" src="./imagens/logo.png" alt="imagem studio ghibli"></div>
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="personagens.html">Personagens</a></li>
+        <li><a href="grafico.html">Gráficos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2 class="titulo-pagina">Uma incrível forma de contar histórias</h2>
-            <p class="descrição-pagina">O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao
-                Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma.<br> Ele conta com 20 longas-metragens e se
-                destaca ao provar que a animação não é só para crianças, bem como pela representatividade feminina em
-                seus personagens.<br>
-                Seus filmes tratam de diversos temas, desde aqueles que são normalmente abordados em obras direcionadas
-                a crianças, como amizade, amor e família.<br> Até temáticas que não aparecem com frequência, como
-                amadurecimento, medo, guerra, consciência ecológica e muitos outros.
-            <p>
-        </section>
+  <main>
+    <div>
+      <h2 class="titulo-pagina">Uma incrível forma de contar histórias</h2>
+      <p class="descrição-pagina">O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao
+        Miyazaki,
+        Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma.<br> Ele conta com 20 longas-metragens e se destaca ao
+        provar
+        que a animação não é só para crianças, bem como pela representatividade feminina em seus
+        personagens.<br>
+        Seus filmes tratam de diversos temas, desde aqueles que são normalmente abordados em obras direcionadas
+        a crianças, como amizade, amor e família.<br> Até temáticas que não aparecem com frequência, como
+        amadurecimento, medo, guerra, consciência ecológica e muitos outros.
+      <p>
+    </div>
 
-        <section>
-            <form>
-                <div class="div-filtra-ordena-filmes">
-                    <select class="filmes-label" id="selecao">
-                        <option selected disabled>Filtrar por</option>
-                        <optgroup label="Diretor:" id="diretorOptgroup">
-                        </optgroup>
-                        <optgroup label="Produtor:" id="produtorOptgroup">
-                        </optgroup>
-                    </select>
+    <form>
+      <div class="div-filtra-ordena">
+        <select class="label-filtra-ordena" id="selecao">
+          <option selected disabled>Filtrar por</option>
+          <optgroup label="Diretor:" id="diretorOptgroup">
+          </optgroup>
+          <optgroup label="Produtor:" id="produtorOptgroup">
+          </optgroup>
+        </select>
 
-                    <select class="filmes-label" id="selecionaOrdem">
-                        <option selected disabled>Ordenar por</option>
-                        <option value="ordemAlfabetica" id="">A &#8594 Z</option>
-                        <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
-                        <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
-                    </select>
-                </div>
-            </form>
-        </section>
+        <select class="label-filtra-ordena" id="selecionaOrdem">
+          <option selected disabled>Ordenar por</option>
+          <option value="ordemAlfabetica" id="">Título de A &#8594 Z</option>
+          <option value="lancamentosRecentes" id="">Lançamentos mais recentes</option>
+          <option value="lancamentosAntigos" id="">Lançamentos mais antigos</option>
+        </select>
+      </div>
+    </form>
 
-            <div class=" itens">
-                <article class="filmes borda">
-                    <ul id="listaFilmes" class="lista-filmes">
+    <article class="caixa-galeria-filmes" id="listaFilmes" class="">
+    </article>
+  </main>
 
-                    </ul>
-                </article>
-            </div>
-    </main>
 
-   <footer class="rodape">
-        <div class="texto-rodape">Desenvolvido por: </div>
-        <div class="link-sites">
-            <p>Keila Hamada</p>
-            <a href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
-            <a href="https://github.com/hadamakei">Github</a>
-        </div>
-        <div class="link-sites">
-            <p>Taize Santos</p>
-            <a href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
-            <a href="https://github.com/taizesantos">Github</a>
-        </div>
-        <div class="link-sites"><a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a></div>
-        <div class="texto-rodape"></div>
-    </footer>
-
-    <script src="main.js" type="module"></script>
+  <footer class="rodape">
+    <div class="caixa-rodape">
+      <p class="subtitulo">Desenvolvido Por:</p>
+      <div class="rodape-lista-contatos">
+        <p class="rodape-lista-contatos-link">Keila Hamada</p>
+        <a class="rodape-lista-contatos-link" href="https://www.linkedin.com/in/keila-hadama-45a903193/">Linkedin</a>
+        <a class="rodape-lista-contatos-link" href="https://github.com/hadamakei">Github</a>
+        <p class="rodape-lista-contatos-link">Taize Santos</p>
+        <a class="rodape-lista-contatos-link" href="https://www.linkedin.com/in/taizeborges/">Linkedin</a>
+        <a class="rodape-lista-contatos-link" href="https://github.com/taizesantos">Github</a>
+      </div>
+      <div class="link-lab">
+        <a href="https://talento.laboratoria.la/" target="_blank">Bootcamp Laboratória</a>
+        <p class="subtitulo">SAP007 | 2022</p>
+      </div>
+      <figure class="div-img-rodape">
+        <img class="img-rodape" src="./imagens/totoros.png" alt="imagem-totoros">
+      </figure>
+    </div>
+  </footer>
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>

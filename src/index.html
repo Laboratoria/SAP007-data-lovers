@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo Ghibli</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="data" href="ghibli.js" />
     <link rel="home" href="home.html" />
+    <link rel="people" href="people.html" />
     <link rel="news" href="news.html" />
+    <link rel="data" href="ghibli.js" />
+
 </head>
 
 <body>
@@ -18,12 +20,12 @@
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
                 <a href="home.html">Home</a>
+                <a href="people.html">People</a>
                 <a href="news.html">News</a>
             </div>
         </nav>
     </header>
 
-    <h2 class="film">Filmes</h2>
     <main class="main-page-data">
         <section>
             <form id="form">
@@ -46,17 +48,17 @@
                     <option class="#" type="button" id="#">Yoshiaki Nishimura</option>
                     <option class="#" type="button" id="#">Hiromasa Yonebayashi</option>
                 </select>
-                <select class="select" type="text">
+                <select class="select" type="text" id="order">
 					<option class="#"  value="" disabled selected id="#">Personagens</option>
 					<option class="#" type="button" id="#">A > Z</option>
 					<option class="#" type="button" id="#">Z > A</option>
                 </select>
+                <button class="btn-search" id="btn-reset">Limpar</button>
             </form>
         </section>
-        <button class="btn-search" type="reset" id="btn-reset">Limpar</button>
     </main>
 
-    <section class="card-section" id="card"></section>
+    <section id="card" class="section-card"></section>
 
     <footer class="footer">
         <h4>Conheça as Devs

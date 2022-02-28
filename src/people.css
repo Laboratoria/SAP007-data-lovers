@@ -6,12 +6,12 @@
 }
 
 body {
-    background: #168AAD;
+    background: #69CCE3;
     font-family: 'Actor', sans-serif;
     color: #ffffff;
 }
 
-.tittle-header-page-data {
+.tittle-header-page-people {
     text-align: center;
     font-size: 50px;
 }
@@ -60,12 +60,6 @@ body {
     background-color: #757575;
 }
 
-.categorias {
-    display: inline-flex;
-    word-spacing: 400px;
-    margin-left: 400px;
-}
-
 .select {
     border-radius: 15px;
     display: inline;
@@ -76,7 +70,7 @@ body {
 }
 
 .main-page-data {
-    background: #184E77;
+    background: #168AAD;
     height: 12vh;
     display: flex;
     justify-content: center;

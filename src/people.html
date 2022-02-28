@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Ghibli</title>
+    <link rel="stylesheet" href="people.css" />
+    <link rel="home" href="home.html" />
+    <link rel="index" href="index.html" />
+    <link rel="news" href="news.html" />
+    <link rel="data" href="ghibli.js" />
+</head>
+
+<body>
+    <header>
+        <h1 class="tittle-header-page-people">Universo Ghibli</h1>
+        <nav class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="index.html">Filmes</a>
+                <a href="news.html">News</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-page-data">
+        <section>
+            <form id="form">
+                <input class="select ipt-search" type="text" id="ipt-search" placeholder="Encontre um personagem">
+                <select class="select" type="text" id="films">
+                    <option class="#" value="" disabled selected id="#">Filmes</option>
+                    <option class="lista" type="button" id="#">Castle in the Sky</option>
+                    <option class="lista" type="button" id="#">My Neighbor Totoro</option>
+                    <option class="lista" type="button" id="#">Kiki's Delivery Service</option>
+                    <option class="lista" type="button" id="#">Grave of the Fireflies</option>
+                    <option class="lista" type="button" id="#">Only Yesterday</option>
+                    <option class="lista" type="button" id="#">Porco Rosso</option>
+                    <option class="lista" type="button" id="#">Pom Poko</option>
+                    <option class="lista" type="button" id="#">Whisper of the Heart</option>
+                    <option class="lista" type="button" id="#">Princess Mononoke</option>
+                    <option class="lista" type="button" id="#">My Neighbors the Yamadas</option>
+                    <option class="lista" type="button" id="#">Spirited Away</option>
+                    <option class="lista" type="button" id="#">The Cat Returns</option>
+                    <option class="lista" type="button" id="#">Howl's Moving Castle</option>
+                    <option class="lista" type="button" id="#">Tales from Earthsea</option>
+                    <option class="lista" type="button" id="#">Ponyo on the Cliff by the Sea</option>
+                    <option class="lista" type="button" id="#">The Secret World of Arrietty</option>
+                    <option class="lista" type="button" id="#">From Up on Poppy Hill</option>
+                    <option class="lista" type="button" id="#">The Wind Rises</option>
+                    <option class="lista" type="button" id="#">The Tale of the Princess Kaguya</option>
+                    <option class="lista" type="button" id="#">When Marnie Was There</option>                   
+                </select>
+                <select class="select" type="text" id="people">
+                    <option class="#"  value="" disabled selected id="#">Personagens</option>
+                    <option class="#" type="button" id="#">Feminino</option>
+                    <option class="#" type="button" id="#">Masculino</option>
+                    <option class="#" type="button" id="#">Indefinido</option>         
+                </select>
+                <button class="btn-search" id="btn-reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="card" class="section-card"></section>
+
+    <footer class="footer">
+        <h4>Conheça as Devs
+            <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
+            <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
+        </h4>
+    </footer>
+    <script src="people.js" type="module"></script>
+</body>
+
+</html>

@@ -12,6 +12,9 @@ body {
 
 }
 
-.directorsFilter {
+.filter {
   padding: 10px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }

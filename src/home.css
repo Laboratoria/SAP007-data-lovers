@@ -1,8 +1,25 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
     border: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .tittle-header-page-home {
+        font-size: 50px;
+    }
+    footer {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tittle-header-page-home {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 1rem;
+    }
 }
 
 html {
@@ -12,36 +29,50 @@ html {
 
 body {
     background-image: url(./img/Chihiro.jpg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Actor', sans-serif;
     display: flex;
+}
+
+.glass-effect-header {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    width: 100%;
+    padding: 1%;
+    display: block;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    min-height: 100%;
-    margin: 0;
+    text-align: center;
+    align-content: center;
 }
 
 .tittle-header-page-home {
-    font-size: 25px;
-    color: #184E77;
-    align-items: center;
-    display: flex;
-    margin-bottom: auto;
-    display: flex;
-    justify-content: center;
+    color: #168AAD;
+    -webkit-text-stroke: 1px #ffffff;
+    text-stroke: 1px;
 }
 
 footer {
-    background: #168AAD;
-    background-size: contain;
-    font-size: 20pt;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    border: 1px rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(1px);
+    width: 100%;
+    padding: 1%;
+    height: 5vh;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    color: #184E77;
 }
 
 a:link {

@@ -31,30 +31,39 @@ allCards(data.results);
 
 
 const lifeSelect = document.getElementById("menu_filter_life");
+const genderSelect = document.getElementById("menu_filter_gender");
+const alphaSelect = document.getElementById("menu_sort");
 
+
+//FUNÇÕES
 function printStatus(event) {
   const statusResult = statusFilter(data.results, event.target.value);
+  genderSelect.selectedIndex = 0;//reseta o botão do Gênero, seta o índice para zero
+  alphaSelect.selectedIndex = 0; //reseta o botão de Ordenar
+
   return allCards(statusResult);
+
 }
 lifeSelect.addEventListener("change", printStatus);
 
 
-const genderSelect = document.getElementById("menu_filter_gender");
-
 function printGender(event) {
   const genderResult = genderFilter(data.results, event.target.value);
+  lifeSelect.selectedIndex = 0; //reseta o botão de Status, seta o índice para zero
+  alphaSelect.selectedIndex = 0;//reseta o botão de Ordenar
+
   return allCards(genderResult);
 }
 
 genderSelect.addEventListener("change", printGender);
 
-
 // event.target.value = buscar diretamente o valor definido no seletor
 
-const alphaSelect = document.getElementById("menu_sort");
 
 function sortAlphabetical(event) {
   const sortNameSelect = sortNamesFilter(data.results, event.target.value)
+  lifeSelect.selectedIndex = 0;
+  genderSelect.selectedIndex = 0;
   return allCards(sortNameSelect);
 
 };

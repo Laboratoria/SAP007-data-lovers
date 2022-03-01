@@ -12,8 +12,8 @@ function allCards(data) {
       (dado) => `
 
         <div class="cards">
-          <img src="${dado.image}"></img>
-          <h1>${dado.name}</h1>
+          <img class= "img-card" src="${dado.image}" alt="cards"></img>
+          <h1 class="card-name">${dado.name}</h1>
           <ul class="info-list">
             <li>Status: ${dado.status}</li>
             <li>Gênero: ${dado.gender}</li>

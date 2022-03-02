@@ -1,61 +1,79 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {btFiltroA, btFiltroZ, filterData,} from './data.js';
+import { filterData, sortBy, computeStats} from './data.js';
 
-
+console.log(computeStats);
 
 function aparecerCards(data) {
-    document.getElementById("lista-cards").innerHTML = data.map((item) => ` 
+  document.getElementById("lista-cards").innerHTML = data.map((item) => ` 
+  <div class="card">
     <div class="mostrar-cards">
-      <img src="${item.image}">
-      <p>Nome: ${item.name}</p>
-      <p>Status: ${item.status}</p>
-      <p>Genero: ${item.gender}</p>
-      <p>Origem: ${item.origin.name}<p>
-      <p>Especie: ${item.species}</p>
-      <p>Local onde vive: ${item.location.name}</p>
+      <div class="cards-frente">
+        <img src="${item.image}">
+        <p>Nome:${item.name}</p>
+      </div>
+      <div class="card-costa">
+          <p>Genero:${item.gender}</p>
+          <p>Status:${item.status}</p>
+          <p>Especie:${item.species}</p>
+          <p>Origem:${item.origin.name}</p>
+          <p>Episodios que aparecem:${item.episode.length}</p>
+          <p>Local onde vive:${item.location.name}</p>
+          <p>Data de criação: ${item.created}</p>
+          
+      </div>
     </div>
+  </div>
      
-     ` )
+` ).join(''); // tirou a virgulazinha que aparecia
 };
-
 aparecerCards(data.results);
 
-document.getElementById("btFiltroA").addEventListener("click", (element) => {
-  element.preventDefault();
-  const sortedData = btFiltroA(data.results);
-  aparecerCards(sortedData);
-});
+function ordenarPersonagens(evt) {
+evt.preventDefault();
+const selectOrdem = sortBy(data.results, evt.target.value);
+aparecerCards(selectOrdem);  
+}
 
-document.getElementById("btFiltroZ").addEventListener("click", (element) => {
-  element.preventDefault();
-  const sortdData = btFiltroZ(data.results);
-  aparecerCards(sortdData);
-});
+function mostrarCalculo() {
+  const exibeCalculo = document.getElementById("mostrarCalculo").innerHTML
 
+
+}
+
+//função do filtro;
 function filtroPersonagem(evt) {
   evt.preventDefault();
-  let genero = document.getElementById("select-genero").value;
-  let especie = document.getElementById("select-especie").value;
+  const genero = document.getElementById("selectGenero").value;
+  const especie = document.getElementById("selectEspecie").value;
+  const status = document.getElementById("selectStatus").value ;
   let fData = data.results
 
-  if ( genero != "") {
+  if (genero != "") {
     fData = filterData(fData, ["gender", genero]);
+    //console.log(fData.length)
   }
-  if(especie != "") {
-    fData = filterData( fData,["species", especie]);
+
+  if (status !="") {
+    fData = filterData(fData, ["status", status])
+  }
+
+  if (especie != "") {
+    fData = filterData(fData, ["species", especie]);
   }
   aparecerCards(fData);
 }
+document.getElementById("selectOrdem").addEventListener("change", ordenarPersonagens);
+document.getElementById("selectStatus").addEventListener("change", filtroPersonagem);
+document.getElementById("selectGenero").addEventListener("change", filtroPersonagem);
+document.getElementById("selectEspecie").addEventListener("change", filtroPersonagem);
 
 
-document.getElementById("select-genero").addEventListener("change", filtroPersonagem); 
-document.getElementById("select-especie").addEventListener("change", filtroPersonagem); 
 
-/*(evt) => {
-  evt.preventDefault();
-  const fData = filterData(data.results, evt.target.value);
-  aparecerCards(fData);
-});*/
+
+
+
+
+
 
 
 

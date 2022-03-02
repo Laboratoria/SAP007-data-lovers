@@ -1,12 +1,13 @@
 @charset "utf-8";
 @import url("reset.css");
 @import url("checkbox.css");
+@import url("cards.css");
+@import url("variables.css");
 @import url("screen-300-portrait.css");
 @import url("screen-300-landscape.css");
 @import url("screen-900-portrait.css");
 @import url("screen-600-landscape.css");
 @import url("screen-720-landscape.css");
-@import url("cards.css");
 
 .container-filters {
   margin: 0px;

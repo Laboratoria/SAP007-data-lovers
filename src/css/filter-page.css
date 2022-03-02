@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("variables.css");
 
 .filters {
   font-family: "Segoe UI", Helvetica, Arial, Verdana;
@@ -24,15 +25,15 @@
 
 .title {
   font-weight: bold;
-}  
+}
 
 .by-name {
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
 .input-name {
-  background-color: #E9A588;
-  border: 3px inset #E9A588;
+  background-color: #e9a588;
+  border: 3px inset #e9a588;
   border-radius: 10px;
   color: #471f1f;
   width: 315px;
@@ -53,7 +54,7 @@
 }
 
 .specify-weaknesses {
-  margin-left:35px;
+  margin-left: 35px;
 }
 
 .container-checkboxes {
@@ -61,7 +62,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}  
+}
 
 .checkbox {
   margin-right: 70px;
@@ -69,10 +70,10 @@
   width: 20px;
   float: right;
 }
-  
+
 .confirm-button {
   font-size: 2rem;
-  color: #FFF0DD;
+  color: #fff0dd;
   float: right;
   width: 60px;
   height: 60px;
@@ -81,10 +82,10 @@
   margin-right: 10px;
   border: none;
   transition: width 1s;
-} 
+}
 
 .confirm-button:hover {
-  content:"";
+  content: "";
   background-color: #1da56c;
   width: 300px;
 }
@@ -104,31 +105,31 @@
 }
 
 .quantify {
-  padding: 10px 0px 10px 0px; 
+  padding: 10px 0px 10px 0px;
 }
 
 .order-calculation {
-  background-color: #E9A588;
+  background-color: #e9a588;
   border-radius: 10px;
   margin: 0px 10px 10px 0px;
 }
 
 .order-calculation:hover {
-  background-color: #A96F57;
+  background-color: #a96f57;
 }
 
 .back-button {
   font-size: 2.5rem;
-  color: #FFF0DD;
+  color: #fff0dd;
   float: right;
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background-color: #713E03;
+  background-color: #713e03;
   margin-right: 10px;
   border: none;
   transition: width 1s;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .back-button:hover {
@@ -153,12 +154,12 @@
     font-size: 1.1rem;
     padding-top: 15px;
   }
-  
+
   .by-name {
     font-size: 1rem;
     padding-top: 10px;
-  }  
-  
+  }
+
   .input-name {
     font-size: 1rem;
     padding: 10px;
@@ -170,9 +171,9 @@
     font-size: 1.1rem;
     padding-bottom: 4px;
   }
-  
+
   .container-checkboxes {
-    Flex-wrap: nowrap;
+    flex-wrap: nowrap;
     height: auto;
   }
 
@@ -183,7 +184,7 @@
   }
 
   .specify-type {
-    margin-left:105px;
+    margin-left: 105px;
   }
 
   .checkbox {
@@ -205,10 +206,10 @@
     font-size: 1.1rem;
     padding-top: 15px;
   }
-  
-  .order-calculation { 
+
+  .order-calculation {
     font-size: 1rem;
-    width: 280px; 
+    width: 280px;
     height: 30px;
   }
 
@@ -221,11 +222,11 @@
     background-color: #471f1f;
     width: 280px;
   }
-}  
-  
+}
+
 .back-button:hover:after {
   font-size: 1rem;
-}  
+}
 
 @media screen and (min-height: 960px) and (orientation: portrait) {
   .logo-onpokemon {
@@ -238,12 +239,12 @@
     font-size: 1.5rem;
     padding-top: 40px;
   }
-  
+
   .by-name {
     font-size: 1.5rem;
     padding-top: 30px;
-  }  
-  
+  }
+
   .input-name {
     font-size: 1.3rem;
     padding: 10px;
@@ -255,14 +256,14 @@
     font-size: 1.3rem;
     padding-bottom: 10px;
   }
-  
+
   .checkbox-title {
     font-size: 1.3rem;
     padding-bottom: 5px;
   }
 
   .specify-type {
-    margin-left:215px;
+    margin-left: 215px;
   }
 
   .container-checkboxes {
@@ -280,15 +281,15 @@
     padding-top: 15px;
   }
 
-  .order-calculation { 
+  .order-calculation {
     font-size: 1.3rem;
-    width: 300px; 
+    width: 300px;
     height: 30px;
   }
 }
 
 @media screen and (min-height: 360px) and (orientation: landscape) {
-  .header-filters{
+  .header-filters {
     padding: 10px;
   }
 
@@ -303,24 +304,24 @@
     padding-top: 20px;
   }
 
-  .by-name{
+  .by-name {
     font-size: 1.3rem;
     padding-top: 10px;
-  }  
-  
+  }
+
   .input-name {
     font-size: 1.1rem;
     padding: 8px;
     margin-bottom: 10px;
   }
-  
+
   .checkbox-title {
     font-size: 1rem;
     padding-bottom: 5px;
   }
-  
+
   .specify-type {
-    margin-left:123px;
+    margin-left: 123px;
   }
 
   .name {
@@ -330,16 +331,16 @@
 
   .container-checkboxes {
     height: 320px;
-  }  
-  
+  }
+
   .results {
     font-size: 1.3rem;
     padding-top: 15px;
   }
 
   .quantify {
-    font-size: 1.0rem;
-  } 
+    font-size: 1rem;
+  }
 
   .order-calculation {
     font-size: 1.1rem;
@@ -349,7 +350,7 @@
 }
 
 @media screen and (min-height: 600px) and (orientation: landscape) {
-  .header-filters{
+  .header-filters {
     padding: 15px;
   }
 
@@ -364,10 +365,10 @@
     padding-top: 30px;
   }
 
-  .by-name{
+  .by-name {
     font-size: 1.4rem;
     padding-top: 20px;
-  }  
+  }
 
   .input-name {
     font-size: 1.2rem;
@@ -376,39 +377,39 @@
   }
 
   .specify-type {
-    margin-left:155px;
+    margin-left: 155px;
   }
 
   .container-checkboxes {
     height: 220px;
-  }  
+  }
 
   .name {
     font-size: 1.2rem;
     padding-bottom: 9px;
   }
-  
+
   .results {
     font-size: 1.4rem;
   }
 
   .quantify {
     font-size: 1.1rem;
-  } 
+  }
 
   .order-calculation {
     font-size: 1.2rem;
     padding: 9px;
     width: 400px;
-  }  
-}  
+  }
+}
 
 @media screen and (min-height: 720px) and (orientation: landscape) {
   .filters {
     margin: auto auto;
   }
 
-  .header-filters{
+  .header-filters {
     padding: 20px;
   }
 
@@ -422,12 +423,12 @@
     font-size: 1.5rem;
     padding-top: 40px;
   }
-  
+
   .by-name {
     font-size: 1.5rem;
     padding-top: 30px;
-  }  
-  
+  }
+
   .input-name {
     font-size: 1.3rem;
     padding: 10px;
@@ -446,13 +447,13 @@
   .results {
     font-size: 1.5rem;
   }
-  
+
   .quantify {
     font-size: 1.2rem;
-  }  
+  }
 
   .order-calculation {
     font-size: 1.3rem;
     padding: 10px;
-  }  
+  }
 }

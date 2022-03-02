@@ -17,3 +17,10 @@ export const genderFilter = (data, condition) => {
 
 
 //Ordenar
+export const sortNamesFilter = (data, order) => {
+  if (order === "alphabetic") {
+    return data.sort((a, z) => a.name > z.name ? 1 : -1);
+  } else {
+    return data.sort((a, z) => a.name > z.name ? -1 : 1);
+  }
+};

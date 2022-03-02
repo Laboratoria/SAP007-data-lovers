@@ -1,4 +1,4 @@
-import { statusFilter, genderFilter } from "./data.js";
+import { statusFilter, genderFilter, sortNamesFilter } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -12,8 +12,8 @@ function allCards(data) {
       (dado) => `
 
         <div class="cards">
-          <img src="${dado.image}"></img>
-          <h1>${dado.name}</h1>
+          <img class= "img-card" src="${dado.image}" alt="cards"></img>
+          <h1 class="card-name">${dado.name}</h1>
           <ul class="info-list">
             <li>Status: ${dado.status}</li>
             <li>Gênero: ${dado.gender}</li>
@@ -26,34 +26,49 @@ function allCards(data) {
     .join(" ")
 }
 
-allCards(data.results)
+allCards(data.results);
 
 
-//Seletores
 
 const lifeSelect = document.getElementById("menu_filter_life");
 const genderSelect = document.getElementById("menu_filter_gender");
-const sortSelect = document.getElementById("menu_sort");
+const alphaSelect = document.getElementById("menu_sort");
 
 
-//Funções
-function printStatus(e) {
-  const statusResult = statusFilter(data.results, e.target.value);
-  console.log(statusResult)
-  //return allCards(statusResult);
+//FUNÇÕES
+function printStatus(event) {
+  const statusResult = statusFilter(data.results, event.target.value);
+  genderSelect.selectedIndex = 0;//reseta o botão do Gênero, seta o índice para zero
+  alphaSelect.selectedIndex = 0; //reseta o botão de Ordenar
+
+  return allCards(statusResult);
+
 }
 lifeSelect.addEventListener("change", printStatus);
 
 
-function printGender(e) {
-  const genderResult = genderFilter(data.results, e.target.value);
-  console.log(genderResult);
-  //return allCards(genderResult);
+function printGender(event) {
+  const genderResult = genderFilter(data.results, event.target.value);
+  lifeSelect.selectedIndex = 0; //reseta o botão de Status, seta o índice para zero
+  alphaSelect.selectedIndex = 0;//reseta o botão de Ordenar
+
+  return allCards(genderResult);
 }
 
 genderSelect.addEventListener("change", printGender);
 
 // event.target.value = buscar diretamente o valor definido no seletor
+
+
+function sortAlphabetical(event) {
+  const sortNameSelect = sortNamesFilter(data.results, event.target.value)
+  lifeSelect.selectedIndex = 0;
+  genderSelect.selectedIndex = 0;
+  return allCards(sortNameSelect);
+
+};
+
+alphaSelect.addEventListener("change", sortAlphabetical);
 
 
 

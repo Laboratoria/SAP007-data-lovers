@@ -110,7 +110,7 @@ animation: tilt infinite 3s;
   position: absolute;
   left: 100px;
   top: 400px;
-  max-width: 15%;
+  max-width: 12%;
   animation: float infinite 4s;
 
 }
@@ -129,18 +129,18 @@ animation: tilt infinite 3s;
   top:500px;
   height: auto;
   max-width: 20px;
-  animation: float infinite 3s;
+  animation: float infinite 2s;
 
 }
 
 #poeira2{
 
   position: absolute;
-  left: 220px;
-  top:450px;
+  left: 415px;
+  top: 445px;
   height: auto;
-  max-width: 25px;
-  animation: float infinite 4s;
+  max-width: 20px;
+  animation: float infinite 2s;
 
 }
 

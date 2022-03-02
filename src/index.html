@@ -18,65 +18,49 @@
     <h1 class="titulosite"> Guia de Personagens</h1>
   </header>
 
-  <nav class="menu_paginas">
-    <ul class="listapaginas">
-      <li><a href="index.html">Lista de Personagens</a></li>
-      <li><a href="episodios.html">Lista de Episódios</a></li>
-    </ul>
-  </nav>
 
   <div class="container_filtros_search_ordem">
-
-  <form class="containersearch">
-    <input type="search" class="barra_pesquisa" placeholder="Pesquise por nome" />
-    <button type="submit" class="btnsearch" src=""><img src="search_icon.png" class="icon"></button>
-  </form>
-
-    <div class="organize_A-Z">
+    
+    <div class="ordenacaoA-Z">
       <p class=""><b>Organize</b></p>
-      <select class="">
+      <select class="ordenacaoA-Z">
         <option value="A-Z">A-Z</option>
         <option value="Z-A">Z-A</option>
       </select>
+      <br>
     </div>
+    
+    <form class="menufiltros">
+      <label>Espécie</label>
+      <select>
+          <option value="">Humano</option>
+          <option value="">Nao Humano</option>
+          <option value="">.</option>
+      </select>
+  
+      <label>Status</label>
+      <select>
+          <option value="">Humano</option>
+          <option value="">Nao Humano</option>
+          <option value="">.</option>
+      </select>
+  
+      <label>Gênero</label>
+      <select>
+          <option value="">Humano</option>
+          <option value="">Nao Humano</option>
+          <option value="">.</option>
+      </select>
+      
+      <input type="submit" value="Filtre" class="btn">
+      <input type="reset" value="Apague" class="btn">
+  </form>
+  </div>
 
-    <div class="boxfiltros">
-      <form>
-        <label>Espécie</label>
-        <select class="select_input">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-
-        <label>Gênero</label>
-        <select class="select_input">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-
-        <label>Status</label>
-        <select class="select_input">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-
-        <label>Local de Origem</label>
-        <select class="select_input">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-
-        <button type="submit" class="btnfiltros">Filtrar</button>
-        <button type="reset" class="btnfiltros reset">X</button>
-      </form>
-</div>
-
-
-
+<main>
+  
+</main>
+  
   <footer class="rodape">
     <p class="copyright"> © Maria Luiza e Louiza Lima</p>
     <nav class="contatosocial">

@@ -30,8 +30,9 @@
   overflow-y: scroll;
 }
 
-.pokedex-close {
+.pokedex-open {
   position: relative;
+  box-shadow: var(--shadown-drop-fort-fort);
 }
 
 .box-poke-img {

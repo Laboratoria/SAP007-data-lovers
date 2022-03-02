@@ -32,7 +32,12 @@ describe('statusFilter', () => {
   });
 
   it('returns Alive for `Modern Rick`', () => {
-    expect(statusFilter(characteres)).toBe(Alive);
+    expect(statusFilter(characteres)).toEqual({"id": 485,
+    "name": "Modern Rick",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male"});
   });
 });
 
@@ -43,6 +48,10 @@ describe('genderFilter', () => {
   });
 
 it('returns Male for `Rick Sanchez`', () => {
-    expect(genderFilter(characteres, "name")).toBe(Male);
+    expect(genderFilter(characteres, "name")).toEqual({"id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male"});
   });
 });

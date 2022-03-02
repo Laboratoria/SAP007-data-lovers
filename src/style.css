@@ -4,10 +4,13 @@
     text-decoration: none;
 }
 .cabecalho{
-    background-color: violet;
+    background: url("The_Smith_Family.jpg") no-repeat right top fixed;
     font-family: 'Poppins', sans-serif;
     display:flex;
     justify-content: space-around;
+    height: 70%;
+    width: 100%;
+    border: solid;
 }
 
 .titulosite{
@@ -20,7 +23,6 @@
     font-family: 'Poppins', sans-serif;
     display:flex;
     justify-content:space-around;
-    
 }
 
 .navbarradepesquisa{
@@ -72,12 +74,14 @@ background: #c1d177;
 line-height: 00.05em;
 }
 
-
-
 .rodape{
     background-color: tomato;
     font-family: 'Poppins', sans-serif;
-    
+    height: 55px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    bottom: 0;
+    flex-wrap: wrap;
 }
-
-

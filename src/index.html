@@ -12,78 +12,67 @@
 
 <body>
   <div id="root"></div>
-
   <header class="cabecalho">
-    <img src="logo.png" class="logo" alt="logo rick and morty" width="300" height="150" >
+    <img src="logo.png" class="logo" alt="logo rick and morty" width="400" height="150" >
     <h1 class="titulosite"> Guia de Personagens</h1>
   </header>
 
   <nav class="menu_paginas">
     <ul class="listapaginas">
-      <li><a href="url">Lista de Personagens</a></li>
-      <li><a href="url">Lista de Episódios</a></li>
+      <li><a href="index.html">Lista de Personagens</a></li>
+      <li><a href="index2.html">Lista de Episódios</a></li>
     </ul>
   </nav>
+  <div class="menuFiltros">
+    <section>
+      <select class= "filtos" id="filtroGenero">
+        <option selected disabled>Gênero</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+        <option value="unknow">Indefinido</option>
+      </select>
 
-  <div class="navbarradepesquisa">
-    <input type="text" class="barra_pesquisa" placeholder="Pesquise por nome"/>
+      <select class= "filtros" id="filtroEspecie">
+        <option selected disabled>Espécie</option>
+        <option value="Human">Humano</option>
+        <option value="Animal">Animal</option>
+        <option value="Alien">Alien</option>
+        <option value="Disease">Doença</option>
+        <option value="Humanoid">Humanoide</option>
+        <option value="Mytholog">Mitológico</option>
+        <option value="Parasite">Parasita</option>
+        <option value="Robot">Robô</option>
+        <option value="Vampire">Vampiro</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="Unknow">Indefinido</option>
+      </select>
+
+      <select class="filtros" id="filtrosStatus">
+        <option selected disabled>Status</option>
+        <option value="Alive">Vivo</option>
+        <option value="DeaD">Morto</option>
+        <option value="Unknow">Indefinido</option>
+      </select>
+
+      <button id="menulimpar" class="limpaFiltro">Limpar Filtros</button>
+      
+    </section>
   </div>
-
-    <div class="menufiltros">
-      <form >
-        <h2 class="titulofiltro"><b>Filtre por:</b></h2>
-        <ul>
-          <li class="categoriailtro">Espécie</li>
-          <ul>
-            <li> <input type="radio" class="inputfiltro" id="" name="especie" value="Humano"> Humano </li>
-            <li> <input type="radio" class="inputfiltro" id="" name="especie" value="Não Humano"> Não Humano </li>
-          </ul>
-  
-          <li class="categoriailtro">Status</li>
-          <ul>
-            <li> <input type="radio" class="inputfiltro" id="" name="status" value="vivo"> Vivo </li>
-            <li> <input type="radio" class="inputfiltro" id="" name="status" value="morto"> Morto </li>
-            
-          </ul>
-  
-          <li class="categoriailtro">Gênero</li>
-          <ul>
-            <li> <input type="radio" class="inputfiltro" id="nome" name="genero" value="Masculino"> Masculino </li>
-            <li> <input type="radio" class="inputfiltro" id="" name="genero" value="Feminino"> Feminino </li>
-          </ul>
-  
-          <li class="categoriailtro">Local de Origem</li>
-          <ul>
-            <li> <input type="radio" class="inputfiltro" id="" name="localdeorigem" value="Terra"> Terra </li>
-            <li> <input type="radio" class="inputfiltro" id="" name="localdeorigem" value="PlanetSnake"> Planet Snake </li>
-          </ul>
-        </ul>
-        <br>
-        <input type="submit" value='Filtrar'>
-        <input type="reset" value='Apagar'>
-      </form>
-    </div>
-    
-    <div class="organize_A-Z">
-      <p id="organize">Organize</p>
-      <select class="inputA-Z">
-        <option value="A-Z">A-Z</option>
-        <option value="Z-A">Z-A</option>
-    </select>
-    </div>
-    
- 
-
   <main>
-    aqui ficaria os cards
+    <section>
+      <div class="localCards" id="infoCards"></div>
+    </section>
   </main>
 
   <footer class="rodape">
-    <p class="copyright"> © Maria Luiza e Louiza Lima</p>
+    <p> 
+      <a href="https://github.com/MariaLuizaSantana" target="_blank">Maria Luiza Costa   </a>
+      <a href="https://github.com/loulima" target="_blank">Loiuza Lima   </a>
+    </p> 
     <nav class="contatosocial">
     </nav>
   </footer>
   <script src="main.js" type="module"></script>
 </body>
-
 </html>

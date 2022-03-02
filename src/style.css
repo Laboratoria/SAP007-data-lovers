@@ -1,0 +1,110 @@
+.logo {
+  padding: 15px;
+  text-align: center;
+  background-color: #0096C7;
+  margin: 0% 0;
+  color:#0096C7 ;
+}
+
+
+h1{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px ;
+  text-align: center;
+}
+
+body {
+
+  background-color: #00B4D8 ;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+@keyframes tilt { 0% { transform: translateY(0);
+
+} 50% { transform: translateY(-10px);
+
+}
+
+}
+
+#kiki{
+
+  height: auto;
+ position: absolute;
+ right: 140px;
+ top: 250px;
+ max-width: 100%;
+animation: tilt infinite 3s;
+
+}
+
+#sem_rosto{
+
+  position: absolute;
+  left: 270px;
+  top:300px;
+  height: auto;
+  max-width: 800px;
+
+}
+
+#nuvem{
+
+  height: auto;
+  position: absolute;
+  right: 40px;
+  top: 400px;
+  max-width: 10%;
+
+
+}
+
+#nuvem2{
+
+  height: auto;
+  position: absolute;
+  right: 60px;
+  top: 520px;
+  max-width: 15%;
+
+
+}
+
+#nuvem3{
+
+  height: auto;
+  position: absolute;
+  right: 400px;
+  top: 450px;
+  max-width: 10%;
+
+}
+
+#calcifer{
+ height: auto;
+ position: absolute;
+ max-width: 3%;
+
+}
+
+footer{
+
+  position: absolute;
+  bottom: 0;
+  background-color: #48CAE4;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px ;
+
+
+}
+
+.directorsFilter {
+  padding: 10px;
+}

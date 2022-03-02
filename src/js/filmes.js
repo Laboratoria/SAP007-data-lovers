@@ -4,10 +4,10 @@ const containerAnimes = document.getElementById("containerCardItem");
 
 let filmesData = data.films;
 
-filmesData.forEach(mostrarFilmes);
+filmesData.forEach(mostrarFilmes); //mapeando array films com método de callback forEach
 
 function mostrarFilmes(data) {
-  const cardAnime = document.createElement("div");
+  const cardAnime = document.createElement("section");
   cardAnime.className = "containerCardIndividual";
   cardAnime.innerHTML = `  
     <div class="conteinerImagem">
@@ -21,10 +21,14 @@ function mostrarFilmes(data) {
       </div>
       <div id="diretor">${data.director}</div>
       `;
-  console.log(cardAnime)
   containerAnimes.appendChild(cardAnime);
 }
 
 document.getElementById("recarregar").addEventListener("click", () => {
   location.reload();
+});
+
+document.getElementById("filtroDiretorItem").addEventListener("change", (oi) => {
+const filtrinho = filmesData.filter(filtrei => filtrei.director === oi.target.value);
+filtrinho.forEach(mostrarFilmes);
 });

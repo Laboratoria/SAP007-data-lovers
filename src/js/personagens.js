@@ -16,7 +16,7 @@ for (let i = 0; i < filmesData.length; i++) {
     console.log(personagens);
 
     //const cardAnime cria um elemento a ser adicionado ao HTML pelo appendChild
-    const cardAnime = document.createElement("div");
+    const cardAnime = document.createElement("section");
     cardAnime.className = "containerCardIndividual"; //dando uma classe ao elemento criado (cardAnime)
     //a propriedade innerHTML define, na sintaxe HTML, o conteúdo que preencherá o elemento criado (cardAnime)
     cardAnime.innerHTML = `  

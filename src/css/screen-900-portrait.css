@@ -63,10 +63,6 @@
     padding-top: 2px;
     padding-bottom: 2px;
   }
-  input.checkbox {
-    height: 30px;
-    width: 30px;
-  }
   .specify-type {
     font-size: 1.2rem;
     font-weight: 600;
@@ -74,10 +70,6 @@
   .specify-weaknesses {
     font-size: 1.2rem;
     font-weight: 600;
-  }
-  .checkbox {
-    height: 16px;
-    width: 16px;
   }
   .results-text {
     font-size: 1.6rem;

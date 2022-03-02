@@ -2,9 +2,6 @@ import { statusFilter, genderFilter, sortNamesFilter } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
-document.querySelector(".imgback").addEventListener("click", () => {
-  window.location.href = "index.html"
-});
 
 function allCards(data) {
   document.querySelector(".result").innerHTML = data
@@ -65,8 +62,7 @@ function sortAlphabetical(event) {
   lifeSelect.selectedIndex = 0;
   genderSelect.selectedIndex = 0;
   return allCards(sortNameSelect);
-
-};
+}
 
 alphaSelect.addEventListener("change", sortAlphabetical);
 

@@ -6,51 +6,159 @@
   color: #0096C7;
 }
 
+
+h1{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px ;
+  text-align: center;
+}
+
 body {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  background-color: #00B4D8;
+  background-color: #00B4D8 ;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-#kiki {
+
+@keyframes tilt { 0% { transform: translateY(0);
+
+} 50% { transform: translateY(-10px);
+
+}
+
+}
+
+@keyframes float { 0% { transform: translateY(0);
+
+} 50% { transform: translateY(-10px);
+
+}
+
+}
+
+#kiki{
 
   height: auto;
-  position: absolute;
-  right: 140px;
-  top: 250px;
-  max-width: 100%
+ position: absolute;
+ right: 140px;
+ top: 250px;
+ max-width: 100%;
+animation: tilt infinite 3s;
+
 }
 
 #sem_rosto {
 
   position: absolute;
-  left: 160px;
-  top: 270px;
-
+  left: 270px;
+  top:350px;
+  height: auto;
+  max-width: 700px;
+  animation: float infinite 4s;
 }
 
-#fogo {
+#nuvem{
+
   height: auto;
   position: absolute;
-  bottom: 0;
-  max-width: 3%;
+  right: 40px;
+  top: 400px;
+  max-width: 10%;
+  animation: float infinite 4s;
 
 }
 
-footer {
+#nuvem2{
+
+  height: auto;
+  position: absolute;
+  right: 60px;
+  top: 520px;
+  max-width: 15%;
+  animation: float infinite 4s;
+
+
+}
+
+#nuvem3{
+
+  height: auto;
+  position: absolute;
+  right: 400px;
+  top: 450px;
+  max-width: 10%;
+  animation: float infinite 4s;
+
+}
+
+#nuvem4{
+
+  height: auto;
+  position: absolute;
+  left: 200px;
+  top: 475px;
+  max-width: 23%;
+  animation: float infinite 4s;
+
+}
+
+#nuvem5{
+
+  height: auto;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+  max-width: 12%;
+  animation: float infinite 4s;
+
+}
+
+#calcifer{
+ height: auto;
+ position: absolute;
+ max-width: 3%;
+
+}
+
+#poeira{
+
+  position: absolute;
+  left: 480px;
+  top:500px;
+  height: auto;
+  max-width: 20px;
+  animation: float infinite 2s;
+
+}
+
+#poeira2{
+
+  position: absolute;
+  left: 415px;
+  top: 445px;
+  height: auto;
+  max-width: 20px;
+  animation: float infinite 2s;
+
+}
+
+footer{
 
   position: absolute;
   bottom: 0;
   background-color: #48CAE4;
-  color: #FFF;
   width: 100%;
   height: 100px;
   text-align: center;
   line-height: 100px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px ;
+
+
 }
 
 .filter {

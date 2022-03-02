@@ -1,146 +1,190 @@
 body {
     font-family: 'Amatic SC', cursive;
-
+    background: #0a0b0c;
 }
+
 .cabecalho {
-    align-items: center;
-    background: #FFFF6B;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0 0 2rem;
+    align-items: center;
+    background-color: #fefefe;
 }
-.imagem-rickemorty {
-    max-width: 300px;
-    max-height: 220px;
-    width: auto;
-    height: auto;
+
+.logo {
+    width: 120px;
 }
+
 .menu-lista {
     display: flex;
+    list-style: none;
 }
+
 .itens {
-    color: #472009;
+    color: #202329;
     margin-right: 1.25rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 22px;
 }
+
 .itens:active {
-    color: #ADFFFC;
+    color: #0a0b0c;
     font-weight: bold;
 }
+
 .itens:hover {
     text-decoration: underline;
-    color: #fefefe
+    color: #00FF00;
+}
+
+.imagem-nome {
+    background: #fefefe;
+    display: flex;
+    justify-content: center;
+}
+
+.nome-rick-and-morty {
+    width: 100%;
 }
 
 /*pagina home*/
+.sobre-secao {
+    background: url(bg.jpg);
+}
+
 .sobre {
     padding: 0.5em;
     text-align: center;
     text-transform: uppercase;
-    color: #472009;
-    font-size: 35px;
+    color: #D0CFCE;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .sobre-secao p {
     text-align: justify;
     font-size: 1.35rem;
     font-weight: 900;
-    color: #472009;
+    color: #fefefe;
     padding: 1rem;
- 
+
 }
+
 /*pagina personagens*/
-.botaos {
+.menu {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
     padding: 00.5rem;
 }
+
+.pesquisar {
+
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 15px;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 500px;
+    background: #66ff66;
+}
+
+::placeholder {
+    color: #0a0b0c;
+
+}
+
 .btn-filtro {
- font-family: 'Amatic SC', cursive;
- position: relative;
- padding: 10px 40px;
- margin: 0px 10px 10px 0px;
- float: left;
- border-radius: 3px;
- font-size: 20px;
- color: #FFF;
- text-decoration: none;
- background-color: #2ecc71;
- border: none;
- border-bottom: 5px solid #27ae60;
- text-shadow: 0px -2px #27ae60;
- -webkit-transition: all 0.1s;
- transition: all 0.1s;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 15px;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 500px;
+    background: #66ff66;
+    color: #0a0b0c
 }
 
-.btn-filtro:hover , .btn-filtro:active {
--webkit-transform: translate(0px,5px);
- -ms-transform: translate(0px,5px);
- transform: translate(0px,5px);
- border-bottom: 1px solid #2ecc71;
-}
-.btn-genero {
- font-family: 'Amatic SC', cursive;
- position: relative;
- padding: 10px 40px;
- margin: 0px 10px 10px 0px;
- float: left;
- border-radius: 3px;
- font-size: 20px;
- color: #FFF;
- text-decoration: none;
- background-color: #2ecc71;
- border: none;
- border-bottom: 5px solid #27ae60;
- text-shadow: 0px -2px #27ae60;
- -webkit-transition: all 0.1s;
- transition: all 0.1s;
-
-}
-
-.cards {
-    display: flex;
-    padding: 1rem;
-}
 #lista-cards {
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
+    justify-content: center;
 }
-.mostrar-cards {
+
+.card {
     padding: 0.5rem;
-    margin: 3px;
-    background: #27ae60;
-    background: linear-gradient(344deg,#2ecc71 0%, #27ae60 50%);
-    box-shadow: 0.3em 0.3em 0.7em #00000015;
-    border-radius: 3px;
-    color: #FFF;
-    transition: all .3s;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 350px;
 }
 
-.mostrar-cards:hover {
-    border: #472009 0.2em solid;
-
+.mostrar-cards {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    margin: 0 auto;
 }
 
-.mostrar-cards p {
+.card:hover .mostrar-cards {
+    transform: rotateY(180deg);
+}
+
+.cards-frente, .card-costa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    border: 2px solid #00FF00;
+}
+
+.cards-frente {
+    color: #1ea51e;
     text-align: center;
 }
-    
 
+.cards-frente p {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.card-costa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(180deg);
+    background-color: #D0CFCE;
+    color: #1ea51e;
+
+}
+
+.card-costa p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
 
 .rodape {
     padding: 2rem;
-    background: #FFFF6B;
+    background: #fefefe;
 }
+
 .texto-rodape {
     text-align: center;
     font-size: 12px;
-    color: #472009;   
-}
-.links {
-    text-decoration: none;
-    color:#472009;
+    color: #0a0b0c;
 }
 
+.links {
+    text-decoration: none;
+    color: #0a0b0c;
+}

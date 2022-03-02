@@ -8,51 +8,71 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Space+Grotesk:wght@300&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Space+Grotesk:wght@300&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
   <header class="cabecalho">
-    <h1><img class="imagem-rickemorty" alt="imagem de rick e morty" src="rick-and-morty.png"/></h1>
+    <h1><img class="logo" alt="imagem logo" src="logo.png" /></h1>
     <nav class="menu">
       <ul class="menu-lista">
         <li class="menu-item"><a class="itens" href="home-teste.html" target="_blank">Home</a></li>
         <li class="menu-item"><a class="itens" href="index.html" target="_blank">Personagens</a></li>
-        <li class="menu-item"><a class="itens" href="https://www.netflix.com/br/title/80014749" target="_blank">Aonde assistir?</a></li>
+        <li class="menu-item"><a class="itens" href="https://www.netflix.com/br/title/80014749" target="_blank">Aonde
+            assistir?</a></li>
       </ul>
     </nav>
   </header>
+  <section class="imagem-nome">
+    <img class="logo-rick-and-morty" alt="logo rick e morty" src="logo-nome.png" />
+  </section>
   <main>
-    
-    <section class="botaos" id="botao"> 
-      <button class="btn-filtro" id="btFiltroA"> Ordenar A-Z </button>
-      <button class="btn-filtro" id="btFiltroZ">Ordenar Z-A</button>
-      <select id="select-genero" class="btn-filtro">
-        <option class="filtrar-genero" value="" selected disabled>Genero</option>
-        <option class="filtrar-genero" value="Female">Femea</option>
-        <option class="filtrar-genero" value="Male">Macho</option>
-        <option class="filtrar-genero"value="unknown">Indefinido</option>
+    <section class="menu">
+      <form class="barra-de-pesquisa"> 
+        <input class="pesquisar" id="pesquisarNome" type="search" placeholder="Buscar..." >
+      </form>
+      <select id="selectOrdem" class="btn-filtro">
+        <option value="">Ordenar</option>
+        <option value="ordenarAZ">A-Z</option>
+        <option value="ordernarZA">Z-A</option>
       </select>
-      <select id="select-especie" class="btn-filtro">
-        <option class="filtrar-genero" value="" selected disabled>Especie</option>
-        <option class="filtrar-genero" value="unknown">Desconhecido</option>
-        <option class="filtrar-genero" value="Human">Humano</option>
-        <option class="filtrar-genero"value="Alien">Alien</option>
+
+      <select id="selectGenero" class="btn-filtro">
+        <option value="">Genero</option>
+        <option value="Female">Femea</option>
+        <option value="Male">Macho</option>
+        <option value="unknown">Indefinido</option>
       </select>
+
+      <select id="selectStatus" class="btn-filtro">
+        <option value="">Status</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Morto</option>
+        <option value="unknown">Indefinido</option>
+      </select>
+
+      <select id="selectEspecie" class="btn-filtro">
+        <option value="">Especie</option>
+        <option value="unknown">Desconhecido</option>
+        <option value="Human">Humano</option>
+        <option value="Alien">Alien</option>
+        <option value="Robot">Robo</option>
+      </select>
+      <p id="mostrarCalculo"></p>
     </section>
     <section class="cards">
       <div id="lista-cards">
-        
       </div>
     </section>
   </main>
   <script src="main.js" type="module"></script>
   <footer class="rodape">
     <p class="texto-rodape">Projeto desenvolvido por <a class="links" href="https://github.com/cintiasilv">Antonia
-            Cintia</a> e <a class="links" href="https://github.com/TailaMartins">Taila Martins</a></p>
+        Cintia</a> e <a class="links" href="https://github.com/TailaMartins">Taila Martins</a></p>
     <p class="texto-rodape">Laboratoria - DataLovers - 2022</p>
-</footer>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@media screen and (min-height: 300px) and (max-height: 899px) and (orientation: portrait) {
+  .container-pokemon {
+    background-position: -970px top;
+  }
+  .logo-onpokemon {
+    width: 337px;
+    height: 40px;
+    padding: 10px 0px;
+  }
+  .pokedex-close {
+    width: 160px;
+    height: 230px;
+    margin-left: 160px;
+  }
+  .intro-text {
+    font-size: 1.125rem;
+    padding: 20px 4%;
+  }
+
+  .container-general-filters {
+    min-width: 360px;
+  }
+  .logo-onpokemon-filter {
+    width: 224px;
+    height: 27px;
+    padding: 10px 0px;
+  }
+  .filter-title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  .name-text {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+  .input-name {
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  .container-checkbox {
+    grid-template-columns: 1fr;
+  }
+  .checkbox-name {
+    font-size: 1.2rem;
+    padding: 6px 0px;
+    grid-template-columns: 110px repeat(2, 80px);
+  }
+  .checkbox-title {
+    font-size: 1rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  input.checkbox {
+    height: 25px;
+    width: 25px;
+  }
+  .specify-type {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .specify-weaknesses {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .checkbox {
+    height: 16px;
+    width: 16px;
+  }
+  .results-text {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .quantify-text {
+    font-size: 1.2rem;
+    padding-top: 30px;
+  }
+  .order-calculation {
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  .confirm-button {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .confirm-button:hover {
+    width: 30px;
+  }
+  .back-button {
+    width: 50px;
+    height: 50px;
+  }
+  .back-button:hover {
+    background-color: #471f1f;
+  }
+  .back-button:hover:after {
+    font-size: 1rem;
+  }
+}

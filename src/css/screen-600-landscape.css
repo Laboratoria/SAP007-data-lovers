@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@media screen and (min-height: 600px) and (max-height: 719px) and (orientation: landscape) {
+  .container-pokemon {
+    background-position: center top;
+  }
+  .logo-onpokemon {
+    width: 406px;
+    height: 50px;
+    padding: 20px 0px;
+  }
+  .pokedex-close {
+    width: 160px;
+    height: 230px;
+    margin: 0 auto;
+  }
+  .intro-text {
+    font-size: 1.5rem;
+    padding: 20px 6%;
+  }
+  .details-info > .tab-title {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .details-info > .tab-text {
+    padding: 25px;
+    font-size: 1.2rem;
+  }
+
+  .container-general-filters {
+    min-width: 900px;
+  }
+  .logo-onpokemon-filter {
+    width: 310px;
+    height: 41px;
+    padding: 30px 0px;
+  }
+  .filter-title {
+    font-size: 1.6rem;
+    margin-top: 40px;
+  }
+  .name-text {
+    font-size: 1.3rem;
+    padding-top: 30px;
+  }
+  .input-name {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .container-checkbox {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .checkbox-name {
+    font-size: 1.3rem;
+    padding: 6px 0px;
+    grid-template-columns: 110px repeat(2, 80px);
+    grid-auto-flow: column;
+  }
+  .checkbox-title {
+    font-size: 1.3rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  input.checkbox {
+    height: 30px;
+    width: 30px;
+  }
+  .specify-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .specify-weaknesses {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .checkbox {
+    height: 16px;
+    width: 16px;
+  }
+  .results-text {
+    font-size: 1.6rem;
+    padding-top: 30px;
+  }
+  .quantify-text {
+    font-size: 1.3rem;
+    padding-top: 30px;
+  }
+  .order-calculation {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  .confirm-button {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .confirm-button:hover {
+    width: 30px;
+  }
+  .back-button {
+    width: 50px;
+    height: 50px;
+  }
+  .back-button:hover {
+    background-color: #471f1f;
+  }
+  .back-button:hover:after {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("tab-information.css");
+@import url("screen-300-portrait.css");
+@import url("screen-900-portrait.css");
+@import url("screen-300-landscape.css");
+@import url("screen-600-landscape.css");
+@import url("screen-720-landscape.css");
+
+.container-home {
+  margin: 0px;
+  padding: 0px;
+  background-color: #bfb63b;
+  font-family: "Segoe UI", Helvetica, Arial, Verdana;
+}
+
+.container-general {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  justify-content: center;
+  justify-items: center;
+}
+
+.container-pokemon {
+  width: 100%;
+  background-image: url(../img/pokemon-back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.header-home {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-home {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  font-family: Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  font-weight: 600;
+  color: #471f1f;
+  background-color: #ffdbac;
+}

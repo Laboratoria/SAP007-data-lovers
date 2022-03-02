@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.show-the-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #ffdbac;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+}
+
+.card-box {
+  position: absolute;
+  bottom: 94px;
+  left: 37px;
+  height: 237px;
+  width: 181px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  font-family: "Segoe UI", Helvetica, Arial, Verdana;
+  overflow: scroll;
+}
+
+.pokedex-close {
+  position: relative;
+}
+
+.box-poke-img {
+  display: flex;
+  place-content: center;
+  height: 100px;
+}
+
+.poke-img {
+  width: 100px;
+  height: 100px;
+}
+
+.box-poke-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 28px 48px minmax(53px, 1fr);
+  align-items: start;
+  row-gap: 4px;
+}
+
+.poke-items {
+  grid-column: 1/3;
+}
+
+.poke-items li {
+  display: inline-block;
+  padding: 1.5px 4px;
+  margin: 2px;
+  margin-left: 0px;
+  background-color: aqua;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.poke-item-title {
+  font-weight: 600;
+}
+
+.poke-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.poke-number {
+  font-size: 0.875rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 358px;
+  left: 168px;
+  background-color: rgba(0, 255, 48, 0.8);
+  width: 55px;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid #a10909;
+  border-radius: 4px;
+}

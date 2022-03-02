@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("screen-300-portrait.css");
+@import url("screen-300-landscape.css");
+@import url("screen-900-portrait.css");
+@import url("screen-600-landscape.css");
+@import url("screen-720-landscape.css");
+@import url("cards.css");
+
+.container-filters {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: auto;
+  background-color: #bfb63b;
+  font-family: "Segoe UI", Helvetica, Arial, Verdana;
+  color: #191c1f;
+}
+
+.container-general-filters {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+.header-filters {
+  width: 100%;
+  background-color: #471f1f;
+  display: flex;
+  place-content: center;
+}
+
+.main-filters {
+  background-color: #ffdbac;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.filter-title {
+  font-weight: bold;
+  width: 100%;
+}
+
+.full-checkbox {
+  width: 100%;
+}
+
+.name-text {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.input-name {
+  background-color: #e9a588;
+  border: rgb(217, 139, 116) solid 1px;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 4px #763636;
+  width: 300px;
+}
+
+.input-name::placeholder {
+  color: #471f1f;
+  font-size: 1.2rem;
+}
+
+.container-checkbox {
+  width: 100%;
+  display: grid;
+}
+
+.checkbox-name {
+  font-weight: 600;
+  width: 100%;
+  display: grid;
+  align-items: end;
+}
+
+.checkbox {
+  box-shadow: 3px 2px 2px #737373;
+  padding: 0px 50px;
+}
+
+.results-order {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: start;
+  background-color: #ffdbac;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.results-text {
+  font-weight: 600;
+}
+
+.quantify-text {
+  padding: 10px 0px 10px 0px;
+}
+
+.order-calculation {
+  width: 268px;
+  background-color: #e9a588;
+  box-shadow: 6px 4px 4px #737373;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-image: url(../img/arrow.png);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.order-calculation:hover {
+  background-color: #a96f57;
+}
+
+@-moz-document url-prefix() {
+  select {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #ffffff;
+  }
+}
+
+.confirm-button {
+  font-size: 1.8rem;
+  color: #fff0dd;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #45ab15;
+  border: none;
+  transition: width 1s;
+  box-shadow: 6px 4px 4px #737373;
+}
+
+.confirm-button:hover {
+  background-color: #318c05;
+  width: 300px;
+  text-align: left;
+}
+
+.confirm-button:hover:after {
+  content: "  Filtrar";
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.back-button {
+  font-size: 2.4rem;
+  color: #fff0dd;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #713e03;
+  box-shadow: 6px 4px 4px #737373;
+  padding-bottom: 15px;
+  transition: width 1s;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2000;
+}
+
+.back-button:hover {
+  background-color: #471f1f;
+  width: 400px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.back-button:hover::after {
+  content: "  Voltar para Filtragem";
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 10px;
+}

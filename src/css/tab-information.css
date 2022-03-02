@@ -30,26 +30,3 @@
 .details-info[open] .tab-title::before {
   content: "- MENOS ";
 }
-
-@media screen and (min-width: 360px) and (max-width: 599px) and (orientation: landscape) {
-  .details-info > .tab-title {
-    font-size: 0.75rem;
-  }
-}
-
-@media screen and (min-height: 600px) and (orientation: landscape) {
-  .details-info > .tab-title {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (min-height: 720px) {
-  .details-info > .tab-title {
-    font-size: 1.2rem;
-    padding: 20px;
-  }
-  .details-info > .tab-text {
-    padding: 25px;
-    font-size: 1.2rem;
-  }
-}

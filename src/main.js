@@ -12,7 +12,11 @@ function showOnCards(data) {
   document.getElementById("card-information").innerHTML = data
     .map(
       (item) =>
+<<<<<<< HEAD
         ` <div class="cards-section background-card">
+=======
+        ` <div class="cards">
+>>>>>>> 4610a321f41e2e1d64b05bdb80a55595b9647ada
 <div class="front-image">
 <img class="image-card" src="${item.image}">
 </div>
@@ -26,16 +30,15 @@ function showOnCards(data) {
   </ul>
   </div>
   </div>
-
   `
     )
     .join("");
 }
 //////////// pegar os elementos paga mostrar nos cartões
 showOnCards(data.results);
-const genderSelection = document.querySelector("#filters-genders");
-const speciesSelection = document.querySelector("#filters-species");
-const alphabetical = document.querySelector("#alphabetic-sequence");
+const genderSelection = document.getElementById("filters-genders");
+const speciesSelection = document.getElementById("filters-species");
+const alphabetical = document.getElementById("alphabetic-sequence");
 const statisticText = document.getElementById("statistics-infos");
 const nameCharacter = document.getElementById("filters-names");
 ////////////////////////// escutador dos eventos(fofoqueiro)
@@ -43,39 +46,42 @@ genderSelection.addEventListener("change", showGender);
 speciesSelection.addEventListener("change", showSpecies);
 alphabetical.addEventListener("change", showOrdem);
 statisticText.addEventListener("change", showStatistics);
-nameCharacter.addEventListener("change", nameCharacters);
+nameCharacter.addEventListener("keyup", nameCharacters);
 
-///////////////////////funções
-
+///////////////////////FUNÇÕES
+/// por GÊNEROS///
 function showGender(e) {
   const genderResults = filterGender(data.results, e.target.value);
   const statisticgender = `${percentage(
     data.results.length,
     genderResults.length
   )}% of character`;
-  showOnCards(statisticgender);
+  showStatistics(statisticgender);
   return showOnCards(genderResults);
 }
 
+/// por ESPECIES///
 function showSpecies(e) {
   const speciesResults = filterSpecies(data.results, e.target.value);
   const statisticgender = `${percentage(
     data.results.length,
     speciesResults.length
   )}% of character`;
-  showOnCards(statisticgender);
-  return showOnCards(speciesResults);
+  showStatistics(statisticgender);
+  showOnCards(speciesResults);
 }
-
+/// pesquisa NOME///
 function nameCharacters(e) {
   const characters = searchName(data.results, e.target.value);
   return showOnCards(characters);
 }
+
+/// Estatisticas//
 function showStatistics(data) {
   nameCharacter.innerHTML = `this category represents${data}`;
   nameCharacter.style.display = "inline-block";
 }
-
+// ordem de AZ/ZA
 function showOrdem(e) {
   const orderScreen = orderResults(data.results, e.target.value);
   return showOnCards(orderScreen);

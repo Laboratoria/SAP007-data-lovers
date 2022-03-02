@@ -12,11 +12,7 @@ function showOnCards(data) {
   document.getElementById("card-information").innerHTML = data
     .map(
       (item) =>
-<<<<<<< HEAD
         ` <div class="cards-section background-card">
-=======
-        ` <div class="cards">
->>>>>>> 4610a321f41e2e1d64b05bdb80a55595b9647ada
 <div class="front-image">
 <img class="image-card" src="${item.image}">
 </div>

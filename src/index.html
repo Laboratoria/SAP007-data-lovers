@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rick and Morty</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="breakpoints.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body class="background">
@@ -24,62 +26,52 @@
   </header>
 
   <main>
-    <form>
+    <form class="filters-container">
       
       <section>
         <p class="statistics" id="statistics-infos"></p>
       </section>
 
       <select class="options-menus" id="alphabetic-sequence">
-        <option value="">Ordem</option>
-        <option value="AZ">A-Z</option>
-        <option value="ZA">Z-A</option>
+        <option class="value-option" value="">Ordem</option>
+        <option class="value-option" value="AZ">A-Z</option>
+        <option class="value-option" value="ZA">Z-A</option>
       </select>
 
 
       <select id="filters-species" class="options-menus">
-        <option value=""> Selecione a espécie</option>
-        <option value="Alien">Alien</option>
-        <option value="Animal"> Animal</option>
-        <option value="Cronenberg">Cronenberg</option>
-        <option value="unknown">Desconhecido</option>
-        <option value="Disease">Disease</option>
-        <option value="Human">Humano</option>
-        <option value="Mytholog">Mytholog</option>
-        <option value="Parasite">Parasita</option>
-        <option value="Poopybutthole">Poopybutthole</option>
-        <option value="Robot">Robô</option>
-        <option value="Vampire">Vampiro</option>
+        <option class="value-option" value=""> Selecione a espécie</option>
+        <option class="value-option" value="Alien">Alien</option>
+        <option class="value-option" value="Animal"> Animal</option>
+        <option class="value-option" value="Cronenberg">Cronenberg</option>
+        <option class="value-option" value="unknown">Desconhecido</option>
+        <option class="value-option" value="Disease">Disease</option>
+        <option class="value-option" value="Human">Humano</option>
+        <option class="value-option" value="Mytholog">Mytholog</option>
+        <option class="value-option" value="Parasite">Parasita</option>
+        <option class="value-option" value="Poopybutthole">Poopybutthole</option>
+        <option class="value-option" value="Robot">Robô</option>
+        <option class="value-option" value="Vampire">Vampiro</option>
       </select>
 
       <select id="filters-genders" class="options-menus">
-        <option value=""> Selecione o gênero</option>
-        <option value="Man">Homem</option>
-        <option value="Woman"> Mulher</option>
-        <option value="Genderless">Sem gênero</option>
-        <option value="unknown">Desconhecido</option>
+        <option class="value-option" value=""> Selecione o gênero</option>
+        <option class="value-option" value="Man">Homem</option>
+        <option class="value-option" value="Woman"> Mulher</option>
+        <option class="value-option" value="Genderless">Sem gênero</option>
+        <option class="value-option" value="unknown">Desconhecido</option>
       </select>
 
-      </section>
 
 
-      <label> <input type="search" id="filters-names" placeholder="ex:Rick" class="filters-name"></label>
+
+      <label> <input type="search" id="filters-names" placeholder="ex:Rick" class="filters-name options-menus"></label>
       
-      </section>
     </form>
 
     <section class="section-card">
-<<<<<<< HEAD
       <div class="card-information" id="card-information"></div>
-=======
-      <div class="cards" id="card-information"></div>
->>>>>>> 4610a321f41e2e1d64b05bdb80a55595b9647ada
     </section>
-
-
-
-
-
 
   </main>
 

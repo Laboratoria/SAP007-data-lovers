@@ -1,0 +1,29 @@
+/* === PEQUENO ≥576px === */
+@media (min-width: 576px) {
+
+
+  /* === CARDS === */
+  .card-information {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* === MÉDIO ≥768px === */
+@media (min-width: 768px) {
+
+  .background-card {
+    width: 25vw;
+    height: 50vh;
+    width: 25vw;
+    height: 50vh;
+  }
+
+  .background-card {
+    height: 300px;
+  }
+}
+/* === GRANDE ≥992px === */
+@media (min-width: 992px) {
+ 
+}

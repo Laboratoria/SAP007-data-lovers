@@ -53,6 +53,9 @@ footer {
   line-height: 100px;
 }
 
-.directorsFilter {
+.filter {
   padding: 10px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }

@@ -90,21 +90,42 @@ footer .criadoras {
 }
 
 /* === CARDS === */
-
-.cards {
+.card-information{
   display: flex;
   flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.cards-section {
+
+}
+
+.front-image{
+  margin: 2vw auto;
 }
 
 .image-card{
-  width: 15vw;
+  width: 20vw;
+  margin: auto;
 }
 
 .front-text{
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.background-card {
   background: var(--green-neon);
+  width: 30vw;
+  height: 55vh;
+  border-radius: 6px;
   display: flex;
+  flex-flow: wrap;
+  margin: 1vw;
+  box-shadow: 10px -10px var(--light-green);
 }
+
 .text-cards{
-  text-align: inherit;
-  list-style-type: none;
+  list-style: none;
 }
+

@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("variables.css");
 
 .show-the-cards {
   width: 100%;
@@ -7,7 +8,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  background-color: #ffdbac;
+  background-color: var(--beige);
 }
 
 .card {
@@ -58,10 +59,10 @@
 
 .poke-items li {
   display: inline-block;
-  padding: 1.5px 4px;
+  padding: 1.5px 7px;
   margin: 2px;
   margin-left: 0px;
-  background-color: aqua;
+  background-color: var(--bug);
   border-radius: 10px;
   font-size: 1rem;
 }
@@ -94,16 +95,16 @@
 }
 
 .card-box::-webkit-scrollbar-track {
-  background: #ffdbac;
+  background: var(--beige);
 }
 
 .card-box::-webkit-scrollbar-thumb {
-  background-color: #e9a588;
+  background-color: var(--medium-beige);
   border-radius: 5px;
-  border: 3px solid #ffdbac;
+  border: 3px solid var(--beige);
 }
 
 .card-box {
   scrollbar-width: thin;
-  scrollbar-color: #e9a588 #ffdbac;
+  scrollbar-color: var(--medium-beige) var(--beige);
 }

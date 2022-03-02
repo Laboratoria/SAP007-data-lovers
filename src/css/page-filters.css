@@ -13,9 +13,9 @@
   padding: 0px;
   height: 100vh;
   width: auto;
-  background-color: #bfb63b;
+  background-color: var(--background-green);
   font-family: "Segoe UI", Helvetica, Arial, Verdana;
-  color: #191c1f;
+  color: var(--black);
 }
 
 .container-general-filters {
@@ -28,13 +28,13 @@
 
 .header-filters {
   width: 100%;
-  background-color: #471f1f;
+  background-color: var(--dark-brown);
   display: flex;
   place-content: center;
 }
 
 .main-filters {
-  background-color: #ffdbac;
+  background-color: var(--beige);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -58,16 +58,21 @@
 }
 
 .input-name {
-  background-color: #e9a588;
+  background-color: var(--medium-beige);
   border: rgb(217, 139, 116) solid 1px;
   border-radius: 10px;
-  box-shadow: inset 3px 3px 4px #763636;
+  box-shadow: var(--shadown-inner);
   width: 300px;
 }
 
 .input-name::placeholder {
   color: #471f1f;
   font-size: 1.2rem;
+}
+
+.input-name:focus {
+  border: 0;
+  box-shadow: var(--shadown-drop-fort);
 }
 
 .container-checkbox {
@@ -86,7 +91,7 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: start;
-  background-color: #ffdbac;
+  background-color: var(--beige);
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -101,8 +106,8 @@
 
 .order-calculation {
   width: 268px;
-  background-color: #e9a588;
-  box-shadow: 6px 4px 4px #737373;
+  background-color: var(--medium-beige);
+  box-shadow: var(--shadown-drop-medium);
   border: none;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -139,7 +144,7 @@
   background-color: #45ab15;
   border: none;
   transition: width 1s;
-  box-shadow: 6px 4px 4px #737373;
+  box-shadow: var(--shadown-drop-medium);
 }
 
 .confirm-button:hover {
@@ -163,8 +168,8 @@
   height: 50px;
   border-radius: 30px;
   border: none;
-  background-color: #713e03;
-  box-shadow: 6px 4px 4px #737373;
+  background-color: var(--medium-brown);
+  box-shadow: var(--shadown-drop-medium);
   padding-bottom: 15px;
   transition: width 1s;
   position: fixed;
@@ -174,7 +179,7 @@
 }
 
 .back-button:hover {
-  background-color: #471f1f;
+  background-color: var(--dark-brown);
   width: 400px;
   padding-left: 20px;
   text-align: left;

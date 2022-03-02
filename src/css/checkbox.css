@@ -7,7 +7,7 @@
   width: 25px;
   background-color: #e9a588;
   border-radius: 2px;
-  box-shadow: 3px 2px 2px #737373;
+  box-shadow: var(--shadown-drop-weak);
 }
 
 .checkbox:before {
@@ -32,5 +32,5 @@
 }
 
 .checkbox:focus {
-  box-shadow: 0 0 5px #713e03;
+  background-color: rgb(245, 130, 46);
 }

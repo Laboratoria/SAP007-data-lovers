@@ -1,13 +1,14 @@
 @charset "utf-8";
+@import url("variables.css");
 
 .details-info {
   width: 100%;
-  background-color: #471f1f;
+  background-color: var(--dark-brown);
 }
 
 .details-info > .tab-title {
   display: block;
-  color: #ffdbac;
+  color: var(--beige);
   padding: 15px;
   font-size: 0.875rem;
   text-align: center;
@@ -16,8 +17,8 @@
 }
 
 .details-info > .tab-text {
-  background-color: #471f1f;
-  color: #ffdbac;
+  background-color: var(--dark-brown);
+  color: var(--beige);
   padding: 20px;
   line-height: 1.6;
   font-size: 1rem;

@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("reset.css");
+@import url("variables.css");
 @import url("tab-information.css");
 @import url("screen-300-portrait.css");
 @import url("screen-900-portrait.css");
@@ -10,7 +11,7 @@
 .container-home {
   margin: 0px;
   padding: 0px;
-  background-color: #bfb63b;
+  background-color: var(--background-green);
   font-family: "Segoe UI", Helvetica, Arial, Verdana;
 }
 
@@ -48,6 +49,6 @@
 .intro-text {
   font-family: Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
   font-weight: 600;
-  color: #471f1f;
-  background-color: #ffdbac;
+  color: var(--dark-brown);
+  background-color: var(--beige);
 }

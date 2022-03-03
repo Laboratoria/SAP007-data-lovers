@@ -5,7 +5,7 @@ import {
   filterSpecies,
   searchName,
   percentage,
-  orderResults,
+  orderResults
 } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 function showOnCards(data) {

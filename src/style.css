@@ -15,15 +15,14 @@ body{
     position: relative;
     float:inline-start;
     background-color: rgb(20, 19, 19);
-    height: 10vh;  
-    
+    height: 9vh;  
 }
 
 ul {
     display: flex;
     padding-top: 1.5%;
     padding-left: 1.5%;
-
+    
 }
 
 li {
@@ -46,8 +45,15 @@ li a:hover {
     transform: scale(1.2);
 }
 
-.theme {
+.logo {
+    width: 11%;
+    position:absolute;
+	left: 88%;
+    cursor: pointer;
+	
+}
 
+.theme {
     background: url("img/imgheader.jpg") right top ;
     height: 20vh;
     background-repeat: no-repeat;
@@ -56,11 +62,11 @@ li a:hover {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     
-     
 }
 
 .themeGhibli {
-    color: rgba(205, 204, 224, 0.863);
+    color: rgb(168, 14, 14);
+    /* color: rgba(205, 204, 224, 0.863); */
     font-size: 80px;
     padding: 10px;
     display: flex;
@@ -92,17 +98,33 @@ li a:hover {
     width: 200px;
     font-size: larger;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 2);
     
 }
 
+.btnClean {
+    padding: 7px 7px;
+    background: linear-gradient(to right top, black, red);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 1);
+    box-sizing: border-box; 
+}
+
+
+.btnClean:hover {   
+    background: linear-gradient(to right top, red, black);
+}
+
+
 
 .cardImage {
-    
     border-radius: 15px;
-    width: 250px;
+    width: 235px;
     height: 350px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-    
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.7);
 }
 
 .cardTitle {
@@ -141,7 +163,6 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
     opacity: 0;
     pointer-events: none;
 }
@@ -165,13 +186,11 @@ li a:hover {
     position: relative;
     bottom: 3vh;
     font-size: 17px;  
-    
 }
 
 .linkedin {
     text-decoration: none;
-  
-
+    color: white;
 }
 
 /* estilização da characters.html */ 

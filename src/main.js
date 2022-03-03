@@ -19,21 +19,23 @@ function showCards(movies) {
 showCards(movies)
 
 
-const characters = data.films
-const charactersContainer = document.getElementById("charactersContainer");
-function showCardsCharacters (characters) {
-    charactersContainer.innerHTML = characters.map(character =>
+const personagens = data.films.people
+console.log(personagens)
+// const charactersContainer = document.getElementById("charactersContainer");
+// function showCardsCharacters (movies) {
+//     charactersContainer.innerHTML = characters.map(character =>
 
-        `        
-        <div class="innerCard"> 
-            <img src="${character.img}" alt="Imagem personagem" class="cardImage"  id="cardImage"> 
-            <p class="cardTitle">${character.name} </p>   
-        </div>        
-        `
+//         `        
+//         <div class="innerCard"> 
+//             <img src="${character.img}" alt="Imagem personagem" class="cardImage"  id="cardImage"> 
+//             <p class="cardTitle">${character.name} </p>   
+//         </div>        
+//         `
 
-    ).join('')
-}
-showCardsCharacters(characters)
+//     ).join('')
+// }
+// showCardsCharacters(characters)
+// console.log(characters)
 
 
 
@@ -64,6 +66,12 @@ selectProducer.addEventListener("change", (event) => {
     const resultProducer = filterProducer(movies, event.target.value)
     showCards(resultProducer);
 });
+
+const buttonClean = document.getElementById("btnClean");
+function cleanFilters() {
+    window.location.reload(); //recarrega a página
+  }
+  buttonClean.addEventListener("click", cleanFilters);
 
 // const buttonOpen = document.querySelectorAll('.cardImage');
 // const modalContainer = document.querySelector('.modalContainer');

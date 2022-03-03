@@ -4,21 +4,21 @@
             border: 0;
         }
         
-        @media screen and (min-width: 768px) {
-            .tittle-header-page-people {
-                font-size: 50px;
-            }
-            footer {
-                font-size: 2rem;
-            }
-        }
-        
-        @media screen and (max-width: 1024px) {
-            .tittle-header-page-people {
-                font-size: 30px;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .tittle-header-page-films {
+                font-size: 40px;
             }
             footer {
                 font-size: 1rem;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            .tittle-header-page-films {
+                font-size: 50px;
+            }
+            footer {
+                font-size: 1.5rem;
             }
         }
         

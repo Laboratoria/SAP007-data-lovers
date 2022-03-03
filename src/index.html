@@ -30,8 +30,10 @@
         <section>
             <form id="form">
 
-                <input class="ipt-search" id="ipt-search" type="text" placeholder="Pesquisar por um filme">
-
+                <div class="search-container">
+                    <input type="text" class="inp-search" id="inp-search" placeholder="Encontre um filme">
+                    <button type="button" class="search-icon"><a href="#"></a><img src="img/loupe.png"></a></button>
+                </div>
 
                 <select class="select" type="text" id="director">
                     <option class="#" value="" disabled selected id="#">Diretores</option>
@@ -50,6 +52,12 @@
                     <option class="#" type="button" id="#">Toshio Suzuki</option>
                     <option class="#" type="button" id="#">Yoshiaki Nishimura</option>
                     <option class="#" type="button" id="#">Hiromasa Yonebayashi</option>
+                </select>
+
+                <select class="select-order" type="text" id="order">
+					<option class="#"  value="" disabled selected id="#">Ordem</option>
+					<option class="#" type="button" id="az">A > Z</option>
+					<option class="#" type="button" id="za">Z > A</option>
                 </select>
 
                 <button class="btn-reset" id="btn-reset">Limpar</button>

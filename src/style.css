@@ -4,21 +4,21 @@
     border: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .tittle-header-page-films {
+        font-size: 40px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .tittle-header-page-films {
         font-size: 50px;
     }
     footer {
         font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .tittle-header-page-films {
-        font-size: 30px;
-    }
-    footer {
-        font-size: 1rem;
     }
 }
 
@@ -86,48 +86,44 @@ body {
     background-color: #757575;
 }
 
-.categorias {
-    display: inline-flex;
-    word-spacing: 400px;
-    margin-left: 400px;
-}
-
-.ipt-search,
-.select,
-.btn-reset {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 0 5px 2px #168AAD;
-    display: inline;
-    align-items: center;
-    height: 6vh;
-    width: 10vw;
-    margin-left: 15px;
-}
-
-.ipt-search {
-    width: 15vw;
-    float: left;
-    background-image: url('img/loupe.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    text-indent: 10px;
-}
-
-.search-btn {
-    background-color: #168AAD;
-}
-
-.btn-reset {
-    width: 5vw;
-}
-
 .main-page-films {
     background: #184E77;
     height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.inp-search,
+.select,
+.select-order,
+.btn-reset {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px #168AAD;
+    display: inline-block;
+    align-items: center;
+    height: 6vh;
+    width: 10vw;
+    margin-left: 15px;
+}
+
+.inp-search {
+    width: 20vw;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.select-order,
+.btn-reset {
+    width: 5vw;
 }
 
 .section-card {

@@ -1,5 +1,4 @@
-import { sortAz } from './data.js';
-import { filterTitle, filterRating, filterProducer } from './data.js';
+import { sortAz, filterTitle, filterRating, filterProducer } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const movies = data.films
@@ -18,6 +17,25 @@ function showCards(movies) {
 }
 
 showCards(movies)
+
+
+const characters = data.films
+const charactersContainer = document.getElementById("charactersContainer");
+function showCardsCharacters (characters) {
+    charactersContainer.innerHTML = characters.map(character =>
+
+        `        
+        <div class="innerCard"> 
+            <img src="${character.img}" alt="Imagem personagem" class="cardImage"  id="cardImage"> 
+            <p class="cardTitle">${character.name} </p>   
+        </div>        
+        `
+
+    ).join('')
+}
+showCardsCharacters(characters)
+
+
 
 
 const sortOrder = document.getElementById("selectAZ");
@@ -47,20 +65,20 @@ selectProducer.addEventListener("change", (event) => {
     showCards(resultProducer);
 });
 
-const buttonOpen = document.querySelectorAll('.cardImage');
-const modalContainer = document.querySelector('.modalContainer');
-const buttonHide = document.querySelector('.hideModal');
-console.log(buttonOpen)
+// const buttonOpen = document.querySelectorAll('.cardImage');
+// const modalContainer = document.querySelector('.modalContainer');
+// const buttonHide = document.querySelector('.hideModal');
+// console.log(buttonOpen)
 
 
-buttonOpen.addEventListener("click", () => {
-    modalContainer.classList.add('show');
-})
+// buttonOpen.addEventListener("click", () => {
+//     modalContainer.classList.add('show');
+// })
 
 
-buttonHide.addEventListener("click", () => {
-    modalContainer.classList.remove('show');
-})
+// buttonHide.addEventListener("click", () => {
+//     modalContainer.classList.remove('show');
+// })
 
 /* buttonOpen.forEach((item) => {
     item.addEventListener('click', () => {

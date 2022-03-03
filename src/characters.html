@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Studio Ghibli</title>
-        <link rel="stylesheet" href="style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
 
-    </head>
+  </head>
 
 
-    <body>
-        <menu class="menu">
-            <nav>
-              <ul id="menu">
-                <li><a class="listMenu" href="index.html">PÁGINA INICIAL</a></li>
-                <li><a class="listMenu" href="characters.html">PERSONAGENS</a></li>
-               
-              </ul>
-            </nav>
-          </menu>
+  <body>
+    <menu class="menu">
+      <nav>
+        <ul id="menu">
+          <li><a class="listMenu" href="index.html">PÁGINA INICIAL</a></li>
+          <li><a class="listMenu" href="characters.html">PERSONAGENS</a></li>
+
+        </ul>
+      </nav>
+    </menu>
+
+    <header>
+      <div class="theme">
+        <h1 class="themeGhibli">Ghibli Explore</h1>
+        <h3 class="subTheme">Saiba tudo sobre seu personagem favorito</h3>
+      </div>
+    </header>
+
+    <section class="filtersContainer">
+      <div class="filterAz" id="filterAz">
+        <select class="select" id="sortAZ">
+          <option selected disabled value="">Ordem Alfabética</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+        </select>
+      </div>
+
+      <div class="filterSpecie" id="filterSpecie">
+        <select class="select" id="selectSpecie">
+          <option selected disabled value="">Espécie</option>
+          <option value="Human">Human</option>
+          <option value="Fish/Human">Fish/Human</option>
+          <option value="Raccoon Dog">Raccoon Dog</option>
+          <option value="Borrower">Borrower</option>
+          <option value="Cat">Cat</option>
+          <option value="Totoro">Totoro</option>
+          <option value="Witch">Witch</option>
+        </select>
+      </div>
+
+      <div class="filterGender" id="filterGender">
+        <select class="select" id="selectGender">
+          <option selected disabled value="">Gênero</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="NA">NA</option>
+        </select>
+      </div>
+      </div>
+    </section>
+
+    <main class="mainContent" id="mainContent">
+            
+      <div class="charactersContainer" id="charactersContainer">
         
-        <header>
-            <div class="theme">
-              <h1 class="themeGhibli">Ghibli Explore</h1>
-              <h3 class="subTheme">Saiba tudo sobre seu personagem favorito</h3>
-            </div>
-        </header>
+      </div>       
+      
+      <div class="modalContainer">
+        <div class="modal"> 
+          <button class="hideModal">Fechar</button>
+        </div>         
+      </div>
 
-        <div class="container">
-            <div class="filterAz" id="filterAz">
-                <select class="select" id="sortAZ">
-                   <option selected disabled value="">Ordem Alfabética</option>
-                   <option value="A-Z">A-Z</option>
-                   <option value="Z-A">Z-A</option>
-                </select>
-            </div>
+    </main>
 
-            <div class="filterSpecie" id="filterSpecie">
-                <select class="select" id="selectSpecie">
-                   <option selected disabled value="">Espécie</option>
-                   <option value="Human">Human</option>
-                   <option value="Fish/Human">Fish/Human</option>
-                   <option value="Raccoon Dog">Raccoon Dog</option>
-                   <option value="Borrower">Borrower</option>
-                   <option value="Cat">Cat</option>
-                   <option value="Totoro">Totoro</option>
-                   <option value="Witch">Witch</option>
-                </select>
-            </div>
+    <footer class="footer">Desenvolvido por Elizenai Silva e Lidianne Romão para Laboratória - 2022.</footer>
 
-            <div class="filterGender" id="filterGender">
-              <select class´="select" id="selectGender">
-                <option selected disabled value="">Gênero</option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="NA">NA</option>
-              </select>
-            </div>
-        </div>
-
-        <footer class="footer">Desenvolvido por Elizenai Silva e Lidianne Romão para Laboratória - 2022.</footer>
-
-        <script src="main.js" type="module"></script>
-    </body>
+    <script src="main.js" type="module"></script>
+  </body>
 
 </html>

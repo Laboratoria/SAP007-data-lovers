@@ -12,7 +12,7 @@ function showOnCards(data) {
   document.getElementById("card-information").innerHTML = data
     .map(
       (item) =>
-        ` <div class="cards">
+        ` <div class="background-card">
 <div class="front-image">
 <img class="image-card" src="${item.image}">
 </div>
@@ -30,13 +30,14 @@ function showOnCards(data) {
     )
     .join("");
 }
-//////////// pegar os elementos paga mostrar nos cartões
 showOnCards(data.results);
+//////////// pegar os elementos paga mostrar nos cartões
 const genderSelection = document.getElementById("filters-genders");
 const speciesSelection = document.getElementById("filters-species");
 const alphabetical = document.getElementById("alphabetic-sequence");
 const statisticText = document.getElementById("statistics-infos");
 const nameCharacter = document.getElementById("filters-names");
+
 ////////////////////////// escutador dos eventos(fofoqueiro)
 genderSelection.addEventListener("change", showGender);
 speciesSelection.addEventListener("change", showSpecies);
@@ -48,34 +49,39 @@ nameCharacter.addEventListener("keyup", nameCharacters);
 /// por GÊNEROS///
 function showGender(e) {
   const genderResults = filterGender(data.results, e.target.value);
-  const statisticgender = `${percentage(
+  const statisticGender = `${percentage(
     data.results.length,
     genderResults.length
-  )}% of character`;
-  showStatistics(statisticgender);
+  )}% dos personagens`;
+  showStatistics(statisticGender);
   return showOnCards(genderResults);
 }
 
 /// por ESPECIES///
 function showSpecies(e) {
   const speciesResults = filterSpecies(data.results, e.target.value);
-  const statisticgender = `${percentage(
+  const statisticSpecies = `${percentage(
     data.results.length,
     speciesResults.length
-  )}% of character`;
-  showStatistics(statisticgender);
+  )}% dos personagens`;
+  showStatistics(statisticSpecies);
   showOnCards(speciesResults);
 }
 /// pesquisa NOME///
 function nameCharacters(e) {
   const characters = searchName(data.results, e.target.value);
+  const statisticName = `${percentage(
+    data.results.length,
+    characters.length
+  )} % dos personagens`;
+  showStatistics(statisticName);
   return showOnCards(characters);
 }
 
 /// Estatisticas//
 function showStatistics(data) {
-  nameCharacter.innerHTML = `this category represents${data}`;
-  nameCharacter.style.display = "inline-block";
+  statisticText.innerHTML = `Está porcentagem representa ${data} dos personagens`;
+  statisticText.style.display = "inline-block";
 }
 // ordem de AZ/ZA
 function showOrdem(e) {

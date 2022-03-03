@@ -3,6 +3,7 @@
   src: url("font/shlop\ rg.ttf") format("truetype");
 }
 
+/* === RESET === */
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,7 @@
   box-sizing: border-box;
 }
 
+/* === VARIAVEIS === */
 :root {
   --body-font: "Share Tech", sans-serif;
   --green-neon: #5fe431;
@@ -17,14 +19,12 @@
   --light-blue: #11aebf;
 }
 
+/* === BACKGROUND INDEX === */
 .background {
-  background-image: url(img/background.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center center;
+  background: black;
   font-family: "Shlop", sans-serif;
 }
-
+/* === SLIDE === */
 .box-logo {
   width: 25vw;
   display: flex;
@@ -51,7 +51,7 @@
     transform: translate(0px, 00);
   }
 }
-
+/* === BOLINHAS DO SLIDE === */
 .bolinhas {
   justify-content: center;
   display: flex;
@@ -71,6 +71,86 @@
   background-color: var(--green-neon);
 }
 
+.statistics {
+  text-align: center;
+  color: #85d97aa8;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(7, 157, 238, 0.817);
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px;
+  display: none;
+}
+
+/* === FILTROS === */
+option {
+  background-color: #000;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.options-menus {
+  --green: #1bfd9c;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.options-menus:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+    0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.options-menus:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.options-menus:hover:before {
+  transform: translateX(15em);
+}
+
+.filters-name {
+  outline: none;
+}
+
+/* === FOOTER === */
 footer {
   background-color: var(--light-blue);
   opacity: 60%;
@@ -90,6 +170,95 @@ footer .criadoras {
 }
 
 /* === CARDS === */
+.card-information {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.front-image {
+  margin: auto;
+}
+
+.image-card {
+  width: 20vw;
+  margin: auto;
+}
+
+.front-text {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.background-card {
+  background: var(--green-neon);
+  width: 200px;
+  height: 254px;
+  --border-radius: 6px;
+  --border-width: 4px;
+  appearance: none;
+  position: relative;
+  padding: 1em 1em 14em;
+  border: 0;
+  font-size: 16px;
+  color: black;
+  z-index: 2;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: wrap;
+  margin: 1em;
+}
+
+.background-card::after {
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  border-radius: var(--border-radius);
+  background-image: conic-gradient(
+    #488cfb,
+    #29dbbc,
+    #ddf505,
+    #ff9f0e,
+    #e440bb,
+    /* CORES BORDA */ #655adc,
+    #488cfb
+  );
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue linear 500ms infinite;
+  animation-play-state: paused;
+}
+
+.background-card:hover::after {
+  animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+.background-card,
+.background-card::after {
+  box-sizing: border-box;
+}
+
+.text-cards {
+  list-style: none;
+}
 
 .cards {
   display: flex;
@@ -97,7 +266,7 @@ footer .criadoras {
 }
 
 .image-card {
-  width: 15vw;
+  width: 8vw;
 }
 
 .front-text {

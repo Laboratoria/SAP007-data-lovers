@@ -1,9 +1,21 @@
 import dataGhibli from "./data/ghibli/ghibli.js"
-import {} from "./data.js"
+import { filterDataByDirector, filterDataByProducer, filterByPeople} from "./data.js"
 
+//PARA CHAMAR A ARRAY
+const films = dataGhibli.films;
 
+//PARA MAPEAR OS DIRETORES
+const diretor = films.map(films => films.director);
+console.log(diretor);
 
+//PARA MAPEAR OS PRODUTORES
+const produtor = films.map(films => films.producer);
+console.log(produtor);
 
+//PARA MAPEAR OS PERSONAGENS
+const people = films.map
+
+//PARA IMPRIMIR NA TELA PERSONAGENS
 const card = document.getElementById("card")
 card.innerHTML = " "
 
@@ -23,3 +35,14 @@ for (let i = 0; i < dataGhibli.films.length; i++) {
         card.appendChild(cardSection)
     }
 }
+
+//PARA PEGAR O VALOR DO INPUT DO SELETOR
+film.addEventListener("change", () => {
+    const optionsFilm = document.getElementById("film")
+    const filmIndex = optionsFilm.selectedIndex;
+    const filmSelected = optionsFilm[filmIndex].text;
+    const filmFiltered = filterByPeople(films, filmSelected);
+
+    console.log(cardSection(filmFiltered));
+
+});

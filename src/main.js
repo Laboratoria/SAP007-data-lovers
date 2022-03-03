@@ -23,14 +23,16 @@ function cardSection(items) {
     const card = document.getElementById("card")
     card.innerHTML = " "
     for (let i = 0; i < items.length; i++) {
-        const cardSection = document.createElement("div");
-        const cS = cardSection.setAttribute("class", "card-section");
-        const titleElement = document.createElement("h2");
+        const cardSection = document.createElement("section");
+        const cS = cardSection.setAttribute("class", "div-cards");
+        //const titleElement = document.createElement("h2");
+        //const title = titleElement.setAttribute("class", "title-cards")
         const posterElement = document.createElement("img");
+        const img = posterElement.setAttribute("class", "img-cards")
         let primeiroItem = items[i];
         posterElement.src = primeiroItem.poster;
-        titleElement.innerHTML = primeiroItem.title;
-        cardSection.appendChild(titleElement);
+        //titleElement.innerHTML = primeiroItem.title;
+        //cardSection.appendChild(titleElement);
         cardSection.appendChild(posterElement);
         card.appendChild(cardSection);
     }

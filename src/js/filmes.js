@@ -28,8 +28,12 @@ document.getElementById("recarregar").addEventListener("click", () => {
   location.reload();
 });
 
-document.getElementById("filtroDiretorItem").addEventListener("change", (diretor) => {
-const filtrarDiretor = filmesData.filter(filtrando => filtrando.director === diretor.target.value);
-containerAnimes.innerHTML = ''
-filtrarDiretor.forEach(mostrarFilmes);
-});
+document
+  .getElementById("filtroDiretorItem")
+  .addEventListener("change", (diretor) => {
+    const filtrarDiretor = filmesData.filter(
+      (filtrando) => filtrando.director === diretor.target.value
+    );
+    containerAnimes.innerHTML = "";
+    filtrarDiretor.forEach(mostrarFilmes);
+  });

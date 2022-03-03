@@ -20,6 +20,15 @@ export const printMovies = () => {
 	});
 };
 
+// export const printMovies = () => {
+//   data.films.forEach((item) => {
+// 		document.querySelector('.list').innerHTML += getElement(item);
+// 		item.people.forEach((person) => {
+// 			console.log(`Filme: ${item.title}| pessoa: ${person.name}`);
+// 		});
+// 	});
+// };
+
 // const getElement2 = (movie) => {
 // 	const element = `
 // 		<div class="item">

@@ -264,7 +264,7 @@ input:checked~label .hamburguer:after {
   font-weight: bolder;
   font-size: 25px;
   color: #1E402D;
-  padding-top: 30px;
+  padding-top: 120px;
   padding-bottom: 25px;
 }
 

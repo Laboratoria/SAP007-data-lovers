@@ -5,7 +5,7 @@
 .mainContainer {
   min-height: 75vh;
   background-color: #efefef;
-  width: 100%;
+  /* width: 100%; */
   padding: 30px;
 }
 
@@ -30,6 +30,59 @@
 
 #inputSearch:focus {
   outline: none;
+}
+
+.cardsCharacters {
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+}
+
+.cardsCharactersContainer {
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+
+  width: 45%;
+}
+
+.card-border {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.cards-front {
+  width: 200px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards-front img {
+  /* width: 200px;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: scale-down;
+  object-position: 100% 0;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  left: 0px; */
+  width: 200px; /* width of container */
+  height: 200px; /* height of container */
+  object-fit: cover;
+  object-position: 90% 0%;
+  /* border: 5px solid black; */
+}
+
+.cards-back {
+  width: 200px;
+  height: 320px;
 }
 
 @media (max-width: 767px) {

@@ -3,7 +3,7 @@
   text-align: center;
   background-color: #0096C7;
   margin: 0% 0;
-  color:#0096C7 ;
+  color: #0096C7;
 }
 
 
@@ -41,7 +41,7 @@ animation: tilt infinite 3s;
 
 }
 
-#sem_rosto{
+#sem_rosto {
 
   position: absolute;
   left: 270px;
@@ -90,7 +90,7 @@ animation: tilt infinite 3s;
 
 }
 
-footer{
+footer {
 
   position: absolute;
   bottom: 0;
@@ -105,6 +105,9 @@ footer{
 
 }
 
-.directorsFilter {
+.filter {
   padding: 10px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }

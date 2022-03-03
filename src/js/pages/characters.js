@@ -13,11 +13,21 @@ function makeCharacterCards(people) {
     .map(
       (character) =>
         `
-            <section class="cards">
+          <div class="cardsCharactersContainer">
+            <section class="cards-front card-border">
               <img src="${character.img}"/>
-              <h1>${character.name}</h1>
+              <h3>${character.name}</h3>
             </section>
-            `
+            <section class="cards-back card-border">
+              <h3>${character.name}</h3>
+              <p>Gender: ${character.gender}</p>
+              <p>Age: ${character.age}</p>
+              <p>Eye-color: ${character.eye_color}</p>
+              <p>Hair-color: ${character.hair_color}</p>
+              <p>Species: ${character.specie}</p>
+            </section>
+          </div>
+        `
     )
     .join("");
 }

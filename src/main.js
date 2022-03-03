@@ -1,4 +1,4 @@
-import { statusFilter, genderFilter, sortNamesFilter } from "./data.js";
+import { statusFilter, genderFilter, sortNamesFilter, searchName } from "./data.js";
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -33,6 +33,7 @@ allCards(data.results);
 const lifeSelect = document.getElementById("menu_filter_life");
 const genderSelect = document.getElementById("menu_filter_gender");
 const alphaSelect = document.getElementById("menu_sort");
+const searchCharacter = document.getElementById("search");
 
 
 //FUNÇÕES
@@ -65,10 +66,19 @@ function sortAlphabetical(event) {
   lifeSelect.selectedIndex = 0;
   genderSelect.selectedIndex = 0;
   return allCards(sortNameSelect);
-
 };
 
 alphaSelect.addEventListener("change", sortAlphabetical);
+
+
+//Função Pesquisar
+function showSearch(event) {
+  const nameResult = searchName(data.results, event.target.value)
+
+  return allCards(nameResult);
+}
+
+searchCharacter.addEventListener("keyup", showSearch);
 
 
 

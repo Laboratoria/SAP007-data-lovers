@@ -58,7 +58,7 @@ main {
   padding: 20px;
 }
 
-.box {
+.box{
   padding: 10px 40px;
   background-color: #90bf49;
   color: #022601;
@@ -67,4 +67,16 @@ main {
   font-family: "Josefin Sans";
   font-size: x-large;
   border-radius: 8px;
+}
+.stats{
+  padding: 10px 40px;
+  background-color: #90bf49;
+  color: #022601;
+  font-family: "Josefin Sans";
+  font-size: x-large;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30%;
 }

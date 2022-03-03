@@ -1,4 +1,3 @@
-
 //Filtro de status
 export const statusFilter = (data, condition) => {
   const statusResult = data.filter(

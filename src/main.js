@@ -2,7 +2,6 @@ import { statusFilter, genderFilter, sortNamesFilter, searchName } from "./data.
 
 import data from "./data/rickandmorty/rickandmorty.js";
 
-
 function allCards(data) {
   document.querySelector(".result").innerHTML = data
     .map(

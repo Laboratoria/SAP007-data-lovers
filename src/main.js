@@ -47,12 +47,22 @@ selectProducer.addEventListener("change", (event) => {
     showCards(resultProducer);
 });
 
-const buttonOpen = document.querySelector('.cardImage');
+const buttonOpen = document.querySelectorAll('.cardImage');
 const modalContainer = document.querySelector('.modalContainer');
 const buttonHide = document.querySelector('.hideModal');
+console.log(buttonOpen)
 
 
-buttonOpen.forEach((item) => {
+buttonOpen.addEventListener("click", () => {
+    modalContainer.classList.add('show');
+})
+
+
+buttonHide.addEventListener("click", () => {
+    modalContainer.classList.remove('show');
+})
+
+/* buttonOpen.forEach((item) => {
     item.addEventListener('click', () => {
         modalContainer.classList.add('show');
     });
@@ -60,7 +70,7 @@ buttonOpen.forEach((item) => {
 
 buttonHide.addEventListener("click", () => {
     modalContainer.classList.remove('show');
-});
+}); */
 
 
 

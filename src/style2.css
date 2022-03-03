@@ -2,6 +2,7 @@
 
 /* botão imagem */
 .imgback {
+  left: 90%;
   width: 10%;
   height: 20%;
   position: fixed;
@@ -76,4 +77,9 @@ body {
   padding-left: 0px;
   width: 13vw;
   height: 13vh;
+}
+
+.logoLink{
+  display: flex;
+  height: 50%;
 }

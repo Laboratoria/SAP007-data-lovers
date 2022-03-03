@@ -219,6 +219,7 @@ input:checked~label .hamburguer:after {
 }
 
 .banner-image {
+    background-image: url(/src/4k\ Studio\ Ghibli\ Wallpapers.jpg);
     position: absolute;
     height: 100%;
     opacity: 0.60;
@@ -378,3 +379,27 @@ footer {
     height: 200px;
   }
 }
+
+.img-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    object-fit: cover;
+    
+}
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url("./4k Studio Ghibli Wallpapers.jpg");
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
+}
+

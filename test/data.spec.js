@@ -1,9 +1,10 @@
-import { example, anotherExample } from '../src/data.js';
+//teste função sort/ordenar filmes
+import { filmFilter } from '../src/data.js';
 
 
-describe('example', () => {
+describe('orderMovies', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filmFilter).toBe('function');
   });
 
   it('returns `example`', () => {

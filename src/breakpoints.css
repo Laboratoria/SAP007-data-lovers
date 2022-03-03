@@ -1,0 +1,84 @@
+/* === PEQUENO ≥576px === */
+@media (min-width: 576px) {
+  /* === SLIDE === */
+  .box-logo {
+    width: 45vw;
+  }
+
+  .box-image img {
+    width: 60vw;
+  }
+  /* === BOLINHAS DO SLIDE === */
+  .bolinhas {
+    margin-bottom: 1em;
+  }
+  /* === FILTROS === */
+  .filters-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .options-menus {
+    margin: 0.5em;
+  }
+
+  /* === CARDS === */
+  .card-information {
+    display: flex;
+    justify-content: center;
+  }
+
+  .background-card,
+  .background-card::after {
+    height: 45vh;
+  }
+  .image-card {
+    width: 25vw;
+  }
+}
+
+/* === MÉDIO ≥768px === */
+@media (min-width: 768px) {
+  /* === CARDS === */
+  .background-card {
+    width: 25vw;
+    height: 50vh;
+  }
+  .background-card,
+  .background-card::after {
+    height: 50vh;
+  }
+  .image-card {
+    width: 20vw;
+  }
+}
+/* === GRANDE ≥992px === */
+@media (min-width: 992px) {
+  /* === FILTROS === */
+  .filters-container {
+    flex-direction: row;
+    width: fit-content;
+    margin: auto;
+  }
+  .filters-container {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+}
+  /* === CARDS === */
+  .background-card {
+    height: 60vh;
+  }
+  .background-card,
+  .background-card::after {
+    height: 60vh;
+  }
+  .image-card {
+    width: 20vw;
+  }
+  .front-text {
+    font-size: larger;
+  }
+}

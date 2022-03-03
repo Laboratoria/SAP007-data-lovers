@@ -1,132 +1,172 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-body {
-    background: #69CCE3;
-    font-family: 'Actor', sans-serif;
-    color: #ffffff;
-}
-
-.tittle-header-page-people {
-    text-align: center;
-    font-size: 50px;
-}
-
-.dropbtn {
-    background-color: #184E77;
-    color: #ffffff;
-    padding: 16px;
-    font-size: 16px;
-    border-radius: 15px;
-    margin-right: 15px;
-}
-
-.dropdown {
-    display: flex;
-    justify-content: right;
-    align-content: flex-start;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #c0c0c0;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    border-radius: 15px;
-}
-
-.dropdown-content a {
-    color: #184E77;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #757575;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #757575;
-}
-
-.select {
-    border-radius: 15px;
-    display: inline;
-    align-items: center;
-    height: 6vh;
-    width: 15vh;
-    margin-left: 15px;
-}
-
-.main-page-data {
-    background: #168AAD;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ipt-search {
-    height: 5vh;
-    width: 55vh;
-    border: 2px solid #168AAD;
-    border-radius: 10px;
-    background: #c0c0c0;
-    font-size: 15pt;
-    margin-left: 10px;
-}
-
-.btn-search {
-    height: 6vh;
-    width: 15vh;
-    border: 2px solid #168AAD;
-    border-radius: 10px;
-    background: #c0c0c0;
-    color: #184E77;
-    font-size: 15pt;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.section-card {
-    display: flex;
-    width: 90vw;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: auto;
-}
-
-.card-section {
-    width: 15vw;
-    height: 50vh;
-    font-size: 12px;
-    margin: 20px;
-}
-
-.footer {
-    font-size: 20pt;
-    color: #184E77;
-    background: #168AAD;
-    background-size: contain;
-    font-size: 20pt;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: flex-end;
-}
-
-a:link {
-    text-decoration: none;
-}
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .tittle-header-page-films {
+                font-size: 40px;
+            }
+            footer {
+                font-size: 1rem;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            .tittle-header-page-films {
+                font-size: 50px;
+            }
+            footer {
+                font-size: 1.5rem;
+            }
+        }
+        
+        html {
+            height: 100%;
+            min-height: 100%;
+        }
+        
+        body {
+            background: #69CCE3;
+            font-family: 'Actor', sans-serif;
+            color: #ffffff;
+        }
+        
+        .tittle-header-page-people {
+            padding: 1%;
+            display: block;
+            text-align: center;
+            color: #168AAD;
+            -webkit-text-stroke: 1px #ffffff;
+            text-stroke: 1px;
+        }
+        
+        .dropbtn {
+            background-color: #184E77;
+            color: #ffffff;
+            padding: 16px;
+            font-size: 16px;
+            border-radius: 15px;
+            margin-right: 15px;
+        }
+        
+        .dropdown {
+            display: flex;
+            justify-content: right;
+            align-content: flex-start;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #c0c0c0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            border-radius: 15px;
+        }
+        
+        .dropdown-content a {
+            color: #184E77;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #757575;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #757575;
+        }
+        
+        .ipt-search,
+        .select,
+        .btn-reset {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 5px 2px #168AAD;
+            display: inline;
+            align-items: center;
+            height: 6vh;
+            width: 10vw;
+            margin-left: 15px;
+        }
+        
+        .ipt-search {
+            width: 20vw;
+            float: left;
+            background-image: url('img/loupe.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            text-indent: 10px;
+        }
+        
+        .search-btn {
+            background-color: #168AAD;
+        }
+        
+        .btn-reset {
+            width: 5vw;
+        }
+        
+        .select {
+            border-radius: 15px;
+            display: inline;
+            align-items: center;
+            height: 6vh;
+            width: 15vh;
+            margin-left: 15px;
+        }
+        
+        .main-page-people {
+            background: #168AAD;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .section-card {
+            display: flex;
+            width: 90vw;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+        }
+        
+        .card-section {
+            width: 15vw;
+            height: 50vh;
+            font-size: 12px;
+            margin: 20px;
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1px);
+            border: 1px rgba(255, 255, 255, 0.3);
+            -webkit-backdrop-filter: blur(1px);
+            width: 100%;
+            padding: 1%;
+            height: 5vh;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        a {
+            color: #184E77;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }

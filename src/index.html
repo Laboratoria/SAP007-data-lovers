@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <h1 class="tittle-header-page-data">Universo Ghibli</h1>
+        <h1 class="tittle-header-page-films">Universo Ghibli</h1>
         <nav class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
@@ -26,10 +26,15 @@
         </nav>
     </header>
 
-    <main class="main-page-data">
+    <main class="main-page-films">
         <section>
             <form id="form">
-                <input class="select ipt-search" type="text" id="ipt-search" placeholder="&#128269">
+
+                <div class="search-container">
+                    <input type="text" class="inp-search" id="inp-search" placeholder="Encontre um filme">
+                    <button type="button" class="search-icon"><a href="#"></a><img src="img/loupe.png"></a></button>
+                </div>
+
                 <select class="select" type="text" id="director">
                     <option class="#" value="" disabled selected id="#">Diretores</option>
                     <option class="lista" type="button" id="#">Hayao Miyazaki</option>
@@ -48,12 +53,14 @@
                     <option class="#" type="button" id="#">Yoshiaki Nishimura</option>
                     <option class="#" type="button" id="#">Hiromasa Yonebayashi</option>
                 </select>
-                <select class="select" type="text" id="order">
-					<option class="#"  value="" disabled selected id="#">Personagens</option>
-					<option class="#" type="button" id="#">A > Z</option>
-					<option class="#" type="button" id="#">Z > A</option>
+
+                <select class="select-order" type="text" id="order">
+					<option class="#"  value="" disabled selected id="#">Ordem</option>
+					<option class="#" type="button" id="az">A > Z</option>
+					<option class="#" type="button" id="za">Z > A</option>
                 </select>
-                <button class="btn-search" id="btn-reset">Limpar</button>
+
+                <button class="btn-reset" id="btn-reset">Limpar</button>
             </form>
         </section>
     </main>

@@ -58,21 +58,18 @@ export const sortArray = {
   },
 };
 
-export const searchMovies = {
-  filterMovies(e, dataGhibli) {
-    const searchString = e.target.value.toLowerCase();
-    const data = {
-      films: dataGhibli.films.filter((movie) => {
-        return (
-          movie.title.toLowerCase().includes(searchString) ||
-          movie.producer.toLowerCase().includes(searchString) ||
-          movie.director.toLowerCase().includes(searchString)
-        );
-      }),
-    };
-    console.log(data, "seen");
-    // renderScreen(data);
-  },
+export const filterMovies = (searchString, dataGhibli) => {
+  const data = {
+    films: dataGhibli.films.filter((movie) => {
+      return (
+        movie.title.toLowerCase().includes(searchString) ||
+        movie.producer.toLowerCase().includes(searchString) ||
+        movie.director.toLowerCase().includes(searchString)
+      );
+    }),
+  };
+  console.log(data, "seen");
+  return data;
 };
 
 export const filterCharacters = (searchTitle, films) => {

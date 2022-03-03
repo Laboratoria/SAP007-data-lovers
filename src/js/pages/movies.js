@@ -1,16 +1,16 @@
-import dataGhibli from "../../data/ghibli/ghibli.js";
-import { sortArray, searchMovies } from "../data.js";
+import data from "../../data/ghibli/ghibli.js";
+import { sortArray, filterMovies } from "../data.js";
 import { menu } from "../components/header.js";
 
-console.log(dataGhibli);
+console.log(data);
 const cardsContainer = document.createElement("section");
 menu();
 
-export function renderScreen(data) {
+export function renderScreen(renderData) {
   document.getElementById("mainContainer").appendChild(cardsContainer);
   cardsContainer.classList.add("cardsContainer");
   cardsContainer.innerHTML = "";
-  data.films.map((items) => {
+  renderData.films.map((items) => {
     const card = document.createElement("ul");
     const title = document.createElement("h1");
     const poster = document.createElement("img");
@@ -32,12 +32,14 @@ export function renderScreen(data) {
 }
 
 document.getElementById("inputSelect").addEventListener("change", (e) => {
-  sortArray.filterArray(e.target.value, dataGhibli);
+  sortArray.filterArray(e.target.value, data);
 });
 
 const inputSearch = document.getElementById("inputSearch");
 
 inputSearch.addEventListener("keyup", (e) => {
-  searchMovies.filterMovies(e, dataGhibli);
+  const searchString = e.target.value.toLowerCase();
+  const filteredMovies = filterMovies(searchString, data);
+  renderScreen(filteredMovies);
 });
-renderScreen(dataGhibli);
+renderScreen(data);

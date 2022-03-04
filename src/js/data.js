@@ -1,9 +1,19 @@
-// estas funciones son de ejemplo
+export function filterDataDiretor(data, condition) {
+  let filterDiretor = data.filter((item) => item.director === condition);
+    return filterDiretor;
+}
 
-export const example = () => {
-  return 'example';
-};
+export function filterDataLançamento(data, condition) {
+  let filterLançamento = data.filter((item) => item.release_date === condition);
+    return filterLançamento;
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export function filterDataGênero(data, condition) {
+  let filterGênero = data.filter((item) => item.gender === condition);
+    return filterGênero;
+}
+
+export function filterDataEspécie(data, condition) {
+  let filterEspécie = data.filter((item) => item.specie === condition);
+    return filterEspécie;
+}

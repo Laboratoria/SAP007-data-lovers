@@ -9,10 +9,10 @@
   </head>
   <body>
     <header>
-        <nav class="navegacaoFilmes">
-          <a href="./index.html" class="navegacaoItem">Home</a>
-          <a href="./filmes.html" class="navegacaoItem">Filmes</a>
-          <a href="" class="navegacaoItem">Sobre Nós</a>
+        <nav class="navegacao-filmes">
+          <a href="./index.html" class="navegacao-item">Home</a>
+          <a href="./filmes.html" class="navegacao-item">Filmes</a>
+          <a href="./personagens.html" class="navegacao-item">Personagens</a>
         </nav>
   
         <div>
@@ -21,73 +21,73 @@
   
       </header>
         
-      <section class="filtrosConteiner">
-          <div class="filtroConteinerIndividual" id="pesquisaConteiner">
-            <input type="search" class="filtroItem" id="pesquisaConteinerItem" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
+      <section class="filtros-conteiner">
+          <div class="filtro-conteiner-individual" id="pesquisaConteiner">
+            <input type="search" class="filtro-item" id="pesquisaConteinerItem" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
           </div>
           
-          <div class="filtroConteinerIndividual" id="ordenacaoAlfabetica">
-            <select class="filtroItem" id="ordenacaoAlfabeticaItem">
-              <option value="">Ordem Afabética</option>
-              <option value="A-Z">A-Z</option>
-              <option value="Z-A">Z-A</option>
+          <div class="filtro-conteiner-individual" id="ordenacaoAlfabetica">
+            <select class="filtro-item ordenação-alfabética" id="ordenacaoAlfabeticaItem">
+              <option class="ordenação-alfabética" value="">Ordem Afabética</option>
+              <option class="ordenação-alfabética" value="A-Z">A-Z</option>
+              <option class="ordenação-alfabética" value="Z-A">Z-A</option>
             </select>
           </div>
   
-          <div class="filtroConteinerIndividual" id="ordenacaoPopularidade">
-            <select class="filtroItem" id="ordenacaoPopularidadeItem">
-              <option value="">Idade</option>
-              <option value="Mais Novo">Mais Novo</option>
-              <option value="Menos Novo">Menos Novo</option>
+          <div class="filtro-conteiner-individual" id="ordenacaoPopularidade">
+            <select class="filtro-item ordenação-idade" id="ordenacaoPopularidadeItem">
+              <option class="ordenação-idade" value="">Idade</option>
+              <option class="ordenação-idade" value="Mais Novo">Mais Novo</option>
+              <option class="ordenação-idade" value="Menos Novo">Menos Novo</option>
             </select>
           </div>
   
-          <div class="filtroConteinerIndividual" id="filtroDiretor">
-            <select class="filtroItem" id="filtroGêneroItem">
-              <option value="">Gênero</option>
-              <option value="Feminino">Feminino</option>
-              <option value="Maculino">Maculino</option>
-              <option value="Desconhecido">Desconhecido</option>
-              <option value="Sem Gênero">Sem Gênero</option>
+          <div class="filtro-conteiner-individual" id="filtroDiretor">
+            <select class="filtro-item filtro-gênero" id="filtroGêneroItem">
+              <option class="filtro-gênero" value="">Gênero</option>
+              <option class="filtro-gênero"value="Female">Feminino</option>
+              <option class="filtro-gênero"value="Male">Masculino</option>
+              <option class="filtro-gênero"value="Unknown">Desconhecido</option>
+              <option class="filtro-gênero"value="NA">Sem Gênero</option>
             </select>
         </div>
 
-        <div class="filtroConteinerIndividual" id="filtroLancamento">
-          <select class="filtroItem" id="filtroEspécieItem">
-            <option value="">Espécie</option>
-            <option value="Humano">Humano</option>
-            <option value="Totoro">Totoro</option>
-            <option value="Gato">Gato</option>
-            <option value="Bruxa">Bruxa</option>
-            <option value="RaccoonDog">Raccoon Dog</option>
-            <option value="RedElk">Red elk</option>
-            <option value="Espírito">Espírito</option>
-            <option value="Lobo">Lobo</option>
-            <option value="DeityDragon">Deity, Dragon</option>
-            <option value="SpiritOfTheWhiteFox">Spirit of The White Fox</option>
-            <option value="Desconhecido">Desconhecido</option>
-            <option value="Pássaro">Pássaro</option>
-            <option value="Wizard">Wizard</option>
-            <option value="WitchHuman">Witch/Human</option>
-            <option value="Demônio">Demônio</option>
-            <option value="HumanScarecrow">Human/Scarecrow</option>
-            <option value="Cachorro">Cachorro</option>
-            <option value="Arch-mageHHuman">Arch-mage/Human</option>
-            <option value="FishHuman">Fish/Human</option>
-            <option value="Deity">Deity</option>
-            <option value="Borrower">Borrower</option>
+        <div class="filtro-conteiner-individual" id="filtroLancamento">
+          <select class="filtro-item filtro-espécie" id="filtroEspécieItem">
+            <option class="filtro-espécie" value="">Espécie</option>
+            <option class="filtro-espécie" value="Human">Humano</option>
+            <option class="filtro-espécie" value="Totoro">Totoro</option>
+            <option class="filtro-espécie" value="Cat">Gato</option>
+            <option class="filtro-espécie" value="Witch">Bruxa</option>
+            <option class="filtro-espécie" value="Raccoon Dog">Raccoon Dog</option>
+            <option class="filtro-espécie" value="Red elk">Red elk</option>
+            <option class="filtro-espécie" value="Spirit">Espírito</option>
+            <option class="filtro-espécie" value="Wolf">Lobo</option>
+            <option class="filtro-espécie" value="Deity, Dragon">Deity, Dragon</option>
+            <option class="filtro-espécie" value="Spirit of The White Fox">Spirit of The White Fox</option>
+            <option class="filtro-espécie" value="unknown">Desconhecido</option>
+            <option class="filtro-espécie" value="Bird">Pássaro</option>
+            <option class="filtro-espécie" value="Wizard">Wizard</option>
+            <option class="filtro-espécie" value="Witch/Human">Witch/Human</option>
+            <option class="filtro-espécie" value="Demon">Demônio</option>
+            <option class="filtro-espécie" value="Human/Scarecrow">Human/Scarecrow</option>
+            <option class="filtro-espécie" value="Dog">Cachorro</option>
+            <option class="filtro-espécie" value="Arch-mage/Human">Arch-mage/Human</option>
+            <option class="filtro-espécie" value="Fish/Human">Fish/Human</option>
+            <option class="filtro-espécie" value="Deity">Deity</option>
+            <option class="filtro-espécie" value="Borrower">Borrower</option>
           </select>
         </div>
 
-          <div class="filtroConteinerIndividual">
+          <div class="filtro-conteiner-individual">
             <button type="button" class="button" id="recarregar">Recarregar</button>
           </div>
   
       </section>
   
-      <main class="conteinerMain"> 
+      <main class="conteiner-main"> 
       
-        <div id="containerCardItem"></div>
+        <section id="containerCardItem"></section>
       
       </main>
 

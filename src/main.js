@@ -14,11 +14,11 @@ function imprimirCardsTela (data) {
         
         <div class = "telaText">
             <ul class = "telaTextCard">
-                <li><strong>Nome:</strong>${item.name}</li>
-                <li><strong>Espécie:</strong>${item.species}</li>
-                <li><strong>Status:</strong>${item.status}</li>
-                <li><strong>Gênero:</strong>${item.gender}</li>
-                <li><strong>Local de Origem:</strong>${item.origin.name}</li>
+                <li><strong>Nome: </strong>${item.name}</li>
+                <li><strong>Espécie: </strong>${item.species}</li>
+                <li><strong>Status: </strong>${item.status}</li>
+                <li><strong>Gênero: </strong>${item.gender}</li>
+                <li><strong>Local de Origem: </strong>${item.origin.name}</li>
             </ul>
         </div>
     </div>

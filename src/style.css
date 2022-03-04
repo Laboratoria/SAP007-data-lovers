@@ -137,3 +137,9 @@ select {
   border-radius: 00.3em;
   font-size: 1.125rem;
 }
+
+@media (max-width: 767px) {
+  .cards {
+    flex: 0 1 calc(100% - 1em);
+  }
+}

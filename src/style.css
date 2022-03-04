@@ -26,7 +26,7 @@
 }
 /* === SLIDE === */
 .box-logo {
-  width: 25vw;
+  width: 60vw;
   display: flex;
   margin: auto auto 1.5rem;
 }
@@ -38,7 +38,7 @@
 }
 
 .box-image img {
-  width: 40vw;
+  width: 86vw;
   animation: anima;
   animation-duration: 800ms;
 }
@@ -78,15 +78,15 @@ option {
 
 .filters-container {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  margin-top: 3em;
+  flex-direction: column;
 }
 
 .options-menus {
+  margin: 0.5rem 1rem;
   --green: #1bfd9c;
   font-size: 15px;
-  padding: 0.7em 2.7em;
+  padding: 0.5em 1.7em;
   letter-spacing: 0.06em;
   position: relative;
   font-family: inherit;
@@ -142,23 +142,23 @@ option {
 .statistics {
   text-align: center;
   color: #85d97aa8;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 20px;
   box-shadow: 0 0 20px 0 rgba(7, 157, 238, 0.817);
   width: 60%;
   margin: 2rem auto;
-  padding: 15px;
+  padding: 16px;
   display: none;
   align-items: center;
   justify-content: center;
 }
-
 
 /* === CARDS === */
 .card-information {
   display: flex;
   flex-wrap: wrap;
   margin: 2rem auto;
+  justify-content: center;
 }
 
 .front-image {
@@ -166,7 +166,7 @@ option {
 }
 
 .image-card {
-  width: 20vw;
+  width: 29vw;
   margin: auto;
 }
 
@@ -211,8 +211,8 @@ option {
     #ddf505,
     #ff9f0e,
     #e440bb,
-    #655adc, /* CORES BORDA */
-    #488cfb
+    #655adc,
+    /* CORES BORDA */ #488cfb
   );
   -webkit-mask-image: var(--m-i), var(--m-i);
   mask-image: var(--m-i), var(--m-i);
@@ -245,10 +245,6 @@ option {
   flex-wrap: wrap;
 }
 
-.image-card {
-  width: 8vw;
-}
-
 .text-cards {
   text-align: inherit;
   list-style-type: none;
@@ -272,4 +268,3 @@ footer .criadoras {
   color: #000000;
   text-shadow: 1px 1px 2px var(--green-neon);
 }
-

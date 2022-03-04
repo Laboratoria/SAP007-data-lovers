@@ -4,10 +4,10 @@
 
 //export const ordemAlfabetica=;
 export const filterGender = (data, condition) => {
-  const resultGender = data.filter(
+  const genderResults = data.filter(
     (personagem) => personagem.gender.toLowerCase() === condition.toLowerCase()
   );
-  return resultGender;
+  return genderResults;
 };
 
 export const filterSpecies = (data, condition) => {
@@ -23,8 +23,8 @@ export const searchName = (data, condition) => {
   return screenSearch;
 };
 
-export const orderResults = (data, orderResults) => {
-  if (orderResults === "AZ") {
+export const orderResults = (data, orderScreen) => {
+  if (orderScreen === "AZ") {
     return data.sort((a, z) => (a.name > z.name ? 1 : -1));
   } else {
     return data.sort((a, z) => (a.name > z.name ? -1 : 1));

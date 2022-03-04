@@ -59,13 +59,13 @@ function showGender(e) {
 
 /// por ESPECIES///
 function showSpecies(e) {
-  const speciesResults = filterSpecies(data.results, e.target.value);
+  const resultSpecies = filterSpecies(data.results, e.target.value);
   const statisticSpecies = `${percentage(
     data.results.length,
-    speciesResults.length
+    resultSpecies.length
   )}% dos personagens`;
   showStatistics(statisticSpecies);
-  showOnCards(speciesResults);
+  return showOnCards(resultSpecies);
 }
 /// pesquisa NOME///
 function nameCharacters(e) {
@@ -83,6 +83,7 @@ function showStatistics(data) {
   statisticText.innerHTML = `Está porcentagem representa ${data} dos personagens`;
   statisticText.style.display = "flex";
 }
+
 // ordem de AZ/ZA
 function showOrdem(e) {
   const orderScreen = orderResults(data.results, e.target.value);

@@ -60,11 +60,6 @@ body {
   left: 0;
 }
 
-/* .container {
-    max-width: 2000px;
-    margin: 0 auto;
-} */
-
 #logo {
   position: absolute;
   top: 50%;
@@ -76,7 +71,6 @@ body {
 /* menu retrail lateral */
 body {
   background-color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-X: hidden;
 }
 
@@ -210,7 +204,7 @@ input:checked~label .hamburguer:after {
 .banner {
     width: 100%;
     position: relative;
-    height: 820px;
+    height: 100%;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -218,15 +212,8 @@ input:checked~label .hamburguer:after {
     flex-direction: column;
 }
 
-.banner-image {
-    background-image: url(/src/4k\ Studio\ Ghibli\ Wallpapers.jpg);
-    position: absolute;
-    height: 100%;
-    opacity: 0.60;
-}
-
 .image-logo {
-    width: 85%;
+    width: 65%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -235,7 +222,8 @@ input:checked~label .hamburguer:after {
 
 .filme {
     text-decoration: none;
-    background-color: #123740;
+    /* background: #123740; */
+    background: linear-gradient(90deg, rgba(18,55,64,1) 50%, rgba(18,55,64,1) 100%);
     position: relative;
     color: #D9D271;
     padding: 10px;
@@ -249,41 +237,201 @@ input:checked~label .hamburguer:after {
     border-color: #D9D271;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1);
 }
 
 .filme:hover {
-    border-radius: 0px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(18,55,64,1) 50%, rgba(0,0,0,1) 100%);
+    transform: scale(1.1);
+}
+
+.studio-size {
+  background-color: #C1D9B0;
 }
 
 .studio {
-  padding: 25px;
-  margin-top: 100px;
-  height: 630px;
+  display: block;
   font-size: 15px;
   text-align: center;
-  background-color: #C1D9B0;
+  margin-top: 95px;
+  max-width: 1280px;
+  margin: 0 auto;
+
 }
 
 .studio-titulo {
   font-weight: bolder;
   font-size: 25px;
   color: #1E402D;
+  padding-top: 120px;
   padding-bottom: 25px;
 }
 
 .studio-text {
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  text-align: center;
+  text-align: left;
   color: #46733F;
+  line-height: 35px;
 }
 
 .studio-image {
   align-items: center;
   padding: 30px;
+}
+
+.selected-film {
+  margin-top: 95px;
+  min-height: 100vh;
+}
+
+.title-container {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.title-p {
+  background-color: #123740;
+  color: #D9D271;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D9D271;
+}
+
+.busca{
+  margin: 0 auto;
+  background-color: #123740;
+  border-style: solid;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D9D271;
+  border-radius: 10px;
+  width: 300px;
+  padding: 3px;
+}
+
+#txtBusca{
+  align-items: center;
+  font-style:italic;
+  font-size:15px;
+  border-style: none;
+  height:auto;
+  width: 210px;
+  padding: 5px;
+}
+
+#btnBusca{
+  border: none;
+  height:auto;
+  width:70px;
+  font-size: 15px;
+  font-weight:bold;
+  background-color: #123740;
+  color: #D9D271;
+  cursor: pointer;
+}
+
+.ordenar{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+input:focus, select:focus {
+  outline: 0;
+}
+
+.ordenar select {
+  list-style: none;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #123740;
+  align-items: center;
+  color: #D9D271;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D9D271;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.refresh {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  list-style: none;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #123740;
+  align-items: center;
+  color: #D9D271;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D9D271;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.img-te {
+  width: 100%;
+  position: relative;
+  height: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-color: #C1D9B0;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 3in;
+}
+
+.background-filme {
+  background-image: url(./4k\ Studio\ Ghibli\ Wallpapers.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+  z-index: -1;
 }
 
 footer {
@@ -304,13 +452,15 @@ footer {
 
 /* para tablet */
 @media screen and (min-width: 768px) {
-  .banner {
-    height: 1000px;
-    overflow-x: hidden;
+  .image-logo {
+      width: 75%;
   }
 
-  .image-logo {
-      width: 70%;
+  .filme {
+    padding: 10px;
+    top: 50px;
+    width: 300px;
+    font-size: 20px;
   }
 
   .studio {
@@ -327,12 +477,63 @@ footer {
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    line-height: 40px;
   }
 
   .studio-image {
     align-items: center;
     padding: 30px;
-    height: 150px;
+    height: 200px;
+  }
+
+  .list {
+    grid-template-columns: 3in 3in;
+  }
+
+  .title-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 350px;
+  }
+
+  .title-p {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .busca{
+    width: 400px;
+    padding: 5px;
+  }
+
+  #txtBusca{
+    font-size:20px;
+    width: 290px;
+    padding: 5px;
+  }
+
+  #btnBusca{
+    width:90px;
+    font-size: 20px;
+  }
+
+  .ordenar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .ordenar select {
+    font-size: 20px;
+  }
+
+  .refresh {
+    font-size: 20px;
+  }
+  
+  .item img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -343,18 +544,15 @@ footer {
     height: 50px;
   }
 
-  .banner {
-    width: auto;
-    max-width: 1920px;
-    height: 110%;
-  }
-
   .image-logo {
-    width: 45%;
+    width: 50%;
   }
 
-  .studio {
-    height: 550px;
+  .filme {
+    padding: 15px;
+    top: 70px;
+    width: 350px;
+    font-size: 25px;
   }
 
   .studio-titulo {
@@ -364,10 +562,7 @@ footer {
 
   .studio-text {
     font-size: 20px;
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
-    text-align: start;
+    line-height: 50px;
   }
 
   .studio-image {
@@ -376,30 +571,61 @@ footer {
     padding-top: 100px;
     padding-left: 180px;
     padding-right: 180px;
-    height: 200px;
+    height: 300px;
   }
-}
 
-.img-card{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    box-sizing: border-box;
-    object-fit: cover;
-    
-}
+  .list {
+    grid-template-columns: 3in 3in 3in;
+  }
 
+  .title-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 400px;
+  }
 
+  .title-p {
+    padding: 10px;
+    font-size: 25px;
+  }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    background: url("./4k Studio Ghibli Wallpapers.jpg");
-    background-size: cover;
-    position: absolute;
-    background-attachment: fixed;
+  .busca{
+    width: 500px;
+    padding: 5px;
+  }
+
+  #txtBusca{
+    font-size:20px;
+    width: 350px;
+    padding: 5px;
+  }
+
+  #btnBusca{
+    width:130px;
+    font-size: 20px;
+  }
+
+  .ordenar{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ordenar select {
+    font-size: 20px;
+  }
+
+  .refresh {
+    font-size: 20px;
+  }
+
+  .img-te {
+    height: 315px;
+  }
+  
+  .item img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 

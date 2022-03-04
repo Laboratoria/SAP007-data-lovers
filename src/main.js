@@ -1,5 +1,5 @@
 import dataGhibli from "./data/ghibli/ghibli.js"
-import { filterDataByDirector, filterDataByProducer } from "./data.js"
+import { filterDataByDirector, filterDataByProducer, sortDataFilms } from "./data.js"
 
 //PARA CHAMAR A ARRAY
 const films = dataGhibli.films;
@@ -59,6 +59,17 @@ producer.addEventListener("change", () => {
     cardSection(producerFiltered)
 
 });
+
+order.addEventListener("change",() => {
+    const optionsOrder = document.getElementById("order")
+    const orderIndex = optionsOrder.selectedIndex;
+    const orderSelected = optionsOrder[orderIndex].text;
+    const orderFiltered = sortDataFilms(films, orderSelected);
+
+    cardSection(orderFiltered)
+});
+
+
 
 
 

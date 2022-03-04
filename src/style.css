@@ -120,21 +120,21 @@ li a:hover {
 
 
 
-.cardImage {
+.cardImage, .cardCharacter {
     border-radius: 15px;
     width: 235px;
     height: 350px;
     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.7);
 }
 
-.cardTitle {
+.cardTitle, .nameCharacter {
     color: white;
     font-size: 1.5vmax;
     width: 250px;
 }
 
 
-.moviesContainer {
+.containerCards {
     display: flex;
     flex-wrap: wrap;
     text-align: center;

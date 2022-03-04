@@ -1,23 +1,23 @@
-import { example, anotherExample } from '../src/data.js';
+import { sortAz, filterTitle } from '../src/data.js';
 
 
-describe('example', () => {
+describe('ordenar de A a Z', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof sortAz).toBe('function');
   });
 
   it('returns `example`', () => {
-    expect(example()).toBe('example');
+    expect(sortAz()).toBe('example');
   });
 });
 
 
-describe('anotherExample', () => {
+describe('filtrar por título', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof filterTitle).toBe('function');
   });
 
   it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    expect(filterTitle()).toBe('OMG');
   });
 });

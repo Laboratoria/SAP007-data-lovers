@@ -9,7 +9,7 @@ filmesData.forEach(mostrarFilmes); //mapeando array films com método de callbac
 
 function mostrarFilmes(data) {
   const cardAnime = document.createElement("section");
-  cardAnime.className = "containerCardIndividual";
+  cardAnime.className = "container-card-individual";
   cardAnime.innerHTML = `
     <div class="conteinerImagem">
     <p id="titulo"> ${data.title} </p>
@@ -32,7 +32,7 @@ document.getElementById("recarregar").addEventListener("click", () => {
 document
   .getElementById("filtroDiretorItem")
   .addEventListener("change", () => {
-    let diretores = document.querySelector(".filtroDiretor")
+    let diretores = document.querySelector(".filtro-diretor")
     let filterItem= filterData(filmesData, diretores.value)
     containerAnimes.innerHTML = "";
     filterItem.forEach(mostrarFilmes);

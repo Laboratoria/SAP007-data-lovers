@@ -8,7 +8,8 @@
 
  body {
   background-color: #263E5D;
-  font-family: "Rowdies", "cursive";
+  font-family: 'Fira Code', monospace;
+  font-weight:500;
   overflow-x: hidden;
 }
 
@@ -26,7 +27,7 @@
    margin-left: 100px;
 }
 
-.container{
+.introduction{
   margin-top: 20px;
   color: white;
   width: 40vw;
@@ -36,8 +37,10 @@
 
 }
 
-.container h2{
+.introduction p{
   color: #D4E6E5;
+  font-size: 20px;
+
 }
 
 .button-pag1 button {
@@ -46,8 +49,8 @@
   border-radius: 24px;
   color: #263E5D;
   font-size: 20px;
-  font-weight: 400;
-  font-family: 'Anton', sans-serif;
+  font-weight: 700;
+  font-family:'Fira Code', monospace;
   cursor: pointer;
   width: 200px;
   background: rgb(117,250,242);

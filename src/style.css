@@ -7,9 +7,20 @@
   
 body {
     width: 100%;
+    background-color:rgb(213, 172, 161);
+}
+
+body::before {
+    content: " ";
     background: url(./image/bg-purple.jpg) no-repeat;
-    background-size: contain;
-    background-color: rgb(213, 172, 161);
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background-size: 100%;
 }
 
 .logo-img {
@@ -76,8 +87,6 @@ body {
     box-shadow: 8px 8px 8px black;
 }
 
-
-
 .card {
     background-color:rgba(17, 50, 53, 0.904);
     display: inline-flex;
@@ -131,8 +140,7 @@ footer {
     border-top: 4px solid #D4D952;
     box-shadow: 0.4em 0.3em 0.3em 0.3em #D4D952;
     padding-top: 20px;
-    margin-top: 40px;
-    
+    margin-top: 40px;   
 }
   
 footer a {
@@ -141,11 +149,151 @@ footer a {
 }
 
 
+@media screen and (max-width: 900px) {
 
+body {
+    width: 100%;
+    background-color:rgb(213, 172, 161);
+}
+
+body::before {
+    content: " ";
+    background: url(./image/bg\ responsivo.jpg) no-repeat;
+    opacity: 0.5;  
+    background-size: cover;
+}    
+.logo-img {
+    width: 60%;
+    margin-left: 20px;
+}
+    
+.todas-buscas {
+    display: grid;
+    border-radius: 10px;
+    justify-content: center;
+}
+       
+.esquerda {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.pesquisar {
+    background-color: #ffffff;
+    font-size: 16px;
+    width: 220px;
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
+}
+    
+.limpar {
+    background-color: #636668;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
+}
+    
+.direita {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.filtro-especies {
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 35px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px black;
+}
+    
+.filtro-ordem {
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px black;
+}
+    
+.card {
+    background-color:rgba(17, 50, 53, 0.904);
+    display: inline-flex;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 180px;
+    height: 290px;
+    border: 5px solid #D4D952;
+    border-radius: 9px;
+    margin: 70px 0px 0px 70px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
+}
+    
+.card-interno {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+      
+.imagem-card {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 6px;
+}
+      
+.card-frente{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+      
+.outras-infos {
+    text-align: center;
+    font-weight: bold;
+    color: #31B0CC;
+    margin-top: 5px;
+}    
+    
+footer {
+    font-size: 14px;
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    text-align: center;
+    background-color: #3e9bb7;
+    color: #fff;
+    border-top: 4px solid #D4D952;
+    box-shadow: 0.4em 0.3em 0.3em 0.3em #D4D952;
+    padding-top: 20px;
+    margin-top: 40px;   
+}
+      
+footer a {
+    color: #fff;
+    text-decoration: underline
+}
+}
 
 
 /*@media screen and (min-width: 1024px){
 
 @media screen and (min-width: 768px) {
 
-@media screen and (min-width: 480px) {

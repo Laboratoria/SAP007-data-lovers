@@ -14,7 +14,9 @@ h1{
 }
 
 body {
-
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   background-color: #00B4D8 ;
   display: flex;
   flex-direction: column;
@@ -159,6 +161,9 @@ footer{
 
 }
 
-.directorsFilter {
+.filter {
   padding: 10px;
+  display: inline-block;
+  width: fit-content;
+  height: fit fit-content;
 }

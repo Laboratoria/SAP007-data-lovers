@@ -71,18 +71,6 @@
   background-color: var(--green-neon);
 }
 
-.statistics {
-  text-align: center;
-  color: #85d97aa8;
-  font-size: 18px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px 0 rgba(7, 157, 238, 0.817);
-  width: 60%;
-  margin: 0 auto;
-  padding: 15px;
-  display: none;
-}
-
 /* === FILTROS === */
 option {
   background-color: #000;
@@ -150,24 +138,21 @@ option {
   outline: none;
 }
 
-/* === FOOTER === */
-footer {
-  background-color: var(--light-blue);
-  opacity: 60%;
-  font-size: large;
-  margin-top: 3rem;
+/* === ESTATISTICAS === */
+.statistics {
   text-align: center;
-  padding: 2rem;
-  width: 100%;
-  display: flex;
+  color: #85d97aa8;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(7, 157, 238, 0.817);
+  width: 60%;
+  margin: 2rem auto;
+  padding: 15px;
+  display: none;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-footer .criadoras {
-  color: #000000;
-  text-shadow: 1px 1px 2px var(--green-neon);
-}
 
 /* === CARDS === */
 .card-information {
@@ -187,7 +172,7 @@ footer .criadoras {
 
 .front-text {
   text-align: center;
-  margin: 1rem auto;
+  margin: auto;
 }
 
 .background-card {
@@ -226,7 +211,7 @@ footer .criadoras {
     #ddf505,
     #ff9f0e,
     #e440bb,
-    /* CORES BORDA */ #655adc,
+    #655adc, /* CORES BORDA */
     #488cfb
   );
   -webkit-mask-image: var(--m-i), var(--m-i);
@@ -255,11 +240,6 @@ footer .criadoras {
 .background-card::after {
   box-sizing: border-box;
 }
-
-.text-cards {
-  list-style: none;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -269,11 +249,27 @@ footer .criadoras {
   width: 8vw;
 }
 
-.front-text {
-  background: var(--green-neon);
-  display: flex;
-}
 .text-cards {
   text-align: inherit;
   list-style-type: none;
 }
+
+/* === FOOTER === */
+footer {
+  background-color: var(--light-blue);
+  opacity: 60%;
+  font-size: large;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .criadoras {
+  color: #000000;
+  text-shadow: 1px 1px 2px var(--green-neon);
+}
+

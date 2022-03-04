@@ -81,7 +81,7 @@ function nameCharacters(e) {
 /// Estatisticas//
 function showStatistics(data) {
   statisticText.innerHTML = `Está porcentagem representa ${data} dos personagens`;
-  statisticText.style.display = "inline-block";
+  statisticText.style.display = "flex";
 }
 // ordem de AZ/ZA
 function showOrdem(e) {

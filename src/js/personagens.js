@@ -1,5 +1,5 @@
 import data from "../data/ghibli/ghibli.js";
-import { filterDataGênero } from "./data.js";
+import { filterDataGênero, filterDataEspécie } from "./data.js";
 
 //const que captura o valor do elemento HTML a ser preenchido pela div cardAnime
 const containerAnimes = document.getElementById("containerCardItem");
@@ -7,19 +7,19 @@ const containerAnimes = document.getElementById("containerCardItem");
 //let que armazena a propriedade films de ghibli.js
 let filmesData = data.films;
 
-let personaData = filmesData.map((item) => item.people);
-console.log(personaData)
+let characters = [];
 
-filmesData.forEach(mostrarPersonagens); //mapeando array films com método de callback forEach
+filmesData.map((film) => {
+  const people = film.people;
+  for (let j = 0; j < people.length; j++) {
+    characters.push(people[j])
+  }
+})
 
-function mostrarPersonagens() {
-  for (let i = 0; i < filmesData.length; i++) {
-    //let que acessa os objetos do array contido na propriedade people
-    let personagens = filmesData[i].people;
+function mostrarPersonagens(personagens) {
   
     //loop que percorre cada objeto do array da propriedade people
     for (let j = 0; j < personagens.length; j++) {
-      console.log(personagens);
 
   const cardAnime = document.createElement("section");
   cardAnime.className = "container-card-individual";
@@ -36,7 +36,9 @@ function mostrarPersonagens() {
       <div id="diretor">${personagens[j].gender}</div>
       `;
   containerAnimes.appendChild(cardAnime);
-}}}
+}}
+  
+mostrarPersonagens(characters);
 
 document.getElementById("recarregar").addEventListener("click", () => {
   location.reload();
@@ -44,7 +46,14 @@ document.getElementById("recarregar").addEventListener("click", () => {
 
 document.getElementById("filtroGêneroItem").addEventListener("change", () => {
   let gênero = document.querySelector(".filtro-gênero");
-  let filterItem = filterDataGênero(personaData, gênero.value);
+  let personagensFiltrados = filterDataGênero(characters, gênero.value);
   containerAnimes.innerHTML = "";
-  filterItem.forEach(mostrarPersonagens);
+  mostrarPersonagens(personagensFiltrados);
+});
+
+document.getElementById("filtroEspécieItem").addEventListener("change", () => {
+  let espécie = document.querySelector(".filtro-espécie");
+  let personagensFiltrados = filterDataEspécie(characters, espécie.value);
+  containerAnimes.innerHTML = "";
+  mostrarPersonagens(personagensFiltrados);
 });

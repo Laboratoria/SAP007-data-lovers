@@ -12,3 +12,8 @@ export function filterDataGênero(data, condition) {
   let filterGênero = data.filter((item) => item.gender === condition);
     return filterGênero;
 }
+
+export function filterDataEspécie(data, condition) {
+  let filterEspécie = data.filter((item) => item.specie === condition);
+    return filterEspécie;
+}

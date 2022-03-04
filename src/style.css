@@ -286,6 +286,7 @@ input:checked~label .hamburguer:after {
 
 .selected-film {
   margin-top: 95px;
+  min-height: 100vh;
 }
 
 .title-container {
@@ -355,6 +356,27 @@ input:focus, select:focus {
 .ordenar select {
   list-style: none;
   vertical-align: middle;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #123740;
+  align-items: center;
+  color: #D9D271;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D9D271;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.refresh {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  list-style: none;
   text-align: center;
   justify-content: space-around;
   background-color: #123740;
@@ -504,8 +526,8 @@ footer {
     font-size: 20px;
   }
 
-  .img-te {
-    height: 315px;
+  .refresh {
+    font-size: 20px;
   }
   
   .item img {
@@ -589,6 +611,10 @@ footer {
   }
 
   .ordenar select {
+    font-size: 20px;
+  }
+
+  .refresh {
     font-size: 20px;
   }
 

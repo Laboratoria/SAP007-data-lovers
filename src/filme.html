@@ -53,17 +53,18 @@
         <button id="btnBusca">BUSCAR</button>
       </div>
       <div class="ordenar">
-        <select>
-          <option>ORDENAR POR:</option>
-          <option>A - Z</option>
-          <option>Z - A</option>
-          <option>Maiores notas</option>
-          <option>Menores notas</option>
-          <option>Mais antigos</option>
-          <option>Mais novos</option>
+        <select name="order" id="order">
+          <option value="">ORDENAR POR:</option>
+          <option id="A-Z" class="option" value="A-Z">A - Z</option>
+          <option id="Z-A" class="option" value="Z-A">Z - A</option>
+          <option id="score" class="option" value="score">Maiores notas</option>
+          <option id="lowerscore" class="option" value="lowerscore">Menores notas</option>
+          <option id="older" class="option" value="older">Mais antigos</option>
+          <option id="newer" class="option" value="newer">Mais novos</option>
         </select>
       </div>
-      <div class="list"></div>
+      <button class="refresh" id="refresh">LIMPAR</button>
+      <div class="list" id="filmes"></div>
     </nav>
     <footer>
       <p class="footer-text">

@@ -10,7 +10,7 @@
   object-fit: contain;
 }
 
-.logo {
+.banner-oficial {
   position: absolute;
 }
 
@@ -70,6 +70,10 @@
 .conteudo {
   font-size: 20px;
   text-align: justify;
+  position: relative;
+}
+
+.conteudo-países{
   position: relative;
 }
 

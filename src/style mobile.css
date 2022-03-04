@@ -7,76 +7,84 @@
   
 body {
     width: 100%;
-    background: url(./image/bg-purple.jpg) no-repeat;
-    background-size: contain;
-    background-color: rgb(213, 172, 161);
+    background-color:rgb(213, 172, 161);
+}
+
+body::before {
+    content: " ";
+    background: url(./image/bg\ responsivo.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background-size: 100%;
 }
 
 .logo-img {
-    width: 30%;
-    margin-left: 20px;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 2%;
 }
-
+ 
 .todas-buscas {
     display: flex;
+    flex-direction:column;
+    align-items: center;
     border-radius: 10px;
-    justify-content: space-between;
-    width: 90%;
-    margin: 15% auto 0;   
-}
-
-.esquerda {
-    display: inline-flex;
+    margin-top: 10%;
 }
 
 .pesquisar {
     background-color: #ffffff;
-    font-size: 16px;
-    width: 200px;
+    font-size: 40%;
+    width: 150%;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 50px;
-    box-shadow: 8px 8px 8px black;
+    box-shadow: 0.1rem 0.1rem 0.1rem  black;
 }
 
 .limpar {
     background-color: #636668;
     color: white;
-    font-size: 16px;
-    width: 130px;
+    width: 100%;
+    font-size: 40%;
     padding: 6px;
-    margin-left: 10px;
     border-radius: 5px;
-    box-shadow: 50px;
-    box-shadow: 8px 8px 8px black;}
-
-.direita {
-    display: inline-flex;
+    box-shadow: 0.1rem 0.1rem 0.1rem  black;
+    padding-top: 2%;
 }
 
 .filtro-especies {
     padding: 5px;
     background-color: white;
-    font-size: 16px;
+    width: 100%;
+    font-size: 40%;
     border-radius: 5px;
-    box-shadow: 50px;
-    box-shadow: 8px 8px 8px black;
+    box-shadow: 0.1rem 0.1rem 0.1rem  black;
+    padding-top: 2%;
 }
 
 .filtro-ordem {
+    display: flex;
     padding: 5px;
+    width: 100%;
     background-color: white;
-    margin-left: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 40%;
     border-radius: 5px;
     text-align: center;
-    width: 100px;
-    box-shadow: 50px;
-    box-shadow: 8px 8px 8px black;
+    border-radius: 5px;
+    box-shadow: 0.1rem 0.1rem 0.1rem  black;
+    padding-top: 2%;
 }
 
-
+.todos-cards {
+    margin-top: 10%;
+}
 
 .card {
     background-color:rgba(17, 50, 53, 0.904);
@@ -87,11 +95,12 @@ body {
     height: 290px;
     border: 5px solid #D4D952;
     border-radius: 9px;
-    margin: 70px 0px 0px 50px;
     text-align: center;
     cursor: pointer;
+    margin: 10px 0px 20px 70px;
     box-shadow: 50px;
     box-shadow: 8px 8px 8px black;
+    justify-content: space-evenly;
 }
 
 .card-interno {

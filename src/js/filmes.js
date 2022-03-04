@@ -1,5 +1,5 @@
 import data from "../data/ghibli/ghibli.js";
-import { filterData } from "./data.js";
+import { filterDataDiretor, filterDataLançamento } from "./data.js";
 
 const containerAnimes = document.getElementById("containerCardItem");
 
@@ -29,12 +29,18 @@ document.getElementById("recarregar").addEventListener("click", () => {
   location.reload();
 });
 
+document.getElementById("filtroDiretorItem").addEventListener("change", () => {
+  let diretores = document.querySelector(".filtro-diretor");
+  let filterItem = filterDataDiretor(filmesData, diretores.value);
+  containerAnimes.innerHTML = "";
+  filterItem.forEach(mostrarFilmes);
+});
+
 document
-  .getElementById("filtroDiretorItem")
+  .getElementById("filtroLancamentoItem")
   .addEventListener("change", () => {
-    let diretores = document.querySelector(".filtro-diretor")
-    let filterItem= filterData(filmesData, diretores.value)
+    let lançamento = document.querySelector(".filtro-lançamento");
+    let filterItem = filterDataLançamento(filmesData, lançamento.value);
     containerAnimes.innerHTML = "";
     filterItem.forEach(mostrarFilmes);
-  }
-  );
+  });

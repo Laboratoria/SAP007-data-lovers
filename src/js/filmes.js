@@ -1,4 +1,5 @@
 import data from "../data/ghibli/ghibli.js";
+import { filterData } from "./data.js";
 
 const containerAnimes = document.getElementById("containerCardItem");
 
@@ -9,7 +10,7 @@ filmesData.forEach(mostrarFilmes); //mapeando array films com método de callbac
 function mostrarFilmes(data) {
   const cardAnime = document.createElement("section");
   cardAnime.className = "containerCardIndividual";
-  cardAnime.innerHTML = `  
+  cardAnime.innerHTML = `
     <div class="conteinerImagem">
     <p id="titulo"> ${data.title} </p>
     <img src= '${data.poster}' id="imagem-poster"></img>
@@ -30,10 +31,10 @@ document.getElementById("recarregar").addEventListener("click", () => {
 
 document
   .getElementById("filtroDiretorItem")
-  .addEventListener("change", (diretor) => {
-    const filtrarDiretor = filmesData.filter(
-      (filtrando) => filtrando.director === diretor.target.value
-    );
+  .addEventListener("change", () => {
+    let diretores = document.querySelector(".filtroDiretor")
+    let filterItem= filterData(filmesData, diretores.value)
     containerAnimes.innerHTML = "";
-    filtrarDiretor.forEach(mostrarFilmes);
-  });
+    filterItem.forEach(mostrarFilmes);
+  }
+  );

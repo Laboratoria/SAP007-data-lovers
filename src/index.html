@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,47 +14,58 @@
 <body>
   <div id="root"></div>
   <header class="cabecalho">
-    <img src="logo.png" class="logo" alt="logo rick and morty" width="400" height="150" >
+    <img src="logo.png" class="logo" alt="logo rick and morty" width="300" height="150">
     <h1 class="titulosite"> Guia de Personagens</h1>
   </header>
 
-  <nav class="menu_paginas">
-    <ul class="listapaginas">
-      <li><a href="index.html">Lista de Personagens</a></li>
-      <li><a href="index2.html">Lista de Episódios</a></li>
-    </ul>
-  </nav>
-  <div class="menuFiltros">
-    <section>
-      <select class= "filtos" id="filtroGenero">
-        <option selected disabled>Gênero</option>
+  <div class="container_filtros_search_ordem">
+
+    <div class="ordenacaoA-Z">
+      <p class=""><b>Organize</b></p>
+      <select class="ordenacaoA-Z">
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+      <br>
+    </div>
+
+    <form class="menufiltros">
+      <label>Espécie</label>
+      <select class="" id="species-filter">
+        <option value="alien">Alien</option>
+        <option value="animal">Animal</option>
+        <option value="cronenberg">Cronenberg</option>
+        <option value="disease">Doença</option>
+        <option value="human">Humano</option>
+        <option value="humanoid">Humanóide</option>
+        <option value="mytholog">Mytholog</option>
+        <option value="parasite">Parasita</option>
+        <option value="poopybutthole">Poopybutthole</option>
+        <option value="robot">Robô</option>
+        <option value="vampire">Vampiro</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+
+      <label>Gênero</label>
+      <select class="" id="">
         <option value="male">Masculino</option>
         <option value="female">Feminino</option>
-        <option value="unknow">Indefinido</option>
+        <option value="unknown">Desconhecido</option>
       </select>
 
-      <select class= "filtros" id="filtroEspecie">
-        <option selected disabled>Espécie</option>
-        <option value="Human">Humano</option>
-        <option value="Animal">Animal</option>
-        <option value="Alien">Alien</option>
-        <option value="Disease">Doença</option>
-        <option value="Humanoid">Humanoide</option>
-        <option value="Mytholog">Mitológico</option>
-        <option value="Parasite">Parasita</option>
-        <option value="Robot">Robô</option>
-        <option value="Vampire">Vampiro</option>
-        <option value="Poopybutthole">Poopybutthole</option>
-        <option value="Cronenberg">Cronenberg</option>
-        <option value="Unknow">Indefinido</option>
+      <label>Status</label>
+      <select class="" id="">
+        <option value="alive">Vivo</option>
+        <option value="dead">Morto</option>
+        <option value="unknown">Desconhecido</option>
       </select>
 
-      <select class="filtros" id="filtrosStatus">
-        <option selected disabled>Status</option>
-        <option value="Alive">Vivo</option>
-        <option value="DeaD">Morto</option>
-        <option value="Unknow">Indefinido</option>
-      </select>
+      <input type="submit" value="Filtre" class="btn_submit">
+      <input type="reset" value="X" class="btn_reset">
+    </form>
+  </div>
+
+  </div>
 
       <button id="menulimpar" class="limpaFiltro">Limpar Filtros</button>
       
@@ -64,14 +76,13 @@
       <div class="localCards" id="infoCards"></div>
     </section>
   </main>
+  
 
   <footer class="rodape">
-    <p> 
-      <a href="https://github.com/MariaLuizaSantana" target="_blank">Maria Luiza Costa   </a>
-      <a href="https://github.com/loulima" target="_blank">Loiuza Lima   </a>
-    </p> 
-    <nav class="contatosocial">
-    </nav>
+    <p class="copyright"> © Maria Luiza e Louiza Lima</p>
+    <button class="btn_top">
+      <a href="#top">Volte para o Início</a>
+    </button>
   </footer>
   <script src="main.js" type="module"></script>
 </body>

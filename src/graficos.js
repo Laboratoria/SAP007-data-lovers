@@ -1,4 +1,4 @@
-import { statusFilter, genderFilter } from "./data.js";
+
 import data from "./data/rickandmorty/rickandmorty.js";
 
 const stats_gender = {
@@ -61,8 +61,6 @@ const printTotalCharacters = document.getElementById("total_characters");
 
   };
     const printStatusAverage = document.getElementById("status_average");
-
-    const totalCharactersStatus = stats_status.characters(data.results);
 
 
     const alive_average = stats_status.status(data.results, "Alive") + "%";

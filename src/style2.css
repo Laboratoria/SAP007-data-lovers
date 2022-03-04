@@ -43,6 +43,7 @@
   border-radius: 24px;
   color: #263E5D;
   font-size: 20px;
+  font-family: 'Fira Code', monospace;
   font-weight: 400;
   font-family: 'Anton', sans-serif;
   cursor: pointer;
@@ -76,6 +77,8 @@ margin-top: 1%;
 .card-container{
   margin-left: 50px;
   margin-top: 50px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
   color: black;
   text-align: center;
   display:flex;

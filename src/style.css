@@ -10,15 +10,15 @@
 .cabecalho {
   display: flex;
   justify-content: center;
-  background-color: #F0E260;
+  background-color: #f0e260;
   align-items: center;
-	flex-wrap: wrap;
-	padding: 2.0em;  
+  flex-wrap: wrap;
+  padding: 2em;
 }
 
 .logo {
-  width: 15%;
-  height: 15%;
+  width: 25%;
+  height: 25%;
   margin-right: 3rem;
 }
 
@@ -27,46 +27,113 @@
   box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
   border-radius: 0.3em;
   padding: 1rem;
+  font-size: 1.125rem;
   width: fit-content;
-  margin:0 auto;
-  margin-top:2%;
+  margin: 0 auto;
+  margin-top: 2%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   flex: 1;
   flex-direction: row;
-}
-
-.ordenacaoA-Z{
-  display: flex;
-  gap: 10px;
   
 }
 
-.menufiltros{
-  display: flex;
-  gap: 10px;
-font-weight: bold;
+main {
+  padding: 0.5rem 5rem;
 }
 
-.btn{
+.ordenacaoA-Z {
+  display: flex;
+  gap: 10px;
+}
+
+.menufiltros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.btn_submit {
   width: 4rem;
   text-align: center;
   padding: 0.1rem;
   border-radius: 0.3em;
-  border: #26353e solid 1px;
+  border: #07d9c4 solid 1px;
+  background-color: #07d9c4;
+  font-size: 0.975rem;
+}
+.btn_reset {
+  width: 4rem;
+  text-align: center;
+  padding: 0.1rem;
+  border-radius: 0.3em;
+  border: #f76a68 solid 1px;
+  background-color: #f76a68;
+  font-size: 0.975rem;
+}
+.btn_top {
+  border-radius: 0.3em;
+  border: #f0e260 solid 1px;
+  width: fit-content;
+  padding-bottom: 1rem;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #f0e260;
+}
+
+.btn_top a {
+  color: black;
+  font-size: 0.975rem;
 }
 
 .rodape {
   background-color: #26353e;
   position: fixed;
-  padding: 1em 1em 0 1em;
+  padding: 1em 1em 1em 1em;
   bottom: 0;
   width: 100%;
-  height: 2.5em;
+  height: 3.5em;
   text-align: center;
+  justify-content: space-around;
+  display: flex;
   color: #ffffff;
 }
 
+.localCards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-items: flex-end;
+  grid-gap: 1rem;
+  
+}
 
+.cards {
+  border: #26353e solid 1px;
+  padding: 0.938rem;
+  border-radius: 0.313rem;
+  background: #f5efef;
+  box-shadow: 5px 5px 17px #e1dcdc, -5px -5px 17px #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 0 1 calc(25% - 1em);
+}
 
+.cardImg{
+  width: fit-content;
+  border-radius: 10%;
+  max-width: 100%;
+}
+
+select {
+  border-radius: 00.3em;
+  font-size: 1.125rem;
+}

@@ -18,9 +18,8 @@
     <h1 class="titulosite"> Guia de Personagens</h1>
   </header>
 
-
   <div class="container_filtros_search_ordem">
-    
+
     <div class="ordenacaoA-Z">
       <p class=""><b>Organize</b></p>
       <select class="ordenacaoA-Z">
@@ -29,42 +28,57 @@
       </select>
       <br>
     </div>
-    
+
     <form class="menufiltros">
       <label>Espécie</label>
-      <select>
-          <option value="">Humano</option>
-          <option value="">Nao Humano</option>
-          <option value="">.</option>
+      <select class="" id="species-filter">
+        <option value="alien">Alien</option>
+        <option value="animal">Animal</option>
+        <option value="cronenberg">Cronenberg</option>
+        <option value="disease">Doença</option>
+        <option value="human">Humano</option>
+        <option value="humanoid">Humanóide</option>
+        <option value="mytholog">Mytholog</option>
+        <option value="parasite">Parasita</option>
+        <option value="poopybutthole">Poopybutthole</option>
+        <option value="robot">Robô</option>
+        <option value="vampire">Vampiro</option>
+        <option value="unknown">Desconhecido</option>
       </select>
-  
-      <label>Status</label>
-      <select>
-          <option value="">Humano</option>
-          <option value="">Nao Humano</option>
-          <option value="">.</option>
-      </select>
-  
+
       <label>Gênero</label>
-      <select>
-          <option value="">Humano</option>
-          <option value="">Nao Humano</option>
-          <option value="">.</option>
+      <select class="" id="">
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+        <option value="unknown">Desconhecido</option>
       </select>
-      
-      <input type="submit" value="Filtre" class="btn">
-      <input type="reset" value="Apague" class="btn">
-  </form>
+
+      <label>Status</label>
+      <select class="" id="">
+        <option value="alive">Vivo</option>
+        <option value="dead">Morto</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+
+      <input type="submit" value="Filtre" class="btn_submit">
+      <input type="reset" value="X" class="btn_reset">
+    </form>
   </div>
 
-<main>
+  </div>
+
+  <main>
+    <section>
+      <div class="localCards" id="infoCards"></div>
+    </section>
+  </main>
   
-</main>
-  
+
   <footer class="rodape">
     <p class="copyright"> © Maria Luiza e Louiza Lima</p>
-    <nav class="contatosocial">
-    </nav>
+    <button class="btn_top">
+      <a href="#top">Volte para o Início</a>
+    </button>
   </footer>
   <script src="main.js" type="module"></script>
 </body>

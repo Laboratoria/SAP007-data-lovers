@@ -19,19 +19,28 @@ export const filterMovies = (searchString, dataGhibli) => {
   return data;
 };
 
+function strtoNumber(film) {
+  return Number(film.rt_score);
+}
+
 export const sortMovies = (data, order) => {
   if (order == "A-Z") {
-    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
-  } else if (order == "Z-A") {
-    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
-  } else if (order == "Highest-Score") {
-    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
-  } else if (order == "Lowest-Score") {
-    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
-  } else if (order == "Newest") {
-    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
-  } else if (order == "Oldest") {
-    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
+    return data.sort((a, z) => (a.title > z.title ? 1 : -1));
+  }
+  if (order == "Z-A") {
+    return data.sort((a, z) => (a.title > z.title ? -1 : 1));
+  }
+  if (order == "Highest-Score") {
+    return data.sort((a, z) => (strtoNumber(a) > strtoNumber(z) ? -1 : 1));
+  }
+  if (order == "Lowest-Score") {
+    return data.sort((a, z) => (strtoNumber(a) > strtoNumber(z) ? 1 : -1));
+  }
+  if (order == "Oldest") {
+    return data.sort((a, z) => (a.release_date > z.release_date ? 1 : -1));
+  }
+  if (order == "Newest") {
+    return data.sort((a, z) => (a.release_date > z.release_date ? -1 : 1));
   }
 };
 

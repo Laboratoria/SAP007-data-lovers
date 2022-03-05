@@ -46,7 +46,8 @@ const inputSelect = document.getElementById("inputSelect");
 
 inputSelect.addEventListener("change", (e) => {
   const selectedOrder = e.target.value;
-  const sortedMovies = sortMovies(selectedOrder, moviesList);
+  const sortedMovies = sortMovies(moviesList, selectedOrder);
   makeMovieCards(sortedMovies);
 });
+
 makeMovieCards(moviesList);

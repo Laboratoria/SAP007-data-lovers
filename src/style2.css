@@ -6,38 +6,39 @@
 
 .central-container{
   background-color: #263E5D;
-}
+  }
 
 .main{
   background-color: #75FAF2;
   padding: 0%;
   margin: 0%;
   width: 100%;
-  height: 30vh;
+  height: 300px;
   display: flex;
+  align-items:center;
+  justify-content: center;
 }
 
 .img-header {
-  margin-top: -4%;
-  margin-left: 0%;
-  width: 25VW ;
-  height: 50vh;
+ width: 400px;
+ margin-top: 10px;
+ }
 
-}
 .logo {
   height: 90%;
   display: flex;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 15px;
   margin-top: 1%;
   width: 40VW;
-}
+  }
 
 .img2-header {
   margin-left: 0%;
+  width: 310px;
 }
 
-.status-btn, .especie-btn, .gender-btn {
+.status-btn, .species-btn, .gender-btn, .order-btn {
   margin-bottom: 50px;
   padding: 15px;
   border-radius: 24px;
@@ -47,20 +48,25 @@
   font-weight: 400;
   font-family: 'Anton', sans-serif;
   cursor: pointer;
-  width: 200px;
+  width: 180px;
   background: rgb(117,250,242);
   background: linear-gradient(0deg, rgba(117,250,242,1) 0%, rgba(38,62,93,1) 100%);
   border: none;
+  text-align: center;
+  justify-content: center;
 }
 
 .filter-menu{
   width: 100%;
   height: 100px;
   display: flex;
+  justify-content: space-around;
 }
 
+
+
 .name-search{
-width: 30%;
+width: 15%;
 height: 30%;
 margin: 9px 0px;
 margin-top: 1%;
@@ -75,6 +81,7 @@ margin-top: 1%;
 }
 
 .card-container{
+  font-size: 20px;
   margin-left: 50px;
   margin-top: 50px;
   font-family: 'Fira Code', monospace;
@@ -87,8 +94,8 @@ margin-top: 1%;
   flex-wrap: wrap;
   background-color:#75FAF2;
   padding:10px;
-  width:25%;
-  height:20%;
+  width:23%;
+  height: 30vw;
   border-radius: 5%;
   border:solid hsl(123, 82%, 51%) 5px;
 }

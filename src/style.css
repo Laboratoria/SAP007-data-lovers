@@ -1,3 +1,4 @@
+/*RESET*/
 * {
   padding: 0;
   margin: 0;
@@ -6,25 +7,96 @@
 }
 
 body {
-  background-color:#BF9A78;
+  background-color: #0d3928;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Poppins;
+}
+/*MENU*/
+
+.banner {
+  width: 100vw;
+  height: 35vh;
+}
+.link {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
 }
 
-.filtros_filmes {
-  background-color: #798C32;
-  width: 100%;
-  padding: 1em;
+
+/*FILTROS*/
+
+
+.searchTitle {
+  border-radius: 8em;
+  padding: 0.8em;
+  text-align: center;
+  border: solid 2px;
 }
 
-button {
-  background-color: #731F35;
-  width:9em;
+.searchButton,
+.btnClear {
+  background-color: #cfb77b;
+  width: 9em;
   height: 3em;
   color: white;
   border-radius: 0.8em;
+  border: 2px solid black;
 }
 
-.buscar_titulo .diretor {
-  width: 10em;
+.sortAlfa {
+  border-radius: 8em;
+  padding: 0.8em;
   text-align: center;
-  font-size: 1em;
+  border: solid 2px;
 }
+
+.director {
+  border-radius: 8em;
+  padding: 0.8em;
+  text-align: center;
+  border: solid 2px;
+}
+
+/*POSTER*/
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 1em;
+  grid-gap: 1rem;
+  padding:2em;
+}
+
+.img-card {
+  box-shadow: 10px 10px 10px 0 #000000;
+  padding: 1.5em;
+  background-color: 	#cfb77b;
+}
+
+.title-card {
+  font-size:1em;
+  text-align:center;
+  padding:0.6em;
+  color:white;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #cfb77b;
+  height:5em;
+  align-items: center;
+  }
+
+  .github {
+    text-align: center;
+    padding: 1.3em;
+    font-weight: bold;
+    line-height:1.2em;
+  }
+

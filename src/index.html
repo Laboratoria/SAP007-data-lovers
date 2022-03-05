@@ -1,32 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>Filmes - Ghibli Lovers</title>
 </head>
+
 <body>
-  <nav class="menu" id="menu">
-    <ul>
-      <li><a class="link" href="home.html">Página Inicial</a></li>
-      <li><a class="link" href="personagens.html">Personagens</a></li>
-    </ul>
-  </nav>
-  <section class="filtros_filmes">
-    <input id="buscar_titulo" class="buscar_titulo" type="search" name="" placeholder="Procurar por título">
-    <button id="melhores_filmes" type="" class="melhores_filmes">Melhores Filmes</button>
-    <button id="ordenar_az"type="" class="ordenar_az">A - Z</button>
-    <select id="diretor" class="diretor">
-      <option value disabled selected> Diretor</option>
-      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-      <option value="Isao Takahata">Isao Takahata</option>
-      <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-      <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-      <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-      <option value="Hiromasa Yonebayash">Hiromasa Yonebayash</option>
-  </section>
+  <header>
+    <div>
+      <img class="banner" src="img/the_secret_world_of_arrietty.jpg" alt="">
+    </div>
+    <div>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a class="link" href="home.html">Início</a></li>
+          <li><a class="link" href="personagens.html">Personagens</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filterMovies">
+      <div class="search">
+        <input id="searchTitle" class="searchTitle" type="search" name="" placeholder="Procurar por título">
+      </div>
+      <div>
+        <select id="sortAlfa" class="sortAlfa">
+          <option value disabled selected> Ordem Alfábetica</option>
+          <option value="a-z">A - Z</option>
+          <option value="z-a">Z - A</option>
+        </select>
+      </div>
+      <div>
+        <select id="director" class="director">
+          <option value disabled selected> Diretor</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayash">Hiromasa Yonebayash</option>
+        </select>
+      </div>
+      <div class="clear">
+        <button class="btnClear" id="btnClear" type="">Limpar</button>
+      </div>
+    </section>
+    <section class="addedValue">
+      <p id="calculator"></p>
+    </section>
+    <div class="cards" id="cards"></div>
+  </main>
+  <footer>
+    <p class="github">Desenvolvido por <a href="https://github.com/erikakrause" target="_blank">Érika Moreno</a> <br>
+      SAP007 - <a href="https://www.laboratoria.la/br" target="_blank">LABORATÓRIA</a></p>
+  </footer>
 </body>
+
 <script src="main.js" type="module"></script>
-</html> 
+
+</html>

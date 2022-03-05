@@ -4,6 +4,8 @@ import { menu } from "../components/header.js";
 
 menu();
 
+document.getElementById("form").reset();
+
 const moviesList = data.films;
 
 function makeMovieCards(movies) {

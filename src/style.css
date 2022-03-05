@@ -162,8 +162,21 @@ footer{
 }
 
 .filter {
-  padding: 10px;
-  display: inline-block;
+
+  display:inline-block;
   width: fit-content;
   height: fit fit-content;
+  margin-left: 37%;
+  justify-content: center;
+
+
 }
+
+
+
+
+
+
+
+
+

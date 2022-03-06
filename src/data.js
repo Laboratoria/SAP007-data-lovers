@@ -1,6 +1,10 @@
 export const filterData = (data, condition) => {
   return data.filter((personagens) => (personagens[condition[0]] == condition[1]));
-}
+};
+
+export const filternome =  (data, buscaNome) => data.filter (personagens => {
+  return personagens.name.toLowerCase().includes(buscaNome.toLowerCase());
+})
 
 export const sortBy = (data, order) => {
   if (order === "ordenarAZ") {
@@ -10,11 +14,11 @@ export const sortBy = (data, order) => {
   } 
 };
 
- export const computeStats = (data) => {
-   return data.reduce ((personagens, totalPersonagens) => personagens[0] + totalPersonagens[1] , 0)
-  }
-
-   //{}
+export const computeStats = (data) => {
+  return Math.round(100 * ( data.selectedLenght / data.totalLenght))
+};
+ 
+//   
 
 
 

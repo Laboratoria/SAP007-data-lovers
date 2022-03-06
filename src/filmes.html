@@ -1,135 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./estilos/filmes.css" />
-    <title>Filmes</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navegacao-filmes">
-        <a href="./index.html" class="navegacao-item">Home</a>
-        <a href="./filmes.html" class="navegacao-item">Filmes</a>
-        <a href="./personagens.html" class="navegacao-item">Personagens</a>
-      </nav>
+<html lang="pt-br">
 
-      <div>
-        <img id="imagemFilmes" src="./imagens/ghibli1.jpg" alt="banner" />
-      </div>
-    </header>
+<head>
+    <script src="./js/filmes.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/filmes.css">
 
-    <section class="filtros-conteiner">
-      <div class="filtro-conteiner-individual" id="pesquisaConteiner">
-        <input
-          type="search"
-          class="filtro-item"
-          id="pesquisaConteinerItem"
-          placeholder="Pesquise"
-          autocomplete="on"
-          spellcheck="true"
-        />
-      </div>
+</head>
 
-      <div class="filtro-conteiner-individual" id="ordenacaoAlfabetica">
-        <select
-          class="filtro-item ordenação-alfabética"
-          id="ordenacaoAlfabeticaItem"
-        >
-          <option class="ordenação-alfabética" value="">Ordem Afabética</option>
-          <option class="ordenação-alfabética" value="A-Z">A-Z</option>
-          <option class="ordenação-alfabética" value="Z-A">Z-A</option>
-        </select>
-      </div>
+<body>
 
-      <div class="filtro-conteiner-individual" id="ordenacaoPopularidade">
-        <select
-          class="filtro-item ordenação-popularidade"
-          id="ordenacaoPopularidadeItem"
-        >
-          <option class="ordenação-popularidade" value="">Popularidade</option>
-          <option class="ordenação-popularidade" value="Mais Popular">
-            Mais Popular
-          </option>
-          <option class="ordenação-popularidade" value="Menos Popular">
-            Menos Popular
-          </option>
-        </select>
-      </div>
+    <div id="root">
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="./personagens.html">Personagens</a></li>
+            </ul>
+        </nav>
 
-      <div class="filtro-conteiner-individual" id="filtroDiretor">
-        <select class="filtro-item filtro-diretor" id="filtroDiretorItem">
-          <option class="filtro-diretor" value="">Diretor</option>
-          <option class="filtro-diretor" value="Hayao Miyazaki">
-            Hayao Miyazaki
-          </option>
-          <option class="filtro-diretor" value="Isao Takahata">
-            Isao Takahata
-          </option>
-          <option class="filtro-diretor" value="Yoshifumi Kondō">
-            Yoshifumi Kondō
-          </option>
-          <option class="filtro-diretor" value="Hiroyuki Morita">
-            Hiroyuki Morita
-          </option>
-          <option class="filtro-diretor" value="Gorō Miyazaki">
-            Gorō Miyazaki
-          </option>
-          <option class="filtro-diretor" value="Hiromasa Yonebayashi">
-            Hiromasa Yonebayashi
-          </option>
-        </select>
-      </div>
+        <header>
+            <img src="./images/wallpaper-kaguya.jpeg" alt="Kaguaya" class="img-topo" />
+            <div class="filtro">
 
-      <div class="filtro-conteiner-individual" id="filtroLancamento">
-        <select class="filtro-item filtro-lançamento" id="filtroLancamentoItem">
-          <option class="filtro-lançamento" value="">Lançamento</option>
-          <option class="filtro-lançamento" value="1986">1986</option>
-          <option class="filtro-lançamento" value="1988">1988</option>
-          <option class="filtro-lançamento" value="1989">1989</option>
-          <option class="filtro-lançamento" value="1991">1991</option>
-          <option class="filtro-lançamento" value="1992">1992</option>
-          <option class="filtro-lançamento" value="1994">1994</option>
-          <option class="filtro-lançamento" value="1995">1995</option>
-          <option class="filtro-lançamento" value="1997">1997</option>
-          <option class="filtro-lançamento" value="1999">1999</option>
-          <option class="filtro-lançamento" value="2001">2001</option>
-          <option class="filtro-lançamento" value="2002">2002</option>
-          <option class="filtro-lançamento" value="2004">2004</option>
-          <option class="filtro-lançamento" value="2006">2006</option>
-          <option class="filtro-lançamento" value="2008">2008</option>
-          <option class="filtro-lançamento" value="2010">2010</option>
-          <option class="filtro-lançamento" value="2011">2011</option>
-          <option class="filtro-lançamento" value="2013">2013</option>
-          <option class="filtro-lançamento" value="2014">2014</option>
-        </select>
-      </div>
+                <div class="radios">
+                    <div class="grupo-radio">
+                        <div class="grupo-input-radio">
+                            <label for="mais-popular">Mais popular</label>
+                            <input type="radio" name="popularidade" value="maior" id="mais-popular" checked>
+                        </div>
 
-      <div class="filtro-conteiner-individual">
-        <button type="button" class="button" id="recarregar">Recarregar</button>
-      </div>
-    </section>
+                        <div class="grupo-input-radio">
+                            <label for="menos-popular">Menos popular</label>
+                            <input type="radio" name="popularidade" value="menor" id="menos-popular">
+                        </div>
+                    </div>
 
-    <main class="conteiner-main">
-      <section id="containerCardItem"></section>
-    </main>
+                    <div class="grupo-radio">
+                        <div class="grupo-input-radio">
+                            <label for="crescente">A-Z</label>
+                            <input type="radio" name="ordem-alfabetica" value="crescente" id="crescente" checked>
+                        </div>
 
-    <footer class="rodape">
-      <p>
-        Desenvolvido por
-        <a href="https://github.com/leticiaantunesjpeg" target="_blank"
-          >Leticia Antunes</a
-        >
-        e
-        <a href="https://github.com/Maryssun" target="_blank"
-          >Dayanne Maryssol</a
-        >
-        <br />
-        SAP007 - LABORATORIA
-      </p>
-    </footer>
+                        <div class="grupo-input-radio">
+                            <label for="decrescente">Z-A</label>
+                            <input type="radio" name="ordem-alfabetica" value="decrescente" id="decrescente">
+                        </div>
+                    </div>
+                </div>
 
-    <script src="../src/js/filmes.js" type="module"></script>
-  </body>
+                <div class="seletores">
+                    <select name="diretor" id="seletor-diretores">
+                        <option value="titulo" selected disabled >Diretor</option>
+                    </select>
+                    
+                    <select name="lancamento" id="seletor-datas-lancamento">
+                        <option value="titulo" selected disabled >Data de lançamento</option>
+                    </select>
+                </div>
+            </div>
+
+            <section>
+                <div class="conteudo-pesquisa">
+                    <input type="search" class="input-pesquisa" placeholder="Pesquise" autocomplete="on"
+                        spellcheck="true">
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <ul class="cartoes" id="grupo-cartoes">
+                <!-- li gerada no filme.js -->
+                <!-- <li class="itens-cartao">
+                    <div class="cartao"></div>
+                </li> -->
+            </ul>
+        </main>
+
+        <footer>
+            <div class="sobre-nos">
+                <p> Desenvolvido por
+                    <a href="https://github.com/Maryssun" target="_blank">Dayanne Maryssol</a> e
+                    <a href="https://github.com/leticiaantunesjpeg" target="_blank">Leticia Antunes</a>
+                </p>
+                <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
+
+            </div>
+
+            <figure>
+                <a href="https://www.ghibli.jp/" target="_blank">
+                    <img class="logo-sg" src="images/logo-sem-fundo.png" alt="Logo Studio Ghibli">
+                </a>
+            </figure>
+        </footer>
+    </div>
+</body>
 </html>

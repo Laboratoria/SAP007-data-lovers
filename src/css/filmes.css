@@ -1,0 +1,55 @@
+.menu-topo ul {
+    background-color: #9c8268;
+}
+
+.filtro { 
+    position: relative;
+    border-radius: 4px;
+    height: 100px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    top: -40px;
+    background-color: rgba(156,130,104, 0.8);
+    padding: 1px;
+    margin-bottom: -20px;
+}
+
+.input-pesquisa {
+    border-color: #9c8268;
+} 
+
+.seletores, .radios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seletores select {
+    width: 45%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.radios {
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #9c8268;
+}
+
+.sobre-nos p {
+    color:  #3E2B17;
+}
+
+.sobre-nos p a {
+    color: #c5bbbb;
+}
+

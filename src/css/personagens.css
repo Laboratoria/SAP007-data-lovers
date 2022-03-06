@@ -1,0 +1,64 @@
+.menu-topo ul {
+    background-color: #834342;
+}
+
+.menu-topo ul li a:hover {
+    background: #aeada9;
+}
+
+.filtro { 
+    position: relative;
+    border-radius: 4px;
+    height: 100px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    top: -40px;
+    background-color: rgba(131,67,66, 0.8);
+    padding: 1px;
+    margin-bottom: -20px;
+}
+
+.input-pesquisa {
+    border: 2px solid #ddadab;
+} 
+
+.seletores, .radios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seletores select {
+    width: 30%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.radios {
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: ; */
+}
+
+footer {
+    background-color: #834342;
+}
+
+.sobre-nos p {
+    color:  #c57f7e;
+}
+
+.sobre-nos p a {
+    color: #ff9e9e
+}
+
+.logo-sg {
+    height: 80px;
+    filter: invert(90%)
+  }

@@ -32,67 +32,77 @@
   outline: none;
 }
 
-.cardsContainer {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-}
-
-.cardsContainer .cards:nth-child(n) {
-  margin: 10px auto;
-}
-
-.cards {
-  position: relative;
-  background-color: #caebf2;
-
+.movieCards {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  padding: 16px;
+  margin: 4vh 0vh;
+}
+
+.cardsMoviesContainer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: auto;
+  gap: 4vw;
+  width: 70vw;
+  margin-bottom: 4vh;
+  background-color: #ffffff;
+  padding: 5vmin;
 }
 
 .poster {
-  height: 150px;
-  /* width: 80px; */
-  border-radius: 10px;
+  width: 200px;
+  height: 285px;
 }
-.divTitle {
-  position: absolute;
+
+.infoContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 3.125rem;
-  width: 100%;
-  bottom: 0;
-  background: rgba(196, 196, 196, 0.47);
-  border-radius: 0px 0px 13.8889px 13.8889px;
+  flex-direction: column;
+  gap: 4vh;
 }
-.titleWithinCard {
-  position: absolute;
-  font-size: 100%;
-  font-family: Montserrat;
-  text-align: center;
+
+.mainInfoAndRating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 10vw;
+  gap: 1vw;
+}
+
+.star {
+  width: 4vmin;
+  align-self: flex-start;
 }
 
 @media (max-width: 767px) {
-  .cardsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .cardsMoviesContainer {
+    flex-direction: column;
   }
 
-  .mainContainer {
-    min-height: 82vh;
+  .poster {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainInfoAndRating {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .ratingContainer {
+    /* justify-content: flex-start; */
   }
 }
-@media (max-width: 480px) {
-  .cardsContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
 
+@media (max-width: 480px) {
   .inputContainer {
     flex-direction: column;
     align-items: flex-end;

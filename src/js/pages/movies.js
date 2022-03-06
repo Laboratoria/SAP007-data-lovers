@@ -13,21 +13,33 @@ function makeMovieCards(movies) {
     .map(
       (item) =>
         `
-        <div class="cardsMoviesContainer">
-          <picture class="posterMovie">
-            <img src="${item.poster}" alt="" class="poster"/>
-          </picture>
-          <div class="infoContainer">
-            <h3>${item.title}</h3>
-            <p>${item.release_date}</p>
+      <div class="cardsMoviesContainer">
+        <picture class="posterMovie">
+          <img src="${item.poster}" alt="" class="poster" />
+        </picture>
+        <div class="infoContainer">
+          <div class="mainInfoAndRating">
+            <div class="mainIfoContainer">
+              <h3>${item.title}</h3>
+              <h4>${item.release_date}</h4>
+
+            </div>
+
+            <div class="ratingContainer">
+              <img src="../../assets/icon/star.svg" alt="star" class="star"/>
+              <p>${item.rt_score}</p>
+            </div>
+
+          </div>
+          <div class="directorProducer">
             <p>Directed by: ${item.director}</p>
             <p>Produced by: ${item.producer}</p>
+           </div>
+          <div class="sinopseContainer">
             <p>Sinopse: ${item.description}</p>
           </div>
-          <div class="ratingContainer">
-            <p>${item.rt_score}</p>
-          </div>
         </div>
+      </div>
         `
     )
     .join("");

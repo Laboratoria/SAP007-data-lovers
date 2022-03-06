@@ -1,6 +1,11 @@
 import data from "../../data/ghibli/ghibli.js";
 import { menu } from "../components/header.js";
+import {
+  filterCharacters,
+  getCharacters,
+  alphabeticalSort,
   filterByGender,
+} from "../data.js";
 
 menu();
 
@@ -42,6 +47,13 @@ inputSearch.addEventListener("keyup", (e) => {
   makeCharacterCards(dataFiltered);
 });
 
+const inputSelect = document.getElementById("alphabeticalSelect");
+
+inputSelect.addEventListener("change", (e) => {
+  const selectedOrder = e.target.value;
+  const sortedCharacters = alphabeticalSort(charactersAll, selectedOrder);
+  makeCharacterCards(sortedCharacters);
+});
 
 const selectGender = document.getElementById("selectGender");
 

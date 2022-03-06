@@ -66,3 +66,8 @@ export function getCharacters(films) {
   const people = charactersAll.flat();
   return people;
 }
+
+export const filterByGender = (data, item) => {
+  const filteredByGender = data.filter((film) => film.gender === item);
+  return filteredByGender;
+};

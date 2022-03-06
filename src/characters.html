@@ -42,12 +42,20 @@
             class="inputs"
             placeholder="Search by film"
           />
+          <select id="selectGender" class="inputs">
+            <option selected disabled value="">Sort by Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="NA">Other</option>
+            <option value="Unknown (Possible Male)">Unknown</option>
+          </select>
           <select
             name="inputSelect"
-            id="inputSelect"
+            id="alphabeticalSelect"
             class="inputs"
             title="inputSelect"
           >
+            <option selected disabled value="">Alphabetical Sort</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
           </select>

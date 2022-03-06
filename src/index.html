@@ -29,12 +29,7 @@
     <main class="main-page-films">
         <section>
             <form id="form">
-
-                <div class="search-container">
-                    <input type="text" class="inp-search" id="inp-search" placeholder="Encontre um filme">
-                    <button type="button" class="search-icon"><a href="#"></a><img src="img/loupe.png"></a></button>
-                </div>
-
+                <input class="ipt-search" id="ipt-search" type="text" placeholder="Encontre um filme">
                 <select class="select" type="text" id="director">
                     <option class="#" value="" disabled selected id="#">Diretores</option>
                     <option class="lista" type="button" id="#">Hayao Miyazaki</option>
@@ -56,8 +51,8 @@
 
                 <select class="select-order" type="text" id="order">
 					<option class="#"  value="" disabled selected id="#">Ordem</option>
-					<option class="#" type="button" id="az">A > Z</option>
-					<option class="#" type="button" id="za">Z > A</option>
+					<option class="#" type="button" value="a-z" >A - Z</option>
+					<option class="#" type="button" value="z-a">Z - A</option>
                 </select>
 
                 <button class="btn-reset" id="btn-reset">Limpar</button>

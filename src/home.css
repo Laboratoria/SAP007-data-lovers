@@ -5,6 +5,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .body {
+        background-size: cover;
+    }
     .tittle-header-page-films {
         font-size: 40px;
     }
@@ -24,7 +27,7 @@
 
 body {
     background-image: url(./img/Chihiro.jpg);
-    background-size: 100%;
+    background-size: 100vw 100vh, cover;
     background-repeat: no-repeat;
     font-family: 'Actor', sans-serif;
     display: flex;

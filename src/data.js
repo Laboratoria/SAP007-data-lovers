@@ -7,19 +7,29 @@ export const filterDataByProducer = (films, condition) => {
 }
 
 
-export const filterByPeople = (films, condition) => {
-
-    for (let i = 0; i < films.length; i++) {
-        let peoples = films[i].people
-        peoples.filter()(people => (people.gender.includes(condition)))
+export const filterFilmByCharactersByGender = (films, filmSelected, genderSelected) => {
+    const filmSelectedes = films.filter(film => (film.title.includes(filmSelected)))
+    for (let i = 0; i < filmSelectedes.length; i++) {
+        let film = filmSelectedes[i]
+        return film.people.filter(people => (people.gender.includes(genderSelected)))
     }
-
 }
 
+export const filterFilmByCharacters = (films, filmSelected) => {
+    return films.filter(film => (film.title.includes(filmSelected)))
+}
+
+
+
+
+
+
+
 export const sortDataFilms = (films, order) => {
-    if (order === "az") {
+
+    if (order === "A - Z") {
         return films.sort((a, b) => a.title > b.title ? 1 : -1)
-    } else {  
+    } else {
         return films.sort((a, b) => a.title > b.title ? -1 : 1)
-        }
+    }
 }

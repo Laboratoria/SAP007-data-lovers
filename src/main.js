@@ -4,26 +4,13 @@ import { filterDataByDirector, filterDataByProducer, sortDataFilms } from "./dat
 //PARA CHAMAR A ARRAY
 const films = dataGhibli.films;
 
-//PARA MAPEAR OS DIRETORES
-const diretor = films.map(films => films.director);
-console.log(diretor);
-
-//PARA MAPEAR OS PRODUTORES
-const produtor = films.map(films => films.producer);
-console.log(produtor);
-
-//PARA MAPEAR OS PERSONAGENS
-const people = films.map(films => films.people);
-console.log(people);
-
-
 
 //PARA IMPRIMIR NA TELA O POSTER COM O TÍTULO DO FILME
 function cardSection(items) {
     const card = document.getElementById("card")
     card.innerHTML = " "
     for (let i = 0; i < items.length; i++) {
-        const cardSection = document.createElement("section");
+        const cardSection = document.createElement("div");
         const cS = cardSection.setAttribute("class", "div-cards");
         //const titleElement = document.createElement("h2");
         //const title = titleElement.setAttribute("class", "title-cards")
@@ -60,7 +47,7 @@ producer.addEventListener("change", () => {
 
 });
 
-order.addEventListener("change",() => {
+order.addEventListener("change", () => {
     const optionsOrder = document.getElementById("order")
     const orderIndex = optionsOrder.selectedIndex;
     const orderSelected = optionsOrder[orderIndex].text;

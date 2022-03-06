@@ -1,7 +1,5 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import { filterData, sortBy, computeStats} from './data.js';
-
-console.log(computeStats);
+import { filterData, sortBy, computeStats, filternome} from './data.js';
 
 function aparecerCards(data) {
   document.getElementById("lista-cards").innerHTML = data.map((item) => ` 
@@ -33,39 +31,67 @@ evt.preventDefault();
 const selectOrdem = sortBy(data.results, evt.target.value);
 aparecerCards(selectOrdem);  
 }
-
-function mostrarCalculo() {
-  const exibeCalculo = document.getElementById("mostrarCalculo").innerHTML
-
-
-}
-
 //função do filtro;
 function filtroPersonagem(evt) {
   evt.preventDefault();
   const genero = document.getElementById("selectGenero").value;
   const especie = document.getElementById("selectEspecie").value;
-  const status = document.getElementById("selectStatus").value ;
+  const status = document.getElementById("selectStatus").value; 
+
   let fData = data.results
 
   if (genero != "") {
     fData = filterData(fData, ["gender", genero]);
-    //console.log(fData.length)
-  }
 
+    const selectPersonagens = {
+      'totalLenght': data.results.length,
+      'selectedLenght': fData.length
+    };
+    const percentualTotal = computeStats(selectPersonagens);
+    document.getElementById("percentualTotal").innerHTML = `A porcentagem de personagens é: ${percentualTotal} % `  
+  }
   if (status !="") {
     fData = filterData(fData, ["status", status])
+    const selectPersonagens = {
+      'totalLenght': data.results.length,
+      'selectedLenght': fData.length
+    };
+    const percentualTotal = computeStats(selectPersonagens);
+    document.getElementById("percentualTotal").innerHTML = `A porcentagem de personagens é: ${percentualTotal} % `  
   }
 
   if (especie != "") {
     fData = filterData(fData, ["species", especie]);
+    const selectPersonagens = {
+      'totalLenght': data.results.length,
+      'selectedLenght': fData.length
+    };
+    const percentualTotal = computeStats(selectPersonagens);
+    document.getElementById("percentualTotal").innerHTML = `A porcentagem de personagens é: ${percentualTotal} % `  
   }
+  
   aparecerCards(fData);
 }
+
+function pesquisarNome(evt){
+  evt.preventDefault();
+  const devolveNome = filternome(data.results, evt.target.value);
+
+  aparecerCards(devolveNome);
+}
+
+function limparFiltros(){
+  window.location.reload();
+}
+
+
 document.getElementById("selectOrdem").addEventListener("change", ordenarPersonagens);
 document.getElementById("selectStatus").addEventListener("change", filtroPersonagem);
 document.getElementById("selectGenero").addEventListener("change", filtroPersonagem);
 document.getElementById("selectEspecie").addEventListener("change", filtroPersonagem);
+document.getElementById("pesquisarNome").addEventListener("keyup", pesquisarNome);
+document.getElementById("limparFiltro").addEventListener("click", limparFiltros);
+
 
 
 

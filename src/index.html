@@ -30,29 +30,27 @@
   </section>
   <main>
     <section class="menu">
-      <form class="barra-de-pesquisa"> 
-        <input class="pesquisar" id="pesquisarNome" type="search" placeholder="Buscar..." >
+      <form class="barra-de-pesquisa">
+        <input class="pesquisar" id="pesquisarNome" type="search" placeholder="Buscar por nome...">
+        <input type="reset" id="limparFiltro" class="btn-filtro" value="Limpar Filtros">
       </form>
       <select id="selectOrdem" class="btn-filtro">
         <option value="">Ordenar</option>
         <option value="ordenarAZ">A-Z</option>
         <option value="ordernarZA">Z-A</option>
       </select>
-
-      <select id="selectGenero" class="btn-filtro">
-        <option value="">Genero</option>
-        <option value="Female">Femea</option>
-        <option value="Male">Macho</option>
-        <option value="unknown">Indefinido</option>
-      </select>
-
+        <select id="selectGenero" class="btn-filtro">
+          <option value="">Genero</option>
+          <option value="Female">Femea</option>
+          <option value="Male">Macho</option>
+          <option value="unknown">Indefinido</option>
+        </select>
       <select id="selectStatus" class="btn-filtro">
         <option value="">Status</option>
         <option value="Alive">Vivo</option>
         <option value="Dead">Morto</option>
         <option value="unknown">Indefinido</option>
       </select>
-
       <select id="selectEspecie" class="btn-filtro">
         <option value="">Especie</option>
         <option value="unknown">Desconhecido</option>
@@ -60,9 +58,10 @@
         <option value="Alien">Alien</option>
         <option value="Robot">Robo</option>
       </select>
-      <p id="mostrarCalculo"></p>
+
     </section>
     <section class="cards">
+        <span id="percentualTotal"></span>
       <div id="lista-cards">
       </div>
     </section>

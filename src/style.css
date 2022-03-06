@@ -79,52 +79,62 @@ body {
     padding: 00.5rem;
 }
 
-.pesquisar {
+.barra-de-pesquisa{
+    display: flex;
+}
 
+.pesquisar {
     border: none;
-    padding: 0.9rem 2rem;
-    margin: 15px;
+    padding: 0.9rem;
     font-family: 'Amatic SC', cursive;
+    margin: 6px;
     position: relative;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.2rem;
     border-radius: 500px;
     background: #66ff66;
+    box-sizing: border-box;
 }
-
 ::placeholder {
     color: #0a0b0c;
-
 }
-
+.btn-filtro:first-child {
+    margin-left: 0;
+}
 .btn-filtro {
     cursor: pointer;
     border: none;
-    padding: 0.9rem 2rem;
-    margin: 15px;
+    padding: 0.9rem;
+    margin: 6px;
     font-family: 'Amatic SC', cursive;
     position: relative;
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.2rem;
     border-radius: 500px;
     background: #66ff66;
-    color: #0a0b0c
-}
+    color: #0a0b0c;
+    font-weight: bold;
 
+}
+#percentualTotal {
+    display: flex;
+    justify-content: center;
+    color:#fefefe;
+    text-align: center;
+    font-size: 22px;    
+}
 #lista-cards {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .card {
     padding: 0.5rem;
     margin-bottom: 15px;
     width: 300px;
     height: 350px;
 }
-
 .mostrar-cards {
     width: 100%;
     height: 100%;
@@ -132,11 +142,9 @@ body {
     transform-style: preserve-3d;
     margin: 0 auto;
 }
-
 .card:hover .mostrar-cards {
     transform: rotateY(180deg);
 }
-
 .cards-frente, .card-costa {
     position: absolute;
     width: 100%;
@@ -145,18 +153,15 @@ body {
     border-radius: 5px;
     border: 2px solid #00FF00;
 }
-
 .cards-frente {
     color: #1ea51e;
     text-align: center;
 }
-
 .cards-frente p {
     padding-top: 10px;
     font-weight: bold;
     font-size: 22px;
 }
-
 .card-costa {
     display: flex;
     flex-direction: column;
@@ -164,15 +169,12 @@ body {
     transform: rotateY(180deg);
     background-color: #D0CFCE;
     color: #1ea51e;
-
 }
-
 .card-costa p {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
 }
-
 .rodape {
     padding: 2rem;
     background: #fefefe;
@@ -188,3 +190,5 @@ body {
     text-decoration: none;
     color: #0a0b0c;
 }
+
+

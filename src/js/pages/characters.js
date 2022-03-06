@@ -1,8 +1,15 @@
 import data from "../../data/ghibli/ghibli.js";
 import { menu } from "../components/header.js";
-import { filterCharacters, getCharacters } from "../data.js";
+import {
+  filterCharacters,
+  getCharacters,
+  alphabeticalSort,
+  filterByGender,
+} from "../data.js";
 
 menu();
+
+document.getElementById("form").reset();
 
 const charactersAll = getCharacters(data.films);
 
@@ -38,6 +45,23 @@ inputSearch.addEventListener("keyup", (e) => {
   const searchTitle = e.target.value.toLowerCase();
   const dataFiltered = filterCharacters(searchTitle, data.films);
   makeCharacterCards(dataFiltered);
+});
+
+const inputSelect = document.getElementById("alphabeticalSelect");
+
+inputSelect.addEventListener("change", (e) => {
+  const selectedOrder = e.target.value;
+  const sortedCharacters = alphabeticalSort(charactersAll, selectedOrder);
+  makeCharacterCards(sortedCharacters);
+});
+
+const selectGender = document.getElementById("selectGender");
+
+selectGender.addEventListener("change", (e) => {
+  const selectedGender = e.target.value;
+  const filteredGender = filterByGender(charactersAll, selectedGender);
+  console.log(filteredGender, "Gender");
+  makeCharacterCards(filteredGender);
 });
 
 console.log(charactersAll);

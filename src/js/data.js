@@ -66,3 +66,17 @@ export function getCharacters(films) {
   const people = charactersAll.flat();
   return people;
 }
+
+export const alphabeticalSort = (data, order) => {
+  if (order == "A-Z") {
+    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
+  }
+  if (order == "Z-A") {
+    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
+  }
+};
+
+export const filterByGender = (data, item) => {
+  const filteredByGender = data.filter((film) => film.gender === item);
+  return filteredByGender;
+};

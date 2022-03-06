@@ -4,6 +4,8 @@ import { filterCharacters, getCharacters } from "../data.js";
 
 menu();
 
+document.getElementById("form").reset();
+
 const charactersAll = getCharacters(data.films);
 
 console.log(charactersAll, "charactersAll");

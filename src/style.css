@@ -141,17 +141,16 @@ option {
 /* === ESTATISTICAS === */
 .statistics {
   text-align: center;
-    color: #85d97aa8;
-    font-size: 17px;
-    border-radius: 7px;
-    box-shadow: 0 0 20px 0 rgb(7 157 238 / 82%);
-    width: 60%;
-    margin: 2rem auto;
-    padding: 12px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
+  color: #85d97aa8;
+  font-size: 17px;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 0 rgb(7 157 238 / 82%);
+  width: 60%;
+  margin: 2rem auto;
+  padding: 12px;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 /* === CARDS === */

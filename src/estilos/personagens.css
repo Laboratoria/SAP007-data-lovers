@@ -152,6 +152,13 @@
     transform: scale(1.075);
   }
   
+  .informação {
+    background-color: #e8f8fa;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia;
+  }
+
   .rodape {
     flex-shrink: 0;
     font-size: 17px;

@@ -1,32 +1,125 @@
-import { statusFilter, genderFilter } from './src/data.js';
+
 import data from "./data/rickandmorty/rickandmorty.js";
 
-const element = data.results
+const stats_gender = {
 
-google.charts.load('current', { packages: ['corechart'] });
-google.charts.setOnLoadCallback(drawChartStatus);
+  characters: (data) => (data).length,
 
-function drawChartStatus() {
-  let dataStatus = new google.visualization.DataTable;
-  dataStatus.addColumn('string', 'Element');
-  dataStatus.addColumn('number', 'percentege');
-  dataStatus.addRows(statusFilter(element));
-  let options = {
-    heigth: 200,
-    colors: ['#011C40', '#3CA6A6', '#014011', '#012623', '#022601'],
-    'backgroundColor': {
-      'fill': 'white',
-      'opacity': 20,
-    },
-    legend: {
-      textStyle: {
-        color: '#022601',
-        fontSize: 14,
+  gender: (data, genderParameter) => {
+
+    const totalByGender = data.reduce(function (total, character) {
+      if (character.gender === genderParameter) {
+        return total + 1;
       }
-    }
+      return total;
+    }, 0)
+    const average_gender = Number(((totalByGender / data.length) * 100).toFixed(2));
+    return average_gender;
+  },
 
-  };
-  let chart = new google.visualization.PieChart(document.getElementById('grafic'));
-  chart.draw(dataStatus, options)
+};
+const printTotalCharacters = document.getElementById("total_characters");
+const printGenderAverage = document.getElementById("gender_average");
+
+const total_characters = stats_gender.characters(data.results);
+
+printTotalCharacters.innerHTML =
+  `<p class="text">O total de figurinhas da série é:
+    <span class="numberOfCharacters">${total_characters}</span>
+   </p>`;
+
+const male_average = stats_gender.gender(data.results, "Male") + "%";
+const female_average = stats_gender.gender(data.results, "Female") + "%";
+const genderless_average = stats_gender.gender(data.results, "Genderless") + "%";
+const unknown_average = stats_gender.gender(data.results, "unknown") + "%";
+
+printGenderAverage.innerHTML =
+  `
+      <p class="text">&ensp;<span>Médias:</span>&ensp;
+      Masculinos: <span>${male_average}</span> &ensp;| &ensp;
+      Femininos: <span>${female_average}</span> &ensp;| &ensp;
+      Desconhecidos: <span>${unknown_average}</span>&ensp; | &ensp;
+      Sem gênero: <span>${genderless_average}</span> &ensp;
+      </p>
+  `;
+
+const stats_status = {
+
+  characters: (data) => (data).length,
+
+  status: (data, statusParameter) => {
+
+    const totalByStatus = data.reduce(function (total, character) {
+      if (character.status === statusParameter) {
+        return total + 1;
+      }
+      return total;
+    }, 0)
+    const average_status = Number(((totalByStatus / data.length) * 100).toFixed(2));
+    return average_status;
+  },
+
+};
+<<<<<<< HEAD
+let chart = new google.visualization.PieChart(document.getElementById('grafic'));
+chart.draw(dataStatus, options)
 }
+=======
+    const printStatusAverage = document.getElementById("status_average");
+
+
+    const alive_average = stats_status.status(data.results, "Alive") + "%";
+    const dead_average = stats_status.status(data.results, "Dead") + "%";
+    const unknown_status_average = stats_status.status(data.results, "unknown") + "%";
+
+    printStatusAverage.innerHTML =
+      `
+        <p class="text">&ensp;<span>Médias:</span>&ensp;
+        Vivo: <span>${alive_average}</span> &ensp;| &ensp;
+        Morto: <span>${dead_average}</span> &ensp;| &ensp;
+        Desconhecidos: <span>${unknown_status_average}</span>&ensp; | &ensp;
+        </p>
+    `;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// google.charts.load('current', {packages: ['corechart']});
+// google.charts.setOnLoadCallback(drawChartStatus);
+
+// function drawChartStatus () {
+//   let dataStatus = new google.visualization.DataTable;
+//   dataStatus.addColumn('string', 'Element');
+//   dataStatus.addColumn('number', 'percentege');
+//   dataStatus.addRows(statusFilter(element));
+//   let options = {
+//     heigth: 200,
+//     colors: ['#011C40', '#3CA6A6', '#014011', '#012623', '#022601'],
+//     'backgroundColor':{
+//       'fill': 'white',
+//       'opacity': 20,
+//     },
+//     legend: {
+//       textStyle: {
+//         color:'#022601',
+//         fontSize: 14,
+//       }
+//     }
+
+//   };
+//   let chart = new google.visualization.PieChart(document.getElementById('grafic'));
+
+// }
+// drawChartStatus(dataStatus.options)
+>>>>>>> 62dcbdaca0445c7c67abe7c95d94fe273d131ab5
 

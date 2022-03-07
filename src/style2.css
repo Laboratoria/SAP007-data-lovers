@@ -63,13 +63,19 @@
   justify-content: space-around;
 }
 
-
-
 .name-search{
 width: 15%;
 height: 30%;
 margin: 9px 0px;
 margin-top: 1%;
+}
+
+.calculation-result{
+  display: flex;
+  justify-content: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  color: black;
 }
 
 .main-container{

@@ -1,4 +1,38 @@
 /* MAX VAI ATE O NUMERO E O MIN INICIA A PARTIR DO NUMERO */
-@media (min-width: 768px){
-    
+/* === TABLET === */
+@media (min-width: 768px) {
+  .options-menus {
+    padding: 1em 7em;
+  }
+  /*#alphabetic-sequence {
+    padding: 1em 7em;
+  } BOTAO DE ORDEM MENOR QUE OS OUTROS */
+  .card-information {
+    flex-direction: row;
+  }
+
+  .background-card {
+    margin: 1em;
+  }
+}
+/* === DESKTOP === */
+@media (min-width: 1440px) {
+    .filters-container{
+    flex-direction: row;
+    justify-content: center;
+    }
+
+  .options-menus {
+    padding: 1em 5em;
+  }
+
+  footer .criadoras{
+    font-size: large;
+  }
+
+  .icones{
+    display: flex;
+  }
+
+
 }

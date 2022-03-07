@@ -17,11 +17,12 @@
   --green-neon: #5fe431;
   --light-green: #85d97aa8;
   --light-blue: #11aebf;
+  --green-menu:#1bfd9c;
 }
 
 /* === BACKGROUND INDEX === */
 .background {
-  background-image: url(img/2.jpg);
+  background: black;
   font-family: "Shlop", sans-serif;
 }
 /* === SLIDE === */
@@ -72,8 +73,8 @@
 }
 
 /* === FILTROS === */
-option {
-  background-color: #000;
+.value-option {
+  background-color: black;
 }
 
 .filters-container {
@@ -84,7 +85,6 @@ option {
 
 .options-menus {
   margin: 0.5rem 1rem;
-  --green: #1bfd9c;
   font-size: 15px;
   padding: 0.5em 1.7em;
   letter-spacing: 0.06em;
@@ -94,7 +94,7 @@ option {
   overflow: hidden;
   transition: all 0.3s;
   line-height: 1.4em;
-  border: 2px solid var(--green);
+  border: 2px solid var(--green-menu);
   background: linear-gradient(
     to right,
     rgba(27, 253, 156, 0.1) 1%,
@@ -102,9 +102,10 @@ option {
     transparent 60%,
     rgba(27, 253, 156, 0.1) 100%
   );
-  color: var(--green);
+  color: var(--green-menu);
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
     0 0 9px 3px rgba(27, 253, 156, 0.1);
+    outline: none;
 }
 
 .options-menus:hover {
@@ -134,9 +135,6 @@ option {
   transform: translateX(15em);
 }
 
-.filters-name {
-  outline: none;
-}
 
 /* === ESTATISTICAS === */
 .statistics {
@@ -267,8 +265,9 @@ footer {
 footer .criadoras {
   color: #000000;
   text-shadow: 1px 1px 2px var(--green-neon);
+  font-size: small;
 }
 
 .icones {
-  width: 3rem;
+  width: 4rem;
 }

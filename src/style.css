@@ -1,14 +1,81 @@
-body {
- display: contents;
-}
-
 header {
-    height: 20%;
-    width: 100%;
-    padding: 5%;
-    background-repeat: no-repeat;
+  height: 20%;
+  width: 100%;
+  padding: 5%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .title {
   text-align: center;
+}
+
+.barraDePesquisa{
+  display:flex;
+  width:70vw;
+  align-items: center;
+}
+.divNumber{
+  margin: right 200px;
+  background-color:#E0EEEE;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:254px;
+  height: 22px;
+}
+
+.number{
+  float:left;
+  background-color:transparent;
+  font-size:15px;
+  border:none;
+  border-color: transparent;
+  height: 20px;
+  width:192px;
+}
+
+.btnNumber{
+  border:none;
+  border-color: transparent;
+  float:left;
+  width: 58px;
+  height: 22px;
+  border-radius:0 7px 7px 0;
+  font-weight:bold;
+  background:#5F9EA0;
+}
+
+.divSearch{
+  margin-left: 5px;
+  background-color:#E0EEEE;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:254px;
+  height: 22px;
+}
+
+.txtSearch{
+  float:left;
+  background-color:transparent;
+  font-size:15px;
+  border:none;
+  border-color: transparent;
+  height: 20px;
+  width:192px;
+}
+
+.btnSearch{
+  border:none;
+  border-color: transparent;
+  float:left;
+  width: 58px;
+  height: 22px;
+  border-radius:0 7px 7px 0;
+  font-weight:bold;
+  background:#5F9EA0;
+}
+.types{
+  background-color:rgb(26, 26, 73);
+  width: 181px;
+  height: 40px;
 }

@@ -1,4 +1,3 @@
-
 //Filtro de status
 export const statusFilter = (data, condition) => {
   const statusResult = data.filter(
@@ -24,3 +23,12 @@ export const sortNamesFilter = (data, order) => {
     return data.sort((a, z) => a.name > z.name ? -1 : 1);
   }
 };
+
+//Pesquisar
+export const searchName = (data, condition) => {
+  const searchResult = data.filter(
+    (dado) => dado.name.toLowerCase().includes(condition.toLowerCase()));
+  return searchResult;
+}
+
+//includes é um método que determina se um conjunto de caracteres pode ser encontrado dentro de outra string

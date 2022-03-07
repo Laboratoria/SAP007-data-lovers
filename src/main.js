@@ -1,8 +1,16 @@
-import { example } from './data.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
- import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
 
-console.log(example, data);
+import { filterMoviesByDirectors } from './data.js';
+ import data from './data/ghibli/ghibli.js';
+
+const directorsSelect = document.getElementById("director");
+
+console.log(filterMoviesByDirectors(data));
+
+directorsSelect.addEventListener("change", (event) => {
+ console.log(event.target.value)
+
+})
+
+console.log(directorsSelect)
+
+console.log(data)

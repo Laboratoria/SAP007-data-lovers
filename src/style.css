@@ -102,6 +102,7 @@ li a:hover {
     cursor: pointer;
     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 2);
     
+    
 }
 
 .btnClean {
@@ -132,6 +133,9 @@ li a:hover {
     color: white;
     font-size: 1.5vmax;
     width: 250px;
+    height: 60px;
+    padding: 17px;
+
 }
 
 
@@ -148,11 +152,13 @@ li a:hover {
 }
 
 .innerCard {
-    margin: 8vh;
-    justify-content: space-evenly;
+    margin: 3vh 3vw ;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    height: 450px;
+    min-height: 350px;
+
+
 }
 
 
@@ -185,8 +191,9 @@ li a:hover {
     color:white;
     text-align: center;
     position: relative;
-    bottom: 3vh;
-    font-size: 17px;  
+    bottom: 2vh;
+    font-size: 17px; 
+    margin-top: 50px; 
 }
 
 .linkedin {

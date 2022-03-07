@@ -48,9 +48,10 @@ selectProducer.addEventListener("change", (event) => {
     showCards(resultProducer);
 });
 
+//botão para recarregar a página
 const buttonClean = document.getElementById("btnClean");
 function cleanFilters() {
-    window.location.reload(); //recarrega a página
+    window.location.reload(); 
 }
 buttonClean.addEventListener("click", cleanFilters);
 

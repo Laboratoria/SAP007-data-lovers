@@ -152,8 +152,6 @@ option {
     align-items: center;
     justify-content: center;
 }
-}
-
 /* === CARDS === */
 .card-information {
   display: flex;
@@ -178,6 +176,7 @@ option {
 
 .background-card {
   background: var(--green-neon);
+  background-size: cover;
   width: 12rem;
   height: 20rem;
   --border-radius: 6px;

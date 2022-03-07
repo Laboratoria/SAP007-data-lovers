@@ -15,7 +15,7 @@
       <img class="img2-header" src="/img/Rick_and_morty-3.png" alt="Rick and Morty 2-img">
     </div>
   </header>
-  <div class="central-container">
+  <main class="central-container">
     <section class="filter-menu">
       <select class="status-btn">
         <option value="status" selected disabled>Status</option>
@@ -38,11 +38,12 @@
       </select>
       <button class="order-btn" id="btn-az">Ordernar de A-Z</button>
       <button class="order-btn" id="btn-za">Ordernar de Z-A</button>
-      <input type="text" class="name-search" placeholder="Filtar por Nome" id="name-seach">
-    </section>
-    <div id="calculation-result" ></div>
+      <button class="order-btn" id="btn-clear">Limpar Filtros</button>
+      <input type="text" class="name-search" placeholder="Filtar por Nome" id="name-search">
+      </section>
+    <section class="calculation-result" id="calculation-result" ></section>
     <section class="main-container" id="cards"></section>
-  </div>
+  </main>
   <script src="main.js" type="module"></script>
 </body>
 </html>

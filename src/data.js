@@ -24,6 +24,7 @@ export const filterProducer = (films, selectedProducer) => {
 //filtros dos personagens
 
 export const sortAzPersons = (data, order) => {
+  // console.log(data, order)
   if (order == "A-Z") {
     return data.sort((a, z) => a.name > z.name ? 1 : -1);
   } else {
@@ -33,7 +34,7 @@ export const sortAzPersons = (data, order) => {
 
 
 
-// export const filterTitle = (films, selectedFilm) => {
+// export const filterFilms = (films, selectedFilm) => {
 //   return films.filter(film => film.title === selectedFilm)
 // };
 

@@ -24,9 +24,9 @@ showCardsCharacters(printCharacters)
 // chamando a ordenação dos personagens
 
 const characters = data.films.map(addPeople => addPeople.people.map(addName => addName.name))
-console.log(characters)
-// const arrPeople = [].concat.apply([],characters);
-// console.log(arrPeople, "xxxxx")
+// console.log(characters)
+const arrPeople = [].concat.apply([],characters);
+console.log(arrPeople)
 
 const sortOrderPersons = document.getElementById("sortAZ");
 

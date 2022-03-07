@@ -1,8 +1,9 @@
 import { sortAz, filterTitle, filterRating, filterProducer, sortAzPersons } from './data.js';
 import data from './data/ghibli/ghibli.js';
-import { showCardsCharacters } from './characters.js';
+// import { showCardsCharacters } from './characters.js';
 
 const movies = data.films
+
 const moviesContainer = document.getElementById("moviesContainer");
 function showCards(movies) {
     moviesContainer.innerHTML = movies.map(movie =>
@@ -17,6 +18,7 @@ function showCards(movies) {
 }
 
 showCards(movies)
+
 
 //chamando os filtros
 
@@ -52,15 +54,4 @@ function cleanFilters() {
 }
 buttonClean.addEventListener("click", cleanFilters);
 
-
-//chamando os filtros dos personagens
-
-const sortOrderPersons = document.getElementById("sortAZ");
-
-sortOrderPersons.addEventListener("change", (event) => {
-    const selectedSortPerson = event.target.value;
-    const filterAzPerson = sortAzPersons(movies, selectedSortPerson);
-    showCardsCharacters(filterAzPerson);
-
-});
 

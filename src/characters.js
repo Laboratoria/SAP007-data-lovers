@@ -1,10 +1,11 @@
 import data from './data/ghibli/ghibli.js';
+import { sortAzPersons } from './data.js';
 
-const personagens = data.films
+const printCharacters = data.films
 
-export const charactersContainer = document.getElementById("charactersContainer");
-function showCardsCharacters(personagens) {
-    charactersContainer.innerHTML = personagens.map((film) =>
+const charactersContainer = document.getElementById("charactersContainer");
+function showCardsCharacters(printCharacters) {
+    charactersContainer.innerHTML = printCharacters.map((film) =>
         film.people.map((character) =>
 
             `        
@@ -17,5 +18,30 @@ function showCardsCharacters(personagens) {
         ).join('')
     )
 }
-showCardsCharacters(personagens)
+showCardsCharacters(printCharacters)
 
+
+// chamando a ordenação dos personagens
+
+const characters = data.films.map(addPeople => addPeople.people.map(addName => addName.name))
+console.log(characters)
+// const arrPeople = [].concat.apply([],characters);
+// console.log(arrPeople, "xxxxx")
+
+const sortOrderPersons = document.getElementById("sortAZ");
+
+sortOrderPersons.addEventListener("change", (event) => {
+    const selectedSortPerson = event.target.value;
+    const filterAzPerson = sortAzPersons(arrPeople, selectedSortPerson);
+    showCardsCharacters(filterAzPerson);
+ 
+});
+
+
+
+
+// const people = films.map(films => films.people);
+// console.log(people)
+
+// const arrPeople = [].concat.apply([],people);
+// console.log(arrPeople)

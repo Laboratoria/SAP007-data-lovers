@@ -23,14 +23,14 @@ export const filterProducer = (films, selectedProducer) => {
 
 //filtros dos personagens
 
-
 export const sortAzPersons = (data, order) => {
-  if (order === "A-Z") {
+  if (order == "A-Z") {
     return data.sort((a, z) => a.name > z.name ? 1 : -1);
   } else {
     return data.sort((a, z) => a.name > z.name ? -1 : 1);
   }
 };
+
 
 
 // export const filterTitle = (films, selectedFilm) => {

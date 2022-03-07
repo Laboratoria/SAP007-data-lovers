@@ -1,5 +1,5 @@
-import { buscarNome, buscarEspecie, SortOrdem } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js'; 
+import {buscarNome, buscarEspecie, SortOrdem, calculos} from './data.js';
 
 function mostrarCards(data) {
   document.getElementById('recebe-card').innerHTML = data.map((item) => `
@@ -22,38 +22,49 @@ function mostrarCards(data) {
 
 mostrarCards(data.results);
 
-
+//SELETORES
 let filtroPesquisar = document.querySelector('.pesquisar');
 let limparBusca = document.querySelector('.limpar');
 let selecaoEspecie = document.querySelector('.filtro-especies');
 let selecaoOrdem = document.querySelector('.filtro-ordem');
+let porcentagem = document.getElementById('filtro-porcentagem')
+let voltarTopo = document.querySelector('.voltar-topo');
+
 
 function pesquisarNomes() {
   return mostrarCards(buscarNome(data.results, filtroPesquisar.value))
 }
 
-
 function filtrarEspecie(e) {
-  return mostrarCards(buscarEspecie(data.results, e.target.value))
+  const resultEspecie = buscarEspecie(data.results, e.target.value)
+  const porcentagemEspecie = `${calculos(data.results.length, resultEspecie.length)}% dos personagens`
+  filtroPorcentagem(porcentagemEspecie)
+  return mostrarCards(resultEspecie)
 }
+
 
 function filtroOrdem(){
   const ordemValue = selecaoOrdem.value 
   const ordenacao = SortOrdem(data.results, ordemValue)
   return mostrarCards(ordenacao)
 }
-  
 
+function filtroPorcentagem(data){
+  porcentagem.innerHTML = `Essa categoria representa ${data}`
+}
+  
 function limparFiltros(){
   window.location.reload()
 }
+
+function subirPagina(){
+    window.scrollTo(0, 0);
+}
   
-
-
 //EVENTOS
-filtroPesquisar.addEventListener('keypress', pesquisarNomes);
-limparBusca.addEventListener('click', limparFiltros);
-selecaoEspecie.addEventListener('change', filtrarEspecie);
+filtroPesquisar.addEventListener('keypress', pesquisarNomes)
+selecaoEspecie.addEventListener('change', filtrarEspecie)
 selecaoOrdem.addEventListener('change', filtroOrdem)
-
+voltarTopo.addEventListener('click', subirPagina)
+limparBusca.addEventListener('click', limparFiltros)
 

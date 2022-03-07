@@ -11,7 +11,13 @@
 
 <body>
   <header>
-    <img src='./image/logo.png' alt='logo rickandmorty' class='logo-img'>
+    <img src="./image/logo.png" alt="logo rickandmorty" class="logo-img">
+    <nav class="menu">
+      <ul class="lista">
+        <li><a class="links" href="index.html"> Home</a></li>
+        <li><a class="links" href="estatistica.html">Estatística</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class='todas-buscas'>
@@ -24,6 +30,12 @@
       </section>
     </div>
 
+    <div class='centro'>
+      <section>
+        <p class="filtro-porcentagem" id="filtro-porcentagem"></p>
+      </section>
+    </div>
+    
     <div class='direita'>
       <section>
         <select class='filtro-especies' id='filtro-especies'>
@@ -53,11 +65,16 @@
     </div>
   </main>
 
+  
+
   <div class='todos-cards'>
     <div id='recebe-card'></div>
   </div>
-</body>
 
+
+  <button class='voltar-topo' id='voltar-topo'><img src="./image/topo.png" alt=""></button>
+
+</body>
 <footer>
   <p>Desenvolvido por <a href='https://github.com/dayanersilva' target='_blank'>Dayane Rodrigues</a> e <a
       href='https://github.com/karolsontak' target='_blank'>Karol Sontak</a></p>

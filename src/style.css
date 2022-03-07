@@ -1,35 +1,36 @@
-*{
+* {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-body{
+body {
   background-color: #003563;
   font-family: 'Didact Gothic';
   color: white;
-  overflow-x:hidden;
+  overflow-x: hidden;
   max-width: 100vw;
   max-height: 100vh;
+
 }
 
 header{
   width: 100%;
-  height: 20%;
   margin: auto;
+  height: 20%;
   display: inline-flex;
   justify-content: space-evenly;
-  align-items:center;
+  align-items: center;
   text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
-  font-weight:normal;
+  font-weight: normal;
   font-size: 2vmax;
 }
 
-a:visited{
+a:visited {
   color: white;
   text-decoration: none;
   font-weight: normal;
@@ -39,30 +40,29 @@ a:hover{
   font-weight:bold;
 }
 
-button{
+button {
   background: #003563;
   color: white;
   font: 'Didact Gothic';
   margin: auto;
   border: none;
-  font-size: 2vmax;
   cursor: pointer;
   text-decoration-line: none;
   font-size: 2vmax;
 }
 
-.logo{
-  display:flex;
-  float:center;
+.logo {
+  display: flex;
+  float: center;
   width: auto;
   margin: auto;
   max-width: 30%;
 }
 
-.imagemChihiro{
+
+.imagemChihiro {
   display: flex;
   float: center;
-  position: center;
   width: auto;
   max-width: 70%;
   max-height: max-content;
@@ -70,54 +70,90 @@ button{
   border-radius: 1%;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.pageAbout{
+.pageAbout {
   background-color: #95bad7;
   border-radius: 1%;
   width: 60vw;
+  max-height: 70vh;
   margin: 2% auto auto auto;
-  justify-content: center;
-  align-items: center;
+  align-content: flex-start;
   padding-top: 1%;
   color: #003563;
 }
 
-.headerAbout{
+.headerAbout {
   width: 30vw;
   margin: auto;
   display: flex;
+  padding-top: 2%;
   flex-wrap: nowrap;
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-size: 1vmax;
 }
 
-.spirits{
-  height: 15vh;
+.spirits {
+  width: auto;
+  max-width: 7vw;
+  max-height: max-content;
 }
 
-.refletir{
+.refletir {
   transform: rotateY(180deg);
 }
 
-.titleAbout{
+.titleAbout {
   padding: 2%;
   font-size: 200%;
 }
 
-.about{
+.about {
   text-align: center;
   color: #003563;
-  font-size: 100%;
-  margin: 1% 10% 10% 10%;
+  font-size: 1.2vmax;
+  margin: 1% 10% 1% 10%;
 }
 
-.totoro{
+.totoro {
   display: flex;
-  height: 20vh;
+  justify-content: flex-start;
+  width: auto;
+  max-width: 13vw;
+  max-height: max-content;
+}
+
+.mainFilms {
+  display: flex;
+  margin: auto;
+  background-color: #95bad7;
+  justify-content: space-evenly;
+  justify-items: center;
+  min-height: 70vh;
+  flex-wrap: wrap;
+}
+
+
+.filterFilms {
+  color: #003563;
+  background-color: #95bad7;
+  margin: 1vmax;
+  border-radius: 5px;
+  border: 0.1vmax solid #003563;
+  border-color: #003563;
+  height: 2vmax;
+  font-size: 1vmax;
+  text-align: center;
+  box-shadow: inset 0 0 0.3em #003563;
+}
+
+.inputFilms::placeholder {
+  color: #003563;
+  text-align: center;
 }
 
 .mainPersonagens{
@@ -148,21 +184,16 @@ button{
   text-align:center;
 }
 
-hr{
+hr {
   width: 100vw;
   height: 2vh;
   background-color: transparent;
 }
 
-footer{
+footer {
   display: flex;
   background-color: #003563;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.2vmax;
   justify-content: center;
-  align-self: flex-end;
 }
-
-
-
-

@@ -1,4 +1,4 @@
-import {} from './data.js';
+import {filtroGenero} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 ///Imprimir Cards na tela///
@@ -9,7 +9,7 @@ function imprimirCardsTela (data) {
         
     <div class = "cards">
         <div class="frenteCards">
-            <img class="cardImg" src="${item.image}" ></img>
+            <img class="cardImg" src="${item.image}" loading="lazy" ></img>
         </div>
         
         <div class = "telaText">
@@ -26,3 +26,14 @@ function imprimirCardsTela (data) {
 ).join(' ')
 }
 imprimirCardsTela(data.results);
+
+const seletorFiltroStatus = document.getElementById("seletorStatus")
+
+seletorFiltroStatus.addEventListener("change", (event) => {
+
+
+const resultadoStatus = data.results.filter((item) => {
+    return item.status === event.target.value
+});
+    console.log(resultadoStatus)
+});

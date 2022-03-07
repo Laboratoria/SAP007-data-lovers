@@ -15,7 +15,7 @@
   <div id="root"></div>
   <header class="cabecalho">
     <img src="logo.png" class="logo" alt="logo rick and morty" width="300" height="150">
-    <h1 class="titulosite"> Guia de Personagens</h1>
+    <h1 class="titulosite" url= "index.html"> Guia de Personagens</h1>
   </header>
 
   <div class="container_filtros_search_ordem">
@@ -32,6 +32,7 @@
     <form class="menufiltros">
       <label>Espécie</label>
       <select class="" id="species-filter">
+        <option disabled selected></option>
         <option value="alien">Alien</option>
         <option value="animal">Animal</option>
         <option value="cronenberg">Cronenberg</option>
@@ -47,27 +48,27 @@
       </select>
 
       <label>Gênero</label>
-      <select class="" id="">
+      <select class="" id="selecione-genero">
+        <option disabled selected></option>
         <option value="male">Masculino</option>
         <option value="female">Feminino</option>
         <option value="unknown">Desconhecido</option>
       </select>
 
       <label>Status</label>
-      <select class="" id="">
+      <select class="" id="seletorStatus">
+        <option disabled selected></option>
         <option value="alive">Vivo</option>
         <option value="dead">Morto</option>
         <option value="unknown">Desconhecido</option>
       </select>
 
-      <input type="submit" value="Filtre" class="btn_submit">
+      <input type="submit" value="Filtre" class="btn_submit" id="enviarFiltros" onsubmit="return enviar()">
       <input type="reset" value="X" class="btn_reset">
     </form>
   </div>
 
   </div>
-
-      <button id="menulimpar" class="limpaFiltro">Limpar Filtros</button>
       
     </section>
   </div>

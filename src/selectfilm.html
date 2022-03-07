@@ -6,17 +6,74 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: white;">
-    <h1 style="color: red;">
-        Hello World!
-    </h1>
-    <div class="ordem"></div>
-    <!-- <h1>
-        Filme específico
-    </h1>
-    <div class="specific-list">
-        <div class="specific"></div>
-    </div> -->
-    <script src="main.js" type="module"></script>
+  <body>
+    <header>
+      <input class="header-input" type="checkbox" id="check">
+      <label id="icone" for="check"></label>
+      <div class="barra">
+        <nav class="menu-text">
+          <a href="/">
+            <div class="Link">INÍCIO</div>
+          </a>
+          <a href="/studio" target="_blank">
+            <div class="Link">O ESTÚDIO</div>
+          </a>
+          <a href="https://www.facebook.com/GKIDSfilms" target="_blank">
+            <div class="Link">FACEBOOK</div>
+          </a>
+          <a href="https://www.instagram.com/GKIDSfilms/" target="_blank">
+            <div class="Link">INSTAGRAM</div>
+          </a>
+          <a href="https://twitter.com/GKIDSfilms" target="_blank">
+            <div class="Link">TWITTER</div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCb9ME2w6Y_4jChUVlWdltVg" target="_blank">
+            <div class="Link">YOUTUBE</div>
+          </a>
+        </nav>
+      </div>
+      <nav class="menu">
+        <a href="/">
+          <img class="totoro" src="./totoro.png" id="logo" width="auto" height="80">
+        </a>
+      </nav>
+      <label for="menu-hamburguer">
+        <div class="mburg">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+    </header>
+    <nav class="selected-film">
+      <div class="background-filme"></div>
+      <div class="title-container">
+        <p class="title-p" id="titulo"></p>
+      </div>
+      <img id="poster" src=""/>
+      <div style="color: white;">SINOPSE</div>
+      <div id="sinopse" style="color: white;"></div>
+      <div style="color: white;">DIRETOR</div>
+      <div id="diretor" style="color: white;"></div>
+      <div style="color: white;">PRODUTOR</div>
+      <div id="produtor" style="color: white;"></div>
+      <div style="color: white;">LANÇAMENTO</div>
+      <div id="ano" style="color: white;"></div>
+      <div style="color: white;">NOTA</div>
+      <div id="nota" style="color: white;"></div>
+      <div class="title-container">
+        <p class="title-p">PERSONAGENS</p>
+    </div>
+    </nav>
+    <footer>
+      <p class="footer-text">
+        DATA LOVERS
+      </p>
+      <p class="footer-text">
+        By: Amanda Gusmão e Camila Aguiar
+      </p>
+      <p class="footer-text">
+        Laboratoria - 2022
+      </p>
+    </footer>
+    <script src="film.js" type="module"></script>
   </body>
 </html>

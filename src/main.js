@@ -1,4 +1,4 @@
-import { filmOrder, findMovie } from './data.js';
+import { filmOrder, filterMovie } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 // printar os filmes na tela
@@ -7,7 +7,7 @@ function printTela(data) {
     document.getElementById("filmes").innerHTML = data.map((item) => `
     <div class="item">
         <div class="img-te" href="/filme">
-            <a href="/selectfilm" target="_blank">
+            <a href="/selectfilm?id=${item.id}" target="_blank">
                 <img src="${item.poster}" />
             </a>
         </div>
@@ -32,9 +32,9 @@ order.addEventListener("change", (event) => {
 document.getElementById('btnBusca').addEventListener('click', function () {
     event.preventDefault();
     const buscaInput = document.getElementById("txtBusca").value;
-
-    const filmesEncontrados = findMovie(filmes, buscaInput);
-
+    
+    const filmesEncontrados = filterMovie(filmes, buscaInput);
+    
     printTela(filmesEncontrados);
 });
 

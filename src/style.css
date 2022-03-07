@@ -26,7 +26,7 @@
 }
 /* === SLIDE === */
 .box-logo {
-  width: 60vw;
+  width: 78vw;
   display: flex;
   margin: auto auto 1.5rem;
 }
@@ -141,16 +141,17 @@ option {
 /* === ESTATISTICAS === */
 .statistics {
   text-align: center;
-  color: #85d97aa8;
-  font-size: 15px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px 0 rgba(7, 157, 238, 0.817);
-  width: 60%;
-  margin: 2rem auto;
-  padding: 16px;
-  display: none;
-  align-items: center;
-  justify-content: center;
+    color: #85d97aa8;
+    font-size: 17px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 0 rgb(7 157 238 / 82%);
+    width: 60%;
+    margin: 2rem auto;
+    padding: 12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 /* === CARDS === */
@@ -166,7 +167,7 @@ option {
 }
 
 .image-card {
-  width: 29vw;
+  width: 36vw;
   margin: auto;
 }
 
@@ -177,21 +178,21 @@ option {
 
 .background-card {
   background: var(--green-neon);
-  width: 200px;
-  height: 254px;
+  width: 12rem;
+  height: 20rem;
   --border-radius: 6px;
   --border-width: 4px;
   appearance: none;
   position: relative;
   padding: 1em 1em 14em;
   border: 0;
-  font-size: 16px;
+  font-size: 100%;
   color: black;
   z-index: 2;
   border-radius: 6px;
   display: flex;
   flex-flow: wrap;
-  margin: 1em;
+  margin: 9% 24%;
 }
 
 .background-card::after {
@@ -257,7 +258,7 @@ footer {
   font-size: large;
   margin-top: 3rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -267,4 +268,8 @@ footer {
 footer .criadoras {
   color: #000000;
   text-shadow: 1px 1px 2px var(--green-neon);
+}
+
+.icones {
+  width: 3rem;
 }

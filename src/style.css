@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Segoe UI", Helvetica, Arial, Verdana;
+  font-family: "Poppins";
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -12,20 +12,21 @@
   justify-content: center;
   background-color: #f0e260;
   align-items: center;
-  flex-wrap: wrap;
   padding: 2em;
+  
 }
 
 .logo {
-  width: 25%;
-  height: 25%;
+  width: 20%;
+  height: 20%;
   margin-right: 3rem;
 }
 
 .container_filtros_search_ordem {
-  background: #ffffff;
+  background: #f5efef;
   box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
   border-radius: 0.3em;
+  border: #a2b9df solid 1px;
   padding: 1rem;
   font-size: 1.125rem;
   width: fit-content;
@@ -37,7 +38,6 @@
   align-items: center;
   flex: 1;
   flex-direction: row;
-  
 }
 
 main {
@@ -56,23 +56,23 @@ main {
   font-weight: bold;
 }
 
-.btn_submit {
-  width: 4rem;
-  text-align: center;
-  padding: 0.1rem;
-  border-radius: 0.3em;
-  border: #07d9c4 solid 1px;
-  background-color: #07d9c4;
-  font-size: 0.975rem;
-}
+.btn_submit,
 .btn_reset {
   width: 4rem;
   text-align: center;
   padding: 0.1rem;
   border-radius: 0.3em;
+  font-size: 0.975rem;
+}
+
+.btn_submit {
+  border: #07d9c4 solid 1px;
+  background-color: #07d9c4;
+}
+
+.btn_reset {
   border: #f76a68 solid 1px;
   background-color: #f76a68;
-  font-size: 0.975rem;
 }
 .btn_top {
   border-radius: 0.3em;
@@ -111,26 +111,45 @@ main {
   margin-top: 100px;
   justify-items: flex-end;
   grid-gap: 1rem;
-  
 }
 
 .cards {
-  border: #26353e solid 1px;
+  border: #a2b9df solid 1px;
   padding: 0.938rem;
+  padding-top: 1.8rem;
   border-radius: 0.313rem;
   background: #f5efef;
   box-shadow: 5px 5px 17px #e1dcdc, -5px -5px 17px #ffffff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex: 0 1 calc(25% - 1em);
+  text-align: center;
 }
 
-.cardImg{
-  width: fit-content;
+.telaTextCard {
+  width: 230px;
+  height: 200px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+ul.telaTextCard {
+  margin-top:12px;
+}
+.telaTextCard li {
+  text-align: left;
+  font-family: "Poppins";
+}
+
+.cardImg {
+  width: 150px;
   border-radius: 10%;
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 select {
@@ -140,6 +159,16 @@ select {
 
 @media (max-width: 767px) {
   .cards {
-    flex: 0 1 calc(100% - 1em);
+    
   }
 }
+
+.nome_personagem{
+    font-size: 1.0rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color:#BF047E;
+}
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
   <meta charset='utf-8'>
@@ -12,24 +12,19 @@
 <body>
   <header>
     <img src='./image/logo.png' alt='logo rickandmorty' class='logo-img'>
-    <nav class='menu'>
-      <ul class='lista'>
-        <li><a class='links' href='index.html'> <img src='./image/home.png' alt=''></a></li>
-        <li><a class='links' href='episode.html'>Episódios</a></li>
-        <li><a class='links' href='personagens.html'>Personagens</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main class='todas-buscas'>
-    <div>
-      <section class='pesquisar-limpar'>
+    <div class='esquerda'>
+      <section>
         <input class='pesquisar' id='pesquisar' type='search' placeholder='Buscar Nome...'>
+      </section>
+      <section>
         <button class='limpar' id='limpar'>Limpar Filtros</button>
       </section>
     </div>
 
-    <div class='filtros'>
+    <div class='direita'>
       <section>
         <select class='filtro-especies' id='filtro-especies'>
           <option value='' selected disabled>Espécie</option>
@@ -47,9 +42,7 @@
           <option value='unknown'>Indefinido</option>
         </select>
       </section>
-    </div>
 
-    <div>
       <section>
         <select class='filtro-ordem' id='ordem'>
           <option class='filtro-ordem' value='' selected disabled>Ordem</option>
@@ -59,9 +52,15 @@
       </section>
     </div>
   </main>
-  <div class='todos-cards'>
-    <div id='recebe-card'></div>
-  </div>
+  <section>
+    <p class="calculo" id="porcentagem-filtro"></p>
+
+    <div class='todos-cards'>
+      <div id='recebe-card'></div>
+    </div>
+
+  </section>
+
 </body>
 
 <footer>

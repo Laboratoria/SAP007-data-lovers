@@ -1,5 +1,6 @@
-import { buscarNome, buscarEspecie, SortOrdem } from './data.js';
+import { buscarNome, buscarEspecie, SortOrdem, calculos } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
+
 
 function mostrarCards(data) {
   document.getElementById('recebe-card').innerHTML = data.map((item) => `
@@ -20,22 +21,27 @@ function mostrarCards(data) {
 .join('')
 }
 
-mostrarCards(data.results);
+mostrarCards(data.results) 
 
 //LIGAÇÃO COM HTML 
-let filtroPesquisar = document.getElementById('pesquisar');
-let limparBusca = document.getElementById('limpar');
-let selecaoEspecie = document.getElementById('filtro-especies');
-let selecaoOrdem = document.querySelector('.filtro-ordem');
+let filtroPesquisar = document.getElementById('pesquisar')
+let limparBusca = document.getElementById('limpar')
+let selecaoEspecie = document.getElementById('filtro-especies')
+let selecaoOrdem = document.querySelector('.filtro-ordem')
+let porcentagem = document.getElementById('porcentagem-filtro')
 
 
 function pesquisarNomes() {
   return mostrarCards(buscarNome(data.results, filtroPesquisar.value))
+
 }
 
 
 function filtrarEspecie(e) {
-  return mostrarCards(buscarEspecie(data.results, e.target.value))
+  const resultEspecie = buscarEspecie(data.results, e.target.value)
+  const porcentagemEspecie = `${calculos(data.results.length, resultEspecie.length)}% dos personagens`
+  porcentagemFiltro(porcentagemEspecie)
+  return mostrarCards(resultEspecie)
 }
 
 
@@ -45,8 +51,12 @@ function limparFiltros(){
 
 function filtroOrdem(){
   const ordemValue = selecaoOrdem.value 
-  const ordenacao = SortOrdem(data.results, ordemValue)
-  return mostrarCards(ordenacao)
+  return mostrarCards(SortOrdem(data.results, ordemValue))
+}
+
+function porcentagemFiltro(data){
+  porcentagem.innerHTML = `Essa categoria representa ${data}`
+  porcentagem.style.display = 'inline-block'
 }
   
 
@@ -56,3 +66,5 @@ filtroPesquisar.addEventListener('keypress', pesquisarNomes)
 limparBusca.addEventListener('click', limparFiltros)
 selecaoEspecie.addEventListener('change', filtrarEspecie)
 selecaoOrdem.addEventListener('change', filtroOrdem)
+
+

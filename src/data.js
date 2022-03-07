@@ -1,7 +1,7 @@
 export const buscarNome = (data, busca) => { 
   const resultadoNomes = data.filter(personagem => personagem.name.toUpperCase().includes(busca.toUpperCase()))
   return resultadoNomes
-}; 
+}
 
 
 export const buscarEspecie = (data, especie) => { 
@@ -19,6 +19,11 @@ export const SortOrdem = (data, ordemValue) => {
       return order.reverse()
   }
 }
+
+export const calculos = (total, portion) => {
+  const porcentagem = Math.round((portion * 100) / total)
+  return porcentagem
+};
 
 //computeStats(data): essa função nos permite fazer cálculos estatísticos básicos para serem exibidos de acordo com o que os dados permitem.
 

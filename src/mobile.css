@@ -6,116 +6,101 @@
 }  
 
 body {
-  background: url(./image/bg-purple.jpg) no-repeat;
   width: 100%;
-  background-color: rgb(36, 36, 36);
+  background-color:rgb(213, 172, 161);
 }
 
-header {
-  margin-top: 5px;
-  display: flex;
-  align-items: center;
+body::before {
+  content: " ";
+  background: url(./image/bg\ responsivo.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;    
+  background-size: 100%;
 }
 
 .logo-img {
-  width: 25%;
-  margin-top: 30px;
-  margin-left: 50px;
-}
-
-.menu {
-  width: 40%;
-  background-color: rgba(223, 223, 223, 0.068);  
-  padding: 0.5rem;
-  margin-top: 30px;
-  margin-left: 290px;
-  box-shadow: 0.3em 0.3em 0.3em #D4D952;
-  border-radius: 10px;
-}
-  
-.lista {
-  list-style: none;   
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-  
-.links {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;   
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 2%;
 }
 
 .todas-buscas {
-  position: absolute;
   display: flex;
+  flex-direction:column;
+  align-items: center;
   border-radius: 10px;
+  margin-top: 10%;
 }
 
 .pesquisar {
   background-color: #ffffff;
-  font-size: 16px;
-  width: 200px;
+  font-size: 40%;
+  width: 150%;
   padding: 5px;
-  margin-left: 50px;
   border-radius: 5px;
-  margin-top: 15px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;}
+  box-shadow: 0.1rem 0.1rem 0.1rem  black;
+}
 
 .limpar {
   background-color: #636668;
   color: white;
-  font-size: 16px;
-  width: 130px;
-  padding: 5px;
-  margin-left: 5px;
+  width: 100%;
+  font-size: 40%;
+  padding: 6px;
   border-radius: 5px;
-  margin-top: 15px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;}
+  box-shadow: 0.1rem 0.1rem 0.1rem  black;
+  padding-top: 2%;
+}
 
 .filtro-especies {
   padding: 5px;
   background-color: white;
-  font-size: 16px;
-  margin-left: 350px;
+  width: 100%;
+  font-size: 40%;
   border-radius: 5px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+  box-shadow: 0.1rem 0.1rem 0.1rem  black;
+  padding-top: 2%;
 }
 
 .filtro-ordem {
+  display: flex;
   padding: 5px;
+  width: 100%;
   background-color: white;
   text-align: center;
-  font-size: 16px;
-  margin-left: 20px;
+  font-size: 40%;
   border-radius: 5px;
   text-align: center;
-  width: 100px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+  border-radius: 5px;
+  box-shadow: 0.1rem 0.1rem 0.1rem  black;
+  padding-top: 2%;
+}
+
+.todos-cards {
+  margin-top: 10%;
 }
 
 .card {
   background-color:rgba(17, 50, 53, 0.904);
-  display: inline-block;
+  display: inline-flex;
   padding: 15px;
   margin-bottom: 15px;
   width: 180px;
-  height: 280px;
+  height: 290px;
   border: 5px solid #D4D952;
   border-radius: 9px;
   text-align: center;
   cursor: pointer;
-  margin: 40px 5px 0px 30px;
+  margin: 10px 0px 20px 70px;
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;
-  margin-top: 200px;
+  justify-content: space-evenly;
 }
 
 .card-interno {
@@ -142,7 +127,7 @@ header {
   font-weight: bold;
   color: #31B0CC;
   margin-top: 5px;
-}
+}    
 
 footer {
   font-size: 14px;
@@ -160,6 +145,16 @@ footer {
 }
 
 footer a {
-    color: #fff;
-    text-decoration: underline
+  color: #fff;
+  text-decoration: underline
 }
+
+
+
+
+
+/*@media screen and (min-width: 1024px){
+
+@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 480px) {

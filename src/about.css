@@ -60,45 +60,57 @@ button {
   max-width: auto;
 }
 
-
-.imagemChihiro {
-  display: flex;
-  float: center;
-  width: auto;
-  max-width: 70%;
-  max-height: max-content;
-  margin: auto;
+.pageAbout {
+  background-color: #95bad7;
   border-radius: 1%;
-}
-
-
-
-.mainPersonagens{
-  display:flex;
-  margin: auto;
-  background-color: #95bad7;
-  justify-content: space-evenly;
-  justify-items: center;
-  min-height: 70vh;
-  flex: wrap;
-}
-
-.filterCharacteres{
+  width: 60vw;
+  max-height: 70vh;
+  margin: auto auto auto auto;
+  align-content: flex-start;
+  padding-top: 1%;
   color: #003563;
-  background-color: #95bad7;
-  margin: 1vmax;
-  border-radius:5px;
-  border: 0.1max solid#003563;
-  border-color: #003563;
-  height: 2vmax;
-  font-size: 1vmax;
-  text-align: center;
-  box-shadow: inset 0 0 0.3em #003563;
 }
 
-.inputCharacteres::placeholder{
-  color:#003563;
-  text-align:center;
+.headerAbout {
+  width: 30vw;
+  margin: auto;
+  display: flex;
+  padding-top: 2%;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vmax;
+}
+
+.spirits {
+  width: auto;
+  max-width: 7vw;
+  max-height: max-content;
+}
+
+.refletir {
+  transform: rotateY(180deg);
+}
+
+.titleAbout {
+  padding: 2%;
+  font-size: 200%;
+}
+
+.about {
+  text-align: center;
+  color: #003563;
+  font-size: 1.2vmax;
+  margin: 0% 10% 1% 10%;
+}
+
+.totoro {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  max-width: 13vw;
+  max-height: max-content;
 }
 
 hr {

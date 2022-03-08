@@ -62,8 +62,6 @@ const stats_status = {
 };
 const printStatusAverage = document.getElementById("status_average");
 
-const totalCharactersStatus = stats_status.characters(data.results);
-
 
 const alive_average = stats_status.status(data.results, "Alive") + "%";
 const dead_average = stats_status.status(data.results, "Dead") + "%";

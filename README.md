@@ -1,9 +1,16 @@
-# Data Lovers
+# Data Lovers - Rick and Morty
+
+Projeto desenvolvido no Bootcamp Laboratória Brasil - SAP 007.
+
+## Autores
+
+- [Gabriela Medrado](www.linkedin.com/in/gabrielamedrado)
+- [Suelen Escorcio](https://github.com/suelenescorcio)
 
 ## Índice
 
-- [1. Preâmbulo](#1-preâmbulo)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
+- [Introdução](#introdução)
+- [Definição do Produto](#definição-do-produto)
 - [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 - [4. Considerações gerais](#4-considerações-gerais)
 - [5. Critérios mínimos de aceitação do
@@ -14,9 +21,24 @@
   complementares](#8-pistas-dicas-e-leituras-complementares)
 - [9. Checklist](#9-checklist)
 
+
+
+## Introdução
 ---
 
-## 1. Preâmbulo
+**Data Lovers - Rick and Morty** é uma ferramenta de busca de personagens da série Rick and Morty. Neste projeto você consegue filtrar os personagens por gênero, status (vivo/morto/desconhecido), ordenar por ordem alfabética além de poder pesquisar os personagens pelo nome. Ao navegar, o usuário também pode conferir cálculos agregados dos personagens e ser redirecionado para serviços de streaming que exibem a série.
+
+O objetivo do projeto é oferecer aos fãs da série, algumas informações sobre os 493 personagens, como status, gênero, espécie e local de origem.
+
+## Definição do Produto
+
+---
+
+
+
+
+
+
 
 Segundo a
 [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read)

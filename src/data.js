@@ -21,10 +21,10 @@ export const filterProducer = (films, selectedProducer) => {
   return films.filter(film => film.producer === selectedProducer)
 };
 
-//filtros dos personagens
+//FILTROS PERSONAGENS
 
 export const sortAzPersons = (data, order) => {
-  // console.log(data, order)
+ 
   if (order == "A-Z") {
     return data.sort((a, z) => a.name > z.name ? 1 : -1);
   } else {
@@ -34,16 +34,11 @@ export const sortAzPersons = (data, order) => {
 
 
 
-// export const filterFilms = (films, selectedFilm) => {
-//   return films.filter(film => film.title === selectedFilm)
-// };
+export const filterSpecie = (films, selectedSpecie) => {
+  return films.filter(person => person.specie === selectedSpecie);    
+}; 
 
-// export const filterRating = (films, selectedRating) => {
-//   return films.filter(film => film.rt_score === selectedRating)
-
-// };
-
-// export const filterProducer = (films, selectedProducer) => {
-//   return films.filter(film => film.producer === selectedProducer)
-// };
+export const filterGender = (films, selectedGender) => {
+  return films.filter(person => person.gender === selectedGender);    
+}; 
 

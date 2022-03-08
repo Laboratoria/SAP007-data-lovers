@@ -60,20 +60,15 @@ const stats_status = {
   },
 
 };
-<<<<<<< HEAD
-let chart = new google.visualization.PieChart(document.getElementById('grafic'));
-chart.draw(dataStatus, options)
-}
-=======
-    const printStatusAverage = document.getElementById("status_average");
+const printStatusAverage = document.getElementById("status_average");
 
 
-    const alive_average = stats_status.status(data.results, "Alive") + "%";
-    const dead_average = stats_status.status(data.results, "Dead") + "%";
-    const unknown_status_average = stats_status.status(data.results, "unknown") + "%";
+const alive_average = stats_status.status(data.results, "Alive") + "%";
+const dead_average = stats_status.status(data.results, "Dead") + "%";
+const unknown_status_average = stats_status.status(data.results, "unknown") + "%";
 
-    printStatusAverage.innerHTML =
-      `
+printStatusAverage.innerHTML =
+  `
         <p class="text">&ensp;<span>Médias:</span>&ensp;
         Vivo: <span>${alive_average}</span> &ensp;| &ensp;
         Morto: <span>${dead_average}</span> &ensp;| &ensp;
@@ -121,5 +116,4 @@ chart.draw(dataStatus, options)
 
 // }
 // drawChartStatus(dataStatus.options)
->>>>>>> 62dcbdaca0445c7c67abe7c95d94fe273d131ab5
 

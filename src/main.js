@@ -1,4 +1,4 @@
-import { sortAz, filterTitle, filterRating, filterProducer, sortAzPersons } from './data.js';
+import { sortAz, filterTitle, filterRating, filterProducer } from './data.js';
 import data from './data/ghibli/ghibli.js';
 // import { showCardsCharacters } from './characters.js';
 

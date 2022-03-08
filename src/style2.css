@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap");
 
 /* botão imagem */
 .imgback {
@@ -40,12 +40,11 @@ body {
   list-style: none;
   margin: 0;
   padding: 20px;
-
 }
 
 .cards {
-  background-color: #80D3F9;
-  border: solid 5px #56C32A;
+  background-color: #80d3f9;
+  border: solid 5px #56c32a;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -63,7 +62,6 @@ body {
   text-align: center;
 }
 
-
 .card-name {
   font-family: Verdana, Tahoma, sans-serif;
   width: 13vw;
@@ -79,7 +77,46 @@ body {
   height: 13vh;
 }
 
-.logoLink{
+.logoLink {
   display: flex;
   height: 50%;
+}
+@media (max-width: 480px) {
+  .box {
+    display: flex;
+  }
+  .menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgback {
+    top: 2%;
+    left: 80%;
+    width: 80px;
+    height: 80px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 15%;
+    margin: 3%;
+  }
+  .img-card {
+    display: flex;
+  }
+  .card-name {
+    display: flex;
+  }
+  .info-list {
+    display: flexbox;
+  }
+}
+@media (max-width: 915px) {
+  .imgback {
+    top: 2%;
+    left: 80%;
+    width: 100px;
+  }
 }

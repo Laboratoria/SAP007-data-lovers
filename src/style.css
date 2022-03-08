@@ -41,6 +41,7 @@ footer {
   width: 100%;
   bottom: 0;
 }
+a { color: inherit; }
 
 /* botões */
 main {
@@ -79,4 +80,40 @@ main {
   justify-content: center;
   position: relative;
   top: 30%;
+}
+@media(max-width:480px){
+  body{
+    background-size: 300%;
+  }
+  .RickMorty{
+    width: 49%;
+    height: 37%;
+    position: absolute;
+    top: 60%;
+  }
+  .logo{
+    width: 60%;
+    left: 20%;
+    top: 5%;
+
+  }
+  main{
+    position: relative;
+    top: 25%;
+  }
+  .menus{
+    display: block;
+  }
+
+}
+@media(max-width: 713px){
+  .menus{
+    display: block;
+  }
+}
+@media(max-width: 660px){
+  main{
+    position: relative;
+    top: 25%;
+  }
 }

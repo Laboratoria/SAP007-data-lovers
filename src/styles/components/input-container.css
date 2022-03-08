@@ -1,0 +1,50 @@
+@import "../variables.css";
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 15vh;
+  background-color: #ff3b3f;
+  padding: 3vh;
+  border-top: 5px solid #ffffff;
+  z-index: 2;
+}
+
+.inputs {
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 38px;
+  padding-left: 15px;
+}
+
+#inputSearch {
+  width: 40vw;
+}
+
+#inputSearch:focus {
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .inputContainer {
+    top: 8vh;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .inputContainer {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 1;
+  }
+
+  #inputSearch {
+    width: 100%;
+  }
+}

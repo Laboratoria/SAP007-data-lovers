@@ -1,38 +1,24 @@
 /* MAX VAI ATE O NUMERO E O MIN INICIA A PARTIR DO NUMERO */
 /* === TABLET === */
-@media (min-width: 768px) {
-  .options-menus {
-    padding: 1em 7em;
-  }
-  /*#alphabetic-sequence {
-    padding: 1em 7em;
-  } BOTAO DE ORDEM MENOR QUE OS OUTROS */
-  .card-information {
-    flex-direction: row;
-  }
-
-  .background-card {
-    margin: 1em;
+@media screen and (min-width: 470px) and (max-width: 636px) {
+  .image-card {
+    width: 25vw;
   }
 }
-/* === DESKTOP === */
-@media (min-width: 1440px) {
-    .filters-container{
+@media screen and (min-width: 637px) and (max-width: 800px){
+  .image-card {
+    width: 20vw;
+  }
+  .card-information{
     flex-direction: row;
-    justify-content: center;
-    }
-
-  .options-menus {
-    padding: 1em 5em;
   }
-
-  footer .criadoras{
-    font-size: large;
+  .background-card{
+    margin: 1em;
+    height: 22em;
   }
+}
 
-  .icones{
-    display: flex;
-  }
-
-
+/* === DESKTOP === */
+@media screen and (min-width: 637px) and (min-width: 1440px) {
+  
 }

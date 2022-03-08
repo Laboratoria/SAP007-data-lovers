@@ -1,5 +1,6 @@
 @import "../reset.css";
 @import "../components/header.css";
+@import "../components/input-container.css";
 @import "../components/footer.css";
 
 .mainContainer {
@@ -7,29 +8,6 @@
   background-color: #efefef;
   width: 100%;
   padding: 30px;
-}
-
-.inputContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.inputs {
-  border: none;
-  background: #ffffff;
-  border-radius: 10px;
-  height: 38px;
-  padding-left: 15px;
-}
-
-#inputSearch {
-  width: 40vw;
-}
-
-#inputSearch:focus {
-  outline: none;
 }
 
 .movieCards {

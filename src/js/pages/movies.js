@@ -35,8 +35,8 @@ function makeMovieCards(movies) {
             <p>Directed by: ${item.director}</p>
             <p>Produced by: ${item.producer}</p>
            </div>
-          <div class="sinopseContainer">
-            <p>Sinopse: ${item.description}</p>
+          <div class="synopsisContainer">
+            <p>Synopsis: ${item.description}</p>
           </div>
         </div>
       </div>

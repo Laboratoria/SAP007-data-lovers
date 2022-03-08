@@ -34,32 +34,33 @@
           <div class="menuLine"></div>
         </div>
       </header>
+
+      <form class="inputContainer" id="form">
+        <input
+          type="search"
+          id="inputSearch"
+          class="inputs"
+          placeholder="Search by film"
+        />
+        <select id="selectGender" class="inputs">
+          <option selected disabled value="">Sort by Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="NA">Other</option>
+          <option value="Unknown (Possible Male)">Unknown</option>
+        </select>
+        <select
+          name="inputSelect"
+          id="alphabeticalSelect"
+          class="inputs"
+          title="inputSelect"
+        >
+          <option selected disabled value="">Alphabetical Sort</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+        </select>
+      </form>
       <main class="mainContainer" id="mainContainerCharacters">
-        <form class="inputContainer" id="form">
-          <input
-            type="search"
-            id="inputSearch"
-            class="inputs"
-            placeholder="Search by film"
-          />
-          <select id="selectGender" class="inputs">
-            <option selected disabled value="">Sort by Gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="NA">Other</option>
-            <option value="Unknown (Possible Male)">Unknown</option>
-          </select>
-          <select
-            name="inputSelect"
-            id="alphabeticalSelect"
-            class="inputs"
-            title="inputSelect"
-          >
-            <option selected disabled value="">Alphabetical Sort</option>
-            <option value="A-Z">A-Z</option>
-            <option value="Z-A">Z-A</option>
-          </select>
-        </form>
         <section id="cardsCharacters"></section>
       </main>
       <footer class="footerContainer">Created by Ludmila Magalhães</footer>

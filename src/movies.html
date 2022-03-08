@@ -34,29 +34,30 @@
           <div class="menuLine"></div>
         </div>
       </header>
+
+      <form class="inputContainer" id="form">
+        <input
+          type="search"
+          id="inputSearch"
+          class="inputs"
+          placeholder="Search by film, director, or producer"
+        />
+        <select
+          name="inputSelect"
+          id="inputSelect"
+          class="inputs"
+          title="inputSelect"
+        >
+          <option selected disabled value="">Sort by:</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="Highest-Score">Highest score</option>
+          <option value="Lowest-Score">Lowest score</option>
+          <option value="Newest">Newest</option>
+          <option value="Oldest">Oldest</option>
+        </select>
+      </form>
       <main class="mainContainer" id="mainContainer">
-        <form class="inputContainer" id="form">
-          <input
-            type="search"
-            id="inputSearch"
-            class="inputs"
-            placeholder="Search by film, director, or producer"
-          />
-          <select
-            name="inputSelect"
-            id="inputSelect"
-            class="inputs"
-            title="inputSelect"
-          >
-            <option selected disabled value="">Sort by:</option>
-            <option value="A-Z">A-Z</option>
-            <option value="Z-A">Z-A</option>
-            <option value="Highest-Score">Highest score</option>
-            <option value="Lowest-Score">Lowest score</option>
-            <option value="Newest">Newest</option>
-            <option value="Oldest">Oldest</option>
-          </select>
-        </form>
         <section id="movieCards" class="movieCards"></section>
       </main>
       <footer class="footerContainer">Created by Ludmila Magalhães</footer>

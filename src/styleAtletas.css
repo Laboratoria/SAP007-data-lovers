@@ -34,3 +34,46 @@
   font-weight: bold;
   background-color: transparent;
 }
+.barraMenu{
+  position:relative;
+  background-color: blue;
+  height: 50px;
+  margin-top: 322px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+.conteiner-atletas{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 14.5%;
+  position: relative;
+  margin-top: 9px;
+
+}
+.flex-item-atleta{
+  width: 160px; 
+  padding-bottom: 10px;
+}
+.atletas-conteiner{
+  height: 100%;
+  background-image: linear-gradient(to bottom, #21A556, #248F64, #297B6B, #364987);
+  border: 1px solid black;
+  border-radius: 4px;
+  list-style: none;
+  padding-left: 0;
+}
+/*@media (max-width: 1400px){*/
+.conteudo-atletas{
+  background-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 8px;
+  position: margin;
+
+}
+/*}*/

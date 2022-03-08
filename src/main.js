@@ -21,50 +21,47 @@ function mostrarCards(data) {
 .join('')
 }
 
-mostrarCards(data.results) 
+mostrarCards(data.results)
 
-//LIGAÇÃO COM HTML 
-let filtroPesquisar = document.getElementById('pesquisar')
-let limparBusca = document.getElementById('limpar')
-let selecaoEspecie = document.getElementById('filtro-especies')
+//SELETORES
+let filtroPesquisar = document.querySelector('.pesquisar')
+let limparBusca = document.querySelector('.limpar')
+let selecaoEspecie = document.querySelector('.filtro-especies')
 let selecaoOrdem = document.querySelector('.filtro-ordem')
-let porcentagem = document.getElementById('porcentagem-filtro')
+let porcentagem = document.querySelector('.filtro-porcentagem')
+let voltarTopo = document.querySelector('.voltar-topo')
 
 
 function pesquisarNomes() {
   return mostrarCards(buscarNome(data.results, filtroPesquisar.value))
-
 }
-
 
 function filtrarEspecie(e) {
   const resultEspecie = buscarEspecie(data.results, e.target.value)
-  const porcentagemEspecie = `${calculos(data.results.length, resultEspecie.length)}% dos personagens`
-  porcentagemFiltro(porcentagemEspecie)
+  porcentagem.innerHTML = `Essa categoria representa ${calculos(data.results.length, resultEspecie.length)}% dos personagens`
   return mostrarCards(resultEspecie)
 }
 
-
-function limparFiltros(){
-  window.location.reload()
-}
 
 function filtroOrdem(){
   const ordemValue = selecaoOrdem.value 
   return mostrarCards(SortOrdem(data.results, ordemValue))
 }
 
-function porcentagemFiltro(data){
-  porcentagem.innerHTML = `Essa categoria representa ${data}`
-  porcentagem.style.display = 'inline-block'
-}
   
+function limparFiltros(){
+  window.location.reload()
+}
 
+function subirPagina(){
+  window.scrollTo({top: 0, behavior: 'smooth'}); 
+}
 
-//EVENTOS 
+  
+//EVENTOS
 filtroPesquisar.addEventListener('keypress', pesquisarNomes)
-limparBusca.addEventListener('click', limparFiltros)
 selecaoEspecie.addEventListener('change', filtrarEspecie)
 selecaoOrdem.addEventListener('change', filtroOrdem)
-
+voltarTopo.addEventListener('click', subirPagina)
+limparBusca.addEventListener('click', limparFiltros)
 

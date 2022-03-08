@@ -25,5 +25,5 @@ export const calculos = (total, portion) => {
   return porcentagem
 };
 
-//computeStats(data): essa função nos permite fazer cálculos estatísticos básicos para serem exibidos de acordo com o que os dados permitem.
+ 
 

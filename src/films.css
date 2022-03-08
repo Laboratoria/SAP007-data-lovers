@@ -60,35 +60,25 @@ button {
   max-width: auto;
 }
 
-
-.imagemChihiro {
+main {
   display: flex;
-  float: center;
-  width: auto;
-  max-width: 70%;
-  max-height: max-content;
-  margin: auto;
-  border-radius: 1%;
-}
-
-
-
-.mainPersonagens{
-  display:flex;
+  background-color: #95bad7;
+  color: #003563;
   margin: auto;
   background-color: #95bad7;
-  justify-content: space-evenly;
+  justify-content: center;
   justify-items: center;
   min-height: 70vh;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
-.filterCharacteres{
+.filterFilms {
+  display: inline-flex;
   color: #003563;
   background-color: #95bad7;
   margin: 1vmax;
-  border-radius:5px;
-  border: 0.1max solid#003563;
+  border-radius: 0.5vmax;
+  border: 0.1vmax solid #003563;
   border-color: #003563;
   height: 2vmax;
   font-size: 1vmax;
@@ -96,9 +86,65 @@ button {
   box-shadow: inset 0 0 0.3em #003563;
 }
 
-.inputCharacteres::placeholder{
-  color:#003563;
-  text-align:center;
+.inputFilms::placeholder {
+  color: #003563;
+  text-align: center;
+}
+
+.cardsFilms{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCards{
+  display: flexbox;
+  width: 25vw;
+  height: 50vh;
+  margin: 2vmax;
+  background-color: #003563;
+  box-shadow: 0 0 0.6em #003563;
+  border-radius: 0.5vmax;
+  align-items: center;
+}
+
+.cardFlip{
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.cardFlip:hover{
+  transform: rotateY(180deg);
+}
+
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.back{
+  margin-top: 2%;
+  color: #95bad7;
+  transform: rotateY(180deg);
+  max-height: 45vh;
+  font-size: 0.87vmax;
+}
+
+.poster{
+  width: auto;
+  min-height: 50vh;
 }
 
 hr {

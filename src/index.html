@@ -14,10 +14,9 @@
 <body>
   <div id="root"></div>
   <header class="cabecalho">
-    <img src="logo.png" class="logo" alt="logo rick and morty" width="300" height="150">
-    <h1 class="titulosite" url= "index.html"> Guia de Personagens</h1>
+    <img src="logo.png" class="logo" alt="logo rick and morty">
+    <h1 class="titulosite" href="index.html" url="index.html"> Guia de Personagens</h1>
   </header>
-
   <div class="container_filtros_search_ordem">
 
     <div class="ordenacaoA-Z">
@@ -63,13 +62,14 @@
         <option value="unknown">Desconhecido</option>
       </select>
 
-      <input type="submit" value="Filtre" class="btn_submit" id="enviarFiltros" onsubmit="return enviar()">
       <input type="reset" value="X" class="btn_reset">
     </form>
   </div>
-
   </div>
-      
+  <div class="divBusca">
+    <input type="text" class="txtBusca" placeholder="Buscar por nome"/>
+    <button><img src="search_icon.png" alt="lupaPesquisar" class="imgLupa"></button>
+  </div>
     </section>
   </div>
   <main>
@@ -80,10 +80,9 @@
   
 
   <footer class="rodape">
+    <a href="https://github.com/MariaLuizaSantana" class="btn_Lou"><img src="git.png" alt="logoGit" class="btn_Malu" > </a>
     <p class="copyright"> © Maria Luiza e Louiza Lima</p>
-    <button class="btn_top">
-      <a href="#top">Volte para o Início</a>
-    </button>
+    <a href="https://github.com/loulima" class="btn_Malu"><img src="git.png" alt="logoGit" class="btn_Lou"></a>
   </footer>
   <script src="main.js" type="module"></script>
 </body>

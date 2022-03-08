@@ -13,7 +13,6 @@
   background-color: #f0e260;
   align-items: center;
   padding: 2em;
-  
 }
 
 .logo {
@@ -22,7 +21,7 @@
   margin-right: 3rem;
 }
 
-.container_filtros_search_ordem {
+.container_filtros_search_ordem, .divBusca {
   background: #f5efef;
   box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
   border-radius: 0.3em;
@@ -38,6 +37,21 @@
   align-items: center;
   flex: 1;
   flex-direction: row;
+}
+
+.divBusca{
+  font-size: 28px;
+}
+
+.imgLupa{
+  max-width: 100px;
+  max-height:18px;
+  width: auto;
+  height: auto;
+  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
+  border-radius: 0.3em;
+  justify-content: space-around;
+  display: flex;
 }
 
 main {
@@ -56,7 +70,6 @@ main {
   font-weight: bold;
 }
 
-.btn_submit,
 .btn_reset {
   width: 4rem;
   text-align: center;
@@ -65,28 +78,24 @@ main {
   font-size: 0.975rem;
 }
 
-.btn_submit {
-  border: #07d9c4 solid 1px;
-  background-color: #07d9c4;
-}
-
 .btn_reset {
   border: #f76a68 solid 1px;
   background-color: #f76a68;
 }
-.btn_top {
-  border-radius: 0.3em;
-  border: #f0e260 solid 1px;
-  width: fit-content;
-  padding-bottom: 1rem;
-  padding-left: 1%;
-  padding-right: 1%;
-  background-color: #f0e260;
+
+.btn_Lou{ 
+  max-width: 100px;
+  max-height:25px;
+  width: auto;
+  float: left;
 }
 
-.btn_top a {
-  color: black;
-  font-size: 0.975rem;
+.btn_Malu{
+  max-width: 100px;
+  max-height:25px;
+  width: auto;
+  height: auto;
+  float: right;
 }
 
 .rodape {
@@ -100,6 +109,13 @@ main {
   justify-content: space-around;
   display: flex;
   color: #ffffff;
+}
+
+body, .localCards{
+  background-image: url(fundosite.jpg);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .localCards {
@@ -124,6 +140,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  background-color: white;
 }
 
 .telaTextCard {
@@ -157,12 +174,6 @@ select {
   font-size: 1.125rem;
 }
 
-@media (max-width: 767px) {
-  .cards {
-    
-  }
-}
-
 .nome_personagem{
     font-size: 1.0rem;
     font-weight: 700;
@@ -172,3 +183,29 @@ select {
     color:#BF047E;
 }
 
+@media (max-width: 767px) {
+  div.container_filtros_search_ordem{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+div.container_filtros_search_ordem select:not(:last-child){
+    margin-bottom: 10px;
+}
+.menufiltros, .ordenacaoA-Z{
+  gap: 5px;
+}
+option, .label{
+  font-size: 10px;
+}
+  .logo, .titulosite{
+    font-size: 20px;
+  }
+  .cabecalho{
+    height: 15%;
+  }
+  .rodape .btn_top {
+    height: 8%;
+    font-size: 10px
+  }
+}

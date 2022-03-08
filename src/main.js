@@ -26,14 +26,3 @@ function imprimirCardsTela (data) {
 ).join(' ')
 }
 imprimirCardsTela(data.results);
-
-const seletorFiltroStatus = document.getElementById("seletorStatus")
-
-seletorFiltroStatus.addEventListener("change", (event) => {
-
-
-const resultadoStatus = data.results.filter((item) => {
-    return item.status === event.target.value
-});
-    console.log(resultadoStatus)
-});

@@ -17,22 +17,20 @@
 }
 /* === DESKTOP === */
 @media (min-width: 1440px) {
-    .filters-container{
+  .filters-container {
     flex-direction: row;
     justify-content: center;
-    }
+  }
 
   .options-menus {
     padding: 1em 5em;
   }
 
-  footer .criadoras{
+  footer .criadoras {
     font-size: large;
   }
 
-  .icones{
+  .icones {
     display: flex;
   }
-
-
 }

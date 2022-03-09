@@ -82,22 +82,20 @@ const arrayCharacters = [
 ];
 
 describe("filterMovies", () => {
-  it("is a function", () => {
-    expect(typeof filterMovies).toBe("function");
+  it("should filter films by title", () => {
+    const filterFilms = filterMovies("Castle in the", arrayFilms);
+    expect(filterFilms).toEqual([arrayFilms[0]]);
+    expect(filterFilms.length).toEqual(1);
   });
-
-  it("returns `example`", () => {
-    expect(filterMovies()).toBe("example");
+  it("should filter films by producer", () => {
+    const filterFilms = filterMovies("Miyazaki", arrayFilms);
+    expect(filterFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+    expect(filterFilms.length).toEqual(2);
   });
-});
-
-describe("strtoNumber", () => {
-  it("is a function", () => {
-    expect(typeof strtoNumber).toBe("function");
-  });
-
-  it("returns `anotherExample`", () => {
-    expect(strtoNumber()).toBe("OMG");
+  it("should filter films by director", () => {
+    const filterFilms = filterMovies("Isao", arrayFilms);
+    expect(filterFilms).toEqual([arrayFilms[0]]);
+    expect(filterFilms.length).toEqual(1);
   });
 });
 

@@ -26,6 +26,7 @@ const arrayFilms = [
     producer: "Isao Takahata",
     poster:
       "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
+    release_date: "1986",
     rt_score: "95",
     people: [
       {
@@ -50,6 +51,7 @@ const arrayFilms = [
     producer: "Hayao Miyazaki",
     poster:
       "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+    release_date: "1988",
     rt_score: "93",
     people: [
       {
@@ -104,8 +106,34 @@ describe("sortMovies", () => {
     expect(typeof sortMovies).toBe("function");
   });
 
-  it("returns `anotherExample`", () => {
-    expect(sortMovies()).toBe("OMG");
+  it("should return films sort A-Z", () => {
+    const sortFilms = sortMovies(arrayFilms, "A-Z");
+    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+  });
+
+  it("should return films sort Z-A", () => {
+    const sortFilms = sortMovies(arrayFilms, "Z-A");
+    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0]]);
+  });
+
+  it("should return films sort Highest-Score", () => {
+    const sortFilms = sortMovies(arrayFilms, "Highest-Score");
+    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+  });
+
+  it("should return films sort Lowest-Score", () => {
+    const sortFilms = sortMovies(arrayFilms, "Lowest-Score");
+    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0]]);
+  });
+
+  it("should return films sort Oldest", () => {
+    const sortFilms = sortMovies(arrayFilms, "Oldest");
+    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+  });
+
+  it("should return films sort Newest", () => {
+    const sortFilms = sortMovies(arrayFilms, "Newest");
+    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0]]);
   });
 });
 

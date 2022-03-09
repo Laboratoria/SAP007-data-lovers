@@ -44,12 +44,10 @@ const arrayFilms = [
     people: [
       {
         name: "Satsuki Kusakabe",
-
         gender: "Female",
       },
       {
         name: "Mei Kusakabe",
-
         gender: "Female",
       },
     ],
@@ -130,10 +128,15 @@ describe("filterCharacters", () => {
     expect(typeof filterCharacters).toBe("function");
   });
 
-  it("returns `anotherExample`", () => {
-    const filterPeople = filterCharacters("Totoro", arrayFilms);
-    expect(filterPeople).toEqual([arrayFilms[1].people]);
+  it("should return the characters of the film searched", () => {
+    const filterPeople = filterCharacters("Castle in the", arrayFilms);
+    expect(filterPeople).toEqual(arrayFilms[0].people);
     expect(filterPeople.length).toEqual(3);
+  });
+  it("should return the characters of the film searched", () => {
+    const filterPeople = filterCharacters("Totoro", arrayFilms);
+    expect(filterPeople).toEqual(arrayFilms[1].people);
+    expect(filterPeople.length).toEqual(2);
   });
 });
 

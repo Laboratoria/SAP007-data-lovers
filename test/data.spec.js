@@ -88,10 +88,6 @@ describe("filterMovies", () => {
 });
 
 describe("sortMovies", () => {
-  it("is a function", () => {
-    expect(typeof sortMovies).toBe("function");
-  });
-
   it("should return films sort A-Z", () => {
     const sortFilms = sortMovies(arrayFilms, "A-Z");
     expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
@@ -124,10 +120,6 @@ describe("sortMovies", () => {
 });
 
 describe("filterCharacters", () => {
-  it("is a function", () => {
-    expect(typeof filterCharacters).toBe("function");
-  });
-
   it("should return the characters of the film searched", () => {
     const filterPeople = filterCharacters("Castle in the", arrayFilms);
     expect(filterPeople).toEqual(arrayFilms[0].people);
@@ -141,10 +133,6 @@ describe("filterCharacters", () => {
 });
 
 describe("alphabeticalSort", () => {
-  it("is a function", () => {
-    expect(typeof alphabeticalSort).toBe("function");
-  });
-
   it("should return in alphabetical sort: A-Z", () => {
     const sortCharactersAZ = alphabeticalSort(arrayCharacters, "A-Z");
     expect(sortCharactersAZ).toEqual([
@@ -164,10 +152,6 @@ describe("alphabeticalSort", () => {
 });
 
 describe("filterByGender", () => {
-  it("is a function", () => {
-    expect(typeof filterByGender).toBe("function");
-  });
-
   it("should return only famale characters", () => {
     const gender = filterByGender(arrayCharacters, "Female");
     expect(gender).toEqual([arrayCharacters[1], arrayCharacters[2]]);

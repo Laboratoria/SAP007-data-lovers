@@ -1,5 +1,5 @@
 export const buscarNome = (data, busca) => {
-  const resultadoNomes = data.filter(personagem => personagem.name.toUpperCase().includes(busca.toUpperCase()))
+  const resultadoNomes = data.filter(personagem => personagem.name.toLowerCase().includes(busca.toLowerCase()))
   return resultadoNomes
 };
 
@@ -8,17 +8,17 @@ export const buscarEspecie = (data, especie) => {
   return resultadoEspecie
 }
 
-export const SortOrdem = (data, ordemValue) => {
+export const SortOrdem = (data, ordem) => {
   const order = data.sort((a, b) => (a.name.localeCompare(b.name)))
-  switch (ordemValue) {
-    case "az":
+  switch (ordem) {
+    case "a-z":
       return order
-    case "za":
+    case "z-a":
       return order.reverse()
   }
 }
 
-export const calculos = (total, portion) => {
-  const porcentagem = Math.round((portion * 100) / total)
+export const calculos = (total, porcento) => {
+  const porcentagem = Math.round((porcento * 100) / total)
   return porcentagem
 };

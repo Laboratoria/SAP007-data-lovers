@@ -1,8 +1,30 @@
-import { example } from './data.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
+//import { showPersonagens } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
+const showPersonagens = document.getElementById("card")
+const arrayRickAndMorty = data.results
+
+function showInfos(arrayRickAndMorty) {
+    showPersonagens.innerHTML = arrayRickAndMorty.map(item =>
+        `<div class="card">
+          <div class="name-title">
+            <p class="title"> ${item.name}</p>
+          </div>
+          <div class="card-img">
+            <img src="${item.image}">
+          </div>
+          <div class="card-infos">
+           <p> ${item.status}</p>
+            <p> ${item.species}</p>
+            <p> ${item.gender}</p>
+            <p> ${item.origin}</p>
+            <a href="${item.location.url}"> ${item.location.name}</a>
+          </div>
+          </div>`
+
+    ).join('')
+}
+showInfos(arrayRickAndMorty)
+
+
+

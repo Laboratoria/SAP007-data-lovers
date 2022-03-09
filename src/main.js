@@ -11,14 +11,14 @@ function showInfos(arrayRickAndMorty) {
             <p class="title"> ${item.name}</p>
           </div>
           <div class="card-img">
-            <img src="${item.image}">
+            <img src="${item.image}" class="imgcard">
           </div>
           <div class="card-infos">
-           <p> ${item.status}</p>
-            <p> ${item.species}</p>
-            <p> ${item.gender}</p>
-            <p> ${item.origin}</p>
-            <a href="${item.location.url}"> ${item.location.name}</a>
+           <p> <b>Status:</b> ${item.status}</p>
+            <p> <b>Espécie:</b>${item.species}</p>
+            <p> <b>Gênero:</b>${item.gender}</p>
+            <b>Origem:</b><a href="${item.origin.url}"> ${item.origin.name}</a>
+            <p><b>Localização:</b><a href="${item.location.url}"> ${item.location.name}</a></p>
           </div>
           </div>`
 

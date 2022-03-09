@@ -1,3 +1,11 @@
+body {
+  background-image: url(image/PokeBackground.jpg);
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   height: 20%;
   width: 100%;

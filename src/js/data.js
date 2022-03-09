@@ -19,9 +19,7 @@ export const filterMovies = (searchString, dataGhibli) => {
   return data;
 };
 
-function strtoNumber(film) {
-  return Number(film.rt_score);
-}
+
 
 export const sortMovies = (data, order) => {
   if (order == "A-Z") {
@@ -31,10 +29,12 @@ export const sortMovies = (data, order) => {
     return data.sort((a, z) => (a.title > z.title ? -1 : 1));
   }
   if (order == "Highest-Score") {
-    return data.sort((a, z) => (strtoNumber(a) > strtoNumber(z) ? -1 : 1));
+      Number(a.rt_score) > Number(z.rt_score) ? -1 : 1
+    );
   }
   if (order == "Lowest-Score") {
-    return data.sort((a, z) => (strtoNumber(a) > strtoNumber(z) ? 1 : -1));
+      Number(a.rt_score) > Number(z.rt_score) ? 1 : -1
+    );
   }
   if (order == "Oldest") {
     return data.sort((a, z) => (a.release_date > z.release_date ? 1 : -1));

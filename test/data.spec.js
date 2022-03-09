@@ -150,36 +150,20 @@ describe("alphabeticalSort", () => {
     expect(typeof alphabeticalSort).toBe("function");
   });
 
-  it("should return in alfabetical sort: Mei Kusakabe, Mrs. Yokokawa and Pazu", () => {
+  it("should return in alphabetical sort: A-Z", () => {
     const sortCharactersAZ = alphabeticalSort(arrayCharacters, "A-Z");
     expect(sortCharactersAZ).toEqual([
-      {
-        name: "Mei Kusakabe",
-        gender: "Female",
-      },
-      {
-        name: "Mrs. Yokokawa",
-        gender: "Female",
-      },
-      {
-        name: "Pazu",
-        gender: "Male",
-      },
+      arrayCharacters[1],
+      arrayCharacters[2],
+      arrayCharacters[0],
     ]);
+  });
+  it("should return in alphabetical sort: Z-A", () => {
     const sortCharactersZA = alphabeticalSort(arrayCharacters, "Z-A");
     expect(sortCharactersZA).toEqual([
-      {
-        name: "Pazu",
-        gender: "Male",
-      },
-      {
-        name: "Mrs. Yokokawa",
-        gender: "Female",
-      },
-      {
-        name: "Mei Kusakabe",
-        gender: "Female",
-      },
+      arrayCharacters[0],
+      arrayCharacters[2],
+      arrayCharacters[1],
     ]);
   });
 });

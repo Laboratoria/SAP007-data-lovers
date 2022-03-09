@@ -1,4 +1,4 @@
-import { statusFilter, genderFilter } from "./data.js";
+
 import data from "./data/rickandmorty/rickandmorty.js";
 
 const stats_gender = {

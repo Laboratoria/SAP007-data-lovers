@@ -189,17 +189,8 @@ describe("filterByGender", () => {
     expect(typeof filterByGender).toBe("function");
   });
 
-  it("should return Mei Kusakabe and Mrs. Yokokawa, famale characters", () => {
+  it("should return only famale characters", () => {
     const gender = filterByGender(arrayCharacters, "Female");
-    expect(gender).toEqual([
-      {
-        name: "Mei Kusakabe",
-        gender: "Female",
-      },
-      {
-        name: "Mrs. Yokokawa",
-        gender: "Female",
-      },
-    ]);
+    expect(gender).toEqual([arrayCharacters[1], arrayCharacters[2]]);
   });
 });

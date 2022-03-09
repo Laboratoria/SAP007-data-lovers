@@ -1,24 +1,57 @@
 /* MAX VAI ATE O NUMERO E O MIN INICIA A PARTIR DO NUMERO */
-/* === TABLET === */
-@media screen and (min-width: 470px) and (max-width: 636px) {
-  .image-card {
-    width: 25vw;
-  }
-}
-@media screen and (min-width: 637px) and (max-width: 800px){
-  .image-card {
-    width: 20vw;
-  }
-  .card-information{
-    flex-direction: row;
-  }
-  .background-card{
-    margin: 1em;
-    height: 22em;
-  }
-}
 
 /* === DESKTOP === */
-@media screen and (min-width: 637px) and (min-width: 1440px) {
+@media screen and (min-width: 637px) and (max-width: 1440px) {
+
+  #card-information {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .container-card{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-card {
+    width: 10em;
+  }
   
+  .content-card{
+    position: relative;
+    height: 348px;
+    width: 250px;
+
+    perspective: 1000px;
+  }
+  
+  .content-card .flip-card {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .content-card:hover .flip-card{
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card::after {
+    --m-o: none;
+  }
+
+  .front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .back-card{
+    transform: rotateY(180deg);
+    perspective: -1000px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .front-card img {
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3)
+  }
 }

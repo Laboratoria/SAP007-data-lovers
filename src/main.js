@@ -12,19 +12,27 @@ function showOnCards(data) {
   document.getElementById("card-information").innerHTML = data
     .map(
       (item) =>
-        ` <div class="background-card">
-<div class="front-image">
-<img class="image-card" src="${item.image}">
-</div>
-  <div class="front-text">
-  <ul class="text-cards">
-  <li>Nome: ${item.name}</li>
-  <li> Status:${item.status}</li>
-  <li>Espécie:${item.species}</li>
-  <li>Origem:${item.origin.name}</li>
-  <li>Gênero:${item.gender}</li>
-  </ul>
-  </div>
+        `   
+        <div class="container-card">
+
+    <article class="content-card">
+      <div class="flip-card">
+        <section class="front-card">
+          <img class="image-card" src="${item.image}" alt="Imagem dos personagens">
+          <div class="name text-card">${item.name}</div>
+        </section>
+
+        <section class="back-card">
+        <ul class="text-card">
+        <li> Status:${item.status}</li>
+        <li>Espécie:${item.species}</li>
+        <li>Origem:${item.origin.name}</li>
+        <li>Gênero:${item.gender}</li>
+        <li>Gênero:${item.episode.length}</li>
+        </ul>
+        </section>
+      </div>
+    </article>
   </div>
   `
     )

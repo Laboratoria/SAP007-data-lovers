@@ -3,27 +3,21 @@ import data from './data/pokemon/pokemon.js';
 
 console.log(example, data);
 
-const pokemons = data.pokemon.slice(0, 251)
 
-const cardsPokemon = document.getElementById("cards");
+const pokemons = data.pokemon;
 
-cardsPokemons(pokemons);
-
-
-function cardsPokemons(arrayPokemon){
-    let cards = "";
-    arrayPokemon.map(actualPokemon => {
-        const types = actualPokemon.types;
-        cards +=
-            `<div class="card" '${types['']}'>
-        <img class="card-image " alt="${actualPokemon.name}" src="https://www.serebii.net/pokemongo/pokemon/${actualPokemon.num}.png" />
-        <h2 class="card-title"> ${actualPokemon.num}. ${actualPokemon.name} </h2>
-        <p class="card-subtitle" id="card-subtitle">${actualPokemon.size.height} | ${actualPokemon.size.weight} </p>
-        <p class="card-subtitle2" id="card-subtitle2">${types.join(' | ')} </p>
-        <p class="card-subtitle3" id="card-subtitle">${actualPokemon.generation.name} </p>
-        </div>`
-    });
-     console.log(arrayPokemon)
-    cardsPokemon.innerHTML = cards;
+function cardsPokemons(data) {
+  const cardPokemon = document.getElementById("cards");
+  cardPokemon.innerHTML = data.map((item) => 
+    `<div class="info-cards">
+       <img src="${item.img}"/>
+        <p>${item.num}</p>
+        <p>Nome:${item.name}</p>
+        <p>Sobre:${item.about}</p>
+      </div>`
+  ).join("")
+  
 }
 
+
+cardsPokemons(pokemons);

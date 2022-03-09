@@ -10,42 +10,14 @@ header {
   text-align: center;
 }
 
-.barraDePesquisa{
+.barra-de-pesquisa{
   display:flex;
   width:70vw;
   align-items: center;
 }
-.divNumber{
-  margin: right 200px;
-  background-color:#E0EEEE;
-  border:solid 2px #5F9EA0;
-  border-radius:10px;
-  width:254px;
-  height: 22px;
-}
 
-.number{
-  float:left;
-  background-color:transparent;
-  font-size:15px;
-  border:none;
-  border-color: transparent;
-  height: 20px;
-  width:192px;
-}
 
-.btnNumber{
-  border:none;
-  border-color: transparent;
-  float:left;
-  width: 58px;
-  height: 22px;
-  border-radius:0 7px 7px 0;
-  font-weight:bold;
-  background:#5F9EA0;
-}
-
-.divSearch{
+.div-Search{
   margin-left: 5px;
   background-color:#E0EEEE;
   border:solid 2px #5F9EA0;
@@ -54,7 +26,7 @@ header {
   height: 22px;
 }
 
-.txtSearch{
+.txt-Search{
   float:left;
   background-color:transparent;
   font-size:15px;
@@ -64,7 +36,7 @@ header {
   width:192px;
 }
 
-.btnSearch{
+.btn-Search{
   border:none;
   border-color: transparent;
   float:left;
@@ -74,8 +46,7 @@ header {
   font-weight:bold;
   background:#5F9EA0;
 }
-.types{
-  background-color:rgb(26, 26, 73);
-  width: 181px;
-  height: 40px;
+
+.info-cards{
+  background-color
 }

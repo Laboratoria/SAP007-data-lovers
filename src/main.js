@@ -7,7 +7,7 @@ function allCards(data) {
     .map(
       (dado) => `
 
-        <div class="cards">
+        <li class="cards">
           <img class= "img-card" src="${dado.image}" alt="cards"></img>
           <h1 class="card-name">${dado.name}</h1>
           <ul class="info-list">
@@ -16,7 +16,7 @@ function allCards(data) {
             <li>Espécie: ${dado.species}</li>
             <li>Origem: ${dado.origin.name}</li>
           </ul>
-        </div>
+        </li>
       `
     )
     .join(" ")

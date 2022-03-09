@@ -19,7 +19,6 @@
 }
 
 /* === DESKTOP === */
-<<<<<<< HEAD
 @media (min-width: 1440px) {
   .filters-container {
     flex-direction: row;
@@ -37,8 +36,4 @@
   .icones {
     display: flex;
   }
-=======
-@media screen and (min-width: 637px) and (min-width: 1440px) {
-  
->>>>>>> cba4282ba786e56b6d91d4873556937f5d760dd8
 }

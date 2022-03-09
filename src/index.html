@@ -15,24 +15,20 @@
   <div id="root"></div>
 
   <header class="cabecalho">
-    <img src="logo.png" class="logo" alt="logo rick and morty" width="300" height="150">
-    <h1 class="titulosite"> Guia de Personagens</h1>
+    <nav>
+      <ul class="menupaginas">
+        <li ><a href="episodios.html" class="linkpaginas">Episódios</a></li>
+        <li><a href="trivia.html" class="linkpaginas">Curiosidades</a></li>
+      </ul>
+    </nav>
+   
   </header>
 
   <div class="container_filtros_search_ordem">
 
-    <div class="ordenacaoA-Z">
-      <p class=""><b>Organize</b></p>
-      <select class="ordenacaoA-Z">
-        <option value="A-Z">A-Z</option>
-        <option value="Z-A">Z-A</option>
-      </select>
-      <br>
-    </div>
-
     <form class="menufiltros">
       <label>Espécie</label>
-      <select class="" id="species-filter">
+      <select class="filtro" id="species-filter">
         <option disabled selected>-</option>
         <option value="alien">Alien</option>
         <option value="animal">Animal</option>
@@ -49,7 +45,7 @@
       </select>
 
       <label>Gênero</label>
-      <select class="" id="">
+      <select class="filtro" id="gender-filter">
         <option disabled selected>-</option>
         <option value="male">Masculino</option>
         <option value="female">Feminino</option>
@@ -57,16 +53,27 @@
       </select>
 
       <label>Status</label>
-      <select class="" id="">
+      <select class="filtro" id="status-filter">
         <option disabled selected>-</option>
         <option value="alive">Vivo</option>
         <option value="dead">Morto</option>
         <option value="unknown">Desconhecido</option>
       </select>
 
-      <input type="submit" value="Filtre" class="btn_submit">
+      <label>Nome:</label>
+      <input type="search" class="filtro" name="" id="">
       <input type="reset" value="X" class="btn_reset">
+      <br>
     </form>
+
+    <div class="ordenacaoA-Z">
+      <p class="">Organize</p>
+      <select class="filtro" id="order-filter">
+        <option disabled selected>-</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+    </div>
   </div>
 
   </div>
@@ -76,13 +83,13 @@
       <div class="localCards" id="infoCards"></div>
     </section>
   </main>
-  
+  <div class="back-to-top-wrapper">
+    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+  </div>
 
   <footer class="rodape">
-    <p class="copyright"> © Maria Luiza e Louiza Lima</p>
-    <button class="btn_top">
-      <a href="#top">Volte para o Início</a>
-    </button>
+    <p class="copyright"> © Maria Luisa e Louiza Lima</p>
+
   </footer>
   <script src="main.js" type="module"></script>
 </body>

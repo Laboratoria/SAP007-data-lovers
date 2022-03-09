@@ -1,9 +1,7 @@
-// estas funciones son de ejemplo
+export const filtroGenero = (data, condition) => {
+  const resultadoGenero = data.filter(
+    (character) => character.gender.toUpperCase() === condition.toUpperCase()
+  );
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
+  return resultadoGenero;
 };

@@ -17,12 +17,13 @@ export const genderFilter = (data, condition) => {
 
 //Ordenar
 export const sortNamesFilter = (data, order) => {
+  const copy = [...data];//constante que guarda uma cópia do array original, já que o sort modifica o array
   if (order === "alphabetic") {
-    return data.sort((a, z) => a.name > z.name ? 1 : -1);
+    copy.sort((a, z) => a.name > z.name ? 1 : -1);
+  } else {
+    copy.sort((a, z) => a.name > z.name ? -1 : 1);
   }
-  else if (order === "descending") {
-    return data.sort((a, z) => a.name > z.name ? -1 : 1);
-  }
+  return copy;
 };
 
 //Pesquisar

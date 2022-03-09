@@ -1,28 +1,36 @@
-import { statusFilter, genderFilter, sortNamesFilter, searchName} from '../src/data.js';
+import { statusFilter, genderFilter, sortNamesFilter, searchName } from '../src/data.js';
 
 const characteres = [
-          {"id": 1,
-          "name": "Rick Sanchez",
-          "status": "Alive",
-          "species": "Human",
-          "gender": "Male"},
-          {"id": 17,
-          "name": "Annie",
-          "status": "Alive",
-          "species": "Human",
-          "gender": "Female" },
-          {"id": 131,
-          "name": "Gar Gloonch",
-          "status": "Dead",
-          "species": "Alien",
-          "type": "Zombodian",
-          "gender": "Male"},
-          {"id": 485,
-          "name": "Modern Rick",
-          "status": "Alive",
-          "species": "Human",
-          "type": "",
-          "gender": "Male"}
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Male"
+  },
+  {
+    "id": 17,
+    "name": "Annie",
+    "status": "Alive",
+    "species": "Human",
+    "gender": "Female"
+  },
+  {
+    "id": 131,
+    "name": "Gar Gloonch",
+    "status": "Dead",
+    "species": "Alien",
+    "type": "Zombodian",
+    "gender": "Male"
+  },
+  {
+    "id": 485,
+    "name": "Modern Rick",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male"
+  }
 ]
 
 
@@ -44,9 +52,9 @@ describe('genderFilter', () => {
     expect(typeof genderFilter).toBe('function');
   });
 
-it('deverá retornar a quantidade de personagens `Male`', () => {
-   const gender_expect = genderFilter(characteres, "Male").length;
-   const result_gender = 3;
+  it('deverá retornar a quantidade de personagens `Male`', () => {
+    const gender_expect = genderFilter(characteres, "Male").length;
+    const result_gender = 3;
     expect(gender_expect).toEqual(result_gender);
   });
 });
@@ -56,52 +64,68 @@ describe('sortNamesFilter', () => {
   });
 
   const result_sort_az = [
-    {"id": 17,
-    "name": "Annie",
-    "status": "Alive",
-    "species": "Human",
-    "gender": "Female" },
-    {"id": 131,
-    "name": "Gar Gloonch",
-    "status": "Dead",
-    "species": "Alien",
-    "type": "Zombodian",
-    "gender": "Male"},
-    {"id": 485,
-    "name": "Modern Rick",
-    "status": "Alive",
-    "species": "Human",
-    "type": "",
-    "gender": "Male"},
-    {"id": 1,
-    "name": "Rick Sanchez",
-    "status": "Alive",
-    "species": "Human",
-    "gender": "Male"}]
-
-   const result_sort_za = [
-     {"id": 1,
-      "name": "Rick Sanchez",
+    {
+      "id": 17,
+      "name": "Annie",
       "status": "Alive",
       "species": "Human",
-      "gender": "Male"},
-      {"id": 485,
+      "gender": "Female"
+    },
+    {
+      "id": 131,
+      "name": "Gar Gloonch",
+      "status": "Dead",
+      "species": "Alien",
+      "type": "Zombodian",
+      "gender": "Male"
+    },
+    {
+      "id": 485,
       "name": "Modern Rick",
       "status": "Alive",
       "species": "Human",
       "type": "",
-      "gender": "Male"},
-      {"id": 131,
-     "name": "Gar Gloonch",
-     "status": "Dead",
-     "species": "Alien",
-     "type": "Zombodian",
-     "gender": "Male"},
-     {"id": 17,
-     "name": "Annie",
-     "status": "Alive",
-     "species": "Human",
-     "gender": "Female"}]
+      "gender": "Male"
+    },
+    {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male"
+    }]
+
+  const result_sort_za = [
+    {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male"
+    },
+    {
+      "id": 485,
+      "name": "Modern Rick",
+      "status": "Alive",
+      "species": "Human",
+      "type": "",
+      "gender": "Male"
+    },
+    {
+      "id": 131,
+      "name": "Gar Gloonch",
+      "status": "Dead",
+      "species": "Alien",
+      "type": "Zombodian",
+      "gender": "Male"
+    },
+    {
+      "id": 17,
+      "name": "Annie",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Female"
+    }]
 
 
   it('Deverá ordernar em ordem de `a-z`', () => {
@@ -120,12 +144,14 @@ describe('searchName', () => {
 
   it('deverá achar o personagem pelo nome', () => {
     const search_expect = searchName(characteres, "Gar");
-    const result_search = [{"id": 131,
-    "name": "Gar Gloonch",
-    "status": "Dead",
-    "species": "Alien",
-    "type": "Zombodian",
-    "gender": "Male"}]
+    const result_search = [{
+      "id": 131,
+      "name": "Gar Gloonch",
+      "status": "Dead",
+      "species": "Alien",
+      "type": "Zombodian",
+      "gender": "Male"
+    }]
     expect(search_expect).toEqual(result_search);
   });
 });

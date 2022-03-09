@@ -1,16 +1,36 @@
-let newDataPokemon = JSON.parse(JSON.stringify(datasetToUse));
+//função para ordenar
+export const sortHandler=(datasetToUse,pokemonFeature,way)=>{
+  const copyDatasetToUse = [...datasetToUse];
 
-    newDataPokemon.forEach((pokemonCharacter, index) => {
-        let attack = parseInt(pokemonCharacter.stats['base-attack']);
-        let defense = parseInt(pokemonCharacter.stats['base-defense']);
-        let stamina = parseInt(pokemonCharacter.stats['base-stamina']);
-        let sumStats = attack+defense+stamina;
-        let meanStats = Math.round((attack+defense+stamina)/3);
-        let newDataPokemonObject = {
-            "sum-stats": sumStats,
-            "mean-stats": meanStats,
-        }
-        newDataPokemon[index] = Object.assign(pokemonCharacter,newDataPokemonObject);
-    });
-    return newDataPokemon
+  function sortName(pokemon1,pokemon2){
+      return pokemon1[pokemonFeature].localeCompare(pokemon2[pokemonFeature]); 
+  }
+
+  let sortedData;
+  if(way === "ASC"){
+      sortedData = copyDatasetToUse.sort(sortName);
+  }else{
+      sortedData = copyDatasetToUse.sort(sortName).reverse();
+  }
+
+  return sortedData;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

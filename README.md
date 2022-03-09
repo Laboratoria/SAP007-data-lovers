@@ -1,4 +1,4 @@
-# **RICK AND MORTY EXPLORER**
+got # **RICK AND MORTY EXPLORER**
 
 ## **Índice**
 
@@ -21,8 +21,6 @@ Rick and Morty é uma série de animação adulta norte-americana de comédia e 
 
 A série estreou em 2 de dezembro de 2013 e acompanha as perigosas aventuras do cientista alcoólatra Rick e seu neto Morty, que divide seu tempo entre a vida familiar e viagens interdimensionais.
 
-&nbsp;
-
 ---
 
 ## **2. Definição de produto**
@@ -33,36 +31,28 @@ Este produto tem o intuito de sanar a necessidade do consumidor da série Rick a
 
 Para atender as expectativas do usuário, uma pesquisa de campo com telespectadores da série foi feita para conseguirmos acessar as informações que seriam pertinentes de conter no nosso produto, abaixo você pode acompanhar os quatro perfis que encontramos para darmos início ao nosso projeto:
 
-&nbsp;
 
 | ![](image-readme/História%20de%20usuário%201.png)  	| ![](image-readme/História%20de%20usuário%202.png)  	| ![](image-readme/História%20de%20usuário%203.png)  	| ![](image-readme/História%20de%20usuário%204.png) 	|
 |---	|---	|---	|---	|
 
-&nbsp;
 
 ### **Desenho de interface do usuário**
 
-&nbsp;
 #### **Protótipo de baixa fidelidade**
 
 Após a definição das histórias de usuário, começamos a pensar nas possibilidades de como o projeto poderia sair do campo das ideias e começar a tomar forma, por isso, desenvolvemos um protótipo primário, de baixa fidelidade do que poderia vir a ser esse produto.
 
-&nbsp;
-
 ![](image-readme/Protótipo%20de%20baixa%20fidelidade.png)
 
-&nbsp;
 #### **Protótipo de alta fidelidade**
 
 O passo seguinte foi desenhar uma Interface de Usuário (UI - _User Interface_).
 Para isso, utilizamos o Figma e apresentamos o que seria _ideal_ em nossa solução. Digamos que é
 a forma que imaginamos inicialmente o projeto.
 
-&nbsp;
 
 ![](image-readme/Protótipo%20de%20alta%20fidelidade.png)
 
-&nbsp;
 #### **Paleta de cores**
 
 A paleta de cores foi definida a partir da imagem de background 
@@ -70,13 +60,10 @@ A paleta de cores foi definida a partir da imagem de background
 &nbsp;
 ![](image-readme/Paleta%20de%20cores.png)
 
-&nbsp;
 ### **Testes de usabilidade**
 
 Durante o processo, encontramos problemas de usabilidade no scroll muito longo causado pelos 493 personagens sendo exibidos na tela, nossa solução foi incluir um botão de voltar ao topo, facilitando assim a experiência.
 Melhoramos o desempenho do carregamento das imagens incluindo um loading='lazy' no template string dos cards fazendo com que as imagens fossem carregadas por partes, acompanhando o scroll da tela.
-
-&nbsp;
 
 ---
 
@@ -91,10 +78,7 @@ Nossas implementações permeiam em:
    diversos tamanhos de tela: celulares, tablets, notebooks, etc.
 - [x] Exibir cálculos agregados ao filtro permitindo que o usuário visualize a porcentagem de personagens representadas por cada espécie.
 
-&nbsp;
 ![](image-readme/tela.png)
-
-&nbsp;
 
 ---
 
@@ -107,8 +91,6 @@ Nossos testes unitários tem cobertura mínima de 70% de _statements_
 (_sentenças_), _functions_ (_funções_), _lines_ (_linhas_), e _branches_
 (_ramos_) do arquivo `src/data.js`, que contém nossas funções e que está
 detalhada na seção de [Considerações técnicas](#srcdatajs).
-
-&nbsp;
 
 ---
 
@@ -154,14 +136,12 @@ como toda a configuração de dependências:
 No arquivo `index.html` se encontra a página a ser exibida ao usuário. 
 Também serve para indicar quais scripts serão utilizados e juntar tudo o que foi feito.
 
-&nbsp;
 ### `src/main.js`
 
 No arquivo `src/main.js` todos os códigos que tenham a ver com a exibição dos dados na tela. 
 Com isto nos referimos basicamente à interação com o DOM. 
 Operações como criação de laços, registro de manejadores de eventos (_event listeners_) e etc.
 
-&nbsp;
 ### `src/data.js`
 
 O coração deste projeto é a manipulação de dados através de arrays e objetos.
@@ -174,7 +154,6 @@ e independentes do DOM. Estas funções serão depois usadas a partir do arquivo
 `src/main.js`, ao carregar a página e a cada vez que o usuário interagir com a
 interface (cliques, seleções, filtros, ordenação, etc).
 
-&nbsp;
 ### `src/data`
 
 Nesta pasta estão os dados de diferentes fontes. Você vai encontrar uma pasta
@@ -182,17 +161,14 @@ para cada fonte, e dentro de cada pasta estão dois arquivos: um com a extensão
 `.js` e outro `.json`. Ambos os arquivos contém os mesmos dados; a diferença é
 que podemos usar o `.js` com uma tag `<script>`.
 
-&nbsp;
 ### `test/data.spec.js`
 
 Aqui se encontram os teste unitários das funções implementadas no arquivo
 `data.js`.
 
-&nbsp;
-
 ---
 
-## **6. Considerações Finais** <div id= "considerações"></div>
+## **6. Considerações Finais** 
 
 - [x] O planejamento deste projeto se encontra no [Trello](https://trello.com/b/15NqEjgG/data-lovers-rick-and-morty)
 - [x] O repositório deste projeto se encontra no [GitHub](https://github.com/karolsontak/SAP007-data-lovers)

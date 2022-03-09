@@ -7,15 +7,15 @@
 //MoviesPage
 
 export const filterMovies = (searchString, dataGhibli) => {
+  const search = searchString.toLowerCase();
   const data = dataGhibli.filter((movie) => {
     return (
-      movie.title.toLowerCase().includes(searchString) ||
-      movie.producer.toLowerCase().includes(searchString) ||
-      movie.director.toLowerCase().includes(searchString)
+      movie.title.toLowerCase().includes(search) ||
+      movie.producer.toLowerCase().includes(search) ||
+      movie.director.toLowerCase().includes(search)
     );
   });
 
-  console.log(data, "seen");
   return data;
 };
 
@@ -47,9 +47,9 @@ export const sortMovies = (data, order) => {
 //CharactersPage
 
 export const filterCharacters = (searchTitle, films) => {
+  const search = searchTitle.toLowerCase();
   const filteredfilms = films.filter((film) => {
-    // console.log(film.title.toLowerCase().includes(searchTitle), "//////");
-    return film.title.toLowerCase().includes(searchTitle);
+    return film.title.toLowerCase().includes(search);
   });
   const characters = getCharacters(filteredfilms);
   // console.log(data, "characters");

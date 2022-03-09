@@ -42,7 +42,7 @@ function makeCharacterCards(people) {
 const inputSearch = document.getElementById("inputSearch");
 
 inputSearch.addEventListener("keyup", (e) => {
-  const searchTitle = e.target.value.toLowerCase();
+  const searchTitle = e.target.value;
   const dataFiltered = filterCharacters(searchTitle, data.films);
   makeCharacterCards(dataFiltered);
 });

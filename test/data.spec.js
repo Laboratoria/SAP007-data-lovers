@@ -24,6 +24,8 @@ const arrayFilms = [
     title: "Castle in the Sky",
     director: "Hayao Miyazaki",
     producer: "Isao Takahata",
+    poster:
+      "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
     rt_score: "95",
     people: [
       {
@@ -36,6 +38,28 @@ const arrayFilms = [
       },
       {
         name: "Dola",
+        gender: "Female",
+      },
+    ],
+  },
+
+  {
+    id: "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
+    title: "My Neighbor Totoro",
+    director: "Hayao Miyazaki",
+    producer: "Hayao Miyazaki",
+    poster:
+      "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+    rt_score: "93",
+    people: [
+      {
+        name: "Satsuki Kusakabe",
+
+        gender: "Female",
+      },
+      {
+        name: "Mei Kusakabe",
+
         gender: "Female",
       },
     ],

@@ -1,29 +1,41 @@
+body {
+  background-image: url(image/PokeBackground.jpg);
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
+  background-color: black;
   height: 20%;
   width: 100%;
-  padding: 5%;
-  background-repeat: no-repeat;
   position: relative;
+}
+
+header-logo {
+align-items: center;
 }
 
 .title {
   text-align: center;
 }
 
-.barra-de-pesquisa{
+/*.searc{
   display:flex;
   width:70vw;
   align-items: center;
 }
+*/
 
-
-.div-Search{
-  margin-left: 5px;
+.search-bar{
   background-color:#E0EEEE;
   border:solid 2px #5F9EA0;
   border-radius:10px;
   width:254px;
   height: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .txt-Search{

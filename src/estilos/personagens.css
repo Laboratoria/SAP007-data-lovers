@@ -34,6 +34,15 @@
     box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1);
   }
   
+  .imagem-poster {
+    width: 100%;
+    height: 12em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    max-width: 200px;
+  }
+
   .conteiner-main {
     background-color: #e8f8fa;
   }
@@ -157,26 +166,52 @@
     display: flex;
     justify-content: center;
     font-family: Georgia;
+    max-width: 200px;
   }
 
-  .rodape {
-    flex-shrink: 0;
-    font-size: 17px;
-    background-color: #c9e4fb;
-    color: black;
-    text-align: center;
-    padding: 0.5em;
+  .img-topo {
     width: 100%;
+    height: 400px;
+    border: 1px solid #cbcac6;
   }
-  
-  .rodape a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-top: 20px;
-    background-color: #c9e4fb;
-  }
-  .rodape p {
-    background-color: #c9e4fb;
-  }
-  
+
+/* Footer */
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  background-color: #c9e4fb;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.sobre-nos {
+  justify-content: center;
+}
+
+.sobre-nos p a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.sobre-nos p {
+  color: #041624;
+}
+
+.sobre-nos p a {
+  color: #416a8d;
+}
+
+.logo-footer {
+  height: 60px;
+}
+
+.logo-sg {
+  height: 60px;
+  filter: sepia(60%);
+}
+/* Aqui acaba o footer */

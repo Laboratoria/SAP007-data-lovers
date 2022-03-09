@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./estilos/filmes.css">
+    <!-- <link rel="stylesheet" href="./estilos/filmes.css"> -->
+    <link rel="stylesheet" href="./estilos/personagens.css">
     <link rel="shortcut icon" href="./imagens/Favicon.ico" type="image/x-icon">
     <title>Filmes</title>
   </head>
+
   <body>
     <header>
         <nav class="navegacao-filmes">
-          <a href="./index.html" class="navegacao-item">Home</a>
-          <a href="./filmes.html" class="navegacao-item">Filmes</a>
-          <a href="./personagens.html" class="navegacao-item">Personagens</a>
+          <a href="./index.html" class="navegacao-item">INÍCIO</a>
+          <a href="./filmes.html" class="navegacao-item">FILMES</a>
+          <a href="#" class="navegacao-item">PERSONAGENS</a>
         </nav>
   
         <div>
-             <img id="imagemFilmes" src="./imagens/ghibli1.jpg" alt="banner">
+             <img class="img-topo" id="imagemFilmes" src="./imagens/wallpaper-totoro-personagens.jpg" alt="banner">
         </div>
   
       </header>
@@ -92,10 +94,19 @@
       
       </main>
 
-      <footer class="rodape">
-        <p> Desenvolvido por <a href="https://github.com/leticiaantunesjpeg" target="_blank">Leticia Antunes</a> e
-          <a href="https://github.com/Maryssun" target="_blank">Dayanne Maryssol</a> <br>
-          SAP007 - LABORATORIA
+      <footer>
+        <div class="sobre-nos">
+          <p> Desenvolvido por
+            <a href="https://github.com/Maryssun" target="_blank">Dayanne Maryssol</a>
+            e
+            <a href="https://github.com/leticiaantunesjpeg" target="_blank">Leticia Antunes</a>
+          </p>
+          <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
+        </div>
+    
+        <figure>
+            <img class="logo-sg" src="imagens/logo-sg.png" alt="Logo Studio Ghibli">
+        </figure>
       </footer>
 
       <script src="../src/js/personagens.js" type="module"></script>

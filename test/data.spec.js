@@ -1,22 +1,10 @@
 import {
   filterMovies,
-  strtoNumber,
   sortMovies,
   filterCharacters,
-  getCharacters,
   alphabeticalSort,
   filterByGender,
 } from "../src/js/data.js";
-
-// describe("anotherExample", () => {
-//   it("is a function", () => {
-//     expect(typeof anotherExample).toBe("function");
-//   });
-
-//   it("returns `anotherExample`", () => {
-//     expect(anotherExample()).toBe("OMG");
-//   });
-// });
 
 const arrayFilms = [
   {
@@ -143,33 +131,9 @@ describe("filterCharacters", () => {
   });
 
   it("returns `anotherExample`", () => {
-    // const filterPeople = filterCharacters(arrayFilms);
-    // expect(filterPeople).toEqual
-    expect(filterCharacters(arrayFilms)).toBe([{ title: "Castle in the Sky" }]);
-  });
-});
-
-describe("getCharacters", () => {
-  it("is a function", () => {
-    expect(typeof getCharacters).toBe("function");
-  });
-
-  it("returns `anotherExample`", () => {
-    const characters = getCharacters(arrayFilms);
-    expect(characters).toEqual([
-      {
-        name: "Pazu",
-        gender: "Male",
-      },
-      {
-        name: "Lusheeta Toel Ul Laputa",
-        gender: "Female",
-      },
-      {
-        name: "Dola",
-        gender: "Female",
-      },
-    ]);
+    const filterPeople = filterCharacters("Totoro", arrayFilms);
+    expect(filterPeople).toEqual([arrayFilms[1].people]);
+    expect(filterPeople.length).toEqual(3);
   });
 });
 

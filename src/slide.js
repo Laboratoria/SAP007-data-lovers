@@ -1,12 +1,12 @@
-let interval = 0;
+let interval = 0; //começa do indice 0
 
-let maxSlider = document.querySelectorAll(".box-image").length - 1;
+let maxSlider = document.querySelectorAll(".box-image").length - 1; // é valor máximo/tamanho (3), uso o querSelectorAll para pegar todas a imagens/box-image (ele retorna um array), coloco -1 pois o indice começa no 0 (ou seja, tenho as posições 0,1,2)
 
 sumir();
 
 function sumir() {
   let img = document.querySelectorAll(".box-image img");
-  let span = document.querySelector(".bolinhas");
+  let span = document.querySelector(".box-cursor");
 
   img[1].style.display = "none";
   img[2].style.display = "none";
@@ -23,11 +23,11 @@ function sumir() {
 acao();
 
 function acao() {
-  let img = document.querySelectorAll(".box-image img");
-  let span = document.querySelectorAll(".bolinhas span");
+  let img = document.querySelectorAll(".box-image img"); //pega as img em si
+  let span = document.querySelectorAll(".box-cursor span");
 
   setInterval(function () {
-    img[interval].style.display = "none";
+    img[interval].style.display = "none"; //some com a imagem que recebe o intervalo
     span[interval].classList.remove("marcador");
     interval++;
     if (interval > maxSlider) {
@@ -42,16 +42,16 @@ controlador();
 
 function controlador() {
   let img = document.querySelectorAll(".box-image img");
-  document.querySelectorAll(".bolinhas span").forEach(function (valor, index) {
+  document.querySelectorAll(".box-cursor span").forEach(function (valor, index) {
     valor.addEventListener("click", function () {
       img[interval].style.display = "none";
       interval = index;
       img[interval].style.display = "block";
 
-      let div = document.querySelectorAll(".bolinhas span").length;
+      let div = document.querySelectorAll(".box-cursor span").length;
 
       if (div == 3) {
-        document.querySelectorAll(".bolinhas span").forEach(function (valor) {
+        document.querySelectorAll(".box-cursor span").forEach(function (valor) {
           valor.classList.remove("marcador");
         });
       }

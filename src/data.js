@@ -2,24 +2,36 @@
 
 //Exemplo filterData(data, condition)
 
-export const example = () => {
-  return 'example';
+//export const ordemAlfabetica=;
+export const filterGender = (data, condition) => {
+  const genderResults = data.filter(
+    (personagem) => personagem.gender.toLowerCase() === condition.toLowerCase()
+  );
+  return genderResults;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
+export const filterSpecies = (data, condition) => {
+  const resultSpecies = data.filter(
+    (personagem) => personagem.species.toLowerCase() === condition.toLowerCase()
+  );
+  return resultSpecies;
+};
+export const searchName = (data, condition) => {
+  const screenSearch = data.filter((personagem) =>
+    personagem.name.toLowerCase().includes(condition.toLowerCase())
+  );
+  return screenSearch;
 };
 
-//data é onde estão os dados!! função pode ter 3 parâmetros
-export const ordemAlfabetica = (data) =>{
+export const orderResults = (data, orderScreen) => {
+  if (orderScreen === "AZ") {
+    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
+  } else {
+    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
+  }
+};
 
-  let ordemAZ = data.sort(function(a, z){
-    if (a.name < z.name){
-      return ;
-    } 
-    else {
-      return ;
-    }
-  })
-  return ordemAZ
+export const percentage = (total, portion) => {
+  const resultPercentage = Math.round((portion * 100) / total);
+  return resultPercentage;
 };

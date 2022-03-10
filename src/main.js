@@ -61,20 +61,27 @@ selectGender.addEventListener("change", (event)=> {
 })
 
 
-//o filtro de origem ainda não está funcionando
 const selectOrigin = document.getElementById("selectFilterOrigin")
 
 selectOrigin.addEventListener("change", (event) => {
   const newArrayOrigin = arrayRickAndMorty.filter((item) => {
-    return item.origin['name'] === event.target.value
+    return item.origin.name === event.target.value
   })
   console.log(event.target.value)
   console.log(newArrayOrigin)
   showInfos(newArrayOrigin)
 })
 
+const selectLocation = document.getElementById("selectFilterLocation")
 
-
+selectLocation.addEventListener("change", (event) => {
+  const newArrayLocation = arrayRickAndMorty.filter((item)=> {
+  return item.location.name === event.target.value
+})
+  console.log(event.target.value)
+  console.log(newArrayLocation)
+  showInfos(newArrayLocation)
+})
 
 
 

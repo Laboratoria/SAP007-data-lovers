@@ -4,24 +4,69 @@ import { filterDataByDirector, filterDataByProducer, sortDataFilms } from "./dat
 //PARA CHAMAR A ARRAY
 const films = dataGhibli.films;
 
+// INPUT
+
+// document.getElementById("bnt-search").addEventListener("click", function(e) {
+//     e.preventDefault();
+//     const searchInput = document.getElementById("ipt-search").value;
+//     const resultFilms = findMovie(films, searchInput);
+//     cardSection(resultFilms);
+
+
+
+// })
+
+
 
 //PARA IMPRIMIR NA TELA O POSTER COM O TÍTULO DO FILME
 function cardSection(items) {
     const card = document.getElementById("card")
     card.innerHTML = " "
     for (let i = 0; i < items.length; i++) {
-        const cardSection = document.createElement("div");
-        const cS = cardSection.setAttribute("class", "div-cards");
-        //const titleElement = document.createElement("h2");
-        //const title = titleElement.setAttribute("class", "title-cards")
+        const flipCard = document.createElement("div"); //pai
+        flipCard.setAttribute("class", "flip-card");
+
+        const flipCardInner = document.createElement("div"); //mae
+        flipCardInner.setAttribute("class", "flip-card-inner");
+
+        const flipCardFront = document.createElement("div"); //filho
+        flipCardFront.setAttribute("class", "flip-card-front")
+
         const posterElement = document.createElement("img");
-        const img = posterElement.setAttribute("class", "img-cards")
+        posterElement.setAttribute("class", "img-cards")
+
+        const flipCardBack = document.createElement("div"); //filho
+        flipCardBack.setAttribute("class", "flip-card-back");
+
+        const titleElement = document.createElement("h2");
+        titleElement.setAttribute("class", "title-cards");
+        const releaseDate = document.createElement("h3");
+        releaseDate.setAttribute("class", "release-date");
+        const description = document.createElement("p");
+        description.setAttribute("class", "description");
+
+
         let primeiroItem = items[i];
         posterElement.src = primeiroItem.poster;
-        //titleElement.innerHTML = primeiroItem.title;
-        //cardSection.appendChild(titleElement);
-        cardSection.appendChild(posterElement);
-        card.appendChild(cardSection);
+        titleElement.innerHTML = primeiroItem.title;
+        releaseDate.innerHTML = primeiroItem.release_date;
+        description.innerHTML = primeiroItem.description;
+
+        flipCardFront.appendChild(posterElement);
+
+        flipCardBack.appendChild(titleElement);
+        flipCardBack.appendChild(releaseDate);
+        flipCardBack.appendChild(description);
+
+        flipCardInner.appendChild(flipCardFront);
+        flipCardInner.appendChild(flipCardBack);
+
+        flipCard.appendChild(flipCardInner);
+
+        card.appendChild(flipCard);
+
+
+
     }
 };
 cardSection(films);

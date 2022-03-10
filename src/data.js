@@ -20,7 +20,9 @@ export const filterFilmByCharacters = (films, filmSelected) => {
 }
 
 
-
+// export const findMovie = (dataGhibli, searchInput) => {
+//     return dataGhibli.filter((films) => films.title.toLowerCase().includes(searchInput.toLowerCase()));
+// }
 
 
 

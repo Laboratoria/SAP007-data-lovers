@@ -6,19 +6,116 @@
 }
 
 body {
-    background: #69CCE3;
+    background: #0398D2;
     font-family: 'Actor', sans-serif;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100%;
+    color: #ffffff;
+}
+
+header {
+    background-color: #0398D2;
+    display: inline-flex;
+    margin-top: 1%;
+    width: 100%;
+}
+
+#menu-toggle {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.menu-btn>span {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu-toggle:checked+.menu-btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-toggle:checked~.menu-box {
+    left: 0;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 6%;
+    left: 3%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: .25s;
+}
+
+.menu-btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu-box {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -150%;
+    width: auto;
+    height: auto;
     margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #8dc5dd;
+    box-shadow: 2px 2px 6px #ffffff;
+    transition-duration: .25s;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #184E77;
+    font-size: 20px;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu-item:hover {
+    background-color: #ffffff;
 }
 
 .tittle-header-page-news {
     text-align: center;
-    font-size: 50px;
+    margin-left: 450px;
+    font-size: 60px;
     color: #184E77;
+    -webkit-text-stroke: 1px #ffffff;
+    text-stroke: 1px;
+}
+
+.img-logo {
+    height: 12vh;
+    margin-left: 300px;
+}
+
+main {
+    background-color: #69CCE3;
 }
 
 .dropbtn {
@@ -73,17 +170,10 @@ body {
     align-items: center;
 }
 
-.news {
-    background: #184E77;
+.section-class-efect {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6vw;
-    height: 6vh;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 0 0 15px 0;
 }
 
 .glass-effect {
@@ -93,24 +183,25 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     -webkit-backdrop-filter: blur(20px);
-    width: 80%;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    display: inline;
     text-align: center;
-    align-content: center;
-    margin-left: 150px;
 }
 
 .galery {
     width: 40%;
     height: 20%;
     overflow: hidden;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.photos {
+    display: flex;
 }
 
 .galery .photos {
-    width: 500%;
+    width: 200%;
     animation-name: animation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -120,7 +211,7 @@ body {
     width: 40%;
 }
 
-.footer {
+footer {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1px);
@@ -128,7 +219,6 @@ body {
     -webkit-backdrop-filter: blur(1px);
     width: 100%;
     padding: 1%;
-    height: 5vh;
     text-align: center;
     bottom: 0;
     left: 0;
@@ -141,40 +231,4 @@ a {
 
 a:link {
     text-decoration: none;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .tittle-header-page-films {
-        font-size: 30px;
-    }
-    footer {
-        font-size: 0.5rem;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    .tittle-header-page-films {
-        font-size: 40px;
-    }
-    footer {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-    .tittle-header-page-films {
-        font-size: 60px;
-    }
-    footer {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 2561px) {
-    .tittle-header-page-films {
-        font-size: 70px;
-    }
-    footer {
-        font-size: 2.5rem;
-    }
 }

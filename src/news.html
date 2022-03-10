@@ -14,23 +14,23 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <h1 class="tittle-header-page-news">Universo Ghibli</h1>
-        <nav class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="home.html">Home</a>
-                <a href="index.html">Filmes</a>
-                <a href="people.html">People</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="logo">
-            <img class="logo" src="./img/Logo.jpg" alt="logo-studio-ghibli">
+        <section class="hamburger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+            <ul class="menu-box">
+                <li><a class="menu-item" href="home.html">Home</a></li>
+                <li><a class="menu-item" href="index.html">Filmes</a></li>
+                <li><a class="menu-item" href="people.html">Personagens</a></li>
+            </ul>
         </section>
-
+        <img class="img-logo" src="./img/Logo.jpg" alt="logo-studio-ghibli">
+    </header>
+    <main>
+        <section></section>
         <nav class="dropdown">
             <button class="dropbtn">News</button>
             <div class="dropdown-content">
@@ -38,45 +38,59 @@
                 <a href="#launch">Lançamento</a>
             </div>
         </nav>
-
-
-        <div class="glass-effect">
-            <h2 id="park">Parque inspirado nos Studios Ghibli será inaugurado em 2022, no Japão, confira:</h2>
-
-            <section class="galery">
-                <div class="photos">
-                    <img src="./img/PlantaDoParque.jpg" alt="Planta do parque">
-                    <img src="./img/FlorestaDondoko.jpg" alt="Floresta Dondoko">
-                    <img src="./img/GrandeArmazem.jpg" alt="Grande Armazem">
-                    <img src="./img/MonokeNoSato.jpg" alt="Floresta Monoke no Sato">
-                    <img src="./img/MorroDaJuventude.jpg" alt="Morro da Juventude">
-                    <img src="./img/ValeDasBruxas.jpg" alt="Vale das Bruxas">
-                    <img src="./img/PlantaDoParque.jpg" alt="Planta do parque">
-                </div>
-            </section>
-
-            <section class="container-news">
-                <span>Espaço para o calculo agregado</span>
-            </section>
-
-            <section class="container-news" id="launch">
-                <h2>Novo filme Aya e a Bruxa chegará na Netflix</h2>
-
-                <img class="img" src="" alt="Ilustração do criador do studio com os personagens">
-                <p>A Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro
-                    do Studio Ghibli produzido inteiramente em 3DCG.</p>
-            </section>
-        </div>
-
+        <section class="section-class-efect">
+            <div class="glass-effect">
+                <h2 id="park">Parque inspirado nos Studios Ghibli será inaugurado em 2022, no Japão, confira:</h2>
+                <section class="galery">
+                    <div class="photos">
+                        <img src="./img/PlantaDoParque.jpg" alt="Planta do parque">
+                        <img src="./img/FlorestaDondoko.jpg" alt="Floresta Dondoko">
+                        <img src="./img/GrandeArmazem.jpg" alt="Grande Armazem">
+                        <img src="./img/MonokeNoSato.jpg" alt="Floresta Monoke no Sato">
+                        <img src="./img/MorroDaJuventude.jpg" alt="Morro da Juventude">
+                        <img src="./img/ValeDasBruxas.jpg" alt="Vale das Bruxas">
+                        <img src="./img/PlantaDoParque.jpg" alt="Planta do parque">
+                    </div>
+                </section>
+                <section class="container-news">
+                    <aside class="curiosity">
+                        <h2>Curiosidade</h2>
+                        <img class="img-aside" src="./img/aside.jpg" alt="Imagem do Filme PrincesaMononoke">
+                        <p>A média de nota de avaliação dos filmes dos <b>Studios Ghibli</b> é de:</p>
+                        <div id="news-curiosity"> </div>
+                    </aside>
+                </section>
+                <section class="container-news" id="launch">
+                    <h2>Novo filme Aya e a Bruxa chegará na Netflix</h2>
+                    <img class="img" src="" alt="Ilustração do criador do studio com os personagens">
+                    <p>A Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro
+                        do Studio Ghibli produzido inteiramente em 3DCG. A Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha
+                        e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo
+                        no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de
+                        animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou
+                        nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio
+                        Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a
+                        Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo
+                        no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de
+                        animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou
+                        nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio
+                        Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a
+                        Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo
+                        no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de
+                        animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio Ghibli produzido inteiramente em 3DCGA Netflix anunciou
+                        nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro do Studio
+                        Ghibli produzido inteiramente em 3DCG</p>
+                </section>
+            </div>
+        </section>
     </main>
-
-
     <footer>
         <h4>Conheça as Devs
             <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
             <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
         </h4>
     </footer>
+    <script src="news.js" type="module"></script>
 </body>
 
 </html>

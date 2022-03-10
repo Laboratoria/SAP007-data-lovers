@@ -15,57 +15,57 @@
 <body>
     <header>
         <h1 class="tittle-header-page-people">Universo Ghibli</h1>
-        <nav class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="home.html">Home</a>
-                <a href="index.html">Filmes</a>
-                <a href="news.html">News</a>
-            </div>
-        </nav>
+        <section>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+            <ul class="menu-box">
+                <li><a class="menu-item" href="home.html">Home</a></li>
+                <li><a class="menu-item" href="index.html">Filmes</a></li>
+                <li><a class="menu-item" href="news.html">News</a></li>
+            </ul>
+        </section>
+        <img class="img-logo" src="./img/Logo.jpg" alt="logo-studio-ghibli">
     </header>
 
-    <main class="main-page-people">
-        <section>
-            <form id="form">
-                <input class="ipt-search" id="ipt-search" type="text" placeholder="Encontre um personagem">
-                <select class="select" type="text" id="filmes">
-                    <option class="#" value="" disabled selected id="film">Filmes</option>
-                    <option class="lista" type="button" id="#">Castle in the Sky</option>
-                    <option class="lista" type="button" id="#">My Neighbor Totoro</option>
-                    <option class="lista" type="button" id="#">Kiki's Delivery Service</option>
-                    <option class="lista" type="button" id="#">Grave of the Fireflies</option>
-                    <option class="lista" type="button" id="#">Only Yesterday</option>
-                    <option class="lista" type="button" id="#">Porco Rosso</option>
-                    <option class="lista" type="button" id="#">Pom Poko</option>
-                    <option class="lista" type="button" id="#">Whisper of the Heart</option>
-                    <option class="lista" type="button" id="#">Princess Mononoke</option>
-                    <option class="lista" type="button" id="#">My Neighbors the Yamadas</option>
-                    <option class="lista" type="button" id="#">Spirited Away</option>
-                    <option class="lista" type="button" id="#">The Cat Returns</option>
-                    <option class="lista" type="button" id="#">Howl's Moving Castle</option>
-                    <option class="lista" type="button" id="#">Tales from Earthsea</option>
-                    <option class="lista" type="button" id="#">Ponyo on the Cliff by the Sea</option>
-                    <option class="lista" type="button" id="#">The Secret World of Arrietty</option>
-                    <option class="lista" type="button" id="#">From Up on Poppy Hill</option>
-                    <option class="lista" type="button" id="#">The Wind Rises</option>
-                    <option class="lista" type="button" id="#">The Tale of the Princess Kaguya</option>
-                    <option class="lista" type="button" id="#">When Marnie Was There</option>                   
-                </select>
-                <select class="select" type="text" id="gender">
-                    <option class="#"  value="" disabled selected id="#">Personagens</option>
-                    <option class="#" type="button" id="#">Female</option>
-                    <option class="#" type="button" id="#">Male</option>
-                    <option class="#" type="button" id="#">NA</option>         
-                </select>
-                <button class="btn-reset" id="btn-reset">Limpar</button>
-            </form>
-        </section>
+    <section class="section-search-people">
+        <form id="form">
+            <select class="select" type="text" id="filmes">
+                    <option value="" disabled selected id="film">Filmes</option>
+                    <option type="button">Castle in the Sky</option>
+                    <option type="button">My Neighbor Totoro</option>
+                    <option type="button">Kiki's Delivery Service</option>
+                    <option type="button">Grave of the Fireflies</option>
+                    <option type="button">Only Yesterday</option>
+                    <option type="button">Porco Rosso</option>
+                    <option type="button">Pom Poko</option>
+                    <option type="button">Whisper of the Heart</option>
+                    <option type="button">Princess Mononoke</option>
+                    <option type="button">My Neighbors the Yamadas</option>
+                    <option type="button">Spirited Away</option>
+                    <option type="button">The Cat Returns</option>
+                    <option type="button">Howl's Moving Castle</option>
+                    <option type="button">Tales from Earthsea</option>
+                    <option type="button">Ponyo on the Cliff by the Sea</option>
+                    <option type="button">The Secret World of Arrietty</option>
+                    <option type="button">From Up on Poppy Hill</option>
+                    <option type="button">The Wind Rises</option>
+                    <option type="button">The Tale of the Princess Kaguya</option>
+                    <option type="button">When Marnie Was There</option>                   
+            </select>
+            <select class="select" type="text" id="gender">
+                    <option value="" disabled selected>Personagens</option>
+                    <option type="button">Female</option>
+                    <option type="button">Male</option>                    
+            </select>
+            <button class="btn-reset" id="btn-reset">Limpar</button>
+        </form>
+    </section>
+    <main>
+        <section id="card" class="card-section"></section>
     </main>
-
-    <section id="card" class="section-card"></section>
-
-    <footer class="footer">
+    <footer>
         <h4>Conheça as Devs
             <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
             <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>

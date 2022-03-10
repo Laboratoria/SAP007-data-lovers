@@ -9,12 +9,12 @@ body {
   font-family: 'Didact Gothic';
   color: white;
   overflow-x: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
 
 }
 
-header{
+header {
   width: 100%;
   margin: auto;
   height: 20%;
@@ -37,8 +37,8 @@ a:visited {
   font-weight: normal;
 }
 
-a:hover{
-  font-weight:bold;
+a:hover {
+  font-weight: bold;
 }
 
 button {
@@ -68,7 +68,6 @@ main {
   background-color: #95bad7;
   justify-content: center;
   justify-items: center;
-  min-height: 70vh;
   flex-wrap: wrap;
 }
 
@@ -80,10 +79,17 @@ main {
   border-radius: 0.5vmax;
   border: 0.1vmax solid #003563;
   border-color: #003563;
-  height: 2vmax;
+  height: 4vh;
+  width: auto;
   font-size: 1vmax;
   text-align: center;
   box-shadow: inset 0 0 0.3em #003563;
+}
+
+.inputFilms {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .inputFilms::placeholder {
@@ -91,61 +97,76 @@ main {
   text-align: center;
 }
 
-.cardsFilms{
+.cardsFilms {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 3% 1%;
+  font-weight: normal;
 }
 
-.mainCards{
-  display: flexbox;
-  width: 25vw;
-  height: 59vh;
-  margin: 2vmax;
+.mainCards {
+  width: 450px;
+  height: 550px;
+  box-shadow: #003563 0 0 1em;
   background-color: #003563;
-  box-shadow: 0 0 0.6em #003563;
-  border-radius: 0.5vmax;
-  align-items: center;
+  margin: 2% 5% 5% 2%;
+  border-radius: 2%;
+  perspective: 1000px;
 }
 
-.cardFlip{
-  width: 100%;
-  height: 100%;
+.cardFlip {
+  height: 450px;
+  height: 550px;
   transform-style: preserve-3d;
   transition: transform 0.8s;
   position: relative;
   border-radius: 10px;
-  text-align: center;
+  border-radius: 2%;
+  align-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.cardFlip:hover{
+.cardFlip:hover {
   transform: rotateY(180deg);
 }
 
-.front, .back{
+.front,
+.back {
+  backface-visibility: hidden;
   position: absolute;
+  color: #95bad7;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  align-items: center;
+
 }
 
-.back{
-  margin-top: 2%;
-  color: #95bad7;
+.back {
   transform: rotateY(180deg);
-  max-height: 45vh;
-  font-size: 0.87vmax;
+  background-color: #003563;
+  border-radius: 10px;
+  color: #bcd0df;
+  height: 450px;
+  height: 550px;
+  font-size: 0.9vmax;
 }
 
-.poster{
-  width: 80%;
-  height: auto;
-  min-height: 50vh;
+.poster {
+  width: 450px;
+  height: 550px;
+  border-radius: 2%;
+}
+
+.nameFilms {
+  padding-top: 2%;
+  font-size: 1.5vmax;
+}
+
+.infoFilms{
+  padding: 0% 2% ;
 }
 
 hr {

@@ -56,6 +56,7 @@ h1{
 
 main {
   padding: 0.5rem 5rem;
+  color:#ffffff
   }
 
 main {
@@ -172,6 +173,58 @@ ul.telaTextCard {
 
 .bodyTrivia{
   background-color:#a2b9df;
+}
+.nome_personagem {
+  font-size: 1.0rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #CEFF93;
+}
+
+.categoria_filtro{
+  color:#B8CFFF;
+}
+
+.back-to-top-link {
+  display: inline-block;
+  position: fixed;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /*background-color: #d6e3f0;
+  /* emoji don't behave like regular fonts
+     so this helped position it correctly */
+  padding: 0.25rem;
+}
+
+.back-to-top-wrapper {
+  position: absolute;
+  right: 0.25rem;
+  bottom: -5em;
+  width: 3em;
+  pointer-events: none;
+}
+
+.rodape {
+  background-color: #26353e;
+  position: fixed;
+  padding: 1em 1em 1em 1em;
+  bottom: 0;
+  width: 100%;
+  height: 3.0em;
+  text-align: center;
+  font-size: 12px;
+  justify-content: space-around;
+  display: flex;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {

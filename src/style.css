@@ -12,10 +12,10 @@
   height: 100px;
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   font-size: 1.25rem;
   background-color:#f0e260;
-	
 }
 
 .menupaginas {

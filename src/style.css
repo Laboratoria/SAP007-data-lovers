@@ -7,23 +7,30 @@
   box-sizing: border-box;
 }
 
+
 .cabecalho {
+  height: 100px;
   display: flex;
   justify-content: center;
-  background-color: #f0e260;
-  align-items: center;
-  padding: 2em;
+  flex-direction: column;
+  font-size: 1.25rem;
+  background-color:#f0e260;
+	
 }
 
-.logo {
-  width: 20%;
-  height: 20%;
-  margin-right: 3rem;
+.menupaginas {
+  display: flex;
+  justify-content: space-evenly;
+}
+.linkpaginas {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 800;
 }
 
-.container_filtros_search_ordem, .divBusca {
-  background: #f5efef;
-  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
+.container_filtros_search_ordem {
+  background: #26353e;
+  color: #f5efef;
   border-radius: 0.3em;
   border: #a2b9df solid 1px;
   padding: 1rem;
@@ -35,39 +42,21 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  flex: 1;
   flex-direction: row;
-}
+  
 
-.divBusca{
-  font-size: 28px;
-}
-
-.imgLupa{
-  max-width: 100px;
-  max-height:18px;
-  width: auto;
-  height: auto;
-  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
-  border-radius: 0.3em;
-  justify-content: space-around;
-  display: flex;
 }
 
 main {
   padding: 0.5rem 5rem;
-}
+  }
 
-.ordenacaoA-Z {
-  display: flex;
-  gap: 10px;
-}
 
+.ordenacaoA-Z,
 .menufiltros {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  font-weight: bold;
 }
 
 .btn_reset {
@@ -124,7 +113,7 @@ body, .localCards{
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 50px;
   justify-items: flex-end;
   grid-gap: 1rem;
 }
@@ -135,7 +124,6 @@ body, .localCards{
   padding-top: 1.8rem;
   border-radius: 0.313rem;
   background: #f5efef;
-  box-shadow: 5px 5px 17px #e1dcdc, -5px -5px 17px #ffffff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -154,7 +142,7 @@ body, .localCards{
 }
 
 ul.telaTextCard {
-  margin-top:12px;
+  margin-top: 12px;
 }
 .telaTextCard li {
   text-align: left;
@@ -169,19 +157,11 @@ ul.telaTextCard {
   margin: 0 auto;
 }
 
-select {
+.filtro {
   border-radius: 00.3em;
   font-size: 1.125rem;
 }
 
-.nome_personagem{
-    font-size: 1.0rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color:#BF047E;
-}
 
 @media (max-width: 767px) {
   div.container_filtros_search_ordem{
@@ -208,4 +188,52 @@ option, .label{
     height: 8%;
     font-size: 10px
   }
+.nome_personagem {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #bf047e;
+}
+
+.back-to-top-link {
+  display: inline-block;
+  position: fixed;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /*background-color: #d6e3f0;
+  /* emoji don't behave like regular fonts
+     so this helped position it correctly */
+  padding: 0.25rem;
+}
+
+.back-to-top-wrapper {
+  position: absolute;
+  right: 0.25rem;
+  bottom: -5em;
+  width: 3em;
+  pointer-events: none;
+}
+
+.rodape {
+  background-color: #26353e;
+  position: fixed;
+  padding: 1em 1em 1em 1em;
+  bottom: 0;
+  width: 100%;
+  height: 3.0em;
+  text-align: center;
+  font-size: 12px;
+  justify-content: space-around;
+  display: flex;
+  color: #ffffff;
+}
 }

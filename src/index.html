@@ -14,23 +14,18 @@
 <body>
   <div id="root"></div>
   <header class="cabecalho">
-    <img src="logo.png" class="logo" alt="logo rick and morty">
-    <h1 class="titulosite" href="index.html" url="index.html"> Guia de Personagens</h1>
+    <nav>
+      <ul class="menupaginas">
+        <li ><a class="linkpaginas" href="episodios.html">Episódios</a></li>
+        <li><a class="linkpaginas" href="trivia.html">Curiosidades</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="container_filtros_search_ordem">
 
-    <div class="ordenacaoA-Z">
-      <p class=""><b>Organize</b></p>
-      <select class="ordenacaoA-Z">
-        <option value="A-Z">A-Z</option>
-        <option value="Z-A">Z-A</option>
-      </select>
-      <br>
-    </div>
-
     <form class="menufiltros">
       <label>Espécie</label>
-      <select class="" id="species-filter">
+      <select class="filtro" id="species-filter">
         <option disabled selected>-</option>
         <option value="alien">Alien</option>
         <option value="animal">Animal</option>
@@ -47,7 +42,7 @@
       </select>
 
       <label>Gênero</label>
-      <select class="" id="">
+      <select class="filtro" id="gender-filter">
         <option disabled selected>-</option>
         <option value="male">Masculino</option>
         <option value="female">Feminino</option>
@@ -55,20 +50,28 @@
       </select>
 
       <label>Status</label>
-      <select class="" id="">
+      <select class="filtro" id="status-filter">
         <option disabled selected>-</option>
         <option value="alive">Vivo</option>
         <option value="dead">Morto</option>
         <option value="unknown">Desconhecido</option>
       </select>
 
+      <label>Nome:</label>
+      <input type="search" class="filtro" name="" id="">
       <input type="reset" value="X" class="btn_reset">
+      <br>
     </form>
+
+    <div class="ordenacaoA-Z">
+      <p class="">Organize</p>
+      <select class="filtro" id="order-filter">
+        <option disabled selected>-</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+    </div>
   </div>
-  </div>
-  <div class="divBusca">
-    <input type="text" class="txtBusca" placeholder="Buscar por nome"/>
-    <button><img src="search_icon.png" alt="lupaPesquisar" class="imgLupa"></button>
   </div>
     </section>
   </div>
@@ -77,7 +80,9 @@
       <div class="localCards" id="infoCards"></div>
     </section>
   </main>
-  
+  <div class="back-to-top-wrapper">
+    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+  </div>
 
   <footer class="rodape">
     <a href="https://github.com/MariaLuizaSantana" class="btn_Lou"><img src="git.png" alt="logoGit" class="btn_Malu" > </a>

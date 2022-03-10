@@ -32,10 +32,8 @@ export const sortMovies = (data, order) => {
     );
   }
   if (order == "Oldest") {
-    return copy.sort((a, z) => (a.release_date > z.release_date ? 1 : -1));
-  }
-  if (order == "Newest") {
-    return copy.sort((a, z) => (a.release_date > z.release_date ? -1 : 1));
+      Number(a.release_date) > Number(z.release_date) ? 1 : -1
+      Number(a.release_date) > Number(z.release_date) ? -1 : 1
   }
 };
 

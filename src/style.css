@@ -60,7 +60,6 @@ button {
   max-width: auto;
 }
 
-
 .imagemChihiro {
   display: flex;
   float: center;
@@ -69,36 +68,6 @@ button {
   max-height: max-content;
   margin: auto;
   border-radius: 1%;
-}
-
-
-
-.mainPersonagens{
-  display:flex;
-  margin: auto;
-  background-color: #95bad7;
-  justify-content: space-evenly;
-  justify-items: center;
-  min-height: 70vh;
-  flex: wrap;
-}
-
-.filterCharacteres{
-  color: #003563;
-  background-color: #95bad7;
-  margin: 1vmax;
-  border-radius:5px;
-  border: 0.1max solid#003563;
-  border-color: #003563;
-  height: 2vmax;
-  font-size: 1vmax;
-  text-align: center;
-  box-shadow: inset 0 0 0.3em #003563;
-}
-
-.inputCharacteres::placeholder{
-  color:#003563;
-  text-align:center;
 }
 
 hr {

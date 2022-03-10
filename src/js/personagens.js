@@ -27,7 +27,7 @@ function mostrarPersonagens(personagens) {
     cardAnime.innerHTML = `
     <div>
     <p class="informação"> ${personagens[j].name} </p>
-    <img src= '${personagens[j].img}' id="imagem-poster"></img><br>
+    <img src= '${personagens[j].img}' class="imagem-poster"></img><br>
       </div>
         
       <div>

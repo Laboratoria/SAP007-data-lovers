@@ -120,13 +120,9 @@
 }
 
 #containerCardItem {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1500px;
-  padding: 1em 1em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .container-card-individual {
@@ -159,23 +155,39 @@
   font-family: Georgia;
 }
 
-.rodape {
-  flex-shrink: 0;
-  font-size: 17px;
-  background-color: #c9e4fb;
-  color: black;
-  text-align: center;
-  padding: 0.5em;
+
+/* Footer */
+footer {
+  display: flex;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #545975;
 }
 
-.rodape a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  margin-top: 20px;
-  background-color: #c9e4fb;
+footer p {
+    margin: 10px 0;
 }
-.rodape p {
-  background-color: #c9e4fb;
+
+.sobre-nos {
+  justify-content: center;
 }
+
+.sobre-nos p a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.sobre-nos p {
+  color: #999999;
+}
+
+.sobre-nos p a {
+  color: #cccccc;
+}
+
+.logo-sg {
+  height: 80px;
+}
+
+/* Aqui acaba o footer */

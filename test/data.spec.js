@@ -92,8 +92,8 @@ describe("filterMovies", () => {
   });
   it("should filter films by producer", () => {
     const filterFilms = filterMovies("Miyazaki", arrayFilms);
-    expect(filterFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
-    expect(filterFilms.length).toEqual(2);
+    expect(filterFilms).toEqual([arrayFilms[0], arrayFilms[1], arrayFilms[2]]);
+    expect(filterFilms.length).toEqual(3);
   });
   it("should filter films by director", () => {
     const filterFilms = filterMovies("Isao", arrayFilms);
@@ -105,32 +105,32 @@ describe("filterMovies", () => {
 describe("sortMovies", () => {
   it("should return films sort A-Z", () => {
     const sortFilms = sortMovies(arrayFilms, "A-Z");
-    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[2], arrayFilms[1]]);
   });
 
   it("should return films sort Z-A", () => {
     const sortFilms = sortMovies(arrayFilms, "Z-A");
-    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0]]);
+    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[2], arrayFilms[0]]);
   });
 
   it("should return films sort Highest-Score", () => {
     const sortFilms = sortMovies(arrayFilms, "Highest-Score");
-    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+    expect(sortFilms).toEqual([arrayFilms[2], arrayFilms[0], arrayFilms[1]]);
   });
 
   it("should return films sort Lowest-Score", () => {
     const sortFilms = sortMovies(arrayFilms, "Lowest-Score");
-    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0]]);
+    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0], arrayFilms[2]]);
   });
 
   it("should return films sort Oldest", () => {
     const sortFilms = sortMovies(arrayFilms, "Oldest");
-    expect(sortFilms).toEqual([arrayFilms[0], arrayFilms[1]]);
+    expect(sortFilms).toEqual([arrayFilms[2], arrayFilms[0], arrayFilms[1]]);
   });
 
   it("should return films sort Newest", () => {
     const sortFilms = sortMovies(arrayFilms, "Newest");
-    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0]]);
+    expect(sortFilms).toEqual([arrayFilms[1], arrayFilms[0], arrayFilms[2]]);
   });
 });
 

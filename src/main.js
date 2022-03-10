@@ -35,8 +35,8 @@ const searchCharacter = document.getElementById("search");
 //FUNÇÕES
 function printStatus(event) {
   const statusResult = statusFilter(data.results, event.target.value);
-  genderSelect.selectedIndex = 0;//reseta o botão do Gênero, seta o índice para zero
-  alphaSelect.selectedIndex = 0; //reseta o botão de Ordenar
+  genderSelect.selectedIndex = 0;
+  alphaSelect.selectedIndex = 0;
 
   return allCards(statusResult);
 
@@ -46,15 +46,14 @@ lifeSelect.addEventListener("change", printStatus);
 
 function printGender(event) {
   const genderResult = genderFilter(data.results, event.target.value);
-  lifeSelect.selectedIndex = 0; //reseta o botão de Status, seta o índice para zero
-  alphaSelect.selectedIndex = 0;//reseta o botão de Ordenar
+  lifeSelect.selectedIndex = 0;
+  alphaSelect.selectedIndex = 0;
 
   return allCards(genderResult);
 }
 
 genderSelect.addEventListener("change", printGender);
 
-// event.target.value = buscar diretamente o valor definido no seletor
 
 
 function sortAlphabetical(event) {

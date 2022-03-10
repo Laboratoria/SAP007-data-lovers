@@ -9,7 +9,6 @@
 /* fundo */
 body {
   background-image: url("imagens/fundoram2.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -82,9 +81,7 @@ footer {
   top: 30%;
 }
 @media(max-width:480px){
-  body{
-    background-size: 300%;
-  }
+
   .RickMorty{
     width: 49%;
     height: 37%;

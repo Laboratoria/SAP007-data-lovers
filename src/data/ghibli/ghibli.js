@@ -290,7 +290,7 @@ export default {
                 {
                     "id": "c491755a-407d-4d6e-b58a-240ec78b5061",
                     "name": "Chibi Totoro",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c5/Little_Totoro_spirit_moving.gif",
+                    "img": "https://a.wattpad.com/useravatar/Meow0401.256.346836.jpg",
                     "gender": "NA",
                     "age": "",
                     "eye_color": "Black",
@@ -695,7 +695,7 @@ export default {
                 {
                     "id": "4a2e2cee-08ca-4d44-9564-2b3e5421bafb",
                     "name": "Fio Piccolo",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/16/Fio_%282%29.jpg",
+                    "img": "https://cdn.myanimelist.net/images/characters/13/206721.jpg",
                     "gender": "Female",
                     "age": "17",
                     "eye_color": "Brown",
@@ -998,7 +998,7 @@ export default {
                 {
                     "id": "34277bec-7401-43fa-a00a-5aee64b45b08",
                     "name": "Eboshi",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9f/Eboshi.png",
+                    "img": "https://cdn.myanimelist.net/images/characters/10/316767.jpg",
                     "gender": "Female",
                     "age": "Adult",
                     "eye_color": "Hazel",
@@ -1464,7 +1464,7 @@ export default {
                 {
                     "id": "1287b275-6c32-4113-947f-519316d4a6be",
                     "name": "Witch of the Waste",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e1/Howls-moving-castle-disneyscreencaps.com-10507.jpg",
+                    "img": "https://cdn.anime-planet.com/characters/primary/witch-of-the-waste-1.jpg?t=1625774081",
                     "gender": "Female",
                     "age": "59",
                     "eye_color": "Brown",
@@ -1494,7 +1494,7 @@ export default {
                 {
                     "id": "45237428-93bf-4dd6-97ce-f10647300429",
                     "name": "Prince Justin or Turnip Head",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d9/Prince_Justin.png",
+                    "img": "https://img.wattpad.com/cover/269401947-352-k722513.jpg",
                     "gender": "Male",
                     "age": "20-30",
                     "eye_color": "Grey",
@@ -2272,7 +2272,7 @@ export default {
                 {
                     "id": "28d07ace-c309-48c6-b48e-ae2ece3a238c",
                     "name": "Anna Sasaki",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ae/Anna.png",
+                    "img": "https://i.pinimg.com/236x/4e/43/ba/4e43bafb4758a2f77a2d01e6daa20ea8.jpg",
                     "gender": "Female",
                     "age": "12",
                     "eye_color": "Blue",
@@ -2302,7 +2302,7 @@ export default {
                 {
                     "id": "66bca178-9920-4ec3-91e9-0d5b8a76dba1",
                     "name": "Setsu Oiwa",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6e/Setsu.jpg",
+                    "img": "https://www.personality-database.com/profile_images/204740.png",
                     "gender": "Female",
                     "age": "50-60",
                     "eye_color": "Dark brown",
@@ -2312,7 +2312,7 @@ export default {
                 {
                     "id": "5b8e4413-f943-40ba-8f9f-0ba059a401f0",
                     "name": "Hisako",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/93/Hisako.png",
+                    "img": "https://cdn.myanimelist.net/images/characters/15/250957.jpg",
                     "gender": "Female",
                     "age": "Elder",
                     "eye_color": "Dark brown",
@@ -2342,7 +2342,7 @@ export default {
                 {
                     "id": "31b49ef6-ee60-4603-b983-e67fa0718aa9",
                     "name": "Kiyomasa Ōiwa",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d7/Kiyomasa.jpg",
+                    "img": "https://www.animeclick.it/immagini/personaggio/Kiyomasa_Oiwa/cover/28146-Kiyomasa_Oiwa-foto.jpg",
                     "gender": "Male",
                     "age": "50-60",
                     "eye_color": "Dark brown",
@@ -2352,7 +2352,7 @@ export default {
                 {
                     "id": "5d52d16f-ce72-41bd-8d88-436e206d9449",
                     "name": "Doctor Yamashita",
-                    "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8a/Yamashita.jpg",
+                    "img": "https://img.wattpad.com/8fdd83685b851525da2cdea8b15eaf9a1e41dc80/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6a52436448504e5a6c55503646413d3d2d313035363331353233312e313637363365363764333163653161353339323136383739303535392e6a7067",
                     "gender": "Male",
                     "age": "Adult",
                     "eye_color": "Black",

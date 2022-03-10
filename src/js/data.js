@@ -32,8 +32,13 @@ export const sortMovies = (data, order) => {
     );
   }
   if (order == "Oldest") {
+    return copy.sort((a, z) =>
       Number(a.release_date) > Number(z.release_date) ? 1 : -1
+    );
+  } else {
+    return copy.sort((a, z) =>
       Number(a.release_date) > Number(z.release_date) ? -1 : 1
+    );
   }
 };
 
@@ -63,8 +68,7 @@ export const alphabeticalSort = (data, order) => {
   const copy = [...data];
   if (order == "A-Z") {
     return copy.sort((a, z) => (a.name > z.name ? 1 : -1));
-  }
-  if (order == "Z-A") {
+  } else {
     return copy.sort((a, z) => (a.name > z.name ? -1 : 1));
   }
 };

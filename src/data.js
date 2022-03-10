@@ -25,12 +25,12 @@ export const filterProducer = (films, selectedProducer) => {
 //FILTROS PERSONAGENS
 
 export const sortAzPersons = (data, order) => {
- 
+  const copyPerson = [...data]
   if (order == "A-Z") {
   
-    return data.sort((a, z) => a.name > z.name ? 1 : -1);
+    return copyPerson.sort((a, z) => a.name > z.name ? 1 : -1);
   } else {
-    return data.sort((a, z) => a.name > z.name ? -1 : 1);
+    return copyPerson.sort((a, z) => a.name > z.name ? -1 : 1);
   }
 };
 

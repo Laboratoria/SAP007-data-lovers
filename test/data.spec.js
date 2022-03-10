@@ -1,5 +1,5 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
-import { sortAz, filterTitle, filterRating, filterProducer } from '../src/data.js';
+import { sortAz, filterTitle, filterRating, filterProducer, sortAzPersons, filterSpecie, filterGender } from '../src/data.js';
 
 const objFilmes = [
   {
@@ -77,33 +77,61 @@ describe('teste filterProcucer', () => {
 });
 
 
+// testes da página de personagens
+
+const objCharacters = [
+  {
+    "name": "Pazu",
+    "gender": "Male",
+    "specie": "Human"
+  },
+  {
+    "name": "Lusheeta Toel Ul Laputa",
+    "gender": "Female",
+    "specie": "Human"
+  },
+  {
+    "name": "Dola",
+    "gender": "Female",
+    "specie": "Human"
+  }
+]
+
+describe('test sortAz characters', () => {
+  it('is a function', () => {
+    expect(typeof sortAzPersons).toBe('function');
+  });
+
+  it('retorne a ordenação A-Z dos personagens', () => {
+    let resposta = [objCharacters[2], objCharacters[1], objCharacters[0]];
+    expect(sortAzPersons(objCharacters, "A-Z")).toEqual(resposta);
+  });
+
+  it('retorne a ordenação Z-A dos personagens', () => {
+    let resposta = [objCharacters[0], objCharacters[1], objCharacters[2]];
+    expect(sortAzPersons(objCharacters, "Z-A")).toEqual(resposta);
+  });
+});
 
 
-// const objPersonagem = [
-//   {
-//     "name": "Pazu",
-//     "gender": "Male",
-//     "specie": "Human"
-//   },
-//   {
-//     "name": "Lusheeta Toel Ul Laputa",
-//     "gender": "Female",
-//     "specie": "Human"
-//   },
-//   {
-//     "name": "Dola",
-//     "gender": "Female",
-//     "specie": "Human"
-//   }
-// ]
+describe('teste filterPersonSpecie', () => {
+  it('is a function', () => {
+    expect(typeof filterSpecie).toBe('function');
+  });
 
-// describe('filtrar por nome do personagem', () => {
-//   it('is a function', () => {
-//     expect(typeof filterTitle).toBe('function');
-//   });
+  it('retorne a filtragem das espécies dos personagens', () => {
+    let retorno = [objCharacters[0], objCharacters[1], objCharacters[2]];
+    expect(filterSpecie(objCharacters, "Human")).toEqual(retorno);
+  });
+});
 
-//   it('retorne a filtragem do nome dos funcionarios', () => {
-//     let retorno = [objPersonagem[2], objPersonagem[1], objPersonagem[0]];
-//     expect(filterTitle(objPersonagem, "")).toBe('OMG');
-//   });
-// });
+describe('teste filterPersonGender', () => {
+  it('is a function', () => {
+    expect(typeof filterGender).toBe('function');
+  });
+
+  it('retorne a filtragem dos gêneros dos personagens', () => {
+    let retorno = [objCharacters[1], objCharacters[2]];
+    expect(filterGender(objCharacters, "Female")).toEqual(retorno);
+  });
+});

@@ -41,10 +41,10 @@ footer {
   width: 100%;
   bottom: 0;
 }
-a { color: inherit; }
+.home_footer { color: inherit; }
 
 /* botões */
-main {
+.main {
   display: flex;
   justify-content: center;
   position: relative;
@@ -97,7 +97,7 @@ main {
     top: 5%;
 
   }
-  main{
+  .main{
     position: relative;
     top: 25%;
   }
@@ -112,7 +112,7 @@ main {
   }
 }
 @media(max-width: 660px){
-  main{
+  .main{
     position: relative;
     top: 25%;
   }

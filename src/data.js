@@ -17,7 +17,7 @@ export const genderFilter = (data, condition) => {
 
 //Ordenar
 export const sortNamesFilter = (data, order) => {
-  const copy = [...data];//constante que guarda uma cópia do array original, já que o sort modifica o array
+  const copy = [...data];
   if (order === "alphabetic") {
     copy.sort((a, z) => a.name > z.name ? 1 : -1);
   } else {
@@ -33,4 +33,37 @@ export const searchName = (data, condition) => {
   return searchResult;
 }
 
-//includes é um método que determina se um conjunto de caracteres pode ser encontrado dentro de outra string
+//Calculos
+export const stats_gender = {
+
+
+  gender: (data, genderParameter) => {
+
+    const totalByGender = data.reduce(function (total, character) {
+      if (character.gender === genderParameter) {
+        return total + 1;
+      }
+      return total;
+    }, 0)
+    const average_gender = Number(((totalByGender / data.length) * 100).toFixed(2));
+    return average_gender;
+  },
+
+}
+
+export const stats_status = {
+
+
+  status: (data, statusParameter) => {
+
+    const totalByStatus = data.reduce(function (total, character) {
+      if (character.status === statusParameter) {
+        return total + 1;
+      }
+      return total;
+    }, 0)
+    const average_status = Number(((totalByStatus / data.length) * 100).toFixed(2));
+    return average_status;
+  },
+
+};

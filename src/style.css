@@ -1,0 +1,194 @@
+body {
+    font-family: 'Amatic SC', cursive;
+    background: #0a0b0c;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+}
+
+.logo {
+    width: 120px;
+}
+
+.menu-lista {
+    display: flex;
+    list-style: none;
+}
+
+.itens {
+    color: #202329;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.itens:active {
+    color: #0a0b0c;
+    font-weight: bold;
+}
+
+.itens:hover {
+    text-decoration: underline;
+    color: #00FF00;
+}
+
+.imagem-nome {
+    background: #fefefe;
+    display: flex;
+    justify-content: center;
+}
+
+.nome-rick-and-morty {
+    width: 100%;
+}
+
+/*pagina home*/
+.sobre-secao {
+    background: url(bg.jpg);
+}
+
+.sobre {
+    padding: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D0CFCE;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sobre-secao p {
+    text-align: justify;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #fefefe;
+    padding: 1rem;
+
+}
+
+/*pagina personagens*/
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 00.5rem;
+}
+
+.barra-de-pesquisa{
+    display: flex;
+}
+
+.pesquisar {
+    border: none;
+    padding: 0.9rem;
+    font-family: 'Amatic SC', cursive;
+    margin: 6px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 500px;
+    background: #66ff66;
+    box-sizing: border-box;
+}
+::placeholder {
+    color: #0a0b0c;
+}
+.btn-filtro:first-child {
+    margin-left: 0;
+}
+.btn-filtro {
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem;
+    margin: 6px;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 500px;
+    background: #66ff66;
+    color: #0a0b0c;
+    font-weight: bold;
+
+}
+#percentualTotal {
+    display: flex;
+    justify-content: center;
+    color:#fefefe;
+    text-align: center;
+    font-size: 22px;    
+}
+#lista-cards {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    padding: 0.5rem;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 350px;
+}
+.mostrar-cards {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+}
+.card:hover .mostrar-cards {
+    transform: rotateY(180deg);
+}
+.cards-frente, .card-costa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    border: 2px solid #00FF00;
+}
+.cards-frente {
+    color: #1ea51e;
+    text-align: center;
+}
+.cards-frente p {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.card-costa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(180deg);
+    background-color: #D0CFCE;
+    color: #1ea51e;
+}
+.card-costa p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.rodape {
+    padding: 2rem;
+    background: #fefefe;
+}
+
+.texto-rodape {
+    text-align: center;
+    font-size: 12px;
+    color: #0a0b0c;
+}
+
+.links {
+    text-decoration: none;
+    color: #0a0b0c;
+}
+
+

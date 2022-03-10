@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta "viewport" content="width=device-width" />
+  <title> Rick and Morty | Data Lovers</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Space+Grotesk:wght@300&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1><img class="logo" alt="imagem logo" src="logo.png" /></h1>
+    <nav class="menu">
+      <ul class="menu-lista">
+        <li class="menu-item"><a class="itens" href="home-teste.html" target="_blank">Home</a></li>
+        <li class="menu-item"><a class="itens" href="index.html" target="_blank">Personagens</a></li>
+        <li class="menu-item"><a class="itens" href="https://www.netflix.com/br/title/80014749" target="_blank">Aonde
+            assistir?</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="imagem-nome">
+    <img class="logo-rick-and-morty" alt="logo rick e morty" src="logo-nome.png" />
+  </section>
+  <main>
+    <section class="menu">
+      <form class="barra-de-pesquisa">
+        <input class="pesquisar" id="pesquisarNome" type="search" placeholder="Buscar por nome...">
+        <input type="reset" id="limparFiltro" class="btn-filtro" value="Limpar Filtros">
+      </form>
+      <select id="selectOrdem" class="btn-filtro">
+        <option value="">Ordenar</option>
+        <option value="ordenarAZ">A-Z</option>
+        <option value="ordernarZA">Z-A</option>
+      </select>
+        <select id="selectGenero" class="btn-filtro">
+          <option value="">Genero</option>
+          <option value="Female">Femea</option>
+          <option value="Male">Macho</option>
+          <option value="unknown">Indefinido</option>
+        </select>
+      <select id="selectStatus" class="btn-filtro">
+        <option value="">Status</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Morto</option>
+        <option value="unknown">Indefinido</option>
+      </select>
+      <select id="selectEspecie" class="btn-filtro">
+        <option value="">Especie</option>
+        <option value="unknown">Desconhecido</option>
+        <option value="Human">Humano</option>
+        <option value="Alien">Alien</option>
+        <option value="Robot">Robo</option>
+      </select>
+
+    </section>
+    <section class="cards">
+        <span id="percentualTotal"></span>
+      <div id="lista-cards">
+      </div>
+    </section>
+  </main>
+  <script src="main.js" type="module"></script>
+  <footer class="rodape">
+    <p class="texto-rodape">Projeto desenvolvido por <a class="links" href="https://github.com/cintiasilv">Antonia
+        Cintia</a> e <a class="links" href="https://github.com/TailaMartins">Taila Martins</a></p>
+    <p class="texto-rodape">Laboratoria - DataLovers - 2022</p>
+  </footer>
+</body>
+
 </html>

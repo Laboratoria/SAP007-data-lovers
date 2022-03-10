@@ -65,6 +65,7 @@ li a:hover {
     
 }
 
+
 .themeGhibli {
     color: rgb(168, 14, 14);
     /* color: rgba(205, 204, 224, 0.863); */
@@ -83,6 +84,7 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .filtersContainer {
@@ -92,10 +94,11 @@ li a:hover {
     align-items: center;    
     background: rgb(20, 19, 19);
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .select {
-    height: 25px;
+    height: 30px;
     width: 200px;
     font-size: larger;
     border-radius: 5px;
@@ -161,28 +164,6 @@ li a:hover {
 
 }
 
-
-.modalContainer {
-    background:rgba(32, 112, 158, 0.863);
-    width: 50vw;
-    height: 50wh;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.openModal {
-    background:rgba(32, 112, 158, 0.863);
-    width: 40%;
-
-}
-.modalContainer.show {
-    opacity: 1;
-    pointer-events: auto;
-}
 
 .footer {
     display: flex;

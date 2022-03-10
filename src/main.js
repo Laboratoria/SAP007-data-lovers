@@ -30,7 +30,7 @@ function printCards(films) {
         </figure>
       </div>
       <div class="back">
-        <p class = "infoFilms"><strong>Title: </strong>${item.title}</p><br>
+        <p class = "nameFilms"><strong> ${item.title}</strong></p><br>
         <p class = "infoFilms"><strong>Release Date: </strong>${item.release_date}</p><br>
         <p class = "infoFilms"><strong>Description: </strong>${item.description}</p><br>
         <p class = "infoFilms"><strong>Director: </strong>${item.director}<p><br>

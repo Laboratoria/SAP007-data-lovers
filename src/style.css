@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+h1{
+  color:#F2E394;
+  text-shadow: 1px 1px 3px #A61C28;
+  font-family: 'Play', sans-serif;
+}
 
 .cabecalho {
   height: 100px;
@@ -15,17 +20,21 @@
   text-align: center;
   flex-direction: column;
   font-size: 1.25rem;
-  background-color:#f0e260;
+  background-color:#232659;
 }
 
 .menupaginas {
   display: flex;
   justify-content: space-evenly;
+  
 }
 .linkpaginas {
-  color: black;
+  color:#F2E394;
+  text-shadow: 1px 1px 3px #A61C28;
   font-size: 1.25rem;
   font-weight: 800;
+  font-family: 'Play', sans-serif;
+  text-decoration:dashed;
 }
 
 .container_filtros_search_ordem {
@@ -47,6 +56,7 @@
 
 main {
   padding: 0.5rem 5rem;
+  color:#ffffff
   }
 
 .ordenacaoA-Z,
@@ -116,17 +126,15 @@ body, .localCards{
 }
 
 .cards {
-  border: #a2b9df solid 1px;
+  border: #a2b9df solid 2px;
   padding: 0.938rem;
   padding-top: 1.8rem;
   border-radius: 0.313rem;
-  background: #f5efef;
-  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  background-color: white;
+  background-color: #26353e;
 }
 
 .telaTextCard {
@@ -161,12 +169,16 @@ ul.telaTextCard {
 }
 
 .nome_personagem {
-  font-size: 1rem;
+  font-size: 1.0rem;
   font-weight: 700;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #bf047e;
+  color: #CEFF93;
+}
+
+.categoria_filtro{
+  color:#B8CFFF;
 }
 
 .back-to-top-link {
@@ -188,7 +200,6 @@ ul.telaTextCard {
 }
 
 .back-to-top-wrapper {
- 
   position: absolute;
   right: 0.25rem;
   bottom: -5em;

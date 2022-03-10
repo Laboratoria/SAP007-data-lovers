@@ -1,29 +1,33 @@
-export const buscarNome = (data, busca) => { 
-  const resultadoNomes = data.filter(personagem => personagem.name.toUpperCase().includes(busca.toUpperCase()))
+export const buscarNome = (data, busca) => {
+  const resultadoNomes = data.filter(personagem => personagem.name.toLowerCase().includes(busca.toLowerCase()))
   return resultadoNomes
+};
+
+export const filtrarPorChaveEValor = (data, chave, valor) => {
+  return data.filter(resultado => resultado[chave] === valor)
+
 }
 
-
-export const buscarEspecie = (data, especie) => { 
+export const buscarEspecie = (data, especie) => {
   const resultadoEspecie = data.filter(personagem => personagem.species.toLowerCase() === especie.toLowerCase())
   return resultadoEspecie
-} 
+}
 
-
-export const SortOrdem = (data, ordemValue) => {
-  const order = data.sort((a, b) => (a.name.localeCompare(b.name)))
-  switch (ordemValue) {
-    case "az":
+export const sortOrdem = (data, ordem) => {
+  const copiaData = [...data]
+  const order = copiaData.sort((a, b) => (a.name.localeCompare(b.name)))
+  switch (ordem) {
+    case "a-z":
       return order
-    case "za":
+    case "z-a":
       return order.reverse()
   }
 }
 
-export const calculos = (total, portion) => {
-  const porcentagem = Math.round((portion * 100) / total)
+export const calculos = (total, porcento) => {
+  const porcentagem = Math.round((porcento * 100) / total)
   return porcentagem
-};
+}
 
- 
+
 

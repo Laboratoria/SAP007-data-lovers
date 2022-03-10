@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  background-color:rgb(213, 172, 161);
+  background-color:rgb(212, 171, 160);
 }
 
 body::before {
@@ -25,7 +25,7 @@ body::before {
 
 header {
   display: inline-flex;
-  background-color:#682c46c2;
+  background-color:rgba(104, 44, 70, 0.761);
   width: 100%;
 }
 
@@ -67,12 +67,12 @@ header {
   align-items: baseline;
 }
 
-.esquerda {
+.lado-esquerdo {
   display: inline-flex;
 }
 
 .pesquisar {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   font-size: 16px;
   width: 200px;
   padding: 5px;
@@ -82,7 +82,7 @@ header {
 }
 
 .limpar {
-  background-color: #636668;
+  background-color: rgb(99, 102, 104);
   color: white;
   font-size: 16px;
   width: 130px;
@@ -92,7 +92,7 @@ header {
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;}
 
-.centro {
+.centro-tela {
   display: inline-flex;
 }
 
@@ -102,7 +102,7 @@ header {
   color: rgb(138, 81,83);
 }
 
-.direita {
+.lado-direito  {
   display: inline-flex;
 }
 
@@ -134,7 +134,7 @@ header {
   padding: 15px;
   width: 180px;
   height: 290px;
-  border: 5px solid #D4D952;
+  border: 5px solid rgb(212, 217, 82);
   border-radius: 9px;
   text-align: center;
   cursor: pointer;
@@ -165,14 +165,14 @@ header {
 .outras-infos {
   text-align: center;
   font-weight: bold;
-  color: #31B0CC;
+  color: rgb(49, 176, 204);
   margin-top: 5px;
 }    
 
 .voltar-topo {
   position: fixed;
-  bottom: 50px;
-  right: 10px;
+  bottom: 30px;
+  right: 3px;
   cursor: pointer;
   background: none;
 }
@@ -183,19 +183,31 @@ footer {
   bottom: 0px;
   height: 40px;
   text-align: center;
-  background-color: #3e9bb7;
+  background-color: rgb(49, 176, 204);
   color: #fff;
-  border-top: 4px solid #D4D952;
-  box-shadow: 0.4em 0.3em 0.3em 0.3em #D4D952;
+  border-top: 4px solid rgb(212, 217, 82);
+  box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
   padding-top: 20px;
   margin-top: 40px;   
 }
 
 footer a {
-  color: #fff;
-  text-decoration: underline
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
 }
 
+::-webkit-scrollbar-track {
+background-color: rgb(213, 172, 161);
+}
+
+::-webkit-scrollbar {
+width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgba(104, 44, 70, 0.925);
+  height: 120px;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -214,7 +226,6 @@ body::before {
   opacity: 0.5;  
   background-size: cover;
   position: fixed;
-
 }    
 
 .logo-img {
@@ -228,14 +239,14 @@ body::before {
   justify-content: center;
 }
      
-.esquerda {
+.lado-esquerdo {
   display: grid;
   justify-content: center;
   text-align: center;
 }
 
 .pesquisar {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   font-size: 16px;
   width: 220px;
   margin-top: 5px;
@@ -247,7 +258,7 @@ body::before {
 }
   
 .limpar {
-  background-color: #636668;
+  background-color: rgb(99, 102, 104);
   color: white;
   font-size: 16px;
   width: 200px;
@@ -257,12 +268,11 @@ body::before {
   box-shadow: 50px;
   box-shadow: 8px 8px 8px black;
 }
-  
-.direita {
+
+.lado-direito {
   display: grid;
   justify-content: center;
   text-align: center;
-
 }
 
 .filtro-especies {
@@ -292,7 +302,7 @@ body::before {
   margin-bottom: 15px;
   width: 180px;
   height: 290px;
-  border: 5px solid #D4D952;
+  border: 5px solid rgb(212, 217, 82);
   border-radius: 9px;
   margin: 70px 0px 0px 70px;
   text-align: center;
@@ -323,7 +333,7 @@ body::before {
 .outras-infos {
   text-align: center;
   font-weight: bold;
-  color: #31B0CC;
+  color: rgb(49, 176, 204);
   margin-top: 5px;
 }    
   
@@ -333,15 +343,15 @@ footer {
   bottom: 0px;
   height: 40px;
   text-align: center;
-  background-color: #3e9bb7;
-  color: #fff;
-  border-top: 4px solid #D4D952;
-  box-shadow: 0.4em 0.3em 0.3em 0.3em #D4D952;
+  background-color: rgb(49, 176, 204);
+  color: rgb(255, 255, 255);
+  border-top: 4px solid rgb(212, 217, 82);
+  box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
   padding-top: 20px;
   margin-top: 40px;   
 }
     
 footer a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }

@@ -1,15 +1,20 @@
+/* global Chart */
 import data from './data/rickandmorty/rickandmorty.js';
+import { filtrarPorChaveEValor } from './data.js';
 
 const dados = data.results
+
+
 //Status
-const vivo = dados.filter(resultado => resultado.status === "Alive")
-const morto = dados.filter(resultado => resultado.status === "Dead")
-const desconhecido = dados.filter(resultado => resultado.status === "unknown")
+const vivo = filtrarPorChaveEValor(dados, "status", "Alive")
+const morto = filtrarPorChaveEValor(dados, "status", "Dead")
+const desconhecido = filtrarPorChaveEValor(dados, "status", "unknown")
 
 //Genero
-const masculino = dados.filter(resultado => resultado.gender === "Male")
-const feminino = dados.filter(resultado => resultado.gender === "Female")
-const indefinido = dados.filter(resultado => resultado.gender === "unknown")
+const masculino = filtrarPorChaveEValor(dados, "gender", "Male")
+const feminino = filtrarPorChaveEValor(dados, "gender", "Female")
+const indefinido = filtrarPorChaveEValor(dados, "gender", "unknown")
+
 //Especie
 const alien = dados.filter(resultado => resultado.species === "Alien")
 const animal = dados.filter(resultado => resultado.species === "Animal")
@@ -24,14 +29,11 @@ const robo = dados.filter(resultado => resultado.species === "Robot")
 const vampiro = dados.filter(resultado => resultado.species === "Vampire")
 const unknown = dados.filter(resultado => resultado.species === "unknown")
 
+const graficoStatus = document.getElementById('graficoStatus')
+const graficoGenero = document.getElementById('graficoGenero')
+const graficoEspecie = document.getElementById('graficoEspecie')
 
-const myStatus = document.getElementById('myStatus').getContext('2d')
-const myGenero = document.getElementById('myGenero').getContext('2d')
-const myEspecie = document.getElementById('myEspecie').getContext('2d')
-
-
-new Chart(myStatus, {
-
+new Chart(graficoStatus, {
     type: 'pie',
     data: {
         labels: ['Vivo', 'Morto', 'Desconhecido'],
@@ -39,23 +41,21 @@ new Chart(myStatus, {
             label: 'Status', //TITULO GRAFICO
             data: [vivo.length, morto.length, desconhecido.length],
             backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
+                'rgb(19, 176, 201)',
+                'rgb(104, 44, 70)',
                 'rgb(255, 206, 86)',
             ],
         }]
     },
-
     options: {
         title: {
             display: true,
             text: "STATUS"
         }
     }
-
 });
 
-new Chart(myGenero, {
+new Chart(graficoGenero, {
 
     type: 'pie',
     data: {
@@ -64,8 +64,8 @@ new Chart(myGenero, {
             label: 'Status', //TITULO GRAFICO
             data: [masculino.length, feminino.length, indefinido.length],
             backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
+                'rgb(81, 91, 38)',
+                'rgb(215, 109, 85)',
                 'rgb(255, 206, 86)',
             ],
         }]
@@ -80,7 +80,7 @@ new Chart(myGenero, {
 
 });
 
-new Chart(myEspecie, {
+new Chart(graficoEspecie, {
 
     type: 'pie',
     data: {
@@ -89,18 +89,18 @@ new Chart(myEspecie, {
             label: 'Status', //TITULO GRAFICO
             data: [alien.length, animal.length, cronenberg.length, doença.length, humano.length, humanóide.length, mytholog.length, parasita.length, poopybutthole.length, robo.length, vampiro.length, unknown.length],
             backgroundColor: [
-                'rgb(255, 99, 132)',
+                'rgb(26, 98, 60)',
+                'rgb(224, 73, 124)',
+                'rgb(212, 140, 84)',
+                'rgb(114, 67, 45)',
+                'rgb(68, 71, 161)',
+                'rgb(104, 44, 70)',
+                'rgb(67, 72, 163)',
                 'rgb(54, 162, 235)',
-                'rgb(255, 206, 86)',
-                'rgb(255, 99, 132)',
+                'rgb(188, 243, 238)',
+                'rgb(165, 187,105)',
                 'rgb(54, 162, 235)',
-                'rgb(255, 206, 86)',
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 206, 86)',
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 206, 86)',
+                'rgb(221, 114, 93)',
             ],
         }]
     },
@@ -113,4 +113,3 @@ new Chart(myEspecie, {
     }
 
 });
-

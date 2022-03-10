@@ -64,6 +64,7 @@ main {
   display: flex;
   background-color: #95bad7;
   color: #003563;
+  width: 100%;
   margin: auto;
   background-color: #95bad7;
   justify-content: center;
@@ -151,7 +152,7 @@ main {
   color: #bcd0df;
   height: 450px;
   height: 550px;
-  font-size: 0.9vmax;
+  font-size: 17px;
 }
 
 .poster {
@@ -167,6 +168,10 @@ main {
 
 .infoFilms{
   padding: 0% 2% ;
+}
+
+@media screen (max-width: ) {
+
 }
 
 hr {

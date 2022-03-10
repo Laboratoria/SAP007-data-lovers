@@ -159,14 +159,22 @@
 /* Footer */
 footer {
   display: flex;
+  font-size: 18px;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: #545975;
+  background-color: #c9e4fb;
 }
 
 footer p {
     margin: 10px 0;
+    background-color: #c9e4fb;
+}
+
+footer a {
+  color: black;
+  font-weight: bold;
+  background-color: #c9e4fb;
 }
 
 .sobre-nos {
@@ -180,10 +188,6 @@ footer p {
 
 .sobre-nos p {
   color: #999999;
-}
-
-.sobre-nos p a {
-  color: #cccccc;
 }
 
 .logo-sg {

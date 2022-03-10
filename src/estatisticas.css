@@ -60,8 +60,17 @@ header {
 
 .container {
    margin-top: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
 }
 
+.container2 {
+    margin-top: 50px;
+    display: inline-flex;
+}
+ 
 .voltar-topo {
     position: fixed;
     bottom: 30px;

@@ -3,13 +3,19 @@ export const buscarNome = (data, busca) => {
   return resultadoNomes
 };
 
+export const filtrarPorChaveEValor = (data, chave, valor) => {
+  return data.filter(resultado => resultado[chave] === valor)
+
+}
+
 export const buscarEspecie = (data, especie) => {
   const resultadoEspecie = data.filter(personagem => personagem.species.toLowerCase() === especie.toLowerCase())
   return resultadoEspecie
 }
 
-export const SortOrdem = (data, ordem) => {
-  const order = data.sort((a, b) => (a.name.localeCompare(b.name)))
+export const sortOrdem = (data, ordem) => {
+  const copiaData = [...data]
+  const order = copiaData.sort((a, b) => (a.name.localeCompare(b.name)))
   switch (ordem) {
     case "a-z":
       return order

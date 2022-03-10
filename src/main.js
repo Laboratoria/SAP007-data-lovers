@@ -54,7 +54,7 @@ function subirPagina(){
 } 
   
 //EVENTOS
-filtroPesquisar.addEventListener('keypress', pesquisarNomes)
+filtroPesquisar.addEventListener('input', pesquisarNomes)
 selecaoEspecie.addEventListener('change', filtrarEspecie)
 selecaoOrdem.addEventListener('change', filtroOrdem)
 voltarTopo.addEventListener('click', subirPagina)

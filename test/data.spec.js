@@ -12,8 +12,6 @@ const arrayFilms = [
     title: "Castle in the Sky",
     director: "Hayao Miyazaki",
     producer: "Isao Takahata",
-    poster:
-      "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
     release_date: "1986",
     rt_score: "95",
     people: [
@@ -37,8 +35,6 @@ const arrayFilms = [
     title: "My Neighbor Totoro",
     director: "Hayao Miyazaki",
     producer: "Hayao Miyazaki",
-    poster:
-      "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
     release_date: "1988",
     rt_score: "93",
     people: [
@@ -49,6 +45,25 @@ const arrayFilms = [
       {
         name: "Mei Kusakabe",
         gender: "Female",
+      },
+    ],
+  },
+
+  {
+    id: "ea660b10-85c4-4ae3-8a5f-41cea3648e3e",
+    title: "Kiki's Delivery Service",
+    director: "Hayao Miyazaki",
+    producer: "Hayao Miyazaki",
+    release_date: "1960",
+    rt_score: "96",
+    people: [
+      {
+        name: "Kiki",
+        gender: "Female",
+      },
+      {
+        name: "Jiji",
+        gender: "Male",
       },
     ],
   },

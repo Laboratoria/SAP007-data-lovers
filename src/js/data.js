@@ -22,7 +22,8 @@ export function ordenaçãoDataFilmes(data, condition) {
   if (condition === "A-Z") {
     let ordenaçãoAZ = data.sort((a, b) => (a.title > b.title ? 1 : -1));
     return ordenaçãoAZ;
-  } else {
+  }
+  if (condition === "Z-A") {
     return data.sort((a, b) => (a.title > b.title ? -1 : 1));
   }
 }
@@ -31,14 +32,17 @@ export function ordenaçãoDataPersonagens(data, condition) {
   if (condition === "A-Z") {
     let ordenaçãoAZ = data.sort((a, b) => (a.name > b.name ? 1 : -1));
     return ordenaçãoAZ;
-  } else {
+  }
+  if (condition === "Z-A") {
     return data.sort((a, b) => (a.name > b.name ? -1 : 1));
   }
 }
 
 export function ordenaçãoDataPopularidade(data, condition) {
   if (condition === "Mais Popular") {
-    let ordenaçãoPopularidade = data.sort((a, b) => (a.rt_score > b.rt_score ? -1 : 1));
+    let ordenaçãoPopularidade = data.sort((a, b) =>
+      a.rt_score > b.rt_score ? -1 : 1
+    );
     return ordenaçãoPopularidade;
   } else {
     return data.sort((a, b) => (a.rt_score > b.rt_score ? 1 : -1));
@@ -54,12 +58,16 @@ export function ordenaçãoDataIdade(data, condition) {
   }
 }
 
-export function pesquisaDataTítulo (data, condition) {
-  let pesquisaTítulo = data.filter((item) => item.title.toLowerCase().includes(condition.toLowerCase()));
+export function pesquisaDataTítulo(data, condition) {
+  let pesquisaTítulo = data.filter((item) =>
+    item.title.toLowerCase().includes(condition.toLowerCase())
+  );
   return pesquisaTítulo;
 }
 
-export function pesquisaDataNome (data, condition) {
-  let pesquisaNome = data.filter((item) => item.name.toLowerCase().includes(condition.toLowerCase()));
+export function pesquisaDataNome(data, condition) {
+  let pesquisaNome = data.filter((item) =>
+    item.name.toLowerCase().includes(condition.toLowerCase())
+  );
   return pesquisaNome;
 }

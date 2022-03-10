@@ -11,7 +11,7 @@ const containerAnimes = document.getElementById("containerCardItem");
 
 let filmesData = data.films;
 
-filmesData.forEach(mostrarFilmes); //mapeando array films com método de callback forEach
+filmesData.forEach(mostrarFilmes);
 
 function mostrarFilmes(data) {
   const cardAnime = document.createElement("section");

@@ -125,7 +125,7 @@
   max-width: 1500px;
   padding: 1em 1em;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -135,18 +135,18 @@
   padding: 1em;
   margin: 1em;
   border-radius: 1em;
-  max-width:300px;
+  max-width: 300px;
   min-width: 200px;
   cursor: pointer;
 }
 
-.container-card-individual:hover{ 
+.container-card-individual:hover {
   box-shadow: 0 0 9px 0 #7194b6;
   background-color: #bee4e9d3;
   padding: 1em;
   margin: 1em;
   border-radius: 1em;
-  max-width:300px;
+  max-width: 300px;
   min-width: 200px;
   cursor: pointer;
   transform: scale(1.075);

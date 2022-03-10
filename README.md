@@ -1,4 +1,4 @@
-got # **RICK AND MORTY EXPLORER**
+# **RICK AND MORTY EXPLORER**
 
 ## **Índice**
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estatisticas.css">
+  <title>Estatísticas</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src='estastisticas.js' type='module'></script>
+
+<body>
+  <header>
+    <img src="./image/logo.png" alt="logo rickandmorty" class="logo-img">
+    <nav class="menu">
+      <ul class="lista">
+        <li><a class="links" href="index.html"> Home</a></li>
+        <li><a class="links" href="estatisticas.html">Estatísticas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="container" class="container">
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas> 
+  </div>
+  
+  <button class='voltar-topo' id='voltar-topo'><img src="./image/topo.png" alt=""></button>
+</body>
+
+<footer>
+  <p>Desenvolvido por <a href='https://github.com/dayanersilva' target='_blank'>Dayane Rodrigues</a> e <a
+      href='https://github.com/karolsontak' target='_blank'>Karol Sontak</a></p>
+</footer>
+
+</html>

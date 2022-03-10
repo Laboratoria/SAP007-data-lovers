@@ -1,18 +1,18 @@
 import {
-    filtroGenero,
+    filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder
 } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
 ///Imprimir Cards na tela///
 
 function imprimirCardsTela(data) {
-  document.getElementById("infoCards").innerHTML = data
+document.getElementById("infoCards").innerHTML = data
     .map(
-      (item) => ` 
+    (item) => ` 
         
     <div class = "cards">
         <div class="frenteCards">
-            <img class="cardImg" src="${item.image}" ></img>
+            <img class="cardImg" src="${item.image}" loading="lazy" ></img>
         </div>
         
         <div class = "telaText">
@@ -31,33 +31,46 @@ function imprimirCardsTela(data) {
 }
 imprimirCardsTela(data.results);
 
+///pegar O seletor do filtro ' x'
 
+const selecaoGenero = document.getElementById("gender-filter");
+const selecaoStatus = document.getElementById("status-filter");
+const selecaoSpecies = document.getElementById("species-filter");
+//mudar pro queryselect
+const searchName = document.getElementById("text-search");
+const alphaOrder = document.getElementById("order-filter");
 
-///FILTRAGEM
-///coloca o dom pra ouvir o evento
-const seletorGenero = getElementById("gender-filter");
-
-//pega 'seletor' que é o evento. todo event listner primeiro recebe o TIPO de evento (change)
-/// e depois uma FUNÇÃO(arrow function) e um EVENTO como parametro
-seletorGenero.addEventListner("change", (event) =>{
-
-console.log(event.target.value);
-
-const resultado= data.results.filter((item) =>{ 
-    /// se mudar o === 'item' pelo event.target.value
-    return item.gender === event.target.value
- });
- console.log(resultado)
-});
+///função para imprimir o filtro 'x'
 
 function imprimirFiltroGenero(e) {
-    const resultadoGenero = filtroGenero(data.results, e.target.value); 
-    //e.target.value -> esse evento vai atrás do "alvo" selecionado no input do select
-    return imprimirCardsTela(resultadoGenero);
-  }
-  //selecaoGenero.addEventListener("change", imprimirFiltroGenero);
+const resultadoGenero = filtroGenero(data.results, e.target.value)
+return imprimirCardsTela(resultadoGenero);
+}
+
+function imprimirFiltroSpecies(e) {
+const resultadoSpecies = filtroSpecies(data.results, e.target.value);
+return imprimirCardsTela(resultadoSpecies);
+}
+
+function imprimirFiltroStatus(e) {
+const resultadoStatus = filtroStatus(data.results, e.target.value);
+return imprimirCardsTela(resultadoStatus);
+}
 
 
-  
+function imprimirFiltroName(e) {
+const resultadoName = filtroName(data.results, e.target.value);
+return imprimirCardsTela(resultadoName);
+}
 
+function  imprimirAlphaOrder(e) {
+const resultadoOrder = filtroOrder(data.results, e.target.value);
+return imprimirCardsTela(resultadoOrder);
+}
 
+/// Por uma escuta pra quando mudar pro filtro 'x', imprimir os cards filtrados
+selecaoGenero.addEventListener("change", imprimirFiltroGenero);
+selecaoStatus.addEventListener("change", imprimirFiltroStatus);
+selecaoSpecies.addEventListener("change", imprimirFiltroSpecies);
+searchName.addEventListener("keyup", imprimirFiltroName);
+alphaOrder.addEventListener("change", imprimirAlphaOrder);

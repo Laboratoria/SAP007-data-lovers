@@ -31,7 +31,6 @@
 .container_filtros_search_ordem {
   background: #26353e;
   color: #f5efef;
-  box-shadow: -7px 7px 14px #bebebe, 7px -7px 14px #ffffff;
   border-radius: 0.3em;
   border: #a2b9df solid 1px;
   padding: 1rem;
@@ -44,14 +43,11 @@
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  
-
 }
 
 main {
   padding: 0.5rem 5rem;
   }
-
 
 .ordenacaoA-Z,
 .menufiltros {
@@ -60,7 +56,6 @@ main {
   gap: 10px;
 }
 
-.btn_submit,
 .btn_reset {
   width: 4rem;
   text-align: center;
@@ -72,6 +67,41 @@ main {
 .btn_reset {
   border: #f76a68 solid 1px;
   background-color: #f76a68;
+}
+
+.btn_Lou{ 
+  max-width: 100px;
+  max-height:25px;
+  width: auto;
+  float: left;
+}
+
+.btn_Malu{
+  max-width: 100px;
+  max-height:25px;
+  width: auto;
+  height: auto;
+  float: right;
+}
+
+.rodape {
+  background-color: #26353e;
+  position: fixed;
+  padding: 1em 1em 1em 1em;
+  bottom: 0;
+  width: 100%;
+  height: 3.5em;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  color: #ffffff;
+}
+
+body, .localCards{
+  background-image: url(fundosite.jpg);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .localCards {
@@ -91,11 +121,12 @@ main {
   padding-top: 1.8rem;
   border-radius: 0.313rem;
   background: #f5efef;
-  box-shadow: 5px 5px 17px #e1dcdc, -5px -5px 17px #ffffff;
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  background-color: white;
 }
 
 .telaTextCard {
@@ -177,4 +208,31 @@ ul.telaTextCard {
   justify-content: space-around;
   display: flex;
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  div.container_filtros_search_ordem{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+div.container_filtros_search_ordem select:not(:last-child){
+    margin-bottom: 10px;
+}
+.menufiltros, .ordenacaoA-Z{
+  gap: 5px;
+}
+option, .label{
+  font-size: 10px;
+}
+  .logo, .titulosite{
+    font-size: 20px;
+  }
+  .cabecalho{
+    height: 15%;
+  }
+  .rodape .btn_top {
+    height: 8%;
+    font-size: 10px
+  }
 }

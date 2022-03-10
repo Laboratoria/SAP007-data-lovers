@@ -20,15 +20,16 @@ function showOnCards(data) {
         <section class="front-card">
           <img class="image-card" src="${item.image}" alt="Imagem dos personagens">
           <div class="name text-card">${item.name}</div>
+          <p class="text-card more-info">Saiba mais</p>
         </section>
 
         <section class="back-card">
         <ul class="text-card">
-        <li> Status:${item.status}</li>
+        <li>Status:${item.status}</li>
         <li>Espécie:${item.species}</li>
         <li>Origem:${item.origin.name}</li>
         <li>Gênero:${item.gender}</li>
-        <li>Gênero:${item.episode.length}</li>
+        <li>Episódios:${item.episode.length}</li>
         </ul>
         </section>
       </div>

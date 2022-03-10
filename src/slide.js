@@ -6,7 +6,7 @@ sumir();
 
 function sumir() {
   let img = document.querySelectorAll(".box-image img");
-  let span = document.querySelector(".bolinhas");
+  let span = document.querySelector(".box-cursor");
 
   img[1].style.display = "none";
   img[2].style.display = "none";
@@ -24,7 +24,7 @@ acao();
 
 function acao() {
   let img = document.querySelectorAll(".box-image img"); //pega as img em si
-  let span = document.querySelectorAll(".bolinhas span");
+  let span = document.querySelectorAll(".box-cursor span");
 
   setInterval(function () {
     img[interval].style.display = "none"; //some com a imagem que recebe o intervalo
@@ -42,16 +42,16 @@ controlador();
 
 function controlador() {
   let img = document.querySelectorAll(".box-image img");
-  document.querySelectorAll(".bolinhas span").forEach(function (valor, index) {
+  document.querySelectorAll(".box-cursor span").forEach(function (valor, index) {
     valor.addEventListener("click", function () {
       img[interval].style.display = "none";
       interval = index;
       img[interval].style.display = "block";
 
-      let div = document.querySelectorAll(".bolinhas span").length;
+      let div = document.querySelectorAll(".box-cursor span").length;
 
       if (div == 3) {
-        document.querySelectorAll(".bolinhas span").forEach(function (valor) {
+        document.querySelectorAll(".box-cursor span").forEach(function (valor) {
           valor.classList.remove("marcador");
         });
       }

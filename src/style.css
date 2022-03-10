@@ -7,9 +7,9 @@
 * {
   padding: 0;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
+
 
 /* === VARIAVEIS === */
 :root {
@@ -25,13 +25,13 @@
   background: black;
   font-family: "Shlop", sans-serif;
 }
-/* === SLIDE === */
+/* === LOGO === */
 .box-logo {
-  width: 78vw;
+  width: 12em;
   display: flex;
-  margin: auto auto 1.5rem;
+  margin: 0.5em auto;
 }
-
+/* === SLIDE === */
 .box {
   display: flex;
   justify-content: center;
@@ -39,7 +39,8 @@
 }
 
 .box-image img {
-  width: 86vw;
+  width: 80%;
+  margin: auto;
   animation: anima;
   animation-duration: 800ms;
 }
@@ -53,12 +54,14 @@
   }
 }
 /* === BOLINHAS DO SLIDE === */
-.bolinhas {
+
+.box-cursor {
   justify-content: center;
   display: flex;
+  margin: auto auto 1em;
 }
 
-.bolinhas span {
+.box-cursor span {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -68,15 +71,26 @@
   background: var(--light-green);
 }
 
-.bolinhas span.marcador {
+.box-cursor span.marcador {
   background-color: var(--green-neon);
 }
 
-/* === FILTROS === */
-.value-option {
-  background-color: black;
+/* === ESTATISTICAS === */
+.statistics {
+  text-align: center;
+  color: #85d97aa8;
+  font-size: 17px;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 0 rgb(7 157 238 / 82%);
+  width: 60%;
+  margin: 2rem auto;
+  padding: 12px;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
+/* === FILTROS === */
 .filters-container {
   display: flex;
   align-items: center;
@@ -136,35 +150,11 @@
   transform: translateX(15em);
 }
 
-/* === ESTATISTICAS === */
-.statistics {
-  text-align: center;
-  color: #85d97aa8;
-  font-size: 17px;
-  border-radius: 7px;
-  box-shadow: 0 0 20px 0 rgb(7 157 238 / 82%);
-  width: 60%;
-  margin: 2rem auto;
-  padding: 12px;
-  display: none;
-  align-items: center;
-  justify-content: center;
+.value-option {
+  background-color: black;
 }
+
 /* === CARDS === */
-.front-card{
-  margin: auto;
-}
-
-.image-card {
-  width: 36vw;
-  margin: auto;
-}
-
-.text-card, .back-card{
-  text-align: center;
-  margin: auto;
-}
-
 .flip-card {
   background: var(--green-neon);
   background-size: cover;
@@ -182,9 +172,10 @@
   border-radius: 6px;
   display: flex;
   flex-flow: wrap;
-  margin: 9% 24%;
+  margin: 1.3em auto 1em;
 }
 
+/* BORDA COLORIDA MOBILE E TABLET */
 .flip-card::after {
   --m-i: linear-gradient(#000, #000);
   --m-o: content-box, padding-box;
@@ -231,18 +222,24 @@
 .flip-card::after {
   box-sizing: border-box;
 }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
+
+.front-card{
+  margin: auto;
 }
 
-.text-card {
+.image-card {
+  width: 10em;
+  margin: auto;
+}
+
+.back-card, .text-card{
   text-align: center;
+  margin: auto;
   list-style-type: none;
 }
 
 /* === FOOTER === */
-footer {
+#footer {
   background-color: var(--light-blue);
   opacity: 60%;
   font-size: large;
@@ -255,12 +252,12 @@ footer {
   justify-content: space-evenly;
 }
 
-footer .criadoras {
+.developed {
   color: #000000;
   text-shadow: 1px 1px 2px var(--green-neon);
   font-size: small;
 }
 
-.icones {
+.icons {
   width: 4rem;
 }

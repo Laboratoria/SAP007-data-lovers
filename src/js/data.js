@@ -38,26 +38,6 @@ export function ordenaçãoDataPersonagens(data, condition) {
   }
 }
 
-export function ordenaçãoDataPopularidade(data, condition) {
-  if (condition === "Mais Popular") {
-    let ordenaçãoPopularidade = data.sort((a, b) =>
-      a.rt_score > b.rt_score ? -1 : 1
-    );
-    return ordenaçãoPopularidade;
-  } else {
-    return data.sort((a, b) => (a.rt_score > b.rt_score ? 1 : -1));
-  }
-}
-
-export function ordenaçãoDataIdade(data, condition) {
-  if (condition === "Mais Novo") {
-    let ordenaçãoIdade = data.sort((a, b) => (a.age > b.age ? 1 : -1));
-    return ordenaçãoIdade;
-  } else {
-    return data.sort((a, b) => (a.age > b.age ? -1 : 1));
-  }
-}
-
 export function pesquisaDataTítulo(data, condition) {
   let pesquisaTítulo = data.filter((item) =>
     item.title.toLowerCase().includes(condition.toLowerCase())

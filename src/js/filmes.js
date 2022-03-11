@@ -3,7 +3,6 @@ import {
   filtroDataDiretor,
   filtroDataLançamento,
   ordenaçãoDataFilmes,
-  ordenaçãoDataPopularidade,
   pesquisaDataTítulo,
 } from "./data.js";
 
@@ -57,18 +56,6 @@ document
     let títulosOrdenados = ordenaçãoDataFilmes(filmesData, título.value);
     containerAnimes.innerHTML = "";
     títulosOrdenados.forEach(mostrarFilmes);
-  });
-
-document
-  .getElementById("ordenacaoPopularidadeItem")
-  .addEventListener("change", () => {
-    let popularidade = document.querySelector(".ordenação-popularidade");
-    let ordemDePopularidade = ordenaçãoDataPopularidade(
-      filmesData,
-      popularidade.value
-    );
-    containerAnimes.innerHTML = "";
-    ordemDePopularidade.forEach(mostrarFilmes);
   });
 
 document

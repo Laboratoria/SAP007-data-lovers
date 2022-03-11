@@ -3,7 +3,6 @@ import {
   filtroDataGênero,
   filtroDataEspécie,
   ordenaçãoDataPersonagens,
-  ordenaçãoDataIdade,
   pesquisaDataNome,
 } from "./data.js";
 
@@ -68,13 +67,6 @@ document
     containerAnimes.innerHTML = "";
     mostrarPersonagens(nomesOrdenados);
   });
-
-document.getElementById("ordenacaoIdadeItem").addEventListener("change", () => {
-  let idade = document.querySelector(".ordenação-idade");
-  let idadeOrdenada = ordenaçãoDataIdade(characters, idade.value);
-  containerAnimes.innerHTML = "";
-  mostrarPersonagens(idadeOrdenada);
-});
 
 document
   .getElementById("pesquisaConteinerItem")

@@ -81,7 +81,7 @@
 }
 
 #recarregar {
-  width: 108%;
+  width: 175%;
   height: 38px;
   font-size: 18px;
   text-align: center;
@@ -104,19 +104,15 @@
 }
 
 #ordenacaoAlfabetica {
-  width: 20%;
-}
-
-#ordenacaoPopularidade {
-  width: 20%;
+  width: 25%;
 }
 
 #filtroDiretor {
-  width: 20%;
+  width: 25%;
 }
 
 #filtroLancamento {
-  width: 20%;
+  width: 25%;
 }
 
 #containerCardItem {
@@ -155,7 +151,6 @@
   font-family: Georgia;
 }
 
-
 /* Footer */
 footer {
   display: flex;
@@ -167,27 +162,14 @@ footer {
 }
 
 footer p {
-    margin: 10px 0;
-    background-color: #c9e4fb;
+  margin: 10px 0;
+  background-color: #c9e4fb;
 }
 
 footer a {
   color: black;
   font-weight: bold;
   background-color: #c9e4fb;
-}
-
-.sobre-nos {
-  justify-content: center;
-}
-
-.sobre-nos p a {
-  color: #fff;
-  font-size: 14px;
-}
-
-.sobre-nos p {
-  color: #999999;
 }
 
 .logo-sg {

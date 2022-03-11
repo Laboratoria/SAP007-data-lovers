@@ -1,9 +1,5 @@
 import {
-<<<<<<< HEAD
     filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder,calculoPorcentagem
-=======
-    filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder,
->>>>>>> cd4a99ce2a2f30bd316648c7a3a9aa6fa322a1e1
 } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 

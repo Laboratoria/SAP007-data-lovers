@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+.filter-menu {
+    width: 40vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+}

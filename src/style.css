@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  background-color: #263E5D;
+  font-family: 'Fira Code', monospace;
+  font-weight:500;
+  overflow-x: hidden;
+}
+
+.main_pag1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.button-pag1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 100px;
+}
+
+.introduction{
+  margin-top: 20px;
+  color: white;
+  width: 40vw;
+  height: 47vw;
+  text-align: center;
+  line-height: 35px;
+
+}
+
+.introduction p{
+  color: #D4E6E5;
+  font-size: 20px;
+
+}
+
+.button-pag1 button {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 24px;
+  color: #263E5D;
+  font-size: 20px;
+  font-weight: 700;
+  font-family:'Fira Code', monospace;
+  cursor: pointer;
+  width: 200px;
+  background: rgb(117,250,242);
+  background: linear-gradient(0deg, rgba(117,250,242,1) 0%, rgba(38,62,93,1) 100%);
+  border: none;
+}
+
+@media screen and (max-width: 1349px){
+  .button-pag1 button {
+    margin-top: 30px;
+  }
+}
+
+button:hover{
+  background: rgb(38,62,93);
+  background: linear-gradient(0deg, rgba(38,62,93,1) 0%, rgba(117,250,242,1) 100%);
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  color: #A0C0C2;
+}
+
+.bg-portal{
+  width: 300px;
+  position: absolute;
+  margin-top: 250px;
+}
+
+.logo{
+  width: 600px;
+}

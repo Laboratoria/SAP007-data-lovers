@@ -1,5 +1,5 @@
 import data from './data/rickandmorty/rickandmorty.js'; 
-import {buscarNome, buscarEspecie, SortOrdem, calculos} from './data.js';
+import {buscarNome, buscarEspecie, sortOrdem, calculos} from './data.js';
 
 function mostrarCards(data) {
   document.getElementById('recebe-card').innerHTML = data.map((item) => `
@@ -42,7 +42,7 @@ function filtrarEspecie(e) {
 
 function filtroOrdem(){
   const ordem = selecaoOrdem.value 
-  return mostrarCards (SortOrdem(data.results, ordem))
+  return mostrarCards (sortOrdem(data.results, ordem))
 }
   
 function limparFiltros(){

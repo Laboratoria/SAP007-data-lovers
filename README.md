@@ -15,6 +15,8 @@
 
 O objetivo deste projeto é construir uma página web para visualizar um conjunto de dados sobre os personagens da série Rick and Morty que se adapte às necessidades do usuário. Essa página possibilita tanto visualizar todos os personagens como filtrar, ordenar os dados e mostrar informações relevantes através de cálculos agregados e gŕaficos.
 
+Para visualizar o projeto [clique aqui]()
+
 ### **Sobre a série**
 
 Rick and Morty é uma série de animação adulta norte-americana de comédia e ficção científica criada por Justin Roiland e Dan Harmon para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.
@@ -31,10 +33,11 @@ Este produto tem o intuito de sanar a necessidade do consumidor da série Rick a
 
 Para atender as expectativas do usuário, uma pesquisa de campo com telespectadores da série foi feita para conseguirmos acessar as informações que seriam pertinentes de conter no nosso produto, abaixo você pode acompanhar os quatro perfis que encontramos para darmos início ao nosso projeto:
 
-
-| ![](image-readme/História%20de%20usuário%201.png)  	| ![](image-readme/História%20de%20usuário%202.png)  	| ![](image-readme/História%20de%20usuário%203.png)  	| ![](image-readme/História%20de%20usuário%204.png) 	|
-|---	|---	|---	|---	|
-
+| ![](image-readme/História%20de%20usuário%201%20-%20completa.png)  	|
+|---	|
+| ![](image-readme/História%20de%20usuário%202%20-%20completa.png)  	|
+| ![](image-readme/História%20de%20usuário%203%20-%20completa.png)  	|
+| ![](image-readme/História%20de%20usuário%204%20-%20completa.png)  	|
 
 ### **Desenho de interface do usuário**
 

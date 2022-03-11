@@ -28,13 +28,35 @@ const dados = [
     }
 ];
 
-
 const nomes = [
   {"name": "Bearded Lady"},
   {"name": "Rick Sanchez"},
   {"name": "Morty Smith"},
   {"name": "Boobloosian"},
 ]
+
+/////////////////////////TESTE PARA CAMPO DE BUSCA NOME
+describe('buscarNome', () => {
+  it('Deverá ser uma função', () => {
+    expect(typeof buscarNome).toBe('function');
+  });
+  it('Deveverá buscar por um nome', () => {
+    const expected = buscarNome(nomes, 'banana')
+    expect (expected).toEqual([])
+  });
+  it('Deveverá buscar por um nome', () => {
+    const expected = buscarNome(nomes, 'Rick')
+    expect (expected).toEqual([{"name": "Rick Sanchez"}])
+  });
+});
+
+/////////////////////TESTE PARA FILTRAR A CHAVE 
+// IMPORTAR A FUNÇÃO LA EM CIMA
+
+//describe('filtrarPorChaveEValor', () => {
+//  it('Deverá ser uma função', () => {
+// expect(typeof filtrarPorChaveEValor).toBe('function');
+// });
 
 /////////////////////TESTE PARA FILTRAR A ESPÉCIE 
 describe('buscarEspecie', () => {
@@ -43,11 +65,11 @@ describe('buscarEspecie', () => {
 });
 
 it('Deverá filtrar pela espécie Alien', () => {
-  const specieAlien = "Alien"
-  const expected = buscarEspecie(dados, specieAlien)
+  const especieAlien = "Alien"
+  const expected = buscarEspecie(dados, especieAlien)
   expect (expected.length).toEqual(2)
-  expect (expected[0].species).toEqual(specieAlien)
-  expect (expected[1].species).toEqual(specieAlien)
+  expect (expected[0].species).toEqual(especieAlien)
+  expect (expected[1].species).toEqual(especieAlien)
   });
 });
 
@@ -65,7 +87,6 @@ describe('sortOrdem', () => {
   });
 });
 
-
 /////////////////////TESTE PARA CALCULAR A PORCENTAGEM
 describe('calculos', () => {
   it('Deverá ser uma função', () => {
@@ -78,17 +99,3 @@ it('Deverá retornar 50% de personagens masculinos', () => {
   });
 });
 
-/////////////////////////TESTE PARA CAMPO DE BUSCA NOME
-describe('buscarNome', () => {
-  it('Deverá ser uma função', () => {
-    expect(typeof buscarNome).toBe('function');
-  });
-  it('Deveverá buscar por um nome', () => {
-    const expected = buscarNome(nomes, 'banana')
-    expect (expected).toEqual([])
-  });
-  it('Deveverá buscar por um nome', () => {
-    const expected = buscarNome(nomes, 'Rick')
-    expect (expected).toEqual([{"name": "Rick Sanchez"}])
-  });
-});

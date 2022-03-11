@@ -61,28 +61,27 @@ selectGender.addEventListener("change", (event)=> {
 })
 
 
-const selectOrigin = document.getElementById("selectFilterOrigin")
 
-selectOrigin.addEventListener("change", (event) => {
-  const newArrayOrigin = arrayRickAndMorty.filter((item) => {
-    return item.origin.name === event.target.value
-  })
-  console.log(event.target.value)
-  console.log(newArrayOrigin)
-  showInfos(newArrayOrigin)
+const btn = document.querySelector("#refresh")
+
+btn.addEventListener('click', () => {
+  location.reload()
 })
 
-const selectLocation = document.getElementById("selectFilterLocation")
-
-selectLocation.addEventListener("change", (event) => {
-  const newArrayLocation = arrayRickAndMorty.filter((item)=> {
-  return item.location.name === event.target.value
-})
-  console.log(event.target.value)
-  console.log(newArrayLocation)
-  showInfos(newArrayLocation)
-})
+const searchBar = document.getElementById('searchBar');
 
 
+console.log(searchBar);
+searchBar.addEventListener('keyup', (e) => {
+  const searchString = e.target.value;
+  const filteredCharacteres = arrayRickAndMorty.filter( item =>{
+   return item.name.includes(searchString) ||
+    item.status.includes(searchString) ||
+    item.species.includes(searchString) ||
+    item.gender.includes(searchString)
+  });
+  console.log(filteredCharacteres)
+  showInfos(filteredCharacteres)
+});
 
 

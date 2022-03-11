@@ -24,10 +24,12 @@ export const filterProducer = (films, selectedProducer) => {
 
 //FILTROS PERSONAGENS
 
+
+
 export const sortAzPersons = (data, order) => {
   const copyPerson = [...data]
   if (order == "A-Z") {
-  
+
     return copyPerson.sort((a, z) => a.name > z.name ? 1 : -1);
   } else {
     return copyPerson.sort((a, z) => a.name > z.name ? -1 : 1);
@@ -35,10 +37,14 @@ export const sortAzPersons = (data, order) => {
 };
 
 export const filterSpecie = (films, selectedSpecie) => {
-  return films.filter(person => person.specie === selectedSpecie);    
-}; 
+  return films.filter(person => person.specie === selectedSpecie);
+};
 
 export const filterGender = (films, selectedGender) => {
-  return films.filter(person => person.gender === selectedGender);    
-}; 
+  return films.filter(person => person.gender === selectedGender);
+};
 
+
+export const calculoCharacters = (data) => {
+  return data.length;
+}

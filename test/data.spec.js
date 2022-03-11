@@ -3,6 +3,9 @@ import {
   filtroDataDiretor,
   ordenaçãoDataFilmes,
   pesquisaDataTítulo,
+  filtroDataEspécie,
+  ordenaçãoDataPersonagens,
+  pesquisaDataNome
 } from "../src/js/data";
 
 const filmes = [
@@ -105,5 +108,93 @@ describe("Testar pesquisa de filme", () => {
     const filmesPesquisados = pesquisaDataTítulo(filmes, "the");
     expect(filmesPesquisados).toHaveLength(2);
     expect(filmesPesquisados).toEqual(filmesTituloParcial);
+  });
+});
+
+const personagens = [
+  {
+    name: "Aiko",
+    gender: "Female",
+    specie: "Human",
+  },
+  {
+    name: "Heen",
+    gender: "Male",
+    specie: "Dog",
+  },
+  {
+    name: "Pazu",
+    gender: "Male",
+    specie: "Human",
+  },
+];
+
+const personagensDesordenados = [
+  {
+    name: "Pazu",
+    gender: "Male",
+    specie: "Human",
+  },
+  {
+    name: "Heen",
+    gender: "Male",
+    specie: "Dog",
+  },
+  {
+    name: "Aiko",
+    gender: "Female",
+    specie: "Human",
+  },
+];
+
+describe("Testar filtro por espécie", () => {
+  it("should return 2 characters", () => {
+    const personagensFiltrados = filtroDataEspécie(personagens, "Human");
+    expect(personagensFiltrados).toHaveLength(2);
+  });
+
+  it("should return human characters", () => {
+    const personagensHumanos = [
+      {
+        name: "Aiko",
+        gender: "Female",
+        specie: "Human",
+      },
+      {
+        name: "Pazu",
+        gender: "Male",
+        specie: "Human",
+      },
+    ];
+    const personagensFiltrados = filtroDataEspécie(personagens, "Human");
+    expect(personagensFiltrados).toEqual(personagensHumanos);
+  });
+});
+
+describe("Testar ordenação pelo nome do personagem", () => {
+  it("should sort by name", () => {
+    const personagensOrdenados = ordenaçãoDataPersonagens(personagensDesordenados, "A-Z");
+    expect(personagensOrdenados).toEqual(personagens);
+  });
+});
+
+describe("Testar pesquisa de nome", () => {
+  it("should search by full name", () => {
+    const nomesPesquisados = pesquisaDataNome(personagens, "Pazu");
+    expect(nomesPesquisados).toHaveLength(1);
+    expect(nomesPesquisados[0]).toEqual(personagens[2]);
+  });
+
+  it("should search by partial name", () => {
+    const personagensNomeParcial = [
+      {
+        name: "Heen",
+        gender: "Male",
+        specie: "Dog",
+      },
+    ];
+    const nomesPesquisados = pesquisaDataNome(personagens, "He");
+    expect(nomesPesquisados).toHaveLength(1);
+    expect(nomesPesquisados).toEqual(personagensNomeParcial);
   });
 });

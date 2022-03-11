@@ -43,14 +43,11 @@
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  
-
 }
 
 main {
   padding: 0.5rem 5rem;
   }
-
 
 .ordenacaoA-Z,
 .menufiltros {
@@ -100,7 +97,7 @@ main {
   color: #ffffff;
 }
 
-body, .localCards{
+.corpoHtml1, .localCards{
   background-image: url(fundosite.jpg);
   background-repeat:no-repeat;
   background-attachment: fixed;
@@ -124,6 +121,7 @@ body, .localCards{
   padding-top: 1.8rem;
   border-radius: 0.313rem;
   background: #f5efef;
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -162,6 +160,9 @@ ul.telaTextCard {
   font-size: 1.125rem;
 }
 
+.bodyTrivia{
+  background-color:#a2b9df;
+}
 
 @media (max-width: 767px) {
   div.container_filtros_search_ordem{
@@ -211,7 +212,7 @@ option, .label{
   border-radius: 50%;
   /*background-color: #d6e3f0;
   /* emoji don't behave like regular fonts
-     so this helped position it correctly */
+  so this helped position it correctly */
   padding: 0.25rem;
 }
 

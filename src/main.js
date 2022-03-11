@@ -1,15 +1,17 @@
 import {
+<<<<<<< HEAD
     filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder,calculoPorcentagem
+=======
+    filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder,
+>>>>>>> cd4a99ce2a2f30bd316648c7a3a9aa6fa322a1e1
 } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
 ///Imprimir Cards na tela///
 
 function imprimirCardsTela(data) {
-document.getElementById("infoCards").innerHTML = data
-    .map(
-    (item) => ` 
-        
+document.getElementById("infoCards").innerHTML = data.map(
+(item) => `  
     <div class = "cards">
         <div class="frenteCards">
             <img class="cardImg" src="${item.image}" loading="lazy" ></img>
@@ -18,10 +20,10 @@ document.getElementById("infoCards").innerHTML = data
         <div class = "telaText">
             <ul class = "telaTextCard">
                 <li class="nome_personagem"><strong> </strong>${item.name}</li>
-                <li><strong>Espécie: </strong>${item.species}</li>
-                <li><strong>Status: </strong>${item.status}</li>
-                <li><strong>Gênero: </strong>${item.gender}</li>
-                <li><strong>Local de Origem: </strong>${item.origin.name}</li>
+                <li class=""><strong class="categoria_filtro">Espécie: </strong>${item.species}</li>
+                <li class=""><strong class="categoria_filtro"><style= color:color: #CEFF93;>Status: </strong>${item.status}</li>
+                <li class=""><strong class="categoria_filtro">Gênero: </strong>${item.gender}</li>
+                <li class=""><strong class="categoria_filtro">Local de Origem: </strong>${item.origin.name}</li>
             </ul>
         </div>
     </div>
@@ -37,10 +39,9 @@ const selecaoGenero = document.querySelector("#gender-filter");
 const selecaoStatus = document.querySelector("#status-filter");
 const selecaoSpecies = document.querySelector("#species-filter");
 const alphaOrder = document.querySelector("#order-filter");
-//mudar pro queryselect
-const porcentagem = document.getElementById("porcentagemFiltro");
-const searchName = document.getElementById("text-search");
 
+const searchName = document.getElementById("text-search");
+const btnLimpar = document.getElementById("btn_reset")
 
 ///função para imprimir o filtro 'x'
 
@@ -81,9 +82,16 @@ const resultadoOrder = filtroOrder(data.results, e.target.value);
 return imprimirCardsTela(resultadoOrder);
 }
 
+
+function limparFiltros(){
+window.location.reload();
+}
+
+
 /// Por uma escuta pra quando mudar pro filtro 'x', imprimir os cards filtrados
 selecaoGenero.addEventListener("change", imprimirFiltroGenero);
 selecaoStatus.addEventListener("change", imprimirFiltroStatus);
 selecaoSpecies.addEventListener("change", imprimirFiltroSpecies);
-alphaOrder.addEventListener("change", imprimirAlphaOrder);
 searchName.addEventListener("keyup", imprimirFiltroName);
+alphaOrder.addEventListener("change", imprimirAlphaOrder);
+btnLimpar.addEventListener("click", limparFiltros)

@@ -9,18 +9,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="corpoHtml1">
+<body>
+
   <div id="root"></div>
+  
   <header class="cabecalho">
     <nav>
       <ul class="menupaginas">
-        <li ><a class="linkpaginas" href="episodios.html">Episódios</a></li>
-        <li><a class="linkpaginas" href="trivia.html">Curiosidades</a></li>
+        <h1  id="titulosite">Guia de Personagens de Rick & Morty</h1>
+        <li><a href="trivia.html" class="linkpaginas">Curiosidades</a></li>
       </ul>
     </nav>
   </header>
+
+
   <div class="container_filtros_search_ordem">
 
     <form class="menufiltros">
@@ -59,7 +68,7 @@
 
       <label>Nome:</label>
       <input type="search" class="filtro" name="" id="text-search">
-      <input type="reset" value="X" class="btn_reset">
+      <input type="reset" value="X" class="btn_reset" id="btn_reset">
       <br>
     </form>
 

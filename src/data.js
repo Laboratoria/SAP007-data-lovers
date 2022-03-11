@@ -29,13 +29,14 @@ export const filtroName = (data, condition) => {
   return resultadoName;
 };
 
-export const filtroOrder = (data, order) => {
-  if (order === "AZ") {
-    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
-  } else {
-    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
+export const filtroOrder  = (data, order) => {
+  if (order === "Z-A") {
+      return data.sort((a, b) => a.name > b.name ? -1 : 1)
+  } else if (order === "A-Z") {
+      return data.sort((a, b) => a.name > b.name ? 1 : -1)
+  } else{
   }
-};
+}
 
 export const calculoPorcentagem = (total, portion) => {
   const porcentagem = Math.round((portion * 100) / total);

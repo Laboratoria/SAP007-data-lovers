@@ -15,8 +15,7 @@
 
 <body>
     <header>
-        <h1 class="tittle-header-page-news">Universo Ghibli</h1>
-        <section class="hamburger-menu">
+        <section class="menu">
             <input id="menu-toggle" type="checkbox" />
             <label class="menu-btn" for="menu-toggle">
               <span></span>
@@ -27,6 +26,7 @@
                 <li><a class="menu-item" href="people.html">Personagens</a></li>
             </ul>
         </section>
+        <h1 class="tittle-header-page-news">Universo Ghibli</h1>
         <img class="img-logo" src="./img/Logo.jpg" alt="logo-studio-ghibli">
     </header>
     <main>
@@ -35,12 +35,13 @@
             <button class="dropbtn">News</button>
             <div class="dropdown-content">
                 <a href="#park">Parque</a>
+                <a href="#aside">Curiosidade</a>
                 <a href="#launch">Lançamento</a>
             </div>
         </nav>
         <section class="section-class-efect">
             <div class="glass-effect">
-                <section class="tittle-news-park">
+                <section class="tittle-news-park" id="park">
                     <h2>Parque temático do Studio Ghibli será inaugurado ainda em 2022; veja quais animações clássicas estarão representadas:</h2>
                 </section>
                 <section class="subtittle-news-park">
@@ -67,7 +68,7 @@
                     <p>Vale ressaltar que, embora as atividades do parque comecem em novembro, viajantes de outros países terão que esperar para conhecê-lo. Afinal, devido à pandemia de Covid-19, o Japão está impondo restrições à entrada de estrangeiros.
                         Não há mais detalhes quanto ao valor dos ingressos.</p>
                 </section>
-                <section class="container-news">
+                <section class="container-news" id="aside">
                     <aside class="curiosity">
                         <h2>Curiosidade</h2>
                         <img class="img-aside" src="./img/aside.jpg" alt="Imagem do Filme PrincesaMononoke">
@@ -75,8 +76,8 @@
                         <div id="news-curiosity"> </div>
                     </aside>
                 </section>
-                <section class="news-film">
-                    <h2>Novo filme Aya e a Bruxa chegará na Netflix</h2>
+                <section class="news-film" id="launch">
+                    <h2 class="tittle-new-film">Novo filme Aya e a Bruxa chegará na Netflix</h2>
                     <img class="img-new-film" src="./img/Lançamento.jpg" alt="Poster novo filme">
                     <p>A Netflix anunciou nesta quarta-feira (13) que Aya e a Bruxa, o longa de animação de Goro Miyazaki, será adicionado em seu catálogo no próximo mês. O filme é baseado no livro Tesourinha e a Bruxa, Diana Wynne Jones, e se trata do primeiro
                         do Studio Ghibli produzido inteiramente em 3DCG.</p>

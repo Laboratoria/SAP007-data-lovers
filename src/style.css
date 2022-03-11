@@ -4,11 +4,6 @@
     border: 0;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     background: #0398D2;
     font-family: 'Actor', sans-serif;
@@ -16,7 +11,8 @@ body {
 }
 
 header {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
     margin-top: 1%;
     width: 100%;
 }
@@ -45,8 +41,6 @@ header {
 
 .menu-btn {
     position: fixed;
-    top: 6%;
-    left: 3%;
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -86,6 +80,7 @@ header {
     padding: 80px 0;
     list-style: none;
     background-color: #8dc5dd;
+    border-radius: 0 0 15px 0;
     box-shadow: 2px 2px 6px #ffffff;
     transition-duration: .25s;
 }
@@ -105,20 +100,12 @@ header {
 
 .tittle-header-page-films {
     text-align: center;
-    margin-left: 450px;
-    font-size: 60px;
     color: #184E77;
     -webkit-text-stroke: 1px #ffffff;
     text-stroke: 1px;
 }
 
-.img-logo {
-    height: 12vh;
-    margin-left: 300px;
-}
-
 .section-search-films {
-    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,14 +119,6 @@ header {
     box-shadow: 3px 2px #69CCE3;
     display: inline;
     align-items: center;
-    height: 6vh;
-    width: 10vw;
-    margin-left: 15px;
-}
-
-.select-order,
-.btn-reset {
-    width: 5vw;
 }
 
 .card-section {
@@ -153,7 +132,6 @@ header {
 
 .flip-card {
     background-color: transparent;
-    width: 18vw;
     height: 50vh;
     perspective: 1000px;
 }
@@ -182,7 +160,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18vw;
+    width: 100%;
     height: 50vh;
 }
 
@@ -190,24 +168,10 @@ header {
     border: 2px solid #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 5px 2px #ffffff;
-    height: 80%;
 }
 
 .flip-card-back {
     transform: rotateY(180deg);
-}
-
-.title-cards {
-    font-size: 20px;
-    margin-top: 10%;
-}
-
-.release-date {
-    font-size: 12px;
-}
-
-.description {
-    font-size: 12px;
 }
 
 .section-search-films,
@@ -231,4 +195,196 @@ a {
 
 a:link {
     text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .menu {
+        width: 8vw;
+    }
+    .menu-btn {
+        top: 3%;
+        left: 1%;
+    }
+    .tittle-header-page-films {
+        font-size: 30px;
+    }
+    .img-logo {
+        height: 8vh;
+        width: 8vw;
+    }
+    .section-search-films {
+        height: 5vh;
+    }
+    .select,
+    .select-order,
+    .btn-reset {
+        height: 4vh;
+        width: 23vw;
+        font-size: 10px;
+    }
+    .select-order {
+        width: 18vw;
+    }
+    .btn-reset {
+        width: 12vw;
+    }
+    .flip-card {
+        width: 40vw;
+    }
+    .img-cards {
+        height: 50%;
+    }
+    .title-cards {
+        font-size: 12px;
+        margin-top: 40%;
+    }
+    .release-date,
+    .description {
+        font-size: 10px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .menu {
+        width: 10vw;
+    }
+    .menu-btn {
+        top: 5%;
+        left: 1%;
+    }
+    .tittle-header-page-films {
+        font-size: 40px;
+    }
+    .img-logo {
+        height: 10vh;
+        width: 10vw;
+    }
+    .section-search-films {
+        height: 5vh;
+    }
+    .select,
+    .select-order,
+    .btn-reset {
+        height: 4vh;
+        width: 12vw;
+        font-size: 12px;
+    }
+    .select-order,
+    .btn-reset {
+        width: 8vw;
+    }
+    .flip-card {
+        width: 30vw;
+    }
+    .img-cards {
+        height: 70%;
+    }
+    .title-cards {
+        font-size: 15px;
+        margin-top: 15%;
+    }
+    .release-date,
+    .description {
+        font-size: 10px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        width: 12vw;
+    }
+    .menu-btn {
+        top: 6%;
+        left: 3%;
+    }
+    .tittle-header-page-films {
+        font-size: 60px;
+    }
+    .img-logo {
+        height: 12vh;
+        width: 12vw;
+    }
+    .section-search-films {
+        height: 8vh;
+    }
+    .select,
+    .select-order,
+    .btn-reset {
+        height: 6vh;
+        width: 15vw;
+        font-size: 18px;
+    }
+    .select-order {
+        width: 12vw;
+    }
+    .btn-reset {
+        width: 10vw;
+    }
+    .flip-card {
+        width: 30vw;
+    }
+    .img-cards {
+        height: 80%;
+    }
+    .title-cards {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+    .release-date,
+    .description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        width: 15vw;
+    }
+    .menu-btn {
+        top: 7%;
+        left: 3%;
+    }
+    .tittle-header-page-films {
+        font-size: 80px;
+    }
+    .img-logo {
+        height: 15vh;
+        width: 15vw;
+    }
+    .section-search-films {
+        height: 8vh;
+    }
+    .select,
+    .select-order,
+    .btn-reset {
+        height: 6vh;
+        width: 15vw;
+        margin-left: 5px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .select-order,
+    .btn-reset {
+        width: 10vw;
+    }
+    .flip-card {
+        width: 30vw;
+    }
+    .img-cards {
+        height: 80%;
+    }
+    .title-cards {
+        font-size: 25px;
+        margin-top: 10%;
+    }
+    .release-date,
+    .description {
+        font-size: 15px;
+    }
 }

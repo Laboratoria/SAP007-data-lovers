@@ -32,10 +32,10 @@ function cardSection(array) {
         let peopleFilm = array[j];
         photo.src = peopleFilm.img;
         name.innerHTML = peopleFilm.name;
-        age.innerHTML = peopleFilm.age;
-        hair.innerHTML = peopleFilm.hair_color;
-        eye.innerHTML = peopleFilm.eye_color;
-        specie.innerHTML = peopleFilm.specie;
+        age.innerHTML = "Idade: " + peopleFilm.age;
+        hair.innerHTML = "Cor do cabelo: " + peopleFilm.hair_color;
+        eye.innerHTML = "Cor dos olhos: " + peopleFilm.eye_color;
+        specie.innerHTML = "Especie: " + peopleFilm.specie;
         flipCardFront.appendChild(photo);
         flipCardBack.appendChild(name);
         flipCardBack.appendChild(age);
@@ -48,6 +48,7 @@ function cardSection(array) {
         card.appendChild(flipCard);
     }
 }
+
 function todosPersonagens(filmes) {
     const card = document.getElementById("card")
     card.innerHTML = " "
@@ -95,8 +96,7 @@ function todosPersonagens(filmes) {
 }
 todosPersonagens(films)
 
-//PARA PEGAR O VALOR DO INPUT DO SELETOR
-filmes.addEventListener("change", () => {
+document.addEventListener("change", () => {
     const optionsFilm = document.getElementById("filmes")
     const filmIndex = optionsFilm.selectedIndex;
     const filmSelected = optionsFilm[filmIndex].text;
@@ -104,7 +104,7 @@ filmes.addEventListener("change", () => {
     todosPersonagens(filmFiltered)
 })
 
-gender.addEventListener("change", () => {
+document.addEventListener("change", () => {
     const optionsFilm = document.getElementById("filmes")
     const filmIndex = optionsFilm.selectedIndex;
     const filmSelected = optionsFilm[filmIndex].text;

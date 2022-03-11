@@ -58,3 +58,18 @@ a {
 a:link {
     text-decoration: none;
 }
+
+@media screen and (max-width: 576px) {
+    .tittle-header-page-home {
+        font-size: 35px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tittle-header-page-home {
+        font-size: 80px;
+    }
+}

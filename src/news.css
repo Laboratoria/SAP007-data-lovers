@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background-color: #0398D2;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
     margin-top: 1%;
     width: 100%;
 }
@@ -42,8 +42,6 @@ header {
 
 .menu-btn {
     position: fixed;
-    top: 6%;
-    left: 3%;
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -83,6 +81,7 @@ header {
     padding: 80px 0;
     list-style: none;
     background-color: #8dc5dd;
+    border-radius: 0 0 15px 0;
     box-shadow: 2px 2px 6px #ffffff;
     transition-duration: .25s;
 }
@@ -102,19 +101,14 @@ header {
 
 .tittle-header-page-news {
     text-align: center;
-    margin-left: 450px;
     font-size: 60px;
+    color: #184E77;
     -webkit-text-stroke: 1px #ffffff;
     text-stroke: 1px;
 }
 
-.img-logo {
-    height: 12vh;
-    margin-left: 300px;
-}
-
 main {
-    background-color: #69CCE3;
+    background: #69CCE3;
 }
 
 .dropbtn {
@@ -133,7 +127,7 @@ main {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #c0c0c0;
+    background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
@@ -148,7 +142,7 @@ main {
 }
 
 .dropdown-content a:hover {
-    background-color: #757575;
+    background-color: #8dc5dd
 }
 
 .dropdown:hover .dropdown-content {
@@ -156,15 +150,7 @@ main {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #757575;
-}
-
-.logo {
-    background-color: #0398D2;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #8dc5dd;
 }
 
 .section-class-efect {
@@ -176,16 +162,17 @@ main {
 .glass-effect {
     background: rgba(255, 255, 255, 0.42);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(1px);
     width: 90%;
     display: inline;
     text-align: center;
 }
 
-.tittle-news-park {
+.tittle-news-park,
+.tittle-new-film {
     color: #184E77;
     margin: 2%;
 }
@@ -218,9 +205,16 @@ main {
     margin: 0 4% 1% 4%;
 }
 
-.news-park {
+.news-park,
+.news-film {
     margin: 2% 6%;
-    text-align: left;
+}
+
+p {
+    text-indent: 2em;
+    text-align: justify;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
 }
 
 .curiosity {
@@ -238,15 +232,9 @@ main {
     margin: 2%;
 }
 
-.news-film {
-    text-align: center;
-    margin: 2% 0;
-}
-
 .img-new-film {
     border-radius: 15px;
     height: 50vh;
-    margin: 2%;
 }
 
 footer {
@@ -270,4 +258,103 @@ a {
 
 a:link {
     text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .menu {
+        width: 8vw;
+    }
+    .menu-btn {
+        top: 3%;
+        left: 1%;
+    }
+    .tittle-header-page-news {
+        font-size: 30px;
+    }
+    .img-logo {
+        height: 8vh;
+        width: 8vw;
+    }
+    .dropbtn {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .tittle-news-park,
+    .tittle-new-film,
+    .subtittle-news-park {
+        font-size: 10px;
+        margin: 5%;
+    }
+    p {
+        font-size: 12px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .menu {
+        width: 10vw;
+    }
+    .menu-btn {
+        top: 5%;
+        left: 1%;
+    }
+    .tittle-header-page-news {
+        font-size: 40px;
+    }
+    .img-logo {
+        height: 10vh;
+        width: 10vw;
+    }
+    .dropbtn {
+        padding: 10px;
+        font-size: 10px;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        width: 12vw;
+    }
+    .menu-btn {
+        top: 6%;
+        left: 3%;
+    }
+    .tittle-header-page-news {
+        font-size: 60px;
+    }
+    .img-logo {
+        height: 12vh;
+        width: 12vw;
+    }
+    .dropbtn {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        width: 15vw;
+    }
+    .menu-btn {
+        top: 7%;
+        left: 3%;
+    }
+    .tittle-header-page-news {
+        font-size: 80px;
+    }
+    .img-logo {
+        height: 15vh;
+        width: 15vw;
+    }
+    .dropbtn {
+        padding: 10px;
+        font-size: 10px;
+    }
 }

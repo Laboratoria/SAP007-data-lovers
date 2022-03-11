@@ -39,11 +39,11 @@ function cardSection(items) {
         flipCard.appendChild(flipCardInner);
         card.appendChild(flipCard);
     }
-};
+}
 cardSection(films);
 
 //PARA PEGAR O VALOR DO INPUT DO SELETOR
-director.addEventListener("change", () => {
+document.addEventListener("change", () => {
     const optionsDirector = document.getElementById("director")
     const directorIndex = optionsDirector.selectedIndex;
     const directorSelected = optionsDirector[directorIndex].text;
@@ -51,7 +51,7 @@ director.addEventListener("change", () => {
     cardSection(directorFiltered)
 });
 
-producer.addEventListener("change", () => {
+document.addEventListener("change", () => {
     const optionsProducer = document.getElementById("producer")
     const producerIndex = optionsProducer.selectedIndex;
     const producerSelected = optionsProducer[producerIndex].text;
@@ -59,7 +59,7 @@ producer.addEventListener("change", () => {
     cardSection(producerFiltered)
 });
 
-order.addEventListener("change", () => {
+document.addEventListener("change", () => {
     const optionsOrder = document.getElementById("order")
     const orderIndex = optionsOrder.selectedIndex;
     const orderSelected = optionsOrder[orderIndex].text;

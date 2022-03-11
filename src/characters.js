@@ -1,8 +1,10 @@
 import data from './data/ghibli/ghibli.js';
 import { sortAzPersons, filterSpecie, filterGender, calculoCharacters } from './data.js';
 
-
+const people = data.films.map(addPeople => addPeople.people)
+const arrPeople = [].concat.apply([], people);
 const charactersContainer = document.getElementById("charactersContainer");
+
 function showCardsCharacters(arrCharacters) {
 
     charactersContainer.innerHTML = arrCharacters.map((character) =>
@@ -16,10 +18,6 @@ function showCardsCharacters(arrCharacters) {
 
     ).join('')
 }
-
-const people = data.films.map(addPeople => addPeople.people)
-const arrPeople = [].concat.apply([], people);
-
 
 showCardsCharacters(arrPeople)
 
@@ -47,6 +45,9 @@ filterGenders.addEventListener("change", (event) => {
     const getItemGender = filterGender(arrPeople, selectedGender);
     showCardsCharacters(getItemGender);
 })
+
+
+//chamando a função de calculo de quantidade
 
 const selectSpecieC = document.getElementById('resultPercent') 
 

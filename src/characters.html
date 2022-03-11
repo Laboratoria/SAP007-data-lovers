@@ -1,77 +1,71 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Studio Ghibli</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Studio Ghibli</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <menu class="menu">
-      <a href="https://studioghibli.com.br/studioghibli/" target="_blank"><img class= "logo" src="img/StudioGhibli_logo.png" alt="Logo do studio Ghibli" ></a> 
-      <nav>
-        <ul id="menu">
-          <li><a class="listMenu" href="home.html">PAGINA INICIAL</a></li>
-          <li><a class="listMenu" href="index.html">FILMES</a></li>
-          <li><a class="listMenu" href="characters.html">PERSONAGENS</a></li>
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <ul>
+        <li><a class="navigation__link" href="index.html">FILMES</a></li>
+        <li><a class="navigation__link" href="characters.html">PERSONAGENS</a></li>
+        <li><a class="navigation__link" href="about.html">SOBRE</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </ul>
-      </nav>
-    </menu>
+  <section class="img-totoro-content">
+    <img class="img-totoro" src="img/totoro.png" alt="Imagem do personagem de Totoro">
+    <h1 class="theme-ghibli">Ghibli Explorer</h1>
+  </section>
 
-    <header>
-      <div class="theme">
-        <h1 class="themeGhibli">Ghibli Explorer</h1>
-        <h3 class="subTheme">Saiba tudo sobre seu personagem favorito</h3>
-      </div>
-    </header>
+  <section class="filters-container">
+    <select class="select" id="sortAZ">
+      <option selected disabled value="">Ordem Alfabética</option>
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
+    </select>
 
-    <section class="filtersContainer">
-      <div class="filterAz" id="filterAz">
-        <select class="select" id="sortAZ">
-          <option selected disabled value="">Ordem Alfabética</option>
-          <option value="A-Z">A-Z</option>
-          <option value="Z-A">Z-A</option>
-        </select>
-      </div>
+    <select class="select " id="selectSpecie">
+      <option selected disabled value="">Espécie</option>
+      <option value="Human">Human</option>
+      <option value="Fish/Human">Fish/Human</option>
+      <option value="Raccoon Dog">Raccoon Dog</option>
+      <option value="Borrower">Borrower</option>
+      <option value="Cat">Cat</option>
+      <option value="Totoro">Totoro</option>
+      <option value="Witch">Witch</option>
+    </select>
 
-      <div class="filterSpecie" id="filterSpecie">
-        <select class="select " id="selectSpecie">
-          <option selected disabled value="">Espécie</option>
-          <option value="Human">Human</option>
-          <option value="Fish/Human">Fish/Human</option>
-          <option value="Raccoon Dog">Raccoon Dog</option>
-          <option value="Borrower">Borrower</option>
-          <option value="Cat">Cat</option>
-          <option value="Totoro">Totoro</option>
-          <option value="Witch">Witch</option>
-        </select>
-      </div>
+    <select class="select" id="selectGender">
+      <option selected disabled value="">Gênero</option>
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+      <option value="NA">NA</option>
+    </select>
 
-      <div class="filterGender" id="filterGender">
-        <select class="select" id="selectGender">
-          <option selected disabled value="">Gênero</option>
-          <option value="Female">Female</option>
-          <option value="Male">Male</option>
-          <option value="NA">NA</option>
-        </select>
-      </div>
-      <button type="reset" id="btnClean" class="btnClean">Limpar Filtragem</button>
-    </section>
+    <button type="reset" id="btnClean" class="btnClean">Limpar Filtragem</button>
 
-    <main class="mainContent" id="mainContent"> 
-      <div class="resultPercent" id="resultPercent" ></div>           
-      <div class="containerCards" id="charactersContainer"></div>       
-    </main>
+  </section>
 
-    <footer class="footer">
-      <p>Desenvolvido por <a target="_blank" class="linkedin" href= "https://www.linkedin.com/in/elizenai/"> Elizenai Silva </a> e <a target="_blank" class="linkedin"  href="https://www.linkedin.com/in/lromao/"> Lidianne Romão </a> para Laboratória 007 - 2022.</p>
-    </footer>
+  <main class="main-content" id="main-content">
+    <div class="resultPercent" id="resultPercent"></div>
+    <div class="containerCards" id="charactersContainer"></div>
+  </main>
 
-    <script src="characters.js" type="module"></script>
-  </body>
+  <footer class="footer">
+    <p>Desenvolvido por <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/elizenai/"> Elizenai Silva
+      </a> e <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/lromao/"> Lidianne Romão </a> para
+      Laboratória 007 - 2022.</p>
+  </footer>
+
+  <script src="characters.js" type="module"></script>
+</body>
 
 </html>

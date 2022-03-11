@@ -30,7 +30,7 @@ sortOrder.addEventListener("change", (event) => {
 
 });
 
-const selectTitle = document.getElementById("selectTitle")
+const selectTitle = document.getElementById("select-title")
 selectTitle.addEventListener("change", (event) => {
     const resultTitle = filterTitle(movies, event.target.value)
     showCards(resultTitle);

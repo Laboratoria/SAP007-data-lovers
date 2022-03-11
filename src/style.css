@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,51 +7,55 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(54, 52, 52)
+body {
+    background-color:  #F2F2F2;
 }
 
-.menu {
-    position: sticky;
-    top: 0;
-    float:inline-start;
-    background-color: rgb(20, 19, 19);
-    height: 9vh;  
+.header {
+    background-color:#F2F2F2;
+}
+
+.img-totoro-content {
+    background-color:#F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.theme-ghibli {
+    font-size: 60px;
+    font-family: 'Open Sans', 'icones', sans-serif; 
+    color: #283D59;
+}
+
+.img-totoro {
+    width: 10%;
 }
 
 ul {
     display: flex;
-    padding-top: 1.5%;
+    padding-top: 1%;
     padding-left: 1.5%;
-    
 }
 
 li {
     display: inline;
     font-size:larger;
-    font-family: 'Arial Narrow', Arial, sans-serif;   
+    font-family: 'Open Sans', 'icones', sans-serif;   
     margin: 0 50px 0 0;
+    color: #283D59;
 }
 
 li a {
-    color: aliceblue;
+    color: #283D59;
     font-weight: bold;
     transition: 1s all;
     cursor: pointer;
     text-decoration: none;
 }
 
-li a:hover {
-    color: red;
+li a:hover {    
     transform: scale(1.2);
-}
-
-.logo {
-    width: 11%;
-    position:absolute;
-	left: 88%;
-    cursor: pointer;
-	
 }
 
 .theme {
@@ -60,87 +64,67 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif;
     text-align: center;
     
 }
 
-
-.themeGhibli {
-    color: rgb(168, 14, 14);
-    /* color: rgba(205, 204, 224, 0.863); */
-    font-size: 80px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.main-content {
+    background-color: #F2F2F2;    
 }
 
-.subTheme {
-    color: white;;
-    font-size: 20px;
-    font-style: italic;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.filtersContainer {
+.filters-container {
     display: flex;
     justify-content: space-evenly;
-    height: 8vh;
+    height: 9vh;
     align-items: center;    
-    background: rgb(20, 19, 19);
+    background: #5176A6;
     flex-wrap: wrap;
-    margin-bottom: 40px;
 }
 
 .select {
-    height: 30px;
-    width: 200px;
+    height: 2vw;
+    width: 12vw;
     font-size: larger;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 2);
-    
-    
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 2);   
+    font-family: 'Open Sans', 'icones', sans-serif;
 }
 
 .btnClean {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    width: 12vw;
+    font-size: 2vh;
     padding: 7px 7px;
-    background: linear-gradient(to right top, black, red);
-    color: white;
-    border-radius: 15px;
+    background: #ced4da;
+    color: #0D0D0D;
+    border-radius: 17px;
     cursor: pointer;
+    font-weight: bold;
     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 1);
     box-sizing: border-box; 
 }
 
-
 .btnClean:hover {   
-    background: linear-gradient(to right top, red, black);
+    background: linear-gradient(to right top, #F2F2F2,#20324B);
 }
-
-
 
 .cardImage, .cardCharacter {
     border-radius: 15px;
     width: 235px;
     height: 350px;
-    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.7);    
 }
 
 .cardTitle, .nameCharacter {
-    color: white;
-    font-size: 1.5vmax;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #0D0D0D;
+    font-size: 1.3vmax;
     width: 250px;
     height: 60px;
     padding: 17px;
-
 }
-
 
 .containerCards {
     display: flex;
@@ -151,7 +135,7 @@ li a:hover {
     align-items: center; 
     box-sizing: border-box; 
     object-fit: cover;
-    /* width: clamp(200px, 100%, 3000px);  comentei e não mudou*/
+    padding-top: 10vh;
 }
 
 .innerCard {
@@ -160,34 +144,41 @@ li a:hover {
     display: flex;
     flex-direction: column;
     min-height: 350px;
-
+    padding-bottom: 50px;
 
 }
 
-
 .footer {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    background-color: #F2F2F2;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:#0D0D0D;
     text-align: center;
     position: relative;
     bottom: 2vh;
     font-size: 17px; 
-    margin-top: 50px; 
+    padding: 30px;
 }
 
 .linkedin {
     text-decoration: none;
-    color: white;
+    color: #0D0D0D;
+    font-weight: bold;
 }
 
 /* estilização da characters.html */ 
 
 .resultPercent {
-    color:white;
-    font-size: 30px;
-    text-align: center;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color:#0D0D0D;
+    font-size: 3vh;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */    
 }
 
- 
+
+

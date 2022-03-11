@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <input class="header-input" type="checkbox" id="check">
-      <label id="icone" for="check"></label>
-      <div class="barra">
-        <nav class="menu-text">
-          <a href="/">
-            <div class="Link">INÍCIO</div>
-          </a>
-          <a href="/studio" target="_blank">
-            <div class="Link">O ESTÚDIO</div>
-          </a>
-          <a href="https://www.facebook.com/GKIDSfilms" target="_blank">
-            <div class="Link">FACEBOOK</div>
-          </a>
-          <a href="https://www.instagram.com/GKIDSfilms/" target="_blank">
-            <div class="Link">INSTAGRAM</div>
-          </a>
-          <a href="https://twitter.com/GKIDSfilms" target="_blank">
-            <div class="Link">TWITTER</div>
-          </a>
-          <a href="https://www.youtube.com/channel/UCb9ME2w6Y_4jChUVlWdltVg" target="_blank">
-            <div class="Link">YOUTUBE</div>
-          </a>
-        </nav>
-      </div>
-      <nav class="menu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="filme.css" />
+</head>
+
+<body>
+  <header>
+    <input class="header-input" type="checkbox" id="check">
+    <label id="icone" for="check"></label>
+    <div class="barra">
+      <nav class="menu-text">
         <a href="/">
-          <img class="totoro" src="./totoro.png" id="logo" width="auto" height="80">
+          <div class="Link">INÍCIO</div>
+        </a>
+        <a href="/filme">
+          <div class="Link">FILMOGRAFIA</div>
+        </a>
+        <a href="/studio">
+          <div class="Link">O ESTÚDIO</div>
+        </a>
+        <a href="https://www.facebook.com/GKIDSfilms" target="_blank">
+          <div class="Link">FACEBOOK</div>
+        </a>
+        <a href="https://www.instagram.com/GKIDSfilms/" target="_blank">
+          <div class="Link">INSTAGRAM</div>
+        </a>
+        <a href="https://twitter.com/GKIDSfilms" target="_blank">
+          <div class="Link">TWITTER</div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCb9ME2w6Y_4jChUVlWdltVg" target="_blank">
+          <div class="Link">YOUTUBE</div>
         </a>
       </nav>
-      <label for="menu-hamburguer">
-        <div class="mburg">
-          <span class="hamburguer"></span>
-        </div>
-      </label>
-    </header>
-    <nav class="selected-film">
-      <div class="background-filme"></div>
-      <div class="title-container">
-        <p class="title-p">FILMOGRAFIA</p>
-      </div>
-      <div class="busca">
-        <input type="text" id="txtBusca" placeholder="Digite o nome do filme"/>
-        <button id="btnBusca">BUSCAR</button>
-      </div>
-      <div class="ordenar">
-        <select name="order" id="order">
-          <option value="">ORDENAR POR:</option>
-          <option id="A-Z" class="option" value="A-Z">A - Z</option>
-          <option id="Z-A" class="option" value="Z-A">Z - A</option>
-          <option id="score" class="option" value="score">Maiores notas</option>
-          <option id="lowerscore" class="option" value="lowerscore">Menores notas</option>
-          <option id="older" class="option" value="older">Mais antigos</option>
-          <option id="newer" class="option" value="newer">Mais novos</option>
-        </select>
-      </div>
-      <button class="refresh" id="refresh">LIMPAR</button>
-      <div class="list" id="filmes"></div>
+    </div>
+    <nav class="menu">
+      <a href="/">
+        <img class="totoro" src="./totoro.png" id="logo" width="auto" height="80">
+      </a>
     </nav>
-    <footer>
-      <p class="footer-text">
-        DATA LOVERS
-      </p>
-      <p class="footer-text">
-        By: Amanda Gusmão e Camila Aguiar
-      </p>
-      <p class="footer-text">
-        Laboratoria - 2022
-      </p>
-    </footer>
-    <script src="main.js" type="module"></script>
-  </body>
+    <label for="menu-hamburguer">
+      <div class="mburg">
+        <span class="hamburguer"></span>
+      </div>
+    </label>
+  </header>
+  <nav class="selected-film">
+    <div class="background-filme"></div>
+    <div class="title-container">
+      <p class="title-p">FILMOGRAFIA</p>
+    </div>
+    <div class="busca">
+      <input type="text" id="txtBusca" placeholder="Digite o nome do filme" />
+      <button id="btnBusca">BUSCAR</button>
+    </div>
+    <div class="ordenar">
+      <select name="order" id="order">
+        <option value="">ORDENAR POR:</option>
+        <option id="A-Z" class="option" value="A-Z">A - Z</option>
+        <option id="Z-A" class="option" value="Z-A">Z - A</option>
+        <option id="score" class="option" value="score">Maiores notas</option>
+        <option id="lowerscore" class="option" value="lowerscore">Menores notas</option>
+        <option id="older" class="option" value="older">Mais antigos</option>
+        <option id="newer" class="option" value="newer">Mais novos</option>
+      </select>
+    </div>
+    <button class="refresh" id="refresh">LIMPAR</button>
+    <div class="list" id="filmes"></div>
+  </nav>
+  <footer>
+    <p class="footer-text">
+      DATA LOVERS
+    </p>
+    <p class="footer-text">
+      By: Amanda Gusmão e Camila Aguiar
+    </p>
+    <p class="footer-text">
+      Laboratoria - 2022
+    </p>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

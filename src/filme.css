@@ -1,0 +1,151 @@
+.busca{
+    margin: 0 auto;
+    background-color: #123740;
+    border-style: solid;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9D271;
+    border-radius: 10px;
+    width: 300px;
+    padding: 3px;
+}
+
+#txtBusca{
+    align-items: center;
+    font-style:italic;
+    font-size:15px;
+    border-style: none;
+    height:auto;
+    width: 210px;
+    padding: 5px;
+}
+
+#btnBusca{
+    border: none;
+    height:auto;
+    width:70px;
+    font-size: 15px;
+    font-weight:bold;
+    background-color: #123740;
+    color: #D9D271;
+    cursor: pointer;
+}
+
+.refresh {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #123740;
+    align-items: center;
+    color: #D9D271;
+    font-weight: bolder;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9D271;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.img-te {
+    width: 100%;
+    position: relative;
+    height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+  
+.item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-color: #C1D9B0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 3in;
+}
+
+/* para tablet */
+@media screen and (min-width: 768px) {
+    .list {
+      grid-template-columns: 3in 3in;
+    }
+  
+    .busca{
+      width: 400px;
+      padding: 5px;
+    }
+  
+    #txtBusca{
+      font-size:20px;
+      width: 290px;
+      padding: 5px;
+    }
+  
+    #btnBusca{
+      width:90px;
+      font-size: 20px;
+    }
+  
+    .refresh {
+      font-size: 20px;
+    }
+    
+    .item img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}
+
+/* para desktop */
+@media screen and (min-width: 1024px) {
+    .list {
+      grid-template-columns: 3in 3in 3in;
+    }
+  
+    .busca{
+      width: 500px;
+      padding: 5px;
+    }
+  
+    #txtBusca{
+      font-size:20px;
+      width: 350px;
+      padding: 5px;
+    }
+  
+    #btnBusca{
+      width:130px;
+      font-size: 20px;
+    }
+  
+    .refresh {
+      font-size: 20px;
+    }
+  
+    .img-te {
+      height: 315px;
+    }
+    
+    .item img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}

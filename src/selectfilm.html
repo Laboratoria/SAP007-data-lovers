@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="selectfilm.css" />
+</head>
+
+<body>
     <header>
-      <input class="header-input" type="checkbox" id="check">
-      <label id="icone" for="check"></label>
-      <div class="barra">
-        <nav class="menu-text">
-          <a href="/">
-            <div class="Link">INÍCIO</div>
-          </a>
-          <a href="/studio" target="_blank">
-            <div class="Link">O ESTÚDIO</div>
-          </a>
-          <a href="https://www.facebook.com/GKIDSfilms" target="_blank">
-            <div class="Link">FACEBOOK</div>
-          </a>
-          <a href="https://www.instagram.com/GKIDSfilms/" target="_blank">
-            <div class="Link">INSTAGRAM</div>
-          </a>
-          <a href="https://twitter.com/GKIDSfilms" target="_blank">
-            <div class="Link">TWITTER</div>
-          </a>
-          <a href="https://www.youtube.com/channel/UCb9ME2w6Y_4jChUVlWdltVg" target="_blank">
-            <div class="Link">YOUTUBE</div>
-          </a>
-        </nav>
-      </div>
-      <nav class="menu">
-        <a href="/">
-          <img class="totoro" src="./totoro.png" id="logo" width="auto" height="80">
-        </a>
-      </nav>
-      <label for="menu-hamburguer">
-        <div class="mburg">
-          <span class="hamburguer"></span>
+        <input class="header-input" type="checkbox" id="check">
+        <label id="icone" for="check"></label>
+        <div class="barra">
+            <nav class="menu-text">
+                <a href="/">
+                    <div class="Link">INÍCIO</div>
+                </a>
+                <a href="/filme">
+                    <div class="Link">FILMOGRAFIA</div>
+                </a>
+                <a href="/studio">
+                    <div class="Link">O ESTÚDIO</div>
+                </a>
+                <a href="https://www.facebook.com/GKIDSfilms" target="_blank">
+                    <div class="Link">FACEBOOK</div>
+                </a>
+                <a href="https://www.instagram.com/GKIDSfilms/" target="_blank">
+                    <div class="Link">INSTAGRAM</div>
+                </a>
+                <a href="https://twitter.com/GKIDSfilms" target="_blank">
+                    <div class="Link">TWITTER</div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCb9ME2w6Y_4jChUVlWdltVg" target="_blank">
+                    <div class="Link">YOUTUBE</div>
+                </a>
+            </nav>
         </div>
-      </label>
+        <nav class="menu">
+            <a href="/">
+                <img class="totoro" src="./totoro.png" id="logo" width="auto" height="80">
+            </a>
+        </nav>
+        <label for="menu-hamburguer">
+            <div class="mburg">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
     </header>
     <nav class="selected-film">
-      <div class="background-filme"></div>
-      <div class="title-container">
-        <p class="title-p" id="titulo"></p>
-      </div>
-      <img id="poster" src=""/>
-      <div style="color: white;">SINOPSE</div>
-      <div id="sinopse" style="color: white;"></div>
-      <div style="color: white;">DIRETOR</div>
-      <div id="diretor" style="color: white;"></div>
-      <div style="color: white;">PRODUTOR</div>
-      <div id="produtor" style="color: white;"></div>
-      <div style="color: white;">LANÇAMENTO</div>
-      <div id="ano" style="color: white;"></div>
-      <div style="color: white;">NOTA</div>
-      <div id="nota" style="color: white;"></div>
-      <div class="title-container">
-        <p class="title-p">PERSONAGENS</p>
-    </div>
+        <div class="background-filme"></div>
+        <div class="title-container">
+            <p class="title-p" id="titulo"></p>
+        </div>
+        <div class="description-film">
+            <img id="poster" />
+            <div class="text-film">
+                <h1 class="h1-sinopse">SINOPSE</h1>
+                <p id="sinopse"></p>
+                <p id="diretor"class="info-film"></p>
+                <p id="produtor" class="info-film"></p>
+                <p id="ano" class="info-film"></p>
+                <p id="nota" class="info-film"></p>
+            </div>
+        </div>
+        <div class="title-container" id="delete-margin">
+            <p class="title-p">PERSONAGENS</p>
+        </div>
+        <div class="ordenar">
+            <select name="order" id="order">
+                <option value="">ORDENAR POR:</option>
+                <option id="A-Z" class="option" value="A-Z">A - Z</option>
+                <option id="Z-A" class="option" value="Z-A">Z - A</option>
+                <option id="Female" class="option" value="Feminino">Personagem Feminino</option>
+                <option id="Male" class="option" value="Masculino">Personagem Masculino</option>
+                <option id="Others" class="option" value="Outros">Outros Personagens</option>
+            </select>
+        </div>
+        <div class="personagens"></div>
     </nav>
     <footer>
-      <p class="footer-text">
-        DATA LOVERS
-      </p>
-      <p class="footer-text">
-        By: Amanda Gusmão e Camila Aguiar
-      </p>
-      <p class="footer-text">
-        Laboratoria - 2022
-      </p>
+        <p class="footer-text">
+            DATA LOVERS
+        </p>
+        <p class="footer-text">
+            By: Amanda Gusmão e Camila Aguiar
+        </p>
+        <p class="footer-text">
+            Laboratoria - 2022
+        </p>
     </footer>
     <script src="film.js" type="module"></script>
-  </body>
+</body>
+
 </html>

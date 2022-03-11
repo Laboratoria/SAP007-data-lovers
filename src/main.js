@@ -7,7 +7,7 @@ function printTela(data) {
     document.getElementById("filmes").innerHTML = data.map((item) => `
     <div class="item">
         <div class="img-te" href="/filme">
-            <a href="/selectfilm?id=${item.id}" target="_blank">
+            <a href="/selectfilm?id=${item.id}">
                 <img src="${item.poster}" />
             </a>
         </div>

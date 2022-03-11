@@ -296,7 +296,7 @@ export default {
         {
           "id": "c491755a-407d-4d6e-b58a-240ec78b5061",
           "name": "Chibi Totoro",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c5/Little_Totoro_spirit_moving.gif",
+          "img": "https://ghiblistudio1.files.wordpress.com/2020/08/d54f63fd0fd12bf2f37aa7c9e7be63ac.jpg?w=350&h=200&crop=1",
           "gender": "NA",
           "age": "",
           "eye_color": "Black",
@@ -710,7 +710,7 @@ export default {
         {
           "id": "4a2e2cee-08ca-4d44-9564-2b3e5421bafb",
           "name": "Fio Piccolo",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/16/Fio_%282%29.jpg",
+          "img": "https://static.wikia.nocookie.net/disney/images/8/87/Fio_5.jpg",
           "gender": "Female",
           "age": "17",
           "eye_color": "Brown",
@@ -1021,7 +1021,7 @@ export default {
         {
           "id": "34277bec-7401-43fa-a00a-5aee64b45b08",
           "name": "Eboshi",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9f/Eboshi.png",
+          "img": "https://www.personality-database.com/profile_images/7744.png",
           "gender": "Female",
           "age": "Adult",
           "eye_color": "Hazel",
@@ -1497,7 +1497,7 @@ export default {
         {
           "id": "1287b275-6c32-4113-947f-519316d4a6be",
           "name": "Witch of the Waste",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e1/Howls-moving-castle-disneyscreencaps.com-10507.jpg",
+          "img": "https://cdn.anisearch.com/images/character/cover/full/9/9767.webp",
           "gender": "Female",
           "age": "59",
           "eye_color": "Brown",
@@ -1527,7 +1527,7 @@ export default {
         {
           "id": "45237428-93bf-4dd6-97ce-f10647300429",
           "name": "Prince Justin or Turnip Head",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d9/Prince_Justin.png",
+          "img": "https://www.voiceactorwiki.com/image/character/prince-turnip-howls-moving-castle-7.5.jpg",
           "gender": "Male",
           "age": "20-30",
           "eye_color": "Grey",
@@ -2330,7 +2330,7 @@ export default {
         {
           "id": "28d07ace-c309-48c6-b48e-ae2ece3a238c",
           "name": "Anna Sasaki",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ae/Anna.png",
+          "img": "https://cdn.anisearch.com/images/character/cover/full/51/51329.webp",
           "gender": "Female",
           "age": "12",
           "eye_color": "Blue",
@@ -2360,7 +2360,7 @@ export default {
         {
           "id": "66bca178-9920-4ec3-91e9-0d5b8a76dba1",
           "name": "Setsu Oiwa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6e/Setsu.jpg",
+          "img": "https://s4.anilist.co/file/anilistcdn/character/large/b144277-z6XMVEi8Y4nV.jpg",
           "gender": "Female",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2370,7 +2370,7 @@ export default {
         {
           "id": "5b8e4413-f943-40ba-8f9f-0ba059a401f0",
           "name": "Hisako",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/93/Hisako.png",
+          "img": "https://cdn.myanimelist.net/images/characters/15/250957.jpg",
           "gender": "Female",
           "age": "Elder",
           "eye_color": "Dark brown",
@@ -2400,7 +2400,7 @@ export default {
         {
           "id": "31b49ef6-ee60-4603-b983-e67fa0718aa9",
           "name": "Kiyomasa Ōiwa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d7/Kiyomasa.jpg",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKumQteEBCi03mVStGYgRnApEakRBHO28O2vdExnmGDqlvUWnZQU6I9djruMSSynZuws&usqp=CAU",
           "gender": "Male",
           "age": "50-60",
           "eye_color": "Dark brown",
@@ -2410,7 +2410,7 @@ export default {
         {
           "id": "5d52d16f-ce72-41bd-8d88-436e206d9449",
           "name": "Doctor Yamashita",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8a/Yamashita.jpg",
+          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Doctor_Yamashita.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",

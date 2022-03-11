@@ -9,7 +9,6 @@
   <title>Estatísticas</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-<script src="estastiticas.js" type="module"></script>
 
 <body>
   <header>
@@ -22,15 +21,17 @@
     </nav>
   </header>
 
-  <div class="container">
-    <canvas id="graficoEspecie" style="width:100%;max-width:700px"></canvas> 
-  </div>
+  <section class="grafico"></section>
+    <div class="primeira-linha">
+     <canvas id="graficoEspecie" style="width:100%;max-width:700px"></canvas>
+    </div>
 
-  <div class="container2">
-    <canvas id="graficoStatus" style="width:100%;max-width:700px"></canvas>  
-    <canvas id="graficoGenero" style="width:100%;max-width:700px"></canvas> 
-  </div>
-  
+    <div class="segunda-linha">
+      <canvas id="graficoStatus" style="width:100%;max-width:700px"></canvas>
+      <canvas id="graficoGenero" style="width:100%;max-width:700px"></canvas>
+    </div>
+  </section>
+
   <button class="voltar-topo" id="voltar-topo"><img src="./image/topo.png" alt=""></button>
 </body>
 
@@ -38,5 +39,7 @@
   <p>Desenvolvido por <a href="https://github.com/dayanersilva" target="_blank">Dayane Rodrigues</a> e <a
       href="https://github.com/karolsontak" target="_blank">Karol Sontak</a></p>
 </footer>
+
+<script src="estatisticas.js" type="module"></script>
 
 </html>

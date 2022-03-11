@@ -22,7 +22,9 @@ header {
   align-items: center;
 }
 
+
 .list{
+header {
   display: inline-flex;
 }
 
@@ -62,6 +64,7 @@ main {
   display: flex;
   background-color: #95bad7;
   color: #003563;
+  width: 100%;
   margin: auto;
   background-color: #95bad7;
   justify-content: center;
@@ -145,7 +148,7 @@ main {
   background-color: #003563;
   border-radius: 10px;
   color: #bcd0df;
-  height: 350px;
+  width: 350px;
   height: 450px;
   font-size: 84%;
 }

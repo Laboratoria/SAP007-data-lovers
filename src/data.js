@@ -1,11 +1,16 @@
+import data from './data/ghibli/ghibli.js';
 
+const directorsSelect = document.getElementById("director");
 
+directorsSelect.addEventListener("change", (event) => {
 
-export const filterMoviesByDirectors = (director) => {
-  return data.films.filter((director) => {
-    return director.director === target.value;
+  const filterMoviesByDirectors = data.films.filter((directorName) => {
+    return directorName.director === event.target.value
   })
-}
+
+  console.log(filterMoviesByDirectors)
+})
+
 
 
 /* Ordenar de A-Z "pronto"

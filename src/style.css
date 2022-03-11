@@ -1,357 +1,357 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }  
-
+  
 body {
-  width: 100%;
-  background-color:rgb(212, 171, 160);
+    width: 100%;
+    background-color:rgb(212, 171, 160);
 }
 
 body::before {
-  content: " ";
-  background: url(./image/bg-purple.jpg) no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;    
-  background-size: 100%;
+    content: " ";
+    background: url(./image/bg-purple.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background-size: 100%;
 }
 
 header {
-  display: inline-flex;
-  background-color:rgba(104, 44, 70, 0.761);
-  width: 100%;
+    display: inline-flex;
+    background-color:rgba(104, 44, 70, 0.761);
+    width: 100%;
 }
 
 .menu {
-  width: 100%;
-  padding: 1rem;
-  margin-left: 70%;    
-  align-items: center;
-  position: relative;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 70%;    
+    align-items: center;
+    position: relative;
 }
-  
+    
 .lista {
-  list-style: none;   
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+    list-style: none;   
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
-  
+    
 .links {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;   
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;   
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .logo-img {
-  width: 30%;
-  margin-left: 20px;
-  position: absolute;
+    width: 30%;
+    margin-left: 20px;
+    position: absolute;
 }
 
 .todas-buscas {
-  display: flex;
-  border-radius: 10px;
-  justify-content: space-between;
-  width: 90%;
-  margin: 21% auto 0;   
-  align-items: baseline;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 90%;
+    margin: 21% auto 0;   
+    align-items: baseline;
 }
 
 .lado-esquerdo {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .pesquisar {
-  background-color: rgb(255, 255, 255);
-  font-size: 16px;
-  width: 200px;
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
 }
 
 .limpar {
-  background-color: rgb(99, 102, 104);
-  color: white;
-  font-size: 16px;
-  width: 130px;
-  padding: 6px;
-  margin-left: 10px;
-  border-radius: 5px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;}
+    background-color: rgb(99, 102, 104);
+    color: white;
+    font-size: 16px;
+    width: 130px;
+    padding: 6px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;}
 
 .centro-tela {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .filtro-porcentagem {
-  justify-content: center;
-  font-weight: bold;
-  color: rgb(138, 81,83);
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(138, 81,83);
 }
 
 .lado-direito  {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 .filtro-especies {
-  padding: 5px;
-  background-color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+    padding: 5px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
 }
 
 .filtro-ordem {
-  padding: 5px;
-  background-color: white;
-  margin-left: 10px;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 5px;
-  text-align: center;
-  width: 100px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+    padding: 5px;
+    background-color: white;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
 }
 
 .card {
-  background-color:rgba(17, 50, 53, 0.904);
-  display: inline-flex;
-  padding: 15px;
-  width: 180px;
-  height: 290px;
-  border: 5px solid rgb(212, 217, 82);
-  border-radius: 9px;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
-  margin: 60px 0px 0px 45px;
+    background-color:rgba(17, 50, 53, 0.904);
+    display: inline-flex;
+    padding: 15px;
+    width: 180px;
+    height: 290px;
+    border: 5px solid rgb(212, 217, 82);
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
+    margin: 60px 0px 0px 45px;
 }
 
 .card-interno {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1100px;
 }
-
+  
 .imagem-card {
-  width: 180px;
-  height: 180px;
-  margin-bottom: 6px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 6px;
 }
-
+  
 .card-frente {
-  text-align: center;
-  font-weight: bold;
-  color: white;
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
-
+  
 .outras-infos {
-  text-align: center;
-  font-weight: bold;
-  color: rgb(49, 176, 204);
-  margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(49, 176, 204);
+    margin-top: 5px;
 }    
 
 .voltar-topo {
-  position: fixed;
-  bottom: 30px;
-  right: 3px;
-  cursor: pointer;
-  background: none;
+    position: fixed;
+    bottom: 30px;
+    right: 3px;
+    cursor: pointer;
+    background: none;
 }
 
 footer {
-  font-size: 14px;
-  width: 100%;
-  bottom: 0px;
-  height: 40px;
-  text-align: center;
-  background-color: rgb(49, 176, 204);
-  color: #fff;
-  border-top: 4px solid rgb(212, 217, 82);
-  box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
-  padding-top: 20px;
-  margin-top: 40px;   
+    font-size: 14px;
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(49, 176, 204);
+    color: #fff;
+    border-top: 4px solid rgb(212, 217, 82);
+    box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
+    padding-top: 20px;
+    margin-top: 40px;   
 }
-
+  
 footer a {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 ::-webkit-scrollbar-track {
-background-color: rgb(213, 172, 161);
+	background-color: rgb(213, 172, 161);
 }
 
 ::-webkit-scrollbar {
-width: 15px;
+	width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-background-color: rgba(104, 44, 70, 0.925);
-  height: 120px;
+	background-color: rgba(104, 44, 70, 0.925);
+    height: 120px;
 }
 
 @media screen and (max-width: 900px) {
 
 header {
-  background-color:rgb(213, 172, 161);
+    background-color:rgb(213, 172, 161);
 }
 
 body {
-  width: 100%;
-  background-color:rgb(213, 172, 161);
+    width: 100%;
+    background-color:rgb(213, 172, 161);
 }
 
 body::before {
-  content: " ";
-  background: url(./image/bg\ responsivo.jpg) no-repeat;
-  opacity: 0.5;  
-  background-size: cover;
-  position: fixed;
+    content: " ";
+    background: url(./image/bg\ responsivo.jpg) no-repeat;
+    opacity: 0.5;  
+    background-size: cover;
+    position: fixed;
 }    
 
 .logo-img {
-  width: 60%;
-  margin-left: 10px;
+    width: 60%;
+    margin-left: 10px;
 }
-  
+    
 .todas-buscas {
-  display: grid;
-  border-radius: 10px;
-  justify-content: center;
+    display: grid;
+    border-radius: 10px;
+    justify-content: center;
 }
-     
+       
 .lado-esquerdo {
-  display: grid;
-  justify-content: center;
-  text-align: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
 .pesquisar {
-  background-color: rgb(255, 255, 255);
-  font-size: 16px;
-  width: 220px;
-  margin-top: 5px;
-  padding: 10px;
-  border-bottom: 5px;
-  border-radius: 5px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 220px;
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
 }
-  
+    
 .limpar {
-  background-color: rgb(99, 102, 104);
-  color: white;
-  font-size: 16px;
-  width: 200px;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 4px;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+    background-color: rgb(99, 102, 104);
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
 }
 
 .lado-direito {
-  display: grid;
-  justify-content: center;
-  text-align: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
 .filtro-especies {
-  width: 180px;
-  height: 40px;
-  background-color: white;
-  font-size: 16px;
-  margin-top: 35px;
-  border-radius: 5px;
-  box-shadow: 8px 8px 8px black;
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 35px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px black;
 }
-  
+    
 .filtro-ordem {
-  width: 180px;
-  height: 40px;
-  background-color: white;
-  font-size: 16px;
-  margin-top: 15px;
-  border-radius: 5px;
-  box-shadow: 8px 8px 8px black;
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px black;
 }
-  
+    
 .card {
-  background-color:rgba(17, 50, 53, 0.904);
-  display: inline-flex;
-  padding: 15px;
-  margin-bottom: 15px;
-  width: 180px;
-  height: 290px;
-  border: 5px solid rgb(212, 217, 82);
-  border-radius: 9px;
-  margin: 70px 0px 0px 70px;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 50px;
-  box-shadow: 8px 8px 8px black;
+    background-color:rgba(17, 50, 53, 0.904);
+    display: inline-flex;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 180px;
+    height: 290px;
+    border: 5px solid rgb(212, 217, 82);
+    border-radius: 9px;
+    margin: 70px 0px 0px 70px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 50px;
+    box-shadow: 8px 8px 8px black;
 }
-  
+    
 .card-interno {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 1100px;
 }
-    
+      
 .imagem-card {
-  width: 180px;
-  height: 180px;
-  margin-bottom: 6px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 6px;
 }
-    
+      
 .card-frente{
-  text-align: center;
-  font-weight: bold;
-  color: white;
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
-    
+      
 .outras-infos {
-  text-align: center;
-  font-weight: bold;
-  color: rgb(49, 176, 204);
-  margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(49, 176, 204);
+    margin-top: 5px;
 }    
-  
-footer {
-  font-size: 14px;
-  width: 100%;
-  bottom: 0px;
-  height: 40px;
-  text-align: center;
-  background-color: rgb(49, 176, 204);
-  color: rgb(255, 255, 255);
-  border-top: 4px solid rgb(212, 217, 82);
-  box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
-  padding-top: 20px;
-  margin-top: 40px;   
-}
     
+footer {
+    font-size: 14px;
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(49, 176, 204);
+    color: rgb(255, 255, 255);
+    border-top: 4px solid rgb(212, 217, 82);
+    box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
+    padding-top: 20px;
+    margin-top: 40px;   
+}
+      
 footer a {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }

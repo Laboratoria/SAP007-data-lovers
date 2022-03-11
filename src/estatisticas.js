@@ -6,28 +6,28 @@ const dados = data.results
 
 
 //Status
-const vivo = filtrarPorChaveEValor(dados, "status", "Alive")
-const morto = filtrarPorChaveEValor(dados, "status", "Dead")
-const desconhecido = filtrarPorChaveEValor(dados, "status", "unknown")
+const vivo = filtrarPorChaveEValor (dados, "status", "Alive")
+const morto = filtrarPorChaveEValor (dados, "status",  "Dead")
+const desconhecido = filtrarPorChaveEValor (dados, "status", "unknown")
 
 //Genero
-const masculino = filtrarPorChaveEValor(dados, "gender", "Male")
-const feminino = filtrarPorChaveEValor(dados, "gender", "Female")
-const indefinido = filtrarPorChaveEValor(dados, "gender", "unknown")
+const masculino = filtrarPorChaveEValor (dados, "gender", "Male")
+const feminino = filtrarPorChaveEValor (dados, "gender", "Female")
+const indefinido = filtrarPorChaveEValor (dados, "gender", "unknown")
 
 //Especie
-const alien = filtrarPorChaveEValor(dados, "species", "Alien")
-const animal = filtrarPorChaveEValor(dados, "species", "Animal")
-const cronenberg = filtrarPorChaveEValor(dados, "species", "Cronenberg")
-const doença = filtrarPorChaveEValor(dados, "species", "Disease")
-const humano = filtrarPorChaveEValor(dados, "species", "Human")
-const humanóide = filtrarPorChaveEValor(dados, "species", "Humanoid")
-const mytholog = filtrarPorChaveEValor(dados, "species", "Mytholog")
-const parasita = filtrarPorChaveEValor(dados, "species", "Parasite")
-const poopybutthole = filtrarPorChaveEValor(dados, "species", "Poopybutthole")
-const robo = filtrarPorChaveEValor(dados, "species", "Robot")
-const vampiro = filtrarPorChaveEValor(dados, "species", "Vampire")
-const unknown = filtrarPorChaveEValor(dados, "species", "unknown")
+const alien = dados.filter(resultado => resultado.species === "Alien")
+const animal = dados.filter(resultado => resultado.species === "Animal")
+const cronenberg = dados.filter(resultado => resultado.species === "Cronenberg")
+const doença = dados.filter(resultado => resultado.species === "Disease")
+const humano = dados.filter(resultado => resultado.species === "Human")
+const humanóide = dados.filter(resultado => resultado.species === "Humanoid")
+const mytholog = dados.filter(resultado => resultado.species === "Mytholog")
+const parasita = dados.filter(resultado => resultado.species === "Parasite")
+const poopybutthole = dados.filter(resultado => resultado.species === "Poopybutthole")
+const robo = dados.filter(resultado => resultado.species === "Robot")
+const vampiro = dados.filter(resultado => resultado.species === "Vampire")
+const unknown = dados.filter(resultado => resultado.species === "unknown")
 
 const graficoStatus = document.getElementById('graficoStatus')
 const graficoGenero = document.getElementById('graficoGenero')

@@ -17,7 +17,7 @@ function mostrarCards(data) {
     </div>
   </div>  
 `)
-    .join('')
+.join('')
 }
 
 mostrarCards(data.results);

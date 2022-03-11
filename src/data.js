@@ -1,11 +1,10 @@
 export const buscarNome = (data, busca) => {
   const resultadoNomes = data.filter(personagem => personagem.name.toLowerCase().includes(busca.toLowerCase()))
   return resultadoNomes
-};
+}
 
 export const filtrarPorChaveEValor = (data, chave, valor) => {
   return data.filter(resultado => resultado[chave] === valor)
-
 }
 
 export const buscarEspecie = (data, especie) => {
@@ -28,6 +27,3 @@ export const calculos = (total, porcento) => {
   const porcentagem = Math.round((porcento * 100) / total)
   return porcentagem
 }
-
-
-

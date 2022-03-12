@@ -1,5 +1,5 @@
 # Studio Ghibli
-[imagemghibli](https://www.cultura.sc.gov.br/images/noticias/2019/janeiro/totoro.jpg)
+[imagemghibli](src/img/studio-ghibli.jpg)
 ## Índice
 
 - [1. Preâmbulo](#1-preâmbulo)

@@ -1,111 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Studio Ghibli</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Studio Ghibli</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <menu class="menu">
-      <a href="https://studioghibli.com.br/studioghibli/" target="_blank"><img class= "logo" src="img/StudioGhibli_logo.png" alt="Logo do studio Ghibli" ></a> 
-      <nav>
-        <ul id="menu">
-          <li><a class="listMenu" href="home.html">PAGINA INICIAL</a></li>
-          <li><a class="listMenu" href="index.html">FILMES</a></li>
-          <li><a class="listMenu" href="characters.html">PERSONAGENS</a></li>
-        </ul>
-      </nav>
-    </menu>
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <ul>
+        <li><a class="navigation__link" href="index.html">FILMES</a></li>
+        <li><a class="navigation__link" href="characters.html">PERSONAGENS</a></li>
+        <li><a class="navigation__link" href="about.html">SOBRE</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-      <div class="theme">
-        <h1 class="themeGhibli">Ghibli Explorer</h1>
-        <h3 class="subTheme">Saiba tudo sobre seu filme favorito</h3>
-      </div>
-    </header>
+  <section class="img-totoro-content">
+    <img class="img-totoro" src="img/totoro.png" alt="Imagem do personagem de Totoro">
+    <h1 class="theme-ghibli">Ghibli Explorer</h1>
+  </section>
 
-    <section class="filtersContainer">
-      <div class="filterAz" id="filterAz">
-        <select class="select" id="selectAZ">
-          <option selected disabled value="">Ordem alfabética</option>
-          <option value="A-Z">A-Z</option>
-          <option value="Z-A">Z-A</option>
-        </select>
-      </div>
+  <section class="filters-container">
+    <select class="select" id="selectAZ">
+      <option selected disabled value="">Ordem alfabética</option>
+      <option class="option" value="A-Z">A-Z</option>
+      <option class="option"value="Z-A">Z-A</option>
+    </select>
 
-      <div class="filterTitle" id="filterTitle">
-        <select class="select" id="selectTitle">
-          <option selected disabled value="">Título</option>
-          <option value="Castle in the Sky">Castle in the Sky</option>
-          <option value="My Neighbor Totoro">My Neighbor Totoro</option>
-          <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
-          <option value="Grave of the Fireflies">Grave of the Fireflies</option>
-          <option value="Only Yesterday">Only Yesterday</option>
-          <option value="Porco Rosso">Porco Rosso</option>
-          <option value="Pom Poko">Pom Poko</option>
-          <option value="Whisper of the Heart">Whisper of the Heart</option>
-          <option value="Princess Mononoke">Princess Mononoke</option>
-          <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
-          <option value="Spirited Away">Spirited Away</option>
-          <option value="The Cat Returns">The Cat Returns</option>
-          <option value="Howl's Moving Castle">Howl's Moving Castle</option>
-          <option value="Tales from Earthsea">Tales from Earthsea</option>
-          <option value="Ponyo on the Cliff by the Sea">Ponyo on the Cliff by the Sea</option>
-          <option value="The Secret World of Arrietty">The Secret World of Arrietty</option>
-          <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
-          <option value="The Wind Rises">The Wind Rises</option>
-          <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
-          <option value="When Marnie Was There">When Marnie Was There</option>
-        </select>
-      </div>
-
-      <div class="filterRating" id="filterRating">
-        <select class="select" id="selectRating">
-          <option selected disabled value="">Pontuação</option>
-          <option value="41">41</option>
-          <option value="75">75</option>
-          <option value="78">78</option>
-          <option value="83">83</option>
-          <option value="87">87</option>
-          <option value="89">89</option>
-          <option value="91">91</option>
-          <option value="92">92</option>
-          <option value="93">93</option>
-          <option value="94">94</option>
-          <option value="95">95</option>
-          <option value="96">96</option>
-          <option value="97">97</option>
-          <option value="100">100</option>
-        </select>
-      </div>
-
-      <div class="filterProducer" id="filterProducer">
-        <select class="select" id="selectProducer">
-          <option selected disabled value="">Produtor</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Toru Hara">Toru Hara</option>
-          <option value="Toshio Suzuki">Toshio Suzuki</option>
-          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-        </select>
-      </div>
-      <button type="reset" id="btnClean" class="btnClean">Limpar Filtragem</button>
-    </section>
+    <select class="select" id="select-title">
+      <option selected disabled value="">Título</option>
+      <option value="Castle in the Sky">Castle in the Sky</option>
+      <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+      <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+      <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+      <option value="Only Yesterday">Only Yesterday</option>
+      <option value="Porco Rosso">Porco Rosso</option>
+      <option value="Pom Poko">Pom Poko</option>
+      <option value="Whisper of the Heart">Whisper of the Heart</option>
+      <option value="Princess Mononoke">Princess Mononoke</option>
+      <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
+      <option value="Spirited Away">Spirited Away</option>
+      <option value="The Cat Returns">The Cat Returns</option>
+      <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+      <option value="Tales from Earthsea">Tales from Earthsea</option>
+      <option value="Ponyo on the Cliff by the Sea">Ponyo on the Cliff by the Sea</option>
+      <option value="The Secret World of Arrietty">The Secret World of Arrietty</option>
+      <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
+      <option value="The Wind Rises">The Wind Rises</option>
+      <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
+      <option value="When Marnie Was There">When Marnie Was There</option>
+    </select>
+    <select class="select" id="selectRating">
+      <option selected disabled value="">Pontuação</option>
+      <option value="41">41</option>
+      <option value="75">75</option>
+      <option value="78">78</option>
+      <option value="83">83</option>
+      <option value="87">87</option>
+      <option value="89">89</option>
+      <option value="91">91</option>
+      <option value="92">92</option>
+      <option value="93">93</option>
+      <option value="94">94</option>
+      <option value="95">95</option>
+      <option value="96">96</option>
+      <option value="97">97</option>
+      <option value="100">100</option>
+    </select>
     
+    <select class="select" id="selectProducer">
+      <option selected disabled value="">Produtor</option>
+      <option value="Isao Takahata">Isao Takahata</option>
+      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+      <option value="Toru Hara">Toru Hara</option>
+      <option value="Toshio Suzuki">Toshio Suzuki</option>
+      <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+    </select>
+      
+    <button type="reset" id="btnClean" class="btnClean">Limpar Filtragem</button>
 
-    <main class="mainContent" id="mainContent">    
-      <div class="containerCards" id="moviesContainer"></div>       
-    </main>
+  </section>
 
-    <footer class="footer">
-      <p>Desenvolvido por <a target="_blank" class="linkedin" href= "https://www.linkedin.com/in/elizenai/"> Elizenai Silva </a>  e  <a target="_blank" class="linkedin"  href="https://www.linkedin.com/in/lromao/"> Lidianne Romão </a> para Laboratória 007 - 2022.</p>
-    </footer>
 
-    <script src="main.js" type="module"></script>
-  </body>
+  <main class="main-content" id="main-content">
+    <div class="container-cards-info" id="container-cards-info"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Desenvolvido por <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/elizenai/"> Elizenai Silva
+      </a> e <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/lromao/"> Lidianne Romão </a> para
+      Laboratória 007 - 2022.</p>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
 
 </html>

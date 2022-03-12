@@ -1,17 +1,29 @@
 import { sortAz, filterTitle, filterRating, filterProducer } from './data.js';
 import data from './data/ghibli/ghibli.js';
-// import { showCardsCharacters } from './characters.js';
+
 
 const movies = data.films
 
-const moviesContainer = document.getElementById("moviesContainer");
+const moviesContainer = document.getElementById("container-cards-info");
 function showCards(movies) {
     moviesContainer.innerHTML = movies.map(movie =>
-        `        
-        <div class="innerCard"> 
-            <img src="${movie.poster}" alt="Imagem do poster" class="cardImage"  id="cardImage"> 
-            <p class="cardTitle">${movie.title} </p>   
-        </div>        
+        ` 
+        <div class= "container-cards">
+
+            <div class="movie-poster"> 
+                <img src="${movie.poster}" alt="Imagem do poster" class="poster"  id="poster">
+            </div>            
+            <div class="movie-details">
+                <div class="container-movie-header">
+                    <h1 class="title">${movie.title}</h1>
+                    <h3>Diretor</h3><p class="director">${movie.director}</p>
+                    <h3>Ano de lançamento</h3><p class="year">${movie.release_date}</p> 
+                    <h3>Descrição</h3><p class="description">${movie.description}</p>
+                </div>
+               
+            </div>              
+            
+        </div>       
         `
 
     ).join('')
@@ -30,7 +42,7 @@ sortOrder.addEventListener("change", (event) => {
 
 });
 
-const selectTitle = document.getElementById("selectTitle")
+const selectTitle = document.getElementById("select-title")
 selectTitle.addEventListener("change", (event) => {
     const resultTitle = filterTitle(movies, event.target.value)
     showCards(resultTitle);
@@ -51,7 +63,7 @@ selectProducer.addEventListener("change", (event) => {
 //botão para recarregar a página
 const buttonClean = document.getElementById("btnClean");
 function cleanFilters() {
-    window.location.reload(); 
+    window.location.reload();
 }
 buttonClean.addEventListener("click", cleanFilters);
 

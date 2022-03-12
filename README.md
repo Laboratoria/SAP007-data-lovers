@@ -1,16 +1,13 @@
 # Studio Ghibli
 ![imagemghibli](src/img/studio-ghibli.jpg)
 
-## 4. Status do projeto
-
-![Bagde em desenvolvimento](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green)
 
 ## Índice
 
-- [1. Descrição do projeto](#1-descricao-do-projeto)
+- [1. Status do projeto](#1-status-do-projeto)
 - [2. Acesso](#2-acesso)
-- [3. Funcionalidades](#3-funcionalidades)
-- [4. Status do projeto](#4-status-do-projeto)
+- [3. Descrição](#3-descricao)
+- [4. Funcionalidades](#4-funcionalidades)
 - [5. Protótipo](#5-prototipo)
 - [6. Histórias de usuário](#6-historias-de-usuário)
 - [7. Tecnologias utilizadas](#7-tecnologias-utilizadas)
@@ -18,22 +15,21 @@
 - [9. Referências](#9-referencias)
 
 
-## 1. Descrição do projeto
+## 1. Status do projeto
+
+![Bagde em desenvolvimento](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green)
+
+## 2. Acesso
 
 
+## 3. Descrição
 
 
 - [Studio Ghibli](src/data/ghibli/ghibli.json).
   Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
 - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
 
-
-
-## 2. Acesso
-
-
-
-## 3. Funcionalidades
+## 4. Funcionalidades
 
 
 ## 5. Protótipo
@@ -45,7 +41,6 @@ Após algumas pesquisas em sites similares e breve conversa com usuários, decid
 Depois de realizar algumas pesquisas em sites similares como: sites de desenho animado, jogos, filmes de anime e mesmo o site do [Studio Ghibli Brasil] (https://studioghibli.com.br/studioghibli/), desenhamos no papel como seria a página principal:
 
 ![Desenho em papel do protótipo de baixa fidelidade](src/img/prototipo.jpeg)
-
 
 #### Protótipo de alta fidelidade
 
@@ -73,6 +68,14 @@ Durante o desenvolvimento, fizemos alguns testes com os usuários para que pudes
 
 ### Testes unitários
 
+## 7. Tecnologias utilizadas
+
+## 8. Pessoas desenvolvedoras
+
+## 9. Referências
+
+
+### Checklist
 
 
 No mínimo, sua implementação deverá:
@@ -85,16 +88,6 @@ No mínimo, sua implementação deverá:
 4. Que a interface siga os fundamentos de _visual design_.
 
 
-
-
-## 7. Tecnologias utilizadas
-
-## 8. Pessoas desenvolvedoras
-
-## 9. Referências
-
-
-### Checklist
 
 - [ ] Usar VanillaJS.
 - [ ] Passa pelo linter (`npm run pretest`)

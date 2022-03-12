@@ -1,5 +1,5 @@
 # Studio Ghibli
-[imagemghibli](src/img/studio-ghibli.jpg)
+![imagemghibli](src/img/studio-ghibli.jpg)
 ## Índice
 
 - [1. Preâmbulo](#1-preâmbulo)

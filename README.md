@@ -40,7 +40,7 @@ Após algumas pesquisas em sites similares e breve conversa com usuários, decid
 
 Depois de realizar algumas pesquisas em sites similares como: sites de desenho animado, jogos, filmes de anime e mesmo o site do [Studio Ghibli Brasil] (https://studioghibli.com.br/studioghibli/), desenhamos no papel como seria a página principal:
 
-![Desenho em papel do protótipo de baixa fidelidade](src/img/prototipo.jpeg)
+![Desenho em papel do protótipo de baixa fidelidade](src/img/prototipo1.jpeg)
 
 #### Protótipo de alta fidelidade
 
@@ -48,10 +48,12 @@ Depois de realizar algumas pesquisas em sites similares como: sites de desenho a
 
 ## 6. Histórias de usuário
 
-Nossa pesquisa para iniciar o desenvolvimento foi realizada com pessoas da família que assistem desenhos de anime e também através de buscas de comunidades que falam sobre esse tipo de animação. Iremos descrever as duas histórias de usuário que serviram como direcionamento para a elaboração dos filtros, definição de cores e demais informações.
+Nossa pesquisa para iniciar o desenvolvimento foi realizada com pessoas da família que assistem desenhos de anime e também através de buscas nas comunidades que falam sobre esse tipo de animação. 
+
+Iremos descrever as duas histórias de usuário que motivaram o desenvimento do design, filtros, e demais interatividades do proejto.
 
 História de usuário 01
--Eu, Heloísa, 09 anos, quero entrar no site do Studio Ghibli e poder ver todos os posteres dos filmes para decidir que filme assistir.  Gostaria de encontrar os títulos, saber quais são os melhores e poder ler a descrição.
+-Eu, Heloísa, 09 anos, quero entrar no site do Studio Ghibli e poder ver todos os nomes e posteres dos filmes. Eu quero saber um pouco da história pra decidir qual assistir.
 
 Definição de pronto:
 Critérios de aceitação:

@@ -114,16 +114,15 @@ footer a {
 @media screen and (max-width: 768px) {
 
 header {
-    background-color:rgba(213, 172, 161, 0.815);
+    background-color:rgba(213, 172, 161, 0.705);
     height: 70px;
-        
 }
-    
-body {  
-    width: 100%;     
+
+body {
+    width: 100%;
     background-color:rgb(213, 172, 161);
 }
-    
+
 body::before {
     content: " ";
     background: url(./image/bg\ responsivo.jpg) no-repeat;
@@ -161,7 +160,7 @@ body::before {
 }
 
 .graficos {
-    margin-top: 20px;
+    margin-top: 7%;
     align-items: center;
     justify-content: center;
 }  
@@ -177,3 +176,4 @@ body::before {
 .voltar-topo {
     display: none;
 }
+

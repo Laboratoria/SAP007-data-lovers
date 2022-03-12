@@ -197,5 +197,5 @@ Aqui se encontram os teste unitários das funções implementadas no arquivo
 
 - [x] O planejamento deste projeto se encontra no [Trello](https://trello.com/b/15NqEjgG/data-lovers-rick-and-morty)
 - [x] O repositório deste projeto se encontra no [GitHub](https://github.com/karolsontak/SAP007-data-lovers)
-- [x] O deploy deste projeto está hospedado no [GitPages]()
+- [x] O deploy deste projeto está hospedado no [GitPages](https://karolsontak.github.io/SAP007-data-lovers/)
 - [x] Este projeto foi desenvolvido por [Dayane Rodrigues](https://github.com/dayanersilva) e [Karol Sontak](https://github.com/karolsontak).

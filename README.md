@@ -1,76 +1,57 @@
 # Studio Ghibli
 ![imagemghibli](src/img/studio-ghibli.jpg)
 
+## 4. Status do projeto
+
 ![Bagde em desenvolvimento](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green)
 
 ## Índice
 
-- [2. Descrição do projeto](#2-descricao-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-considerações-gerais)
-- [5. Critérios mínimos de aceitação do
-  projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Considerações técnicas](#7-considerações-técnicas)
-- [8. Pistas, dicas e leituras
-  complementares](#8-pistas-dicas-e-leituras-complementares)
-- [9. Checklist](#9-checklist)
+- [1. Descrição do projeto](#1-descricao-do-projeto)
+- [2. Acesso](#2-acesso)
+- [3. Funcionalidades](#3-funcionalidades)
+- [4. Status do projeto](#4-status-do-projeto)
+- [5. Protótipo](#5-prototipo)
+- [6. Histórias de usuário](#6-historias-de-usuário)
+- [7. Tecnologias utilizadas](#7-tecnologias-utilizadas)
+- [8. Pessoas desenvolvedoras](#8-pessoas-desenvolvedoras)
+- [9. Referências](#9-referencias)
 
----
 
-## 2. Descrição do projeto
+## 1. Descrição do projeto
 
-Neste projeto você **construirá uma _página web_ para visualizar um _conjunto
-(set) de dados_** que se adeque às necessidades de seu usuário.
 
-Como entregável final terá uma página web que permita **visualizar dados,
-filtrá-los, ordená-los e fazer algum cálculo agregado**. Por cálculo agregado
-nos referimos aos diversos cálculos que podem ser feitos com os dados para
-mostrar a informação mais relevante para os usuários (médias, valores máximos e
-mínimos, etc).
-
-Para este projeto trazemos uma série de dados de _temáticas diferentes_ para que
-você explore e decida com qual delas deseja trabalhar. Escolhemos
-especificamente estes conjuntos de dados porque cremos que se adequem bem a esta
-etapa de sua aprendizagem.
-
-Uma vez que você defina sua área de interesse, busque entender quem é seu
-usuário e o que exatamente ele necessita saber ou ver, para que assim possa
-construir a interface que o ajude a interagir e entender melhor os dados.
-
-Este são os dados que propomos:
 
 
 - [Studio Ghibli](src/data/ghibli/ghibli.json).
   Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
-  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
+- [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
 
 
 
-## 3. Objetivos de aprendizagem
+## 2. Acesso
 
 
 
-- [ ] **Manipular objects (key | value)**
-
-    <details><summary>Links</summary><p>
-
-  - [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/05-objects/01-objects)
-  </p></details>
+## 3. Funcionalidades
 
 
-
-
-## 4. Considerações gerais
-
-
-
-### Definição de produto
+## 5. Protótipo
 
 Após algumas pesquisas em sites similares e breve conversa com usuários, decidimos que o site deveria ser de fácil compreensão, com a finalidade de adultos e crianças poderem ter acessos a todas as funcionalidades.
 
+#### Protótipo de baixa fidelidade
 
-### Histórias de usuário
+Depois de realizar algumas pesquisas em sites similares como: sites de desenho animado, jogos, filmes de anime e mesmo o site do [Studio Ghibli Brasil] (https://studioghibli.com.br/studioghibli/), desenhamos no papel como seria a página principal:
+
+![Desenho em papel do protótipo de baixa fidelidade](src/img/prototipo.jpeg)
+
+
+#### Protótipo de alta fidelidade
+
+*** figma
+
+## 6. Histórias de usuário
 
 Nossa pesquisa para iniciar o desenvolvimento foi realizada com pessoas da família que assistem desenhos de anime e também através de buscas de comunidades que falam sobre esse tipo de animação. Iremos descrever as duas histórias de usuário que serviram como direcionamento para a elaboração dos filtros, definição de cores e demais informações.
 
@@ -86,24 +67,12 @@ História de usuário 02
 Definição de pronto:
 Critérios de aceitação:
 
-
-#### Protótipo de baixa fidelidade
-
-Depois de realizar algumas pesquisas em sites similares como: sites de desenho animado, jogos, filmes de anime e mesmo o site do [Studio Ghibli Brasil] (https://studioghibli.com.br/studioghibli/), desenhamos no papel como seria a página principal:
-
-![Desenho em papel do protótipo de baixa fidelidade](src/img/prototipo.jpeg)
-
-
-#### Protótipo de alta fidelidade
-
-
-
 #### Testes de usabilidade
 
 Durante o desenvolvimento, fizemos alguns testes com os usuários para que pudessem avaliar a interatividade do site.
 
+### Testes unitários
 
-### Implementação da interface de usuário (HTML/CSS/JS)
 
 
 No mínimo, sua implementação deverá:
@@ -115,27 +84,17 @@ No mínimo, sua implementação deverá:
    diversos tamanhos de tela: celulares, tablets, notebooks, etc.
 4. Que a interface siga os fundamentos de _visual design_.
 
-### Testes unitários
-
-
-## 7. Considerações técnicas
 
 
 
-### Conteúdo de referência
+## 7. Tecnologias utilizadas
 
-#### Organização do trabalho
+## 8. Pessoas desenvolvedoras
 
-- [Histórias de Usuário](https://www.youtube.com/watch?v=sEtiCJfXTE8)
-- [Definição de pronto](https://www.youtube.com/watch?v=Kfss63Q42F8)
-- [Critérios de
-  aceitação](https://medium.com/@karladiasn/user-stories-e-crit%C3%A9rios-de-aceita%C3%A7%C3%A3o-317c48403fcd)
-- [Guia para Data
-  Lovers](https://docs.google.com/presentation/d/1bOq8ns5wsvXdksdqYL3aQoxzFQsXTVlyvlV-yxI2oBM/present?token=AC4w5VhHBbEEA9u2w8bm3Ey1Cse349frbg%3A1567540902700&includes_info_params=1&eisi=CM_ytPW4teQCFQrJgQodeTcEZg#slide=id.g5282e1a53f_1_106)
+## 9. Referências
 
----
 
-## 9. Checklist
+### Checklist
 
 - [ ] Usar VanillaJS.
 - [ ] Passa pelo linter (`npm run pretest`)

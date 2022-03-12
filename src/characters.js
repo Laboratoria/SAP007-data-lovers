@@ -58,7 +58,9 @@ function showCardsCharacters2(selectedFilter) {
     const calculo = calculoCharacters(selectedFilter);
     selectSpecieC.innerHTML =
     `
-    <p> Existe um total de ${calculo} personagen(s) da espécie ${filterSpecieE} </p>
+    <div class="character-amount-container>
+    <p class="character-amount"> Existe um total de ${calculo} personagen(s) da espécie ${filterSpecieE} </p>
+    <div>
     `
     ;
     

@@ -1,5 +1,5 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
-import { sortAz, filterTitle, filterRating, filterProducer, sortAzPersons, filterSpecie, filterGender } from '../src/data.js';
+import { sortAz, filterTitle, filterRating, filterProducer, sortAzPersons, filterSpecie, filterGender, calculoCharacters } from '../src/data.js';
 
 const objFilmes = [
   {
@@ -133,5 +133,16 @@ describe('teste filterPersonGender', () => {
   it('retorne a filtragem dos gêneros dos personagens', () => {
     let retorno = [objCharacters[1], objCharacters[2]];
     expect(filterGender(objCharacters, "Female")).toEqual(retorno);
+  });
+});
+
+describe('teste length', () => {
+  it('is a function', () => {
+    expect(typeof calculoCharacters).toBe('function');
+  });
+
+  it('retorne a quantidade de personagem', () => {
+    let retorno = [objCharacters[1]];
+    expect(calculoCharacters(retorno)).toEqual(1);
   });
 });

@@ -29,9 +29,8 @@ export const filterProducer = (films, selectedProducer) => {
 export const sortAzPersons = (data, order) => {
   const copyPerson = [...data]
   if (order == "A-Z") {
-
     return copyPerson.sort((a, z) => a.name > z.name ? 1 : -1);
-  } else {
+  } else{
     return copyPerson.sort((a, z) => a.name > z.name ? -1 : 1);
   }
 };

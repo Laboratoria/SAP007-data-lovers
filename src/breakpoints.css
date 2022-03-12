@@ -1,14 +1,35 @@
 /* MAX VAI ATE O NUMERO E O MIN INICIA A PARTIR DO NUMERO */
-/* === DESKTOP === */
+
+/* ===== MEDIAS ESPECIFICOS PARA O BOTÃO DE VOLTAR AO TOPO ===== */
+@media (min-width: 375px) and (max-width: 425px) {
+  .back-to-top {
+    right: -5px;
+    padding: 1rem;
+  }
+  .image-top {
+    width: 4.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .back-to-top {
+    right: -3px;
+  }
+  .image-top {
+    width: 5em;
+  }
+}
+
+/* ===== MEDIA TABLET E DESKTOP  ===== */
 @media screen and (min-width: 768px) and (max-width: 2560px) {
   /* === LOGO === */
-.box-logo {
-  width: 30em;
-}
-/* === SLIDE === */
-.box-image img {
-  width: 42em;
-}
+  .box-logo {
+    width: 30em;
+  }
+  /* === SLIDE === */
+  .box-image img {
+    width: 42em;
+  }
   /* === CARDS === */
   #card-information {
     display: flex;
@@ -69,10 +90,9 @@
     text-shadow: 1px 1px 2px white;
   }
 
-  .more-info{
+  .more-info {
     display: flex;
     justify-content: end;
     margin: 3em auto;
   }
 }
-

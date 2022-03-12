@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="breakpoints.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rick and Morty</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="breakpoints.css">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-</head>
+  <body class="background">
+    <header>
+      <div><img src="img/logo-rick.png" alt="" class="box-logo" /></div>
+      <div class="box">
+        <div class="box-image"><img src="img/hate.gif" /></div>
+        <div class="box-image"><img src="img/clones.gif" /></div>
+        <div class="box-image"><img src="img/briga.gif" /></div>
+      </div>
+      <section class="box-cursor"></section>
+    </header>
 
-<body class="background">
-  <header>
-    <div><img
-        src="img/logo-rick.png"
-        alt="" class="box-logo"></div>
-    <div class="box">
-      <div class="box-image"><img src="img/hate.gif" /></div>
-      <div class="box-image"><img src="img/clones.gif" /></div>
-      <div class="box-image"><img src="img/briga.gif" /></div>
-    </div>
-    <section class="box-cursor"></section>
+    <main>
+      <section>
+        <p class="statistics" id="statistics-infos"></p>
+      </section>
+      <form class="filters-container">
+        <select class="options-menus" id="alphabetic-sequence">
+          <option class="value-option" value="">Ordem Alfabetica</option>
+          <option class="value-option" value="AZ">A-Z</option>
+          <option class="value-option" value="ZA">Z-A</option>
+        </select>
 
-  </header>
+        <select id="filters-species" class="options-menus">
+          <option class="value-option" value="">Selecione a espécie</option>
+          <option class="value-option" value="Alien">Alien</option>
+          <option class="value-option" value="Animal">Animal</option>
+          <option class="value-option" value="Cronenberg">Cronenberg</option>
+          <option class="value-option" value="unknown">Desconhecido</option>
+          <option class="value-option" value="Disease">Disease</option>
+          <option class="value-option" value="Human">Humano</option>
+          <option class="value-option" value="Mytholog">Mytholog</option>
+          <option class="value-option" value="Parasite">Parasita</option>
+          <option class="value-option" value="Poopybutthole">
+            Poopybutthole
+          </option>
+          <option class="value-option" value="Robot">Robô</option>
+          <option class="value-option" value="Vampire">Vampiro</option>
+        </select>
 
-  <main>
-    <section>
-      <p class="statistics" id="statistics-infos"></p>
-    </section>
-        <form class="filters-container">
-      
+        <select id="filters-genders" class="options-menus">
+          <option class="value-option" value="">Selecione o gênero</option>
+          <option class="value-option" value="Male">Homem</option>
+          <option class="value-option" value="Female">Mulher</option>
+          <option class="value-option" value="Genderless">Sem gênero</option>
+          <option class="value-option" value="unknown">Desconhecido</option>
+        </select>
 
-      <select class="options-menus" id="alphabetic-sequence">
-        <option class="value-option" value=""> Ordem Alfabetica</option>
-        <option class="value-option" value="AZ">A-Z</option>
-        <option class="value-option" value="ZA">Z-A</option>
-      </select>
+        <label>
+          <input
+            type="search"
+            id="filters-names"
+            placeholder="ex:Rick"
+            class="filters-name options-menus"
+        /></label>
+      </form>
 
+      <section class="section-card">
+        <div class="card-information" id="card-information"></div>
+      </section>
+    </main>
 
-      <select id="filters-species" class="options-menus">
-        <option class="value-option" value=""> Selecione a espécie</option>
-        <option class="value-option" value="Alien">Alien</option>
-        <option class="value-option" value="Animal"> Animal</option>
-        <option class="value-option" value="Cronenberg">Cronenberg</option>
-        <option class="value-option" value="unknown">Desconhecido</option>
-        <option class="value-option" value="Disease">Disease</option>
-        <option class="value-option" value="Human">Humano</option>
-        <option class="value-option" value="Mytholog">Mytholog</option>
-        <option class="value-option" value="Parasite">Parasita</option>
-        <option class="value-option" value="Poopybutthole">Poopybutthole</option>
-        <option class="value-option" value="Robot">Robô</option>
-        <option class="value-option" value="Vampire">Vampiro</option>
-      </select>
+    <footer id="footer">
+      <p class="develope">© Created by Julia Benedicto and Marione Pereira</p>
+      <section class="icons">
+        <a href="https://github.com/juliabb" target="_blank"
+          ><img src="img/ju.ico" alt="imgem Julia"
+        /></a>
 
-      <select id="filters-genders" class="options-menus">
-        <option class="value-option" value=""> Selecione o gênero</option>
-        <option class="value-option" value="Male">Homem</option>
-        <option class="value-option" value="Female"> Mulher</option>
-        <option class="value-option" value="Genderless">Sem gênero</option>
-        <option class="value-option" value="unknown">Desconhecido</option>
-      </select>
+        <a
+          href="https://www.linkedin.com/in/julia-cruz-7aa339183/"
+          target="_blank"
+          ><img src="img/logolinkedin.ico" alt="Logo Linkedin"
+        /></a>
+      </section>
 
+      <section class="icons">
+        <a href="https://github.com/Marione-Tainara" target="_blank"
+          ><img src="img/mari.ico" alt="img Marione"
+        /></a>
 
-
-
-      <label> <input type="search" id="filters-names" placeholder="ex:Rick" class="filters-name options-menus"></label>
-      
-    </form>
-
-    <section class="section-card">
-      <div class="card-information" id="card-information"></div>
-    </section>
-
-  </main>
-
-  <footer id="footer">
-    <p class="develope"> © Created by Julia Benedicto and Marione Pereira</p>
-    <section class="icons">
-      <a href="https://github.com/juliabb" target="_blank"><img src="img/ju.ico" alt="imgem Julia" /></a>
-
-      <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/" target="_blank"><img src="img/logolinkedin.ico"
-          alt="Logo Linkedin" /></a>
-    </section>
-
-    <section class="icons">
-      <a href="https://github.com/Marione-Tainara" target="_blank"><img src="img/mari.ico" alt="img Marione" /></a>
-
-      <a href="https://www.linkedin.com/in/marione-tainara-da-sp/" target="_blank"><img src="img/logolinkedin.ico"
-          alt="Logo Linkedin" /></a>
-    </section>
-  </footer>
-  <script src="slide.js" type="module" defer></script>
-  <script src="main.js" type="module" defer></script>
-</body>
-
+        <a
+          href="https://www.linkedin.com/in/marione-tainara-da-sp/"
+          target="_blank"
+          ><img src="img/logolinkedin.ico" alt="Logo Linkedin"
+        /></a>
+      </section>
+    </footer>
+    <a href="#top" class="back-to-top"
+      ><img src="img/backtop.png" alt="subir" class="image-top"
+    /></a>
+    <script src="slide.js" type="module" defer></script>
+    <script src="main.js" type="module" defer></script>
+  </body>
 </html>

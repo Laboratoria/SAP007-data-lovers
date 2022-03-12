@@ -42,21 +42,25 @@ controlador();
 
 function controlador() {
   let img = document.querySelectorAll(".box-image img");
-  document.querySelectorAll(".box-cursor span").forEach(function (valor, index) {
-    valor.addEventListener("click", function () {
-      img[interval].style.display = "none";
-      interval = index;
-      img[interval].style.display = "block";
+  document
+    .querySelectorAll(".box-cursor span")
+    .forEach(function (valor, index) {
+      valor.addEventListener("click", function () {
+        img[interval].style.display = "none";
+        interval = index;
+        img[interval].style.display = "block";
 
-      let div = document.querySelectorAll(".box-cursor span").length;
+        let div = document.querySelectorAll(".box-cursor span").length;
 
-      if (div == 3) {
-        document.querySelectorAll(".box-cursor span").forEach(function (valor) {
-          valor.classList.remove("marcador");
-        });
-      }
+        if (div == 3) {
+          document
+            .querySelectorAll(".box-cursor span")
+            .forEach(function (valor) {
+              valor.classList.remove("marcador");
+            });
+        }
 
-      valor.classList.add("marcador");
+        valor.classList.add("marcador");
+      });
     });
-  });
 }

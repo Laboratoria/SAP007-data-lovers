@@ -14,7 +14,6 @@ function showOnCards(data) {
       (item) =>
         `   
         <div class="container-card">
-
     <article class="content-card">
       <div class="flip-card">
         <section class="front-card">
@@ -22,7 +21,6 @@ function showOnCards(data) {
           <div class="name text-card">${item.name}</div>
           <p class="text-card more-info">Saiba mais</p>
         </section>
-
         <section class="back-card">
         <ul class="text-card">
         <li>Status:${item.status}</li>
@@ -98,3 +96,22 @@ function showOrdem(e) {
   const orderScreen = orderResults(data.results, e.target.value);
   return showOnCards(orderScreen);
 }
+
+// Limpar filtros
+function clearFilters() {
+  location.reload(); //recarrega a página atual
+}
+
+// Voltar ao topo
+function backToTop() {
+  if (window.scrollY >= 100) {
+    //se o eixo Y 'vertical' for igual ou maior a 100
+    backToTopButton.classList.add("show"); //adiciona na class do botão o show
+  } else {
+    backToTopButton.classList.remove("show"); //remove na class do botão o show
+  }
+}
+const backToTopButton = document.querySelector(".back-to-top"); //procurar no css o botão
+window.addEventListener("scroll", function () {
+  backToTop(); //escuta evento de scroll e chama função
+});

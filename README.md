@@ -1,5 +1,5 @@
-# <h1 align ="center"> Studio Ghibli </h1>
-(src/img/studio-ghibli.jpg)
+# Studio Ghibli
+(https://www.cultura.sc.gov.br/images/noticias/2019/janeiro/totoro.jpg)
 ## Índice
 
 - [1. Preâmbulo](#1-preâmbulo)

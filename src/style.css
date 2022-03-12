@@ -209,10 +209,11 @@ footer a {
     height: 120px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
 header {
-    background-color:rgb(213, 172, 161);
+    background-color:rgba(213, 172, 161, 0.705);
+    height: 70px;
 }
 
 body {
@@ -227,6 +228,29 @@ body::before {
     background-size: cover;
     position: fixed;
 }    
+
+.menu {
+    width: 100%;
+    margin-top: 10px;
+    padding: 1rem;
+    margin-left: 60%;    
+    align-items: center;
+    position: relative;
+}
+    
+.lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+    
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;   
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .logo-img {
     width: 60%;
@@ -276,17 +300,25 @@ body::before {
 }
 
 .filtro-especies {
-    width: 180px;
+    width: 200px;
     height: 40px;
     background-color: white;
     font-size: 16px;
-    margin-top: 35px;
+    margin-top: 25px;
     border-radius: 5px;
     box-shadow: 8px 8px 8px black;
 }
     
+.centro-tela {
+    font-size: 14px;
+    display: flex;
+    margin-top: 30px;
+    background-color: white;
+
+}
+
 .filtro-ordem {
-    width: 180px;
+    width: 200px;
     height: 40px;
     background-color: white;
     font-size: 16px;
@@ -336,7 +368,11 @@ body::before {
     color: rgb(49, 176, 204);
     margin-top: 5px;
 }    
-    
+
+.voltar-topo {
+    display: none;
+}
+
 footer {
     font-size: 14px;
     width: 100%;

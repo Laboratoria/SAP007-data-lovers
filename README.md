@@ -15,7 +15,7 @@
 
 O objetivo deste projeto é construir uma página web para visualizar um conjunto de dados sobre os personagens da série Rick and Morty que se adapte às necessidades do usuário. Essa página possibilita tanto visualizar todos os personagens como filtrar, ordenar os dados e mostrar informações relevantes através de cálculos agregados e gŕaficos.
 
-Para visualizar o projeto [clique aqui]()
+Para visualizar o projeto [clique aqui](https://karolsontak.github.io/SAP007-data-lovers/)
 
 ### **Sobre a série**
 
@@ -81,7 +81,20 @@ Nossas implementações permeiam em:
    diversos tamanhos de tela: celulares, tablets, notebooks, etc.
 - [x] Exibir cálculos agregados ao filtro permitindo que o usuário visualize a porcentagem de personagens representadas por cada espécie.
 
+---
+
+&nbsp;
+Versão final para computador:
+&nbsp;
 ![](image-readme/tela.png)
+
+---
+
+&nbsp;
+Versão final responsiva:
+
+&nbsp;
+![](image-readme/pagina%20responsiva.jpg)
 
 ---
 
@@ -90,10 +103,14 @@ Nossas implementações permeiam em:
 Escrevemos nosso próprio teste para as funções encarregadas de _processar_,
 _filtrar_ e _ordenar_ os dados, assim como _calcular_ estatísticas.
 
-Nossos testes unitários tem cobertura mínima de 70% de _statements_
+Nossos testes unitários tem cobertura de 100% de _statements_
 (_sentenças_), _functions_ (_funções_), _lines_ (_linhas_), e _branches_
 (_ramos_) do arquivo `src/data.js`, que contém nossas funções e que está
 detalhada na seção de [Considerações técnicas](#srcdatajs).
+
+&nbsp;
+![](image-readme/testes.png)
+
 
 ---
 
@@ -109,7 +126,8 @@ como toda a configuração de dependências:
 
 ```text
 .
-├── image.readme
+├── coverage
+├── image-readme
 ├── node_modules
 ├── src
 |  ├── data/rickandmorty 
@@ -121,8 +139,12 @@ como toda a configuração de dependências:
 |  |  |  ├── bg-purple.jpg
 |  |  |  ├── favicom.ico
 |  |  |  └── home.png
+|  |  |  └── logo.png
 |  |  |  └── topo.png
 |  ├── data.js
+|  ├── estatisticas.css
+|  ├── estatisticas.html
+|  ├── estatisticas.js
 |  ├── index.html
 |  ├── main.js
 |  └── style.css

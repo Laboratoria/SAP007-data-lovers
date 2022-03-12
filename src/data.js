@@ -3,10 +3,6 @@ export const buscarNome = (data, busca) => {
   return resultadoNomes
 }
 
-export const filtrarPorChaveEValor = (data, chave, valor) => {
-  return data.filter(resultado => resultado[chave] === valor)
-}
-
 export const buscarEspecie = (data, especie) => {
   const resultadoEspecie = data.filter(personagem => personagem.species.toLowerCase() === especie.toLowerCase())
   return resultadoEspecie

@@ -1,5 +1,5 @@
-import data from './data/rickandmorty/rickandmorty.js';
-import { buscarNome, buscarEspecie, sortOrdem, calculos } from './data.js';
+import data from './data/rickandmorty/rickandmorty.js'; 
+import {buscarNome, buscarEspecie, sortOrdem, calculos} from './data.js';
 
 function mostrarCards(data) {
   document.getElementById('recebe-card').innerHTML = data.map((item) => `
@@ -40,22 +40,23 @@ function filtrarEspecie(e) {
   return mostrarCards(resultEspecie)
 }
 
-function filtroOrdem() {
-  const ordem = selecaoOrdem.value
-  return mostrarCards(sortOrdem(data.results, ordem))
+function filtroOrdem(){
+  const ordem = selecaoOrdem.value 
+  return mostrarCards (sortOrdem(data.results, ordem))
 }
-
-function limparFiltros() {
+  
+function limparFiltros(){
   window.location.reload()
 }
 
-function subirPagina() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
+function subirPagina(){
+  window.scrollTo({top: 0, behavior: 'smooth'}); 
+} 
+  
 //EVENTOS
 filtroPesquisar.addEventListener('input', pesquisarNomes)
 selecaoEspecie.addEventListener('change', filtrarEspecie)
 selecaoOrdem.addEventListener('change', filtroOrdem)
 voltarTopo.addEventListener('click', subirPagina)
 limparBusca.addEventListener('click', limparFiltros)
+

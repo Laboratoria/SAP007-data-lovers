@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="estatisticas.css">
   <title>Estatísticas</title>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 <body>
   <header>
@@ -20,13 +21,16 @@
     </nav>
   </header>
 
-  <section class="grafico"></section>
-    <div class="primeira-linha">
+  <section class="graficos">
+    <div class="grafico-especie">
      <canvas id="graficoEspecie" style="width:100%;max-width:700px"></canvas>
     </div>
 
-    <div class="segunda-linha">
+    <div class="grafico-status">
       <canvas id="graficoStatus" style="width:100%;max-width:700px"></canvas>
+    </div>
+
+    <div class="grafico-genero">
       <canvas id="graficoGenero" style="width:100%;max-width:700px"></canvas>
     </div>
   </section>
@@ -39,8 +43,6 @@
       href="https://github.com/karolsontak" target="_blank">Karol Sontak</a></p>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script src="estatisticas.js" type="module"></script>
-<script src="main.js" type="module"></script>
 
 </html>

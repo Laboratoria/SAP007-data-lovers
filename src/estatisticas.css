@@ -58,18 +58,24 @@ header {
     position: absolute;
 }
 
-.primeira-linha {
-   margin-top: 35%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+.graficos {
+    margin-top: 35%;
+    align-items: center;
+    justify-content: center;
+}  
 
-.segunda-linha {
-    margin-top: 5%;
-    display: inline-flex;
-}
- 
+.grafico-status {
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+}    
+
+.grafico-genero { 
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+}     
+
 .voltar-topo {
     position: fixed;
     bottom: 30px;
@@ -103,4 +109,71 @@ footer a {
 
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(104, 44, 70, 0.925);
+}
+
+@media screen and (max-width: 768px) {
+
+header {
+    background-color:rgba(213, 172, 161, 0.815);
+    height: 70px;
+        
+}
+    
+body {  
+    width: 100%;     
+    background-color:rgb(213, 172, 161);
+}
+    
+body::before {
+    content: " ";
+    background: url(./image/bg\ responsivo.jpg) no-repeat;
+    opacity: 0.5;  
+    background-size: cover;
+    position: fixed;
+}    
+
+.menu {
+    width: 100%;
+    margin-top: 10px;
+    padding: 1rem;
+    margin-left: 60%;    
+    align-items: center;
+    position: relative;
+}
+    
+.lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+    
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;   
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo-img {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.graficos {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}  
+
+.grafico-status { 
+    margin-top: 2%;
+}    
+
+.grafico-genero { 
+    margin-top: 2%;
+}    
+
+.voltar-topo {
+    display: none;
 }

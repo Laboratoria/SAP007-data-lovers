@@ -38,22 +38,24 @@ Descrevemos abaixo as duas histórias de usuário que motivaram o desenvolviment
 História de usuário 01
 -Eu, Heloísa, 09 anos, quero entrar no site do Studio Ghibli e poder ver todos os nomes e posteres dos filmes. Eu quero saber um pouco da história pra decidir qual filme assistir.
 
-_Definição de pronto_: Ao entrar na site, o usuário tem acesso à página de filmes. Nesta mesma página, é possível ordenar os títulos dos filmes de A a Z, selecionar um único título para que apareça somente ele na tela, filtrar pela pontuação dos filmes e pelo produtor.
+_Definição de pronto_: Ao entrar na site, o usuário tem acesso à página de filmes. Nesta mesma página, é possível ordenar os títulos dos filmes de A a Z, selecionar um único título para que apareça somente ele na tela, filtrar pela pontuação dos filmes e pelo produtor. Também é possível limpar os filtros para fazer uma nova busca.
 _Critérios de aceitação_: Para cada filme foi montado um display contendo o poster, o título, o nome do diretor, o ano de lançamento e a descrição do filme, sendo possível conhecer a história e saber se o filme foi bem aceito.
 
 História de usuário 02
 -Eu Matheus, 25 anos,  quero entrar no site da Ghibli e poder ver todos os personagens, saber os tipos ou espécies, o gênero e a quantidade que cada um representa.
 
-Definição de pronto: Ao entrar no site, o usuário saberá que está na página de filmes, pois no canto superior esquerdo existem três links, e o link que direciona para a página de personagens 
-Critérios de aceitação:
+_Definição de pronto:_ Ao entrar no site, o usuário estará na página de filmes e terá acesso à página de personagens utilizando um menu localizado no canto superior esquerdo da tela. A página de personagens mostra todos os cards e nomes dos personagens, sendo possível ordenar de A a Z os nomes, filtrar por espécie, gênero e com isso obter a quantidade que cada categoria representa dentro das animações de forma geral. Também é possível limpar os filtros para fazer uma nova busca.
+_Critérios de aceitação_: O usuário pode navegar pela página e conhecer todos os personagens, saber quantos pernoagens de cada espécie existem e também a quantidade por gênero.
 
 #### Testes de usabilidade
 
-Durante o desenvolvimento, fizemos alguns testes com os usuários para que pudessem avaliar a interatividade do site.
+Durante o desenvolvimento, fizemos alguns testes com os usuários para que pudessem avaliar a interatividade do site. Após algumas avaliações decidimos colocar um botão para limpar os filtros antes de fazer uma nova pesquisa.
 
 ### Testes unitários
 
+Escrevemos testes unitários para cada função contida no data.js. Neste arquivo estão os escopos das funções que ordenam e filtram os cards das duas páginas interativas - Filmes e Personagens. Essas funções são chamadas na main para serem executadas com os parâmetros extraídos da API.
 
+Para realização dos testes utilizamos a biblioteca do Jest.
 
 ## 5. Protótipo
 
@@ -69,6 +71,9 @@ Depois de realizar algumas pesquisas em sites similares como: sites de desenho a
 
 *** figma
 
+
+![Protótipo no figma]( )
+
 ## 6. Funcionalidades
 
 ## 7. Tecnologias utilizadas
@@ -80,35 +85,6 @@ Este projeto foi desenvolvido durante o Bootcamp da Laboratória, Turma 007.
 ## 9. Referências
 
 - [Ghibli na Netflix](https://www.netflix.com/br/browse/genre/81227213)
-
 - [Studio Ghibli](src/data/ghibli/ghibli.json).
   Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
 
-### Checklist
-
-
-No mínimo, sua implementação deverá:
-
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
-4. Que a interface siga os fundamentos de _visual design_.
-
-
-
-- [ ] Usar VanillaJS.
-- [ ] Passa pelo linter (`npm run pretest`)
-- [ ] Passa pelos testes (`npm test`)
-- [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
-      branches.
-- [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
-- [ ] Inclui histórias de usuário no `README.md`.
-- [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
-- [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
-      `README.md`.
-- [ ] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
-- [ ] UI: Permite ordenar dados por um ou mais campos (asc e desc).
-- [ ] UI: Permite filtrar dados com base em uma condição.
-- [ ] UI: É _responsivo_.

@@ -1,21 +1,10 @@
-//Filtro de status
-export const statusFilter = (data, condition) => {
-  const statusResult = data.filter(
-    (dado) => dado.status.toLowerCase() === condition.toLowerCase()
+export const filterCharacter = (data, condition, type) => {
+  const filterResult = data.filter(
+    (item) => item[type].toLowerCase() === condition.toLowerCase()
   );
-  return statusResult;
+  return filterResult;
 };
 
-//Filtro de gênero
-export const genderFilter = (data, condition) => {
-  const genderResult = data.filter(
-    (dado) => dado.gender.toLowerCase() === condition.toLowerCase()
-  );
-  return genderResult;
-};
-
-
-//Ordenar
 export const sortNamesFilter = (data, order) => {
   const copy = [...data];
   if (order === "alphabetic") {
@@ -26,44 +15,34 @@ export const sortNamesFilter = (data, order) => {
   return copy;
 };
 
-//Pesquisar
 export const searchName = (data, condition) => {
   const searchResult = data.filter(
-    (dado) => dado.name.toLowerCase().includes(condition.toLowerCase()));
+    (item) => item.name.toLowerCase().includes(condition.toLowerCase()));
   return searchResult;
 }
 
-//Calculos
-export const stats_gender = {
-
-
+export const statsGender = {
   gender: (data, genderParameter) => {
-
     const totalByGender = data.reduce(function (total, character) {
       if (character.gender === genderParameter) {
         return total + 1;
       }
       return total;
     }, 0)
-    const average_gender = Number(((totalByGender / data.length) * 100).toFixed(2));
-    return average_gender;
+    const averageGender = Number(((totalByGender / data.length) * 100).toFixed(2));
+    return averageGender;
   },
-
 }
 
-export const stats_status = {
-
-
+export const statsStatus = {
   status: (data, statusParameter) => {
-
     const totalByStatus = data.reduce(function (total, character) {
       if (character.status === statusParameter) {
         return total + 1;
       }
       return total;
     }, 0)
-    const average_status = Number(((totalByStatus / data.length) * 100).toFixed(2));
-    return average_status;
+    const averageStatus = Number(((totalByStatus / data.length) * 100).toFixed(2));
+    return averageStatus;
   },
-
 };

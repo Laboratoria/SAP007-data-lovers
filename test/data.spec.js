@@ -1,4 +1,4 @@
-import { statusFilter, genderFilter, sortNamesFilter, searchName, stats_gender, stats_status} from '../src/data.js';
+import { filterCharacter, sortNamesFilter, searchName, statsGender, statsStatus } from '../src/data.js';
 const characters = [
   {
     "id": 1,
@@ -32,29 +32,33 @@ const characters = [
   }
 ]
 
-
-describe('statusFilter', () => {
+describe('data.filterCharacter', () => {
   it('deverá ser uma função', () => {
-    expect(typeof statusFilter).toBe('function');
+    expect(typeof filterCharacter).toBe('function');
   });
 
-  it('deverá retornar a quantidade de personagens `Alive`', () => {
-    const status_expect = statusFilter(characters, "Alive").length;
-    const result_status = 3;
-    expect(status_expect).toEqual(result_status);
+  it('deverá filtrar os personagens pelo Status', () => {
+    const statusExpect = filterCharacter(characters, "Alive", "status");
+    const resultStatus = 3;
+    expect(statusExpect.length).toEqual(resultStatus);
+    expect(statusExpect[0].name).toEqual("Rick Sanchez");
+    expect(statusExpect[1].name).toEqual("Annie");
+    expect(statusExpect[2].name).toEqual("Modern Rick");
   });
 });
 
-
-describe('genderFilter', () => {
+describe('filterCharacter', () => {
   it('deverá ser uma função', () => {
-    expect(typeof genderFilter).toBe('function');
+    expect(typeof filterCharacter).toBe('function');
   });
 
-  it('deverá retornar a quantidade de personagens `Male`', () => {
-    const gender_expect = genderFilter(characters, "Male").length;
-    const result_gender = 3;
-    expect(gender_expect).toEqual(result_gender);
+  it('deverá filtrar os personagens pelo Gender', () => {
+    const genderExpect = filterCharacter(characters, "Male", "gender");
+    const resultGender = 3;
+    expect(genderExpect.length).toEqual(resultGender);
+    expect(genderExpect[0].name).toEqual("Rick Sanchez");
+    expect(genderExpect[1].name).toEqual("Gar Gloonch");
+    expect(genderExpect[2].name).toEqual("Modern Rick");
   });
 });
 describe('sortNamesFilter', () => {
@@ -62,7 +66,7 @@ describe('sortNamesFilter', () => {
     expect(typeof sortNamesFilter).toBe('function');
   });
 
-  const result_sort_az = [
+  const resultSortAz = [
     {
       "id": 17,
       "name": "Annie",
@@ -94,7 +98,7 @@ describe('sortNamesFilter', () => {
       "gender": "Male"
     }]
 
-  const result_sort_za = [
+  const resultSortZa = [
     {
       "id": 1,
       "name": "Rick Sanchez",
@@ -128,12 +132,12 @@ describe('sortNamesFilter', () => {
 
 
   it('Deverá ordernar em ordem de `a-z`', () => {
-    const sort_expect = sortNamesFilter(characters, "alphabetic");
-    expect(sort_expect).toStrictEqual(result_sort_az);
+    const sortExpect = sortNamesFilter(characters, "alphabetic");
+    expect(sortExpect).toStrictEqual(resultSortAz);
   });
   it('Deverá ordernar em ordem de `z-a`', () => {
-    const sort_expect_za = sortNamesFilter(characters, "descending");
-    expect(sort_expect_za).toStrictEqual(result_sort_za);
+    const sortExpectZa = sortNamesFilter(characters, "descending");
+    expect(sortExpectZa).toStrictEqual(resultSortZa);
   });
 });
 describe('searchName', () => {
@@ -142,8 +146,8 @@ describe('searchName', () => {
   });
 
   it('deverá achar o personagem pelo nome', () => {
-    const search_expect = searchName(characters, "Gar");
-    const result_search = [{
+    const searchExpect = searchName(characters, "Gar");
+    const resultSearch = [{
       "id": 131,
       "name": "Gar Gloonch",
       "status": "Dead",
@@ -151,30 +155,30 @@ describe('searchName', () => {
       "type": "Zombodian",
       "gender": "Male"
     }]
-    expect(search_expect).toEqual(result_search);
+    expect(searchExpect).toEqual(resultSearch);
   });
 });
 
-describe('stats_gender', () => {
+describe('statsGender', () => {
   it('deverá ser uma função', () => {
-    expect(typeof stats_gender).toBe('object');
+    expect(typeof statsGender).toBe('object');
   });
 
   it('deverá retornar a porcentagem de personagens `Male`', () => {
-    const gender_stats_expect = stats_gender.gender(characters, "Male") + "%";
-    const gender_stats_result = "75%";
-    expect(gender_stats_expect).toEqual(gender_stats_result);
+    const genderStatsExpect = statsGender.gender(characters, "Male") + "%";
+    const genderStatsResult = "75%";
+    expect(genderStatsExpect).toEqual(genderStatsResult);
   })
 });
 
-describe('stats_status', () => {
+describe('statsStatus', () => {
   it('deverá ser uma função', () => {
-    expect(typeof stats_status).toBe('object');
+    expect(typeof statsStatus).toBe('object');
   });
 
   it('deverá retornar a porcentagem de personagens `Alive`', () => {
-    const status_stats_expect = stats_status.status(characters, "Alive") + "%";
-    const status_stats_result = "75%";
-    expect(status_stats_expect).toEqual(status_stats_result);
+    const statusStatsExpect = statsStatus.status(characters, "Alive") + "%";
+    const statusStatsResult = "75%";
+    expect(statusStatsExpect).toEqual(statusStatsResult);
   });
 });

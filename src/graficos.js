@@ -1,63 +1,45 @@
 
-import {stats_gender, stats_status} from "./data.js";
+import { statsGender, statsStatus } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
-const total_calculation = {
+const totalCalculation = {
   characters: (data) =>
-  (data).length
+    (data).length
 };
-const printTotalCharacters = document.getElementById("total_characters");
-
-const total_characters = total_calculation.characters(data.results);
-
-const printGenderAverage = document.getElementById("gender_average");
+const printTotalCharacters = document.getElementById("total-characters");
+const totalCharacters = totalCalculation.characters(data.results);
+const printGenderAverage = document.getElementById("gender-average");
 
 printTotalCharacters.innerHTML =
   `<p class="text">O total de figurinhas da série é:
-    <span class="numberOfCharacters">${total_characters}</span>
+    <span class="numberOfCharacters">${totalCharacters}</span>
    </p>`;
 
-const male_average = stats_gender.gender(data.results, "Male") + "%";
-const female_average = stats_gender.gender(data.results, "Female") + "%";
-const genderless_average = stats_gender.gender(data.results, "Genderless") + "%";
-const unknown_average = stats_gender.gender(data.results, "unknown") + "%";
+const maleAverage = statsGender.gender(data.results, "Male") + "%";
+const femaleAverage = statsGender.gender(data.results, "Female") + "%";
+const genderlessAverage = statsGender.gender(data.results, "Genderless") + "%";
+const unknownAverage = statsGender.gender(data.results, "unknown") + "%";
 
 printGenderAverage.innerHTML =
   `
       <p class="text">&ensp;<span>Médias:</span>&ensp;
-      Masculinos: <span>${male_average}</span> &ensp;| &ensp;
-      Femininos: <span>${female_average}</span> &ensp;| &ensp;
-      Desconhecidos: <span>${unknown_average}</span>&ensp; | &ensp;
-      Sem gênero: <span>${genderless_average}</span> &ensp;
+      Masculinos: <span>${maleAverage}</span> &ensp;| &ensp;
+      Femininos: <span>${femaleAverage}</span> &ensp;| &ensp;
+      Desconhecidos: <span>${unknownAverage}</span>&ensp; | &ensp;
+      Sem gênero: <span>${genderlessAverage}</span> &ensp;
       </p>
   `;
 
-
 const printStatusAverage = document.getElementById("status_average");
-
-
-const alive_average = stats_status.status(data.results, "Alive") + "%";
-const dead_average = stats_status.status(data.results, "Dead") + "%";
-const unknown_status_average = stats_status.status(data.results, "unknown") + "%";
+const aliveAverage = statsStatus.status(data.results, "Alive") + "%";
+const deadAverage = statsStatus.status(data.results, "Dead") + "%";
+const unknownStatusAverage = statsStatus.status(data.results, "unknown") + "%";
 
 printStatusAverage.innerHTML =
   `
         <p class="text">&ensp;<span>Médias:</span>&ensp;
-        Vivo: <span>${alive_average}</span> &ensp;| &ensp;
-        Morto: <span>${dead_average}</span> &ensp;| &ensp;
-        Desconhecidos: <span>${unknown_status_average}</span>&ensp; | &ensp;
+        Vivo: <span>${aliveAverage}</span> &ensp;| &ensp;
+        Morto: <span>${deadAverage}</span> &ensp;| &ensp;
+        Desconhecidos: <span>${unknownStatusAverage}</span>&ensp; | &ensp;
         </p>
     `;
-
-
-
-
-
-
-
-
-
-
-
-
-

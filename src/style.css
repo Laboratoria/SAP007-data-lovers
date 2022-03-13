@@ -40,7 +40,10 @@ footer {
   width: 100%;
   bottom: 0;
 }
-.home_footer { color: inherit; }
+
+.home-footer {
+  color: inherit;
+}
 
 /* botões */
 .main {
@@ -54,11 +57,11 @@ footer {
   display: flex;
 }
 
-.nav_menus {
+.nav-menus {
   padding: 20px;
 }
 
-.box{
+.box {
   padding: 10px 40px;
   background-color: #90bf49;
   color: #022601;
@@ -68,7 +71,8 @@ footer {
   font-size: x-large;
   border-radius: 8px;
 }
-.stats{
+
+.stats {
   padding: 10px 40px;
   background-color: #90bf49;
   color: #022601;
@@ -80,36 +84,42 @@ footer {
   position: relative;
   top: 30%;
 }
-@media(max-width:480px){
 
-  .RickMorty{
+@media(max-width:480px) {
+
+  .RickMorty {
     width: 49%;
     height: 37%;
     position: absolute;
     top: 60%;
   }
-  .logo{
+
+  .logo {
     width: 60%;
     left: 20%;
     top: 5%;
 
   }
-  .main{
+
+  .main {
     position: relative;
     top: 25%;
   }
-  .menus{
+
+  .menus {
     display: block;
   }
 
 }
-@media(max-width: 713px){
-  .menus{
+
+@media(max-width: 713px) {
+  .menus {
     display: block;
   }
 }
-@media(max-width: 660px){
-  .main{
+
+@media(max-width: 660px) {
+  .main {
     position: relative;
     top: 25%;
   }

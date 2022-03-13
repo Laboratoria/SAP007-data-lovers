@@ -4,7 +4,7 @@ import data from './data/ghibli/ghibli.js';
 
 const movies = data.films
 
-const moviesContainer = document.getElementById("container-cards-info");
+const moviesContainer = document.getElementById("container-films");
 function showCards(movies) {
     moviesContainer.innerHTML = movies.map(movie =>
         ` 
@@ -34,7 +34,7 @@ showCards(movies)
 
 //chamando os filtros
 
-const sortOrder = document.getElementById("selectAZ");
+const sortOrder = document.getElementById("select-az");
 sortOrder.addEventListener("change", (event) => {
     const selectedSort = event.target.value;
     const filterAz = sortAz(movies, selectedSort);
@@ -48,20 +48,20 @@ selectTitle.addEventListener("change", (event) => {
     showCards(resultTitle);
 });
 
-const selectRating = document.getElementById("selectRating")
+const selectRating = document.getElementById("select-rating")
 selectRating.addEventListener("change", (event) => {
     const resultRating = filterRating(movies, event.target.value)
     showCards(resultRating);
 });
 
-const selectProducer = document.getElementById("selectProducer")
+const selectProducer = document.getElementById("select-producer")
 selectProducer.addEventListener("change", (event) => {
     const resultProducer = filterProducer(movies, event.target.value)
     showCards(resultProducer);
 });
 
 //botão para recarregar a página
-const buttonClean = document.getElementById("btnClean");
+const buttonClean = document.getElementById("btn-clean");
 function cleanFilters() {
     window.location.reload();
 }

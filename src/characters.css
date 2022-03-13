@@ -15,21 +15,21 @@ body {
     background-color:#F2F2F2;
 }
 
-.img-totoro-content {
+.image-content {
     background-color:#F2F2F2;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
+.image-totoro {
+    width: 10%;
+}
+
 .theme-ghibli {
     font-size: 60px;
     font-family: 'Open Sans', 'icones', sans-serif; 
     color: #283D59;
-}
-
-.img-totoro {
-    width: 10%;
 }
 
 ul {
@@ -53,20 +53,10 @@ li a {
     cursor: pointer;
     text-decoration: none;
 }
-
+/* 
 li a:hover {    
     transform: scale(1.2);
-}
-
-.theme {
-    background: url("img/imgheader.jpg") right top ;
-    height: 20vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
-    font-family: 'Open Sans', 'icones', sans-serif;
-    text-align: center;    
-}
+} */
 
 .main-content {
     background-color: #F2F2F2;
@@ -95,7 +85,7 @@ li a:hover {
     display: inline-block;
 }
 
-.btnClean {
+.btn-clean {
     font-family: 'Open Sans', 'icones', sans-serif;
     width: 12rem;
     font-size: 1rem;
@@ -112,11 +102,11 @@ li a:hover {
     display: inline-block;
 }
 
-.btnClean:hover {   
+.btn-clean:hover {   
     background: linear-gradient(to right top, #F2F2F2,#20324B);
 }
 
-.cardCharacter {
+.card-character {
     width:20rem;
     border-radius:3%;
     width: 235px;
@@ -124,7 +114,7 @@ li a:hover {
     box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.7);    
 }
 
-.nameCharacter {
+.name-character {
     font-family: 'Open Sans', 'icones', sans-serif;
     color: #0D0D0D;
     font-size: 1.5rem;
@@ -133,7 +123,7 @@ li a:hover {
     padding: 17px;
 }
 
-.containerCards {
+.container-cards {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -144,7 +134,7 @@ li a:hover {
     object-fit: cover;
 }
 
-.innerCard {
+.character-details {
     font-family: 'Open Sans', 'icones', sans-serif;
     display: flex;
     flex-direction: column;
@@ -152,24 +142,21 @@ li a:hover {
     margin: 3vh 3vw ;   
     flex-direction: column; 
     display: flex;    
-    /* min-height: 350px; */
 }
 
-.resultPercent {
+.result-percent {
     font-family: 'Open Sans', 'icones', sans-serif;
     color:#0D0D0D;
     font-size: 3vh;
     padding-top: 1vh;
     display: flex;
     justify-content: center;
-    position: fixed;  
 }
 
 .character-amount-container {
     display: flex;
     text-align: center;
     width: 100%;
-
 }
 
 .character-amount {

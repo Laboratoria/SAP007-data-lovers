@@ -15,21 +15,21 @@ body {
     background-color:#F2F2F2;
 }
 
-.img-totoro-content {
+.image-content {
     background-color:#F2F2F2;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
+.image-totoro {
+    width: 10%;
+}
+
 .theme-ghibli {
     font-size: 60px;
     font-family: 'Open Sans', 'icones', sans-serif; 
     color: #283D59;
-}
-
-.img-totoro {
-    width: 10%;
 }
 
 ul {
@@ -54,20 +54,9 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+/* li a:hover {
     transform: scale(1.2);
-}
-
-.theme {
-    background: url("img/imgheader.jpg") right top ;
-    height: 20vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
-    font-family: 'Open Sans', 'icones', sans-serif;
-    text-align: center;
-    
-}
+} */
 
 .main-content {
     background-color: #F2F2F2;
@@ -103,9 +92,6 @@ li a:hover {
     position: fixed;
     width: 100%;
     text-align: center;
-    /* bottom: 2vh;
-    font-size: 17px; 
-    padding: 30px; */
 }
 
 .linkedin {

@@ -13,26 +13,26 @@
   <header class="header">
     <nav class="navigation">
       <ul>
-        <li><a class="navigation__link" href="index.html">FILMES</a></li>
-        <li><a class="navigation__link" href="characters.html">PERSONAGENS</a></li>
-        <li><a class="navigation__link" href="about.html">SOBRE</a></li>
+        <li><a class="navigation-link" href="index.html">FILMES</a></li>
+        <li><a class="navigation-link" href="characters.html">PERSONAGENS</a></li>
+        <li><a class="navigation-link" href="about.html">SOBRE</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="img-totoro-content">
-    <img class="img-totoro" src="img/totoro.png" alt="Imagem do personagem de Totoro">
+  <section class="image-content">
+    <img class="image-totoro" src="img/totoro.png" alt="Imagem do personagem de Totoro">
     <h1 class="theme-ghibli">Ghibli Explorer</h1>
   </section>
 
   <section class="filters-container">
-    <select class="select" id="sortAZ">
+    <select class="select" id="sort-az">
       <option selected disabled value="">Ordem Alfabética</option>
       <option value="A-Z">A-Z</option>
       <option value="Z-A">Z-A</option>
     </select>
 
-    <select class="select " id="selectSpecie">
+    <select class="select " id="select-specie">
       <option selected disabled value="">Espécie</option>
       <option value="Human">Human</option>
       <option value="Fish/Human">Fish/Human</option>
@@ -43,20 +43,20 @@
       <option value="Witch">Witch</option>
     </select>
 
-    <select class="select" id="selectGender">
+    <select class="select" id="select-gender">
       <option selected disabled value="">Gênero</option>
       <option value="Female">Female</option>
       <option value="Male">Male</option>
       <option value="NA">NA</option>
     </select>
 
-    <button type="reset" id="btnClean" class="btnClean">Limpar Filtragem</button>
+    <button type="reset" id="btn-clean" class="btn-clean">Limpar Filtragem</button>
 
   </section>
 
   <main class="main-content" id="main-content">
-    <div class="resultPercent" id="resultPercent"></div>
-    <div class="containerCards" id="charactersContainer"></div>
+    <div class="result-percent" id="result-percent"></div>
+    <div class="container-cards" id="container-cards"></div>
   </main>
 
   <footer class="footer">

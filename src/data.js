@@ -1,5 +1,3 @@
-
-//filtros dos filmes
 export const sortAz = (data, order) => {
   const copy = [...data]
   if (order === "A-Z") {
@@ -21,9 +19,6 @@ export const filterRating = (films, selectedRating) => {
 export const filterProducer = (films, selectedProducer) => {
   return films.filter(film => film.producer === selectedProducer)
 };
-
-//FILTROS PERSONAGENS
-
 
 
 export const sortAzPersons = (data, order) => {

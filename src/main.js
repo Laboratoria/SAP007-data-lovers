@@ -1,25 +1,24 @@
-import data from './data/rickandmorty/rickandmorty.js'; 
-import {buscarNome, buscarEspecie, sortOrdem, calculos} from './data.js';
+import data from './data/rickandmorty/rickandmorty.js';
+import { buscarNome, buscarEspecie, sortOrdem, calculos } from './data.js';
 
 function mostrarCards(data) {
   document.getElementById('recebe-card').innerHTML = data.map((item) => `
-  <div class='card'>
-    <div class='card-interno'>
+    <div class='card'>
+      <div class='card-interno'>
         <div class='card-frente'>
           <img class= 'imagem-card' src='${item.image}' loading='lazy'>
-         <h3><b> ${item.name}</b></h3>
-          <div class= 'outras-infos'>
-            <h4><b> ${item.species}</b></h4>
-            <h5><b> ${item.status} ● <b> ${item.gender}</b></h5>
-            <h5><b> Aparece em ${item.episode.length} episódios </b></h5>
-          </div> 
+          <h3><b> ${item.name}</b></h3>
+            <div class= 'outras-infos'>
+              <h4><b> ${item.species}</b></h4>
+              <h5><b> ${item.status} ● <b> ${item.gender}</b></h5>
+              <h5><b> Aparece em ${item.episode.length} episódios </b></h5>
+            </div> 
         </div> 
-    </div>
-  </div>  
-`)
-.join('')
+      </div>
+    </div>  
+  `)
+  .join('')
 }
-
 mostrarCards(data.results);
 
 //SELETORES
@@ -40,19 +39,19 @@ function filtrarEspecie(e) {
   return mostrarCards(resultEspecie)
 }
 
-function filtroOrdem(){
-  const ordem = selecaoOrdem.value 
-  return mostrarCards (sortOrdem(data.results, ordem))
+function filtroOrdem() {
+  const ordem = selecaoOrdem.value
+  return mostrarCards(sortOrdem(data.results, ordem))
 }
-  
-function limparFiltros(){
+
+function limparFiltros() {
   window.location.reload()
 }
 
-function subirPagina(){
-  window.scrollTo({top: 0, behavior: 'smooth'}); 
-} 
-  
+function subirPagina() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 //EVENTOS
 filtroPesquisar.addEventListener('input', pesquisarNomes)
 selecaoEspecie.addEventListener('change', filtrarEspecie)

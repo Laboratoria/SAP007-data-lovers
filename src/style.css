@@ -277,7 +277,6 @@ body::before {
     padding: 10px;
     border-bottom: 5px;
     border-radius: 5px;
-    box-shadow: 50px;
     box-shadow: 8px 8px 8px black;
 }
     
@@ -289,7 +288,6 @@ body::before {
     padding: 10px;
     margin-top: 10px;
     border-radius: 4px;
-    box-shadow: 50px;
     box-shadow: 8px 8px 8px black;
 }
 
@@ -339,7 +337,6 @@ body::before {
     margin: 70px 0px 0px 70px;
     text-align: center;
     cursor: pointer;
-    box-shadow: 50px;
     box-shadow: 8px 8px 8px black;
 }
     

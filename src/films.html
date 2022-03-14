@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Ghibli</title>
+    <link rel="stylesheet" href="films.css" />
+    <link rel="index" href="index.html" />
+    <link rel="people" href="people.html" />
+    <link rel="news" href="news.html" />
+    <link rel="data" href="ghibli.js" />
+</head>
+
+<body>
+    <header>
+        <section class="menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+            <ul class="menu-box">
+                <li><a class="menu-item" href="index.html">Home</a></li>
+                <li><a class="menu-item" href="people.html">Personagens</a></li>
+                <li><a class="menu-item" href="news.html">News</a></li>
+            </ul>
+        </section>
+        <h1 class="tittle-header-page-films">Universo Ghibli</h1>
+        <img class="img-logo" src="./img/Logo.jpg" alt="logo-studio-ghibli">
+    </header>
+
+    <section class="section-search-films">
+        <form id="form">
+            <select class="select" type="text" id="director">
+                    <option value="" disabled selected>Diretores</option>
+                    <option type="button">Hayao Miyazaki</option>
+                    <option type="button">Yoshifumi Kondō</option>
+                    <option type="button">Hiroyuki Morita</option>
+                    <option type="button">Gorō Miyazaki</option>
+                    <option type="button">Hiromasa Yonebayashi</option>
+                    <option type="button">Isao Takahata</option>
+            </select>
+            <select class="select" type="text" id="producer">
+                    <option value="" disabled selected>Produtores</option>
+                    <option type="button">Hayao Miyazaki</option>
+                    <option type="button">Isao Takahata</option>
+                    <option type="button">Toru Hara</option>
+                    <option type="button">Toshio Suzuki</option>
+                    <option type="button">Yoshiaki Nishimura</option>
+                    <option type="button">Hiromasa Yonebayashi</option>
+            </select>
+            <select class="select-order" type="text" id="order">
+					<option value="" disabled selected >Ordenar filmes</option>
+					<option type="button" value="a-z" >A - Z</option>
+					<option type="button" value="z-a">Z - A</option>
+                </select>
+            <button class="btn-reset" id="btn-reset">Limpar</button>
+        </form>
+    </section>
+    <main>
+        <section id="card" class="card-section"></section>
+    </main>
+    <footer class="footer">
+        <h4>Conheça as Devs
+            <a href="https://www.linkedin.com/in/anna-ferraz-191a6319a/" target="_black"><i> Anna Ferraz </i></a> e
+            <a href="https://www.linkedin.com/in/thais-moreira-jesus-bonalume/" target="_black"><i> Thaís Bonalume </i></a>
+        </h4>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

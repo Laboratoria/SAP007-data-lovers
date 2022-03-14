@@ -107,74 +107,27 @@ header {
     text-stroke: 1px;
 }
 
-main {
-    background: #69CCE3;
-}
-
-.dropbtn {
-    background-color: #184E77;
-    color: #ffffff;
-    padding: 16px;
-    font-size: 16px;
-    border-radius: 0 0 15px 0;
-}
-
-.dropdown {
+section {
     display: flex;
-    justify-content: left;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    border-radius: 15px;
-}
-
-.dropdown-content a {
-    color: #184E77;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #8dc5dd
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #8dc5dd;
+    flex-direction: row;
 }
 
 .section-class-efect {
-    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .glass-effect {
     background: rgba(255, 255, 255, 0.42);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 2px #ffffff;
     backdrop-filter: blur(1px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     -webkit-backdrop-filter: blur(1px);
     width: 90%;
     display: inline;
-    text-align: center;
-}
-
-.tittle-news-park,
-.tittle-new-film {
-    color: #184E77;
-    margin: 2%;
+    margin: 2.5% 0;
 }
 
 .galery {
@@ -202,39 +155,28 @@ main {
 }
 
 .subtittle-news-park {
-    margin: 0 4% 1% 4%;
+    margin: 2% 3%;
 }
 
-.news-park,
-.news-film {
+.news-park {
     margin: 2% 6%;
 }
 
-p {
-    text-indent: 2em;
-    text-align: justify;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-}
-
-.curiosity {
-    background: #69CCE3;
-    border-radius: 15px;
+.aside {
+    display: block;
+    text-align: center;
+    background-color: #69CCE3;
+    height: 40vh;
+    width: 150vw;
+    border-radius: 30px;
     box-shadow: 0 0 3px 2px #ffffff;
-    margin: 3% 30%;
+    margin: 2.5% 1%;
 }
 
 .img-aside {
-    width: 20vw;
-    height: 40vh;
+    height: 50%;
     border-radius: 15px;
-    box-shadow: 0 0 3px 2px #ffffff;
-    margin: 2%;
-}
-
-.img-new-film {
-    border-radius: 15px;
-    height: 50vh;
+    margin: 2% 0;
 }
 
 footer {
@@ -261,26 +203,22 @@ a:link {
 }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
-    .menu {
+    .menu,
+    .img-logo {
+        height: 8vh;
         width: 8vw;
     }
     .menu-btn {
         top: 3%;
         left: 1%;
     }
+    .glass-effect {
+        border-radius: 30px;
+    }
     .tittle-header-page-news {
         font-size: 30px;
     }
-    .img-logo {
-        height: 8vh;
-        width: 8vw;
-    }
-    .dropbtn {
-        padding: 10px;
-        font-size: 10px;
-    }
     .tittle-news-park,
-    .tittle-new-film,
     .subtittle-news-park {
         font-size: 10px;
         margin: 5%;
@@ -288,14 +226,20 @@ a:link {
     p {
         font-size: 12px;
     }
+    .aside {
+        height: 35vh;
+        border-radius: 30px;
+    }
     footer {
         font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    .menu {
+    .menu,
+    .img-logo {
         width: 10vw;
+        height: 10vh;
     }
     .menu-btn {
         top: 5%;
@@ -304,13 +248,9 @@ a:link {
     .tittle-header-page-news {
         font-size: 40px;
     }
-    .img-logo {
-        height: 10vh;
-        width: 10vw;
-    }
-    .dropbtn {
-        padding: 10px;
-        font-size: 10px;
+    .aside {
+        height: 40vh;
+        border-radius: 30px;
     }
     footer {
         font-size: 1rem;
@@ -318,40 +258,48 @@ a:link {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .menu {
+    .menu,
+    .img-logo {
+        height: 12vh;
         width: 12vw;
     }
     .menu-btn {
         top: 6%;
         left: 3%;
     }
+    .glass-effect {
+        border-radius: 30px;
+    }
     .tittle-header-page-news {
         font-size: 60px;
     }
-    .img-logo {
-        height: 12vh;
-        width: 12vw;
+    .tittle-news-park {
+        margin: 1%;
     }
-    .dropbtn {
-        padding: 10px;
-        font-size: 10px;
+    .aside {
+        height: 50vh;
+        border-radius: 30px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .menu {
+    .menu,
+    .img-logo {
+        height: 15vh;
         width: 15vw;
     }
     .menu-btn {
         top: 7%;
         left: 3%;
     }
+    .glass-effect {
+        border-radius: 40px;
+    }
     .tittle-header-page-news {
         font-size: 80px;
     }
-    .img-logo {
-        height: 15vh;
-        width: 15vw;
+    .tittle-news-park {
+        margin: 1%;
     }
     .dropbtn {
         padding: 10px;

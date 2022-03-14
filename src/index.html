@@ -9,18 +9,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
 </head>
 
-<body class="corpoHtml1">
-  <div id="root"></div>
+<body>
+  
   <header class="cabecalho">
     <nav>
       <ul class="menupaginas">
-        <li ><a class="linkpaginas" href="episodios.html">Episódios</a></li>
-        <li><a class="linkpaginas" href="trivia.html">Curiosidades</a></li>
+        <h1  class="titulosite">Guia de Personagens de Rick & Morty</h1>
+        <li><a href="trivia.html" class="linkpaginas">Curiosidades</a></li>
       </ul>
     </nav>
   </header>
+
+
   <div class="container_filtros_search_ordem">
 
     <form class="menufiltros">
@@ -59,33 +66,35 @@
 
       <label>Nome:</label>
       <input type="search" class="filtro" name="" id="text-search">
-      <input type="reset" value="X" class="btn_reset">
-      <br>
+      <input type="reset" value="X" class="btn_reset" id="btn_reset">
     </form>
 
     <div class="ordenacaoA-Z">
-      <p class="">Organize</p>
+      <p>Organize</p>
       <select class="filtro" id="order-filter">
         <option disabled selected>-</option>
         <option value="A-Z">A-Z</option>
         <option value="Z-A">Z-A</option>
       </select>
-    </div>
-    <p class="calculo" id="porcentagemFiltro"></p>
+      </div>
+
+      <p class="calculo" id="porcentagemFiltro"></p>
   </div>
+
+  
   <main>
     <section>
       <div class="localCards" id="infoCards"></div>
     </section>
   </main>
   <div class="back-to-top-wrapper">
-    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"> 🔝 </a>
   </div>
 
   <footer class="rodape">
-    <a href="https://github.com/MariaLuizaSantana" class="btn_Lou"><img src="git.png" alt="logoGit" class="btn_Malu" > </a>
+    <a href="https://github.com/MariaLuizaSantana"><img src="git.png" alt="logoGit" class="btn_Malu" > </a>
     <p class="copyright"> © Maria Luiza e Louiza Lima</p>
-    <a href="https://github.com/loulima" class="btn_Malu"><img src="git.png" alt="logoGit" class="btn_Lou"></a>
+    <a href="https://github.com/loulima"><img src="git.png" alt="logoGit" class="btn_Lou"></a>
   </footer>
   <script src="main.js" type="module"></script>
 </body>

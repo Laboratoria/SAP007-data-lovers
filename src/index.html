@@ -20,24 +20,17 @@
     </nav>
   </header>
 
-  <main class="todas-buscas">
+  <section class="todas-buscas">
     <div class="lado-esquerdo">
-      <section>
         <input class="pesquisar" id="pesquisar" type="search" placeholder=" Buscar Nome...         &#x1F50E">
-      </section>
-      <section>
         <button class="limpar" id="limpar">Limpar Filtros</button>
-      </section>
     </div>
 
     <div class="centro-tela">
-      <section>
         <p class="filtro-porcentagem" id="filtro-porcentagem"></p>
-      </section>
     </div>
     
     <div class="lado-direito">
-      <section>
         <select class="filtro-especies" id="filtro-especies">
           <option value="" selected disabled>Espécie</option>
           <option value="alien">→ Alien</option>
@@ -53,21 +46,18 @@
           <option value="vampire">→ Vampiro</option>
           <option value="unknown">→ Indefinido</option>
         </select>
-      </section>
 
-      <section>
         <select class="filtro-ordem" id="ordem">
           <option value="" selected disabled>Ordem</option>
           <option value="a-z"> &#8595 A-Z</option>
           <option value="z-a"> &#8593 Z-A</option>
         </select>
-      </section>
     </div>
-  </main>
+  </section>
 
-  <div class="todos-cards">
+  <main class="todos-cards">
     <div id="recebe-card"></div>
-  </div>
+  </main>
 
   <button class="voltar-topo" id="voltar-topo"><img src="./image/topo.png" alt=""></button>
 </body>

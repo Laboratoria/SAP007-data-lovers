@@ -35,7 +35,7 @@ new Chart(graficoStatus, {  type: 'pie',
   data: {
     labels: ['Vivo', 'Morto', 'Desconhecido'],
     datasets: [{
-      label: 'Status', //TITULO GRAFICO
+      label: 'Status', 
       data: [vivo.length, morto.length, desconhecido.length],
       backgroundColor: [
         'rgb(19, 176, 201)',
@@ -58,7 +58,7 @@ new Chart(graficoGenero, {
   data: {
       labels: ['Masculino', 'Feminino', 'Indefinido'],
       datasets: [{
-          label: 'Status', //TITULO GRAFICO
+          label: 'Status',
           data: [masculino.length, feminino.length, indefinido.length],
           backgroundColor: [
               'rgb(81, 91, 38)',
@@ -83,7 +83,7 @@ new Chart(graficoEspecie, {
   data: {
       labels: ['Alien', 'Animal', 'Cronenberg', 'Doença', 'Humano', 'Humanóide', 'Mytholog', 'Parasita', 'Poopybutthole', 'Robô', 'Vampiro', 'unknown'],
       datasets: [{
-          label: 'Status', //TITULO GRAFICO
+          label: 'Status',
           data: [alien.length, animal.length, cronenberg.length, doença.length, humano.length, humanóide.length, mytholog.length, parasita.length, poopybutthole.length, robo.length, vampiro.length, unknown.length],
           backgroundColor: [
               'rgb(26, 98, 60)',

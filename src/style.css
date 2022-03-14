@@ -7,6 +7,7 @@
   
 body {
     width: 100%;
+    height: 100%;
     background-color:rgb(212, 171, 160);
 }
 
@@ -168,17 +169,18 @@ header {
 
 .voltar-topo {
     position: fixed;
-    bottom: 30px;
+    bottom: 75px;
     right: 3px;
     cursor: pointer;
     background: none;
+    display: none
 }
 
 footer {
     font-size: 14px;
     width: 100%;
     bottom: 0px;
-    height: 40px;
+    height: 50px;
     text-align: center;
     background-color: rgb(49, 176, 204);
     color: #fff;

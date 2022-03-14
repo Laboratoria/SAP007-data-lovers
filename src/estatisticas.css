@@ -160,9 +160,9 @@ body::before {
 }
 
 .graficos {
+    display: flex;
     margin-top: 7%;
     align-items: center;
-    justify-content: center;
 }  
 
 .grafico-status { 
@@ -175,4 +175,6 @@ body::before {
 
 .voltar-topo {
     display: none;
+    align-self: center;
+
 }

@@ -1,8 +1,8 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import { buscarNome, buscarEspecie, sortOrdem, calculos } from './data.js';
+import { buscarNome, buscarEspecie, ordenacao, calculos } from './data.js';
 
 function mostrarCards(data) {
-  document.getElementById('recebe-card').innerHTML = data.map((item) => `
+  const todosCards = data.map((item) => `
     <div class='card'>
       <div class='card-interno'>
         <div class='card-frente'>
@@ -18,38 +18,56 @@ function mostrarCards(data) {
     </div>  
   `)
   .join('')
+  document.getElementById('recebe-card').innerHTML = todosCards
 }
 mostrarCards(data.results);
 
+const todosResultados = data.results
+
 //SELETORES
-let filtroPesquisar = document.querySelector('.pesquisar');
-let limparBusca = document.querySelector('.limpar');
-let selecaoEspecie = document.querySelector('.filtro-especies');
-let selecaoOrdem = document.querySelector('.filtro-ordem');
-let porcentagem = document.querySelector('.filtro-porcentagem')
-let voltarTopo = document.querySelector('.voltar-topo');
+const filtroPesquisar = document.querySelector('.pesquisar');
+const limparBusca = document.querySelector('.limpar');
+const selecaoEspecie = document.querySelector('.filtro-especies');
+const selecaoOrdem = document.querySelector('.filtro-ordem');
+const porcentagem = document.querySelector('.filtro-porcentagem')
+const voltarTopo = document.querySelector('.voltar-topo');
 
 function pesquisarNomes() {
-  return mostrarCards(buscarNome(data.results, filtroPesquisar.value))
+  return mostrarCards(buscarNome(todosResultados, filtroPesquisar.value))
 }
 
 function filtrarEspecie(e) {
-  const resultEspecie = buscarEspecie(data.results, e.target.value)
-  porcentagem.innerHTML = `Essa categoria representa ${calculos(data.results.length, resultEspecie.length)}% dos personagens`
+  const resultEspecie = buscarEspecie(todosResultados, e.target.value)
+  porcentagem.innerHTML = `Essa categoria representa ${calculos(todosResultados.length, resultEspecie.length)}% dos personagens`
   return mostrarCards(resultEspecie)
 }
 
 function filtroOrdem() {
   const ordem = selecaoOrdem.value
-  return mostrarCards(sortOrdem(data.results, ordem))
+  return mostrarCards(ordenacao(todosResultados, ordem))
 }
 
 function limparFiltros() {
-  window.location.reload()
+  mostrarCards(todosResultados)
+  porcentagem.innerHTML = " "
 }
 
 function subirPagina() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+const scroll = () => {
+  let botao = document.getElementById("voltar-topo")
+  if (document.documentElement.scrollTop > 0) {
+    botao.style.display = "block"
+  }
+  else {
+    botao.style.display = "none"
+  }  
+}
+
+window.onscroll = () => {
+  scroll ()
 }
 
 //EVENTOS

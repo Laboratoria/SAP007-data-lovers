@@ -77,6 +77,6 @@ describe('calculateAverageScore calcula a média de nota de avaliação dos film
         const resultado = 384
         const calculo = calculateAverageScore(objeto, resultado);
 
-        expect(calculo[0].rt_score).toBe(96);
+        expect(calculo).toBe(96);
     })
 })

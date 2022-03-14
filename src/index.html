@@ -17,8 +17,6 @@
 </head>
 
 <body>
-
-  <div id="root"></div>
   
   <header class="cabecalho">
     <nav>
@@ -28,7 +26,6 @@
       </ul>
     </nav>
   </header>
-
 
   <div class="container_filtros_search_ordem">
 
@@ -73,20 +70,24 @@
     </form>
 
     <div class="ordenacaoA-Z">
-      <p class="">Organize</p>
+      <p>Organize</p>
       <select class="filtro" id="order-filter">
         <option disabled selected>-</option>
         <option value="A-Z">A-Z</option>
         <option value="Z-A">Z-A</option>
       </select>
     </div>
+
     <p class="calculo" id="porcentagemFiltro"></p>
   </div>
+  
+
   <main>
     <section>
       <div class="localCards" id="infoCards"></div>
     </section>
   </main>
+
   <div class="back-to-top-wrapper">
     <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
   </div>

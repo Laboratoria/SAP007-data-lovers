@@ -8,23 +8,27 @@
 </head>
 
 <body>
+
   <header>
-    <img src="cabecalho.png" alt="cabeçalho">
+    <img src="cabecalho.png" alt="cabeçalho" />
     <h1>RICK AND MORTY WIKI</h1>
-    <nav><a>HOME</a>
-      <a>PERSONAGENS</a>
-      <a>EPISÓDIOS</a>
+    <nav class="cabecalho-menu">
+      <a class="buttonlink" type="button" href="indexpag2.html">HOME</a>
+      <a class="buttonlink" type="button" href="index.html">PERSONAGENS</a>
+      <a class="buttonlink" type="button" href=""> EPISÓDIOS </a>
     </nav>
   </header>
 
-  <form>
-    <select id="selectFilterLife">
+  <form class="filterspersonagens">
+      <select id="selectFilterLife">
+      <option value="" selected hidden>Status de vida</option>
       <option value="Alive">Vivo</option>
       <option value="Dead">Morto</option>
       <option value="unknown">Desconhecido</option>
     </select>
 
     <select id="selectFilterSpecies">
+      <option value="" selected hidden>Espécie</option>
       <option value="Human">Humano</option>
       <option value="Alien">Alienígena</option>
       <option value="Humanoid">Humanoide</option>
@@ -40,31 +44,25 @@
     </select>
 
     <select id="selectFilterGender">
+      <option value="" selected hidden>Gênero</option>
       <option value="Male">Homem</option>
       <option value="Female">Mulher</option>
       <option value="unknown">Desconhecido</option>
       <option value="Genderless">Sem gênero</option>
     </select>
-      <button id="refresh" >Limpar Filtros</button>
 
-      <input
-      type="text"
-      name="searchBar"
-      id="searchBar"
-      placeholder="pesquisar"
-      />
-
-    </form>
-
+    <button class="btn-Ordem" id="btn-ordemA">A-Z</button>
+    <button class="btn-Ordem" id="btn-ordemZ">Z-A</button>
+    <button class="btn-Ordem" id="btn-limpar">Limpar</button>
+    <input type="text" name="searchBar" id="searchBar" placeholder="pesquisar"/>
+    <img class= "imgfiltros"src="2200.gif" alt="pesquisar" /> 
+    
+     </form>
 
   <main class="central-container">
     <section class="cards-container" id="card">
 
     </section>
-  </main>
-  <section class="cardsfilters">
-    <h2>FILTRAR</h2>
-  </section>
   </main>
 
   <footer></footer>

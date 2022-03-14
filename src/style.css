@@ -21,7 +21,7 @@
     align-items: center;
     gap: 10%;
     background-color: #0C0F14;
-    
+
   }
   .filterspersonagens{
     display: flex;
@@ -30,7 +30,7 @@
     justify-content: space-around;
     color: #C8D258;
     font-size: 14px;
-    
+
   }
   .card{
     background-color: #1C1F24;
@@ -71,6 +71,12 @@
     border-radius: 5%;
     font-size: 14px;
     color: #0C0F14;
+  }
+
+  #voltarAoTopo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
   }
 
   b, strong {color:#C8D258;}

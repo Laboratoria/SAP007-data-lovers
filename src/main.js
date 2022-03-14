@@ -85,3 +85,7 @@ searchBar.addEventListener('keyup', (e) => {
   showInfos(filteredCharacteres)
 });
 
+var btn = document.querySelector("#voltarAoTopo");
+btn.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+});

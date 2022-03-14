@@ -7,25 +7,37 @@ import data from './data/ghibli/ghibli.js';
 
 console.log(example, data);
 
-const filmes = data.films;
+const infos = data.films;
 
-function printar(filmes) {
+function printar(infos) {
 
-  document.getElementById("cards").innerHTML = filmes.map((cards) =>
+  document.getElementById("cards").innerHTML = infos.map((cards) =>
     `
-    <div class = "cards">
-      <h1>  ${cards.title}</h1>
-      <p> ${cards.description}</p>
-      <p> ${cards.release_date}</p>
-      <img src = " ${cards.poster}" >
-    </div>
-
+     <div class = "cards">
+        <img src = " ${cards.poster}" >
+        <h1>  ${cards.title}</h1>
+        <p>   ${cards.description}</p>
+        <p>  ${cards.producer}</p>
+        <p>  ${cards.director}</p>
+        <p>  ${cards.release_date}</p>
+      </div>
     `
   ).join("")
-
 }
 
-printar(filmes)
+printar(infos)
+
+const btnFilmes = document.getElementById("films");
 
 
-console.log(printar(filmes))
+
+
+
+
+
+
+
+
+
+
+

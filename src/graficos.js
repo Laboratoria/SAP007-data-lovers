@@ -1,5 +1,5 @@
 
-import { statsGender, statsStatus } from "./data.js";
+import { stats } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
 const totalCalculation = {
@@ -15,10 +15,10 @@ printTotalCharacters.innerHTML =
     <span class="numberOfCharacters">${totalCharacters}</span>
    </p>`;
 
-const maleAverage = statsGender.gender(data.results, "Male") + "%";
-const femaleAverage = statsGender.gender(data.results, "Female") + "%";
-const genderlessAverage = statsGender.gender(data.results, "Genderless") + "%";
-const unknownAverage = statsGender.gender(data.results, "unknown") + "%";
+const maleAverage = stats.gender(data.results, "Male") + "%";
+const femaleAverage = stats.gender(data.results, "Female") + "%";
+const genderlessAverage = stats.gender(data.results, "Genderless") + "%";
+const unknownAverage = stats.gender(data.results, "unknown") + "%";
 
 printGenderAverage.innerHTML =
   `
@@ -30,10 +30,10 @@ printGenderAverage.innerHTML =
       </p>
   `;
 
-const printStatusAverage = document.getElementById("status_average");
-const aliveAverage = statsStatus.status(data.results, "Alive") + "%";
-const deadAverage = statsStatus.status(data.results, "Dead") + "%";
-const unknownStatusAverage = statsStatus.status(data.results, "unknown") + "%";
+const printStatusAverage = document.getElementById("status-average");
+const aliveAverage = stats.status(data.results, "Alive") + "%";
+const deadAverage = stats.status(data.results, "Dead") + "%";
+const unknownStatusAverage = stats.status(data.results, "unknown") + "%";
 
 printStatusAverage.innerHTML =
   `

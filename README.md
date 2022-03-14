@@ -1,6 +1,8 @@
 # Data Lovers - Rick and Morty
 
 Projeto desenvolvido no Bootcamp Laboratória Brasil - SAP 007.
+<br>
+Link do [projeto](https://suelenescorcio.github.io/SAP007-data-lovers/)
 
 ## Autores
 

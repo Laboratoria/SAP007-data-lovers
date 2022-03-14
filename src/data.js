@@ -21,7 +21,7 @@ export const searchName = (data, condition) => {
   return searchResult;
 }
 
-export const statsGender = {
+export const stats = {
   gender: (data, genderParameter) => {
     const totalByGender = data.reduce(function (total, character) {
       if (character.gender === genderParameter) {
@@ -32,9 +32,6 @@ export const statsGender = {
     const averageGender = Number(((totalByGender / data.length) * 100).toFixed(2));
     return averageGender;
   },
-}
-
-export const statsStatus = {
   status: (data, statusParameter) => {
     const totalByStatus = data.reduce(function (total, character) {
       if (character.status === statusParameter) {
@@ -44,5 +41,5 @@ export const statsStatus = {
     }, 0)
     const averageStatus = Number(((totalByStatus / data.length) * 100).toFixed(2));
     return averageStatus;
-  },
+  }
 };

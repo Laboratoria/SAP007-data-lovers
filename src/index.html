@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -16,10 +17,10 @@
     <div class="logo">
       <img src="./imagens/Studio_Ghibli_logo_gato.png" alt="logo" width="400" height="200">
     </div>
+
     <h1>Bem vindo (a) ao serviço de buscas da KiKi!
       <br> Escolha a categoria que deseja buscar:
     </h1>
-
 
     <section class="filter">
 
@@ -37,14 +38,19 @@
         <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
       </select>
 
-
-      <select class="people">
+      <select class="people" id="people">
         <option selected value="none">Personagens</option>
-        <optgroup label="Filmes">
-          <option value="The Tale of the Princess Kaguya"></option>
-          <option value="When Marnie Was There"></option>
+        <optgroup label="movies">
+          <option value="Howl's Moving Castle">O castelo animado</option>
+          <option value="Tales from Earthsea">Contos de Terramar</option>
+          <option value="Ponyo on the Cliff by the Sea">Ponyo - Uma amizade que veio do mar</option>
+          <option value="The Secret World of Arrietty">O mundo dos pequeninos</option>
+          <option value="From Up on Poppy Hill">A Colina das Papoilas</option>
+          <option value="The Wind Rises">Vidas ao vento</option>
+          <option value="The Tale of the Princess Kaguya">O conto da princesa Kaguya</option>
+          <option value="When Marnie Was There">Memórias de Marnie</option>
         </optgroup>
-        <optgroup label="Ano">
+        <optgroup label="peopleByYear" id="peopleByYear">
           <option value="1980-1990">1980 - 1990</option>
           <option value="1990-2000">1990 - 2000</option>
           <option value="2000-2010">2000 - 2010</option>
@@ -52,9 +58,7 @@
         </optgroup>
       </select>
 
-
-
-      <select class="year">
+      <select class="year" id="year">
         <option selected value="none">Ano</option>
         <option value="1980-1990">1980 - 1990</option>
         <option value="1990-2000">1990 - 2000</option>
@@ -64,27 +68,27 @@
     </section>
 </header>
 
-
-
-  <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem3">
-  <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem2">
-  <img src="./imagens/kiki_sem fundo_certa.png" alt="kiki" id="kiki">
-  <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem">
-  <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem4">
-  <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem5">
-  <img src="./imagens/sem_rosto-Recuperado.png" alt="sem rosto" id="sem_rosto">
-  <img src="./imagens/coelhinho_de_poeira.png" alt="coelhinho de poeira" id="poeira">
-  <img src="./imagens/coelhinho_de_poeira.png" alt="coelhinho de poeira" id="poeira2">
+  <div class="imagens" id="imagens">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem3">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem2">
+    <img src="./imagens/kiki_sem fundo_certa.png" alt="kiki" id="kiki">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem4">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem5">
+    <img src="./imagens/sem_rosto-Recuperado.png" alt="sem rosto" id="sem_rosto">
+    <img src="./imagens/coelhinho_de_poeira.png" alt="coelhinho de poeira" id="poeira">
+    <img src="./imagens/coelhinho_de_poeira.png" alt="coelhinho de poeira" id="poeira2">
+  </div>
 
   <div class="cards" id="cards"></div>
 
   <script src="main.js" type="module"></script>
+
+  <footer>
+    <img class="calcifer" src="./imagens/calcifer.png" alt="calcifer" id="calcifer">
+    <p class="about">Desenvolvido por Jéssika Mirella e Bruna de Paula - SAP 007 - LABORÁTORIA</p>
+  </footer>
+
 </body>
-
-<footer>
-  <div class="calcifer"><img src="./imagens/calcifer.png" alt="calcifer" height="auto" width="50" id="fogo"></div>
-  <p>Desenvolvido por Jéssika Mirella e Bruna de Paula - SAP 007 - LABORÁTORIA</p>
-
-</footer>
 
 </html>

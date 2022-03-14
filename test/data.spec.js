@@ -1,6 +1,5 @@
 import { buscarNome, buscarEspecie, sortOrdem, calculos} from '../src/data.js';
 
-////////////////////// TESTES DOS TESTES 01 /////////////////////////
 const dados = [
    {
       "name": "Bearded Lady",
@@ -40,23 +39,15 @@ describe('buscarNome', () => {
   it('Deverá ser uma função', () => {
     expect(typeof buscarNome).toBe('function');
   });
-  it('Deveverá buscar por um nome', () => {
+  it('Deverá buscar por um nome', () => {
     const expected = buscarNome(nomes, 'banana')
     expect (expected).toEqual([])
   });
-  it('Deveverá buscar por um nome', () => {
+  it('Deverá buscar por um nome', () => {
     const expected = buscarNome(nomes, 'Rick')
     expect (expected).toEqual([{"name": "Rick Sanchez"}])
   });
 });
-
-/////////////////////TESTE PARA FILTRAR A CHAVE 
-// IMPORTAR A FUNÇÃO LA EM CIMA
-
-//describe('filtrarPorChaveEValor', () => {
-//  it('Deverá ser uma função', () => {
-// expect(typeof filtrarPorChaveEValor).toBe('function');
-// });
 
 /////////////////////TESTE PARA FILTRAR A ESPÉCIE 
 describe('buscarEspecie', () => {

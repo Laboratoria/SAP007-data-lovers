@@ -1,37 +1,22 @@
-//import { example } from './data.js';
-import data from './data/pokemon/pokemon.js';
+import data from './pokemon.js';
+import {searchByName, selectType, calcType, orderBy} from './data.js'
 
 
-/*const pokemons = data.pokemon.slice(0, 251)
+const pokemons = data.pokemon;
 
-const cardsPokemon = document.getElementById("cards");
-
+function cardsPokemons(data) {
+  const cardPokemon = document.getElementById("cards");
+  cardPokemon.innerHTML = data.map((item) => 
+    `<div class="info-cards">
+       <img src="${item.img}"/>
+        <p>${item.num}</p>
+        <p>Name:${item.name}</p>
+        <p>Type:${item.type}</p>
+        <p>About:${item.about}</p>
+      </div>`
+  ).join("")
+  
+}
 cardsPokemons(pokemons);
 
 
-function cardsPokemons(arrayPokemon){
-    let cards = "";
-    arrayPokemon.map(actualPokemon => {
-        const types = actualPokemon.types;
-        cards +=
-            `<div class="card" '${types['']}'>
-        <img class="card-image " alt="${actualPokemon.name}" src="https://www.serebii.net/pokemongo/pokemon/${actualPokemon.num}.png" />
-        <h2 class="card-title"> ${actualPokemon.num}. ${actualPokemon.name} </h2>
-        <p class="card-subtitle" id="card-subtitle">${actualPokemon.size.height} | ${actualPokemon.size.weight} </p>
-        <p class="card-subtitle2" id="card-subtitle2">${types.join(' | ')} </p>
-        <p class="card-subtitle3" id="card-subtitle">${actualPokemon.generation.name} </p>
-        </div>`
-    });
-     console.log(arrayPokemon)
-    cardsPokemon.innerHTML = cards;
-    
-}
-*/
-function showCalc() {
-    document.getElementById("calculation").innerHTML = "";
-    const filterType = document.getElementById("types-filters").value;
-    let result = calcType(pokemons, filterType);
-
-    document.getElementById("calculation").innerText += `Os pokémons desse tipo representam ${result}% do total.`;c
-    console.log(showCalc);
-}

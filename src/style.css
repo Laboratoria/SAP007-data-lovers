@@ -1,34 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 body {
   background-image: url(image/PokeBackground.jpg);
+  height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  /* display: flex */
 }
 
 header {
   background-color: #e27712;
-  height: 20%;
+  height: 30%;
   width: 100%;
   opacity: 50%;
 }
 
+
+.search-button{
+  background-color:#434343
+
+}
+
 .header-logo {
-  display: flex;
+  opacity: 100%;
   justify-content: center;
   align-items: center;
 }
 
+
 /*.searc{
+=======
+.btn-types{
+  border-radius: 50%;
+  display: flex;
+  width: 10%;
+  
+}
+
+
+.searc{
   display:flex;
   width:70vw;
   align-items: center;
 }
-*/
+
 
 .search-bar{
   background-color:#E0EEEE;
-  border:solid 2px #5F9EA0;
+  border:solid 2px #308f92;
   border-radius:10px;
   width:254px;
   height: 22px;
@@ -39,7 +64,22 @@ header {
 }
 
 
+<<<<<<< HEAD
 .btnSearch, #types-filter {
+=======
+.txt-Search{
+  float:left;
+  background-color:transparent;
+  font-size:15px;
+  border:none;
+  border-color: transparent;
+  height: 20px;
+  width:192px;
+}
+
+
+.btn-Search{
+>>>>>>> ddfdfb3416a78ba940cd0b9504a0cf6bcfa91a8e
   border:none;
   border-color: transparent;
   float:left;
@@ -49,4 +89,27 @@ header {
   font-weight:bold;
   background:#5F9EA0;
 }
+
+
+.cards {
+  display: flex;
+  width: 98%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-gap: 5em;
+  padding: 2em;
+  }
+
+.info-cards{
+  max-width: 200px;
+  font-size: 0.9em;
+  text-align:center;
+  padding:0.8em;
+  color:rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font: arial; color: #434343;
+  border-radius:16px ; 
+
+} 
 

@@ -16,6 +16,11 @@ export const sortHandler=(datasetToUse,pokemonFeature,way)=>{
   return sortedData;
 }
 
+//filtro pra tripos
+export const filtrarTipo = (tipo, Pokemons) => {
+    return Pokemons.filter (pokemon => pokemon.type === type);
+    }
+
 //botão pra limpar filtros
 const refreshButton = document.querySelector('.refresh-button');
 

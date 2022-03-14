@@ -1,8 +1,8 @@
-import { example } from './data.js';
+//import { example } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
-const pokemons = data.pokemon.slice(0, 251)
+/*const pokemons = data.pokemon.slice(0, 251)
 
 const cardsPokemon = document.getElementById("cards");
 
@@ -26,11 +26,12 @@ function cardsPokemons(arrayPokemon){
     cardsPokemon.innerHTML = cards;
     
 }
-
+*/
 function showCalc() {
     document.getElementById("calculation").innerHTML = "";
-    const filterType = document.getElementById("filter-type").value;
+    const filterType = document.getElementById("types-filters").value;
     let result = calcType(pokemons, filterType);
 
-    document.getElementById("calculation").innerText += `Os pokémons desse tipo representam ${result}% do total.`
+    document.getElementById("calculation").innerText += `Os pokémons desse tipo representam ${result}% do total.`;c
+    console.log(showCalc);
 }

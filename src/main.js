@@ -1,5 +1,5 @@
 import {
-    filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder,
+    filtroGenero,filtroStatus,filtroSpecies,filtroName,filtroOrder,calculoPorcentagem
 } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
 
@@ -34,25 +34,37 @@ imprimirCardsTela(data.results);
 const selecaoGenero = document.querySelector("#gender-filter");
 const selecaoStatus = document.querySelector("#status-filter");
 const selecaoSpecies = document.querySelector("#species-filter");
+const alphaOrder = document.querySelector("#order-filter");
 
 const searchName = document.getElementById("text-search");
-const alphaOrder = document.querySelector("#order-filter");
-const btnLimpar = document.getElementById("btn_reset")
+const btnLimpar = document.getElementById("btn_reset");
+const porcentagem = document.getElementById("porcentagemFiltro");
 
 ///função para imprimir o filtro 'x'
 
+function imprimirPorcentagem(data) {
+    porcentagem.innerHTML = `Aqui possui ${data}`
+    porcentagem.style.display = 'inline-block'
+}
+
 function imprimirFiltroGenero(e) {
 const resultadoGenero = filtroGenero(data.results, e.target.value)
+const porcentagemGenero = `${calculoPorcentagem(data.results.length, resultadoGenero.length)}% dos personagens`
+imprimirPorcentagem(porcentagemGenero);
 return imprimirCardsTela(resultadoGenero);
 }
 
 function imprimirFiltroSpecies(e) {
 const resultadoSpecies = filtroSpecies(data.results, e.target.value);
+const porcentagemEspecie = `${calculoPorcentagem(data.results.length, resultadoSpecies.length)}% dos personagens`
+imprimirPorcentagem(porcentagemEspecie);
 return imprimirCardsTela(resultadoSpecies);
 }
 
 function imprimirFiltroStatus(e) {
 const resultadoStatus = filtroStatus(data.results, e.target.value);
+const porcentagemStatus = `${calculoPorcentagem(data.results.length, resultadoStatus.length)}% dos personagens`
+imprimirPorcentagem(porcentagemStatus);
 return imprimirCardsTela(resultadoStatus);
 }
 

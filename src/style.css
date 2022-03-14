@@ -1,22 +1,35 @@
   body {
     background-color: #0C0F14;
   }
+
   header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     background-color: #1C1F24;
+    padding: 1%;
   }
+
   h1 {
     color: #12B0C9;
   }
+
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    gap: 10%;
     background-color: #0C0F14;
+
+  }
+  .filterspersonagens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #C8D258;
+    font-size: 14px;
 
   }
   .card{
@@ -44,18 +57,34 @@
     height: 170px;
     border-radius: 5%;
   }
+  .imgfiltros {
+    border-bottom: #C8D258 solid 2px;
+  }
 
   .name-title {
     align-items: center;
-    height: 50px;
+    height: 35px;
     width: 300px;
     margin-bottom: 5px;
     background-color: #C8D258;
     text-align: center;
     border-radius: 5%;
-    font-size: 24px;
+    font-size: 14px;
     color: #0C0F14;
+  }
+
+  #voltarAoTopo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
   }
 
   b, strong {color:#C8D258;}
   a, link {color: #BFBFBF}
+
+  @media (max-width: 600px)
+{
+  .facet_sidebar
+   {
+    display: none;
+   }

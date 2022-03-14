@@ -8,7 +8,7 @@
 }
 
 body {
-   background-color:  #F2F2F2;
+   background-color:#F2F2F2;
 }
 
 .header {
@@ -49,14 +49,9 @@ li {
 li a {
     color: #283D59;
     font-weight: bold;
-    transition: 1s all;
     cursor: pointer;
     text-decoration: none;
 }
-
-/* li a:hover {
-    transform: scale(1.2);
-} */
 
 .main-content {
     background-color: #F2F2F2;
@@ -70,8 +65,7 @@ li a {
 
 .ghibli-about {
     padding-top: 1vw;
-    font-family: 'Open Sans', 'icones', sans-serif;
-    
+    font-family: 'Open Sans', 'icones', sans-serif;    
 }
 
 .ghibli-history {
@@ -79,23 +73,47 @@ li a {
     font-family: 'Open Sans', 'icones', sans-serif;
 }
 
-.footer {
-    font-family: 'Open Sans', 'icones', sans-serif;
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#0D0D0D;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-}
 
 .linkedin {
     text-decoration: none;
     color: #0D0D0D;
     font-weight: bold;
+}
+
+.footer {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    text-align: center;
+    text-justify: center;
+    background-color: #F2F2F2;
+    color:#0D0D0D;
+    padding-top: px;
+    font-size: larger;   
+
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;    
+}
+
+@media screen and (max-width: 740px){
+    body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    body {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    }     
 }

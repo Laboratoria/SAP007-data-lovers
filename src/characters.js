@@ -3,7 +3,7 @@ import { sortAzPersons, filterSpecie, filterGender, calculoCharacters } from './
 
 const people = data.films.map(addPeople => addPeople.people)
 const arrPeople = [].concat.apply([], people);
-const charactersContainer = document.getElementById("container-cards");
+const charactersContainer = document.getElementById("container-cards-character");
 
 function showCardsCharacters(arrCharacters) {
 
@@ -47,41 +47,38 @@ filterGenders.addEventListener("change", (event) => {
     showAmountGender(getItemGender);
 })
 
+const amountSpecie = document.getElementById('result-percent')
 
-const amountSpecie = document.getElementById('result-percent') 
+
 
 function showAmountSpecie(selectedFilter) {
-    amountSpecie.innerHTML = '';
 
     const selectSpecie = document.getElementById('select-specie').value;
     const calculo = calculoCharacters(selectedFilter);
     amountSpecie.innerHTML =
-    `
+        `
     <div class="character-amount-container>
     <p class="character-amount"> Existe um total de ${calculo} personagen(s) da espécie ${selectSpecie} </p>
     <div>
     `
-    ;
-    
+        ;
+
 }
 
-const amountGender = document.getElementById('result-percent') 
+const amountGender = document.getElementById('result-percent')
 
 function showAmountGender(selectedFilter) {
-    amountGender.innerHTML = '';
 
     const selectGender = document.getElementById('select-gender').value;
     const calculo = calculoCharacters(selectedFilter);
     amountGender.innerHTML =
-    `
+        `
     <div class="character-amount-container>
-    <p class="character-amount"> Existe um total de ${calculo} personagen(s) da espécie ${selectGender} </p>
+    <p class="character-amount"> Existe um total de ${calculo} personagen(s) do gênero ${selectGender} </p>
     <div>
     `
-    ;
+        ;
 }
-
-
 
 const buttonClean = document.getElementById("btn-clean");
 function cleanFilters() {

@@ -77,7 +77,7 @@ describe('teste filterProcucer', () => {
 });
 
 
-// testes da página de personagens
+
 
 const objCharacters = [
   {
@@ -86,12 +86,12 @@ const objCharacters = [
     "specie": "Human"
   },
   {
-    "name": "Lusheeta Toel Ul Laputa",
+    "name": "Dola",
     "gender": "Female",
     "specie": "Human"
   },
   {
-    "name": "Dola",
+    "name": "Lusheeta Toel Ul Laputa",
     "gender": "Female",
     "specie": "Human"
   }
@@ -103,12 +103,12 @@ describe('test sortAz characters', () => {
   });
 
   it('retorne a ordenação A-Z dos personagens', () => {
-    let resposta = [objCharacters[2], objCharacters[1], objCharacters[0]];
+    let resposta = [objCharacters[1], objCharacters[2], objCharacters[0]];
     expect(sortAzPersons(objCharacters, "A-Z")).toEqual(resposta);
   });
 
   it('retorne a ordenação Z-A dos personagens', () => {
-    let resposta = [objCharacters[0], objCharacters[1], objCharacters[2]];
+    let resposta = [objCharacters[0], objCharacters[2], objCharacters[1]];
     expect(sortAzPersons(objCharacters, "Z-A")).toEqual(resposta);
   });
 });

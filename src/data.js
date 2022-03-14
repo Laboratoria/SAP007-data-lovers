@@ -2,7 +2,7 @@ export const sortAz = (data, order) => {
   const copy = [...data]
   if (order === "A-Z") {
     return copy.sort((a, z) => a.title > z.title ? 1 : -1);
-  } else if (order === "Z-A") {
+  } else {
     return copy.sort((a, z) => a.title > z.title ? -1 : 1);
   }
 };
@@ -25,7 +25,7 @@ export const sortAzPersons = (data, order) => {
   const copyPerson = [...data]
   if (order == "A-Z") {
     return copyPerson.sort((a, z) => a.name > z.name ? 1 : -1);
-  } else{
+  } else {
     return copyPerson.sort((a, z) => a.name > z.name ? -1 : 1);
   }
 };

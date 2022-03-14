@@ -31,9 +31,6 @@ function showCards(movies) {
 
 showCards(movies)
 
-
-//chamando os filtros
-
 const sortOrder = document.getElementById("select-az");
 sortOrder.addEventListener("change", (event) => {
     const selectedSort = event.target.value;
@@ -60,7 +57,6 @@ selectProducer.addEventListener("change", (event) => {
     showCards(resultProducer);
 });
 
-//botão para recarregar a página
 const buttonClean = document.getElementById("btn-clean");
 function cleanFilters() {
     window.location.reload();

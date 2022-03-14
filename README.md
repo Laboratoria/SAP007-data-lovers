@@ -22,7 +22,19 @@
 
 ## 2. Acesso
 
-O deploy do projeto foi realizado pelo Git Pages. Clique aqui []() para acessá-lo.
+O deploy do projeto foi realizado pelo Git Pages. [Clique aqui](https://elizenai.github.io/SAP007-data-lovers/index.html) para acessá-lo.
+
+## Como usar
+Você precisará usar o Node.js e clonar o projeto.
+
+- Instalar as dependências:
+npm install
+
+- Iniciar a aplicação:
+npm start
+
+- Realizar os testes unitários:
+npm test 
 
 ## 3. Descrição
 
@@ -57,7 +69,9 @@ Durante o desenvolvimento, fizemos alguns testes com os usuários para que pudes
 
 ### Testes unitários
 
-Para os testes unitários, utilizamos as funções Describe e It, da biblioteca do [Jest](https://jestjs.io/pt-BR/docs/using-matchers). Apenas as funções escritas no arquivo data.js foram testadas, pois é neste arquivo que estão os escopos das funções que ordenam e filtram. Essas funções são chamadas na main.js e characters.js para serem executadas com os parâmetros estabelecidos para a pesquisa.
+Para os testes unitários, utilizamos as funções Describe e It, da biblioteca do [Jest](https://jestjs.io/pt-BR/docs/using-matchers). Apenas as funções escritas no arquivo data.js foram testadas, pois é neste arquivo que estão os escopos das funções que ordenam e filtram. Essas funções são chamadas na main.js e characters.js para serem executadas com os parâmetros estabelecidos para a pesquisa. 
+
+![Testes](src/img/testes-unitarios.JPG)
 
 ## 6. Protótipo
 
@@ -80,7 +94,8 @@ Utilizamos o [Adobe Colors](https://color.adobe.com/pt/create/color-wheel) para 
 
 Layout responsivo, facilidade de navegação entre páginas e opções de filtros para pesquisa.
 
-*** inserir layout responsivo e como usar ***
+![Layout responsivo](src/img/pag-responsiva.JPG)
+
 ## 8. Tecnologias utilizadas
 
 - JavaScript

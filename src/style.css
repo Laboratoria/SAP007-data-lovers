@@ -18,8 +18,8 @@ header {
   background-color: black;
   height: 30%;
   width: 100%;
-  position: relative;
 }
+
 
 .search-button{
   background-color:#434343
@@ -34,7 +34,19 @@ align-items: center;
 
 .title {
   text-align: center;
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.btn-types{
+  border-radius: 50%;
+  display: flex;
+  width: 10%;
+  
+}
+
 
 .searc{
   display:flex;
@@ -51,7 +63,10 @@ align-items: center;
   height: 22px;
   display: flex;
   align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 
 .txt-Search{
   float:left;
@@ -62,6 +77,7 @@ align-items: center;
   height: 20px;
   width:192px;
 }
+
 
 .btn-Search{
   border:none;
@@ -96,3 +112,4 @@ align-items: center;
   border-radius:16px ; 
 
 } 
+

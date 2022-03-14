@@ -17,3 +17,10 @@ function cardsPokemons(data) {
   
 }
 cardsPokemons(pokemons);
+function showCalc() {
+    document.getElementById("calculation").innerHTML = "";
+    const filterType = document.getElementById("filter-type").value;
+    let result = calcType(pokemons, filterType);
+
+    document.getElementById("calculation").innerText += `Os pokémons desse tipo representam ${result}% do total.`
+}

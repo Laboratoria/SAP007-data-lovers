@@ -29,15 +29,15 @@ header {
 /* .header-logo {
 align-items: center;
 } */
-
-
-
-.title {
-  text-align: center;
 .header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.title {
+  text-align: center;
 }
 
 .btn-types{

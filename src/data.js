@@ -9,7 +9,7 @@ export const buscarEspecie = (data, especie) => {
 }
 
 export const ordenacao = (data, ordem) => {
-  const copiaData = data
+  const copiaData = [...data]
   const order = copiaData.sort((a, b) => (a.name.localeCompare(b.name)))
   switch (ordem) {
     case "a-z":

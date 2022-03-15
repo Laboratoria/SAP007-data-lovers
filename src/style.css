@@ -38,7 +38,7 @@ h1 {
 }
 
 .container_filtros_search_ordem {
-  background: #471616;
+  background: #26353e;
   color: #f5efef;
   border-radius: 0.3em;
   border: #a2b9df solid 1px;
@@ -80,7 +80,7 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  background-color: #3f1118;
+  background-color: #26353e;
 }
 
 .telaTextCard {
@@ -199,6 +199,7 @@ main {
   width: 100%;
   height: 3em;
   text-align: center;
+  font-size: 12px;
   justify-content: space-around;
   display: flex;
   color: #ffffff;

@@ -39,8 +39,6 @@ const alphaOrder = document.querySelector("#order-filter");
 const porcentagem = document.getElementById("porcentagemFiltro");
 const searchName = document.getElementById("text-search");
 const btnLimpar = document.getElementById("btn_reset");
-const porcentagem = document.getElementById("porcentagemFiltro");
-
 
 ///função para imprimir os filtros com a % 
 
@@ -97,4 +95,5 @@ selecaoGenero.addEventListener("change", imprimirFiltroGenero);
 selecaoStatus.addEventListener("change", imprimirFiltroStatus);
 selecaoSpecies.addEventListener("change", imprimirFiltroSpecies);
 alphaOrder.addEventListener("change", imprimirAlphaOrder);
-btnLimpar.addEventListener("click", limparFiltros)
+searchName.addEventListener("keyup", imprimirFiltroName);
+btnLimpar.addEventListener("click", limparFiltros);

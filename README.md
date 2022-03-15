@@ -24,7 +24,7 @@
 
 O deploy do projeto foi realizado pelo Git Pages. [Clique aqui](https://elizenai.github.io/SAP007-data-lovers/index.html) para acessá-lo.
 
-# Como usar
+### Como usar
 Você precisará:
 
 - Instalar o Node.js e clonar o projeto.

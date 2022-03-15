@@ -1,9 +1,6 @@
-import {filmesDiretores} from './data.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { filmesDiretores } from './data.js';
 import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
+
 
 //console.log(example, data);
 
@@ -27,14 +24,9 @@ function printar(infos) {
 
 printar(infos)
 
-
-
-
-
 const btnFilmes = document.getElementById("films");
 
-
-  document.addEventListener("change", (event) => {
+document.addEventListener("change", (event) => {
 
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
@@ -45,7 +37,7 @@ const btnFilmes = document.getElementById("films");
 
 })
 
-console.log()
+
 
 
 

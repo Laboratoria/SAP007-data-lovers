@@ -1,15 +1,15 @@
 import data from './data/ghibli/ghibli.js';
 
-const directorsSelect = document.getElementById("director");
 
-directorsSelect.addEventListener("change", (event) => {
+
+/*directorsSelect.addEventListener("change", (event) => {
 
   const filterMoviesByDirectors = data.films.filter((directorName) => {
     return directorName.director === event.target.value
   })
 
   console.log(filterMoviesByDirectors)
-})
+})*/
 
 
 
@@ -30,8 +30,12 @@ export const sortMoviesByTitle = (title) => {
 };*/
 
 
-export const anotherExample = () => {
-  return 'OMG';
+export const filmesDiretores = (filmes) => {
+       const filterMoviesByDirectors = data.films.filter((directorName) => {
+    return directorName.director === target.value
+
+  });
+
 };
 
 

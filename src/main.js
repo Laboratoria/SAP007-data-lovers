@@ -17,7 +17,7 @@ function mostrarCards(data) {
       </div>
     </div>  
   `)
-  .join('')
+    .join('')
   document.getElementById('recebe-card').innerHTML = todosCards
 }
 mostrarCards(data.results);
@@ -52,6 +52,14 @@ function limparFiltros() {
   porcentagem.innerHTML = " "
 }
 
+window.addEventListener("load", function () {
+  const carregando = document.querySelector("#carregando");
+
+  setTimeout(function () {
+    carregando.style.display = "none";
+  }, 1000);
+});
+
 function subirPagina() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -63,11 +71,11 @@ const scroll = () => {
   }
   else {
     botao.style.display = "none"
-  }  
+  }
 }
 
 window.onscroll = () => {
-  scroll ()
+  scroll()
 }
 
 //EVENTOS

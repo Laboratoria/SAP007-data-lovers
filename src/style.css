@@ -136,7 +136,6 @@ header {
     border: 5px solid rgb(212, 217, 82);
     border-radius: 9px;
     text-align: center;
-    cursor: pointer;
     box-shadow: 8px 8px 8px black;
     margin: 60px 0px 0px 45px;
 }
@@ -167,13 +166,22 @@ header {
     margin-top: 5px;
 }    
 
+.carregando {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .voltar-topo {
     position: fixed;
-    bottom: 75px;
+    bottom: 80px;
     right: 3px;
     cursor: pointer;
     background: none;
-    display: none
+    display: none;
 }
 
 footer {
@@ -186,8 +194,8 @@ footer {
     color: #fff;
     border-top: 4px solid rgb(212, 217, 82);
     box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
-    padding-top: 20px;
-    margin-top: 40px;   
+    padding-top: 30px;
+    margin-top: 30px;   
 }
   
 footer a {
@@ -210,180 +218,186 @@ footer a {
 
 @media screen and (max-width: 768px) {
 
-header {
-    background-color:rgba(213, 172, 161, 0.705);
-    height: 70px;
-}
+    header {
+      background-color:rgba(213, 172, 161, 0.705);
+      height: 70px;
+    }
 
-body {
-    width: 100%;
-    background-color:rgb(213, 172, 161);
-}
+    body {
+      width: 100%;
+      background-color:rgb(213, 172, 161);
+    }
 
-body::before {
-    content: " ";
-    background: url(./image/bg\ responsivo.jpg) no-repeat;
-    opacity: 0.5;  
-    background-size: cover;
-    position: fixed;
-}    
+    body::before {
+       content: " ";
+       background: url(./image/bg\ responsivo.jpg) no-repeat;
+       opacity: 0.5;  
+       background-size: cover;
+       position: fixed;
+    }    
 
-.menu {
-    width: 100%;
-    margin-top: 10px;
-    padding: 1rem;
-    margin-left: 60%;    
-    align-items: center;
-    position: relative;
-}
+    .menu {
+       width: 100%;
+       margin-top: 10px;
+       padding: 1rem;
+       margin-left: 60%;    
+       align-items: center;
+       position: relative;
+    }
     
-.lista {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
-    
-.links {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;   
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
+    .lista {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;  
+    }
 
-.logo-img {
-    width: 60%;
-    margin-left: 10px;
-}
-    
-.todas-buscas {
-    display: grid;
-    border-radius: 10px;
-    justify-content: center;
-}
-       
-.lado-esquerdo {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-}
+    .links {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;   
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace; 
+    }
 
-.pesquisar {
-    background-color: rgb(255, 255, 255);
-    font-size: 16px;
-    width: 220px;
-    margin-top: 5px;
-    padding: 10px;
-    border-bottom: 5px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 8px black;
-}
-    
-.limpar {
-    background-color: rgb(99, 102, 104);
-    color: white;
-    font-size: 16px;
-    width: 200px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 4px;
-    box-shadow: 8px 8px 8px black;
-}
+    .logo-img {
+        width: 60%;
+        margin-left: 10px;  
+    }
 
-.lado-direito {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-}
+    .todas-buscas {
+        display: grid;
+        border-radius: 10px;
+        justify-content: center;    
+    }
 
-.filtro-especies {
-    width: 200px;
-    height: 40px;
-    background-color: white;
-    font-size: 16px;
-    margin-top: 25px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 8px black;
-}
-    
-.centro-tela {
-    font-size: 14px;
-    display: flex;
-    margin-top: 30px;
-    background-color: white;
+    .lado-esquerdo {
+        display: grid;
+        justify-content: center;
+        text-align: center; 
+    }
 
-}
+    .pesquisar {
+        background-color: rgb(255, 255, 255);
+        font-size: 16px;
+        width: 220px;
+        margin-top: 5px;
+        padding: 10px;
+        border-bottom: 5px;
+        border-radius: 5px;
+        box-shadow: 8px 8px 8px black;  
+    }
 
-.filtro-ordem {
-    width: 200px;
-    height: 40px;
-    background-color: white;
-    font-size: 16px;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: 8px 8px 8px black;
-}
-    
-.card {
-    background-color:rgba(17, 50, 53, 0.904);
-    display: inline-flex;
-    padding: 15px;
-    margin-bottom: 15px;
-    width: 180px;
-    height: 290px;
-    border: 5px solid rgb(212, 217, 82);
-    border-radius: 9px;
-    margin: 70px 0px 0px 70px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 8px 8px 8px black;
-}
-    
-.card-interno {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    max-width: 1100px;
-}
-      
-.imagem-card {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 6px;
-}
-      
-.card-frente{
-    text-align: center;
-    font-weight: bold;
-    color: white;
-}
-      
-.outras-infos {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(49, 176, 204);
-    margin-top: 5px;
-}    
+    .limpar {
+        background-color: rgb(99, 102, 104);
+        color: white;
+        font-size: 16px;
+        width: 200px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 4px;
+        box-shadow: 8px 8px 8px black;  
+    }
 
-.voltar-topo {
-    display: none;
-}
+    .lado-direito {
+        display: grid;
+        justify-content: center;
+        text-align: center; 
+    }
 
-footer {
-    font-size: 14px;
-    width: 100%;
-    bottom: 0px;
-    height: 40px;
-    text-align: center;
-    background-color: rgb(49, 176, 204);
-    color: rgb(255, 255, 255);
-    border-top: 4px solid rgb(212, 217, 82);
-    box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
-    padding-top: 20px;
-    margin-top: 40px;   
-}
-      
-footer a {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+    .filtro-especies {
+        width: 200px;
+        height: 40px;
+        background-color: white;
+        font-size: 16px;
+        margin-top: 25px;
+        border-radius: 5px;
+        box-shadow: 8px 8px 8px black;  
+    }
+
+    .centro-tela {
+        font-size: 14px;
+        display: flex;
+        margin-top: 30px;
+        background-color: white;
+
+    }
+
+    .filtro-ordem {
+        width: 200px;
+        height: 40px;
+        background-color: white;
+        font-size: 16px;
+        margin-top: 15px;
+        border-radius: 5px;
+        box-shadow: 8px 8px 8px black;  
+    }
+
+    .card {
+        background-color:rgba(17, 50, 53, 0.904);
+        display: inline-flex;
+        padding: 15px;
+        margin-bottom: 15px;
+        width: 180px;
+        height: 290px;
+        border: 5px solid rgb(212, 217, 82);
+        border-radius: 9px;
+        margin: 70px 0px 0px 70px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 8px 8px 8px black;  
+    }
+
+    .card-interno {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        max-width: 1100px;  
+    }
+
+    .imagem-card {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 6px; 
+    }
+
+    .card-frente{
+        text-align: center;
+        font-weight: bold;
+        color: white;   
+    }
+
+    .outras-infos {
+        text-align: center;
+        font-weight: bold;
+        color: rgb(49, 176, 204);
+        margin-top: 5px;
+    }    
+
+    .carregando {
+        margin-top: 10%;
+        font-size: 14px;
+    }
+
+    .voltar-topo {
+        display: none;  
+    }
+
+    footer {
+        font-size: 14px;
+        width: 100%;
+        bottom: 0px;
+        height: 40px;
+        text-align: center;
+        background-color: rgb(49, 176, 204);
+        color: rgb(255, 255, 255);
+        border-top: 4px solid rgb(212, 217, 82);
+        box-shadow: 0.4em 0.3em 0.3em 0.3em rgb(212, 217, 82);
+        padding-top: 20px;
+        margin-top: 40px;       
+    }
+
+    footer a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline; 
+    }
 }

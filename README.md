@@ -24,17 +24,16 @@
 
 O deploy do projeto foi realizado pelo Git Pages. [Clique aqui](https://elizenai.github.io/SAP007-data-lovers/index.html) para acessá-lo.
 
-## Como usar
-Você precisará usar o Node.js e clonar o projeto.
+# Como usar
+Você precisará:
 
-- Instalar as dependências:
-npm install
+- Instalar o Node.js e clonar o projeto.
 
-- Iniciar a aplicação:
-npm start
+- Instalar as dependências:  npm install
 
-- Realizar os testes unitários:
-npm test 
+- Iniciar a aplicação:  npm start
+
+- Realizar os testes unitários: npm test 
 
 ## 3. Descrição
 
@@ -52,17 +51,48 @@ Escolhemos o [Trello](https://trello.com/b/52ngg64M/data-lovers) como ferramenta
 
 Nossa pesquisa para iniciar o projeto foi realizada com pessoas da família que assistem esse tipo de animação, além da Pesquisa com seguidores de Studio Ghibli disponibilizada no projeto.
 
-Abaixo estão as duas histórias de usuário que motivaram o desenvolvimento do design, paleta de cores, filtros, e demais interatividades do projeto.
-### História de usuário 01
--Eu, Heloísa, 09 anos, quero entrar no site do Studio Ghibli e poder ver todos os nomes e posteres dos filmes. Eu quero saber um pouco da história pra decidir qual filme assistir.
+Abaixo estão as quatro histórias de usuário que motivaram o desenvolvimento do design, paleta de cores, filtros, e demais interatividades do projeto.
 
-_Definição de pronto_: Ao entrar na site, o usuário tem acesso à página de filmes. Nesta mesma página, é possível ordenar os títulos dos filmes de A a Z, selecionar um único título para que apareça somente ele na tela, filtrar pela pontuação dos filmes e pelo produtor. Também é possível limpar os filtros para fazer uma nova pesquisa.
-_Critérios de aceitação_: Para cada filme foi montado um display contendo o poster, o título, o nome do diretor, o ano de lançamento e a descrição do filme, sendo possível conhecer a história e saber se o filme foi bem aceito.
-### História de usuário 02
--Eu Matheus, 25 anos,  quero entrar no site da Ghibli e poder ver todos os personagens, saber os tipos ou espécies, o gênero e a quantidade que cada um representa nas animações em geral.
 
-_Definição de pronto:_ Ao entrar no site, o usuário estará na página de filmes e terá acesso à página de personagens utilizando um menu localizado no canto superior esquerdo da tela. A página de personagens mostra todos os cards e nomes dos personagens, sendo possível ordenar os nomes de A a Z, filtrar por espécie, gênero e com isso obter a quantidade dessas categorias. Também é possível limpar os filtros para fazer uma nova pesquisa.
-_Critérios de aceitação_: O usuário pode navegar na página pela barra de rolagem e conhecer todos os personagens, utilizar os filtros para conhecer as espécies existentes e obter a quantidade por gênero e espécie.
+- História de usuário 01
+
+-Eu, usuário de sites de anime, quero entrar no site do Studio Ghibli e poder ver todos os nomes das animações. 
+
+_Critérios de aceitação_: Ao entrar na site, o usuário tem acesso à página de filmes, com título e poster em destaque.
+
+_Definição de pronto_: O mapeamento dos objetos da API está retornando todos os cards e títulos corretamente.
+
+- História de usuário 02
+
+-Eu, usuário de sites de anime, quero entrar no site e ter acesso às descrições dos filmes para decidir qual assistir.
+
+_Critérios de aceitação_: Para cada filme foi montado um display contendo poster, título, nome do diretor, ano de lançamento e descrição do filme.
+
+_Definição de pronto_: O mapeamento dos objetos da API está retornando todos os valores necessários para apresentação das informações acima.
+
+- História de usuário 03
+
+-Eu, usuário de sites de anime, quero entrar no site e poder saber se o filme que eu pretendo assistir foi bem aceito.  
+
+_Critérios de aceitação_: Ao entrar no site, o usuário pode utilizar o filtro "Pontuação" e saber quais filmes tem as maiores e menores pontuações.
+
+_Definição de pronto_: A função que está filtrando a pontuação dos filmes passou em 100% dos testes.
+
+- História de usuário 04
+
+-Eu, que sou fã de animes, quero entrar no site da Ghibli e poder ver todos os personagens, saber os tipos ou espécies, e a quantidade que essa categoria representa meio às animações.
+
+_Critérios de aceitação_: Navegando pelo menu no lado superior esquerdo do site, o usuário tem a opção de clicar na pagina de personagens, que contém todas as imagens e nomes dos personagens dos filmes Ghibli. Utilizando o filtro "Espécie",ele pode obter os personagens da espécie selecionada e ao mesmo tempo a quantidade que essa categoria representa meio às animações.
+
+_Definição de pronto_: A função que está filtrando as espécies e calculando o tamanho dessa categoria está passando em 100% dos testes.
+
+- História de usuário 05
+
+-Eu, que sou fã de animes, quero entrar no site da Ghibli e poder ver todos os personagens esaber a quantidade de cada gênero existente.
+
+_Critérios de aceitação_: Na página de personagens, o usuário pode utilizar o filtro "Gênero" e obter os personagens por gênero, bem como a quantidade que cada um representa. 
+
+_Definição de pronto_: A função que está filtrando o gênero e calculando o tamanho dessa categoria está passando em 100% dos testes.
 ### Testes de usabilidade
 
 Durante o desenvolvimento, fizemos alguns testes com os usuários para que pudessem avaliar a interatividade do site, então decidimos adicionar no canto direito da tela um botão para limpar os filtros antes de fazer uma nova pesquisa.
@@ -92,7 +122,7 @@ Utilizamos o [Adobe Colors](https://color.adobe.com/pt/create/color-wheel) para 
 ![Paleta de cores](src/img/paleta.adobe.JPG)
 ## 7. Funcionalidades
 
-Layout responsivo, facilidade de navegação entre páginas e opções de filtros para pesquisa.
+Facilidade de navegação entre páginas e opções de filtros para pesquisa.
 
 ![Layout responsivo](src/img/pag-responsiva.JPG)
 

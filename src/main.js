@@ -17,7 +17,7 @@ document.getElementById("infoCards").innerHTML = data.map(
             <ul class = "telaTextCard">
                 <li class="nome_personagem"><strong> </strong>${item.name}</li>
                 <li class="li_categorias"><strong class="categoria_filtro">Espécie: </strong>${item.species}</li>
-                <li class="li_categorias"><strong class="categoria_filtro"><style= color:color: #CEFF93;>Status: </strong>${item.status}</li>
+                <li class="li_categorias"><strong class="categoria_filtro">Status: </strong>${item.status}</li>
                 <li class="li_categorias"><strong class="categoria_filtro">Gênero: </strong>${item.gender}</li>
                 <li class="li_categorias"><strong class="categoria_filtro">Local de Origem: </strong>${item.origin.name}</li>
             </ul>
@@ -36,14 +36,18 @@ const selecaoStatus = document.querySelector("#status-filter");
 const selecaoSpecies = document.querySelector("#species-filter");
 const alphaOrder = document.querySelector("#order-filter");
 
-//mudar todos os getElementById juntos
-
 const porcentagem = document.getElementById("porcentagemFiltro");
 const searchName = document.getElementById("text-search");
-const btnLimpar = document.getElementById("btn_reset")
+const btnLimpar = document.getElementById("btn_reset");
+const porcentagem = document.getElementById("porcentagemFiltro");
 
 
 ///função para imprimir os filtros com a % 
+
+function imprimirPorcentagem(data) {
+    porcentagem.innerHTML = `Aqui possui ${data}`
+    porcentagem.style.display = 'inline-block'
+}
 
 function imprimirPorcentagem(data) {
     porcentagem.innerHTML = `Aqui possui ${data}`
@@ -93,5 +97,4 @@ selecaoGenero.addEventListener("change", imprimirFiltroGenero);
 selecaoStatus.addEventListener("change", imprimirFiltroStatus);
 selecaoSpecies.addEventListener("change", imprimirFiltroSpecies);
 alphaOrder.addEventListener("change", imprimirAlphaOrder);
-searchName.addEventListener("keyup", imprimirFiltroName);
 btnLimpar.addEventListener("click", limparFiltros)

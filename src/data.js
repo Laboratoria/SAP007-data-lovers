@@ -39,6 +39,6 @@ export const filterGender = (films, selectedGender) => {
 };
 
 
-export const calculoCharacters = (data) => {
-  return data.length;
+export const calculoCharacters = (dataFiltered, data) => {
+  return (dataFiltered.length/data.length) * 100;
 }

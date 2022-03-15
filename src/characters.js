@@ -54,14 +54,13 @@ const amountSpecie = document.getElementById('result-percent')
 function showAmountSpecie(selectedFilter) {
 
     const selectSpecie = document.getElementById('select-specie').value;
-    const calculo = calculoCharacters(selectedFilter);
+    const calculoPercent = calculoCharacters(selectedFilter, arrPeople).toFixed(0);
     amountSpecie.innerHTML =
         `
     <div class="character-amount-container>
-    <p class="character-amount"> Existe um total de ${calculo} personagen(s) da espécie ${selectSpecie} </p>
+    <p class="character-amount"> ${calculoPercent}% dos personagen(s) são da espécie ${selectSpecie}</p>
     <div>
-    `
-        ;
+    `;
 
 }
 
@@ -70,11 +69,11 @@ const amountGender = document.getElementById('result-percent')
 function showAmountGender(selectedFilter) {
 
     const selectGender = document.getElementById('select-gender').value;
-    const calculo = calculoCharacters(selectedFilter);
+    const calculoPercent = calculoCharacters(selectedFilter, arrPeople).toFixed(0);
     amountGender.innerHTML =
         `
-    <div class="character-amount-container>
-    <p class="character-amount"> Existe um total de ${calculo} personagen(s) do gênero ${selectGender} </p>
+    <div class="characcalculoPercentter-amount-container>
+    <p class="character-amount"> ${calculoPercent} % dos personagen(s) são do gênero ${selectGender}</p>
     <div>
     `
         ;

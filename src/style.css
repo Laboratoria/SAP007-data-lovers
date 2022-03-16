@@ -209,7 +209,7 @@ main {
 @media(max-width: 375px) {
   .cabecalho{
     height: 170px;
-    width: 360px;
+    width: 375px;
   }
   .menupaginas{
     display: flex;
@@ -255,6 +255,6 @@ option, .label{
   bottom: 0;
   height: 3.0em;
   font-size: 12px;
-  width: 360px;
+  width: 375px;
 }
 }

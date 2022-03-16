@@ -28,7 +28,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.linkpaginas {
+.linkpaginasP, .linkpaginasE {
   color: #f2e394;
   text-shadow: 1px 1px 3px #a61c28;
   font-size: 1.25rem;
@@ -205,38 +205,40 @@ main {
   color: #ffffff;
 }
 
-/*pagina da trivia*/
 
-.mainCuriosidades {
-  border-radius: 1rem;
-  color: #26353e;
-  padding: 20px;
-  background-color: #a2b9df;
-  width: 60%;
-  margin:  0 auto;
-}
-.trivia_foto {
-  float: left;
-  height: 232px;
-  padding: 20px;
-}
-.subtitulo {
-  font-size: 18px;
-}
+@media(max-width: 375px) {
+  .cabecalho{
+    height: 170px;
+    width: 360px;
+  }
+  .menupaginas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  nav{
+    margin: 0.5px;
+    padding: 1px;
+  }
+  .titulosite {
+    font-size: 30px;
+  }
+  .linkpaginasP, .linkpaginasE{
+    font-size: 20px;
+  }
 
-
-@media(max-width: 767px) {
   div.container_filtros_search_ordem{
-    width: 70%;
+    width: 360px
 }
 
 .menufiltros, .ordenacaoA-Z{
   gap: 5px;
-  width: 70%;
+  width: 200px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .filtro{
   width: 200px;
@@ -244,17 +246,7 @@ main {
 option, .label{
   font-size: 15px;
 }
-  .titulosite{
-    font-size: 30px;
-  }
-  .linkpaginas{
-    font-size: 30px;
-  }
-  .cabecalho{
-    height: 150px;
-    width: 425px;
-    align-content: space-around;
-  }
+
   .back-to-top-wrapper {
     right: 1.25rem;
   }
@@ -263,6 +255,6 @@ option, .label{
   bottom: 0;
   height: 3.0em;
   font-size: 12px;
-  width: 425px;
+  width: 360px;
 }
 }

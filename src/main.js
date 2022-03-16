@@ -42,10 +42,6 @@ const btnLimpar = document.getElementById("btn_reset");
 
 ///função para imprimir os filtros com a % 
 
-function imprimirPorcentagem(data) {
-    porcentagem.innerHTML = `Aqui possui ${data}`
-    porcentagem.style.display = 'inline-block'
-}
 
 function imprimirPorcentagem(data) {
     porcentagem.innerHTML = `Aqui possui ${data}`

@@ -1,9 +1,22 @@
-// estas funciones son de ejemplo
+//export const anotherExample = () => {
+  //return 'OMG';
+//};
 
-export const example = () => {
-  return 'example';
-};
+/*export const groupCountry = (data) => {
+  return data.sort((a, b) => {
+  const countryA = a.team.toUpperCase();
+  const countryB = b.team.toUpperCase();
+  if (countryA > countryB) {
+    return 1;
+  }
+  if (countryA < countryB) {
+    return -1;
+  }
+  return 0;
+});
+};*/
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+/*const filterSport = data.athletes.filter((chooseSport) => {
+  return chooseSport.sport
+});*/
+

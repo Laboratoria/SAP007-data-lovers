@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Olímpiadas Rio 2016 </title>
-  <link rel="stylesheet" href="stylePaíses.css" />
+  <link rel="stylesheet" href="styleCountries.css" />
 </head>
 
 <body>
 
   <header>
-    <div class="banner-oficial">
+    <div class="banner-official">
       <img src="img/bannerOficial2.png" alt="logo da Olímpiadas Rio 2016 com fundo colorido" class="banner">
     </div>
 
@@ -19,13 +19,21 @@
     <ul class="menu">
       <li class="item-menu"><a href="/index" id="Home" class="links">🏅Home</a></li>
       <li class="item-menu"><a href="/atletas" id="Ath" class="links">🏅Atletas</a></li>
-      <li class="item-menu"><a href="/países" id="Países" class="links">🏅Países</a></li>
+      <li class="item-menu"><a href="/countries.html" id="countries" class="links">🏅Países</a></li>
     </ul>
   </nav>
 
-  <main id="cards-países"></main>
+  <section class="blue-rectangle">
+    <select id="ordering-country" class="selection-country">
+      <option selected disabled value="" class="option">País</option>
+      <option value="a-z" class="option">Ordem A-Z</option>
+      <option value="z-a" class="option">Ordem Z-A</option>
+    </select>
+  </section>
 
-  <footer class="rodapé margem">
+  <main id="cards-countries" class="flex-conteiner-countries"></main>
+
+  <footer class="footer">
     Developed by:
     Jaqueline de Oliveira
     <a href="https://github.com/jaquelinedeoliveira93" target="_blank" icon="logo-github">
@@ -42,6 +50,7 @@
       <img src="img/logo-linkedin.png" alt="logo-link" width="25" height="25" class="gitHub-linkedin"></a>
   </footer>
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <script src="country.js" type="module"></script>
   </body>
 </html>
+

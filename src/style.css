@@ -28,7 +28,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.linkpaginasP, .linkpaginasE {
+.linkpaginas{
   color: #f2e394;
   text-shadow: 1px 1px 3px #a61c28;
   font-size: 1.25rem;
@@ -209,7 +209,7 @@ main {
 @media(max-width: 375px) {
   .cabecalho{
     height: 170px;
-    width: 360px;
+    width: 375px;
   }
   .menupaginas{
     display: flex;
@@ -224,7 +224,7 @@ main {
   .titulosite {
     font-size: 30px;
   }
-  .linkpaginasP, .linkpaginasE{
+  .linkpaginas{
     font-size: 20px;
   }
 
@@ -255,6 +255,6 @@ option, .label{
   bottom: 0;
   height: 3.0em;
   font-size: 12px;
-  width: 360px;
+  width: 375px;
 }
 }

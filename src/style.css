@@ -27,7 +27,8 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
-.linkpaginas {
+
+.linkpaginasP, .linkpaginasE {
   color: #f2e394;
   text-shadow: 1px 1px 3px #a61c28;
   font-size: 1.25rem;
@@ -47,8 +48,8 @@ h1 {
   margin: 0 auto;
   margin-top: 2%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -70,7 +71,6 @@ h1 {
   justify-items: flex-end;
   grid-gap: 1rem;
 }
-
 .cards {
   border: #a2b9df solid 2px;
   padding: 0.938rem;
@@ -182,6 +182,7 @@ main {
   padding: 0.25rem;
 }
 
+
 .back-to-top-wrapper {
   position: absolute;
   right: 0.25rem;
@@ -205,81 +206,55 @@ main {
 }
 
 
-@media (max-width: 767px) {
-  div.container_filtros_search_ordem {
+@media(max-width: 375px) {
+  .cabecalho{
+    height: 170px;
+    width: 360px;
+  }
+  .menupaginas{
     display: flex;
-    flex-direction: column;
-    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  div.container_filtros_search_ordem select:not(:last-child) {
-    margin-bottom: 10px;
+  nav{
+    margin: 0.5px;
+    padding: 1px;
   }
-  .menufiltros,
-  .ordenacaoA-Z {
-    gap: 5px;
-  }
-  option,
-  .label {
-    font-size: 10px;
-  }
-  .logo,
   .titulosite {
+    font-size: 30px;
+  }
+  .linkpaginasP, .linkpaginasE{
     font-size: 20px;
   }
-  .cabecalho {
-    height: 15%;
-  }
-  .rodape .btn_top {
-    height: 8%;
-    font-size: 10px;
-  }
-  .nome_personagem {
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: #ceff93;
-  }
 
-  .categoria_filtro {
-    color: #b8cfff;
-  }
+  div.container_filtros_search_ordem{
+    width: 360px
+}
 
-  .back-to-top-link {
-    display: inline-block;
-    position: fixed;
-    pointer-events: all;
-    top: calc(100vh - 5rem);
-    text-decoration: none;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    padding: 0.25rem;
-  }
+.menufiltros, .ordenacaoA-Z{
+  gap: 5px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filtro{
+  width: 200px;
+}
+option, .label{
+  font-size: 15px;
+}
 
   .back-to-top-wrapper {
-    position: absolute;
-    right: 0.25rem;
-    bottom: -5em;
-    width: 3em;
-    pointer-events: none;
+    right: 1.25rem;
   }
 
-  .rodape {
-    background-color: #26353e;
-    position: fixed;
-    padding: 1em 1em 1em 1em;
-    bottom: 0;
-    width: 100%;
-    height: 3em;
-    text-align: center;
-    font-size: 12px;
-    justify-content: space-around;
-    display: flex;
-    color: #ffffff;
-  }
+.rodape{
+  bottom: 0;
+  height: 3.0em;
+  font-size: 12px;
+  width: 360px;
+}
 }

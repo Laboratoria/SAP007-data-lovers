@@ -37,7 +37,6 @@ export const filtroOrder  = (data, order) => {
       return data.sort((a, b) => a.name > b.name ? 1 : -1)
   }
 }
-
 export const calculoPorcentagem = (total, portion) => {
   const porcentagem = Math.round((portion * 100) / total);
   return porcentagem;

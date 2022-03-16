@@ -29,18 +29,19 @@ document.getElementById("infoCards").innerHTML = data.map(
 }
 imprimirCardsTela(data.results);
 
-///pegar O seletor do filtro ' x'
+///Todos os querySelector juntos
 
 const selecaoGenero = document.querySelector("#gender-filter");
 const selecaoStatus = document.querySelector("#status-filter");
 const selecaoSpecies = document.querySelector("#species-filter");
 const alphaOrder = document.querySelector("#order-filter");
 
+const porcentagem = document.getElementById("porcentagemFiltro");
 const searchName = document.getElementById("text-search");
 const btnLimpar = document.getElementById("btn_reset");
-const porcentagem = document.getElementById("porcentagemFiltro");
 
-///função para imprimir o filtro 'x'
+///função para imprimir os filtros com a % 
+
 
 function imprimirPorcentagem(data) {
     porcentagem.innerHTML = `Aqui possui ${data}`
@@ -89,6 +90,6 @@ window.location.reload();
 selecaoGenero.addEventListener("change", imprimirFiltroGenero);
 selecaoStatus.addEventListener("change", imprimirFiltroStatus);
 selecaoSpecies.addEventListener("change", imprimirFiltroSpecies);
-searchName.addEventListener("keyup", imprimirFiltroName);
 alphaOrder.addEventListener("change", imprimirAlphaOrder);
-btnLimpar.addEventListener("click", limparFiltros)
+searchName.addEventListener("keyup", imprimirFiltroName);
+btnLimpar.addEventListener("click", limparFiltros);

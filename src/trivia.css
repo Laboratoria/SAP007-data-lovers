@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+h1 {
+    color: #f2e394;
+    text-shadow: 1px 1px 3px #a61c28;
+    font-family: "Play", sans-serif;
+}
+.cabecalho {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.25rem;
+    background-color: #a1cf63;
+}
+.menupaginas {
+    display: flex;
+    justify-content: space-evenly;
+}
+.linkpaginas {
+    color: #f2e394;
+    text-shadow: 1px 1px 3px #a61c28;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: "Play", sans-serif;
+    text-decoration: dashed;
+}
+
+.mainCuriosidades {
+    border-radius: 1rem;
+    color: #26353e;
+    padding: 20px;
+    background-color: #a2b9df;
+    width: 60%;
+    margin:  0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trivia_foto {
+    float: left;
+    height: 232px;
+    padding: 20px;
+}
+.subtitulo {
+    font-size: 18px;
+}
+
+.btn_Lou {
+    max-width: 100px;
+    max-height: 25px;
+    width: auto;
+    float: left;
+}
+.btn_Malu {
+    max-width: 100px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+    float: right;
+}
+.rodape {
+    background-color: #a1cf63;
+    position:relative;
+    padding: 1em 1em 1em 1em;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    font-size: 12px;
+    justify-content: space-around;
+    display: flex;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .logo,
+    .titulosite {
+    font-size: 20px;
+    }
+    .cabecalho {
+    height: 15%;
+    }
+    .rodape {
+    height: 8%;
+    font-size: 10px;
+    }}

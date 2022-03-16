@@ -30,11 +30,11 @@ export const filtroName = (data, condition) => {
 };
 
 export const filtroOrder  = (data, order) => {
+  
   if (order === "Z-A") {
       return data.sort((a, b) => a.name > b.name ? -1 : 1)
   } else if (order === "A-Z") {
       return data.sort((a, b) => a.name > b.name ? 1 : -1)
-  } else{
   }
 }
 export const calculoPorcentagem = (total, portion) => {

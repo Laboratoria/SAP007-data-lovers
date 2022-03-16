@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+h1 {
+    color: #f2e394;
+    text-shadow: 1px 1px 3px #a61c28;
+    font-family: "Play", sans-serif;
+}
+.cabecalho {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.25rem;
+    background-color: #a1cf63;
+}
+.menupaginas {
+    display: flex;
+    justify-content: space-evenly;
+}
+.linkpaginas {
+    color: #f2e394;
+    text-shadow: 1px 1px 3px #a61c28;
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: "Play", sans-serif;
+    text-decoration: dashed;
+}
+
+.segunda-linha, .primeira-linha { 
+    margin-top: 2%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}  
+.btn_Lou {
+    max-width: 100px;
+    max-height: 25px;
+    width: auto;
+    float: left;
+}
+.btn_Malu {
+    max-width: 100px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+    float: right;
+}
+.rodape {
+    background-color: #a1cf63;
+    position:relative;
+    padding: 1em 1em 1em 1em;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    font-size: 12px;
+    justify-content: space-around;
+    display: flex;
+    color: #ffffff;
+}

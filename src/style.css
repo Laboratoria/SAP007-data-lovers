@@ -204,25 +204,6 @@ main {
   color: #ffffff;
 }
 
-/*pagina da trivia*/
-
-.mainCuriosidades {
-  border-radius: 1rem;
-  color: #26353e;
-  padding: 20px;
-  background-color: #a2b9df;
-  width: 60%;
-  margin:  0 auto;
-}
-.trivia_foto {
-  float: left;
-  height: 232px;
-  padding: 20px;
-}
-.subtitulo {
-  font-size: 18px;
-}
-
 
 @media (max-width: 767px) {
   div.container_filtros_search_ordem {

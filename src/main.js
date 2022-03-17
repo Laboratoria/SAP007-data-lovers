@@ -1,13 +1,11 @@
-import {
-  example
-} from './data.js';
+import {filterFilms} from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
+const films = data.films
 
-
-function printCards(films) {
-  document.getElementById('cardsFilms').innerHTML = films.map((item) =>
+function printCards(filmes) {
+  document.getElementById('cardsFilms').innerHTML = filmes.map((item) =>
     `
   <div class="Cards">
     <div class="cardFlip">
@@ -31,27 +29,26 @@ function printCards(films) {
   .join('');
 }
 
-printCards(data.films)
-console.log(example, data);
+printCards(films)
+console.log(data);
+
+const searchMovie = () =>{
+  const valueSelec = searchFilms.value;
+  const movieSelec = filterFilms(films, valueSelec);
+  printCards(movieSelec);
+}
+
+const searchFilms = document.querySelector("#inputSearch");
+searchFilms.addEventListener("keyup", searchMovie);
 
 
-const inputFilms = document.getElementById("inputSearch");
-inputFilms.addEventListener("keyup", () => {
-  const searched = document.getElementById("inputSearch").value;
-  console.log(searched)
-})
+/*const ordenator = (e) =>{
+  const orderSelec = e.target.value;
+  if (orderSelec !== ""){
+    const filterOrder = filters(films, orderSelec)
+    printCards(filterOrder)
+  }
+}
+const order = document.getElementById("inputOrder")
+order.addEventListener ("change", ordenator)*/
 
-
-
-
-/* `
-    <figure>
-  <img src = "${item.poster} class = "poster">
-  </figure>
-
-  <section>
-    <p class = "infoFilms"><strong>Title:</strong>${item.title}</p><br>
-    <p class = "infoFilms"><strong>Description</strong>${item.description}</p><br>
-    <p class = "infoFilms"><strong>Director</strong>${item.director}<p><br>
-  </section>
-    `</p></p>*/

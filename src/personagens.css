@@ -9,20 +9,37 @@ body {
   font-family: 'Didact Gothic';
   color: white;
   overflow-x: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
-
+  max-width: 100%;
+  max-height: 100%;
 }
 
-header{
-  width: 100%;
-  margin: auto;
-  height: 20%;
-  display: inline-flex;
-  justify-content: space-evenly;
+header {
+  display: flex;
+  width: 98%;
+  height: 30%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
-  text-align: center;
-  padding-bottom: 1vmax;
+}
+
+.list{
+  display: inline-flex;
+}
+
+.content{
+  list-style-type: none;
+  margin: 2% 15%;
+}
+
+.imglogo{
+  display: end;
+
+}
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  height: 15vh;
 }
 
 a {
@@ -37,69 +54,140 @@ a:visited {
   font-weight: normal;
 }
 
-a:hover{
-  font-weight:bold;
+a:hover {
+  font-weight: bold;
 }
 
-button {
-  background: #003563;
-  color: white;
-  font: 'Didact Gothic';
-  margin: auto;
-  border: none;
-  cursor: pointer;
-  text-decoration-line: none;
-  font-size: 2vmax;
-}
-
-.logo {
-  float: center;
-  width: auto;
-  margin: 0;
-  height: 12vh;
-  max-width: auto;
-}
-
-.imagemChihiro {
+main {
   display: flex;
-  float: center;
-  width: auto;
-  max-width: 70%;
-  max-height: max-content;
-  margin: auto;
-  border-radius: 1%;
-}
-
-.mainPersonagens{
-  display:flex;
+  background-color: #95bad7;
+  color: #003563;
   margin: auto;
   background-color: #95bad7;
+  flex-direction: row;
   justify-content: center;
   justify-items: center;
-  min-height: 70vh;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 .filterCharacters{
+  display: inline-flex;
   color: #003563;
   background-color: #95bad7;
   margin: 1vmax;
-  border-radius:5px;
-  border: 0.1max solid#003563;
+  border-radius: 0.5vmax;
+  border: 0.1vmax solid #003563;
   border-color: #003563;
-  height: 2vmax;
+  height: 4vh;
+  width: auto;
   font-size: 1vmax;
   text-align: center;
-  box-shadow: inset 0 0 0.3em #003563;
+  box-shadow: inset 0 0 0.3em #003563
 }
 
 .inputCharacters{
-  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.inputCharacters::placeholder{
-  color:#003563;
-  text-align:center;
+.cardsCharacters{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+.card{
+  height: 275px;
+  width: 250px;
+  box-shadow: #003563 0 0 1em;
+  background-color: #003563;
+  color: #95bad7;
+  margin: 2% 5% 5% 2%;
+  border-radius: 2%;
+}
+
+.flip-card{
+  height: 275px;
+  width: 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  position: relative;
+  border-radius: 2%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card:hover{
+  transform: rotateY(180deg);
+}
+
+.frontCard, .backCard{
+  backface-visibility: hidden;
+  position: absolute;
+  color: #95bad7;
+  height: 275px;
+  width: 250px;
+}
+
+.backCard {
+  transform: rotateY(180deg);
+  background-color: #003563;
+  border-radius: 10px;
+  color: #bcd0df;
+  height: 275px;
+  width: 250px;
+  font-size: 1.4vh;
+}
+
+.characterPoster{
+  height: 275px;
+  width: 250px;
+  border-radius: 2% ;
+}
+
+.nomePersonagem{
+  margin-top: 5%;
+  font-size: 2vh;
+}
+
+@media screen and (max-width: 640px) {
+  header{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo{
+    width: 35vw;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .content{
+    margin: 0% 10%;
+    max-width: 30%;
+  }
+
+  .carac{
+    margin: 0% 17% 0% 0%;
+  }
+}
+
+body::-webkit-scrollbar{
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: darkgray;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #003563;
+  border-radius: 20px;
+  border: darkgray solid 1px;
 }
 
 hr {
@@ -115,3 +203,4 @@ footer {
   font-size: 1.2vmax;
   justify-content: center;
 }
+

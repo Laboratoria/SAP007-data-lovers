@@ -1,1 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
+}
+body {
+  background-image: url(image/PokeBackground.jpg);
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #e27712;
+  height: 30%;
+  width: 100%;
+  opacity: 50%;
+  display: flex;
+}
+
+
+.search-button{
+  background-color:#434343
+}
+
+.header-logo {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar, .select-typefilters, .refresh-button {
+  float: left;
+  margin: auto;
+  background-color:#E0EEEE;
+  border:solid 2px #308f92;
+  border-radius:10px;
+  width:254px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/*.btnSearch, #types-filter,.txt-Search{
+  float:left;
+  background-color:transparent;
+  font-size:15px;
+  border:none;
+  border-color: transparent;
+  height: 20px;
+  width:192px;
+}
+
+
+/*.btn-Search{
+  border:none;
+  border-color: transparent;
+  float:left;
+  width: 58px;
+  height: 22px;
+  border-radius:0 7px 7px 0;
+  font-weight:bold;
+  background:#5F9EA0;
+}*/
+
+
+.cards {
+  display: flex;
+  width: 98%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-gap: 5em;
+  padding: 2em;
+  background-image: url(images/pattern.jpg);
+}
+
+.info-cards{
+  max-width: 200px;
+  font-size: 0.9em;
+  text-align:center;
+  padding:0.8em;
+  color:rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font: arial; color: #434343;
+  border-radius:16px ; 
+} 

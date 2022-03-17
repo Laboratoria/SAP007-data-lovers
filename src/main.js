@@ -33,10 +33,10 @@ document.addEventListener("change", () => {
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
-  const filtroDiretor = filmesDiretores(filmes, directorSelect);
+  const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
 
-
+//console.log(directorSelect)
 })
 
 

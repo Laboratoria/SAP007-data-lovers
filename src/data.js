@@ -1,8 +1,8 @@
 
 
-export const filmesDiretores = (filmes) => {
+export const filmesDiretores = (filmes, directorSelect) => {
   return filmes.films.filter((directorName) => {
-    return directorName.director === target.value
+    return directorName.director === directorSelect
   });
 };
 

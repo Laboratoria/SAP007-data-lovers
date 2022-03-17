@@ -1,4 +1,4 @@
-import {filterFilms} from './data.js';
+import {filterFilms/*filters*/} from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 

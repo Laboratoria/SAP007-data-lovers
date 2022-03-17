@@ -22,9 +22,7 @@ header {
   align-items: center;
 }
 
-
 .list{
-header {
   display: inline-flex;
 }
 
@@ -64,7 +62,6 @@ main {
   display: flex;
   background-color: #95bad7;
   color: #003563;
-  width: 100%;
   margin: auto;
   background-color: #95bad7;
   justify-content: center;

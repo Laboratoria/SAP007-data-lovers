@@ -12,10 +12,48 @@
 </head>
 
 <body>
-  <header>Filmography:</header>
-  <div class="btnAz"><button>A-Z</button></div>
+  <header>
+    <h1>Filmography:</h1>
+
+    <section class="filter">
+
+        <select name="films" id="films">
+          <option value="filmes">Filmes A-Z</option>
+        </select>
+      <select class="director" id = "director">
+       <option selected value="none">Diretores</option>
+       <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+       <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+       <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+       <option value="Isao Takahata">Isao Takahata</option>
+       <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+     </select>
+
+     <select class="year" id="year">
+       <option selected value="none">Ano</option>
+       <option value="1980-1990">1980 - 1990</option>
+       <option value="1990-2000">1990 - 2000</option>
+       <option value="2000-2010">2000 - 2010</option>
+       <option value="2010-2020">2010 - 2020</option>
+     </select>
+
+     <select name="score" id="score">
+       <option text="crescente">Score (crescente)</option>
+       <option text="decrescente">Score (decrescente)</option>
+     </select>
+
+
+    </section>
+
+
+
+  </header>
+
+
   <div class="cards" id="cards"></div>
   <div class="infos"></div>
+
+
   <script src="main.js" type="module"></script>
 </body>
 </html>

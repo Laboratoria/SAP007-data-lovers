@@ -11,7 +11,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  /* display: flex */
+  overflow-x: hidden;
 }
 
 header {
@@ -19,39 +19,23 @@ header {
   height: 30%;
   width: 100%;
   opacity: 50%;
+  display: flex;
 }
 
 
 .search-button{
   background-color:#434343
-
 }
 
 .header-logo {
-  opacity: 100%;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
 
-
-/*.searc{
-=======
-.btn-types{
-  border-radius: 50%;
-  display: flex;
-  width: 10%;
-  
-}
-
-
-.searc{
-  display:flex;
-  width:70vw;
-  align-items: center;
-}
-
-
-.search-bar{
+.search-bar, .select-typefilters, .refresh-button {
+  float: left;
+  margin: auto;
   background-color:#E0EEEE;
   border:solid 2px #308f92;
   border-radius:10px;
@@ -64,10 +48,8 @@ header {
 }
 
 
-<<<<<<< HEAD
-.btnSearch, #types-filter {
-=======
-.txt-Search{
+
+/*.btnSearch, #types-filter,.txt-Search{
   float:left;
   background-color:transparent;
   font-size:15px;
@@ -78,7 +60,7 @@ header {
 }
 
 
-.btn-Search{
+/*.btn-Search{
 >>>>>>> ddfdfb3416a78ba940cd0b9504a0cf6bcfa91a8e
   border:none;
   border-color: transparent;
@@ -88,7 +70,7 @@ header {
   border-radius:0 7px 7px 0;
   font-weight:bold;
   background:#5F9EA0;
-}
+}*/
 
 
 .cards {
@@ -99,7 +81,8 @@ header {
   flex-direction: row;
   grid-gap: 5em;
   padding: 2em;
-  }
+  background-image: url(images/pattern.jpg);
+}
 
 .info-cards{
   max-width: 200px;
@@ -110,6 +93,5 @@ header {
   background-color:rgb(255, 255, 255);
   font: arial; color: #434343;
   border-radius:16px ; 
-
 } 
 

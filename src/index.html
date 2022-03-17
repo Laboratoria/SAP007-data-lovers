@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="title-area" href="">
+    <img class="header-logo" src="image/logo.png">
+  </header>
+  <main>
+
+    <div class="search-bar">
+      <input type="text" class="txt-search" placeholder="Search By Name" />
+    </div>
+    <div id="types">
+      <div class="calculation" id="calculation"></div>
+      <select id="types-filter" class="select-typefilters">
+
+        <option disabled="" selected="">Select types</option>
+        <option value="water">Water</option>
+        <option value="dragon">Dragon</option>
+        <option value="electric">Eletric</option>
+        <option value="fairy">Fairy</option>
+        <option value="ghost">Ghost</option>
+        <option value="fire">Fire</option>
+        <option value="ice">Ice</option>
+        <option value="grass">Grass</option>
+        <option value="bug">Bug</option>
+        <option value="fighting">Fighting</option>
+        <option value="normal">Normal</option>
+        <option value="rock">Rock</option>
+        <option value="psychic">Psychic</option>
+        <option value="ground">Ground</option>
+        <option value="poison">Poison</option>
+        <option value="flying">Flying</option>
+        </select>
+        <nav>
+          <div class="cards" id="cards"></div>
+        </nav>
+        <button class="refresh-button">Refresh</button>
+  </main>
+
+  <!-- <footer>
+    <li>About us</li>
+    <li>About POKÉMON ARENA</li>
+    </footer>-->
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

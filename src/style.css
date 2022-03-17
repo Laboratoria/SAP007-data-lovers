@@ -9,7 +9,6 @@
 
 h1 {
   color: #f2e394;
-  text-shadow: 1px 1px 3px #a61c28;
   font-family: "Play", sans-serif;
 }
 
@@ -20,7 +19,7 @@ h1 {
   text-align: center;
   flex-direction: column;
   font-size: 1.25rem;
-  background-color: #a1cf63;
+  background-color: #733250;
 }
 
 .menupaginas {
@@ -30,7 +29,6 @@ h1 {
 
 .linkpaginasP, .linkpaginasE {
   color: #f2e394;
-  text-shadow: 1px 1px 3px #a61c28;
   font-size: 1.25rem;
   font-weight: 800;
   font-family: "Play", sans-serif;
@@ -141,7 +139,6 @@ main {
   color: #b8cfff;
 }
 
-
 .btn_reset {
   width: 4rem;
   text-align: center;
@@ -151,18 +148,17 @@ main {
   border: #f76a68 solid 1px;
   background-color: #f76a68;
 }
-
-.btn_Lou {
+.btn_Lou, .btn_Mal{
   max-width: 100px;
   max-height: 25px;
   width: auto;
+}
+.btn_Lou {
   float: left;
 }
-
 .btn_Malu {
   max-width: 100px;
   max-height: 25px;
-  width: auto;
   height: auto;
   float: right;
 }
@@ -182,7 +178,6 @@ main {
   padding: 0.25rem;
 }
 
-
 .back-to-top-wrapper {
   position: absolute;
   right: 0.25rem;
@@ -192,7 +187,7 @@ main {
 }
 
 .rodape {
-  background-color: #a1cf63;
+  background-color: #733250;
   position: fixed;
   padding: 1em 1em 1em 1em;
   bottom: 0;
@@ -231,7 +226,6 @@ main {
   div.container_filtros_search_ordem{
     width: 360px
 }
-
 .menufiltros, .ordenacaoA-Z{
   gap: 5px;
   width: 200px;

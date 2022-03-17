@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <div class="logo">
+      <img src="./imagens/Studio_Ghibli_logo_gato.png" alt="logo" width="400" height="200">
+    </div>
+
+      <h1>Bem vindo (a) ao serviço de buscas da KiKi!
+      <br> Escolha a categoria que deseja buscar:
+      </h1>
+
+      <div class="btnFilmes">
+      <a href="/src/films.html">Filmografia</a>
+      </div>
+
+      <section class="filter">
+       <select class="director" id = "director">
+        <option selected value="none">Diretores</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+      </select>
+
+      <select class="people" id="people">
+        <option selected value="none">Personagens</option>
+        <optgroup label="movies">
+          <option value="Howl's Moving Castle">O castelo animado</option>
+          <option value="Tales from Earthsea">Contos de Terramar</option>
+          <option value="Ponyo on the Cliff by the Sea">Ponyo - Uma amizade que veio do mar</option>
+          <option value="The Secret World of Arrietty">O mundo dos pequeninos</option>
+          <option value="From Up on Poppy Hill">A Colina das Papoilas</option>
+          <option value="The Wind Rises">Vidas ao vento</option>
+          <option value="The Tale of the Princess Kaguya">O conto da princesa Kaguya</option>
+          <option value="When Marnie Was There">Memórias de Marnie</option>
+        </optgroup>
+        <optgroup label="peopleByYear" id="peopleByYear">
+          <option value="1980-1990">1980 - 1990</option>
+          <option value="1990-2000">1990 - 2000</option>
+          <option value="2000-2010">2000 - 2010</option>
+          <option value="2010-2020">2010 - 2020</option>
+        </optgroup>
+      </select>
+
+      <select class="year" id="year">
+        <option selected value="none">Ano</option>
+        <option value="1980-1990">1980 - 1990</option>
+        <option value="1990-2000">1990 - 2000</option>
+        <option value="2000-2010">2000 - 2010</option>
+        <option value="2010-2020">2010 - 2020</option>
+      </select>
+    </section>
+</header>
+
+  <div class="imagens" id="imagens">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem3">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem2">
+    <img src="./imagens/kiki_sem fundo_certa.png" alt="kiki" id="kiki">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem4">
+    <img src="./imagens/nuvem.png" alt="nuvem" id="nuvem5">
+    <img src="./imagens/sem_rosto-Recuperado.png" alt="sem rosto" id="sem_rosto">
+    <img src="./imagens/coelhinho_de_poeira.png" alt="coelhinho de poeira" id="poeira">
+    <img src="./imagens/coelhinho_de_poeira.png" alt="coelhinho de poeira" id="poeira2">
+  </div>
+
+
+  <script src="main.js" type="module"></script>
+
+  <footer>
+    <img class="calcifer" src="./imagens/calcifer.png" alt="calcifer" id="calcifer">
+    <p class="about">Desenvolvido por Jéssika Mirella e Bruna de Paula - SAP 007 - LABORÁTORIA</p>
+  </footer>
+
+</body>
+
 </html>

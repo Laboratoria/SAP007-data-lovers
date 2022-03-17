@@ -14,11 +14,10 @@
   </header>
   <main>
 
-    <div class="search-bar">
-      <input type="text" class="txt-search" placeholder="Search By Name" />
-    </div>
-    <div id="types">
+      <input type="text" class="txt-search" />
+    
       <div class="calculation" id="calculation"></div>
+
       <select id="types-filter" class="select-typefilters">
 
         <option disabled="" selected="">Select types</option>
@@ -39,16 +38,22 @@
         <option value="poison">Poison</option>
         <option value="flying">Flying</option>
         </select>
+
+        <select name="order" id="sortBy" class="sort-by">
+            <option disabled="" selected="">Sort By</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+        </select>
+
         <nav>
           <div class="cards" id="cards"></div>
         </nav>
+
         <button class="refresh-button">Refresh</button>
+
   </main>
 
-  <!-- <footer>
-    <li>About us</li>
-    <li>About POKÉMON ARENA</li>
-    </footer>-->
+ 
   <script src="main.js" type="module"></script>
 </body>
 

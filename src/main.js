@@ -1,43 +1,22 @@
 import data from './pokemon.js';
-import {searchByName, selectType, calcType, orderBy} from './data.js'
+import { searchByName, selectType, calcType, sortAZ, sortZA  } from './data.js'
+
+const pokemons = data.pokemon;
 
 function cardsPokemons(data) {
-   const cardPokemon = document.getElementById("cards"); 
-   cardPokemon.innerHTML = data.map((item) => 
-  `<div class="info-cards"> <img src="${item.img}"/> 
+    const cardPokemon = document.getElementById("cards");
+    cardPokemon.innerHTML = data.map((item) =>
+        `<div class="info-cards"> <img src="${item.img}"/> 
    <p>${item.num}</p> 
    <p>Name:${item.name}</p> 
    <p>Type:${item.type}</p> 
    <p>About:${item.about}</p> 
    </div>`
-   ).join("") } cardsPokemons(pokemons); 
+    ).join("")
 
+} 
+cardsPokemons(pokemons);
 
-import data from './pokemon.js';
-import {searchByName, selectType, calcType, orderBy} from './data.js'
-
-const pokemons = data.pokemon.slice(0, 251);
-const cardPokemon = document.getElementById("card");
-
-
-function cardsPokemon(pokemonArray) {
-    let cards = "";
-    pokemonArray.forEach(pokemonAtual => {
-        const types = pokemonAtual.type;
-        cards +=
-            `<div class="card ${types[0]}">
-            <img class="card-image " alt="${pokemonAtual.name}" src="https://www.serebii.net/pokemongo/pokemon/${pokemonAtual.num}.png" />
-            <h2 class="card-title"> ${pokemonAtual.num}. ${pokemonAtual.name} </h2>
-            <p class="card-subtitle" id="card-subtitle">${pokemonAtual.size.height} | ${pokemonAtual.size.weight} </p>
-            <p class="card-subtitle2" id="card-subtitle2">${types.join(' | ')} </p>
-            <p class="card-subtitle3" id="card-subtitle">${pokemonAtual.generation.name} </p>
-            </div>`;
-
-    });
-    cardPokemon.innerHTML = cards;
-}
-
-cardsPokemon(pokemons);
 
 // Filtros tipo select 
 
@@ -46,7 +25,7 @@ const filterType = document.getElementById("types-filter");
 filterType.addEventListener("change", () => {
     const filterType = filterType.value;
     const arrayFiltered = selectType(filterType, pokemons);
-    cardsPokemon(arrayFiltered);
+    cardsPokemons(arrayFiltered);
     typePercent();
 })
 
@@ -66,7 +45,7 @@ const filterSelectOrder = document.querySelector("#order-search");
 filterSelectOrder.addEventListener("change", (event) => {
     const orderType = event.target.value;
     const arrayOrdered = orderBy(orderType, pokemons);
-    cardsPokemon(arrayOrdered);
+    cardsPokemons(arrayOrdered);
 })
 
 // Filtro por input (texto) de nome
@@ -87,6 +66,6 @@ filterInputType.addEventListener("keyup", (event) => {
 
     const filterName = event.target.value;
     const arrayFiltered = searchByName(filterName, pokemons);
-    cardsPokemon(arrayFiltered);
+    cardsPokemons(arrayFiltered);
 
 })

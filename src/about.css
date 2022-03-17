@@ -5,13 +5,14 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #003563;
   font-family: 'Didact Gothic';
   color: white;
   overflow-x: hidden;
   max-width: 100%;
   max-height: 100%;
-}
 
 header {
   display: flex;
@@ -84,7 +85,6 @@ main {
   align-content: center;
   align-items: center;
   box-shadow: #003563 0 0 1em inset;
-}
 
 .headerAbout {
   width: 30vw;

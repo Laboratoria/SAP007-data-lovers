@@ -14,7 +14,7 @@ export const filmesDiretores = (filmes) => {
   })
 
   console.log(filterMoviesByDirectors)
-})*/
+})
 
 
 

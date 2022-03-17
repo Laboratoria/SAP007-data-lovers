@@ -30,7 +30,7 @@ export const sortMoviesByTitle = (title) => {
 };*/
 
 
-export const filmesDiretores = (filmes) => {
+export const filmesDiretores = () => {
        const filterMoviesByDirectors = data.films.filter((directorName) => {
     return directorName.director === target.value
 

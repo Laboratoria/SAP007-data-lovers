@@ -5,9 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lover</title>
+  <link rel="stylesheet" href="styleFilms.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>Filmography:</h1>
+
+    <section class="filter">
+
+        <select name="films" id="films">
+          <option value="filmes">Filmes A-Z</option>
+        </select>
+      <select class="director" id = "director">
+       <option selected value="none">Diretores</option>
+       <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+       <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+       <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+       <option value="Isao Takahata">Isao Takahata</option>
+       <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+     </select>
+
+     <select class="year" id="year">
+       <option selected value="none">Ano</option>
+       <option value="1980-1990">1980 - 1990</option>
+       <option value="1990-2000">1990 - 2000</option>
+       <option value="2000-2010">2000 - 2010</option>
+       <option value="2010-2020">2010 - 2020</option>
+     </select>
+
+     <select name="score" id="score">
+       <option text="crescente">Score (crescente)</option>
+       <option text="decrescente">Score (decrescente)</option>
+     </select>
+
+
+    </section>
+
+
+
+  </header>
+
+
   <div class="cards" id="cards"></div>
+  <div class="infos"></div>
+
+
   <script src="main.js" type="module"></script>
 </body>
 </html>

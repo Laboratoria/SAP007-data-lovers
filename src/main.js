@@ -1,9 +1,6 @@
-import {filmesDiretores} from './data.js';
-//import data from './data/pokemon/pokemon.js';
-// import data from './data/lol/lol.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { filmesDiretores } from './data.js';
 import data from './data/ghibli/ghibli.js';
-// import data from './data/athletes/athletes.js';
+
 
 //console.log(example, data);
 
@@ -29,25 +26,20 @@ function printar(infos) {
 
 printar(infos)
 
+const btnFilmes = document.getElementById("films");
 
-
-
-
-
-
-
-document.addEventListener("change", (event) => {
+document.addEventListener("change", () => {
 
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
-  const filtroDiretor = filmesDiretores(filmes);
+  const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
 
-
+//console.log(directorSelect)
 })
 
-console.log()
+
 
 
 

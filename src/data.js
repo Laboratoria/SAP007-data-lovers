@@ -1,5 +1,10 @@
-import data from './data/ghibli/ghibli.js';
 
+
+export const filmesDiretores = (filmes) => {
+  return filmes.films.filter((directorName) => {
+    return directorName.director === target.value
+  });
+};
 
 
 /*directorsSelect.addEventListener("change", (event) => {
@@ -30,13 +35,6 @@ export const sortMoviesByTitle = (title) => {
 };*/
 
 
-export const filmesDiretores = (filmes) => {
-       const filterMoviesByDirectors = data.films.filter((directorName) => {
-    return directorName.director === target.value
-
-  });
-
-};
 
 
 

@@ -26,12 +26,12 @@ printar(infos)
 
 const btnFilmes = document.getElementById("films");
 
-document.addEventListener("change", (event) => {
+document.addEventListener("change", () => {
 
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
-  const filtroDiretor = filmesDiretores(filmes);
+  const filtroDiretor = filmesDiretores(filmes, directorSelect);
   printar(filtroDiretor)
 
 

@@ -1,4 +1,4 @@
-import data from './pokemon.js';
+import data from './data/pokemon/pokemon.js';
 import { searchByName, selectType, calcType, sortAZ, sortZA  } from './data.js'
 
 const pokemons = data.pokemon;

@@ -2,59 +2,65 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <header class="title-area" href="">
-    <img class="header-logo" src="image/logo.png">
-  </header>
-  <main>
+    <header class="title-area" href="">
+        <img class="header-logo" src="image/logo.png">
+    </header>
+    <main>
 
-      <input type="text" class="txt-search" />
-    
-      <div class="calculation" id="calculation"></div>
+        <form>
+            <input type="text" class="txt-search"/>
 
-      <select id="types-filter" class="select-typefilters">
+            <p class="calculation" id="calculation"></p>
 
-        <option disabled="" selected="">Select types</option>
-        <option value="water">Water</option>
-        <option value="dragon">Dragon</option>
-        <option value="electric">Eletric</option>
-        <option value="fairy">Fairy</option>
-        <option value="ghost">Ghost</option>
-        <option value="fire">Fire</option>
-        <option value="ice">Ice</option>
-        <option value="grass">Grass</option>
-        <option value="bug">Bug</option>
-        <option value="fighting">Fighting</option>
-        <option value="normal">Normal</option>
-        <option value="rock">Rock</option>
-        <option value="psychic">Psychic</option>
-        <option value="ground">Ground</option>
-        <option value="poison">Poison</option>
-        <option value="flying">Flying</option>
-        </select>
+            <select id="types-filter" class="select-typefilters">
 
-        <select name="order" id="sortBy" class="sort-by">
-            <option disabled="" selected="">Sort By</option>
-            <option>A-Z</option>
-            <option>Z-A</option>
-        </select>
+                <option disabled="" selected="">Select types</option>
+                <option value="water">Water</option>
+                <option value="dragon">Dragon</option>
+                <option value="electric">Eletric</option>
+                <option value="fairy">Fairy</option>
+                <option value="ghost">Ghost</option>
+                <option value="fire">Fire</option>
+                <option value="ice">Ice</option>
+                <option value="grass">Grass</option>
+                <option value="bug">Bug</option>
+                <option value="fighting">Fighting</option>
+                <option value="normal">Normal</option>
+                <option value="rock">Rock</option>
+                <option value="psychic">Psychic</option>
+                <option value="ground">Ground</option>
+                <option value="poison">Poison</option>
+                <option value="flying">Flying</option>
+            </select>
 
-        <nav>
-          <div class="cards" id="cards"></div>
-        </nav>
+            <select name="order" id="sortBy" class="sort-by">
+                <option disabled="" selected="">Sort By</option>
+                <option>A-Z</option>
+                <option>Z-A</option>
+            </select>
+
+        </form>
 
         <button class="refresh-button">Refresh</button>
 
-  </main>
 
- 
-  <script src="main.js" type="module"></script>
+
+        <ul class="cards" id="cards"></ul>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
-  //Filtro por nome de atleta 
+
+ //Filtro por nome de atleta 
 
   
   export const filterAth = (athletes, name) => { 
@@ -54,3 +55,31 @@ export const AZsort = (athletes, selectSort) => {
   }
 
  
+export const sortCountry = (athletes, selectCountry) => {
+  if (selectCountry === "a-z"){
+    return athletes.sort((a, z) => {
+      const countryA = a.team.toUpperCase();
+      const countryZ = z.team.toUpperCase();
+      if (countryA < countryZ) {
+        return -1;
+      }
+      if (countryA > countryZ) {
+        return 1;
+      }
+      return 0;
+    });
+  } else {
+    return athletes.sort((a, z) => {
+      const countryA = a.team.toUpperCase();
+      const countryZ = z.team.toUpperCase();
+      if (countryA < countryZ) {
+        return 1;
+      }
+      if (countryA > countryZ) {
+        return -1;
+      }
+      return 0;
+    });
+  }
+}
+

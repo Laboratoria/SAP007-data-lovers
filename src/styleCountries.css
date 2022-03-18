@@ -1,0 +1,97 @@
+* {
+  background-color: #F2F2F1;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner-official {
+  position: absolute;
+}
+
+.menu {
+  padding-top: 3%;
+  padding-left: 7%;
+}
+
+.item-menu {
+  list-style: none;
+  padding-left: 1%;
+  display: inline;
+  position: relative;
+  background-color: transparent;
+}
+
+.links {
+  text-decoration: none;
+  color: #0d4b92;
+  font-size: 1.375rem;
+  font-weight: bold;
+  background-color: transparent;
+  padding-top: 0.125rem;
+}
+
+.blue-rectangle {
+  position: relative;
+  background-color: #0d4b92;
+  height: 3.125rem;
+  margin-top: 29.125rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.flex-conteiner-countries {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.563rem;
+  margin-left: 15%;
+  margin-right: 14.5%;
+}
+
+.flex-item {
+  width: 16%;
+  padding-bottom: 0.125rem;
+}
+
+.background {
+  height: 116px;
+  background-image: linear-gradient(to bottom, #21A556, #248F64, #297B6B, #364987);
+  border: 0.063rem solid black;
+  list-style: none;
+  padding-left: 0;
+  border-radius: 0.25rem;
+}
+
+.contents-country {
+  background-color: transparent;
+  font-size: 1.188rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  color: whitesmoke;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 11%;
+  padding-bottom: 1%;
+}
+
+.ordering-country{
+  margin-top: 0.813rem;
+  margin-left: 1.5rem;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  padding-right: 2.75rem;
+}
+
+.clean-button{
+  border-radius: 0.188rem;
+}

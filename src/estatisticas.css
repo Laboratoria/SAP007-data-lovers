@@ -18,7 +18,7 @@ h1 {
     text-align: center;
     flex-direction: column;
     font-size: 1.25rem;
-    background-color: #a1cf63;
+    background-color: #733250;
 }
 .menupaginas {
     display: flex;
@@ -32,13 +32,18 @@ h1 {
     font-family: "Play", sans-serif;
     text-decoration: dashed;
 }
-
-.segunda-linha, .primeira-linha { 
-    margin-top: 2%;
+.graficos{
     display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center
+}
+.segunda-linha, .primeira-linha, .terceira-linha {
+    width:100%;
+    max-width:500px;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }  
 .btn_Lou {
     max-width: 100px;
@@ -54,7 +59,7 @@ h1 {
     float: right;
 }
 .rodape {
-    background-color: #a1cf63;
+    background-color: #733250;
     position:relative;
     padding: 1em 1em 1em 1em;
     bottom: 0;
@@ -65,4 +70,46 @@ h1 {
     justify-content: space-around;
     display: flex;
     color: #ffffff;
+}
+
+@media(max-width: 375px) {
+    .cabecalho{
+    height: 170px;
+    width: 375px;
+    }
+    .graficos{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+.segunda-linha,.primeira-linha,.terceira-linha {
+    width:100%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+} 
+
+    .menupaginas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    nav{
+    margin: 0.5px;
+    padding: 1px;
+    }
+    .titulosite {
+    font-size: 30px;
+    }
+    .linkpaginas{
+    font-size: 20px;
+    }
+.rodape{
+    bottom: 0;
+    height: 3.0em;
+    font-size: 12px;
+    width: 375px;
+}
 }

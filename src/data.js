@@ -6,6 +6,38 @@ export const filmesDiretores = (filmes, directorSelect) => {
   });
 };
 
+export const moviesByMaxScore = (movies) => {
+  return movies.films.sort((a, b) => {
+
+    const scoreA = a.rt_score
+    const scoreB = b.rt_score
+
+    if (scoreA > scoreB) {
+      return 1
+    }
+    if (scoreA < scoreB) {
+
+      return -1
+    }
+    return 0
+  })
+}
+
+export const moviesByMinScore = (movies) => {
+  return movies.films.sort((a, b) => {
+
+    const scoreA = a.rt_score
+    const scoreB = b.rt_score
+
+    if (scoreA < scoreB) {
+      return 1
+    }
+    if (scoreA > scoreB) {
+      return -1
+    }
+    return 0
+  })
+}
 
 /*directorsSelect.addEventListener("change", (event) => {
 
@@ -31,6 +63,7 @@ export const sortMoviesByTitle = (title) => {
     if (titleA < titleB) {
       return -1
     }
+    return 0
   });
 };*/
 

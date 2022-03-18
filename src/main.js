@@ -1,4 +1,4 @@
-import { filmesDiretores } from './data.js';
+import { filmesDiretores, moviesByMaxScore, moviesByMinScore } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -38,10 +38,18 @@ document.addEventListener("change", () => {
   const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
 
-//console.log(directorSelect)
 })
 
 
+console.log(moviesByMaxScore(data),moviesByMinScore(data))
+
+document.addEventListener("change", () => {
+
+  const scoreButton = document.getElementById("crescente");
+  const scoreRate = scoreButton.selectedIndex;
+  const selectedRate = scoreIndex
+console.log(scoreButton)
+})
 
 
 

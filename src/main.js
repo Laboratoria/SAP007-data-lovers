@@ -6,11 +6,12 @@ const pokemons = data.pokemon;
 function cardsPokemons(data) {
     const cardPokemon = document.getElementById("cards");
     cardPokemon.innerHTML = data.map((item) =>
-        `<div class="info-cards"> <img src="${item.img}"/> 
-   <p>${item.num}</p> 
-   <p>Name:${item.name}</p> 
-   <p>Type:${item.type}</p> 
-   <p>About:${item.about}</p> 
+  `<div class="info-cards"> 
+   <img class="img-card" src="${item.img}"/> 
+   <p id="num">  ${item.num}</p> 
+   <p id="name">  Name:${item.name}</p> 
+   <p id="type" > Type:${item.type}</p> 
+   <p id="about"> About:${item.about}</p> 
    </div>`
     ).join("")
 
@@ -30,7 +31,7 @@ filterType.addEventListener("change", () => {
 })
 
 function typePercent() {
-    document.getElementById("aggregate-calculation").innerHTML = "";
+    document.getElementById("calculation").innerHTML = "";
     const filterType = document.getElementById("filter-type").value;
     let result = calcType(pokemons, filterType);
 

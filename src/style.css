@@ -5,14 +5,14 @@
 
 }
 body {
-  /* background-image: url(image/PokeBackground.jpg); */
+  background-image: url(image/bg.jpg);
   height: 100vh;
   width: 100%;
   background-color: #212e61;
-  /* background-attachment: fixed;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden; */
+  overflow-x: hidden; 
 }
 
 header {
@@ -70,7 +70,7 @@ header {
   flex-direction: row;
   grid-gap: 5em;
   padding: 2em;
-  background-image: url(images/pattern.jpg);
+  border:#369b9e;
 }
 
 .info-cards{
@@ -82,4 +82,23 @@ header {
   background-color:rgb(255, 255, 255);
   font: arial; color: #434343;
   border-radius:16px ; 
+  background-color: #ce6310;
+  flex-direction: column;
 } 
+
+.img-card{
+  object-fit: fit;
+  width: 100%;
+  background-image: url(image/bg-card.png);
+}
+
+#num {
+align-self: flex-start;
+text-align: center;
+height: 25px;
+width: 42px;
+margin: 5px;
+font-weight: bold;
+border-radius: 0.3rem;
+background-color: #FFA000
+}

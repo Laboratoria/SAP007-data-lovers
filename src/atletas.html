@@ -23,6 +23,63 @@
     </ul>
   </nav>
      <section class="barraMenu">
+       <input type="text" placeholder="Athlete" class="athField" id="filterAth">
+       <img src="ordenar.png" alt="order" class="iconOrder" height="24" weight="24">
+       <select class="Order-container" id="AZsort">  
+        <option selected disabled value="">Order by:</option>
+        <option value="A-Z" id="opAZ">A-Z</option>
+        <option value="Z-A" id="opZA">Z-A</option>
+      </select>
+      <select id="ordering-medal" class="ordering-country">
+        <option selected disabled value="">🏅Medal</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Bronze">Bronze</option>
+      </select>
+      <select id="filterSport" class="order-sport">
+        <option selected disabled value="">Sports</option>
+<option value="Rowing">Rowing</option>
+<option value="Taekwondo">Taekwondo</option>
+<option value="Handball">Handball</option>
+<option value="Wrestling">Wrestling</option>
+<option value="Gymnastics">Gymnastics</option>
+<option value="Swimming">Swimming</option>
+<option value="Basketball">Basketball</option>
+<option value="Boxing">Boxing</option>
+<option value="Volleyball">Volleyball</option>
+<option value="Athletics">Athletics</option>
+<option value="Rugby Sevens">Rugby Sevens</option>
+<option value="Judo">Judo</option>
+<option value="Rhythmic Gymnastics">Rhythmic Gymnastics</option>
+<option value="Weightlifting">Weightlifting</option>
+<option value="Equestrianism">Equestrianism</option>
+<option value="Badminton"> Badminton </option>
+<option value="Water Polo">Water Polo</option>
+<option value="Football">Football</option>
+<option value="Fencing">Fencing</option>
+<option value="Shooting">Shooting</option>
+<option value="Sailing">Sailing</option>
+<option value="Beach Volleyball">Beach Volleyball</option>
+<option value="Canoeing">Canoeing</option>
+<option value="Hockey">Hockey</option>
+<option value="Cycling">Cycling</option>
+<option value="Tennis">Tennis</option>
+<option value="Diving">Diving</option>
+<option value="Table Tennis">Table Tennis</option>
+<option value="Triathlon">Triathlon</option>
+<option value="Archery">Archery</option>
+<option value="Synchronized Swimming">Synchronized Swimming</option>
+<option value="Modern Pentathlon">Modern Pentathlon</option>
+<option value="Golf">Golf</option>
+<option value="Trampolining">Trampolining</option>
+      </select>
+  
+      <button class="btn" id="refresh">Clean</button>
+  </section> 
+  
+
+  <main id="cards-atletas" class="container-atletas"></main>
+
   </section>
 
   <main id="cards-atletas" class="conteiner-atletas"></main>
@@ -45,6 +102,6 @@
       <img src="img/logo-linkedin.png" alt="logo-link" width="25" height="25" class="gitHub-linkedin"></a>
   </footer>
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <script src="atletas.js" type="module"></script>
   </body>
 </html>

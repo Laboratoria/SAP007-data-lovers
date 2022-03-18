@@ -34,16 +34,37 @@
   font-weight: bold;
   background-color: transparent;
 }
+.iconOrder{
+  position: center;
+  background: transparent;
+}
 .barraMenu{
   position:relative;
   background-color: blue;
-  height: 50px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  height: 30px;
   margin-top: 322px;
   margin-left: 15%;
   margin-right: 15%;
-
 }
-.conteiner-atletas{
+
+
+.btn{
+  border:2px solid;
+  border-radius:4px;
+  background-color: #3bc5cf;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Verdana;
+  font-weight:bold;
+  font-size:10px;
+  padding:6px 10px;
+  text-decoration:none;
+}
+
+.container-atletas{
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -58,7 +79,7 @@
   width: 160px; 
   padding-bottom: 10px;
 }
-.atletas-conteiner{
+.cards-atletas{
   height: 100%;
   background-image: linear-gradient(to bottom, #21A556, #248F64, #297B6B, #364987);
   border: 1px solid black;
@@ -66,7 +87,7 @@
   list-style: none;
   padding-left: 0;
 }
-/*@media (max-width: 1400px){*/
+
 .conteudo-atletas{
   background-color: transparent;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -76,4 +97,10 @@
   position: margin;
 
 }
-/*}*/
+.rodapé{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 11%;
+  padding-bottom: 1%;
+}

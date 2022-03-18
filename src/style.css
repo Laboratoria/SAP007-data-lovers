@@ -47,8 +47,7 @@ header {
 
 }
 
-.select-typefilters, .refresh-button, .sort-by {
-  float: center;
+.select-typefilters,.sort-by {
   margin: auto;
   border-radius: 70px;
   background-color:#E0EEEE;
@@ -59,6 +58,18 @@ header {
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.refresh-button{
+  font-family: 'Fredoka', sans-serif;
+  margin: auto;
+  border-radius: 70px;
+  background-color:#E0EEEE;
+  border:solid 2px #369b9e;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 

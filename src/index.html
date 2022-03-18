@@ -15,7 +15,7 @@
     <main>
 
         <form>
-            <input type="text" class="txt-search"/>
+            <input type="text" class="txt-search" id="txtSearch" placeholder=" Search by number or name"/>
 
             <p class="calculation" id="calculation"></p>
 
@@ -40,7 +40,7 @@
                 <option value="flying">Flying</option>
             </select>
 
-            <select name="order" id="sortBy" class="sort-by">
+            <select name="sort" id="sortAlphabet" class="sort-by">
                 <option disabled="" selected="">Sort By</option>
                 <option>A-Z</option>
                 <option>Z-A</option>
@@ -48,7 +48,7 @@
 
         </form>
 
-        <button class="refresh-button">Refresh</button>
+        <button class="refresh-button" id="refresh">Refresh</button>
 
 
 
@@ -57,7 +57,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
 
     <script src="main.js" type="module"></script>

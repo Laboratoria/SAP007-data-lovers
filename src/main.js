@@ -18,6 +18,8 @@ function cardsPokemons(data) {
 } 
 cardsPokemons(pokemons);
 
+
+
 const filterInputType = document.querySelector("txtSearch");
 
 filterInputType.addEventListener("change", () => {
@@ -40,6 +42,7 @@ filterInputType.addEventListener("keyup", (event) => {
 
 })
 
+
 function typePercent() {
     document.getElementById("calculation").innerHTML = "";
     const filterType = document.getElementById("filter-type").value;
@@ -47,6 +50,7 @@ function typePercent() {
 
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
+
 
 
 const filterType = document.getElementById("types-filter");
@@ -57,6 +61,7 @@ filterType.addEventListener("change", () => {
     cardsPokemons(arrayFiltered);
     typePercent();
 })
+
 
 const sortBy = document.getElementById("sortAlphabet");
 

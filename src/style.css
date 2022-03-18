@@ -16,11 +16,11 @@ body {
 }
 
 header {
-  background-color: #3d5eb1;
+  background-color: #212e61;
   height: 30%;
   width: 100%;
-  opacity: 50%;
   display: flex;
+  opacity: 80%;
 }
 
 
@@ -29,10 +29,11 @@ header {
 }
 
 .header-logo {
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  opacity: default;
+  
 }
+
 
 .txt-search{
   display: flex;

@@ -19,13 +19,12 @@ function cardsPokemons(data) {
 cardsPokemons(pokemons);
 
 
-// Filtros tipo select 
 
-const filterType = document.getElementById("types-filter");
+const filterType = document.querySelector(".select-typefilters");
 
 filterType.addEventListener("change", () => {
-    const filterType = filterType.value;
-    const arrayFiltered = selectType(filterType, pokemons);
+    const filterbyType = filterType.value;
+    const arrayFiltered = selectType(filterbyType, pokemons);
     cardsPokemons(arrayFiltered);
     typePercent();
 })
@@ -34,10 +33,9 @@ function typePercent() {
     document.getElementById("calculation").innerHTML = "";
     const filterType = document.getElementById("filter-type").value;
     let result = calcType(pokemons, filterType);
-
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
-
+console.log(selectType(filterType.value,pokemons))
 
 // Filtro de ordem select
 

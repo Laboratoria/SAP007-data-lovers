@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Estatísticas</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+        <ul class="menupaginas">
+            <h1  id="titulosite">Guia de Personagens de Rick & Morty</h1>
+            <li><a href="index.html" class="linkpaginasP">Personagens</a></li>
+            <li><a href="estatisticas.html" class="linkpaginasE">Estatisticas</a></li>
+        </ul>
+        </nav>
+    </header>
+
+<main class="graficos">
+    <div class="primeira-linha">
+    <canvas class="grafico-status" id="graficoStatus" style="width:100%;max-width:700px"></canvas>
+    <canvas class="grafico-genero" id="graficoGenero" style="width:100%;max-width:700px"></canvas>
+    </div>
+    <div class="segunda-linha">
+    <canvas class="grafico-especie" id="graficoEspecie" style="width:100%;max-width:800px"></canvas>
+    </div>
+</main>
+</body>
+
+<footer class="rodape">
+    <a href="https://github.com/MariaLuizaSantana" class="btn_Lou"><img src="git.png" alt="logoGit" class="btn_Malu" > </a>
+    <p class="copyright"> © Maria Luiza e Louiza Lima</p>
+    <a href="https://github.com/loulima" class="btn_Malu"><img src="git.png" alt="logoGit" class="btn_Lou"></a>
+</footer>
+
+<script src="estatisticas.js" type="module"></script>
+
+</html>

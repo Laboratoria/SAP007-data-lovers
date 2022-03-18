@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <header class="cabecalho">
+    <nav>
+      <ul class="menupaginas">
+        <h1  class="titulosite">Guia de Personagens de Rick & Morty</h1>
+        <li><a href="index.html" class="linkpaginasP">Personagens</a></li>
+        <li><a href="estatisticas.html" class="linkpaginasE">Estatisticas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container_filtros_search_ordem">
+
+    <form class="menufiltros">
+      <label>Espécie</label>
+      <select class="filtro" id="species-filter">
+        <option disabled selected>-</option>
+        <option value="alien">Alien</option>
+        <option value="animal">Animal</option>
+        <option value="cronenberg">Cronenberg</option>
+        <option value="disease">Doença</option>
+        <option value="human">Humano</option>
+        <option value="humanoid">Humanóide</option>
+        <option value="mytholog">Mytholog</option>
+        <option value="parasite">Parasita</option>
+        <option value="poopybutthole">Poopybutthole</option>
+        <option value="robot">Robô</option>
+        <option value="vampire">Vampiro</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+
+      <label>Gênero</label>
+      <select class="filtro" id="gender-filter">
+        <option disabled selected>-</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+
+      <label>Status</label>
+      <select class="filtro" id="status-filter">
+        <option disabled selected>-</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Morto</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+
+      <label>Nome:</label>
+      <input type="search" class="filtro" name="" id="text-search">
+      <input type="reset" value="X" class="btn_reset" id="btn_reset">
+    </form>
+
+    <div class="ordenacaoA-Z">
+      <p>Organize</p>
+      <select class="filtro" id="order-filter">
+        <option disabled selected>-</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+    </div>
+
+    <p class="calculo" id="porcentagemFiltro"></p>
+  </div>
+  
+
+  <main>
+    <section>
+      <div class="localCards" id="infoCards"></div>
+    </section>
+  </main>
+
+  <div class="back-to-top-wrapper">
+    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"> 🔝 </a>
+  </div>
+
+  <footer class="rodape">
+    <a href="https://github.com/MariaLuizaSantana"><img src="git.png" alt="logoGit" class="btn_Malu" > </a>
+    <p class="copyright"> © Maria Luiza e Louiza Lima</p>
+    <a href="https://github.com/loulima"><img src="git.png" alt="logoGit" class="btn_Lou"></a>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
 </html>

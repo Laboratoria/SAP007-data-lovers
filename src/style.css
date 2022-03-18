@@ -27,7 +27,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.linkpaginasP, .linkpaginasE {
+.linkpaginas{
   color: #f2e394;
   font-size: 1.25rem;
   font-weight: 800;
@@ -219,7 +219,7 @@ main {
   .titulosite {
     font-size: 30px;
   }
-  .linkpaginasP, .linkpaginasE{
+  .linkpaginas{
     font-size: 20px;
   }
 

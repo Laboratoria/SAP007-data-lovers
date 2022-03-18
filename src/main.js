@@ -14,10 +14,12 @@ function printar(infos) {
         <h1>  ${cards.title}</h1>
         <img src = " ${cards.poster}" >
         <div class = "infos">
-        <p>   ${cards.description}</p>
-        <p>  ${cards.producer}</p>
-        <p>  ${cards.director}</p>
-        <p>  ${cards.release_date}</p>
+        <p> <b>Description</b> </P>
+        <p>  ${cards.description}</p>
+        <p> <b>Director</b> ${cards.director}</p>
+        <p> <b>Producer</b> ${cards.producer}</p>
+        <p> <b>Release Date</b> ${cards.release_date}</p>
+        <p> <b>Score</b> ${cards.rt_score}</p>
         </div>
       </div>
     `

@@ -30,7 +30,7 @@
 .links{
   text-decoration: none;
   color: #0d4b92;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
   background-color: transparent;
 }
@@ -40,12 +40,33 @@
   margin-right: 15%;
 }
 
+
+.about{
+  padding-top: 25%;
+}
+
+.title {
+  color: #0f3a6b;
+  font-size: 1.5rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: relative;
+
+}
+
+.content {
+  font-size: 1.25rem;
+  text-align: justify;
+  position: relative;
+}
+
 .logo-mascot {
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -250px;
-  margin-top: 1%;
+  margin-left: -12.625rem;
+  margin-top: 3%;
+
 }
 
 .footer {
@@ -54,73 +75,88 @@
   padding-bottom: 1%;
 }
 
-.about{
-  padding-top: 25%;
-}
 
-.title {
-  color: #0f3a6b;
-  font-size: 24px;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  position: relative;
+@media screen and (min-width: 320px) {
 
-}
-
-.content {
-  font-size: 20px;
-  text-align: justify;
-  position: relative;
-}
-
-@media (max-width: 576px) {
-  .title {
-    color: #0f3a6b;
-    font-size: 12px;
-    padding-top: 2.5%;
-    padding-bottom: 1.5%;
-    position: relative;
-
-  }
-
-  .content {
-    font-size: 11px;
-    text-align: justify;
-    position: relative;
-  }
-
-  .footer {
-    text-align: center;
-    padding-top: 11%;
-    padding-bottom: 1%;
-    font-size: 8px;
-  }
-
-  .links{
-    font-size: 13px;
-  }
-
-  .logo-mascot {
-    width: 200px;
-    height: 120px;
-    margin: auto;
-  }
-
-  .gitHub-linkedin{
-    width: 15px;
-    height: 15px;
+  .links {
+    font-size: 1.375rem;
   }
 
   .menu {
-    padding-top: 1%;
-    padding-left: 9%;
+    padding-top: 2%;
   }
 
   .item-menu {
-    list-style: none;
-    padding-left: 13%;
-    display: inline;
-    position: relative;
-    background-color: transparent;
+    padding-left: 14%;
   }
+
+  .title {
+    font-size: 0.75rem;
+    padding-top: 2.5%;
+    padding-bottom: 1.5%;
+  }
+
+  .content {
+    font-size: 0.75rem;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+  }
+
+  .gitHub-linkedin{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .content{
+    font-size: 0.813rem;
+  }
+
+  .footer {
+    font-size: 0.625rem;
+  }
+
+  .gitHub-linkedin{
+    width: 1rem;
+    height: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+
+.item-menu {
+  padding-left: 4%;
+}
+
+.links {
+  font-size: 0.938rem;
+}
+
+.about{
+  margin-top: 1%;
+}
+
+.title {
+  font-size: 1.125rem;
+}
+
+.content{
+  font-size: 1rem;
+}
+
+.logo-mascot{
+  width: 350px;
+  height: 200px;
+  margin-left: -10.625rem;
+}
+
+.footer{
+  font-size: 0.875rem;
+}
+
 }

@@ -21,7 +21,7 @@ function showCards(data){
       <div class="flex-item">
         <ol class="background">
           <li class="contents-country">${country}</li>
-          <li class="contents-country">Atletas Participantes: ${listCountry[country].length}</li>
+          <li class="contents-country">Total Athletes: ${listCountry[country].length}</li>
         </ol>
       </div>`
     };

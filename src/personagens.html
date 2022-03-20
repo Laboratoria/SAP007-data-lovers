@@ -20,54 +20,28 @@
     </nav>
     
     <header>
-        <img src="./images/wallpaper-totoro.jpg" alt="Totoro" class="img-topo" />
+        <img src="./images/wallpaper.personagens.jpg" alt="Totoro" class="img-topo" />
         <div class="filtro">
 
-            <div class="radios">
+            <div class="filtros-personagens seletores radios">
                 <div class="grupo-radio">
                     <div class="grupo-input-radio">
-                        <label for="maior">Mais popular</label>
-                        <input type="radio" name="popularidade" value="maior" id="maior" checked>
+                        <label for="personagens-nome-crescente">A-Z</label>
+                        <input type="radio" name="ordem-alfabetica" value="crescente" id="personagens-nome-crescente" checked>
                     </div>
                 
                     <div class="grupo-input-radio">
-                        <label for="menor">Menos popular</label>
-                        <input type="radio" name="popularidade" value="menor" id="menor">
+                        <label for="personagens-nome-decrescente">Z-A</label>
+                        <input type="radio" name="ordem-alfabetica" value="decrescente" id="personagens-nome-decrescente">
                     </div>
                 </div>
-
-                <div class="grupo-radio">
-                    <div class="grupo-input-radio">
-                        <label for="crescente">A-Z</label>
-                        <input type="radio" name="ordem-alfabetica" value="crescente" id="crescente" checked>
-                    </div>
-                
-                    <div class="grupo-input-radio">
-                        <label for="decrescente">Z-A</label>
-                        <input type="radio" name="ordem-alfabetica" value="decrescente" id="decrescente">
-                    </div>
-                </div>
-            </div>
-
-            <div class="seletores">
-                <select name="diretor">
-                    <option value="valor1" selected>Valor 1</option>
-                    <option value="valor2">Valor 2</option>
-                    <option value="valor3">Valor 3</option>
+                <select name="genero" id="seletor-generos">
+                    <option value="valor1" selected disabled>Gênero</option>
                 </select>
 
-                <select name="lancamento">
-                    <option value="valor1" selected>Valor 1</option>
-                    <option value="valor2">Valor 2</option>
-                    <option value="valor3">Valor 3</option>
+                <select name="especie" id="seletor-especies">
+                    <option value="valor1" selected disabled>Espécie</option>
                 </select>
-
-                <select name="genero">
-                    <option value="valor1" selected>Valor 1</option>
-                    <option value="valor2">Valor 2</option>
-                    <option value="valor3">Valor 3</option>
-                </select>
-            </div>
         </div>
 
         <section>
@@ -79,51 +53,38 @@
     </header>
 
     <main>
-        <ul class="cartoes">
-            <li class="itens-cartao">
+        <ul class="cartoes" id="grupo-cartoes">
+            <!-- <li class="itens-cartao">
               <div class="cartao"></div>
-            </li>
-
-            <li class="itens-cartao">
-                <div class="cartao"></div>
-            </li>
-
-            <li class="itens-cartao">
-                <div class="cartao"></div>
-            </li>
-
-            <li class="itens-cartao">
-                <div class="cartao"></div>
-            </li>
-
-            <li class="itens-cartao">
-                <div class="cartao"></div>
-            </li>
-
-            <li class="itens-cartao">
-                <div class="cartao"></div>
-            </li>
-
+            </li> -->
         </ul>
     </main>
 
+    <footer>
+        <div class="sobre-mim">
+            <p> Desenvolvido por Dayanne Maryssol</p>
+            <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
+
+        </div>
+
+        <figure>
+            <a href="https://github.com/Maryssun" target="_blank">
+                <img class="logo-github" src="images/logo-github.png" alt="Imagem Totoro">
+            </a>
+            <a href="https://www.linkedin.com/in/dayannemaryssol/" target="_blank">
+                <img class="logo-linkedin" src="images/logo-linkedin.png" alt="Imagem Totoro">
+            </a>
+        </figure>
+
+        <figure>
+            <a href="https://www.ghibli.jp/" target="_blank">
+                <img class="personagem-footer" src="images/img-footer.png" alt="Imagem Totoro">
+            </a>
+        </figure>
+    </footer>
+
+    <script src="./js/personagens.js" type="module"></script>
 </body>
 
-<footer>
-    <div class="sobre-nos">
-        <p> Desenvolvido por 
-            <a href="https://github.com/Maryssun" target="_blank">Dayanne Maryssol</a> e 
-            <a href="https://github.com/leticiaantunesjpeg" target="_blank">Leticia Antunes</a>
-        </p>
-        <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
-        
-    </div>
-
-    <figure>
-        <a href="https://www.ghibli.jp/"  target="_blank"> 
-           <img class="logo-sg" src="images/logo-sem-fundo.png" alt="Logo Studio Ghibli">
-       </a>
-    </figure>
-</footer>
 
 </html>

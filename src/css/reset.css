@@ -22,6 +22,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	background: transparent;
 	text-decoration: none;
+	list-style-type: none
 }
 body {
 	line-height: 1;

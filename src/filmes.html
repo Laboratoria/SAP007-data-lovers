@@ -25,7 +25,7 @@
         </nav>
 
         <header>
-            <img src="./images/wallpaper-kaguya.jpeg" alt="Kaguaya" class="img-topo" />
+            <img src="./images/wallpaper-filme.jpg" alt="Kaguaya" class="img-topo" />
             <div class="filtro">
 
                 <div class="radios">
@@ -43,24 +43,24 @@
 
                     <div class="grupo-radio">
                         <div class="grupo-input-radio">
-                            <label for="crescente">A-Z</label>
-                            <input type="radio" name="ordem-alfabetica" value="crescente" id="crescente" checked>
+                            <label for="filmes-nome-crescente">A-Z</label>
+                            <input type="radio" name="ordem-alfabetica" value="crescente" id="filmes-nome-crescente" checked>
                         </div>
 
                         <div class="grupo-input-radio">
-                            <label for="decrescente">Z-A</label>
-                            <input type="radio" name="ordem-alfabetica" value="decrescente" id="decrescente">
+                            <label for="filmes-nome-decrescente">Z-A</label>
+                            <input type="radio" name="ordem-alfabetica" value="decrescente" id="filmes-nome-decrescente">
                         </div>
                     </div>
                 </div>
 
                 <div class="seletores">
                     <select name="diretor" id="seletor-diretores">
-                        <option value="titulo" selected disabled >Diretor</option>
+                        <option value="titulo" selected disabled>Diretor</option>
                     </select>
-                    
+
                     <select name="lancamento" id="seletor-datas-lancamento">
-                        <option value="titulo" selected disabled >Data de lançamento</option>
+                        <option value="titulo" selected disabled>Data de lançamento</option>
                     </select>
                 </div>
             </div>
@@ -74,30 +74,39 @@
         </header>
 
         <main>
+
             <ul class="cartoes" id="grupo-cartoes">
                 <!-- li gerada no filme.js -->
                 <!-- <li class="itens-cartao">
-                    <div class="cartao"></div>
-                </li> -->
+                        <div class="cartao"></div>
+                    </li> -->
             </ul>
+
         </main>
 
         <footer>
-            <div class="sobre-nos">
-                <p> Desenvolvido por
-                    <a href="https://github.com/Maryssun" target="_blank">Dayanne Maryssol</a> e
-                    <a href="https://github.com/leticiaantunesjpeg" target="_blank">Leticia Antunes</a>
-                </p>
+            <div class="sobre-mim">
+                <p> Desenvolvido por Dayanne Maryssol</p>
                 <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
 
             </div>
 
             <figure>
+                <a href="https://github.com/Maryssun" target="_blank">
+                    <img class="logo-github" src="images/logo-github.png" alt="Imagem Totoro">
+                </a>
+                <a href="https://www.linkedin.com/in/dayannemaryssol/" target="_blank">
+                    <img class="logo-linkedin" src="images/logo-linkedin.png" alt="Imagem Totoro">
+                </a>
+            </figure>
+
+            <figure>
                 <a href="https://www.ghibli.jp/" target="_blank">
-                    <img class="logo-sg" src="images/logo-sem-fundo.png" alt="Logo Studio Ghibli">
+                    <img class="personagem-footer" src="images/img-footer.png" alt="Imagem Totoro">
                 </a>
             </figure>
         </footer>
     </div>
 </body>
+
 </html>

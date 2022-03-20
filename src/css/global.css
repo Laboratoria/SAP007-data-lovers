@@ -3,27 +3,54 @@
 }
 
 /* Aqui é a nav */
+.menu-topo {
+  background-color: #33a4e1;
+  color: #fff;
+  padding: 5px 0;
+}
+
 .menu-topo ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 50px;
-  background-color: #000;
+  padding: 0 20px;
+}
+
+.menu-topo li {
+  letter-spacing: 1px;
+  padding: 5px 0
 }
 
 .menu-topo ul li a {
+  height: 40px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  box-sizing: border-box;
   color: #fff;
+}
+
+.menu-topo ul li a:hover {
+  border-color: #319cdb;
+  border: 1px solid #aac2d8;
+  border-radius: 5px;
+}
+
+/* .menu-topo ul li a {
+  color: #032541;
   text-decoration: none;
   padding: 5px;
   display: inline-block;
-  min-width: 150px;
+  min-width: 100px;
   text-align: center;
 }
 
 .menu-topo ul li a:hover {
-  background: #aeada9;
+  border: 1px solid #aac2d8;
   border-radius: 5px;
-}
+} */
 /* Aqui termina a nav */
 
 /* menu de filtros */
@@ -44,10 +71,10 @@ img {
 }
 
 .img-topo {
-    width: 100%;
-    height: 400px;
-    border-radius: 20px;
-    border: 1px solid #cbcac6;
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  border: 1px solid #cbcac6;
 }
 
 .grupo-radio {
@@ -105,17 +132,19 @@ img {
   flex-direction: column;
   flex: 1;
   margin: 10px;
-  width: 200px;
-  height: 300px;
   background-size: cover;
   border: solid 1px #ddd;
   border-radius: 4px;
   overflow: hidden;
+  border: red 1px solid;
 }
+
 /* Fim cartões */
 
 /* Footer */
+
 footer {
+  background: #008dda;
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -123,20 +152,31 @@ footer {
 }
 
 footer p {
-    margin: 10px 0;
+  margin: 5px 0;
 }
 
-.logo-sg {
+.logo-linkedin,
+.logo-github {
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  filter: invert(100%);
+}
+
+.personagem-footer {
   height: 80px;
 }
 
-.sobre-nos {
+.sobre-mim {
   justify-content: center;
 }
 
-.sobre-nos p a {
-    color: #fff;
-    font-size: 14px;
+.sobre-mim p a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.sobre-mim p {
+  color: #fff;
 }
 /* Aqui acaba o footer */
-

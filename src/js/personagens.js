@@ -1,59 +1,100 @@
-import data from "../data/ghibli/ghibli.js";
-import { filterDataGênero, filterDataEspécie } from "./data.js";
+import { 
+    recuperarFilmes,
+    recuperarPersonagens,
+    buscarGenerosPersonagens,
+    buscarPersonagensPorGenero,
+    buscarEspeciesPersonagens,
+    buscarPersonagensPorEspecie,
+    buscarPersonagensPorOrdemAlfabetica
+} from "./data.js";
 
-//const que captura o valor do elemento HTML a ser preenchido pela div cardAnime
-const containerAnimes = document.getElementById("containerCardItem");
+function iniciarPagina() {
+    const personagens = recuperarPersonagens();
+    carregarImagens(personagens);
 
-//let que armazena a propriedade films de ghibli.js
-let filmesData = data.films;
+    iniciarSeletorGenero();
+    iniciarSeletorEspecie();
+    iniciarOptionOrdemAlfabetica();
+}
 
-let characters = [];
+iniciarPagina();
 
-filmesData.map((film) => {
-  const people = film.people;
-  for (let j = 0; j < people.length; j++) {
-    characters.push(people[j])
-  }
-})
+function iniciarSeletorEspecie() {
+    const especiesPersonagens = buscarEspeciesPersonagens();
+    const seletorEspecies = document.getElementById("seletor-especies");
+    seletorEspecies.addEventListener("change", filtrarPersonagensPorEspecies);
 
-function mostrarPersonagens(personagens) {
-  
-    //loop que percorre cada objeto do array da propriedade people
-    for (let j = 0; j < personagens.length; j++) {
+    especiesPersonagens.forEach(function(especie) {
+        const tagOption = document.createElement("option");
+        tagOption.innerText = especie;
+        tagOption.value = especie;
+        seletorEspecies.appendChild(tagOption);
+    });
+}
 
-  const cardAnime = document.createElement("section");
-  cardAnime.className = "container-card-individual";
-  cardAnime.innerHTML = `
-    <div class="conteinerImagem">
-    <p id="titulo"> ${personagens[j].name} </p>
-    <img src= '${personagens[j].img}' id="imagem-poster"></img>
-    <br>
-      </div>
-        
-      <div class="container-info">
-      <!--<div class="lançamento">${personagens[j].age}</div>-->
-      </div>
-      <div id="diretor">${personagens[j].gender}</div>
-      `;
-  containerAnimes.appendChild(cardAnime);
-}}
-  
-mostrarPersonagens(characters);
+function filtrarPersonagensPorEspecies(){
+    const optionsEspecies = document.querySelectorAll("#seletor-especies option");
+    const optionSelecionada = Array.from(optionsEspecies).find(function(option) {
+        return option.selected == true;
+    });
+    const especieSelecionada = optionSelecionada.value;
+    const personagens = buscarPersonagensPorEspecie(especieSelecionada);
+    carregarImagens(personagens);
+}
 
-document.getElementById("recarregar").addEventListener("click", () => {
-  location.reload();
-});
+function iniciarSeletorGenero() {
+    const generosPersonagens = buscarGenerosPersonagens();
+    const seletorGeneros = document.getElementById("seletor-generos");
+    seletorGeneros.addEventListener("change", filtrarPersonagensPorGenero);
 
-document.getElementById("filtroGêneroItem").addEventListener("change", () => {
-  let gênero = document.querySelector(".filtro-gênero");
-  let personagensFiltrados = filterDataGênero(characters, gênero.value);
-  containerAnimes.innerHTML = "";
-  mostrarPersonagens(personagensFiltrados);
-});
+    generosPersonagens.forEach(function(genero) {
+        const tagOption = document.createElement("option");
+        tagOption.innerText = genero;
+        tagOption.value = genero;
+        seletorGeneros.appendChild(tagOption);
+    });
+}
 
-document.getElementById("filtroEspécieItem").addEventListener("change", () => {
-  let espécie = document.querySelector(".filtro-espécie");
-  let personagensFiltrados = filterDataEspécie(characters, espécie.value);
-  containerAnimes.innerHTML = "";
-  mostrarPersonagens(personagensFiltrados);
-});
+function filtrarPersonagensPorGenero(){
+    const optionsGeneros = document.querySelectorAll("#seletor-generos option");
+    const optionSelecionada = Array.from(optionsGeneros).find(function(option) {
+        return option.selected == true;
+    });
+    const generoSelecionado = optionSelecionada.value;
+    const personagens = buscarPersonagensPorGenero(generoSelecionado);
+    carregarImagens(personagens);
+}
+
+function iniciarOptionOrdemAlfabetica() {
+    const optionNomeCrescente = document.getElementById("personagens-nome-crescente");
+    const optionNomeDecrescente = document.getElementById("personagens-nome-decrescente");
+
+    optionNomeCrescente.addEventListener("click", filtrarFilmesPorOrdemAlfabeticaAZ);
+    optionNomeDecrescente.addEventListener("click", filtrarFilmesPorOrdemAlfabeticaZA);
+}
+
+function filtrarFilmesPorOrdemAlfabeticaAZ() {
+    const personagens = buscarPersonagensPorOrdemAlfabetica(true);
+    carregarImagens(personagens);
+}
+
+function filtrarFilmesPorOrdemAlfabeticaZA() {
+    const personagens = buscarPersonagensPorOrdemAlfabetica(false);
+    carregarImagens(personagens);
+}
+
+function carregarImagens(personagens) {
+    const cartoes = document.getElementById("grupo-cartoes");
+    cartoes.innerHTML = null;
+    personagens.forEach(function (personagem) {
+        const elementoLi = document.createElement("li");
+        elementoLi.classList.add("itens-cartao");
+
+        const elementoDiv = document.createElement("div");
+        elementoDiv.classList.add("cartao");
+        elementoDiv.style.backgroundImage = "url(" + personagem.img + ")";
+
+        elementoLi.appendChild(elementoDiv);
+        cartoes.appendChild(elementoLi);
+    });
+}

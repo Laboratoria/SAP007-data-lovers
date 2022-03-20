@@ -1,74 +1,75 @@
-import dados from '../data/ghibli/ghibli.js';
+import dados from "../data/ghibli/ghibli.js";
 
-// export function filterDataDiretor(data, condition) {
-//   let filterDiretor = data.filter((item) => item.director === condition);
-//     return filterDiretor;
-// }
+export function recuperarFilmes() {
+  const filmes = dados.films;
+  return filmes;
+}
 
-// export function filterDataLançamento(data, condition) {
-//   let filterLançamento = data.filter((item) => item.release_date === condition);
-//     return filterLançamento;
-// }
+export function recuperarPersonagens() {
+  const filmes = dados.films;
 
-// export function filterDataGênero(data, condition) {
-//   let filterGênero = data.filter((item) => item.gender === condition);
-//     return filterGênero;
-// }
-
-// export function filterDataEspécie(data, condition) {
-//   let filterEspécie = data.filter((item) => item.specie === condition);
-//     return filterEspécie;
-// }
-
-
-export function recuperarDiretores() {
-  const diretores = dados.films.map(function(item) {
-    return item.director;
+  const arrayDeArraydDePersonagens = filmes.map(function (filme) {
+    return filme.people;
   });
-  
-  // cria um Set que é como um objeto, só que não repete os itens do array
-  // converte para array usando o Array.from
-  const diretoresNaoRepetido = Array.from(new Set(diretores));
-  return diretoresNaoRepetido;
-}
 
-export function recuperarDataLancamento() {
-  const datasLancamento = dados.films.map(function(item) {
-    return item.release_date;
+  let personagens = [];
+
+  arrayDeArraydDePersonagens.forEach(function (itemArray) {
+    personagens = personagens.concat(itemArray);
   });
-  
-  // cria um Set que é como um objeto, só que não repete os itens do array
-  // converte para array usando o Array.from
-  const datasLancamentoNaoRepetida = Array.from(new Set(datasLancamento));
-  return datasLancamentoNaoRepetida;
+
+  return personagens;
 }
 
-export function ordenarPopularidade(crescente = true) {
+// Filmes
+export function buscarFilmesPorDiretor(nomeDoDiretor) {
+  const filmes = recuperarFilmes();
 
-    // cria uma comparação do array de objeto e ordena 
-    dados.films.sort(function(a, b)  {
-      const scoreA = crescente ? parseInt(a.rt_score) : parseInt(b.rt_score);
-      const scoreB = crescente ? parseInt(b.rt_score) : parseInt(a.rt_score);
+  const filmesFiltrados = filmes.filter(function (filme) {
+    return filme.director === nomeDoDiretor;
+  });
 
-      if(scoreA < scoreB) {
-        return -1;
-      }
-      else if(scoreA > scoreB) {
-        return 1;
-      }
-      else {
-        return 0;
-      }
-    });
-    return dados.films;
+  return filmesFiltrados;
 }
 
-export function ordenarOrdemAlfabetica(crescente ) {
+export function buscarFilmesPorDataLancamento(dataLancamento) {
+  const filmes = recuperarFilmes();
 
-  // cria uma comparação do array de objeto e ordena 
-  dados.films.sort(function(a, b)  {
-    const tituloA = crescente ? (a.title) : (b.title);
-    const tituloB = crescente ? (b.title) : (a.title);
+  const filmesFiltrados = filmes.filter(function (filme) {
+    return filme.release_date === dataLancamento;
+  });
+
+  return filmesFiltrados;
+}
+
+export function buscarFilmesPorPopularidade(buscarPorOrdemCrescente) {
+  // cria uma comparação do array de objeto e ordena
+  const filmes = recuperarFilmes();
+
+  filmes.sort(function (a, b) {
+    const scoreA = buscarPorOrdemCrescente ? parseInt(a.rt_score) : parseInt(b.rt_score);
+    const scoreB = buscarPorOrdemCrescente ? parseInt(b.rt_score) : parseInt(a.rt_score);
+
+    if(scoreA < scoreB) {
+      return -1;
+    }
+    else if(scoreA > scoreB) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  });
+  return filmes;
+}
+
+export function buscarFilmesPorOrdemAlfabetica(buscarPorOrdemCrescente) {
+  // cria uma comparação do array de objeto e ordena
+  const filmes = recuperarFilmes();
+
+  filmes.sort(function(a, b)  {
+    const tituloA = buscarPorOrdemCrescente ? a.title : b.title;
+    const tituloB = buscarPorOrdemCrescente ? b.title : a.title;
 
     if(tituloA < tituloB) {
       return -1;
@@ -80,6 +81,91 @@ export function ordenarOrdemAlfabetica(crescente ) {
       return 0;
     }
   });
-  return dados.films;
+  return filmes;
 }
 
+// Dados Filmes
+export function buscarNomesDiretores() {
+  const filmes = recuperarFilmes();
+
+  const nomesDiretores = filmes.map(function (filme) {
+    return filme.director;
+  });
+
+  const diretoresNaoRepetidos = Array.from(new Set(nomesDiretores));
+  return diretoresNaoRepetidos;
+}
+
+export function buscarDatasLancamento() {
+  const filmes = recuperarFilmes();
+
+  const datasLancamento = filmes.map(function (filme) {
+    return filme.release_date;
+  });
+
+  const datasNaoRepetidas = Array.from(new Set(datasLancamento));
+  return datasNaoRepetidas;
+}
+
+// Personagens
+export function buscarPersonagensPorGenero(generoPersonagem) {
+  const personagens = recuperarPersonagens();
+
+  const personagensFiltrados = personagens.filter(function (personagem) {
+    return personagem.gender === generoPersonagem;
+  });
+  return personagensFiltrados;
+}
+
+export function buscarPersonagensPorEspecie(especiePersonagem) {
+  const personagens = recuperarPersonagens();
+
+  const personagensFiltrados = personagens.filter(function (personagem) {
+    return personagem.specie === especiePersonagem;
+  });
+  return personagensFiltrados;
+}
+
+// Dados Personagens
+export function buscarGenerosPersonagens() {
+  const personagens = recuperarPersonagens();
+
+  const generos = personagens.map(function (personagem) {
+    return personagem.gender;
+  });
+
+  const generosNaoRepetidos = Array.from(new Set(generos));
+  return generosNaoRepetidos;
+}
+
+export function buscarEspeciesPersonagens() {
+  const personagens = recuperarPersonagens();
+
+  const especies = personagens.map(function (personagem) {
+    return personagem.specie;
+  });
+
+  const especiesNaoRepetidas = Array.from(new Set(especies));
+  return especiesNaoRepetidas;
+}
+
+export function buscarPersonagensPorOrdemAlfabetica(buscarPorOrdemCrescente) {
+  // cria uma comparação do array de objeto e ordena
+  const personagens = recuperarPersonagens();
+
+  personagens.sort(function(a, b)  {
+    const nomeA = buscarPorOrdemCrescente ? a.name : b.name;
+    const nomeB = buscarPorOrdemCrescente ? b.name : a.name;
+
+    if(nomeA < nomeB) {
+      return -1;
+    }
+    else if(nomeA > nomeB) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  });
+  return personagens;
+}

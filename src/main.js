@@ -29,6 +29,8 @@ printar(infos)
 
 document.addEventListener("change", () => {
 
+
+
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
@@ -46,11 +48,33 @@ document.addEventListener("change", () => {
   const yearSelect = yearButton[yearIndex].value;
   const yearCresc = sortMoviesByyear(data, yearSelect);
   printar(yearCresc)
+  console.log(yearCresc)
 
-//console.log(directorSelect)
 });
 
+/*document.addEventListener("change", () => {
+  const azButton = document.getElementById("films");
+  const azIndex = azButton.selectedIndex;
+  const ordeSelect = azButton[azIndex].value;
+  const azCresc = ordeMovies(data, ordeSelect);
+  printar(azCresc)
+  console.log(azCresc)
 
+});*/
+
+
+
+
+
+/*document.addEventListener("change", () => {
+  const yearButton = document.getElementById("year");
+  const yearIndex = yearButton.selectedIndex;
+  const yearSelect = yearButton[yearIndex].value;
+  const yearDesc = yearDescending(data, yearSelect);
+  printar(yearDesc)
+console.log(yearDesc)
+
+});*/
 
 
 

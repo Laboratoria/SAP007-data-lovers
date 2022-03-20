@@ -18,7 +18,7 @@
 
 .menu-topo li {
   letter-spacing: 1px;
-  padding: 5px 0
+  padding: 5px 0;
 }
 
 .menu-topo ul li a {
@@ -30,6 +30,12 @@
   margin: 0 3px;
   box-sizing: border-box;
   color: #fff;
+}
+
+.menu-topo ul li a#selecionado {
+  background: #fff;
+  border-radius: 4px;
+  color: #33a4e1;
 }
 
 .menu-topo ul li a:hover {

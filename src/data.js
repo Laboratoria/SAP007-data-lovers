@@ -7,6 +7,8 @@ export const filmesDiretores = (filmes, directorSelect) => {
 };
 
 
+
+
 /*directorsSelect.addEventListener("change", (event) => {
 
   const filterMoviesByDirectors = data.films.filter((directorName) => {
@@ -14,25 +16,27 @@ export const filmesDiretores = (filmes, directorSelect) => {
   })
 
   console.log(filterMoviesByDirectors)
-})
+})*/
 
 
 
-/* Ordenar de A-Z "pronto"
-export const sortMoviesByTitle = (title) => {
-  return title.sort((a, b) => {
+ //Ordenar de A-Z "pronto"
 
-    const titleA = a.title.toUpperCase();
-    const titleB = b.title.toUpperCase();
 
-    if (titleA > titleB) {
+ export const sortMoviesByyear = (movies) => {
+  return movies.films.sort((a, b) => {
+
+    const yearA = a.release_date;
+    const yearB = b.release_date;
+
+    if (yearA > yearB) {
       return 1;
     }
-    if (titleA < titleB) {
+    if (yearA < yearB) {
       return -1
     }
   });
-};*/
+};
 
 
 

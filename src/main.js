@@ -1,4 +1,4 @@
-import { filmesDiretores } from './data.js';
+import { filmesDiretores, sortMoviesByyear} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -26,7 +26,6 @@ function printar(infos) {
 
 printar(infos)
 
-const btnFilmes = document.getElementById("films");
 
 document.addEventListener("change", () => {
 
@@ -37,7 +36,22 @@ document.addEventListener("change", () => {
   printar(filtroDiretor)
 
 //console.log(directorSelect)
-})
+});
+
+
+
+document.addEventListener("change", () => {
+  const yearButton = document.getElementById("year");
+  const yearIndex = yearButton.selectedIndex;
+  const yearSelect = yearButton[yearIndex].value;
+  const yearCresc = sortMoviesByyear(data, yearSelect);
+  printar(yearCresc)
+
+//console.log(directorSelect)
+});
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-//data tem q ser um array de objetos e
+
 export const ordemNameAA = (data) => data.sort((a, b) => {
   const nameA = a.name.toUpperCase();
   const nameB = b.name.toUpperCase();

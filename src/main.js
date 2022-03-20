@@ -36,74 +36,103 @@ function showInfos(arrayRickAndMorty) {
 
   ).join('')
 
-}
 
+  showInfos(arrayRickAndMorty)
+}
 showInfos(cardsAtuais)
-//filtros status
-const selectStatus = document.getElementById("selectFilterLife")
 
-selectStatus.addEventListener("change", (event) => {
-  cardsAtuais = cardsAtuais.filter((item) => {
-    return item.status === event.target.value
+
+function calculo(numero, numero2){
+  let statS = numero/ numero2 *100;
+  document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
+  console.log(showStats)
+
+
+}
+  //filtros status
+  const selectStatus = document.getElementById("selectFilterLife")
+
+  selectStatus.addEventListener("change", (event) => {
+
+    const newArrayStatus = arrayRickAndMorty.filter((item) => {
+      let carD = item.status === event.target.value
+      return carD
+    })
+    calculo(newArrayStatus.length, arrayRickAndMorty.length)
+    showInfos(newArrayStatus)
+
+    cardsAtuais = cardsAtuais.filter((item) => {
+      return item.status === event.target.value
+    })
+
+
+
+  //filtroespecie
+  const selectSpecies = document.getElementById("selectFilterSpecies")
+
+  selectSpecies.addEventListener("change", (event) => {
+    cardsAtuais = cardsAtuais.filter((item) => {
+      return item.species === event.target.value
+    })
+
+    calculo(newArraySpecies.length, arrayRickAndMorty.length)
+    showInfos(newArraySpecies)
+
+    showInfos(cardsAtuais)
+
+  })
+  //filtroGenero
+  const selectGender = document.getElementById("selectFilterGender")
+
+  selectGender.addEventListener("change", (event) => {
+    cardsAtuais = cardsAtuais.filter((item) => {
+      return item.gender === event.target.value
+    })
+
+    calculo(newArrayGender.length, arrayRickAndMorty.length)
+    showInfos(newArrayGender)
+
+    showInfos(cardsAtuais)
+
   })
 
-  showInfos(cardsAtuais)
-})
+  //função ordenar A a Z
+  function ordemNameA(event) {
+    event.preventDefault()
+    return showInfos(ordemNameAA(cardsAtuais));
+  }
 
-//filtroespecie
-const selectSpecies = document.getElementById("selectFilterSpecies")
+  document.getElementById("btn-ordemA").addEventListener("click", ordemNameA);
+  //função ordenar Z a A
+  function ordemNameB(event) {
+    event.preventDefault()
+    return showInfos(ordemNameBB(cardsAtuais));
+  }
+  document.getElementById("btn-ordemZ").addEventListener("click", ordemNameB);
+  //função limpar
+  const clearFilters = document.getElementById("btn-limpar");
+  function clearAll() {
+    window.location.reload();
+  }
+  clearFilters.addEventListener("click", clearAll);
+  //pesquisar por nome
 
-selectSpecies.addEventListener("change", (event) => {
-  cardsAtuais = cardsAtuais.filter((item) => {
-    return item.species === event.target.value
-  })
-  showInfos(cardsAtuais)
-})
-//filtroGenero
-const selectGender = document.getElementById("selectFilterGender")
+  const searchBar = document.getElementById('searchBar');
 
-selectGender.addEventListener("change", (event) => {
-  cardsAtuais = cardsAtuais.filter((item) => {
-    return item.gender === event.target.value
-  })
-  showInfos(cardsAtuais)
-})
-//função ordenar A a Z
-function ordemNameA(event) {
-  event.preventDefault()
-  return showInfos(ordemNameAA(cardsAtuais));
-}
-
-document.getElementById("btn-ordemA").addEventListener("click", ordemNameA);
-//função ordenar Z a A
-function ordemNameB(event) {
-  event.preventDefault()
-  return showInfos(ordemNameBB(cardsAtuais));
-}
-document.getElementById("btn-ordemZ").addEventListener("click", ordemNameB);
-//função limpar
-const clearFilters = document.getElementById("btn-limpar");
-function clearAll() {
-  window.location.reload();
-}
-clearFilters.addEventListener("click", clearAll);
-//pesquisar por nome
-
-const searchBar = document.getElementById('searchBar');
-
-searchBar.addEventListener('keyup', (e) => {
-  const searchString = e.target.value;
-  cardsAtuais = cardsAtuais.filter(item => {
-    return item.name.includes(searchString) ||
-      item.status.includes(searchString) ||
-      item.species.includes(searchString) ||
-      item.gender.includes(searchString)
+  searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value;
+    cardsAtuais = cardsAtuais.filter(item => {
+      return item.name.includes(searchString) ||
+        item.status.includes(searchString) ||
+        item.species.includes(searchString) ||
+        item.gender.includes(searchString)
+    });
+    showInfos(cardsAtuais)
   });
-  showInfos(cardsAtuais)
-});
 
-//const calculoStatus = document.getElementById("calculoAgreStatus");
-//calculoStatus.innerHTML = ${item.status.reduce((acc,curr) => acc+curr} 0)
-// return acc + curr.
-// return calculoStatus/cardsAtuais.length
-//${item.status.reduce((acc,curr) => acc+curr, 0)}</h2><h3> A média de personagens é: ${item.status.reduce((acc,curr) => acc+curr, 0)/cardsAtuais.length}`
+
+  var btn = document.querySelector("#voltarAoTopo");
+  btn.addEventListener("click", function() {
+      window.scrollTo(0, 0);
+
+  });

@@ -15,6 +15,19 @@
     color: #12B0C9;
   }
 
+
+  .stats {
+    background-color: #0C0F14;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    left: 90%;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -40,4 +53,18 @@
   }
 
   b, strong {color:#C8D258;}
+
+  a, link {color: #BFBFBF}
+
+  @media (max-width: 600px)
+{
+  .facet_sidebar
+   {
+    display: none;
+   }
+
+
+
+  a, link {color: #BFBFBF;
+
   a, link {color: #BFBFBF;

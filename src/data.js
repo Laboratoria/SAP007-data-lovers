@@ -1,4 +1,10 @@
 
+//busca nome
+export const searchByName = (name, data) => {
+  return data.filter((select) => select.name.includes(name.toLowerCase()));
+ const searchByName = (name, pokemons) => {
+  return pokemons.filter((select) => select.name.includes(name.toLowerCase()));
+}}
 
 
 export const selectType = (selectByType, pokemons) =>
@@ -40,9 +46,3 @@ export const sortZA = (pokemon) => {
   });
 }
 
-//busca nome
-export const searchByName = (name, data) => {
-  return data.filter((select) => select.name.includes(name.toLowerCase()));
- const searchByName = (name, pokemons) => {
-  return pokemons.filter((select) => select.name.includes(name.toLowerCase()));
-}}

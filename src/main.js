@@ -72,26 +72,3 @@ filterInputType.addEventListener("keyup", (event) => {
     cardsPokemon(arrFilter);
 
 })
-
-
-const backColor = {
-    water: '#6890F0',
-    fire: '#F08030',
-    grass: '#78C850',
-    poison:'#A040A0',
-    bug:'#729f3f',
-    normal:'#a4acaf',
-    flying:'#A890F0',
-    fighting:'#C03028',
-    electric:'#f8d030',
-    ground:'#E0C068',
-    psychic:'#F85888',
-    rock:'#B8A038',
-    ice:'#98D8D8',
-    dragon: '#7038F8',
-    ghost: '#705898',
-    dark:'#705848',
-    steel:'#B8B8D0',
-    fairy:'#B8B8D0',
-    
-    }

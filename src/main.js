@@ -24,15 +24,25 @@ function showInfos(arrayRickAndMorty) {
 }
 
 showInfos(arrayRickAndMorty)
+
 //filtros status
 const selectStatus = document.getElementById("selectFilterLife")
 
+function calculo(numero, numero2){
+  let statS = numero/ numero2 *100;
+  document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
+  console.log(showStats)
+}
+
 selectStatus.addEventListener("change", (event) => {
   const newArrayStatus = arrayRickAndMorty.filter((item) => {
-    return item.status === event.target.value
+    let carD = item.status === event.target.value
+    return carD
   })
+  calculo(newArrayStatus.length, arrayRickAndMorty.length)
   showInfos(newArrayStatus)
 })
+
 //filtroespecie
 const selectSpecies = document.getElementById("selectFilterSpecies")
 
@@ -40,6 +50,7 @@ selectSpecies.addEventListener("change", (event) => {
   const newArraySpecies = arrayRickAndMorty.filter((item) => {
     return item.species === event.target.value
   })
+  calculo(newArraySpecies.length, arrayRickAndMorty.length)
   showInfos(newArraySpecies)
 })
 //filtroGenero
@@ -49,8 +60,10 @@ selectGender.addEventListener("change", (event) => {
   const newArrayGender = arrayRickAndMorty.filter((item) => {
     return item.gender === event.target.value
   })
+  calculo(newArrayGender.length, arrayRickAndMorty.length)
   showInfos(newArrayGender)
 })
+
 //função ordenar A a Z
 function ordemNameA() {
   return showInfos(ordemNameAA(arrayRickAndMorty));
@@ -89,3 +102,9 @@ var btn = document.querySelector("#voltarAoTopo");
 btn.addEventListener("click", function() {
     window.scrollTo(0, 0);
 });
+
+
+
+
+
+

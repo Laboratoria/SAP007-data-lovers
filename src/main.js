@@ -40,14 +40,14 @@ function showInfos(arrayRickAndMorty) {
 }
 showInfos(cardsAtuais)
 
+
+function calculo(numero, numero2){
+  let statS = numero/ numero2 *100;
+  document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
+  console.log(showStats)
+}
   //filtros status
   const selectStatus = document.getElementById("selectFilterLife")
-
-  function calculo(numero, numero2){
-    let statS = numero/ numero2 *100;
-    document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
-    console.log(showStats)
-  }
 
   selectStatus.addEventListener("change", (event) => {
 
@@ -134,11 +134,3 @@ showInfos(cardsAtuais)
   btn.addEventListener("click", function() {
       window.scrollTo(0, 0);
   });
-
-
-
-  //const calculoStatus = document.getElementById("calculoAgreStatus");
-  //calculoStatus.innerHTML = ${item.status.reduce((acc,curr) => acc+curr} 0)
-  // return acc + curr.
-  // return calculoStatus/cardsAtuais.length
-  //${item.status.reduce((acc,curr) => acc+curr, 0)}</h2><h3> A média de personagens é: ${item.status.reduce((acc,curr) => acc+curr, 0)/cardsAtuais.length}`

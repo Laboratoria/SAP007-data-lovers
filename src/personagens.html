@@ -1,103 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./estilos/personagens.css" />
-    <link rel="shortcut icon" href="./imagens/Favicon.ico" type="image/x-icon">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personagens</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navegacao-filmes">
-        <a href="./index.html" class="navegacao-item">Home</a>
-        <a href="./filmes.html" class="navegacao-item">Filmes</a>
-        <a href="./personagens.html" class="navegacao-item">Personagens</a>
-      </nav>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/personagens.css">
+</head>
+<body>
 
-      <div>
-        <img id="imagemFilmes" src="./imagens/ghibli1.jpg" alt="banner" />
-      </div>
+    <nav class="menu-topo">
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./filmes.html">Filmes</a></li>
+            <li><a href="#">Personagens</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <img src="./images/wallpaper.personagens.jpg" alt="Totoro" class="img-topo" />
+        <div class="filtro">
+
+            <div class="filtros-personagens seletores radios">
+                <div class="grupo-radio">
+                    <div class="grupo-input-radio">
+                        <label for="personagens-nome-crescente">A-Z</label>
+                        <input type="radio" name="ordem-alfabetica" value="crescente" id="personagens-nome-crescente" checked>
+                    </div>
+                
+                    <div class="grupo-input-radio">
+                        <label for="personagens-nome-decrescente">Z-A</label>
+                        <input type="radio" name="ordem-alfabetica" value="decrescente" id="personagens-nome-decrescente">
+                    </div>
+                </div>
+                <select name="genero" id="seletor-generos">
+                    <option value="valor1" selected disabled>Gênero</option>
+                </select>
+
+                <select name="especie" id="seletor-especies">
+                    <option value="valor1" selected disabled>Espécie</option>
+                </select>
+        </div>
+
+        <section>
+            <div class="conteudo-pesquisa" >
+                <input type="search" class="input-pesquisa" placeholder= "Pesquise"  autocomplete="on" spellcheck="true">
+            </div>
+        </section>
+
     </header>
 
-    <section class="filtros-conteiner">
-      <div class="filtro-conteiner-individual" id="pesquisaConteiner">
-        <input type="search" class="filtro-item pesquisa-item" id="pesquisaConteinerItem" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
-      </div>
-      
-      <div class="filtro-conteiner-individual" id="ordenacaoAlfabetica">
-        <select class="filtro-item ordenação-alfabética" id="ordenacaoAlfabeticaItem">
-          <option class="ordenação-alfabética" value="">Ordem Afabética</option>
-          <option class="ordenação-alfabética" value="A-Z">A-Z</option>
-          <option class="ordenação-alfabética" value="Z-A">Z-A</option>
-        </select>
-      </div>
+    <main>
+        <ul class="cartoes" id="grupo-cartoes">
+            <!-- <li class="itens-cartao">
+              <div class="cartao"></div>
+            </li> -->
+        </ul>
+    </main>
 
-      <div class="filtro-conteiner-individual" id="filtroGênero">
-        <select class="filtro-item filtro-gênero" id="filtroGêneroItem">
-          <option class="filtro-gênero" value="">Gênero</option>
-          <option class="filtro-gênero"value="Female">Feminino</option>
-          <option class="filtro-gênero"value="Male">Masculino</option>
-          <option class="filtro-gênero"value="Unknown">Desconhecido</option>
-          <option class="filtro-gênero"value="NA">Sem Gênero</option>
-        </select>
-    </div>
+    <footer>
+        <div class="sobre-mim">
+            <p> Desenvolvido por Dayanne Maryssol</p>
+            <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
 
-    <div class="filtro-conteiner-individual" id="filtroEspécie">
-      <select class="filtro-item filtro-espécie" id="filtroEspécieItem">
-        <option class="filtro-espécie" value="">Espécie</option>
-        <option class="filtro-espécie" value="Human">Humano</option>
-        <option class="filtro-espécie" value="Totoro">Totoro</option>
-        <option class="filtro-espécie" value="Cat">Gato</option>
-        <option class="filtro-espécie" value="Witch">Bruxa</option>
-        <option class="filtro-espécie" value="Raccoon Dog">Raccoon Dog</option>
-        <option class="filtro-espécie" value="Red elk">Red elk</option>
-        <option class="filtro-espécie" value="Spirit">Espírito</option>
-        <option class="filtro-espécie" value="Wolf">Lobo</option>
-        <option class="filtro-espécie" value="Deity, Dragon">Deity, Dragon</option>
-        <option class="filtro-espécie" value="Spirit of The White Fox">Spirit of The White Fox</option>
-        <option class="filtro-espécie" value="unknown">Desconhecido</option>
-        <option class="filtro-espécie" value="Bird">Pássaro</option>
-        <option class="filtro-espécie" value="Wizard">Wizard</option>
-        <option class="filtro-espécie" value="Witch/Human">Witch/Human</option>
-        <option class="filtro-espécie" value="Demon">Demônio</option>
-        <option class="filtro-espécie" value="Human/Scarecrow">Human/Scarecrow</option>
-        <option class="filtro-espécie" value="Dog">Cachorro</option>
-        <option class="filtro-espécie" value="Arch-mage/Human">Arch-mage/Human</option>
-        <option class="filtro-espécie" value="Fish/Human">Fish/Human</option>
-        <option class="filtro-espécie" value="Deity">Deity</option>
-        <option class="filtro-espécie" value="Borrower">Borrower</option>
-      </select>
-    </div>
+        </div>
 
-      <div class="filtro-conteiner-individual">
-        <button type="button" class="button" id="recarregar">Recarregar</button>
-      </div>
+        <figure>
+            <a href="https://github.com/Maryssun" target="_blank">
+                <img class="logo-github" src="images/logo-github.png" alt="Imagem Totoro">
+            </a>
+            <a href="https://www.linkedin.com/in/dayannemaryssol/" target="_blank">
+                <img class="logo-linkedin" src="images/logo-linkedin.png" alt="Imagem Totoro">
+            </a>
+        </figure>
 
-  </section>
-
-  <main class="conteiner-main"> 
-  
-    <section id="containerCardItem"></section>
-  
-  </main>
-
-    <footer class="rodape">
-      <p>
-        Desenvolvido por
-        <a href="https://github.com/leticiaantunesjpeg" target="_blank"
-          >Leticia Antunes</a
-        >
-        e
-        <a href="https://github.com/Maryssun" target="_blank"
-          >Dayanne Maryssol</a
-        >
-        <br />
-        SAP007 - LABORATORIA
-      </p>
+        <figure>
+            <a href="https://www.ghibli.jp/" target="_blank">
+                <img class="personagem-footer" src="images/img-footer.png" alt="Imagem Totoro">
+            </a>
+        </figure>
     </footer>
 
-    <script src="../src/js/personagens.js" type="module"></script>
-  </body>
+    <script src="./js/personagens.js" type="module"></script>
+</body>
+
+
 </html>

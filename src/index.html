@@ -1,112 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="./imagens/Favicon.ico" type="image/x-icon">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="./estilos/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/comparador-imagem.js"></script>
+
 </head>
 
 <body>
-  <div id="root"></div>
+    <nav class="menu-topo">
+        <a href="https://www.ghibli.jp/" target="_blank">
+            <img class="logo-header" src="./images/logo-sem-fundo.png" alt="Logo Studio Ghibli">
+        </a>
 
-  <nav>
-    <a href="https://www.ghibli.jp/" target="_blank">
-      <img class="logo-header" src="imagens/img-header.png" alt="Logo Studio Ghibli">
-    </a>
+        <ul>
+            <li><a href="./filmes.html">FILMES</a></li>
+            <li><a href="./personagens.html">PERSONAGENS</a></li>
+        </ul>
+    </nav>
 
-    <div class="menu-movel">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="navPaginaInicial">
-      <li><a href="#">INÍCIO</a></li>
-      <li><a href="./filmes.html">FILMES</a></li>
-      <li><a href="./personagens.html">PERSONAGENS</a></li>
-    </ul>
-  </nav>
-  <header>
-    <section>
-      <!--Aqui começa o slide-->
-      <div class="slideshow-conteudo">
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-1.jpg">
+    <main>
+        <div class="imagem-inclinada">
+            <figure>
+                <img src="./images/totoro-inicial.png" alt="Totoro">
+            </figure>
+            <div class="inclinacao inclinacao-azul-clara"></div>
+            <div class="inclinacao inclinacao-azul-escura"></div>
         </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-2.jpg">
+        <div class="studio-ghibli-informacoes">
+            <section>
+                <h1>STUDIO GHIBLI</h1>
+                <p>
+                    O Studio Ghibli é um estúdio de animação japonês, fundado em 1985 por Hayao Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma, já produziu 21 longas de animação e 
+                </p>
+            </section>
         </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-3.jpg">
-        </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-4.jpg">
-        </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-5.jpg">
-        </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-6.jpg">
-        </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-7.jpg">
-        </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-8.jpg">
-        </div>
-  
-        <div class="my-slides fade">
-          <img src="imagens/slide-9.jpg">
-        </div>
-    </section>
-  </header>
-
-  <main class="main">
-    <section class="introSG">
-      <article class="sobre-sg">
-        <img src="imagens/logoSG.png" alt="">
-        <section class="historiaSG">
-          <h1>Studio Ghibli</h1>
-          <p>O Studio Ghibli é um estúdio de animação japonês, sediado em Koganei, Tóquio. Fundado em 1985, o estúdio já
-            produziu 21 longas de animação, sendo o primeiro O Castelo no Céu (1986) e o mais recente As Memórias de
-            Marnie (2014).
-
-            O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma,
-            logo após o sucesso de Nausicaä do Vale do Vento, no ano anterior. O estúdio lançou seu primeiro filme, O
-            Castelo no Céu, no ano seguinte. O logotipo da empresa é o Totoro, o personagem do filme Meu Amigo Totoro,
-            lançado em 1988. Com exceção de seis produções, todos os filmes do estúdio foram dirigidos por Hayao
-            Miyazaki e Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da maioria deles. Em 2001, o Museu
-            Ghibli, um museu dedicado as obras do estúdio, foi inaugurado.</p>
-        </section>
-      </article>
-
-  </main>
-
-  <footer>
-    <div class="sobre-nos">
-      <p> Desenvolvido por
-        <a href="https://github.com/Maryssun" target="_blank">Dayanne Maryssol</a>
-        e
-        <a href="https://github.com/leticiaantunesjpeg" target="_blank">Leticia Antunes</a>
-      </p>
-      <p><a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a></p>
-    </div>
-
-    <figure>
-        <img class="logo-sg" src="imagens/logo-sg.png" alt="Logo Studio Ghibli">
-    </figure>
-  </footer>
-
-  <script src="./js/main.js" type="module"></script>
+    </main>
 </body>
 
 </html>

@@ -1,68 +1,123 @@
-import data from "../data/ghibli/ghibli.js";
-import {
-  filtroDataDiretor,
-  filtroDataLançamento,
-  ordenaçãoDataFilmes,
-  pesquisaDataTítulo,
+import { 
+  recuperarFilmes,
+  buscarNomesDiretores,
+  buscarDatasLancamento,
+  buscarFilmesPorDiretor,
+  buscarFilmesPorDataLancamento,
+  buscarFilmesPorPopularidade,
+  buscarFilmesPorOrdemAlfabetica
 } from "./data.js";
 
-const containerAnimes = document.getElementById("containerCardItem");
+function iniciarPagina() {
+  iniciarSeletoresDiretor();
+  iniciarSeletoresDataLancamento();
+  iniciarOptionPopularidade();
+  iniciarOptionOrdemAlfabetica();
+  
+  const filmes = recuperarFilmes();
+  carregarPoster(filmes);
 
-let filmesData = data.films;
-
-filmesData.forEach(mostrarFilmes);
-
-function mostrarFilmes(data) {
-  const cardAnime = document.createElement("section");
-  cardAnime.className = "container-card-individual";
-  cardAnime.innerHTML = `
-    <div>
-    <p class="informação"> ${data.title} </p>
-    <img src= '${data.poster}'></img><br>
-      </div>
-        
-      <div>
-      <div class="informação">Ano de lançamento: ${data.release_date}</div>
-      </div>
-      <div class="informação">Diretor: ${data.director}</div>
-      `;
-  containerAnimes.appendChild(cardAnime);
 }
 
-document.getElementById("recarregar").addEventListener("click", () => {
-  location.reload();
-});
+iniciarPagina();
 
-document.getElementById("filtroDiretorItem").addEventListener("change", () => {
-  let diretores = document.querySelector(".filtro-diretor");
-  let filterItem = filtroDataDiretor(filmesData, diretores.value);
-  containerAnimes.innerHTML = "";
-  filterItem.forEach(mostrarFilmes);
-});
+function iniciarSeletoresDiretor() {
+  const diretores = buscarNomesDiretores();
+  const seletorDiretores = document.getElementById("seletor-diretores");
+  seletorDiretores.addEventListener("change", filtrarFilmesPorDiretor);
 
-document
-  .getElementById("filtroLancamentoItem")
-  .addEventListener("change", () => {
-    let lançamento = document.querySelector(".filtro-lançamento");
-    let filterItem = filtroDataLançamento(filmesData, lançamento.value);
-    containerAnimes.innerHTML = "";
-    filterItem.forEach(mostrarFilmes);
+  diretores.forEach(function(nomeDoDiretor) {
+      const tagOption = document.createElement("option");
+      tagOption.innerText = nomeDoDiretor;
+      tagOption.value = nomeDoDiretor;
+      seletorDiretores.appendChild(tagOption);
   });
+}
 
-document
-  .getElementById("ordenacaoAlfabeticaItem")
-  .addEventListener("change", () => {
-    let título = document.querySelector(".ordenação-alfabética");
-    let títulosOrdenados = ordenaçãoDataFilmes(filmesData, título.value);
-    containerAnimes.innerHTML = "";
-    títulosOrdenados.forEach(mostrarFilmes);
+function filtrarFilmesPorDiretor(){
+  const optionsDiretor = document.querySelectorAll("#seletor-diretores option");
+  const optionSelecionada = Array.from(optionsDiretor).find(function(option) {
+      return option.selected == true;
   });
+  const nomeDiretorSelecionado = optionSelecionada.value;
+  const filmes = buscarFilmesPorDiretor(nomeDiretorSelecionado);
+  carregarPoster(filmes);
+}
 
-document
-  .getElementById("pesquisaConteinerItem")
-  .addEventListener("keyup", () => {
-    let título = document.querySelector(".pesquisa-item");
-    let pesquisaDeTítulo = pesquisaDataTítulo(filmesData, título.value);
-    containerAnimes.innerHTML = "";
-    pesquisaDeTítulo.forEach(mostrarFilmes);
+
+function iniciarSeletoresDataLancamento() {
+  const datasLancamento = buscarDatasLancamento();
+  const seletorLancamento = document.getElementById("seletor-datas-lancamento");
+  seletorLancamento.addEventListener("change", filtrarFilmesPorDataLancamento);
+ 
+  datasLancamento.forEach(function(dataLancamento) {
+      const tagOption = document.createElement("option");
+      tagOption.innerText = dataLancamento;
+      tagOption.value = dataLancamento;
+      seletorLancamento.appendChild(tagOption);
   });
+}
+
+function filtrarFilmesPorDataLancamento() {
+  const optionDataLancamento = document.querySelectorAll("#seletor-datas-lancamento option");
+  const optionSelecionada = Array.from(optionDataLancamento).find(function(option) {
+      return option.selected == true;
+  });
+  const dataLancamentoSelecionada = optionSelecionada.value;
+  const filmes = buscarFilmesPorDataLancamento(dataLancamentoSelecionada);
+  carregarPoster(filmes);
+}
+
+
+function iniciarOptionPopularidade() {
+  const optionMaisPopular = document.getElementById("mais-popular");
+  const optionMenosPopular = document.getElementById("menos-popular");
+
+  optionMaisPopular.addEventListener("click", filtrarFilmesPorMaiorPopularidade);
+  optionMenosPopular.addEventListener("click", filtrarFilmesPorMenorPopularidade);
+}
+
+function filtrarFilmesPorMaiorPopularidade() {
+  const filmes = buscarFilmesPorPopularidade(false);
+  carregarPoster(filmes);
+}
+
+function filtrarFilmesPorMenorPopularidade() {
+  const filmes = buscarFilmesPorPopularidade(true);
+  carregarPoster(filmes);
+}
+
+function iniciarOptionOrdemAlfabetica() {
+  const optionOrdemAlfabeticaAZ = document.getElementById("filmes-nome-crescente");
+  const optionOrdemAlfabeticaZA = document.getElementById("filmes-nome-decrescente");
+
+  optionOrdemAlfabeticaAZ.addEventListener("click", filtrarFilmesPorOrdemAlfabeticaAZ);
+  optionOrdemAlfabeticaZA.addEventListener("click", filtrarFilmesPorOrdemAlfabeticaZA);
+}
+
+function filtrarFilmesPorOrdemAlfabeticaAZ() {
+  const filmes = buscarFilmesPorOrdemAlfabetica(true);
+  carregarPoster(filmes);
+}
+
+function filtrarFilmesPorOrdemAlfabeticaZA() {
+  const filmes = buscarFilmesPorOrdemAlfabetica(false);
+  carregarPoster(filmes);
+}
+
+function carregarPoster(filmes) {
+  const cartoes = document.getElementById("grupo-cartoes");
+  cartoes.innerHTML = null;
+  filmes.forEach(function (filme) {
+      const elementoLi = document.createElement("li");
+      elementoLi.classList.add("itens-cartao");
+
+      const elementoDiv = document.createElement("div");
+      elementoDiv.classList.add("cartao");
+      elementoDiv.style.backgroundImage = "url(" + filme.poster + ")";
+
+      elementoLi.appendChild(elementoDiv);
+      cartoes.appendChild(elementoLi);
+  });
+}
+

@@ -1,0 +1,65 @@
+.filtro { 
+    position: relative;
+    border-radius: 4px;
+    height: 100px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    top: -40px;
+    background-color: rgba(0,141,218, 0.8);
+    padding: 1px;
+    margin-bottom: -20px;
+}
+
+.cartao {
+    height: 200px;
+    width: 200px;
+}
+
+.input-pesquisa {
+    border: 2px solid rgba(0,141,218, 0.8);
+} 
+
+.seletores, .radios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seletores select {
+    width: 30%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.radios {
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+.conteudo-pesquisa, .cartoes {
+    margin-top:  50px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+footer {
+    background-color: rgba(0,141,218, 0.8);
+}
+
+.sobre-nos p {
+    color:  #fff;
+}
+
+.sobre-nos p a {
+    color: #fff;
+}
+
+.logo-sg {
+    height: 80px;
+    filter: invert(90%)
+  }

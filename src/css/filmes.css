@@ -1,0 +1,54 @@
+
+
+.menu-topo li a {
+  color: #fff;
+  height: 40px;
+}
+
+.menu-topo ul li a {
+  color: #fff;
+}
+
+.filtro { 
+  position: relative;
+  border-radius: 4px;
+  height: 100px;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  top: -40px;
+  background-color: rgba(0,141,218, 0.8);
+  padding: 1px;
+  margin-bottom: -20px;
+}
+
+.input-pesquisa {
+  border-color: #33a4e1;
+} 
+
+.seletores, .radios {
+  display: flex;
+  justify-content: space-around;
+}
+
+.seletores select {
+  width: 45%;
+  height: 30px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.radios {
+  margin: 10px 0;
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  width: 200px;
+  height: 300px;
+}

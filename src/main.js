@@ -36,6 +36,7 @@ function showInfos(arrayRickAndMorty) {
 
   ).join('')
 
+
   showInfos(arrayRickAndMorty)
 }
 showInfos(cardsAtuais)
@@ -45,6 +46,8 @@ function calculo(numero, numero2){
   let statS = numero/ numero2 *100;
   document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
   console.log(showStats)
+
+
 }
   //filtros status
   const selectStatus = document.getElementById("selectFilterLife")
@@ -62,9 +65,7 @@ function calculo(numero, numero2){
       return item.status === event.target.value
     })
 
-    showInfos(cardsAtuais)
 
-  })
 
   //filtroespecie
   const selectSpecies = document.getElementById("selectFilterSpecies")

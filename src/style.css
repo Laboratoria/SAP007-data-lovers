@@ -53,7 +53,7 @@
   }
 
   b, strong {color:#C8D258;}
-<<<<<<< HEAD
+
   a, link {color: #BFBFBF}
 
   @media (max-width: 600px)
@@ -64,6 +64,7 @@
    }
 
 
-=======
+
   a, link {color: #BFBFBF;
->>>>>>> 7007c254acb3faa0fb5b80a74c52b96258976ffd
+
+  a, link {color: #BFBFBF;

@@ -10,7 +10,7 @@ function cardsPokemons(data) {
    <p id="num">  ${item.num}</p> 
    <img class="img-card" src="${item.img}"/> 
    <p id="name">  Name:${item.name}</p> 
-   <p id="type" > Type:${item.type}</p> 
+   <p id="type" > Type:${item.type.join(' | ')}</p> 
    <p id="about"> About:${item.about}</p> 
    </div>`
     ).join("")

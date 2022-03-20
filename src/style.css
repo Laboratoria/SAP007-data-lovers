@@ -94,12 +94,22 @@ header {
 }
 
 #num {
-align-self: flex-start;
 text-align: center;
-height: 25px;
-width: 42px;
-margin: 5px;
 font-weight: bold;
 border-radius: 0.3rem;
-background-color: #FFA000
+background-color: #FFA000;
+display: flex;
+font-size: 2%px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+z-index: 0;
+margin-left: 30px;
+box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+#about {
+  color: azure;
 }

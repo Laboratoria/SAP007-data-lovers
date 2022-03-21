@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import { searchByName, selectType, calcType, sortAZ, orderBy} from './data.js'
+import {selectType, calcType} from './data.js'
 
 const pokemons = data.pokemon;
 
@@ -35,40 +35,3 @@ function typePercent() {
     let result = calcType(pokemons, filterType);
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
-// Filtro de ordem select
-
-const filterSelectOrder = document.querySelector("#order-search");
-
-filterSelectOrder.addEventListener("change", (event) => {
-    const orderType = event.target.value;
-    const arrayOrdered = orderBy(orderType, pokemons);
-    cardsPokemons(arrayOrdered);
-})
-
-// Filtro por input (texto) de nome
-
-const order = document.getElementById('orderby');
-order.addEventListener('change', () => {
-  const orderbyValue = order.value;
-  showData(pokedex.orderByName(data.pokemon, orderbyValue))
-});
-
-const filterInputType = document.querySelector("#inputSeaz");
-console.log(filterInputType)
-filterInputType.addEventListener("change", () => {
-    const filterName = filterInputType.value;
-    const arrFilter = searchByName(filterName, pokemons);
-    cardsPokemon(arrFilter);
-})
-
-filterInputType.addEventListener("keyup", (event) => {
-
-    if (event.keyCode === 13) {
-        event.preventDefault();
-    }
-
-    const filterName = event.target.value;
-    const arrFilter = searchByName(filterName, pokemons);
-    cardsPokemon(arrFilter);
-
-})

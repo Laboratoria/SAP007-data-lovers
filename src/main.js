@@ -45,10 +45,13 @@ console.log(moviesByMaxScore(data),moviesByMinScore(data))
 
 document.addEventListener("change", () => {
 
-  const scoreButton = document.getElementById("crescente");
+  const scoreButton = document.getElementById("score");
   const scoreRate = scoreButton.selectedIndex;
-  const selectedRate = scoreIndex
-console.log(scoreButton)
+  const selectedRate = scoreButton[scoreRate].value;
+  const orderByScore = moviesByMaxScore(data)
+  printar(orderByScore)
+console.log(selectedRate)
+
 })
 
 

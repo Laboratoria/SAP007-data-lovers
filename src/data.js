@@ -23,7 +23,7 @@ export const moviesByMaxScore = (movies) => {
   })
 }
 
-export const moviesByMinScore = (movies) => {
+/*export const moviesByMinScore = (movies) => {
   return movies.films.sort((a, b) => {
 
     const scoreA = a.rt_score
@@ -37,7 +37,7 @@ export const moviesByMinScore = (movies) => {
     }
     return 0
   })
-}
+}*/
 
 /*directorsSelect.addEventListener("change", (event) => {
 

@@ -9,10 +9,26 @@ function cardsPokemons(data) {
         `<div class="info-cards"> 
    <p id="num">  ${item.num}</p> 
    <img class="img-card" src="${item.img}"/> 
-   <p id="name">  Name:${item.name}</p> 
-   <p id="type" > Type:${item.type.join(' | ')}</p> 
-   <p id="about"> About:${item.about}</p> 
-   </div>`
+   <h2> Name </h2>
+   <p id="name">${item.name}</p> 
+   <h2> Type</h2>
+   <p id="type" >${item.type.join(' | ')}</p> 
+   <h2> About</h2>
+   <p id="about">${item.about}</p> 
+   </div>
+
+   <div  class="backcard">
+   <h2 class="titulo-especificacoes">Rarity</h2>
+   <p class="pokemon-rarity">${item["pokemon-rarity"]}</p>
+   <h2 class="titulo-especificacoes">Egg</h2>
+   <p class="pokemon-egg">${item.egg}</p>
+   <h2 class="titulo-especificacoes">Weaknesses</h2>
+   <p class="pokemon-weaknesses">${item.weaknesses.join(", ")}</p>
+   <h2 class="titulo-especificacoes">Spawn chance</h2>
+   <p class="pokemon-weaknesses">${item["spawn-chance"]}%</p>
+   </div>
+  `
+ 
     ).join("")
 
 }

@@ -22,7 +22,7 @@ function showCards(data){
           <li class="contents-country">Total Athletes: ${listCountry[country].length}</li>
         </ol>
       </div>`
-    };
+    }
   document.getElementById("cards-countries").innerHTML = cardsCountry;
 }
 showCards(data.athletes)
@@ -34,7 +34,8 @@ function changeSelectCountry (evento){
   showCards(result)
 }
 
-const buttonClean = document.getElementById("clean-button").addEventListener("click", cleanOrder)
+const buttonClean = document.getElementById("clean-button")
+buttonClean.addEventListener("click", cleanOrder)
 function cleanOrder() {
   window.location.reload();
 }

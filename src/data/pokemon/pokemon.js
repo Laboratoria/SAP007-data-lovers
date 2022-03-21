@@ -23226,7 +23226,7 @@ export default {
     },
     "pokemon-rarity": "legendary",
     "type": [
-      "fire"()
+      "fire"
     ],
     "encounter": {
       "base-flee-rate": "0.04",

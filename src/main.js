@@ -30,9 +30,7 @@ printar(infos)
 
 const btnFilmes = document.getElementById("films");
 
-
-
-document.addEventListener("change", () => {
+document.addEventListener("change", (event) => {
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
@@ -41,12 +39,8 @@ document.addEventListener("change", () => {
 
 })
 
-//console.log (moviesByScore(data))
-//console.log(moviesByScore(data))
 
-
-
-document.addEventListener("change", () => {
+document.addEventListener("change", (event) => {
   const scoreButton = document.getElementById("score");
   const scoreRate = scoreButton.selectedIndex;
   const selectedRate = scoreButton[scoreRate].value;

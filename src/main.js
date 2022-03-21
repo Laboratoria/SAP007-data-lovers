@@ -52,6 +52,8 @@ function imprimirFiltroGenero(e) {
 const resultadoGenero = filtroGenero(data.results, e.target.value)
 const porcentagemGenero = `${calculoPorcentagem(data.results.length, resultadoGenero.length)}% dos personagens`
 imprimirPorcentagem(porcentagemGenero);
+selecaoSpecies.selectedIndex=0;
+selecaoStatus.selectedIndex=0;
 return imprimirCardsTela(resultadoGenero);
 }
 
@@ -59,6 +61,8 @@ function imprimirFiltroSpecies(e) {
 const resultadoSpecies = filtroSpecies(data.results, e.target.value);
 const porcentagemEspecie = `${calculoPorcentagem(data.results.length, resultadoSpecies.length)}% dos personagens`
 imprimirPorcentagem(porcentagemEspecie);
+selecaoStatus.selectedIndex=0;
+selecaoGenero.selectedIndex=0;
 return imprimirCardsTela(resultadoSpecies);
 }
 
@@ -66,6 +70,8 @@ function imprimirFiltroStatus(e) {
 const resultadoStatus = filtroStatus(data.results, e.target.value);
 const porcentagemStatus = `${calculoPorcentagem(data.results.length, resultadoStatus.length)}% dos personagens`
 imprimirPorcentagem(porcentagemStatus);
+selecaoGenero.selectedIndex=0;
+selecaoSpecies.selectedIndex=0;
 return imprimirCardsTela(resultadoStatus);
 }
 

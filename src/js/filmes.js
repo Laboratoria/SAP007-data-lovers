@@ -5,7 +5,8 @@ import {
   buscarFilmesPorDiretor,
   buscarFilmesPorDataLancamento,
   buscarFilmesPorPopularidade,
-  buscarFilmesPorOrdemAlfabetica
+  buscarFilmesPorOrdemAlfabetica,
+  recuperarPorcentagemDeFilmes
 } from "./data.js";
 
 function iniciarPagina() {
@@ -106,6 +107,9 @@ function filtrarFilmesPorOrdemAlfabeticaZA() {
 }
 
 function carregarPoster(filmes) {
+  const contador = document.getElementById("contador");
+  contador.innerText = recuperarPorcentagemDeFilmes(filmes.length);
+
   const cartoes = document.getElementById("grupo-cartoes");
   cartoes.innerHTML = null;
   filmes.forEach(function (filme) {

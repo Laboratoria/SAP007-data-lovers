@@ -169,3 +169,15 @@ export function buscarPersonagensPorOrdemAlfabetica(buscarPorOrdemCrescente) {
   });
   return personagens;
 }
+
+export function recuperarPorcentagemDeFilmes(quantidadeFiltrado) {
+  const filmes = recuperarFilmes();
+  const porcentagemFiltrada = quantidadeFiltrado * 100 / filmes.length;
+  return `Exibindo ${quantidadeFiltrado} de ${filmes.length} (${porcentagemFiltrada}%)`;
+}
+
+export function recuperarPorcentagemDePersonagens(quantidadeFiltrado) {
+  const personagens = recuperarPersonagens();
+  const porcentagemFiltrada = (quantidadeFiltrado * 100 / personagens.length).toFixed(2);
+  return `Exibindo ${quantidadeFiltrado} de ${personagens.length} (${porcentagemFiltrada}%)`;
+}

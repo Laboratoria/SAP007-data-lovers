@@ -1,11 +1,11 @@
 import { 
-  recuperarFilmes,
   recuperarPersonagens,
   buscarGenerosPersonagens,
   buscarPersonagensPorGenero,
   buscarEspeciesPersonagens,
   buscarPersonagensPorEspecie,
-  buscarPersonagensPorOrdemAlfabetica
+  buscarPersonagensPorOrdemAlfabetica,
+  recuperarPorcentagemDePersonagens
 } from "./data.js";
 
 function iniciarPagina() {
@@ -84,6 +84,9 @@ function filtrarFilmesPorOrdemAlfabeticaZA() {
 }
 
 function carregarImagens(personagens) {
+  const contador = document.getElementById("contador");
+  contador.innerText = recuperarPorcentagemDePersonagens(personagens.length);
+
   const cartoes = document.getElementById("grupo-cartoes");
   cartoes.innerHTML = null;
   personagens.forEach(function (personagem) {

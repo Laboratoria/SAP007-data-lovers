@@ -1,200 +1,108 @@
-import { describe } from "eslint/lib/rule-tester/rule-tester";
+import { describe, it } from "eslint/lib/rule-tester/rule-tester";
 import {
-  filtroDataDiretor,
-  ordenaçãoDataFilmes,
-  pesquisaDataTítulo,
-  filtroDataEspécie,
-  ordenaçãoDataPersonagens,
-  pesquisaDataNome
+  recuperarFilmes,
+  buscarFilmesPorDiretor,
+  buscarFilmesPorDataLancamento,
+  recuperarPersonagens,
+  buscarPersonagensPorOrdemAlfabetica,
+  recuperarPorcentagemDeFilmes,
+  buscarPersonagensPorGenero,
+  buscarPersonagensPorEspecie,
+  buscarFilmesPorPopularidade,
+  buscarNomesDiretores,
+  buscarEspeciesPersonagens,
+  buscarGenerosPersonagens,
+  recuperarPorcentagemDePersonagens
 } from "../src/js/data";
 
-const filmes = [
-  {
-    title: "Castle in the Sky",
-    director: "Hayao Miyazaki",
-    release_date: "1986",
-    rt_score: "95",
-  },
-  {
-    title: "My Neighbor Totoro",
-    director: "Hayao Miyazaki",
-    release_date: "1988",
-    rt_score: "93",
-  },
-  {
-    title: "Whisper of the Heart",
-    director: "Yoshifumi Kondō",
-    release_date: "1995",
-    rt_score: "91",
-  },
-];
-
-const filmesDesordenados = [
-  {
-    title: "My Neighbor Totoro",
-    director: "Hayao Miyazaki",
-    release_date: "1988",
-    rt_score: "93",
-  },
-  {
-    title: "Whisper of the Heart",
-    director: "Yoshifumi Kondō",
-    release_date: "1995",
-    rt_score: "91",
-  },
-  {
-    title: "Castle in the Sky",
-    director: "Hayao Miyazaki",
-    release_date: "1986",
-    rt_score: "95",
-  },
-];
-
-describe("Testar filtro por diretor", () => {
-  it("should return 2 films", () => {
-    const filmesFiltrados = filtroDataDiretor(filmes, "Hayao Miyazaki");
-    expect(filmesFiltrados).toHaveLength(2);
+describe("Filmes", () => {
+  it("É esperado retornar 20 filmes", () => {
+    const filmes = recuperarFilmes();
+    expect(filmes).toHaveLength(20);
   });
 
-  it("should return movies from director Hayao Miyazaki", () => {
-    const miyazakiFilmes = [
-      {
-        title: "Castle in the Sky",
-        director: "Hayao Miyazaki",
-        release_date: "1986",
-        rt_score: "95",
-      },
-      {
-        title: "My Neighbor Totoro",
-        director: "Hayao Miyazaki",
-        release_date: "1988",
-        rt_score: "93",
-      },
-    ];
-    const filmesFiltrados = filtroDataDiretor(filmes, "Hayao Miyazaki");
-    expect(filmesFiltrados).toEqual(miyazakiFilmes);
+  it("Filtra filmes por diretor", () => {
+    const filmes = buscarFilmesPorDiretor("Hiromasa Yonebayashi");
+    expect(filmes).toHaveLength(2);
+  });
+
+  it("Recuperar nome dos diretores", () => {
+    const nomes = buscarNomesDiretores();
+    expect(nomes).toHaveLength(6);
+  });
+
+  it("Filtra filmes por data de lançamento", () => {
+    const filmes = buscarFilmesPorDataLancamento("1986");
+    expect(filmes[0].title).toEqual("Castle in the Sky");
+  }); 
+
+  it("Filtra filmes por data de lançamento 2", () => {
+    const filmes = buscarFilmesPorDataLancamento("1986");
+    expect(filmes[0].title).not.toEqual("Castle in the Sky 2");
+  });
+
+  it("Filtra filmes por data de lançamento 3", () => {
+    const filmes = buscarFilmesPorDataLancamento("1996");
+    expect(filmes[0]).toEqual(undefined);
   });
 });
 
-describe("Testar ordenação pelo título do filme", () => {
-  it("should sort by title", () => {
-    const filmesOrdenados = ordenaçãoDataFilmes(filmesDesordenados, "A-Z");
-    expect(filmesOrdenados).toEqual(filmes);
+describe("Personagens", () => {
+  it("É esperado retornar 171 personagens", () => {
+    const personagens = recuperarPersonagens();
+    expect(personagens).toHaveLength(171);
+  });
+
+  it("Filtra por ordem alfabetica", () => {
+    const personagens = buscarPersonagensPorOrdemAlfabetica(true);
+    expect(personagens[0].name.charAt(0)).toEqual("A");
+  });
+  
+  it("Filtra por ordem alfabetica 2", () => {
+    const personagens = buscarPersonagensPorOrdemAlfabetica(false);
+    expect(personagens[0].name.charAt(0)).toEqual("Ō");
+  });
+
+  it("Filtra por popularidade", () => {
+    const personagens = buscarFilmesPorPopularidade(false);
+    expect(personagens[0].title).toEqual("Only Yesterday");
+  });
+
+  it("Filtra por popularidade 2", () => {
+    const personagens = buscarFilmesPorPopularidade(true);
+    expect(personagens[0].title).toEqual("Tales from Earthsea");
+  });
+
+  it("Buscar personagens por gênero", () => {
+    const personagens = buscarPersonagensPorGenero("Male");
+    expect(personagens).toHaveLength(87);
+  });
+  
+  it("Buscar personagens por espécie", () => {
+    const personagens = buscarPersonagensPorEspecie("Cat");
+    expect(personagens).toHaveLength(9);
+  });
+
+  it("Recuperar especies dos personagens", () => {
+    const especies = buscarEspeciesPersonagens();
+    expect(especies).toHaveLength(21);
+  });
+
+  it("Recuperar genero dos personagens", () => {
+    const especies = buscarGenerosPersonagens();
+    expect(especies).toHaveLength(4);
   });
 });
 
-describe("Testar pesquisa de filme", () => {
-  it("should search by full title", () => {
-    const filmesPesquisados = pesquisaDataTítulo(filmes, "Castle in the Sky");
-    expect(filmesPesquisados).toHaveLength(1);
-    expect(filmesPesquisados[0]).toEqual(filmes[0]);
+describe("Calculo agregado", () => {
+  it("Recuperar porcentagem de filmes", () => {
+    const filmes = buscarFilmesPorDiretor("Hayao Miyazaki");
+    const porcentagemDeFilmes = recuperarPorcentagemDeFilmes(filmes.length);
+    expect(porcentagemDeFilmes).toEqual("Exibindo 9 de 20 (45%)");
   });
 
-  it("should search by partial title", () => {
-    const filmesTituloParcial = [
-      {
-        title: "Castle in the Sky",
-        director: "Hayao Miyazaki",
-        release_date: "1986",
-        rt_score: "95",
-      },
-      {
-        title: "Whisper of the Heart",
-        director: "Yoshifumi Kondō",
-        release_date: "1995",
-        rt_score: "91",
-      },
-    ];
-    const filmesPesquisados = pesquisaDataTítulo(filmes, "the");
-    expect(filmesPesquisados).toHaveLength(2);
-    expect(filmesPesquisados).toEqual(filmesTituloParcial);
-  });
-});
-
-const personagens = [
-  {
-    name: "Aiko",
-    gender: "Female",
-    specie: "Human",
-  },
-  {
-    name: "Heen",
-    gender: "Male",
-    specie: "Dog",
-  },
-  {
-    name: "Pazu",
-    gender: "Male",
-    specie: "Human",
-  },
-];
-
-const personagensDesordenados = [
-  {
-    name: "Pazu",
-    gender: "Male",
-    specie: "Human",
-  },
-  {
-    name: "Heen",
-    gender: "Male",
-    specie: "Dog",
-  },
-  {
-    name: "Aiko",
-    gender: "Female",
-    specie: "Human",
-  },
-];
-
-describe("Testar filtro por espécie", () => {
-  it("should return 2 characters", () => {
-    const personagensFiltrados = filtroDataEspécie(personagens, "Human");
-    expect(personagensFiltrados).toHaveLength(2);
-  });
-
-  it("should return human characters", () => {
-    const personagensHumanos = [
-      {
-        name: "Aiko",
-        gender: "Female",
-        specie: "Human",
-      },
-      {
-        name: "Pazu",
-        gender: "Male",
-        specie: "Human",
-      },
-    ];
-    const personagensFiltrados = filtroDataEspécie(personagens, "Human");
-    expect(personagensFiltrados).toEqual(personagensHumanos);
-  });
-});
-
-describe("Testar ordenação pelo nome do personagem", () => {
-  it("should sort by name", () => {
-    const personagensOrdenados = ordenaçãoDataPersonagens(personagensDesordenados, "A-Z");
-    expect(personagensOrdenados).toEqual(personagens);
-  });
-});
-
-describe("Testar pesquisa de nome", () => {
-  it("should search by full name", () => {
-    const nomesPesquisados = pesquisaDataNome(personagens, "Pazu");
-    expect(nomesPesquisados).toHaveLength(1);
-    expect(nomesPesquisados[0]).toEqual(personagens[2]);
-  });
-
-  it("should search by partial name", () => {
-    const personagensNomeParcial = [
-      {
-        name: "Heen",
-        gender: "Male",
-        specie: "Dog",
-      },
-    ];
-    const nomesPesquisados = pesquisaDataNome(personagens, "He");
-    expect(nomesPesquisados).toHaveLength(1);
-    expect(nomesPesquisados).toEqual(personagensNomeParcial);
+  it("Recuperar porcentagem de personagens", () => {
+    const porcentagemDePersonagens = recuperarPorcentagemDePersonagens(1);
+    expect(porcentagemDePersonagens).toEqual("Exibindo 1 de 171 (0.58%)");
   });
 });

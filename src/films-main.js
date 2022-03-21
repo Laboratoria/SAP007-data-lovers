@@ -1,4 +1,4 @@
-import {filterFilms/*filters*/} from './data.js';
+import {filterFilms, filters} from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
@@ -42,13 +42,19 @@ const searchFilms = document.querySelector("#inputSearch");
 searchFilms.addEventListener("keyup", searchMovie);
 
 
-/*const ordenator = (e) =>{
+const ordenator = (e) =>{
   const orderSelec = e.target.value;
   if (orderSelec !== ""){
     const filterOrder = filters(films, orderSelec)
+    console.log(filterOrder)
     printCards(filterOrder)
   }
 }
 const order = document.getElementById("inputOrder")
-order.addEventListener ("change", ordenator)*/
+order.addEventListener ("change", ordenator)
 
+const orderAge = document.getElementById("inputAge")
+orderAge.addEventListener("change", ordenator)
+
+const orderScore = document.getElementById("inputScore")
+orderScore.addEventListener("change", ordenator)

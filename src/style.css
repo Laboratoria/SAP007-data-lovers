@@ -1,7 +1,80 @@
+/*palleta
+$blue: #A7CAED;
+$blue-dark: #3B5A8C;
+$purple: #74596E;
+$red: #CC2B27;
+$yellow: #F5C844;
+$offwhite: #EAEBF2;
+*/
+/*fontes
+Font Family: "Lato", sans-serif;
+line-height é o espaçamento entre uma linha e outra.
+font-weight é a espessura da linha, “nomal, negrito e assim por diante” 
 
-.card {
-background: #1d9bf0;
-width: 300px;
-height: 70vh;
+Titulo1 28px line height 34px fw 900
+Titulo2 24px line height 30px fw 900
+Titulo3 24px line height 30px fw 400
+Titulo4 20px line height 28px fw 700
+EstiloBotãoComum 15px LH 21px fw 700
+TextoComum 15px LH 21px fw 300
+TextoFooter LINKS 12px LH 17px fw 300
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    background: #EAEBF2;
+}
+br {
+    line-height: 5px;
 }
 
+.titulo1 {
+font-size: 28px;
+line-height: 34px;
+font-weight: 900;
+}
+.titulo2 {
+font-size: 24px;
+line-height: 30px;
+font-weight: 900;
+}
+.titulo3 {
+font-size: 24px;
+line-height: 30px;
+font-weight: 400;
+}
+
+
+.card {
+background: #A7CAED;
+/*filter: blur(4px);*/
+width: 285px;
+height: 420px;
+border-radius: 20px;
+border: 12px solid #3B5A8C;
+/*height: 70vh;*/
+/*padding-left: 0.5vh;*/
+margin-left: 2vw;
+}
+
+.titulo1card {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: #000;
+line-height: 60px;
+width: 94%;
+background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
+}
+
+.titulo3card {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: #F5C844;
+text-shadow:#74596E 1px -1px, #74596E -1px 1px, #74596E 1px 1px, #74596E -1px -1px;
+line-height: 30px;
+width: 94%;
+background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
+}

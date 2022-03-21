@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@300&family=Oxygen:wght@300&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -13,6 +15,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden; 
+  font-family: 'Lobster', cursive;
+
+  font-family: 'Merriweather', serif;
+
+  font-family: 'Oxygen', sans-serif;
 }
 
 header {

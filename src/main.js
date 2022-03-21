@@ -1,12 +1,12 @@
 import data from './data/pokemon/pokemon.js';
-import { selectType, calcType } from './data.js'
+import { selectType, calcType, ordenarPokemons } from './data.js'
 
 const pokemons = data.pokemon;
 
 function cardsPokemons(data) {
     const cardPokemon = document.getElementById("cards");
     cardPokemon.innerHTML = data.map((item) =>
-  `<div class="info-cards"> 
+        `<div class="info-cards"> 
    <p id="num">  ${item.num}</p> 
    <img class="img-card" src="${item.img}"/> 
    <p id="name">  Name:${item.name}</p> 
@@ -15,7 +15,7 @@ function cardsPokemons(data) {
    </div>`
     ).join("")
 
-} 
+}
 cardsPokemons(pokemons);
 
 
@@ -36,4 +36,12 @@ function typePercent() {
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
 
+const selectOrdenar = document.getElementById("sortBy");
+selectOrdenar.addEventListener("change", pegarOrdem);
 
+function pegarOrdem() {
+    const sortFilter = document.getElementById("sortBy").value;
+    const ordered = ordenarPokemons(pokemons, sortFilter);
+    pokemons(ordered);
+    limparOrdem();
+}

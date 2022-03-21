@@ -1,4 +1,4 @@
-import { filmesDiretores, moviesByMaxScore, moviesByMinScore } from './data.js';
+import { filmesDiretores, moviesByScore } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -30,8 +30,9 @@ printar(infos)
 
 const btnFilmes = document.getElementById("films");
 
-document.addEventListener("change", () => {
 
+
+document.addEventListener("change", () => {
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
@@ -40,17 +41,19 @@ document.addEventListener("change", () => {
 
 })
 
+//console.log (moviesByScore(data))
+//console.log(moviesByScore(data))
 
-console.log(moviesByMaxScore(data),moviesByMinScore(data))
+
 
 document.addEventListener("change", () => {
-
   const scoreButton = document.getElementById("score");
   const scoreRate = scoreButton.selectedIndex;
   const selectedRate = scoreButton[scoreRate].value;
-  const orderByScore = moviesByMaxScore(data)
+  const orderByScore = (moviesByScore(data, selectedRate))
   printar(orderByScore)
-console.log(selectedRate)
+
+//console.log(orderByScore)
 
 })
 

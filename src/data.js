@@ -38,6 +38,6 @@ export const filtroOrder  = (data, order) => {
   }
 }
 export const calculoPorcentagem = (total, portion) => {
-  const porcentagem = Math.round((portion * 100) / total);
+  const porcentagem = Math.round((portion * 100) / total).toFixed(2);
   return porcentagem;
 };

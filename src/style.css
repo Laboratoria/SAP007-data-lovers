@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@300&family=Oxygen:wght@300&display=swap');
 
 *{
-  margin: 0;
+    margin: 0;
   padding: 0;
   box-sizing: border-box;
 
@@ -16,9 +16,7 @@ body {
   background-size: cover;
   overflow-x: hidden; 
   font-family: 'Lobster', cursive;
-
   font-family: 'Merriweather', serif;
-
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -93,6 +91,8 @@ header {
   background-color: #ce6310;
   flex-direction: column;
 } 
+
+.backcard
 
 .img-card{
   object-fit: fit;

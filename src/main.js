@@ -1,5 +1,6 @@
 import data from './data/pokemon/pokemon.js';
-import { selectType, calcType, ordenarPokemons } from './data.js'
+import { selectType, calcType, sortAZ } from './data.js'
+
 
 const pokemons = data.pokemon;
 
@@ -34,8 +35,6 @@ function cardsPokemons(data) {
 }
 cardsPokemons(pokemons);
 
-
-
 const filterType = document.querySelector(".select-typefilters");
 
 filterType.addEventListener("change", () => {
@@ -52,12 +51,10 @@ function typePercent() {
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
 
-const selectOrdenar = document.getElementById("sortBy");
-selectOrdenar.addEventListener("change", pegarOrdem);
+const sortOrder = document.getElementById("sortAlphabet");
 
-function pegarOrdem() {
-    const sortFilter = document.getElementById("sortBy").value;
-    const ordered = ordenarPokemons(pokemons, sortFilter);
-    pokemons(ordered);
-    limparOrdem();
-}
+sortOrder.addEventListener("change", (event) => {
+    const selectedSort = event.target.value;
+    const filterAz = sortAZ(pokemons, selectedSort);
+    cardsPokemons(filterAz);
+})

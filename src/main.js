@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import {selectType, calcType} from './data.js'
+import { selectType, calcType } from './data.js'
 
 const pokemons = data.pokemon;
 
@@ -35,3 +35,5 @@ function typePercent() {
     let result = calcType(pokemons, filterType);
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
+
+

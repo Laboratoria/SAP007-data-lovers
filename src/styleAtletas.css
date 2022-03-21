@@ -3,7 +3,6 @@
   margin:0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .banner {
   width: 100%;
   height: 100%;
@@ -40,21 +39,28 @@
 }
 .barraMenu{
   position:relative;
-  background-color: blue;
-  color: blue;
+  background-color: #0d4b92;
   display: flex;
+  align-content: space-around;
   justify-content: center;
-  height: 30px;
+  height: 3.125rem;
   margin-top: 322px;
   margin-left: 15%;
   margin-right: 15%;
 }
-
-
+.flexItem{
+  height: 2rem;
+  border-radius: 0.625rem
+}
+.ordering-country{
+  margin-right: 23px;
+  margin-left: 23px;
+ 
+}
 .btn{
-  border:2px solid;
+  border:1px solid;
   border-radius:4px;
-  background-color: #3bc5cf;
+  background-color: #e5e9e9;
   display:inline-block;
   cursor:pointer;
   font-family:Verdana;
@@ -62,6 +68,7 @@
   font-size:10px;
   padding:6px 10px;
   text-decoration:none;
+  width: 90px ;
 }
 
 .container-atletas{
@@ -104,3 +111,71 @@
   padding-top: 11%;
   padding-bottom: 1%;
 }
+
+
+@media (min-width: 320px) {
+  
+    .links {
+      font-size: 150%;
+    }
+  
+    .menu {
+      padding-top: 2%;
+    }
+  
+    .item-menu {
+      padding-left: 15%;
+    }
+  
+    .barraMenu {
+      margin-top: 14.813rem;
+      
+    }
+    .flex-item-atleta {
+      width: 30%;
+      padding-top: 2%;
+    }
+  
+    .conteudo-atletas {
+      font-size: 1.40rem;
+      padding-top: 1.25rem;
+    }
+  
+  }
+  @media screen and (min-width: 768px){
+    .item-menu {
+      padding-left: 14%;
+    }
+  
+    .links {
+      font-size: 1.375rem;
+    }
+  
+  }
+  @media screen and (min-width: 1024px) {
+
+    .item-menu {
+      padding-left: 2%;
+    }
+  
+    .links {
+      font-size: 140%;
+    }
+  
+    .barraMenu {
+      margin-top: 25%;
+
+    }
+  
+   .flex-item-atleta {
+      width: 160px; 
+      bottom: 10px
+    
+    }
+  
+    .conteudo-atletas {
+      font-size: 1.3rem;
+      padding-top: 1.25rem;
+    }
+  
+  }

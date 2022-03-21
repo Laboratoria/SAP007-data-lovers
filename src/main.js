@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import { searchByName, selectType, calcType, sortAZ, sortZA  } from './data.js'
+import { searchByName, selectType, calcType, sortAZ, orderBy} from './data.js'
 
 const pokemons = data.pokemon;
 
@@ -20,8 +20,6 @@ cardsPokemons(pokemons);
 
 
 
-
-
 const filterType = document.querySelector(".select-typefilters");
 
 filterType.addEventListener("change", () => {
@@ -31,61 +29,3 @@ filterType.addEventListener("change", () => {
     typePercent();
 })
 
-const sortBy = document.getElementById("sortAlphabet");
-
- sortBy.addEventListener("change", () => {
-     const AZ = sortBy.value;
-     const arraySort = sortAZ(AZ, pokemons);
-     cardsPokemons(arraySort); 
- })
-
-// function typePercent() {
-//     document.getElementById("calculation").innerHTML = "";
-//     const filterType = document.getElementById("filter-type").value;
-//     let result = calcType(pokemons, filterType);
-//     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
-// }
-// console.log(selectType(filterType.value,pokemons))
-
-// Filtro de ordem select
-
-// const filterSelectOrder = document.querySelector("#order-search");
-
-// filterSelectOrder.addEventListener("change", (event) => {
-//     const orderType = event.target.value;
-//     const arrayOrdered = orderBy(orderType, pokemons);
-//     cardsPokemons(arrayOrdered);
-// })
-
-// // Filtro por input (texto) de nome
-
-// const filterInputType = document.querySelector("#search-input");
-
-// filterInputType.addEventListener("change", () => {
-//     const filterName = filterInputType.value;
-//     const arrayFiltered = searchByName(filterName, pokemons);
-//     cardsPokemons(arrayFiltered);
-// })
-
-
-
-// filterInputType.addEventListener("keyup", (event) => {
-
-//     if (event.keyCode === 13) {
-//         event.preventDefault();
-//     }
-
-//     const filterName = event.target.value;
-//     const arrayFiltered = searchByName(filterName, pokemons);
-//     cardsPokemons(arrayFiltered);
-
-// })
-
-
-// const sortBy = document.getElementById("sortAlphabet");
-
-//  sortBy.addEventListener("change", (event)=> {
-//      const AZ = event.terget.value;
-//      const arraySort = (AZ, pokemons);
-//      cardsPokemons(arraySort); 
-//  })

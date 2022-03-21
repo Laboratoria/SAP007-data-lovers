@@ -105,8 +105,16 @@ img {
 
 /* Aqui começa a barra de pesquisa */
 .conteudo-pesquisa {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.conteudo-pesquisa, .cartoes {
+  margin-top:  30px;
+}
+
+.conteudo-pesquisa #contador {
+  font-size: 11.5px;
+  color: #757575;
 }
 
 .input-pesquisa {
@@ -117,6 +125,7 @@ img {
   border-radius: 30px;
   font-size: 16px;
   margin: 20px 0;
+  border: 2px solid rgba(0,141,218, 0.8);
 }
 
 /* Aqui termina a barra de pesquisa */
@@ -141,8 +150,19 @@ img {
   background-size: cover;
   border: solid 1px #ddd;
   border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px;
   overflow: hidden;
-  border: red 1px solid;
+  background-size: 100% 100%
+}
+
+.titulo-nome-cartao {
+  background-color: #319cdb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px 0;
+  border: 1px solid #fff;
 }
 
 /* Fim cartões */

@@ -16,10 +16,6 @@
     width: 200px;
 }
 
-.input-pesquisa {
-    border: 2px solid rgba(0,141,218, 0.8);
-} 
-
 .seletores, .radios {
     display: flex;
     justify-content: space-around;
@@ -37,14 +33,9 @@
     margin-top: 20px;
 }
 
-.conteudo-pesquisa, .cartoes {
-    margin-top:  50px;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
 }
 
 footer {

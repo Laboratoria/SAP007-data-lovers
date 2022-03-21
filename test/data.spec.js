@@ -12,7 +12,9 @@ import {
   buscarNomesDiretores,
   buscarEspeciesPersonagens,
   buscarGenerosPersonagens,
-  recuperarPorcentagemDePersonagens
+  recuperarPorcentagemDePersonagens,
+  pesquisarFilmesPorNome,
+  pesquisarPersonagensPorNome
 } from "../src/js/data";
 
 describe("Filmes", () => {
@@ -44,6 +46,11 @@ describe("Filmes", () => {
   it("Filtra filmes por data de lançamento 3", () => {
     const filmes = buscarFilmesPorDataLancamento("1996");
     expect(filmes[0]).toEqual(undefined);
+  });
+
+  it("Pesquisar filme por nome", () => {
+    const filmes = pesquisarFilmesPorNome("kik");
+    expect(filmes[0].title).toEqual("Kiki's Delivery Service");
   });
 });
 
@@ -91,6 +98,11 @@ describe("Personagens", () => {
   it("Recuperar genero dos personagens", () => {
     const especies = buscarGenerosPersonagens();
     expect(especies).toHaveLength(4);
+  });
+
+  it("Pesquisar personagem por nome", () => {
+    const personagens = pesquisarPersonagensPorNome("tsu");
+    expect(personagens).toHaveLength(17);
   });
 });
 

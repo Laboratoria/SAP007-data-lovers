@@ -181,3 +181,33 @@ export function recuperarPorcentagemDePersonagens(quantidadeFiltrado) {
   const porcentagemFiltrada = (quantidadeFiltrado * 100 / personagens.length).toFixed(2);
   return `Exibindo ${quantidadeFiltrado} de ${personagens.length} (${porcentagemFiltrada}%)`;
 }
+
+export function pesquisarFilmesPorNome(filtro) {
+  const filmes = recuperarFilmes();
+
+  if(filtro.length >= 3) {
+    const filmesFiltrados = filmes.filter(function(filme) {
+      const nomeFilme = filme.title.toLowerCase();
+      return nomeFilme.includes(filtro.toLowerCase());
+    });
+    return filmesFiltrados;
+  }
+  else {
+    return filmes;
+  }
+}
+
+export function pesquisarPersonagensPorNome(filtro) {
+  const personagens = recuperarPersonagens();
+
+  if(filtro.length >= 3) {
+    const personagensFiltrados = personagens.filter(function(personagem) {
+      const nomePersonagem = personagem.name.toLowerCase();
+      return nomePersonagem.includes(filtro.toLowerCase());
+    });
+    return personagensFiltrados;
+  }
+  else {
+    return personagens;
+  }
+}

@@ -6,18 +6,19 @@ import {
   buscarFilmesPorDataLancamento,
   buscarFilmesPorPopularidade,
   buscarFilmesPorOrdemAlfabetica,
-  recuperarPorcentagemDeFilmes
+  recuperarPorcentagemDeFilmes,
+  pesquisarFilmesPorNome
 } from "./data.js";
 
 function iniciarPagina() {
+  const filmes = recuperarFilmes();
+  carregarPoster(filmes);
+
   iniciarSeletoresDiretor();
   iniciarSeletoresDataLancamento();
   iniciarOptionPopularidade();
   iniciarOptionOrdemAlfabetica();
-  
-  const filmes = recuperarFilmes();
-  carregarPoster(filmes);
-
+  iniciarInputPesquisa();
 }
 
 iniciarPagina();
@@ -120,8 +121,23 @@ function carregarPoster(filmes) {
       elementoDiv.classList.add("cartao");
       elementoDiv.style.backgroundImage = "url(" + filme.poster + ")";
 
+      const elementoParagrafoNome = document.createElement("p");
+      elementoParagrafoNome.classList.add("titulo-nome-cartao");
+      elementoParagrafoNome.innerText = filme.title;
+
+      elementoDiv.appendChild(elementoParagrafoNome);
       elementoLi.appendChild(elementoDiv);
       cartoes.appendChild(elementoLi);
   });
 }
 
+function iniciarInputPesquisa() {
+  const inputPesquisa = document.getElementById("input-pesquisa");
+  inputPesquisa.addEventListener("input", filtrarFilmeInputPesquisa);
+}
+
+function filtrarFilmeInputPesquisa() {
+  const inputPesquisa = document.getElementById("input-pesquisa");
+  const filmes = pesquisarFilmesPorNome(inputPesquisa.value);
+  carregarPoster(filmes);
+}

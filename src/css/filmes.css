@@ -22,10 +22,6 @@
   margin-bottom: -20px;
 }
 
-.input-pesquisa {
-  border-color: #33a4e1;
-} 
-
 .seletores, .radios {
   display: flex;
   justify-content: space-around;

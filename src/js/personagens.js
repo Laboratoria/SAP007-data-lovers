@@ -5,7 +5,8 @@ import {
   buscarEspeciesPersonagens,
   buscarPersonagensPorEspecie,
   buscarPersonagensPorOrdemAlfabetica,
-  recuperarPorcentagemDePersonagens
+  recuperarPorcentagemDePersonagens,
+  pesquisarPersonagensPorNome
 } from "./data.js";
 
 function iniciarPagina() {
@@ -15,6 +16,7 @@ function iniciarPagina() {
   iniciarSeletorGenero();
   iniciarSeletorEspecie();
   iniciarOptionOrdemAlfabetica();
+  iniciarInputPesquisa();
 }
 
 iniciarPagina();
@@ -84,20 +86,37 @@ function filtrarFilmesPorOrdemAlfabeticaZA() {
 }
 
 function carregarImagens(personagens) {
-  const contador = document.getElementById("contador");
-  contador.innerText = recuperarPorcentagemDePersonagens(personagens.length);
+  const elementoSpanContador = document.getElementById("contador");
+  elementoSpanContador.innerText = recuperarPorcentagemDePersonagens(personagens.length);
 
-  const cartoes = document.getElementById("grupo-cartoes");
-  cartoes.innerHTML = null;
+  const elementoUlCartoes = document.getElementById("grupo-cartoes");
+  elementoUlCartoes.innerHTML = null;
+
   personagens.forEach(function (personagem) {
       const elementoLi = document.createElement("li");
       elementoLi.classList.add("itens-cartao");
-
+      
       const elementoDiv = document.createElement("div");
       elementoDiv.classList.add("cartao");
       elementoDiv.style.backgroundImage = "url(" + personagem.img + ")";
+      
+      const elementoParagrafoNome = document.createElement("p");
+      elementoParagrafoNome.classList.add("titulo-nome-cartao");
+      elementoParagrafoNome.innerText = personagem.name;
 
+      elementoDiv.appendChild(elementoParagrafoNome);
       elementoLi.appendChild(elementoDiv);
-      cartoes.appendChild(elementoLi);
+      elementoUlCartoes.appendChild(elementoLi);
   });
+}
+
+function iniciarInputPesquisa() {
+  const inputPesquisa = document.getElementById("input-pesquisa");
+  inputPesquisa.addEventListener("input", filtrarPersonagemInputPesquisa);
+}
+
+function filtrarPersonagemInputPesquisa() {
+  const inputPesquisa = document.getElementById("input-pesquisa");
+  const personagens = pesquisarPersonagensPorNome(inputPesquisa.value);
+  carregarImagens(personagens);
 }

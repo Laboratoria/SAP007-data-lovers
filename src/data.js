@@ -1,8 +1,8 @@
 
- //Filtro por nome de atleta 
+ //Filtro por nome de atleta
 
-  
-  export const filterAth = (athletes, name) => { 
+
+  export const filterAth = (athletes, name) => {
     return athletes.filter(atleta => {
     return atleta.name.toLowerCase().includes (name.toLowerCase())
     });
@@ -36,7 +36,7 @@ export const AZsort = (athletes, selectSort) => {
         return 1;
       }
       return 0;
-      
+
     });
    } else {
     return athletes.sort((a, b) => {
@@ -49,12 +49,12 @@ export const AZsort = (athletes, selectSort) => {
         return -1;
       }
       return 0;
-      
+
     });
    }
   }
 
- 
+
 export const sortCountry = (athletes, selectCountry) => {
   if (selectCountry === "a-z"){
     return athletes.sort((a, z) => {

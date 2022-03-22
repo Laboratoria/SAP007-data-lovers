@@ -1,22 +1,67 @@
+
+<h1 align="center"> Data Lovers - Jogos Olímpicos Rio 2016 </h1>
+<h4 align="center">Status do projeto: Em construção </h4>
+
 # Olímpiadas Data Lovers
+
 
 ## Índice
 
-- [1. Preâmbulo](#1-preâmbulo)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-considerações-gerais)
-- [5. Critérios mínimos de aceitação do
-  projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Considerações técnicas](#7-considerações-técnicas)
-- [8. Pistas, dicas e leituras
-  complementares](#8-pistas-dicas-e-leituras-complementares)
-- [9. Checklist](#9-checklist)
+- [1. Descrição](#1-drescrição)
+- [2. História de usuários](#2-história-de-usuários)
+- [3. Desenho de interface do usuário](#3-desenho-de-interface-do-usuário)
+- [4. Testes Unitários](#4-testes-unitários)
+- [5. Tecnologias utilizadas](#5-tecnologias-utilizadas)
+- [6. Desenvolvido por](#6-desenvolvido-por)
 
 ---
 <img src="src/Olímpiadas Data Lovers.png" alt="OlímpiadasDL">
 
+
+## 1. Drescrição
+
+
+## 2. História de usuários
+
+
+## 3. Desenho de interface do usuário
+
+Após decidirmos o tema e fazermos uma breve pesquisa sobre sites com o mesmo tema chegamos a conclusão de que um site simples e direto seria a melhor opção. A paleta de cores foi baseada nas cores do logo e tema dos jogos olímpicos Rio 2016.
+
+#### Protótipo de baixa fidelidade
+
+![Desenho feito a mão do protótipo de baixa fidelidade](src/img/baixa-fidelidade.jpeg)
+
+Por se tratar de um projeto responsivo criamos o protótipo de alta fidelidade para os dispositivos mais utilizados: smartphone, notebook/desktop e tablet.
+
+#### Protótipo de alta fidelidade para smartphone
+
+![Protótipo de alta fidelidade feito no Figma](src/img/celular.mp4)
+
+#### Protótipo de alta fidelidade para notebook/desktop
+
+![Protótipo de alta fidelidade feito no Figma](src/img/notebook.mp4)
+
+#### Protótipo de alta fidelidade para tablet
+
+![Protótipo de alta fidelidade feito no Figma](src/img/tablet.mp4)
+
+## 4. Testes Unitarios
+
+## 5. Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScrip
+- Node.js
+- Git
+- Figma
+- Jest
+
+## 6. Desenvolvido por
+
+Jaqueline de Oliveira - [LinkedIn](https://www.linkedin.com/in/jaquelinedeoliveiraa/) - [GitHub](https://github.com/jaquelinedeoliveira93)
+=======
 
 ## 1. Descrição do projeto
 
@@ -43,17 +88,5 @@ Escolhemos dois tipos de usuários para adequar uma aplicação que se baseasse 
 
 ## 4. Checklist
 
-- [ ] Usar VanillaJS.
-- [ ] Passa pelo linter (`npm run pretest`)
-- [ ] Passa pelos testes (`npm test`)
-- [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
-      branches.
-- [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
-- [ ] Inclui histórias de usuário no `README.md`.
-- [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
-- [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
-      `README.md`.
-- [ ] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
-- [ ] UI: Permite ordenar dados por um ou mais campos (asc e desc).
-- [ ] UI: Permite filtrar dados com base em uma condição.
-- [ ] UI: É _responsivo_.
+
+Larissa Santos - [LinkedIn](https://www.linkedin.com/in/larissa-dos-reis-santos-aaa8b415a/) - [GitHub](https://github.com/Larasantos97)

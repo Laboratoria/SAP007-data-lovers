@@ -1,4 +1,4 @@
-import { filmesDiretores, moviesByScore, sortMoviesByyear } from './data.js';
+import { filmesDiretores, moviesByScore, sortMoviesByyear, porcMoviesDirector } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -37,8 +37,8 @@ directorsButton.addEventListener("change", () => {
   const directorSelect = directorsButton[directorIndex].value;
   const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
-  console.log(filtroDiretor)
 
+  console.log(porcMoviesDirector(data))
 })
 
 const scoreButton = document.getElementById("score");
@@ -50,19 +50,17 @@ scoreButton.addEventListener("change", () => {
   const orderByScore = (moviesByScore(data, selectedRate))
   printar(orderByScore)
 
-//console.log(orderByScore)
+  //console.log(orderByScore)
 
 });
 
 const sortOrder = document.getElementById("year");
 
 sortOrder.addEventListener("change", (event) => {
-    const selectedSort = event.target.value;
-    const filterAz = sortMoviesByyear(data, selectedSort);
-    printar(filterAz);
+  const selectedSort = event.target.value;
+  const filterAz = sortMoviesByyear(data, selectedSort);
+  printar(filterAz);
 })
-
-
 
 
 

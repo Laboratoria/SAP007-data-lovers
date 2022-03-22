@@ -75,11 +75,11 @@ const ChooseMedal = [
   });*/
   describe("AZsort", () => {
     it("should return athlete sort A-Z", () => {
-      expect(AZsort(dataCards, "A-Z")).toEqual([dataCards[2], dataCards[0], dataCards[1]]);
+      expect(AZsort(dataCards, "A-Z")).toEqual([dataCards[1], dataCards[2], dataCards[0]]);
     });
   
     it("should return athlete sort Z-A", () => {
-      expect(AZsort(dataCards, "Z-A")).toEqual([dataCards[1], dataCards[0], dataCards[2]]);
+      expect(AZsort(dataCards, "Z-A")).toEqual([dataCards[0], dataCards[2], dataCards[1]]);
     });
     });
 
@@ -97,7 +97,7 @@ it ("search by athlete name", () => {
 
 describe("filterSport", () => {
   it ("should return only the selected sport", () => {
-    const whichSport = filterSport(chooseSport, "shooting");
+    const whichSport = filterSport(chooseSport, "Shooting");
     expect(whichSport).toEqual([{"sport": "Shooting"}]);
   });
   it('search by medal', () => {
@@ -109,7 +109,7 @@ describe("filterSport", () => {
 describe('sortCountry', () => {
   it("should return country asc and dsc order and number of athletes A-Z", () => {
     const CountryAZ = sortCountry(cardsCountry, "A-Z");
-    expect(CountryAZ).toEqual([cardsCountry[2], cardsCountry[1], cardsCountry[0]]);
+    expect(CountryAZ).toEqual([cardsCountry[1], cardsCountry[2], cardsCountry[0]]);
   });
 
   it("should return country asc and dsc order and number of athletes Z-A", () => {

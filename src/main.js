@@ -1,4 +1,4 @@
-import { filmesDiretores, sortMoviesByyear} from './data.js';
+import { filmesDiretores, sortMoviesByyear, sortMoviesAz} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -43,8 +43,17 @@ const sortOrder = document.getElementById("year");
 
 sortOrder.addEventListener("change", (event) => {
     const selectedSort = event.target.value;
-    const filterAz = sortMoviesByyear(data, selectedSort);
+    const orderYear = sortMoviesByyear(data, selectedSort);
+    printar(orderYear);
+});
+
+const sortOrderAz = document.getElementById("films");
+
+sortOrderAz.addEventListener("change", (event) => {
+    const selectedSort = event.target.value;
+    const filterAz = sortMoviesAz(data, selectedSort);
     printar(filterAz);
+    console.log(filterAz)
 })
 
 

@@ -1,9 +1,8 @@
-import { ordemNameAA, ordemNameBB } from './data.js';
+import { ordemNameAA, ordemNameBB, filterStatus, filtroespecie, filterGender } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const showPersonagens = document.getElementById("card")
 const arrayRickAndMorty = data.results
-let cardsAtuais = arrayRickAndMorty
 
 function showInfos(arrayRickAndMorty) {
   showPersonagens.innerHTML = arrayRickAndMorty.map(item =>
@@ -28,111 +27,143 @@ function showInfos(arrayRickAndMorty) {
         <div class="card-img">
         <img src="${item.image}" class="imgcard" position="center" width="174px" height="170px" border-radius="5%" />
       </div>
-        <b>Origem:</b> ${item.origin.url}</a>
-        <b>Localização:</b>${item.location.url}</p>
-        <p><b>Epsódios que aparece:</b> ${item.episode.lenght}</p>
+        <p><b>Origem:</b> ${item.origin.name}</a></p>
+        <b>Localização:</b>${item.location.name}</p>
+        <p><b>Faz parte de:</b> ${item.episode.length} Epsódios</p>
         </div>
        </div>`
 
   ).join('')
-
-
-  showInfos(arrayRickAndMorty)
 }
-showInfos(cardsAtuais)
 
+showInfos(arrayRickAndMorty)
 
-function calculo(numero, numero2){
-  let statS = numero/ numero2 *100;
+function calculo(numero, numero2) {
+  let statS = numero / numero2 * 100;
   document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
-  console.log(showStats)
-
 
 }
-  //filtros status
-  const selectStatus = document.getElementById("selectFilterLife")
 
-  selectStatus.addEventListener("change", (event) => {
+//filtros status
+const selectGender = document.getElementById("selectFilterGender")
+const selectStatus = document.getElementById("selectFilterLife")
+const selectSpecies = document.getElementById("selectFilterSpecies")
+document.getElementById("btn-ordemZ").addEventListener("click", ordemNameB);
 
-    const newArrayStatus = arrayRickAndMorty.filter((item) => {
-      let carD = item.status === event.target.value
+
+selectStatus.addEventListener("change", (event) => {
+
+  let newArrayStatus = filterStatus(arrayRickAndMorty, event.target.value)
+  if (selectGender.value) {
+    newArrayStatus = newArrayStatus.filter((item) => {
+      let carD = item.gender === selectGender.value
       return carD
     })
-    calculo(newArrayStatus.length, arrayRickAndMorty.length)
-    showInfos(newArrayStatus)
-
-    cardsAtuais = cardsAtuais.filter((item) => {
-      return item.status === event.target.value
+  }
+  if (selectSpecies.value) {
+    newArrayStatus = newArrayStatus.filter((item) => {
+      let carD = item.species === selectSpecies.value
+      return carD
     })
+  }
+  calculo(newArrayStatus.length, arrayRickAndMorty.length)
+  showInfos(newArrayStatus)
+})
+//filtroespecie
 
-
-
-  //filtroespecie
-  const selectSpecies = document.getElementById("selectFilterSpecies")
-
-  selectSpecies.addEventListener("change", (event) => {
-    cardsAtuais = cardsAtuais.filter((item) => {
-      return item.species === event.target.value
+selectSpecies.addEventListener("change", (event) => {
+  let newArraySpecies = filtroespecie(arrayRickAndMorty, event.target.value)
+  if (selectGender.value) {
+    newArraySpecies = newArraySpecies.filter((item) => {
+      let carD = item.gender === selectGender.value
+      return carD
     })
+  }
+  if (selectStatus.value) {
+    newArraySpecies = newArraySpecies.filter((item) => {
+      let carD = item.status === selectStatus.value
+      return carD
+    })
+  }
+  calculo(newArraySpecies.length, arrayRickAndMorty.length)
+  showInfos(newArraySpecies)
+  console.log(event.target.value)
+  console.log(newArraySpecies)
+})
+//filtroGenero
 
-    calculo(newArraySpecies.length, arrayRickAndMorty.length)
-    showInfos(newArraySpecies)
+selectGender.addEventListener("change", (event) => {
+  let newArrayGender = filterGender(arrayRickAndMorty, event.target.value)
+  if (selectStatus.value) {
+    newArrayGender = newArrayGender.filter((item) => {
+      let carD = item.status === selectStatus.value
+      return carD
+    })
+  }
+  if (selectSpecies.value) {
+    newArrayGender = newArrayGender.filter((item) => {
+      let carD = item.species === selectSpecies.value
+      return carD
+    })
+  }
 
-    showInfos(cardsAtuais)
+  calculo(newArrayGender.length, arrayRickAndMorty.length)
+  showInfos(newArrayGender)
 
+})
+
+//função ordenar A a Z
+function ordemNameA(event) {
+  event.preventDefault()
+  return showInfos(ordemNameAA(arrayRickAndMorty));
+}
+if (selectStatus.value) {
+  arrayRickAndMorty = arrayRickAndMorty.filter((item) => {
+    let carD = item.status === selectStatus.value
+    return carD
   })
-  //filtroGenero
-  const selectGender = document.getElementById("selectFilterGender")
-
-  selectGender.addEventListener("change", (event) => {
-    cardsAtuais = cardsAtuais.filter((item) => {
-      return item.gender === event.target.value
-    })
-
-    calculo(newArrayGender.length, arrayRickAndMorty.length)
-    showInfos(newArrayGender)
-
-    showInfos(cardsAtuais)
-
+}
+if (selectSpecies.value) {
+  arrayRickAndMorty = arrayRickAndMorty.filter((item) => {
+    let carD = item.species === selectSpecies.value
+    return carD
   })
+}
+if (selectGender.value) {
+  arrayRickAndMorty = arrayRickAndMorty.filter((item) => {
+    let carD = item.gender === selectGender.value
+    return carD
+  })
+}
 
-  //função ordenar A a Z
-  function ordemNameA(event) {
-    event.preventDefault()
-    return showInfos(ordemNameAA(cardsAtuais));
-  }
+document.getElementById("btn-ordemA").addEventListener("click", ordemNameA);
+//função ordenar Z a A
+function ordemNameB(event) {
+  event.preventDefault()
+  return showInfos(ordemNameBB(arrayRickAndMorty));
+}
 
-  document.getElementById("btn-ordemA").addEventListener("click", ordemNameA);
-  //função ordenar Z a A
-  function ordemNameB(event) {
-    event.preventDefault()
-    return showInfos(ordemNameBB(cardsAtuais));
-  }
-  document.getElementById("btn-ordemZ").addEventListener("click", ordemNameB);
-  //função limpar
-  const clearFilters = document.getElementById("btn-limpar");
-  function clearAll() {
-    window.location.reload();
-  }
-  clearFilters.addEventListener("click", clearAll);
-  //pesquisar por nome
+//função limpar
+const clearFilters = document.getElementById("btn-limpar");
+function clearAll() {
+  window.location.reload();
+}
+clearFilters.addEventListener("click", clearAll);
+//pesquisar por nome
 
-  const searchBar = document.getElementById('searchBar');
+const searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('keyup', (e) => {
+  const searchString = e.target.value;
+  arrayRickAndMorty.filter(item => {
+    return item.name.includes(searchString) ||
+      item.status.includes(searchString) ||
+      item.species.includes(searchString) ||
+      item.gender.includes(searchString)
+  })
+},
+  console.log(showInfos(arrayRickAndMorty)))
 
-  searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value;
-    cardsAtuais = cardsAtuais.filter(item => {
-      return item.name.includes(searchString) ||
-        item.status.includes(searchString) ||
-        item.species.includes(searchString) ||
-        item.gender.includes(searchString)
-    });
-    showInfos(cardsAtuais)
-  });
-
-
-  var btn = document.querySelector("#voltarAoTopo");
-  btn.addEventListener("click", function() {
-      window.scrollTo(0, 0);
-
-  });
+const btn = document.querySelector("#voltarAoTopo");
+btn.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+})

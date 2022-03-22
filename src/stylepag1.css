@@ -1,0 +1,37 @@
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.infos {
+  text-align: center;
+}
+.btn-grad {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 10px 30px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #1C1F24;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+          }
+
+.btnhome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+}

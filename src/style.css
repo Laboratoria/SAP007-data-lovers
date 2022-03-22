@@ -1,5 +1,6 @@
   body {
     background-color: #0C0F14;
+    color:#BFBFBF;
   }
 
   header{
@@ -9,17 +10,18 @@
     justify-content: space-around;
     background-color: #1C1F24;
     padding: 1%;
+    width: 100%;
   }
 
-  h1 {
+
+  .titlesite {
     color: #12B0C9;
+    font-size: 28px;
   }
-
 
   .stats {
     background-color: #0C0F14;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: #BFBFBF;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,8 +36,8 @@
     align-items: center;
     gap: 10%;
     background-color: #0C0F14;
+   }
 
-  }
   .filterspersonagens{
     display: flex;
     flex-direction: row;
@@ -46,25 +48,33 @@
 
   }
 
-  #voltarAoTopo {
+  #voltarAoTopo {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}
+    #voltarAoTopo {
     position: fixed;
     bottom: 50px;
     right: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #1C1F24;
+    border-radius: 10px;
+    display: block;
+  }
+
+     #voltarAoTopo:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 
   b, strong {color:#C8D258;}
 
   a, link {color: #BFBFBF}
-
-  @media (max-width: 600px)
-{
-  .facet_sidebar
-   {
-    display: none;
-   }
-
-
-
-  a, link {color: #BFBFBF;
-
-  a, link {color: #BFBFBF;

@@ -23,5 +23,22 @@ export const ordemNameBB = (data) => data.sort((a, b) => {
   return 0;
 });
 
+export const filterStatus = (data, value) => {
 
+return data.filter((item) => {
+  let carD = item.status === value
+  return carD
+})
+}
 
+export const filtroespecie = (data, value) => {
+  return data.filter((item) => {
+    return item.species === value
+  })
+}
+
+export const filterGender = (data, value) => {
+  return data.filter((item) => {
+  return item.gender === value
+  })
+}

@@ -36,15 +36,17 @@ Por se tratar de um projeto responsivo criamos o protótipo de alta fidelidade p
 
 #### Protótipo de alta fidelidade para smartphone
 
-![Protótipo de alta fidelidade feito no Figma](src/img/celular.mp4)
+https://user-images.githubusercontent.com/97201077/159582490-ce32156b-5354-4176-9a49-23d9bf677f51.mp4
 
-#### Protótipo de alta fidelidade para notebook/desktop
+**Protótipo de alta fidelidade para notebook/desktop**
 
-![Protótipo de alta fidelidade feito no Figma](src/img/notebook.mp4)
+https://user-images.githubusercontent.com/97201077/159582607-f82f5af6-6f5b-48c0-9e6f-c7a478e5d8c1.mp4
 
-#### Protótipo de alta fidelidade para tablet
 
-![Protótipo de alta fidelidade feito no Figma](src/img/tablet.mp4)
+**Protótipo de alta fidelidade para tablet**
+
+https://user-images.githubusercontent.com/97201077/159582614-b8a66e2f-ebd1-471a-b932-ef74b0076bb5.mp4
+
 
 ## 4. Testes Unitarios
 

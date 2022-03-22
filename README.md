@@ -42,11 +42,25 @@ Escolhemos dois tipos de usuários para adequar uma aplicação que se baseasse 
 
 Após decidirmos o tema e fazermos uma breve pesquisa sobre sites com o mesmo tema chegamos a conclusão de que um site simples e direto seria a melhor opção. A paleta de cores foi baseada nas cores do logo e tema dos jogos olímpicos Rio 2016.
 
- **Protótipo de baixa fidelidade**
+#### Protótipo de baixa fidelidade
 
 ![Desenho feito a mão do protótipo de baixa fidelidade](src/img/baixa-fidelidade.jpeg)
 
 Por se tratar de um projeto responsivo criamos o protótipo de alta fidelidade para os dispositivos mais utilizados: smartphone, notebook/desktop e tablet.
+
+#### Protótipo de alta fidelidade para smartphone
+
+https://user-images.githubusercontent.com/97201077/159582490-ce32156b-5354-4176-9a49-23d9bf677f51.mp4
+
+**Protótipo de alta fidelidade para notebook/desktop**
+
+https://user-images.githubusercontent.com/97201077/159582607-f82f5af6-6f5b-48c0-9e6f-c7a478e5d8c1.mp4
+
+
+**Protótipo de alta fidelidade para tablet**
+
+https://user-images.githubusercontent.com/97201077/159582614-b8a66e2f-ebd1-471a-b932-ef74b0076bb5.mp4
+
 
 ## Testes Unitarios
 

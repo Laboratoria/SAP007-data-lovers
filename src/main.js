@@ -27,55 +27,65 @@ function printar(infos) {
 printar(infos)
 
 
-document.addEventListener("change", () => {
-
-
+const directorsButton = document.getElementById("director");
+directorsButton.addEventListener("change", (event) => {
 
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
   const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
+  console.log(filtroDiretor)
 
-//console.log(directorSelect)
 });
 
+const sortOrder = document.getElementById("year");
+
+sortOrder.addEventListener("change", (event) => {
+    const selectedSort = event.target.value;
+    const filterAz = sortMoviesByyear(data, selectedSort);
+    printar(filterAz);
+})
 
 
-document.addEventListener("change", () => {
-  const yearButton = document.getElementById("year");
+
+
+
+/*const yearButton =document.getElementById("year");
+yearButton.addEventListener("change", (event) => {
+
+
   const yearIndex = yearButton.selectedIndex;
   const yearSelect = yearButton[yearIndex].value;
-  const yearCresc = sortMoviesByyear(data, yearSelect);
+  const yearCresc = sortMoviesByyear(data,yearSelect);
   printar(yearCresc)
   console.log(yearCresc)
 
 });
 
-/*document.addEventListener("change", () => {
-  const azButton = document.getElementById("films");
-  const azIndex = azButton.selectedIndex;
-  const ordeSelect = azButton[azIndex].value;
-  const azCresc = ordeMovies(data, ordeSelect);
-  printar(azCresc)
-  console.log(azCresc)
 
-});*/
+/*const yearButtondesc = document.getElementById("year");
+  yearButtondesc.addEventListener("change", (event) => {
 
 
-
-
-
-/*document.addEventListener("change", () => {
-  const yearButton = document.getElementById("year");
-  const yearIndex = yearButton.selectedIndex;
-  const yearSelect = yearButton[yearIndex].value;
+  const yearIndex = yearButtondesc.selectedIndex;
+  const yearSelect = yearButtondesc[yearIndex].value;
   const yearDesc = yearDescending(data, yearSelect);
   printar(yearDesc)
-console.log(yearDesc)
+  console.log(yearDesc)
 
+});
+
+/*const azButton = document.getElementById("films");
+
+azButton.addEventListener ("change", () =>{
+  const azButton = document.getElementById("films");
+  const azIndex = azButton.selectedIndex;
+  const azSelect = azButton[azIndex].value;
+  const orderAz = ordeMovies(data, azSelect)
+  printar (orderAz)
+ console.log(orderAz)
 });*/
-
 
 
 

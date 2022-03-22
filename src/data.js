@@ -58,8 +58,8 @@ export const AZsort = (athletes, selectSort) => {
 export const sortCountry = (athletes, selectCountry) => {
   if (selectCountry === "a-z"){
     return athletes.sort((a, z) => {
-      const countryA = a.team.toUpperCase();
-      const countryZ = z.team.toUpperCase();
+      const countryA = a.team;
+      const countryZ = z.team;
       if (countryA < countryZ) {
         return -1;
       }
@@ -70,8 +70,8 @@ export const sortCountry = (athletes, selectCountry) => {
     });
   } else {
     return athletes.sort((a, z) => {
-      const countryA = a.team.toUpperCase();
-      const countryZ = z.team.toUpperCase();
+      const countryA = a.team;
+      const countryZ = z.team;
       if (countryA < countryZ) {
         return 1;
       }

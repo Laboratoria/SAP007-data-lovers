@@ -23,24 +23,20 @@ export const moviesByScore = (data, selectedRate) => {
   }
 };
 
-
-
+ //operador de condiçao
 export const sortMoviesByyear = (data, orderSelect) => {
   const moviesByyear = data.films
 
-  if (orderSelect === "Crescente") {
-   return moviesByyear.sort((a,b) => Number(a.release_date) > Number(b.release_date) ? 1: -1);
-
-  } //operador de condiçao
+  if (orderSelect === "oldest") {
+    return moviesByyear.sort((a, b) => Number(a.release_date) > Number(b.release_date) ? 1 : -1);
+  }
 
   else {
-
-    return moviesByyear.sort((a,b) => Number(a.release_date) > Number(b.release_date) ? -1: 1);
+    return moviesByyear.sort((a, b) => Number(a.release_date) > Number(b.release_date) ? -1 : 1);
 
   };
 
 };
-
 
 export const sortMoviesAz = (data, orderSelect) => {
   const moviesAz = data.films
@@ -56,6 +52,13 @@ export const sortMoviesAz = (data, orderSelect) => {
   };
 
 };
+
+
+
+
+
+
+
 
 
 

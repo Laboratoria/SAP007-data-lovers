@@ -38,7 +38,8 @@ directorsButton.addEventListener("change", () => {
   const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
 
-  console.log("retorno main " + porcMoviesDirector(data, filtroDiretor))
+  document.querySelector(".curiosity").innerHTML = `A porcentagem de filmes dirigidos por ${directorSelect} é de ${(porcMoviesDirector(data, filtroDiretor))}%`
+  //console.log("retorno main " + porcMoviesDirector(data, filtroDiretor))
 
 })
 

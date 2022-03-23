@@ -39,8 +39,6 @@ directorsButton.addEventListener("change", () => {
   printar(filtroDiretor)
 
   document.querySelector(".curiosity").innerHTML = `A porcentagem de filmes dirigidos por ${directorSelect} é de ${(porcMoviesDirector(data, filtroDiretor))}%`
-  //console.log("retorno main " + porcMoviesDirector(data, filtroDiretor))
-
 })
 
 const scoreButton = document.getElementById("score");
@@ -52,7 +50,6 @@ scoreButton.addEventListener("change", () => {
   const orderByScore = (moviesByScore(data, selectedRate))
   printar(orderByScore)
 
-  //console.log(orderByScore)
 
 });
 

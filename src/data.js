@@ -10,10 +10,7 @@ export const porcMoviesDirector = (movies, directorSelect) => {
   const total = Number(movies.films.length);
   const totalFiltred = Number(directorSelect.length);
 
-  console.log(" retorno total " + total)
-  console.log("retorno totalFiltrado " + totalFiltred)
-
-  return Number(totalFiltred/total * 100).toFixed(2)
+  return Number(totalFiltred / total * 100).toFixed(2)
 }
 
 

@@ -10,7 +10,9 @@
     justify-content: space-around;
     background-color: #1C1F24;
     padding: 1%;
-    width: 100%;
+    width: 98%;
+    border-color:#C8D258;
+    border-style: solid;
   }
 
 
@@ -38,14 +40,40 @@
     background-color: #0C0F14;
    }
 
-  .filterspersonagens{
+  .filterspersonagens {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     color: #C8D258;
-    font-size: 14px;
+    font-size: 20px;
+  }
 
+  .filter {
+    font: normal 20px serif;
+    color:#1C1F24;
+    background-color: #12B0C9;
+    border-color: #C8D258;
+    border-style: solid;
+    border-bottom-left-radius: 3%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3% ;
+    border-bottom-right-radius: 3%;
+    text-align: center;
+  }
+
+  .btn-Ordem {
+    font: normal 20px serif;
+    background-color:#525252;
+    color: #1de1ff;
+    border-style: solid;
+    border-color: #1C1F24;
+  }
+
+  .pesquisa {
+    border-style: solid;
+    border-color: #1C1F24;
+    height:30px;
   }
 
   #voltarAoTopo {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}

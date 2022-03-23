@@ -22,14 +22,14 @@
   </header>
 
   <form class="filterspersonagens">
-      <select id="selectFilterLife">
+      <select id="selectFilterLife" class="filter status">
       <option value="" selected hidden>Status de vida</option>
       <option value="Alive">Vivo</option>
       <option value="Dead">Morto</option>
       <option value="unknown">Desconhecido</option>
     </select>
 
-    <select id="selectFilterSpecies">
+    <select id="selectFilterSpecies" class="filter species">
       <option value="" selected hidden>Espécie</option>
       <option value="Human">Humano</option>
       <option value="Alien">Alienígena</option>
@@ -45,7 +45,7 @@
       <option value="Parasite">Parasita</option>
     </select>
 
-    <select id="selectFilterGender">
+    <select id="selectFilterGender" class="filter gender">
       <option value="" selected hidden>Gênero</option>
       <option value="Male">Homem</option>
       <option value="Female">Mulher</option>
@@ -58,8 +58,9 @@
     <button class="btn-Ordem" id="btn-limpar">Limpar</button>
 
     <input
-     type="text"
-      name="searchBar"
+       class="pesquisa"
+       type="text"
+       name="searchBar"
        id="searchBar"
        placeholder="pesquisar"
        />

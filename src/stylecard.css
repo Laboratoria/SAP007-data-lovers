@@ -12,6 +12,10 @@
   position: relative;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-bottom-left-radius: 2%;
+  border-top-left-radius: 2%;
+  border-top-right-radius:2% ;
+  border-bottom-right-radius: 2%;
 }
 
 .front {
@@ -56,7 +60,7 @@
   height: 35px;
   width: 300px;
   margin-bottom: 5px;
-  background-color: #C8D258;
+  background-color: #20ecec;
   text-align: center;
   border-radius: 5%;
   font-size: 20px;

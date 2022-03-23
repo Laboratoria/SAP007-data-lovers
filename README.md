@@ -64,6 +64,8 @@ Por se tratar de um projeto responsivo criamos o protótipo de alta fidelidade p
 
 ## Testes Unitarios
 
+Enviamos o site para alguns usuários com o intuito de avaliar a interatividade e design. O feedback recebido foram a sugestão de inserir a foto de cada atleta em seu respectivo card, melhorar o design da barra onde se encontra os campos de filtrar e ordenar e desenvolver um ranking de medalhas, porém por não termos tempo hábil no momento, optamos apenas por melhorar a disposição dos campos de filtrar e ordenar e futuramente atender as outras necessidades do usuários.
+
 ## Tecnologias Utilizadas
 
 - HTML5

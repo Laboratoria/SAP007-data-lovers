@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Olímpiadas Rio 2016 </title>
+  <link rel="stylesheet" href="styleAtletas.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="banner-oficial">
+      <img src="img/bannerOficial2.png" alt="logo da Olímpiadas Rio 2016 com fundo colorido" class="banner">
+    </div>
+
+  </header>
+  <nav>
+    <ul class="menu">
+      <li class="item-menu"><a href="./index.html" id="Home" class="links">🏅Home</a></li>
+      <li class="item-menu"><a href="./Atletas.html" id="Ath" class="links">🏅Atletas</a></li>
+      <li class="item-menu"><a href="/countries.html" id="countries" class="links">🏅Países</a></li>
+    </ul>
+  </nav>
+     <section class="barraMenu">
+       <input type="text" placeholder="Athlete" class="athField flexItem" id="filterAth">
+       <img src="ordenar.png" alt="order" class="iconOrder" height="24" weight="24">
+       <select class="Order-container flexItem" id="AZsort">  
+        <option selected disabled value="">Order by:</option>
+        <option value="A-Z" id="opAZ">A-Z</option>
+        <option value="Z-A" id="opZA">Z-A</option>
+      </select>
+      <select id="ordering-medal" class="ordering-country flexItem">
+        <option selected disabled value="">🏅Medal</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Bronze">Bronze</option>
+      </select>
+      <select id="filterSport" class="order-sport flexItem">
+        <option selected disabled value="">Sports</option>
+        <option value="Rowing">Rowing</option>
+        <option value="Taekwondo">Taekwondo</option>
+        <option value="Handball">Handball</option>
+        <option value="Wrestling">Wrestling</option>
+        <option value="Gymnastics">Gymnastics</option>
+        <option value="Swimming">Swimming</option>
+        <option value="Basketball">Basketball</option>
+        <option value="Boxing">Boxing</option>
+        <option value="Volleyball">Volleyball</option>
+        <option value="Athletics">Athletics</option>
+        <option value="Rugby Sevens">Rugby Sevens</option>
+        <option value="Judo">Judo</option>
+        <option value="Rhythmic Gymnastics">Rhythmic Gymnastics</option>
+        <option value="Weightlifting">Weightlifting</option>
+        <option value="Equestrianism">Equestrianism</option>
+        <option value="Badminton"> Badminton </option>
+        <option value="Water Polo">Water Polo</option>
+        <option value="Football">Football</option>
+        <option value="Fencing">Fencing</option>
+        <option value="Shooting">Shooting</option>
+        <option value="Sailing">Sailing</option>
+        <option value="Beach Volleyball">Beach Volleyball</option>
+        <option value="Canoeing">Canoeing</option>
+        <option value="Hockey">Hockey</option>
+        <option value="Cycling">Cycling</option>
+        <option value="Tennis">Tennis</option>
+        <option value="Diving">Diving</option>
+        <option value="Table Tennis">Table Tennis</option>
+        <option value="Triathlon">Triathlon</option>
+        <option value="Archery">Archery</option>
+        <option value="Synchronized Swimming">Synchronized Swimming</option>
+        <option value="Modern Pentathlon">Modern Pentathlon</option>
+        <option value="Golf">Golf</option>
+        <option value="Trampolining">Trampolining</option>
+              </select>
+  
+      <button class="btn flexItem" id="refresh">Clean</button>
+  </section> 
+  
+
+  <main id="cards-atletas" class="container-atletas"></main>
+
+
+
+  <footer class="rodapé margem">
+    Developed by:
+    Jaqueline de Oliveira
+    <a href="https://github.com/jaquelinedeoliveira93" target="_blank" icon="logo-github">
+      <img src="img/logo-github.png" alt="logo-git" width="25" height="25" class="gitHub-linkedin"></a>
+
+    <a href="https://www.linkedin.com/in/jaquelinedeoliveiraa/" target="_blank" icon="logo-linkedin">
+      <img src="img/logo-linkedin.png" alt="logo-link" width="25" height="25" class="gitHub-linkedin"></a>
+
+    Larissa Santos
+    <a href="https://github.com/Larasantos97" target="_blank" icon="logo-github">
+      <img src="img/logo-github.png" alt="logo-git" width="25" height="25" class="gitHub-linkedin"></a>
+
+    <a href="https://www.linkedin.com/in/larissa-dos-reis-santos-aaa8b415a/" target="_blank" icon="logo-linkedin">
+      <img src="img/logo-linkedin.png" alt="logo-link" width="25" height="25" class="gitHub-linkedin"></a>
+  </footer>
+    <div id="root"></div>
+    <script src="atletas.js" type="module"></script>
+  </body>
+</html>

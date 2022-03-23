@@ -63,11 +63,11 @@ describe("filterSport", () => {
 describe('sortCountry', () => {
   it("should return country asc and dsc order and number of athletes A-Z", () => {
     const CountryAZ = sortCountry(cardsCountry, "A-Z");
-    expect(CountryAZ).toEqual([cardsCountry[1], cardsCountry[2], cardsCountry[0]]);
+    expect(CountryAZ).toEqual([cardsCountry[0], cardsCountry[1], cardsCountry[2]]);
   });
   it("should return country asc and dsc order and number of athletes Z-A", () => {
     const CountryAZ = sortCountry(cardsCountry, "Z-A");
-    expect(CountryAZ).toEqual([cardsCountry[0], cardsCountry[2], cardsCountry[1]]);
+    expect(CountryAZ).toEqual([cardsCountry[1], cardsCountry[2], cardsCountry[0]]);
   });
 });
 

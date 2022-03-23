@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import { selectType, calcType, sortAZ } from './data.js'
+import { selectType, calcType, sortAZ,} from './data.js'
 
 
 const pokemons = data.pokemon;
@@ -54,4 +54,12 @@ sortOrder.addEventListener("change", (event) => {
     const selectedSort = event.target.value;
     const filterAz = sortAZ(pokemons, selectedSort);
     cardsPokemons(filterAz);
+
 })
+
+const refreshPage = document.getElementById("refresh-button")
+function refresh() {
+    window.location.reload();
+  }
+  refreshPage.addEventListener("click", refresh);
+  

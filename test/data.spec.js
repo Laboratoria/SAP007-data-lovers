@@ -1,6 +1,14 @@
 import { describe } from 'eslint/lib/rule-tester/rule-tester';
 import { AZsort, filterAth, filterMedal, filterSport, sortCountry } from '../src/data.js';
 
+const dataCards = [
+  {"name": "Davit Gochayevich Chakvetadze",},
+  {"name": "Miles Cleveland Chamley-Watson",},
+  {"name": "Andre De Grasse",},
+  {"name": "David Sagitovich Belyavsky",},
+  {"name": "David Edward Plummer",},
+];
+
 const nameAthlete = [
   { name: "Yuri Alvear Orjuela" },
   { name: "Giselle Anne Ansley" },
@@ -26,72 +34,84 @@ const ChooseMedal = [
 ];
 
 describe("AZsort", () => {
+  it("should be a function", () => {
+    expect(typeof AZsort).toBe("function");
+  });
   it("should return athlete sort A-Z", () => {
-    const orderAthlete = AZsort(nameAthlete, "A-Z");
-    expect(nameAthlete).toEqual([orderAthlete[1], orderAthlete[2], orderAthlete[0]]);
+    const orderAthleteAZ = [
+    { "name": "Andre De Grasse", },
+    { "name": "David Edward Plummer",},
+    { "name": "David Sagitovich Belyavsky",},
+    { "name": "Davit Gochayevich Chakvetadze" },
+    { "name": "Miles Cleveland Chamley-Watson" },
+    ];
+    expect(AZsort(dataCards, "A-Z")).toEqual(orderAthleteAZ);
   });
   it("should return athlete sort Z-A", () => {
-
-    const orderAthlete = AZsort(nameAthlete, "Z-A");
-    expect(nameAthlete).toEqual([orderAthlete[0], orderAthlete[2], orderAthlete[1]]);
+    const orderAthleteZA = [
+      { "name": "Miles Cleveland Chamley-Watson" },
+      { "name": "Davit Gochayevich Chakvetadze" },
+      { "name": "David Sagitovich Belyavsky", },
+      { "name": "David Edward Plummer", },
+      { "name": "Andre De Grasse", },];
+    expect(AZsort(dataCards, "Z-A")).toEqual(orderAthleteZA);
   });
-  });
+});
 
-describe("filterAth", () => {
-it ("search by athlete name", () => {
-  const search = filterAth(nameAthlete, "Jaqueline")
-  expect(search).toEqual([])
-});
-it ("search by athlete name", () => {
-  const search = filterAth(nameAthlete, "Yuri")
-  expect(search).toEqual([{name: "Yuri Alvear Orjuela"}])
-});
+describe("sortCountry", () => {
+  it("should be a function", () => {
+    expect(typeof sortCountry).toBe("function");
+  });
+  it("should return country asc and dsc order and number of athletes A-Z", () => {
+    const CountryAZ = sortCountry(cardsCountry, "a-z");
+    expect(CountryAZ).toEqual([
+      { "team": "Azerbaijan" },
+      { "team": "France" },
+      { "team": "Italy" },]
+    );
+  });
+  it("should return country asc and dsc order Z-A", () => {
+    const CountryAZ = sortCountry(cardsCountry, "z-a");
+    expect(CountryAZ).toEqual([
+      { "team": "Italy" },
+      { "team": "France" },
+      { "team": "Azerbaijan" },
+    ]
+    );
+  });
 });
 
 describe("filterSport", () => {
-  it ("should return only the selected sport", () => {
-    const whichSport = filterSport(chooseSport, "Shooting");
-    expect(whichSport).toEqual([{"sport": "Shooting"}]);
+  it("should be a function", () => {
+    expect(typeof filterSport).toBe("function");
   });
-  it('search by medal', () => {
-    const Medal = filterMedal(ChooseMedal, "Silver")
-    expect(Medal).toEqual([{"medal": "Silver"}]);
-
+  it("should return only the selected sport", () => {
+    const whichSport = [chooseSport[0]];
+    expect(filterSport(chooseSport, "Shooting")).toEqual(whichSport);
   });
 });
 
-describe('sortCountry', () => {
-  it("should return country asc and dsc order and number of athletes A-Z", () => {
-    const CountryAZ = sortCountry(cardsCountry, "A-Z");
-    expect(CountryAZ).toEqual([cardsCountry[1], cardsCountry[2], cardsCountry[0]]);
+
+describe("filterMedal", () => {
+  it("should be a function", () => {
+    expect(typeof filterMedal).toBe("function");
   });
-  it("should return country asc and dsc order and number of athletes Z-A", () => {
-    const CountryAZ = sortCountry(cardsCountry, "Z-A");
-    expect(CountryAZ).toEqual([cardsCountry[0], cardsCountry[2], cardsCountry[1]]);
+  it('search by medal', () => {
+    const Medal = filterMedal(ChooseMedal, "Silver")
+    expect(Medal).toEqual([{ "medal": "Silver" }]);
   });
 });
 
 describe("filterAth", () => {
+  it("should be a function", () => {
+    expect(typeof filterAth).toBe("function");
+  });
   it("search by athlete name", () => {
     const search = filterAth(nameAthlete, "Jaqueline")
     expect(search).toEqual([])
   });
   it("search by athlete name", () => {
-    const search = filterAth(nameAthlete, "Yuri")
-    expect(search).toEqual([{ name: "Yuri Alvear Orjuela" }])
-  });
-});
-
-describe("filterSport", () => {
-  it("should return only the selected sport", () => {
-    const whichSport = filterSport(chooseSport, "Shooting");
-    expect(whichSport).toEqual([{ "sport": "Shooting" }]);
-  });
-});
-
-describe('filterMedal', () => {
-  it('search by medal', () => {
-    const Medal = filterMedal(ChooseMedal, "Silver")
-    expect(Medal).toEqual([{ "medal": "Silver" }]);
+    const searchResult = [nameAthlete[2]]
+    expect(filterAth(nameAthlete, "Viktor")).toEqual(searchResult)
   });
 });

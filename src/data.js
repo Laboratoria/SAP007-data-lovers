@@ -36,7 +36,6 @@ export const AZsort = (athletes, selectSort) => {
         return 1;
       }
       return 0;
-
     });
    } else {
     return athletes.sort((a, b) => {
@@ -53,7 +52,6 @@ export const AZsort = (athletes, selectSort) => {
     });
    }
   }
-
 
 export const sortCountry = (athletes, selectCountry) => {
   if (selectCountry === "a-z"){

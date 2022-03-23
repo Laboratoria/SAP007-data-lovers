@@ -15,7 +15,7 @@
 }
 
 .menu {
-  padding-top: 3%;
+  padding-top: 2%;
   padding-left: 7%;
 }
 
@@ -130,11 +130,11 @@
 @media screen and (min-width: 1024px){
 
 .item-menu {
-  padding-left: 4%;
+  padding-left: 3%;
 }
 
 .links {
-  font-size: 0.938rem;
+  font-size: 1.125rem;
 }
 
 .about{

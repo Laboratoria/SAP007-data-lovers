@@ -6,22 +6,16 @@ export const filmesDiretores = (filmes, directorSelect) => {
   });
 };
 
+export const porcMoviesDirector = (movies, directorSelect) => {
+  const total = Number(movies.films.length);
+  const totalFiltred = Number(directorSelect.length);
 
-export const porcMoviesDirector = (filmes) => {
-  const total = filmes.films.reduce((acc, film) => {
-    const directors = film.director;
-    const totalDirector = filmesDiretores(directors).length;
+  console.log(" retorno total " + total)
+  console.log("retorno totalFiltrado " + totalFiltred)
 
-    console.log(directors, totalDirector)
-
-    return {
-      total: acc.total + directors.length,
-      directors: acc.directors + totalDirector,
-    }
-  }, { total: 0, directors: 0 });
-
-  return (total.directors / total.total * 100).toFixed(2);
+  return Number(totalFiltred/total * 100).toFixed(2)
 }
+
 
 export const moviesByScore = (data, selectedRate) => {
   const moviesScores = data.films

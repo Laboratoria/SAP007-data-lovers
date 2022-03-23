@@ -38,7 +38,8 @@ directorsButton.addEventListener("change", () => {
   const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
 
-  console.log(porcMoviesDirector(data))
+  console.log("retorno main " + porcMoviesDirector(data, filtroDiretor))
+
 })
 
 const scoreButton = document.getElementById("score");

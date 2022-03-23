@@ -7,28 +7,25 @@ const pokemons = data.pokemon;
 function cardsPokemons(data) {
     const cardPokemon = document.getElementById("cards");
     cardPokemon.innerHTML = data.map((item) =>
-        `<div class="info-cards"> 
+        `<div class="info-cards" id="flip"> 
    <p id="num">  ${item.num}</p> 
    <img class="img-card" src="${item.img}"/> 
-   <h2> Name </h2>
+   <h3> Name </h3>
    <p id="name">${item.name}</p> 
-   <h2> Type</h2>
+   <h3> Type</h3>
    <p id="type" >${item.type.join(' | ')}</p> 
-   <h2> About</h2>
+   <h3> About</h3>
    <p id="about">${item.about}</p> 
    </div>
 
    <div  class="backcard">
-   <h2 class="titulo-especificacoes">Rarity</h2>
+   <h3 class="titulo-especificacoes">Rarity</h3>
    <p class="pokemon-rarity">${item["pokemon-rarity"]}</p>
-   <h2 class="titulo-especificacoes">Egg</h2>
+   <h3 class="titulo-especificacoes">Egg</h3>
    <p class="pokemon-egg">${item.egg}</p>
-   <h2 class="titulo-especificacoes">Weaknesses</h2>
-   <p class="pokemon-weaknesses">${item.weaknesses.join(", ")}</p>
-   <h2 class="titulo-especificacoes">Spawn chance</h2>
-   <p class="pokemon-weaknesses">${item["spawn-chance"]}%</p>
-   </div>
-  `
+   <h3 class="titulo-especificacoes">Evolution</h3>
+   <p class="evolution">${item.evolution}</p>
+   </div>`
  
     ).join("")
 
@@ -48,7 +45,7 @@ function typePercent() {
     document.getElementById("calculation").innerHTML = "";
     const filterType = document.querySelector(".select-typefilters").value;
     let result = calcType(pokemons, filterType);
-    document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
+    document.getElementById("calculation").innerText += `The selected pokemons represent ${result}% of the total`
 }
 
 const sortOrder = document.getElementById("sortAlphabet");

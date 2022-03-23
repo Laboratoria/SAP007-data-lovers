@@ -42,3 +42,4 @@ export const filterGender = (data, value) => {
   return item.gender === value
   })
 }
+

@@ -39,7 +39,7 @@ function showInfos(arrayRickAndMorty) {
 showInfos(arrayRickAndMorty)
 
 function calculo(numero, numero2) {
-  let statS = numero / numero2 * 100;
+  let statS = numero/numero2 * 100;
   document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
 
 }
@@ -151,17 +151,20 @@ function clearAll() {
 clearFilters.addEventListener("click", clearAll);
 //pesquisar por nome
 
+
 const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keyup', (e) => {
-  const searchString = e.target.value;
-  arrayRickAndMorty.filter(item => {
-    return item.name.includes(searchString) ||
-      item.status.includes(searchString) ||
-      item.species.includes(searchString) ||
-      item.gender.includes(searchString)
+  const searchString = e.target.value.toLowerCase();
+  const filteredItem = arrayRickAndMorty.filter(item => {
+    return (
+      item.name.toLowerCase().includes(searchString)||
+    item.status.toLowerCase().includes(searchString)||
+    item.gender.toLowerCase().includes(searchString)||
+    item.species.toLowerCase().includes(searchString)
+    );
   })
-},
-  console.log(showInfos(arrayRickAndMorty)))
+  showInfos(filteredItem);
+});
 
 const btn = document.querySelector("#voltarAoTopo");
 btn.addEventListener("click", function () {

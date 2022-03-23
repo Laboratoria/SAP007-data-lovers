@@ -1,7 +1,7 @@
-import { example, anotherExample } from '../src/data.js';
+import { ordemNameAA, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
+describe('ordemNameAA', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
@@ -19,5 +19,6 @@ describe('anotherExample', () => {
 
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
+
   });
 });

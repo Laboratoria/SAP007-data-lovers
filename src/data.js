@@ -46,38 +46,6 @@ export const sortMoviesAz = (data, orderSelect) => {
 
 
 
- //Ordenar de A-Z "pronto"
-
-
-/*export const ordeMovies = (movies) => {
-  return movies.films.sort((a, b) => {
-  console.log()
-    const movieA = a.title;
-    const movieB = b.title;
-
-    if (movieA > movieB) {
-      return 1;
-    }
-    if (movieA < movieB) {
-      return -1
-
-    }
-
-  });
-};
-
-
-
-
-/*directorsSelect.addEventListener("change", (event) => {
-
-  const filterMoviesByDirectors = data.films.filter((directorName) => {
-    return directorName.director === event.target.value
-  })
-
-  console.log(filterMoviesByDirectors)
-})*/
-
 
 
 

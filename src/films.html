@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,40 +18,41 @@
 
     <section class="filter">
 
-        <select class="films" id="films">
-          <option selected value="none">Filmes</option>
-          <option value="filmsAz">Filmes A-Z</option>
-          <option value="filmsZa">Filmes Z-A</option>
-        </select>
+      <select name="films" id="films">
+        <option value="filmes">Filmes A-Z</option>
+      </select>
 
-      <select class="director" id = "director">
-       <option selected value="none">Diretores</option>
-       <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-       <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-       <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-       <option value="Isao Takahata">Isao Takahata</option>
-       <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-     </select>
+      <select class="director" id="director">
+        <option selected value="none">Diretores</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+      </select>
 
-     <select class="year" id="year">
-       <option selected value="none">Ano</option>
-       <option value="Crescente">Crescente</option>
-       <option value="Decrescente">Decrescente</option>
-     </select>
+      <select class="year" id="year">
+        <option selected value="none">Release Year</option>
+        <option value="oldest">Oldest Release</option>
+        <option value="newest">Newest Release</option>
+      </select>
 
-     <select name="score" id="score">
-       <option text="crescente">Score (crescente)</option>
-       <option text="decrescente">Score (decrescente)</option>
-     </select>
+      <select name="score" id="score">
+        <option selected value="none">Rating Score</option>
+        <option value="lower">Lower Score</option>
+        <option value="bigger">Bigger Score</option>
+      </select>
 
     </section>
 
   </header>
 
+  <div class="curiosity" id="curiosity"></div>
   <div class="cards" id="cards"></div>
   <div class="infos"></div>
 
 
   <script src="main.js" type="module"></script>
 </body>
+
 </html>

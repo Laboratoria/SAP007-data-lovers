@@ -6,6 +6,25 @@ export const filmesDiretores = (filmes, directorSelect) => {
   });
 };
 
+export const porcMoviesDirector = (movies, directorSelect) => {
+  const total = Number(movies.films.length);
+  const totalFiltred = Number(directorSelect.length);
+
+  return Number(totalFiltred / total * 100).toFixed(2)
+}
+
+
+export const moviesByScore = (data, selectedRate) => {
+  const moviesScores = data.films
+  if (selectedRate === "lower") {
+    return moviesScores.sort((a, b) => Number(a.rt_score) > Number(b.rt_score) ? 1 : -1);
+  } else {
+    return moviesScores.sort((a, b) => Number(a.rt_score) > Number(b.rt_score) ? -1 : 1);
+  }
+};
+
+
+
 export const sortMoviesByyear = (data, orderSelect) => {
   const moviesByyear = data.films
 
@@ -37,13 +56,6 @@ export const sortMoviesAz = (data, orderSelect) => {
   };
 
 };
-
-
-
-
-
-
-
 
 
 

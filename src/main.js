@@ -1,4 +1,4 @@
-import { filmesDiretores, sortMoviesByyear, sortMoviesAz} from './data.js';
+import { filmesDiretores, moviesByScore, sortMoviesByyear, porcMoviesDirector } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -14,10 +14,12 @@ function printar(infos) {
         <h1>  ${cards.title}</h1>
         <img src = " ${cards.poster}" >
         <div class = "infos">
-        <p>   ${cards.description}</p>
-        <p>  ${cards.producer}</p>
-        <p>  ${cards.director}</p>
-        <p>  ${cards.release_date}</p>
+        <p> <b>Description</b> </P>
+        <p>  ${cards.description}</p>
+        <p> <b>Director</b> ${cards.director}</p>
+        <p> <b>Producer</b> ${cards.producer}</p>
+        <p> <b>Release Date</b> ${cards.release_date}</p>
+        <p> <b>Score</b> ${cards.rt_score}</p>
         </div>
       </div>
     `
@@ -28,14 +30,26 @@ printar(infos)
 
 
 const directorsButton = document.getElementById("director");
-directorsButton.addEventListener("change", (event) => {
+directorsButton.addEventListener("change", () => {
 
   const directorsButton = document.getElementById("director");
   const directorIndex = directorsButton.selectedIndex;
   const directorSelect = directorsButton[directorIndex].value;
   const filtroDiretor = filmesDiretores(data, directorSelect);
   printar(filtroDiretor)
-  console.log(filtroDiretor)
+
+  document.querySelector(".curiosity").innerHTML = `A porcentagem de filmes dirigidos por ${directorSelect} é de ${(porcMoviesDirector(data, filtroDiretor))}%`
+})
+
+const scoreButton = document.getElementById("score");
+
+scoreButton.addEventListener("change", () => {
+  const scoreButton = document.getElementById("score");
+  const scoreRate = scoreButton.selectedIndex;
+  const selectedRate = scoreButton[scoreRate].value;
+  const orderByScore = (moviesByScore(data, selectedRate))
+  printar(orderByScore)
+
 
 });
 
@@ -47,54 +61,6 @@ sortOrder.addEventListener("change", (event) => {
     printar(orderYear);
 });
 
-const sortOrderAz = document.getElementById("films");
-
-sortOrderAz.addEventListener("change", (event) => {
-    const selectedSort = event.target.value;
-    const filterAz = sortMoviesAz(data, selectedSort);
-    printar(filterAz);
-    console.log(filterAz)
-})
-
-
-
-
-
-/*const yearButton =document.getElementById("year");
-yearButton.addEventListener("change", (event) => {
-
-
-  const yearIndex = yearButton.selectedIndex;
-  const yearSelect = yearButton[yearIndex].value;
-  const yearCresc = sortMoviesByyear(data,yearSelect);
-  printar(yearCresc)
-  console.log(yearCresc)
-
-});
-
-
-/*const yearButtondesc = document.getElementById("year");
-  yearButtondesc.addEventListener("change", (event) => {
-
-
-  const yearIndex = yearButtondesc.selectedIndex;
-  const yearSelect = yearButtondesc[yearIndex].value;
-  const yearDesc = yearDescending(data, yearSelect);
-  printar(yearDesc)
-  console.log(yearDesc)
-
-});
-
-/*const azButton = document.getElementById("films");
-
-azButton.addEventListener ("change", () =>{
-  const azButton = document.getElementById("films");
-  const azIndex = azButton.selectedIndex;
-  const azSelect = azButton[azIndex].value;
-  const orderAz = ordeMovies(data, azSelect)
-  printar (orderAz)
- console.log(orderAz)
-});*/
 
 
 

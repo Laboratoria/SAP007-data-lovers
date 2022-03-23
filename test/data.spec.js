@@ -34,21 +34,8 @@ describe("AZsort", () => {
 
     const orderAthlete = AZsort(nameAthlete, "Z-A");
     expect(nameAthlete).toEqual([orderAthlete[0], orderAthlete[2], orderAthlete[1]]);
-
-    const sortData = AZsort(dataCards, "Z-A");
-    expect(sortData).toEqual([dataCards[1], dataCards[0], dataCards[2]]);
   });
-  });*/
-  describe("AZsort", () => {
-    it("should return athlete sort A-Z", () => {
-      expect(AZsort(dataCards, "A-Z")).toEqual([dataCards[1], dataCards[2], dataCards[0]]);
-    });
-  
-    it("should return athlete sort Z-A", () => {
-      expect(AZsort(dataCards, "Z-A")).toEqual([dataCards[0], dataCards[2], dataCards[1]]);
-    });
-    });
-
+  });
 
 describe("filterAth", () => {
 it ("search by athlete name", () => {

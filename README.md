@@ -50,16 +50,16 @@ Por se tratar de um projeto responsivo criamos o protótipo de alta fidelidade p
 
 #### Protótipo de alta fidelidade para smartphone
 
-https://user-images.githubusercontent.com/97201077/159582490-ce32156b-5354-4176-9a49-23d9bf677f51.mp4
+![Protótipo de alta fidelidade smartphone](src/img/celular.gif)
 
 **Protótipo de alta fidelidade para notebook/desktop**
 
-https://user-images.githubusercontent.com/97201077/159582607-f82f5af6-6f5b-48c0-9e6f-c7a478e5d8c1.mp4
+![Protótipo de alta fidelidade notebook/desktop](src/img/notebook.gif)
 
 
 **Protótipo de alta fidelidade para tablet**
 
-https://user-images.githubusercontent.com/97201077/159582614-b8a66e2f-ebd1-471a-b932-ef74b0076bb5.mp4
+![Protótipo de alta fidelidade tablet](src/img/tablet.gif)
 
 
 ## Testes Unitarios
@@ -73,6 +73,24 @@ https://user-images.githubusercontent.com/97201077/159582614-b8a66e2f-ebd1-471a-
 - Git
 - Figma
 - Jest
+
+## Como Executar o Projeto
+Para conseguir rodar a aplicação e os teste é necessário ter instalado na sua máquina o [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/)  e um editor de código da sua escolha.
+
+- No terminal, clone o projeto:
+  - git clone https://github.com/jaquelinedeoliveira93/SAP007-data-lovers
+- Entre na pasta do projeto:
+  - cd SAP007-data-lovers
+- Instale as dependências:
+  - npm install
+- Execute a aplicação:
+  - npm start
+
+Para realizar os testes, faça o seguinte:
+- No terminal, na pasta do projeto:
+  - cd SAP007-data-lovers
+- Execute o teste:
+  - npm test
 
 ## Desenvolvido por
 

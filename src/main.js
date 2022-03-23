@@ -1,4 +1,4 @@
-import { filmesDiretores, moviesByScore, sortMoviesByyear, porcMoviesDirector } from './data.js';
+import { filmesDiretores, moviesByScore, sortMoviesByyear, porcMoviesDirector, sortMoviesAz } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 
@@ -56,55 +56,16 @@ scoreButton.addEventListener("change", () => {
 const sortOrder = document.getElementById("year");
 
 sortOrder.addEventListener("change", (event) => {
-  const selectedSort = event.target.value;
-  const filterAz = sortMoviesByyear(data, selectedSort);
-  printar(filterAz);
+    const selectedSort = event.target.value;
+    const orderYear = sortMoviesByyear(data, selectedSort);
+    printar(orderYear);
+});
+
+const sortOrderAz = document.getElementById("films");
+
+sortOrderAz.addEventListener("change", (event) => {
+    const selectedSort = event.target.value;
+    const filterAz = sortMoviesAz(data, selectedSort);
+    printar(filterAz);
 })
-
-
-
-/*const yearButton =document.getElementById("year");
-yearButton.addEventListener("change", (event) => {
-
-
-  const yearIndex = yearButton.selectedIndex;
-  const yearSelect = yearButton[yearIndex].value;
-  const yearCresc = sortMoviesByyear(data,yearSelect);
-  printar(yearCresc)
-  console.log(yearCresc)
-
-});
-
-
-/*const yearButtondesc = document.getElementById("year");
-  yearButtondesc.addEventListener("change", (event) => {
-
-
-  const yearIndex = yearButtondesc.selectedIndex;
-  const yearSelect = yearButtondesc[yearIndex].value;
-  const yearDesc = yearDescending(data, yearSelect);
-  printar(yearDesc)
-  console.log(yearDesc)
-
-});
-
-/*const azButton = document.getElementById("films");
-
-azButton.addEventListener ("change", () =>{
-  const azButton = document.getElementById("films");
-  const azIndex = azButton.selectedIndex;
-  const azSelect = azButton[azIndex].value;
-  const orderAz = ordeMovies(data, azSelect)
-  printar (orderAz)
- console.log(orderAz)
-});*/
-
-
-
-
-
-
-
-
-
 

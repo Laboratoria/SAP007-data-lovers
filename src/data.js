@@ -23,24 +23,6 @@ export const moviesByScore = (data, selectedRate) => {
   }
 };
 
-
-/* Ordenar de A-Z "pronto"
-export const sortMoviesByTitle = (title) => {
-  return title.sort((a, b) => {
-
-    const titleA = a.title.toUpperCase();
-    const titleB = b.title.toUpperCase();
-
-    if (titleA > titleB) {
-      return 1;
-    }
-    if (titleA < titleB) {
-      return -1
-    }
-    return 0
-  });
-};*/
-
 export const sortMoviesByyear = (data, orderSelect) => {
   const moviesByyear = data.films
 
@@ -54,3 +36,30 @@ export const sortMoviesByyear = (data, orderSelect) => {
   };
 
 };
+
+export const sortMoviesAz = (data, orderSelect) => {
+  const moviesAz = data.films
+
+  if (orderSelect === "filmsAz") {
+
+    return moviesAz.sort((a,b) => a.title > b.title ? 1: -1);
+  }
+  else {
+
+    return moviesAz.sort((a,b) => a.title > b.title ? -1: 1);
+
+  };
+
+};
+
+
+
+
+
+
+
+
+
+
+
+

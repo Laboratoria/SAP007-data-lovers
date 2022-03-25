@@ -10,7 +10,7 @@ export const porcMoviesDirector = (movies, directorSelect) => {
   const total = Number(movies.films.length);
   const totalFiltred = Number(directorSelect.length);
 
-  return Number(totalFiltred / total * 100).toFixed(2)
+  return Number(totalFiltred / total * 100)
 }
 
 
@@ -34,7 +34,7 @@ export const sortMoviesByyear = (data, orderSelect) => {
   else {
     return moviesByyear.sort((a, b) => Number(a.release_date) > Number(b.release_date) ? -1 : 1);
 
-  };
+  }
 
 };
 
@@ -49,7 +49,7 @@ export const sortMoviesAz = (data, orderSelect) => {
 
     return moviesAz.sort((a,b) => a.title > b.title ? -1: 1);
 
-  };
+  }
 
 };
 

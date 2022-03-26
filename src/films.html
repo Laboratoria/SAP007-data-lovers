@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,52 +10,39 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
   </style>
-</head>
-
-<body>
-  <header>
-    <h1>Filmography:</h1>
-
-    <section class="filter">
-
-      
-      <select class="films" id="films">
+  </head>
+  <body>
+    <header>
+      <h1>Filmography:</h1>
+      <section class="filter">
+        <select class="films" id="films">
         <option selected value="none">Filmes</option>
         <option value="filmsAz">Filmes A-Z</option>
         <option value="filmsZa">Filmes Z-A</option>
-      </select>
-
-      <select class="director" id="director">
+        </select>
+        <select class="director" id="director">
         <option selected value="none">Diretores</option>
         <option value="Hayao Miyazaki">Hayao Miyazaki</option>
         <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         <option value="Gorō Miyazaki">Gorō Miyazaki</option>
         <option value="Isao Takahata">Isao Takahata</option>
         <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-      </select>
-
-      <select class="year" id="year">
+        </select>
+        <select class="year" id="year">
         <option selected value="none">Release Year</option>
         <option value="oldest">Oldest Release</option>
         <option value="newest">Newest Release</option>
-      </select>
-
-      <select name="score" id="score">
+        </select>
+        <select name="score" id="score">
         <option selected value="none">Rating Score</option>
         <option value="lower">Lower Score</option>
         <option value="bigger">Bigger Score</option>
-      </select>
-
+        </select>
     </section>
-
   </header>
-
   <div class="curiosity" id="curiosity"></div>
   <div class="cards" id="cards"></div>
   <div class="infos"></div>
-
-
   <script src="main.js" type="module"></script>
-</body>
-
+  </body>
 </html>

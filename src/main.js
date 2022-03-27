@@ -1,10 +1,11 @@
 import data from './data/pokemon/pokemon.js';
-import { selectType, calcType, sortAZ,} from './data.js'
+import { searchByName, selectType, calcType, sortAZ,} from './data.js'
 
 
 const pokemons = data.pokemon;
 
 function cardsPokemons(data) {
+    document.getElementById("calculation").innerHTML = "";
     const cardPokemon = document.getElementById("cards");
     cardPokemon.innerHTML = data.map((item) =>
         `<div class="info-cards"> 
@@ -35,6 +36,15 @@ function cardsPokemons(data) {
 }
 cardsPokemons(pokemons);
 
+const search = document.getElementById("inputSearch")
+
+search.addEventListener("keypress", (e) => {
+    const searchName = e.target.value;
+    const pokemonsName = searchByName(searchName, pokemons);
+    cardsPokemons(pokemonsName);
+})
+console.log(search)
+
 const filterType = document.querySelector(".select-typefilters");
 
 filterType.addEventListener("change", () => {
@@ -44,12 +54,15 @@ filterType.addEventListener("change", () => {
     typePercent();
 })
 
+
 function typePercent() {
-    document.getElementById("calculation").innerHTML = "";
+    
     const filterType = document.querySelector(".select-typefilters").value;
     let result = calcType(pokemons, filterType);
     document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
 }
+
+
 
 const sortOrder = document.getElementById("sortAlphabet");
 
@@ -60,9 +73,8 @@ sortOrder.addEventListener("change", (event) => {
 
 })
 
-const refreshPage = document.getElementById("refresh-button")
-function refresh() {
-    window.location.reload();
-  }
-  refreshPage.addEventListener("click", refresh);
+const refreshPage = document.getElementById("clearButton")
+
+  refreshPage.addEventListener("click", () => cardsPokemons(pokemons));
+   
   

@@ -1,4 +1,9 @@
-export const selectType = (selectByType, pokemons) =>
+  export const searchByName = (selectByName, pokemons) =>{
+    pokemons.filter((select) => select.name.includes(selectByName));
+  }
+
+
+  export const selectType = (selectByType, pokemons) =>
   pokemons.filter((select) => select.type.includes(selectByType));
 
   

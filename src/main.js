@@ -16,15 +16,6 @@ function cardsPokemons(data) {
    <p id="type" >${item.type.join(' | ')}</p> 
    <h3> About</h3>
    <p id="about">${item.about}</p> 
-   </div>
-
-   <div  class="backcard">
-   <h3 class="titulo-especificacoes">Rarity</h3>
-   <p class="pokemon-rarity">${item["pokemon-rarity"]}</p>
-   <h3 class="titulo-especificacoes">Egg</h3>
-   <p class="pokemon-egg">${item.egg}</p>
-   <h3 class="titulo-especificacoes">Evolution</h3>
-   <p class="evolution">${item.evolution}</p>
    </div>`
  
     ).join("")
@@ -32,10 +23,10 @@ function cardsPokemons(data) {
 }
 cardsPokemons(pokemons);
 
-const filterType = document.querySelector(".select-typefilters");
+const selectPokemonType = document.querySelector(".select-typefilters");
 
-filterType.addEventListener("change", () => {
-    const filterbyType = filterType.value;
+selectPokemonType.addEventListener("change", () => {
+    const filterbyType = selectPokemonType.value;
     const arrFilter = selectType(filterbyType, pokemons);
     cardsPokemons(arrFilter);
     typePercent();
@@ -43,8 +34,8 @@ filterType.addEventListener("change", () => {
 
 function typePercent() {
     document.getElementById("calculation").innerHTML = "";
-    const filterType = document.querySelector(".select-typefilters").value;
-    let result = calcType(pokemons, filterType);
+    const selectPokemonType = document.querySelector(".select-typefilters").value;
+    let result = calcType(pokemons, selectPokemonType);
     document.getElementById("calculation").innerText += `The selected pokemons represent ${result}% of the total`
 }
 

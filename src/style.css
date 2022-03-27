@@ -78,6 +78,11 @@ header {
   border:#369b9e;
 }
 
+.cards:hover .flip,
+.cards:active .flip {
+  transform: rotateY(180deg);
+}
+
 .info-cards{
   max-width: 200px;
   font-size: 0.9em;
@@ -90,8 +95,6 @@ header {
   background-color: #ce6310;
   flex-direction: column;
 } 
-
-.backcard
 
 .img-card{
   object-fit: fit;
@@ -116,13 +119,22 @@ margin-left: 30px;
 box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
 
-/* #calculation {
-  margin: auto;
-} */
-
 .calculation {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: large;
+  background-color: #212e61;
+  opacity: 75%;
+  color: #ce6310;
+  line-height: 8vh;
+  width: 90vw;
+  margin: 0.5em auto 0;
+  line-height: 8vh;
+  height: 8vh;
+  border-radius: 20px;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
 }

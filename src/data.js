@@ -20,3 +20,5 @@ export const sortAZ = (data, order) => {
     return sortaz.sort((a, z) => a.name > z.name ? -1 : 1);
   }
 };
+
+

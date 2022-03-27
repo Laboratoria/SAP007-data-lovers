@@ -8,28 +8,16 @@ function cardsPokemons(data) {
     document.getElementById("calculation").innerHTML = "";
     const cardPokemon = document.getElementById("cards");
     cardPokemon.innerHTML = data.map((item) =>
-        `<div class="info-cards"> 
+        `<div class="info-cards" id="flip"> 
    <p id="num">  ${item.num}</p> 
    <img class="img-card" src="${item.img}"/> 
-   <h2> Name </h2>
+   <h3> Name </h3>
    <p id="name">${item.name}</p> 
-   <h2> Type</h2>
+   <h3> Type</h3>
    <p id="type" >${item.type.join(' | ')}</p> 
-   <h2> About</h2>
+   <h3> About</h3>
    <p id="about">${item.about}</p> 
-   </div>
-
-   <div  class="backcard">
-   <h2 class="titulo-especificacoes">Rarity</h2>
-   <p class="pokemon-rarity">${item["pokemon-rarity"]}</p>
-   <h2 class="titulo-especificacoes">Egg</h2>
-   <p class="pokemon-egg">${item.egg}</p>
-   <h2 class="titulo-especificacoes">Weaknesses</h2>
-   <p class="pokemon-weaknesses">${item.weaknesses.join(", ")}</p>
-   <h2 class="titulo-especificacoes">Spawn chance</h2>
-   <p class="pokemon-weaknesses">${item["spawn-chance"]}%</p>
-   </div>
-  `
+   </div>`
  
     ).join("")
 
@@ -46,8 +34,8 @@ search.addEventListener("keypress", (e) => {
 
 const filterType = document.querySelector(".select-typefilters");
 
-filterType.addEventListener("change", () => {
-    const filterbyType = filterType.value;
+selectPokemonType.addEventListener("change", () => {
+    const filterbyType = selectPokemonType.value;
     const arrFilter = selectType(filterbyType, pokemons);
     cardsPokemons(arrFilter);
     typePercent();

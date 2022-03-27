@@ -31,7 +31,7 @@ A partir da nossa pesquisa e da mesma fornecida, feita com usuários potenciais,
 <img src="prototipo_baixa.jpeg" alt="desenho_simples">
 <img src="prototipo_baixa2.jpeg" alt="desenho_simples">
 
-### Protótipo de alta fidelidade:
+## Protótipo de alta fidelidade:
 
 Foi realizado a partir da ferramenta (até então nova para nós) Figma. Nesse primeiro protótipo, definimos as cores e a distribuição dos
 elementos da interface.
@@ -44,24 +44,23 @@ Tons de azul, seguindo a abertura do filme "My Neighbor Totoro", assim como a su
 <img src="paleta_cores.png" alt="cores">
 
 
-### Kiki:
+## Kiki:
+
+Personagem do estúdio, que nos forneceu inspiração para criar o serviço de busca.
 
 <img src="kiki_sem fundo_certa.png" alt="kiki">
 
-Personagem do estúdio, que nos forneceu inspiração para criar o serviço de busca.
+
 
 ## A implementação:
 
 Buscamos através de botões de fácil acesso exibir os dados buscados pelo usuário na tela. Também a exibição da porcentagem de filmes
 dirigidos por cada diretor buscado. Dividimos o site em duas páginas para facilitar essa exibição.
-Link git hub
 
-## Sobre as desenvolvedoras:
+## Desenvolvedoras:
 
-Jéssika Mirella e Bruna de Paula, ambas estudantes da turma 007 da Laboratoria Brasil, com apenas 3 meses de experiência visam aproveitar
+Jéssika Mirella e Bruna de Paula, ambas são estudantes da turma 007 da Laboratoria Brasil, com apenas 3 meses de experiência visam aproveitar
 ao máximo os objetivos de aprendizagem com o projeto proposto.
 
 <img src="brunajpg.jpg" alt="bruna">
 <img src="jess.jpg" alt="kiki">
-
-

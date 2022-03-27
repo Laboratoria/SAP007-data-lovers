@@ -43,7 +43,6 @@ search.addEventListener("keypress", (e) => {
     const pokemonsName = searchByName(searchName, pokemons);
     cardsPokemons(pokemonsName);
 })
-console.log(search)
 
 const filterType = document.querySelector(".select-typefilters");
 

@@ -1,0 +1,35 @@
+
+body{
+
+  background-color: #00B4D8 ;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px ;
+
+}
+
+header{
+  text-align: center;
+  font-size: 40px ;
+
+}
+
+.cards {
+  text-align: left;
+
+}
+
+h1{
+  margin-top: 10%;
+
+}
+
+.infos{
+  margin-left: 20%;
+  margin-top: -20%;
+
+}
+
+.btnFilmes{
+
+  font-size: 40px ;
+}

@@ -127,7 +127,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
   font-size: large;
   background-color: #8FBDD3;
   opacity: 75%;
-  color: #FFCE45;
+  color: blue;
   line-height: 8vh;
   width: 90vw;
   margin: 0.5em auto 0;
@@ -146,4 +146,17 @@ color: #424b54;
 
 .title {
   font-weight: bold;
+}
+
+footer {
+  margin: auto;
+  color:#E0EEEE;
+  padding: 5%;
+  font-weight: bold;
+ text-align: center;
+ box-shadow: none;
+}
+
+a{
+  text-decoration: none;
 }

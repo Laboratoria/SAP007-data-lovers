@@ -1,18 +1,22 @@
-import { ordemNameAA, ordemNameBB, filterStatus } from '../src/data.js';
+import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
+import { ordemNameAA, ordemNameBB, filterStatus, filtroespecie, filterGender, calculo} from '../src/data.js';
 
 const personagensteste = [
-  { "name": "Abradolf Lincler",
-    "status": "unknown",
-   "species": "Human",
+  {name: "Abradolf Lincler",
+   status: "unknown",
+   species: "Human",
+   gender: "Male",
   },
-  {"name": "Adjudicator Rick",
-  "status": "Dead",
-  "species": "Human",
+  {name: "Adjudicator Rick",
+   status: "Dead",
+   species: "Human",
+   gender: "Male",
   },
-
-  { "name": "Summer Smith",
-  "status": "Alive",
-  "species": "Human",}
+  {name: "Summer Smith",
+   status: "Alive",
+   species: "Human",
+   gender: "Female",
+  }
 ]
 
 describe("filterStatus", () => {
@@ -23,13 +27,51 @@ describe("filterStatus", () => {
         name: "Summer Smith",
         status: "Alive",
         species: "Human",
+        gender: "Female",
       },
     ]);
   });
 
+describe("filtroespecie", () => {
+  it("filtroespecie filtrar humanos", () => {
+      const expected = filtroespecie(personagensteste, "Human");
+      expect(expected).toEqual([
+        {
+            name: "Abradolf Lincler",
+            status: "unknown",
+            species: "Human",
+            gender: "Male",
+          },
+          { name: "Adjudicator Rick",
+            status: "Dead",
+            species: "Human",
+            gender: "Male",
+          },
+
+          { name: "Summer Smith",
+            status: "Alive",
+            species: "Human",
+            gender: "Female",
+          },
+        ]);
+  });
+});
+
+describe("filterGender", () => {
+  it("filterGender filtrar mulheres", () => {
+      const expected = filterGender(personagensteste, "Female");
+      expect(expected).toEqual([
+          { name: "Summer Smith",
+            status: "Alive",
+            species: "Human",
+            gender: "Female",
+          },
+        ]);
+  });
+});
 
 describe('ordemNameAA', () => {
-it("ordemNameAA deve ordenar de A a Z", () => {
+ it("ordemNameAA deve ordenar de A a Z", () => {
   const naoordenado = [
     {name: "Rick Sanchez"},
     {name: "Jerry Smith"},
@@ -60,3 +102,5 @@ describe('ordemNameBB', () => {
   })
   });
 })
+
+describe

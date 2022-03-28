@@ -1,4 +1,4 @@
-import { ordemNameAA, ordemNameBB, filterStatus, filtroespecie, filterGender } from './data.js';
+import { ordemNameAA, ordemNameBB, filterStatus, filtroespecie, filterGender, calculo } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const showPersonagens = document.getElementById("card")
@@ -38,11 +38,7 @@ function showInfos(arrayRickAndMorty) {
 
 showInfos(arrayRickAndMorty)
 
-function calculo(numero, numero2) {
-  let statS = numero/numero2 * 100;
-  document.getElementById("statistics").innerText = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
-
-}
+const showStats = document.getElementById("statistics")
 
 //filtros status
 const selectGender = document.getElementById("selectFilterGender")
@@ -66,7 +62,8 @@ selectStatus.addEventListener("change", (event) => {
       return carD
     })
   }
-  calculo(newArrayStatus.length, arrayRickAndMorty.length)
+ let result = calculo(newArrayStatus.length, arrayRickAndMorty.length)
+ showStats.innerHTML = result
   showInfos(newArrayStatus)
 })
 //filtroespecie
@@ -85,15 +82,16 @@ selectSpecies.addEventListener("change", (event) => {
       return carD
     })
   }
-  calculo(newArraySpecies.length, arrayRickAndMorty.length)
+  let result = calculo(newArraySpecies.length, arrayRickAndMorty.length)
+  showStats.innerHTML = result
   showInfos(newArraySpecies)
-  console.log(event.target.value)
-  console.log(newArraySpecies)
+
 })
 //filtroGenero
 
 selectGender.addEventListener("change", (event) => {
-  let newArrayGender = filterGender(arrayRickAndMorty, event.target.value)
+  let newArrayGender = filterGender(arrayRickAndMorty,
+    event.target.value)
   if (selectStatus.value) {
     newArrayGender = newArrayGender.filter((item) => {
       let carD = item.status === selectStatus.value
@@ -107,7 +105,8 @@ selectGender.addEventListener("change", (event) => {
     })
   }
 
-  calculo(newArrayGender.length, arrayRickAndMorty.length)
+  let result = calculo(newArrayGender.length, arrayRickAndMorty.length)
+  showStats.innerHTML = result
   showInfos(newArrayGender)
 
 })
@@ -154,17 +153,17 @@ clearFilters.addEventListener("click", clearAll);
 
 const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keyup', (e) => {
-  const searchString = e.target.value.toLowerCase();
+const searchString = e.target.value.toLowerCase();
   const filteredItem = arrayRickAndMorty.filter(item => {
     return (
       item.name.toLowerCase().includes(searchString)||
     item.status.toLowerCase().includes(searchString)||
     item.gender.toLowerCase().includes(searchString)||
     item.species.toLowerCase().includes(searchString)
-    );
+    )
   })
-  showInfos(filteredItem);
-});
+   showInfos(filteredItem);
+})
 
 const btn = document.querySelector("#voltarAoTopo");
 btn.addEventListener("click", function () {

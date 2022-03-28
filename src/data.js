@@ -43,3 +43,8 @@ export const filterGender = (data, value) => {
   })
 }
 
+export function calculo(numero, numero2) {
+  let statS = numero/numero2 * 100;
+  let estatistica = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
+  return estatistica
+}

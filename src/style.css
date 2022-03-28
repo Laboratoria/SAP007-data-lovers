@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: #212e61;
+  background-color: #8FBDD3;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: #212e61;
+  background-color: #8FBDD3;
   height: 30%;
   width: 100%;
   display: flex;
@@ -31,12 +31,13 @@ header {
 .search-button{
   background-color:#434343
 }
-
-.header-logo {
-  display: flex;
-  opacity: default;
   
 }
+.header-logo {
+  flex-wrap: wrap;
+  width: 30%;
+}
+
 
 
 #inputSearch{
@@ -78,10 +79,10 @@ header {
   border:#369b9e;
 }
 
-.cards:hover .flip,
+/* .cards:hover .flip,
 .cards:active .flip {
   transform: rotateY(180deg);
-}
+} */
 
 .info-cards{
   max-width: 200px;
@@ -92,7 +93,7 @@ header {
   background-color:rgb(255, 255, 255);
   font: arial; color: #434343;
   border-radius:16px ; 
-  background-color: #ce6310;
+  background-color: #FFCE45;
   flex-direction: column;
 } 
 
@@ -106,7 +107,7 @@ header {
 text-align: center;
 font-weight: bold;
 border-radius: 0.3rem;
-background-color: #FFA000;
+background-color: white;
 display: flex;
 font-size: 2%px;
 width: 40px;
@@ -124,9 +125,9 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
   justify-content: center;
   align-items: center;
   font-size: large;
-  background-color: #212e61;
+  background-color: #8FBDD3;
   opacity: 75%;
-  color: #ce6310;
+  color: blue;
   line-height: 8vh;
   width: 90vw;
   margin: 0.5em auto 0;
@@ -137,4 +138,25 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
+}
+
+#type, #about, #name {
+color: #424b54;
+}
+
+.title {
+  font-weight: bold;
+}
+
+footer {
+  margin: auto;
+  color:#E0EEEE;
+  padding: 5%;
+  font-weight: bold;
+ text-align: center;
+ box-shadow: none;
+}
+
+a{
+  text-decoration: none;
 }

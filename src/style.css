@@ -1,4 +1,6 @@
   body {
+    margin: 0px;
+    padding: 0px;
     background-color: #0C0F14;
     color:#BFBFBF;
   }
@@ -11,25 +13,12 @@
     background-color: #1C1F24;
     padding: 1%;
     width: 98%;
-    border-color:#C8D258;
-    border-style: solid;
-  }
-
+    border-bottom:#C8D258 solid 2px;
+   }
 
   .titlesite {
     color: #12B0C9;
     font-size: 28px;
-  }
-
-  .stats {
-    background-color: #0C0F14;
-    color: #BFBFBF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1%;
-    left: 90%;
   }
 
   nav {
@@ -46,29 +35,28 @@
     align-items: center;
     justify-content: space-around;
     color: #C8D258;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .filter {
-    font: normal 20px serif;
-    color:#1C1F24;
-    background-color: #12B0C9;
-    border-color: #C8D258;
-    border-style: solid;
-    border-bottom-left-radius: 3%;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3% ;
-    border-bottom-right-radius: 3%;
+    font: normal 18px serif;
+    color:#BFBFBF;
+    background-color: #0C0F14;
+    border-color: #C8D258 solid 2px;
+    border-radius: 5%;
     text-align: center;
   }
 
   .btn-Ordem {
     font: normal 20px serif;
-    background-color:#525252;
+    background-color:#1C1F24;
     color: #1de1ff;
-    border-style: solid;
-    border-color: #1C1F24;
-  }
+    border-style: none;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+   }
 
   .pesquisa {
     border-style: solid;
@@ -76,33 +64,37 @@
     height:30px;
   }
 
-  #voltarAoTopo {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}
-    #voltarAoTopo {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #1C1F24;
-    border-radius: 10px;
-    display: block;
-  }
-
-     #voltarAoTopo:hover {
-    background-position: right center;
-    color: #fff;
+  a, link {
+    color: #BFBFBF;
     text-decoration: none;
-    }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
   }
 
-  b, strong {color:#C8D258;}
+  a:hover {
+    opacity: 0.7;;
+  }
+  b, bolder {
+    color: #C8D258;
+  }
 
-  a, link {color: #BFBFBF}
+  .voltarAoTopo {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}
+  .voltarAoTopo {
+  position: fixed;
+  right: 10%;
+  bottom: 8rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #1C1F24;
+  border-radius: 10px;
+  display: block;
+}
+
+  .voltarAoTopo:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  }
+
+

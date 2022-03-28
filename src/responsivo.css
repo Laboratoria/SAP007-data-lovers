@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+  .mainpag1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+  .titlesite{ font-size: 75%;
+  }
+  .imgBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+  }
+  .btnhome {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+  }
+  .infos {
+    font-size: 75%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 80%;
+  }
+
+  .filterspersonagens {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 80%;
+    margin: 25px;
+  }
+
+  .imgfiltros {
+    display: none;
+  }
+
+  .voltarAoTopo {
+    font-size: 70%;
+    width: 20%;
+    right: 4px;
+    padding: 1rem;
+
+  }
+  .card {
+    width: 70%;
+  }
+  .name-title {
+    width: 100%;
+  }
+
+
+  }

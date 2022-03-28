@@ -6,7 +6,7 @@
   <title>RICK AND MORTY WIKI</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="stylecard.css" />
-  <link rel="stylesheet" href="mediaresponsivo.css" />
+  <link rel="stylesheet" href="responsivo.css" />
 </head>
 
 <body>
@@ -17,11 +17,12 @@
     <nav class="cabecalho-menu">
       <a class="buttonlink" type="button" href="indexpag2.html">HOME</a>
       <a class="buttonlink" type="button" href="index.html">PERSONAGENS</a>
-      <a class="buttonlink" type="button" href="https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Rick_and_Morty"> EPISÓDIOS </a>
+      <a class="buttonlink" type="button"
+        href="https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Rick_and_Morty"> EPISÓDIOS </a>
     </nav>
   </header>
 
-  <form class="filterspersonagens">
+    <form class="filterspersonagens">
       <select id="selectFilterLife" class="filter status">
       <option value="" selected hidden>Status de vida</option>
       <option value="Alive">Vivo</option>
@@ -66,14 +67,10 @@
        />
 
     <img class= "imgfiltros"src="imagens/2200.gif" alt="pesquisar" />
-    <button id="voltarAoTopo">Voltar ao topo</button>
-     </form>
+    <button class="voltarAoTopo">Voltar ao topo</button>
+    </form>
 
   <main class="central-container">
-    <div class="stats">
-      <h2 id="statistics"></h2>
-    </div>
-
     <section class="cards-container" id="card">
     </section>
   </main>
@@ -81,9 +78,10 @@
   <footer>
     <p class="rodapeparagrafo">DEVELOPED BY
       <a href="https://github.com/daianeex" target="_blank">
-        <strong class="github">@daianeex </a></strong> And <strong><a href="https://github.com/IsaSoaresFr" target="_blank">
+        <strong class="github">@daianeex </a></strong> And <strong><a href="https://github.com/IsaSoaresFr"
+          target="_blank">
           <strong class="github">@IsaSoaresFr</strong>
-      </a>
+        </a>
     </p>
   </footer>
   <script src="main.js" type="module"></script>

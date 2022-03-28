@@ -1,7 +1,7 @@
 import { selectType, sortAZ} from '../src/data.js';
 
 
-describe('Filter', () => {
+describe('selectType', () => {
   describe('Verificar a função que filtra por tipo', () => {
     it('Verificar se é uma função', () => {
       expect(typeof searchFilter).toBe('function');
@@ -23,4 +23,4 @@ describe('sortAZ', () => {
       expect(crescent(arrayTest)).toBe(arrayTest);
     });
   })
-})
+});

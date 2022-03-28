@@ -22,5 +22,4 @@ import { selectType, sortAZ} from '../src/data.js';
       expect(sortAZ(arrayTest)).toBe(arrayTest);
     });
   })
-});
  

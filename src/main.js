@@ -11,11 +11,11 @@ function cardsPokemons(data) {
         `<div class="info-cards" id="flip"> 
    <p id="num">  ${item.num}</p> 
    <img class="img-card" src="${item.img}"/> 
-   <h3> Name </h3>
+   <p class='title'>Name: </p>
    <p id="name">${item.name}</p> 
-   <h3> Type</h3>
+   <p class='title'>Type:</p>
    <p id="type" >${item.type.join(' | ')}</p> 
-   <h3> About</h3>
+   <p class='title'>About:</p>
    <p id="about">${item.about}</p> 
    </div>`
  
@@ -35,8 +35,8 @@ console.log(search)
 
 const filterType = document.querySelector(".select-typefilters");
 
-selectPokemonType.addEventListener("change", () => {
-    const filterbyType = selectPokemonType.value;
+filterType.addEventListener("change", () => {
+    const filterbyType = filterType.value;
     const arrFilter = selectType(filterbyType, pokemons);
     cardsPokemons(arrFilter);
     typePercent();
@@ -47,7 +47,7 @@ function typePercent() {
     
     const filterType = document.querySelector(".select-typefilters").value;
     let result = calcType(pokemons, filterType);
-    document.getElementById("calculation").innerText += `Os pokémons selecionados representam ${result}% do total.`
+    document.getElementById("calculation").innerText += `The selected pokémon represent ${result}% of the total.`
 }
 
 

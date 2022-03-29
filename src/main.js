@@ -156,7 +156,7 @@ searchBar.addEventListener('keyup', (e) => {
 const searchString = e.target.value.toLowerCase();
   const filteredItem = arrayRickAndMorty.filter(item => {
     return (
-      item.name.toLowerCase().includes(searchString)||
+    item.name.toLowerCase().includes(searchString)||
     item.status.toLowerCase().includes(searchString)||
     item.gender.toLowerCase().includes(searchString)||
     item.species.toLowerCase().includes(searchString)

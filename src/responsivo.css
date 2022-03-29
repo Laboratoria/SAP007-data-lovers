@@ -3,10 +3,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 
   }
+
   .titlesite{ font-size: 75%;
   }
+
   .imgBanner {
     display: flex;
     flex-direction: column;
@@ -16,6 +19,7 @@
   .btnhome {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 75%;
   }
   .infos {
@@ -54,6 +58,4 @@
   .name-title {
     width: 100%;
   }
-
-
-  }
+}

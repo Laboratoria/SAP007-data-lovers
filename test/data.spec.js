@@ -15,10 +15,10 @@ const personagensteste = [
     gender: "Male",
   },
   {
-    name: "Boobloosian",
+    name: "Bootleg Portal Chemist Rick",
     status: "Dead",
-    species: "Alien",
-    gender: "unknown",
+    species: "Human",
+    gender:"Male",
   },
   {
     name: "Summer Smith",
@@ -29,7 +29,7 @@ const personagensteste = [
 ]
 
 describe("filterStatus", () => {
-  it("filterStatus filtrar vivos", () => {
+  it("filterStatus filtrar vivos" ,() => {
     const expected = filterStatus(personagensteste, "Alive");
     expect(expected).toEqual([
       {
@@ -57,7 +57,12 @@ describe("filterStatus", () => {
           species: "Human",
           gender: "Male",
         },
-
+        {
+          name: "Bootleg Portal Chemist Rick",
+          status: "Dead",
+          species: "Human",
+          gender:"Male",
+        },
         {
           name: "Summer Smith",
           status: "Alive",
@@ -115,9 +120,11 @@ describe("filterStatus", () => {
   });
 })
 
-describe("calculo", () => {
-  it("calcular porcentagem mortos", () => {
-    const calculoPorce = calculo(personagensteste.length, 4);
-    expect(calculoPorce).toEqual(50);
-  });
-});
+describe('calculo', () => {
+  it("retorna 75% dos personagens machos", () => {
+    const calculoPorce = calculo(personagensteste.length, 3);
+    expect(calculoPorce).toEqual(75);
+  })
+})
+
+

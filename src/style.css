@@ -25,8 +25,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10%;
+    gap: 8%;
     background-color: #0C0F14;
+    width:350px;
+    height: 20px;
    }
 
   .filterspersonagens {
@@ -45,6 +47,7 @@
     border-color: #C8D258 solid 2px;
     border-radius: 5%;
     text-align: center;
+    cursor: pointer;
   }
 
   .btn-Ordem {
@@ -56,6 +59,7 @@
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border-bottom-right-radius: 15%;
+    cursor: pointer;
    }
    .btn-Ordem:hover {
     opacity: 0.6;;
@@ -85,7 +89,7 @@
   .voltarAoTopo {
   position: fixed;
   right: 10%;
-  bottom: 8rem;
+  bottom: 3.5rem;
   padding: 0.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -94,6 +98,7 @@
   color: #1C1F24;
   border-radius: 10px;
   display: block;
+  cursor: pointer;
 }
 
   .voltarAoTopo:hover {

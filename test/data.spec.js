@@ -28,6 +28,7 @@ const personagensteste = [
   }
 ]
 
+
 describe("filterStatus", () => {
   it("filterStatus filtrar vivos" ,() => {
     const expected = filterStatus(personagensteste, "Alive");
@@ -39,6 +40,11 @@ describe("filterStatus", () => {
         gender: "Female",
       },
     ]);
+
+describe('functon ordernar a a z', () => {
+  it('ordenar de A a Z', () => {
+    expect(typeof ordemNameAA).toBe('function');
+
   });
 
   describe("filtroespecie", () => {
@@ -126,5 +132,5 @@ describe('calculo', () => {
     expect(calculoPorce).toEqual(75);
   })
 })
-
-
+  })
+})

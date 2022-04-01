@@ -1,5 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
 
-main {
+}
+.mainpag1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,6 +12,11 @@ main {
 }
 .infos {
   text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .btn-grad {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}
          .btn-grad {

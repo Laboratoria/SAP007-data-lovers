@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 75%;
+    width: 100%;
   }
   .infos {
     font-size: 75%;
@@ -77,8 +77,4 @@
     height:100px;
     font-size: 113%
 }
-
-@media (min-width: 1000px) {
-
-
 }

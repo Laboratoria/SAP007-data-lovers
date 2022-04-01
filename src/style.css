@@ -73,6 +73,10 @@
     height:30px;
   }
 
+  .btnMenu {
+    background-image: url(../imagens/button.png);
+  }
+
   a, link {
     color: #BFBFBF;
     text-decoration: none;
@@ -80,6 +84,7 @@
 
   a:hover {
     opacity: 0.7;;
+
   }
   b, strong {
     color: #C8D258;

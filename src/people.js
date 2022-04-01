@@ -1,10 +1,8 @@
-import { filterFilmByCharactersByGender, filterFilmByCharacters } from "./data.js";
+import { getPeopleByFilmTitleByGender } from "./data.js";
 import dataGhibli from "./data/ghibli/ghibli.js"
 
-//PARA CHAMAR A ARRAY
 const films = dataGhibli.films;
 
-//PARA IMPRIMIR NA TELA PERSONAGENS
 function cardSection(array) {
     const card = document.getElementById("card")
     card.innerHTML = " "
@@ -49,7 +47,7 @@ function cardSection(array) {
     }
 }
 
-function todosPersonagens(filmes) {
+function allCharacter(filmes) {
     const card = document.getElementById("card")
     card.innerHTML = " "
     for (let i = 0; i < filmes.length; i++) {
@@ -94,23 +92,23 @@ function todosPersonagens(filmes) {
         }
     }
 }
-todosPersonagens(films)
+allCharacter(films)
 
-document.addEventListener("change", () => {
-    const optionsFilm = document.getElementById("filmes")
-    const filmIndex = optionsFilm.selectedIndex;
-    const filmSelected = optionsFilm[filmIndex].text;
-    const filmFiltered = filterFilmByCharacters(films, filmSelected);
-    todosPersonagens(filmFiltered)
+const choose = document.getElementById("filmes")
+choose.addEventListener("change", (event) => {
+    const genderSelected = document.getElementById("gender").value
+    const filmSelected = event.target.value
+    const filmFiltered = getPeopleByFilmTitleByGender(films, filmSelected, genderSelected);
+
+    cardSection(filmFiltered)
 })
 
-document.addEventListener("change", () => {
-    const optionsFilm = document.getElementById("filmes")
-    const filmIndex = optionsFilm.selectedIndex;
-    const filmSelected = optionsFilm[filmIndex].text;
-    const optionsGender = document.getElementById("gender")
-    const genderIndex = optionsGender.selectedIndex;
-    const genderSelected = optionsGender[genderIndex].text;
-    const filmFiltered = filterFilmByCharactersByGender(films, filmSelected, genderSelected);
+
+const gender = document.getElementById("gender")
+gender.addEventListener("change", (event) => {
+    const filmSelected = document.getElementById("filmes").value
+    const genderSelected = event.target.value
+    const filmFiltered = getPeopleByFilmTitleByGender(films, filmSelected, genderSelected);
+
     cardSection(filmFiltered)
 });

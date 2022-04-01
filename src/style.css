@@ -34,8 +34,9 @@ header {
   
 }
 .header-logo {
-  flex-wrap: wrap;
+  display: flex;
   width: 30%;
+justify-content: flex-start;
 }
 
 

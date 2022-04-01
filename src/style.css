@@ -55,7 +55,7 @@ justify-content: flex-start;
 }
 
 .select-typefilters, .refresh-button, .sort-by {
-  float: center;
+  /* float: center; */
   margin: auto;
   border-radius: 70px;
   background-color:#E0EEEE;
@@ -79,11 +79,6 @@ justify-content: flex-start;
   padding: 2em;
   border:#369b9e;
 }
-
-/* .cards:hover .flip,
-.cards:active .flip {
-  transform: rotateY(180deg);
-} */
 
 .info-cards{
   max-width: 200px;

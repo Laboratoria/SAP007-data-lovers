@@ -5724,7 +5724,7 @@ export default {
       "name": "kanto"
     },
     "about": "Poliwag has a very thin skin. It is possible to see the Pokémon's spiral innards right through the skin. Despite its thinness, however, the skin is also very flexible. Even sharp fangs bounce right off it.",
-    "img": "h../image/kanto/060.png",
+    "img": "../image/kanto/060.png",
     "size": {
       "height": "0.61 m",
       "weight": "12.4 kg"
@@ -7785,7 +7785,7 @@ export default {
       "name": "kanto"
     },
     "about": "Slowbro's tail has a Shellder firmly attached with a bite. As a result, the tail can't be used for fishing anymore. This causes Slowbro to grudgingly swim and catch prey instead.",
-    "img": "../image/kanto/pokemon/080.png",
+    "img": "../image/kanto/080.png",
     "size": {
       "height": "1.60 m",
       "weight": "78.5 kg"
@@ -14838,7 +14838,7 @@ export default {
       "name": "johto"
     },
     "about": "In battle, Chikorita waves its leaf around to keep the foe at bay. However, a sweet fragrance also wafts from the leaf, becalming the battling Pokémon and creating a cozy, friendly atmosphere all around.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/152.png",
+    "img": "../image/johto/152.png",
     "size": {
       "height": "0.89 m",
       "weight": "6.4 kg"
@@ -14934,7 +14934,7 @@ export default {
       "name": "johto"
     },
     "about": "Bayleef's neck is ringed by curled-up leaves. Inside each tubular leaf is a small shoot of a tree. The fragrance of this shoot makes people peppy.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/153.png",
+    "img": "../image/johto/153.png",
     "size": {
       "height": "1.19 m",
       "weight": "15.8 kg"
@@ -15030,7 +15030,7 @@ export default {
       "name": "johto"
     },
     "about": "The fragrance of Meganium's flower soothes and calms emotions. In battle, this Pokémon gives off more of its becalming scent to blunt the foe's fighting spirit.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/154.png",
+    "img": "../image/johto/154.png",
     "size": {
       "height": "1.80 m",
       "weight": "100.5 kg"
@@ -15126,7 +15126,7 @@ export default {
       "name": "johto"
     },
     "about": "Cyndaquil protects itself by flaring up the flames on its back. The flames are vigorous if the Pokémon is angry. However, if it is tired, the flames splutter fitfully with incomplete combustion.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/155.png",
+    "img": "../image/johto/155.png",
     "size": {
       "height": "0.51 m",
       "weight": "7.9 kg"
@@ -15222,7 +15222,7 @@ export default {
       "name": "johto"
     },
     "about": "Quilava keeps its foes at bay with the intensity of its flames and gusts of superheated air. This Pokémon applies its outstanding nimbleness to dodge attacks even while scorching the foe with flames.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/156.png",
+    "img": "../image/johto/156.png",
     "size": {
       "height": "0.89 m",
       "weight": "19.0 kg"
@@ -15318,7 +15318,7 @@ export default {
       "name": "johto"
     },
     "about": "Typhlosion obscures itself behind a shimmering heat haze that it creates using its intensely hot flames. This Pokémon creates blazing explosive blasts that burn everything to cinders.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/157.png",
+    "img": "../image/johto/157.png",
     "size": {
       "height": "1.70 m",
       "weight": "79.5 kg"
@@ -15414,7 +15414,7 @@ export default {
       "name": "johto"
     },
     "about": "Despite the smallness of its body, Totodile's jaws are very powerful. While the Pokémon may think it is just playfully nipping, its bite has enough power to cause serious injury.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/158.png",
+    "img": "../image/johto/158.png",
     "size": {
       "height": "0.61 m",
       "weight": "9.5 kg"
@@ -15508,7 +15508,7 @@ export default {
       "name": "johto"
     },
     "about": "Once Croconaw has clamped its jaws on its foe, it will absolutely not let go. Because the tips of its fangs are forked back like barbed fishhooks, they become impossible to remove when they have sunk in.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/159.png",
+    "img": "../image/johto/159.png",
     "size": {
       "height": "1.09 m",
       "weight": "25.0 kg"
@@ -15602,7 +15602,7 @@ export default {
       "name": "johto"
     },
     "about": "Feraligatr intimidates its foes by opening its huge mouth. In battle, it will kick the ground hard with its thick and powerful hind legs to charge at the foe at an incredible speed.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/160.png",
+    "img": "../image/johto/160.png",
     "size": {
       "height": "2.31 m",
       "weight": "88.8 kg"
@@ -15696,7 +15696,7 @@ export default {
       "name": "johto"
     },
     "about": "When Sentret sleeps, it does so while another stands guard. The sentry wakes the others at the first sign of danger. When this Pokémon becomes separated from its pack, it becomes incapable of sleep due to fear.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/161.png",
+    "img": "../image/johto/161.png",
     "size": {
       "height": "0.79 m",
       "weight": "6.0 kg"
@@ -15781,7 +15781,7 @@ export default {
       "name": "johto"
     },
     "about": "Furret has a very slim build. When under attack, it can slickly squirm through narrow spaces and get away. In spite of its short limbs, this Pokémon is very nimble and fleet.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/162.png",
+    "img": "../image/johto/162.png",
     "size": {
       "height": "1.80 m",
       "weight": "32.5 kg"
@@ -15866,7 +15866,7 @@ export default {
       "name": "johto"
     },
     "about": "Hoothoot has an internal organ that senses and tracks the earth's rotation. Using this special organ, this Pokémon begins hooting at precisely the same time every day.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/163.png",
+    "img": "../image/johto/163.png",
     "size": {
       "height": "0.71 m",
       "weight": "21.2 kg"
@@ -15942,7 +15942,7 @@ export default {
       "name": "johto"
     },
     "about": "Noctowl never fails at catching prey in darkness. This Pokémon owes its success to its superior vision that allows it to see in minimal light, and to its soft, supple wings that make no sound in flight.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/164.png",
+    "img": "../image/johto/164.png",
     "size": {
       "height": "1.60 m",
       "weight": "40.8 kg"
@@ -16033,7 +16033,7 @@ export default {
       "name": "johto"
     },
     "about": "Ledyba secretes an aromatic fluid from where its legs join its body. This fluid is used for communicating with others. This Pokémon conveys its feelings to others by altering the fluid's scent.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/165.png",
+    "img": "../image/johto/165.png",
     "size": {
       "height": "0.99 m",
       "weight": "10.8 kg"
@@ -16125,7 +16125,7 @@ export default {
       "name": "johto"
     },
     "about": "It is said that in lands with clean air, where the stars fill the sky, there live Ledian in countless numbers. There is a good reason for this-the Pokémon uses the light of the stars as its energy.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/166.png",
+    "img": "../image/johto/166.png",
     "size": {
       "height": "1.40 m",
       "weight": "35.6 kg"
@@ -16217,7 +16217,7 @@ export default {
       "name": "johto"
     },
     "about": "The web spun by Spinarak can be considered its second nervous system. It is said that this Pokémon can determine what kind of prey is touching its web just by the tiny vibrations it feels through the web's strands.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/167.png",
+    "img": "../image/johto/167.png",
     "size": {
       "height": "0.51 m",
       "weight": "8.5 kg"
@@ -16310,7 +16310,7 @@ export default {
       "name": "johto"
     },
     "about": "Ariados's feet are tipped with tiny hooked claws that enable it to scuttle on ceilings and vertical walls. This Pokémon constricts the foe with thin and strong silk webbing.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/168.png",
+    "img": "../image/johto/168.png",
     "size": {
       "height": "1.09 m",
       "weight": "33.5 kg"
@@ -16403,7 +16403,7 @@ export default {
       "name": "johto"
     },
     "about": "If this Pokémon is flying by fluttering only a pair of wings on either the forelegs or hind legs, it's proof that Crobat has been flying a long distance. It switches the wings it uses if it is tired.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/169.png",
+    "img": "../image/johto/169.png",
     "size": {
       "height": "1.80 m",
       "weight": "75.0 kg"
@@ -16501,7 +16501,7 @@ export default {
       "name": "johto"
     },
     "about": "Chinchou lets loose positive and negative electrical charges from its two antennas to make its prey faint. This Pokémon flashes its electric lights to exchange signals with others.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/170.png",
+    "img": "../image/johto/170.png",
     "size": {
       "height": "0.51 m",
       "weight": "12.0 kg"
@@ -16592,7 +16592,7 @@ export default {
       "name": "johto"
     },
     "about": "Lanturn is nicknamed \"the deep-sea star for its illuminated antenna. This Pokémon produces light by causing a chemical reaction between bacteria and its bodily fluids inside the antenna.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/171.png",
+    "img": "../image/johto/171.png",
     "size": {
       "height": "1.19 m",
       "weight": "22.5 kg"
@@ -16683,7 +16683,7 @@ export default {
       "name": "johto"
     },
     "about": "Pichu charges itself with electricity more easily on days with thunderclouds or when the air is very dry. You can hear the crackling of static electricity coming off this Pokémon.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/172.png",
+    "img": "../image/johto/172.png",
     "size": {
       "height": "0.30 m",
       "weight": "2.0 kg"
@@ -16775,7 +16775,7 @@ export default {
       "name": "johto"
     },
     "about": "On nights with many shooting stars, Cleffa can be seen dancing in a ring. They dance through the night and stop only at the break of day, when these Pokémon quench their thirst with the morning dew.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/173.png",
+    "img": "../image/johto/173.png",
     "size": {
       "height": "0.30 m",
       "weight": "3.0 kg"
@@ -16883,7 +16883,7 @@ export default {
       "name": "johto"
     },
     "about": "Igglybuff's vocal cords are not sufficiently developed. It would hurt its throat if it were to sing too much. This Pokémon gargles with freshwater from a clean stream.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/174.png",
+    "img": "../image/johto/174.png",
     "size": {
       "height": "0.30 m",
       "weight": "1.0 kg"
@@ -16985,7 +16985,7 @@ export default {
       "name": "johto"
     },
     "about": "As its energy, Togepi uses the positive emotions of compassion and pleasure exuded by people and Pokémon. This Pokémon stores up feelings of happiness inside its shell, then shares them with others.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/175.png",
+    "img": "../image/johto/175.png",
     "size": {
       "height": "0.30 m",
       "weight": "1.5 kg"
@@ -17090,7 +17090,7 @@ export default {
       "name": "johto"
     },
     "about": "Togetic is said to be a Pokémon that brings good fortune. When the Pokémon spots someone who is pure of heart, it is said to appear and share its happiness with that person.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/176.png",
+    "img": "../image/johto/176.png",
     "size": {
       "height": "0.61 m",
       "weight": "3.2 kg"
@@ -17192,7 +17192,7 @@ export default {
       "name": "johto"
     },
     "about": "Natu cannot fly because its wings are not yet fully grown. If your eyes meet with this Pokémon's eyes, it will stare back intently at you. But if you move even slightly, it will hop away to safety.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/177.png",
+    "img": "../image/johto/177.png",
     "size": {
       "height": "0.21 m",
       "weight": "2.0 kg"
@@ -17284,7 +17284,7 @@ export default {
       "name": "johto"
     },
     "about": "Xatu stands rooted and still in one spot all day long. People believe that this Pokémon does so out of fear of the terrible things it has foreseen in the future.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/178.png",
+    "img": "../image/johto/178.png",
     "size": {
       "height": "1.50 m",
       "weight": "15.0 kg"
@@ -17376,7 +17376,7 @@ export default {
       "name": "johto"
     },
     "about": "Mareep's fluffy coat of wool rubs together and builds a static charge. The more static electricity is charged, the more brightly the lightbulb at the tip of its tail glows.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/179.png",
+    "img": "../image/johto/179.png",
     "size": {
       "height": "0.61 m",
       "weight": "7.8 kg"
@@ -17468,7 +17468,7 @@ export default {
       "name": "johto"
     },
     "about": "Flaaffy's wool quality changes so that it can generate a high amount of static electricity with a small amount of wool. The bare and slick parts of its hide are shielded against electricity.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/180.png",
+    "img": "../image/johto/180.png",
     "size": {
       "height": "0.79 m",
       "weight": "13.3 kg"
@@ -17560,7 +17560,7 @@ export default {
       "name": "johto"
     },
     "about": "Ampharos gives off so much light that it can be seen even from space. People in the old days used the light of this Pokémon to send signals back and forth with others far away.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/181.png",
+    "img": "../image/johto/181.png",
     "size": {
       "height": "1.40 m",
       "weight": "61.5 kg"
@@ -17652,7 +17652,7 @@ export default {
       "name": "johto"
     },
     "about": "When Bellossom gets exposed to plenty of sunlight, the leaves ringing its body begin to spin around. This Pokémon's dancing is renowned in the southern lands.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/182.png",
+    "img": "../image/johto/182.png",
     "size": {
       "height": "0.41 m",
       "weight": "5.8 kg"
@@ -17752,7 +17752,7 @@ export default {
       "name": "johto"
     },
     "about": "Marill's oil-filled tail acts much like a life preserver. If you see just its tail bobbing on the water's surface, it's a sure indication that this Pokémon is diving beneath the water to feed on aquatic plants.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/183.png",
+    "img": "../image/johto/183.png",
     "size": {
       "height": "0.41 m",
       "weight": "8.5 kg"
@@ -17849,7 +17849,7 @@ export default {
       "name": "johto"
     },
     "about": "Azumarill's long ears are indispensable sensors. By focusing its hearing, this Pokémon can identify what kinds of prey are around, even in rough and fast-running rivers.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/184.png",
+    "img": "../image/johto/184.png",
     "size": {
       "height": "0.79 m",
       "weight": "28.5 kg"
@@ -17946,7 +17946,7 @@ export default {
       "name": "johto"
     },
     "about": "Sudowoodo camouflages itself as a tree to avoid being attacked by enemies. However, because its hands remain green throughout the year, the Pokémon is easily identified as a fake during the winter.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/185.png",
+    "img": "../image/johto/185.png",
     "size": {
       "height": "1.19 m",
       "weight": "38.0 kg"
@@ -18037,7 +18037,7 @@ export default {
       "name": "johto"
     },
     "about": "The curled hair on Politoed's head is proof of its status as a king. It is said that the longer and more curled the hair, the more respect this Pokémon earns from its peers.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/186.png",
+    "img": "../image/johto/186.png",
     "size": {
       "height": "10.90 m",
       "weight": "33.9 kg"
@@ -18135,7 +18135,7 @@ export default {
       "name": "johto"
     },
     "about": "This Pokémon drifts and floats with the wind. If it senses the approach of strong winds, Hoppip links its leaves with other Hoppip to prepare against being blown away.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/187.png",
+    "img": "../image/johto/187.png",
     "size": {
       "height": "0.41 m",
       "weight": "0.5 kg"
@@ -18232,7 +18232,7 @@ export default {
       "name": "johto"
     },
     "about": "Skiploom's flower blossoms when the temperature rises above 64 degrees Fahrenheit. How much the flower opens depends on the temperature. For that reason, this Pokémon is sometimes used as a thermometer.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/188.png",
+    "img": "../image/johto/188.png",
     "size": {
       "height": "0.61 m",
       "weight": "1.0 kg"
@@ -18329,7 +18329,7 @@ export default {
       "name": "johto"
     },
     "about": "Jumpluff rides warm southern winds to cross the sea and fly to foreign lands. The Pokémon descends to the ground when it encounters cold air while it is floating.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/189.png",
+    "img": "../image/johto/189.png",
     "size": {
       "height": "0.79 m",
       "weight": "3.0 kg"
@@ -18426,7 +18426,7 @@ export default {
       "name": "johto"
     },
     "about": "Aipom's tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/190.png",
+    "img": "../image/johto/190.png",
     "size": {
       "height": "0.79 m",
       "weight": "11.5 kg"
@@ -18506,7 +18506,7 @@ export default {
       "name": "johto"
     },
     "about": "Sunkern tries to move as little as it possibly can. It does so because it tries to conserve all the nutrients it has stored in its body for its evolution. It will not eat a thing, subsisting only on morning dew.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/191.png",
+    "img": "../image/johto/191.png",
     "size": {
       "height": "0.30 m",
       "weight": "1.8 kg"
@@ -18601,7 +18601,7 @@ export default {
       "name": "johto"
     },
     "about": "Sunflora converts solar energy into nutrition. It moves around actively in the daytime when it is warm. It stops moving as soon as the sun goes down for the night.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/192.png",
+    "img": "../image/johto/192.png",
     "size": {
       "height": "0.79 m",
       "weight": "8.5 kg"
@@ -18696,7 +18696,7 @@ export default {
       "name": "johto"
     },
     "about": "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning midair. This Pokémon uses its flying ability to quickly chase down targeted prey.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/193.png",
+    "img": "../image/johto/193.png",
     "size": {
       "height": "1.19 m",
       "weight": "38.0 kg"
@@ -18783,7 +18783,7 @@ export default {
       "name": "johto"
     },
     "about": "Wooper usually lives in water. However, it occasionally comes out onto land in search of food. On land, it coats its body with a gooey, toxic film.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/194.png",
+    "img": "../image/johto/194.png",
     "size": {
       "height": "0.41 m",
       "weight": "8.5 kg"
@@ -18872,7 +18872,7 @@ export default {
       "name": "johto"
     },
     "about": "Quagsire hunts for food by leaving its mouth wide open in water and waiting for its prey to blunder in unaware. Because the Pokémon does not move, it does not get very hungry.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/195.png",
+    "img": "../image/johto/195.png",
     "size": {
       "height": "1.40 m",
       "weight": "75.0 kg"
@@ -18961,7 +18961,7 @@ export default {
       "name": "johto"
     },
     "about": "Espeon is extremely loyal to any Trainer it considers to be worthy. It is said that this Pokémon developed its precognitive powers to protect its Trainer from harm.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/196.png",
+    "img": "../image/johto/196.png",
     "size": {
       "height": "0.89 m",
       "weight": "26.5 kg"
@@ -19049,7 +19049,7 @@ export default {
       "name": "johto"
     },
     "about": "Umbreon evolved as a result of exposure to the moon's waves. It hides silently in darkness and waits for its foes to make a move. The rings on its body glow when it leaps to attack.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/197.png",
+    "img": "../image/johto/197.png",
     "size": {
       "height": "0.99 m",
       "weight": "27.0 kg"
@@ -19131,7 +19131,7 @@ export default {
       "name": "johto"
     },
     "about": "Murkrow was feared and loathed as the alleged bearer of ill fortune. This Pokémon shows strong interest in anything that sparkles or glitters. It will even try to steal rings from women.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/198.png",
+    "img": "../image/johto/198.png",
     "size": {
       "height": "0.51 m",
       "weight": "2.1 kg"
@@ -19228,7 +19228,7 @@ export default {
       "name": "johto"
     },
     "about": "Slowking undertakes research every day in an effort to solve the mysteries of the world. However, this Pokémon apparently forgets everything it has learned if the Shellder on its head comes off.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/199.png",
+    "img": "../image/johto/199.png",
     "size": {
       "height": "2.01 m",
       "weight": "79.5 kg"
@@ -19325,7 +19325,7 @@ export default {
       "name": "johto"
     },
     "about": "Misdreavus frightens people with a creepy, sobbing cry. The Pokémon apparently uses its red spheres to absorb the fearful feelings of foes and turn them into nutrition.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/200.png",
+    "img": "../image/johto/200.png",
     "size": {
       "height": "0.71 m",
       "weight": "1.0 kg"
@@ -19418,7 +19418,7 @@ export default {
       "name": "johto"
     },
     "about": "This Pokémon is shaped like ancient writing. It is a mystery as to which came first, the ancient writings or the various Unown. Research into this topic is ongoing but nothing is known.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/201.png",
+    "img": "../image/johto/201.png",
     "size": {
       "height": "0.51 m",
       "weight": "5.0 kg"
@@ -19478,7 +19478,7 @@ export default {
       "name": "johto"
     },
     "about": "If two or more Wobbuffet meet, they will turn competitive and try to outdo each other's endurance. However, they may try to see which one can endure the longest without food. Trainers need to beware of this habit.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/202.png",
+    "img": "../image/johto/202.png",
     "size": {
       "height": "1.30 m",
       "weight": "28.5 kg"
@@ -19551,7 +19551,7 @@ export default {
       "name": "johto"
     },
     "about": "Girafarig's rear head also has a brain, but it is small. The rear head attacks in response to smells and sounds. Approaching this Pokémon from behind can cause the rear head to suddenly lash out and bite.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/203.png",
+    "img": "../image/johto/203.png",
     "size": {
       "height": "1.50 m",
       "weight": "41.5 kg"
@@ -19633,7 +19633,7 @@ export default {
       "name": "johto"
     },
     "about": "Pineco hangs from a tree branch and patiently waits for prey to come along. If the Pokémon is disturbed while eating by someone shaking its tree, it drops down to the ground and explodes with no warning.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/204.png",
+    "img": "../image/johto/204.png",
     "size": {
       "height": "0.61 m",
       "weight": "7.2 kg"
@@ -19722,7 +19722,7 @@ export default {
       "name": "johto"
     },
     "about": "Forretress conceals itself inside its hardened steel shell. The shell is opened when the Pokémon is catching prey, but it does so at such a quick pace that the shell's inside cannot be seen.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/205.png",
+    "img": "../image/johto/205.png",
     "size": {
       "height": "1.19 m",
       "weight": "125.8 kg"
@@ -19812,7 +19812,7 @@ export default {
       "name": "johto"
     },
     "about": "Dunsparce has a drill for its tail. It uses this tail to burrow into the ground backward. This Pokémon is known to make its nest in complex shapes deep under the ground.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/206.png",
+    "img": "../image/johto/206.png",
     "size": {
       "height": "1.50 m",
       "weight": "14.0 kg"
@@ -19892,7 +19892,7 @@ export default {
       "name": "johto"
     },
     "about": "Gligar glides through the air without a sound as if it were sliding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/207.png",
+    "img": "../image/johto/207.png",
     "size": {
       "height": "1.09 m",
       "weight": "64.8 kg"
@@ -19986,7 +19986,7 @@ export default {
       "name": "johto"
     },
     "about": "Steelix lives even further underground than Onix. This Pokémon is known to dig toward the earth's core. There are records of this Pokémon reaching a depth of over six-tenths of a mile underground.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/208.png",
+    "img": "../image/johto/208.png",
     "size": {
       "height": "9.19 m",
       "weight": "400.0 kg"
@@ -20083,7 +20083,7 @@ export default {
       "name": "johto"
     },
     "about": "By baring its fangs and making a scary face, Snubbull sends smaller Pokémon scurrying away in terror. However, this Pokémon seems a little sad at making its foes flee.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/209.png",
+    "img": "../image/johto/209.png",
     "size": {
       "height": "0.61 m",
       "weight": "7.8 kg"
@@ -20172,7 +20172,7 @@ export default {
       "name": "johto"
     },
     "about": "Granbull has a particularly well-developed lower jaw. The enormous fangs are heavy, causing the Pokémon to tip its head back for balance. Unless it is startled, it will not try to bite indiscriminately.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/210.png",
+    "img": "../image/johto/210.png",
     "size": {
       "height": "1.40 m",
       "weight": "48.7 kg"
@@ -20261,7 +20261,7 @@ export default {
       "name": "johto"
     },
     "about": "Qwilfish sucks in water, inflating itself. This Pokémon uses the pressure of the water it swallowed to shoot toxic quills all at once from all over its body. It finds swimming somewhat challenging.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/211.png",
+    "img": "../image/johto/211.png",
     "size": {
       "height": "0.51 m",
       "weight": "3.9 kg"
@@ -20348,7 +20348,7 @@ export default {
       "name": "johto"
     },
     "about": "Scizor has a body with the hardness of steel. It is not easily fazed by ordinary sorts of attacks. This Pokémon flaps its wings to regulate its body temperature.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/212.png",
+    "img": "../image/johto/212.png",
     "size": {
       "height": "2.01 m",
       "weight": "125.0 kg"
@@ -20442,7 +20442,7 @@ export default {
       "name": "johto"
     },
     "about": "Shuckle quietly hides itself under rocks, keeping its body concealed inside its hard shell while eating berries it has stored away. The berries mix with its body fluids to become a juice.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/213.png",
+    "img": "../image/johto/213.png",
     "size": {
       "height": "0.61 m",
       "weight": "20.5 kg"
@@ -20526,7 +20526,7 @@ export default {
       "name": "johto"
     },
     "about": "Heracross charges in a straight line at its foe, slips beneath the foe's grasp, and then scoops up and hurls the opponent with its mighty horn. This Pokémon even has enough power to topple a massive tree.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/214.png",
+    "img": "../image/johto/214.png",
     "size": {
       "height": "1.50 m",
       "weight": "54.0 kg"
@@ -20614,7 +20614,7 @@ export default {
       "name": "johto"
     },
     "about": "Sneasel scales trees by punching its hooked claws into the bark. This Pokémon seeks out unguarded nests and steals eggs for food while the parents are away.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/215.png",
+    "img": "../image/johto/215.png",
     "size": {
       "height": "0.89 m",
       "weight": "28.0 kg"
@@ -20710,7 +20710,7 @@ export default {
       "name": "johto"
     },
     "about": "This Pokémon likes to lick its palms that are sweetened by being soaked in honey. Teddiursa concocts its own honey by blending fruits and pollen collected by Beedrill.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/216.png",
+    "img": "../image/johto/216.png",
     "size": {
       "height": "0.61 m",
       "weight": "8.8 kg"
@@ -20795,7 +20795,7 @@ export default {
       "name": "johto"
     },
     "about": "In the forests inhabited by Ursaring, it is said that there are many streams and towering trees where they gather food. This Pokémon walks through its forest gathering food every day.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/217.png",
+    "img": "../image/johto/217.png",
     "size": {
       "height": "1.80 m",
       "weight": "125.8 kg"
@@ -20880,7 +20880,7 @@ export default {
       "name": "johto"
     },
     "about": "Molten magma courses throughout Slugma's circulatory system. If this Pokémon is chilled, the magma cools and hardens. Its body turns brittle and chunks fall off, reducing its size.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/218.png",
+    "img": "../image/johto/218.png",
     "size": {
       "height": "0.71 m",
       "weight": "35.0 kg"
@@ -20971,7 +20971,7 @@ export default {
       "name": "johto"
     },
     "about": "Magcargo's shell is actually its skin that hardened as a result of cooling. Its shell is very brittle and fragile-just touching it causes it to crumble apart. This Pokémon returns to its original size by dipping itself in magma.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/219.png",
+    "img": "../image/johto/219.png",
     "size": {
       "height": "0.79 m",
       "weight": "55.0 kg"
@@ -21064,7 +21064,7 @@ export default {
       "name": "johto"
     },
     "about": "Swinub roots for food by rubbing its snout against the ground. Its favorite food is a mushroom that grows under the cover of dead grass. This Pokémon occasionally roots out hot springs.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/220.png",
+    "img": "../image/johto/220.png",
     "size": {
       "height": "0.41 m",
       "weight": "6.5 kg"
@@ -21154,7 +21154,7 @@ export default {
       "name": "johto"
     },
     "about": "Piloswine is covered by a thick coat of long hair that enables it to endure the freezing cold. This Pokémon uses its tusks to dig up food that has been buried under ice.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/221.png",
+    "img": "../image/johto/221.png",
     "size": {
       "height": "1.09 m",
       "weight": "55.8 kg"
@@ -21244,7 +21244,7 @@ export default {
       "name": "johto"
     },
     "about": "Corsola's branches glitter very beautifully in seven colors when they catch sunlight. If any branch breaks off, this Pokémon grows it back in just one night.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/222.png",
+    "img": "../image/johto/222.png",
     "size": {
       "height": "0.61 m",
       "weight": "5.0 kg"
@@ -21332,7 +21332,7 @@ export default {
       "name": "johto"
     },
     "about": "Remoraid sucks in water, then expels it at high velocity using its abdominal muscles to shoot down flying prey. When evolution draws near, this Pokémon travels downstream from rivers.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/223.png",
+    "img": "../image/johto/223.png",
     "size": {
       "height": "0.61 m",
       "weight": "12.0 kg"
@@ -21421,7 +21421,7 @@ export default {
       "name": "johto"
     },
     "about": "Octillery grabs onto its foe using its tentacles. This Pokémon tries to immobilize it before delivering the finishing blow. If the foe turns out to be too strong, Octillery spews ink to escape.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/224.png",
+    "img": "../image/johto/224.png",
     "size": {
       "height": "0.89 m",
       "weight": "28.5 kg"
@@ -21510,7 +21510,7 @@ export default {
       "name": "johto"
     },
     "about": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of the world's highest mountain, thanks to one of these Pokémon sharing its food.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/225.png",
+    "img": "../image/johto/225.png",
     "size": {
       "height": "0.89 m",
       "weight": "16.0 kg"
@@ -21596,7 +21596,7 @@ export default {
       "name": "johto"
     },
     "about": "On sunny days, schools of Mantine can be seen elegantly leaping over the sea's waves. This Pokémon is not bothered by the Remoraid that hitches rides.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/226.png",
+    "img": "../image/johto/226.png",
     "size": {
       "height": "2.11 m",
       "weight": "220.0 kg"
@@ -21687,7 +21687,7 @@ export default {
       "name": "johto"
     },
     "about": "Skarmory is entirely encased in hard, protective armor. This Pokémon flies at close to 190 mph. It slashes foes with its wings that possess swordlike cutting edges.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/227.png",
+    "img": "../image/johto/227.png",
     "size": {
       "height": "1.70 m",
       "weight": "50.5 kg"
@@ -21773,7 +21773,7 @@ export default {
       "name": "johto"
     },
     "about": "Houndour hunt as a coordinated pack. They communicate with each other using a variety of cries to corner their prey. This Pokémon's remarkable teamwork is unparalleled.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/228.png",
+    "img": "../image/johto/228.png",
     "size": {
       "height": "0.61 m",
       "weight": "10.8 kg"
@@ -21866,7 +21866,7 @@ export default {
       "name": "johto"
     },
     "about": "In a Houndoom pack, the one with its horns raked sharply toward the back serves a leadership role. These Pokémon choose their leader by fighting among themselves.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/229.png",
+    "img": "../image/johto/229.png",
     "size": {
       "height": "1.40 m",
       "weight": "35.0 kg"
@@ -21959,7 +21959,7 @@ export default {
       "name": "johto"
     },
     "about": "Kingdra lives at extreme ocean depths that are otherwise uninhabited. It has long been believed that the yawning of this Pokémon creates spiraling ocean currents.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/230.png",
+    "img": "../image/johto/230.png",
     "size": {
       "height": "1.80 m",
       "weight": "152.0 kg"
@@ -22057,7 +22057,7 @@ export default {
       "name": "johto"
     },
     "about": "For its nest, Phanpy digs a vertical pit in the ground at the edge of a river. It marks the area around its nest with its trunk to let the others know that the area has been claimed.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/231.png",
+    "img": "../image/johto/231.png",
     "size": {
       "height": "0.51 m",
       "weight": "33.5 kg"
@@ -22146,7 +22146,7 @@ export default {
       "name": "johto"
     },
     "about": "Donphan's favorite attack is curling its body into a ball, then charging at its foe while rolling at high speed. Once it starts rolling, this Pokémon can't stop very easily.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/232.png",
+    "img": "../image/johto/232.png",
     "size": {
       "height": "1.09 m",
       "weight": "120.0 kg"
@@ -22235,7 +22235,7 @@ export default {
       "name": "johto"
     },
     "about": "Porygon2 was created by humans using the power of science. The man-made Pokémon has been endowed with artificial intelligence that enables it to learn new gestures and emotions on its own.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/233.png",
+    "img": "../image/johto/233.png",
     "size": {
       "height": "0.61 m",
       "weight": "32.5 kg"
@@ -22333,7 +22333,7 @@ export default {
       "name": "johto"
     },
     "about": "Stantler's magnificent antlers were traded at high prices as works of art. As a result, this Pokémon was hunted close to extinction by those who were after the priceless antlers.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/234.png",
+    "img": "../image/johto/234.png",
     "size": {
       "height": "1.40 m",
       "weight": "71.2 kg"
@@ -22413,7 +22413,7 @@ export default {
       "name": "johto"
     },
     "about": "Smeargle marks the boundaries of its territory using a body fluid that leaks out from the tip of its tail. Over 5,000 different marks left by this Pokémon have been found.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/235.png",
+    "img": "../image/johto/235.png",
     "size": {
       "height": "1.19 m",
       "weight": "58.0 kg"
@@ -22470,7 +22470,7 @@ export default {
       "name": "johto"
     },
     "about": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the Trainer must establish and uphold various training methods.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/236.png",
+    "img": "../image/johto/236.png",
     "size": {
       "height": "0.71 m",
       "weight": "21.0 kg"
@@ -22571,7 +22571,7 @@ export default {
       "name": "johto"
     },
     "about": "Hitmontop spins on its head at high speed, all the while delivering kicks. This technique is a remarkable mix of both offense and defense at the same time. The Pokémon travels faster spinning than it does walking.",
-    "img": "https://www.serebii.net/pokemongo/pokemon/237.png",
+    "img": "../image/johto/237.png",
     "size": {
       "height": "1.40 m",
       "weight": "48.0 kg"
@@ -22660,7 +22660,7 @@ export default {
       "name": "johto"
     },
     "about": "Smoochum actively runs about, but also falls quite often. Whenever the chance arrives, it will look for its reflection to make sure its face hasn't become dirty.",
-    "img": "../image/kanto/238.png",
+    "img": "../image/johto/238.png",
     "size": {
       "height": "0.41 m",
       "weight": "6.0 kg"
@@ -22757,7 +22757,7 @@ export default {
       "name": "johto"
     },
     "about": "Elekid stores electricity in its body. If it touches metal and accidentally discharges all its built-up electricity, this Pokémon begins swinging its arms in circles to recharge itself.",
-    "img": "../image/kanto/239.png",
+    "img": "../image/johto/239.png",
     "size": {
       "height": "0.61 m",
       "weight": "23.5 kg"
@@ -22860,7 +22860,7 @@ export default {
       "name": "johto"
     },
     "about": "Magby's state of health is determined by observing the fire it breathes. If the Pokémon is spouting yellow flames from its mouth, it is in good health. When it is fatigued, black smoke will be mixed in with the flames.",
-    "img": "../image/kanto/240.png",
+    "img": "../image/johto/240.png",
     "size": {
       "height": "0.71 m",
       "weight": "21.4 kg"
@@ -22967,7 +22967,7 @@ export default {
       "name": "johto"
     },
     "about": "Miltank gives over five gallons of milk on a daily basis. Its sweet milk is enjoyed by children and grown-ups alike. People who can't drink milk turn it into yogurt and eat it instead.",
-    "img": "../image/kanto/241.png",
+    "img": "../image/johto/241.png",
     "size": {
       "height": "1.19 m",
       "weight": "75.5 kg"
@@ -23047,7 +23047,7 @@ export default {
       "name": "johto"
     },
     "about": "Blissey senses sadness with its fluffy coat of fur. If it does so, this Pokémon will rush over to a sad person, no matter how far away, to share a Lucky Egg that brings a smile to any face.",
-    "img": "../image/kanto/242.png",
+    "img": "../image/johto/242.png",
     "size": {
       "height": "1.50 m",
       "weight": "46.8 kg"
@@ -23137,7 +23137,7 @@ export default {
       "name": "johto"
     },
     "about": "Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down.",
-    "img": "../image/kanto/243.png",
+    "img": "../image/johto/243.png",
     "size": {
       "height": "1.91 m",
       "weight": "178.0 kg"
@@ -23219,7 +23219,7 @@ export default {
       "name": "johto"
     },
     "about": "Entei embodies the passion of magma. This Pokémon is thought to have been born in the eruption of a volcano. It sends up massive bursts of fire that utterly consume all that they touch.",
-    "img": "../image/kanto/244.png",
+    "img": "../image/johto/244.png",
     "size": {
       "height": "2.11 m",
       "weight": "198.0 kg"
@@ -23305,7 +23305,7 @@ export default {
       "name": "johto"
     },
     "about": "Suicune embodies the compassion of a pure spring of water. It runs across the land with gracefulness. This Pokémon has the power to purify dirty water.",
-    "img": "../image/kanto/245.png",
+    "img": "../image/johto/245.png",
     "size": {
       "height": "2.01 m",
       "weight": "187.0 kg"
@@ -23389,7 +23389,7 @@ export default {
       "name": "johto"
     },
     "about": "Larvitar is born deep under the ground. To come up to the surface, this Pokémon must eat its way through the soil above. Until it does so, Larvitar cannot see its parents.",
-    "img": "../image/kanto/246.png",
+    "img": "../image/johto/246.png",
     "size": {
       "height": "0.60 m",
       "weight": "72.0 kg"
@@ -23490,7 +23490,7 @@ export default {
       "name": "johto"
     },
     "about": "Pupitar creates a gas inside its body that it compresses and forcefully ejects to propel itself like a jet. The body is very durable—it avoids damage even if it hits solid steel.",
-    "img": "../image/kanto/247.png",
+    "img": "../image/johto/247.png",
     "size": {
       "height": "1.20 m",
       "weight": "152.0 kg"
@@ -23591,7 +23591,7 @@ export default {
       "name": "johto"
     },
     "about": "Tyranitar is so overwhelmingly powerful, it can bring down a whole mountain to make its nest. This Pokémon wanders about in mountains seeking new opponents to fight.",
-    "img": "../image/kanto/248.png",
+    "img": "../image/johto/248.png",
     "size": {
       "height": "2.00 m",
       "weight": "202.0 kg"
@@ -23694,7 +23694,7 @@ export default {
       "name": "johto"
     },
     "about": "Lugia's wings pack devastating power-a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea.",
-    "img": "../image/kanto/249.png",
+    "img": "../image/johto/249.png",
     "size": {
       "height": "5.21 m",
       "weight": "216.0 kg"
@@ -23781,7 +23781,7 @@ export default {
       "name": "johto"
     },
     "about": "Ho-Oh's feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are said to bring happiness to the bearers. This Pokémon is said to live at the foot of a rainbow.",
-    "img": "../image/kanto/250.png",
+    "img": "../image/johto/250.png",
     "size": {
       "height": "3.80 m",
       "weight": "199.0 kg"
@@ -23870,7 +23870,7 @@ export default {
       "name": "johto"
     },
     "about": "This Pokémon came from the future by crossing over time. It is thought that so long as Celebi appears, a bright and shining future awaits us.",
-    "img": "../image/kanto/251.png",
+    "img": "../image/johto/251.png",
     "size": {
       "height": "0.61 m",
       "weight": "5.0 kg"

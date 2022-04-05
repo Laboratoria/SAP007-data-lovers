@@ -9,7 +9,6 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: #8FBDD3;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,13 +140,14 @@ color: #424b54;
 
 .title {
   font-weight: bold;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid white;
   float:initial;
   color:rgb(117, 117, 117);
 }
 
 footer {
   margin: auto;
+  background-color: #8FBDD3;
   color:#E0EEEE;
   padding: 5%;
   font-weight: bold;

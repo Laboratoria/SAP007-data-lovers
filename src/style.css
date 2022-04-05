@@ -94,9 +94,8 @@ justify-content: flex-start;
 } 
 
 .img-card{
-  object-fit: fit;
-  width: 100%;
-  background-image: url(image/bg-card.png);
+width: 100%;
+background-image: url(image/bg-card.png);
 }
 
 #num {
@@ -142,6 +141,9 @@ color: #424b54;
 
 .title {
   font-weight: bold;
+  border-bottom: 1px solid grey;
+  float:initial;
+  color:rgb(117, 117, 117);
 }
 
 footer {
@@ -156,3 +158,4 @@ footer {
 a{
   text-decoration: none;
 }
+

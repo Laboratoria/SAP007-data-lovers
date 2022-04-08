@@ -15,7 +15,7 @@
 ---
 ## :dart: Sobre o projeto 
 
-O projeto [Data Lovers](https://github.com/leticiaantunesjpeg/SAP007-data-lovers) é uma página web foi desenvolvido para visualizar um conjunto de dados que se adeque às necessidades de seu usuário, ou seja, recupera de um banco de dados apenas o valor requisitado pelo usuário através de uma interface gráfica intuitiva.
+O projeto [Data Lovers](https://maryssun.github.io/SAP007-data-lovers/) é uma página web foi desenvolvido para visualizar um conjunto de dados que se adeque às necessidades de seu usuário, ou seja, recupera de um banco de dados apenas o valor requisitado pelo usuário através de uma interface gráfica intuitiva.
 
 ![](./src/imagens/gifREADME.gif)
 
@@ -36,15 +36,9 @@ As histórias de usuário [detalhadas neste link](https://www.canva.com/design/D
 ---
 ## :computer: Protótipo e UX
 
-O protótipo [detalhado neste link](https://www.canva.com/design/DAE4EHzgZD0/lDFEg3JauA7tJ4q-WJ3EQQ/view?utm_content=DAE4EHzgZD0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) foi elaborado com a finalidade de permitir que a navegação do usuário se dê pelas seguintes páginas: a página inicial, a página dos filmes e a página dos personagens, bem como os links para os perfis das autoras e o link para o site da Laboratoria no rodapé.
-
-No exemplo do protótipo da página inicial, há a indicação de um gif animado e uma música típica do Studio Ghibli, no entanto, verificou-se que ao implementar tais elementos, a página demoraria para carregar e prejudicaria a experiência do usuário. Os links para as páginas "filmes" e "personagens" foram movidos para a barra de navegação.
+O protótipo foi elaborado com a finalidade de permitir que a navegação do usuário se dê pelas seguintes páginas: a página inicial, a página dos filmes e a página dos personagens, bem como os links para os perfis das autoras e o link para o site da Laboratoria no rodapé.
 
 Em um teste de usabilidade com um suposto usuário, foi indicado que seria confuso se a página "filmes" indicasse apenas para a página "personagens" e vice-versa pois o usuário teria dificuldade para localizar em qual página se encontra. Portanto, ambas as páginas contam com "Início/Home", "Filmes" e "Personagens".
-
-Foi retirado a ordenação por popularidade da página "filmes" ao estudar a base de dados e a identificar uma dificuldade para desenvolver um código contemplando essa propriedade.
-
-Além de outras pequenas alterações, a página "Sobre as Autoras" foi substituída por um rodapé indicando informações a respeito destas.
 
 ---
 ## :card_file_box: Organização

@@ -48,3 +48,14 @@ export function calculo(numero, numero2) {
   let estatistica = `${statS.toFixed(1)}% dos personagens corresponde a categoria escolhida`
   return estatistica
 }
+
+export const filteredItem = arrayRickAndMorty.filter(item => {
+ (item.name.toLowerCase().includes(searchString)||
+  item.status.toLowerCase().includes(searchString)||
+  item.gender.toLowerCase().includes(searchString)||
+  item.species.toLowerCase().includes(searchString)
+ )
+ return filteredItem;
+})
+
+

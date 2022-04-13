@@ -1,4 +1,4 @@
-import { ordemNameAA, ordemNameBB, filterStatus, filtroespecie, filterGender, calculo } from './data.js';
+import { ordemNameAA, ordemNameBB, filterStatus, filtroespecie, filterGender, calculo , filteredItem} from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const showPersonagens = document.getElementById("card")
@@ -152,17 +152,10 @@ clearFilters.addEventListener("click", clearAll);
 
 
 const searchBar = document.getElementById('searchBar');
+
 searchBar.addEventListener('keyup', (e) => {
-const searchString = e.target.value.toLowerCase();
-  const filteredItem = arrayRickAndMorty.filter(item => {
-    return (
-    item.name.toLowerCase().includes(searchString)||
-    item.status.toLowerCase().includes(searchString)||
-    item.gender.toLowerCase().includes(searchString)||
-    item.species.toLowerCase().includes(searchString)
-    )
-  })
-   showInfos(filteredItem);
+let searchString = filteredItem (e.target.value.toLowerCase())
+   showInfos(searchString);
 })
 
 const btn = document.querySelector("#voltarAoTopo");

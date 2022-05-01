@@ -35,7 +35,7 @@ As histórias de usuário [detalhadas neste link](https://www.canva.com/design/D
 
 O protótipo foi elaborado com a finalidade de permitir que a navegação do usuário se dê pelas seguintes páginas: a página inicial, a página dos filmes e a página dos personagens, bem como os links para o perfil da autora e o link para o site da Laboratoria no rodapé.
 
-Em um teste de usabilidade com um suposto usuário, foi indicado que seria confuso se a página "filmes" indicasse apenas para a página "personagens" e vice-versa pois o usuário teria dificuldade para localizar em qual página se encontra. Portanto, ambas as páginas contam com "Início/Home", "Filmes" e "Personagens" e ao o menu de vanegação fica .
+Em um teste de usabilidade com um suposto usuário, foi indicado que seria confuso se a página "filmes" indicasse apenas para a página "personagens" e vice-versa pois o usuário teria dificuldade para localizar em qual página se encontra. Portanto, ambas as páginas contam com "Início", "Filmes" e "Personagens" e ao o menu de vanegação fica .
 
 ![img](./src/images/prototipo-paginicial.png)
 

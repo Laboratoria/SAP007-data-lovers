@@ -152,6 +152,12 @@ header {
   text-align: center;
 }
 
+.imagem-cartao {
+  width: 80%;
+  height: 40%;
+  border: 1px solid black;
+}
+
 .titulo-nome-cartao {
   width: 80%;
   height: 20%;

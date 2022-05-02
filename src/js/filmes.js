@@ -118,14 +118,17 @@ function carregarPoster(filmes) {
       elementoLi.classList.add("itens-cartao");
 
       const elementoDiv = document.createElement("div");
+      const elementoFilhoDiv = document.createElement("div");
       elementoDiv.classList.add("cartao");
-      elementoDiv.style.backgroundImage = "url(" + filme.poster + ")";
+      elementoFilhoDiv.classList.add("imagem-cartao");
+      elementoFilhoDiv.style.backgroundImage = "url(" + filme.poster + ")";
 
       const elementoParagrafoNome = document.createElement("p");
       elementoParagrafoNome.classList.add("titulo-nome-cartao");
       elementoParagrafoNome.innerText = filme.title;
 
       elementoDiv.appendChild(elementoParagrafoNome);
+      elementoDiv.appendChild(elementoFilhoDiv);
       elementoLi.appendChild(elementoDiv);
       cartoes.appendChild(elementoLi);
   });

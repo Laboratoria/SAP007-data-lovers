@@ -10,16 +10,16 @@
 * [4. Organização](#card_file_box-Organização)
 * [5. Resultados](#%EF%B8%8F-resultados)
 * [6. Tecnologias](#robot-tecnologias)
-* [7. Sobre as autoras](#woman_technologist-sobre-a-autora)
+* [7. Sobre a autora](#woman_technologist-sobre-a-autora)
 
 ---
 ## :dart: Sobre o projeto 
 
-O projeto [Data Lovers](https://maryssun.github.io/SAP007-data-lovers/) é uma página web foi desenvolvido para visualizar um conjunto de dados que se adeque às necessidades de seu usuário, ou seja, recupera de um banco de dados apenas o valor requisitado pelo usuário através de uma interface gráfica intuitiva.
+O projeto [Data Lovers](https://maryssun.github.io/SAP007-data-lovers/) foi desenvolvido para visualizar um conjunto de dados que se adeque às necessidades de seu usuário, ou seja, recupera de um banco de dados apenas o valor requisitado pelo usuário através de uma interface gráfica intuitiva.
 
 ![](./src/imagens/gifREADME.gif)
 
-O tema escolhido pelas autoras do projeto é Studio Ghibli, um estúdio japonês de animação, muito conhecido por seus filmes como **Meu Amigo Totoro**,
+O tema escolhido para o desenvolvimento do projeto foi Studio Ghibli, um estúdio japonês de animação, muito conhecido por seus filmes como **Meu Amigo Totoro**,
 **A Viagem de Chihiro**, **O Castelo Animado**, entre outros grandes sucessos.
 As animações são bem recebidas em todo o mundo e algumas receberam
 várias nomeações e prêmios. De todo esse fandom há um grupo que deseja
@@ -39,6 +39,9 @@ As histórias de usuário [detalhadas neste link](https://www.canva.com/design/D
 O protótipo foi elaborado com a finalidade de permitir que a navegação do usuário se dê pelas seguintes páginas: a página inicial, a página dos filmes e a página dos personagens, bem como os links para os perfis das autoras e o link para o site da Laboratoria no rodapé.
 
 Em um teste de usabilidade com um suposto usuário, foi indicado que seria confuso se a página "filmes" indicasse apenas para a página "personagens" e vice-versa pois o usuário teria dificuldade para localizar em qual página se encontra. Portanto, ambas as páginas contam com "Início/Home", "Filmes" e "Personagens".
+
+![img](./src/images/prototipo-paginicial.png)
+![img](./src/images/prototipo-cards.png)
 
 ---
 ## :card_file_box: Organização

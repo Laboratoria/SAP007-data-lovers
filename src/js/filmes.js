@@ -120,7 +120,7 @@ function carregarPoster(filmes) {
       const elementoDiv = document.createElement("div");
       const elementoFilhoDiv = document.createElement("div");
       elementoDiv.classList.add("cartao");
-      elementoFilhoDiv.classList.add("imagem-cartao");
+      elementoFilhoDiv.classList.add("imagem-cartao"); // Adicionei class imagem cartão
       elementoFilhoDiv.style.backgroundImage = "url(" + filme.poster + ")";
 
       const elementoParagrafoNome = document.createElement("p");

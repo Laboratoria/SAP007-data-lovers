@@ -2,6 +2,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color:#ececec;
+}
+
 /* Aqui é a nav */
 .menu-topo {
   background-color: #33a4e1;
@@ -43,21 +47,6 @@
   border: 1px solid #aac2d8;
   border-radius: 5px;
 }
-
-/* .menu-topo ul li a {
-  color: #032541;
-  text-decoration: none;
-  padding: 5px;
-  display: inline-block;
-  min-width: 100px;
-  text-align: center;
-}
-
-.menu-topo ul li a:hover {
-  border: 1px solid #aac2d8;
-  border-radius: 5px;
-} */
-/* Aqui termina a nav */
 
 /* menu de filtros */
 main,
@@ -147,21 +136,24 @@ header {
   margin: 16px 8px 8px;
   flex-direction: column;
   justify-content: center;
-  border: solid 5px #9bd5e9;
+  border: solid 2px #047493;
   border-radius: 15px;
   margin-top: 6%;
   text-align: center;
   display: flex;
   justify-items: center;
+  background: rgba(4,116,147, 0.8);
 }
 
 .imagem-cartao {
   width: 90%;
   height: 74%;
-  border: 1px solid #9bd5e9;
+  border: 1px solid #047493;
   border-radius: 10px;
   justify-content: center;
   margin-bottom: auto;
+  background: no-repeat center;
+  background-size: cover; 
 }
 
 .titulo-nome-cartao {
@@ -171,9 +163,10 @@ header {
   align-items: center;
   justify-content: center;
   margin: auto;
-  border: #9BD5E9 solid 2px;
+  border: #047493 solid 1px;
   border-radius: 8px;
   font-weight: bold;
+  color: white;
 }
 
 /* Fim cartões */

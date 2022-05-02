@@ -97,14 +97,17 @@ function carregarImagens(personagens) {
       elementoLi.classList.add("itens-cartao");
       
       const elementoDiv = document.createElement("div");
+      const elementoFilhoDiv = document.createElement("div");
       elementoDiv.classList.add("cartao");
-      elementoDiv.style.backgroundImage = "url(" + personagem.img + ")";
+      elementoFilhoDiv.classList.add("imagem-cartao"); // Adicionei class imagem cartão
+      elementoFilhoDiv.style.backgroundImage = "url(" + personagem.img + ")";
       
       const elementoParagrafoNome = document.createElement("p");
       elementoParagrafoNome.classList.add("titulo-nome-cartao");
       elementoParagrafoNome.innerText = personagem.name;
 
       elementoDiv.appendChild(elementoParagrafoNome);
+      elementoDiv.appendChild(elementoFilhoDiv);
       elementoLi.appendChild(elementoDiv);
       elementoUlCartoes.appendChild(elementoLi);
   });

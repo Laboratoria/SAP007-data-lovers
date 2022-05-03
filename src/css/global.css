@@ -86,7 +86,6 @@ header {
 .grupo-radio .grupo-input-radio:last-child {
   margin-right: 0;
 }
-
 /* Aqui acaba o menu de filtros  */
 
 /* Aqui começa a barra de pesquisa */
@@ -114,7 +113,6 @@ header {
   margin: 20px 0;
   border: 2px solid rgba(0, 141, 218, 0.8);
 }
-
 /* Aqui termina a barra de pesquisa */
 
 /* Cartões */
@@ -163,16 +161,16 @@ header {
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 0 3px;
   border: #047493 solid 1px;
   border-radius: 8px;
   font-weight: bold;
   color: white;
+  background-color: rgba(56,114,141, 0.8);
 }
-
 /* Fim cartões */
 
 /* Footer */
-
 footer {
   background: #008dda;
   display: flex;
@@ -209,5 +207,4 @@ footer p {
 .sobre-mim p {
   color: #fff;
 }
-
 /* Aqui acaba o footer */

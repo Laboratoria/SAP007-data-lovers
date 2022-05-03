@@ -11,6 +11,9 @@
     margin-bottom: -20px;
 }
 
+.img-inicial-totoro {
+}
+
 .seletores, .radios {
     display: flex;
     justify-content: space-around;

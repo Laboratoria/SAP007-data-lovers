@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background-color: #ececec;
+  background-image: linear-gradient( to right, #bddaec, #bddaec, #fff, #fff );
 }
 
 nav {
@@ -9,9 +9,8 @@ nav {
   align-items: center;
 }
 
-.ghibli-lovers {
-  color: #008dda;
-  font-size: xx-large;
+.logo-sg {
+  height: 100px;
 }
 
 .menu-topo {
@@ -19,22 +18,22 @@ nav {
 }
 
 .menu-topo ul li a {
-    color: #000;
+  color: #000;
 }
 
 .menu-topo ul li a:hover {
-    color: #33a4e1;
+  color: #33a4e1;
 }
 
 .studio-ghibli-informacoes {
   float: left;
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 
 .studio-ghibli-informacoes section {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 440px;
+  max-height: 440px;
 }
 
 .inclinacao {
@@ -52,6 +51,7 @@ figure {
   right: 10vw;
   bottom: 0;
 }
+
 .inclinacao-azul-escura {
   border-top: 80vh solid transparent;
   border-right: 60vw solid #008dda;

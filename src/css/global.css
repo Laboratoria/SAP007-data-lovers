@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color:#ececec;
+  background-image: linear-gradient( to right, #bddaec, #fff, #bddaec, #fff );
 }
 
 /* Aqui é a nav */

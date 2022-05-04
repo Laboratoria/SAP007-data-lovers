@@ -36,7 +36,7 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
   Utilizando o Google Forms, realizei uma pesquisa visando descobrir quais seriam os interesses na aplicação web que seria desenvolvida.
   
-  <!-- img pesquisa -->
+  <img src="./images/readme-pesquisa.png" alt="Imagem da pesquisa">
   
 ### História de usuário
 

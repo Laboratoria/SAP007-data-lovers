@@ -37,17 +37,22 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
 ## 2. Pesquisa
 
+<div align= "center">
 Utilizando o Google Forms, realizei uma pesquisa visando descobrir quais seriam os interesses na aplicação web que seria desenvolvida.
 
-<div align= "center">
+
 ![images](./src/images/pesquisa-readme.png)
-</div>
+
 
 - Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.
+</div>
 
 ### História de usuário
 
+
+<div align="center">
 ![images](./src/images/historia-usuario.png)
+</div>
 
 **Definição de produto:** o usuário precisa escolher como quer ordenar as animações, bem como filtrar os personagens e os filmes, obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações.
 

@@ -37,13 +37,20 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
 ## 2. Pesquisa
 
-Utilizando o Google Forms, realizei uma pesquisa visando descobrir quais seriam os interesses na aplicação web que seria desenvolvida.
+Utilizando o Google Forms, realizamos uma pesquisa visando descobrir qual é a idade dos nossos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
 
-<div align= "center">
-![images](./src/images/readme-pesquisa.png)
-</div>
+Obtivemos os seguintes resultados:
 
-- Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.
+![print-idade](./src/images/idade-readme-pesquisa.png)
+
+* 40,7% dos usuários tem entre 16-21 anos e mais de 30% tem entre 22-33 anos.
+
+![print-fans](./src/images/fans-readme-pesquisa.png)
+* 53,7% já conhecem as animações e se declaram fãs das animações.
+
+![images](./src/images/readme-pesquisa%20.png)
+
+* Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.
 
 ### História de usuário
 

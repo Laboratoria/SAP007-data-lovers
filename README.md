@@ -37,22 +37,17 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
 ## 2. Pesquisa
 
-<div align= "center">
 Utilizando o Google Forms, realizei uma pesquisa visando descobrir quais seriam os interesses na aplicação web que seria desenvolvida.
 
-
+<div align= "center">
 ![images](./src/images/pesquisa-readme.png)
-
+</div>
 
 - Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.
-</div>
 
 ### História de usuário
 
-
-<div align="center">
 ![images](./src/images/historia-usuario.png)
-</div>
 
 **Definição de produto:** o usuário precisa escolher como quer ordenar as animações, bem como filtrar os personagens e os filmes, obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações.
 
@@ -62,10 +57,12 @@ Utilizando o Google Forms, realizei uma pesquisa visando descobrir quais seriam 
 
 No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferramenta para esboçar um protótipo de baixa fidelidade. O wireframe foi elaborado com a finalidade de permitir que a navegação do usuário se dê pelas seguintes páginas: a página inicial, a página dos filmes e a página dos personagens, bem como o link para os perfil da autora e o link para o site da Laboratoria no rodapé.
 
-- A pagina inicial foi todo idealizad
+- A pagina inicial:
+
 ![images](./src/images/prototipo-paginicial.png)
 
-- As páginas de Filmes e Personagens seguem o mesmo layout
+- As páginas de Filmes e Personagens seguem o mesmo layout:
+
 ![images](./src/images/prototipo-cards.png)
 
 - A definição da paleta de cores foi baseada em tons de azul, seguindo a identidade visual do Studio, assim como a sua logo, foi minha inspiração principal.

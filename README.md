@@ -68,9 +68,15 @@ No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferrament
 
 ![images](./src/images/prototipo-paginicial.png)
 
-- As páginas de Filmes e Personagens seguem o mesmo layout:
+- A página de Filme: 
 
 ![images](./src/images/prototipo-pag-personagens.png)
+
+- A página de Personagens:
+
+![images](./src/images/prototipo-pag-filmes.png)
+
+** Cada página possui destaque no menu de referência para orientação de navegação. Quando o usuário estiver na página de Filmes, o menu ficará destacado, como podemos ver no protótipo.
 
 - A definição da paleta de cores foi baseada em tons de azul, seguindo a identidade visual do Studio, assim como a sua logo, foi minha inspiração principal.
 

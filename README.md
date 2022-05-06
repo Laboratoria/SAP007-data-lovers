@@ -37,7 +37,7 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
 ## 2. Pesquisa
 
-Utilizando o Google Forms, realizamos uma pesquisa visando descobrir qual é a idade dos nossos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
+Utilizando o Google Forms, realizei uma pesquisa visando descobrir qual é a idade dos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
 
 Obtivemos os seguintes resultados:
 

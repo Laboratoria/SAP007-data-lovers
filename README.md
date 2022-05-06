@@ -37,7 +37,7 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
 ## 2. Pesquisa
 
-Utilizando o Google Forms, realizei uma pesquisa visando descobrir qual é a idade dos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
+Utilizei o Google Forms como ferramenta para realizar a pesquisa visando descobrir qual é a idade dos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
 
 Obtivemos os seguintes resultados:
 
@@ -70,7 +70,7 @@ No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferrament
 
 - As páginas de Filmes e Personagens seguem o mesmo layout:
 
-![images](./src/images/prototipo-cards.png)
+![images](./src/images/prototipo-pag-personagens.png)
 
 - A definição da paleta de cores foi baseada em tons de azul, seguindo a identidade visual do Studio, assim como a sua logo, foi minha inspiração principal.
 

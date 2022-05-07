@@ -41,19 +41,25 @@ Utilizei o Google Forms como ferramenta para realizar a pesquisa visando descobr
 Obtivemos os seguintes resultados:
 
 <div align-items="center">
+
 ![print-idade](./src/images/idade-readme-pesquisa.png)
+
 </div><br>
 
 * 40,7% dos usuários tem entre 16-21 anos e mais de 30% tem entre 22-33 anos.*
 
 <div align-items="center">
+
 ![print-fans](./src/images/fans-readme-pesquisa.png)
+
 </div><br>
 
 * 53,7% já conhecem as animações e se declaram fãs das animações.*
   
 <div align-items="center">
+
 ![images](./src/images/readme-pesquisa.png)
+
 </div><br>
 
 * Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.*
@@ -61,7 +67,9 @@ Obtivemos os seguintes resultados:
 ### História de usuário
 
 <div align="center">
+
 ![images](./src/images/historia-usuario.png)
+
 </div><br>
 
 **Definição de produto:** o usuário precisa escolher como quer ordenar as animações, bem como filtrar os personagens e os filmes, obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações.
@@ -75,19 +83,25 @@ No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferrament
 - A pagina inicial:
 
 <div align="center">
-![images](./src/images/prototipo-paginicial.png)
+
+![images](./src/images/prototipo-pagina-inicial.png)
+
 </div><br>
 
-- A página de Filme: 
+- A página de Filmes: 
 
 <div align="center">
-![images](./src/images/prototipo-pag-personagens.png)
+
+![images](./src/images/prototipo-pag-filmes.png)
+
 </div><br>
 
 - A página de Personagens:
 
 <div align="center">
-![images](./src/images/prototipo-pag-filmes.png)
+
+![images](./src/images/prototipo-pag-personagens.png)
+
 </div><br>
 
 * Cada página possui destaque no menu de referência para orientação de navegação. Quando o usuário estiver na página de Filmes, o menu ficará destacado, como podemos ver no protótipo.
@@ -95,8 +109,11 @@ No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferrament
 - A definição da paleta de cores foi baseada em tons de azul, seguindo a identidade visual do Studio, assim como a sua logo, foi minha inspiração principal.
 
 <div align="center">
+
 ![images](./src/images/paleta-cor-readme.png)
+
 </div><br>
+
 ---
 
 ## 4. Projeto final

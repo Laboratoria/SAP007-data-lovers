@@ -23,7 +23,6 @@
 <img src="https://i.pinimg.com/originals/3f/58/38/3f5838171d06234cc6fecfb86ef0737f.gif" width="45%"  />
 
 Desenvolvido por [Dayanne Maryssol](https://www.linkedin.com/in/dayannemaryssol/), durante o Bootcamp da Laboratória da turma 007.
-
 </div>
 
 O objetivo principal deste projeto foi aprender a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita. A temática escolhida foi o universo do - [Studio Ghibli](https://pt.wikipedia.org/wiki/Studio_Ghibli), que é um estúdio japonês de animação, muito conhecido por seus filmes como **Meu Amigo Totoro, A Viagem de Chihiro, O Castelo Animado**, entre outros grandes sucessos.
@@ -41,20 +40,29 @@ Utilizei o Google Forms como ferramenta para realizar a pesquisa visando descobr
 
 Obtivemos os seguintes resultados:
 
+<div align-items="center">
 ![print-idade](./src/images/idade-readme-pesquisa.png)
+</div><br>
 
-* 40,7% dos usuários tem entre 16-21 anos e mais de 30% tem entre 22-33 anos.
+* 40,7% dos usuários tem entre 16-21 anos e mais de 30% tem entre 22-33 anos.*
 
+<div align-items="center">
 ![print-fans](./src/images/fans-readme-pesquisa.png)
-* 53,7% já conhecem as animações e se declaram fãs das animações.
+</div><br>
 
+* 53,7% já conhecem as animações e se declaram fãs das animações.*
+  
+<div align-items="center">
 ![images](./src/images/readme-pesquisa%20.png)
+</div><br>
 
-* Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.
+* Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.*
 
 ### História de usuário
 
+<div align="center">
 ![images](./src/images/historia-usuario.png)
+</div><br>
 
 **Definição de produto:** o usuário precisa escolher como quer ordenar as animações, bem como filtrar os personagens e os filmes, obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações.
 
@@ -66,22 +74,29 @@ No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferrament
 
 - A pagina inicial:
 
+<div align="center">
 ![images](./src/images/prototipo-paginicial.png)
+</div><br>
 
 - A página de Filme: 
 
+<div align="center">
 ![images](./src/images/prototipo-pag-personagens.png)
+</div><br>
 
 - A página de Personagens:
 
+<div align="center">
 ![images](./src/images/prototipo-pag-filmes.png)
+</div><br>
 
-** Cada página possui destaque no menu de referência para orientação de navegação. Quando o usuário estiver na página de Filmes, o menu ficará destacado, como podemos ver no protótipo.
+* Cada página possui destaque no menu de referência para orientação de navegação. Quando o usuário estiver na página de Filmes, o menu ficará destacado, como podemos ver no protótipo.
 
 - A definição da paleta de cores foi baseada em tons de azul, seguindo a identidade visual do Studio, assim como a sua logo, foi minha inspiração principal.
 
+<div align="center">
 ![images](./src/images/paleta-cor-readme.png)
-
+</div><br>
 ---
 
 ## 4. Projeto final
@@ -94,9 +109,10 @@ A página inicial contém na barra de navegação opções das páginas de “Fi
 
 ## 5. Sobre a autora
 
- <div align= "center">
+ <div align="center">
     <img alt="Dayanne Maryssol" height="150" src="https://avatars.githubusercontent.com/u/92697749?v=4"> 
  </div>
+ 
   <h3 align="center"><a href="https://github.com/Maryssun">Dayanne Maryssol</a></h3>
   <h4 align="center">Projeto do Bootcamp da <em><a href="https://hub.laboratoria.la/br">Laboratoria</a></em></h4>
   <div align="center">

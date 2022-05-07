@@ -53,7 +53,7 @@ Obtivemos os seguintes resultados:
 * 53,7% já conhecem as animações e se declaram fãs das animações.*
   
 <div align-items="center">
-![images](./src/images/readme-pesquisa%20.png)
+![images](./src/images/readme-pesquisa.png)
 </div><br>
 
 * Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.*

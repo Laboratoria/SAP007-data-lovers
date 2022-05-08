@@ -66,6 +66,7 @@ header {
   height: 400px;
   border-radius: 20px;
   border: 1px solid #cbcac6;
+  box-shadow: 0 0 1em #2c4762;
 }
 
 .grupo-radio {
@@ -141,6 +142,7 @@ header {
   display: flex;
   justify-items: center;
   background: rgba(4,116,147, 0.8);
+  box-shadow: 0 0 1em #328ea8;
 }
 
 .imagem-cartao {

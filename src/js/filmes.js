@@ -22,6 +22,7 @@ function iniciarPagina() {
 }
 
 iniciarPagina();
+// limparFiltros();
 
 function iniciarSeletoresDiretor() {
   const diretores = buscarNomesDiretores();
@@ -144,3 +145,8 @@ function filtrarFilmeInputPesquisa() {
   const filmes = pesquisarFilmesPorNome(inputPesquisa.value);
   carregarPoster(filmes);
 }
+
+// function limparFiltros() {
+//   window.location.reload(); //recarrega a página
+// }
+// botaoLimpar.addEventListener("click", limparFiltros);

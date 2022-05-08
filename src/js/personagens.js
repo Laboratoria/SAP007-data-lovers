@@ -20,6 +20,7 @@ function iniciarPagina() {
 }
 
 iniciarPagina();
+// limparFiltros();
 
 function iniciarSeletorEspecie() {
   const especiesPersonagens = buscarEspeciesPersonagens();
@@ -106,6 +107,7 @@ function carregarImagens(personagens) {
       elementoParagrafoNome.classList.add("titulo-nome-cartao");
       elementoParagrafoNome.innerText = personagem.name;
 
+
       elementoDiv.appendChild(elementoParagrafoNome);
       elementoDiv.appendChild(elementoFilhoDiv);
       elementoLi.appendChild(elementoDiv);
@@ -123,3 +125,8 @@ function filtrarPersonagemInputPesquisa() {
   const personagens = pesquisarPersonagensPorNome(inputPesquisa.value);
   carregarImagens(personagens);
 }
+
+// function limparFiltros() {
+//   window.location.reload(); //recarrega a página
+// }
+// botaoLimpar.addEventListener("click", limparFiltros);

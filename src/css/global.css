@@ -66,7 +66,7 @@ header {
   height: 400px;
   border-radius: 20px;
   border: 1px solid #cbcac6;
-  box-shadow: 0 0 1em #2c4762;
+  box-shadow: 0 0 1em #188bca;
 }
 
 .grupo-radio {
@@ -105,7 +105,7 @@ header {
 }
 
 .input-pesquisa {
-  width: 90%;
+  width: 80%;
   height: 40px;
   text-align: center;
   border: 2px solid #fff;
@@ -113,7 +113,21 @@ header {
   font-size: 16px;
   margin: 20px 0;
   border: 2px solid rgba(0, 141, 218, 0.8);
+  background-color: #dbeaf4;
 }
+
+.btn-limpar {
+  width: 8%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 141, 218, 0.8);
+  border-radius: 30px;
+  font-size: 14px;
+  color: #757575;
+  margin: 20px 5px;
+  background-color: #dbeaf4;
+}
+
 /* Aqui termina a barra de pesquisa */
 
 /* Cartões */

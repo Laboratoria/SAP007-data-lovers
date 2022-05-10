@@ -13,7 +13,10 @@
 - [2. História de usuário](#2-História-de-usuario)
 - [3. Protótipo](#3-Protótipo)
 - [4. Projeto final](#4-Projeto-final)
-- [5. Autora](#5-Autora)
+- [5. Implementações futuras](#5-Implementações-futuras)
+- [6. Segundo projeto](#6-Segundo-projeto)
+- [7. Autora](#7-Autora)
+
 
 ---
 
@@ -37,6 +40,7 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 ## 2. Pesquisa
 
 Utilizei o Google Forms como ferramenta para realizar a pesquisa visando descobrir qual é a idade dos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
+
 
 Obtivemos os seguintes resultados:
 
@@ -124,7 +128,30 @@ A página inicial contém na barra de navegação opções das páginas de “Fi
 
 ---
 
-## 5. Sobre a autora
+## 5. Implementações futuras
+
+- Adicionar uma página de curiosidades.
+- Implementação de um tradutor de Libras na tela.
+- Menu hamburguer para responsividade em telas pequenas.
+- Modal nos cards onde apareça mais informações sobre os filmes e os personagens.
+
+---
+
+## 6. Segundo projeto
+
+- Tive a oportunidade de desenvolver um segundo [projeto](https://leticiaantunesjpeg.github.io/SAP007-data-lovers/) junto com minha colega [Leticia Antunes](https://github.com/leticiaantunesjpeg).
+
+- Fizemos uma [pesquisa](https://www.canva.com/design/DAE3-YMQvbE/view?utm_content=DAE3-YMQvbE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) com os usuários para a idealização do produto.
+
+- Planejamos o design através do Canva e ficou [assim](https://www.canva.com/design/DAE4EHzgZD0/lDFEg3JauA7tJ4q-WJ3EQQ/view?utm_content=DAE4EHzgZD0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink).
+
+- Nos organizamos através da ferramenta [Trello](https://trello.com/b/jfg3MgmE/data-lovers).
+
+- E aqui você encontra o resultado: https://leticiaantunesjpeg.github.io/SAP007-data-lovers/
+
+---
+
+## 7. Sobre a autora
 
  <div align="center">
     <img alt="Dayanne Maryssol" height="150" src="https://avatars.githubusercontent.com/u/92697749?v=4"> 

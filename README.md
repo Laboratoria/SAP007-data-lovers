@@ -124,7 +124,11 @@ No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferrament
 
 A página inicial contém na barra de navegação opções das páginas de “Filmes” e “Personagens”. O logo utilizado encaminha o usuário para a página oficial do estúdio em uma nova janela.
 
-<!-- video do projeto -->
+<div align="center">
+
+![images](./src/images/datapersonagens.gif)
+
+</div>
 
 ---
 

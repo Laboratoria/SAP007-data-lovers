@@ -14,7 +14,7 @@
 - [3. Protótipo](#3-Protótipo)
 - [4. Projeto final](#4-Projeto-final)
 - [5. Implementações futuras](#5-Implementações-futuras)
-- [6. Segundo projeto](#6-Segundo-projeto)
+- [6. Projeto - Dupla](#6-Projeto-dupla)
 - [7. Autora](#7-Autora)
 
 
@@ -141,7 +141,7 @@ A página inicial contém na barra de navegação opções das páginas de “Fi
 
 ---
 
-## 6. Segundo projeto
+## 6. Projeto dupla
 
 - Tive a oportunidade de desenvolver um segundo [projeto](https://github.com/leticiaantunesjpeg/SAP007-data-lovers) junto com minha colega [Leticia Antunes](https://github.com/leticiaantunesjpeg).
 

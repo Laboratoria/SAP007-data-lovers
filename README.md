@@ -139,7 +139,7 @@ A página inicial contém na barra de navegação opções das páginas de “Fi
 
 ## 6. Segundo projeto
 
-- Tive a oportunidade de desenvolver um segundo [projeto](https://leticiaantunesjpeg.github.io/SAP007-data-lovers/) junto com minha colega [Leticia Antunes](https://github.com/leticiaantunesjpeg).
+- Tive a oportunidade de desenvolver um segundo [projeto](https://github.com/leticiaantunesjpeg/SAP007-data-lovers) junto com minha colega [Leticia Antunes](https://github.com/leticiaantunesjpeg).
 
 - Fizemos uma [pesquisa](https://www.canva.com/design/DAE3-YMQvbE/view?utm_content=DAE3-YMQvbE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) com os usuários para a idealização do produto.
 

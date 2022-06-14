@@ -2,7 +2,7 @@
 
 ## Índice
 
-- [1. Introdução] (#1-introdução)
+- [1.Introdução] (#1-Introdução)
 - [2. Resumo do projeto](#2-histórias-de-usuário)
 - [3. Prototipação](#3-prototipação)
 - [4. Considerações finais](#5-considerações-finais)

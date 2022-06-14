@@ -26,8 +26,8 @@ cardsPokemons(pokemons);
 
 const search = document.getElementById("inputSearch")
 
-search.addEventListener("keypress", (e) => {
-  const searchName = e.search.value;
+search.addEventListener("keypress", () => {
+  const searchName = search.value;
   const pokemonsName = searchByName(searchName, pokemons);
   cardsPokemons(pokemonsName);
 })

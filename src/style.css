@@ -25,6 +25,7 @@ header {
   width: 100%;
   display: flex;
   opacity: 80%;
+  justify-content: center;
 }
 
 
@@ -32,15 +33,7 @@ header {
   background-color: #434343
 }
 
-}
 
-.title-area {
-  display: flex;
-  width: 20%;
-  height: 90%;
-  width: 20%;
-  margin: 1rem;
-}
 
 
 

@@ -70,6 +70,15 @@ Obtivemos os seguintes resultados:
 
 ### História de usuário
 
+# Quem são os usuários?
+
+. Crianças a partir dos 7 anos que já iniciaram a leitura e escrita;
+. Pessoas com deficiência visual;
+. Fãs e simpatizantes de animes e mangás;
+. Pessoas que gostam de histórias relacionadas a cultura japonesa;
+. Consome conteúdo de qualidade, criativo, ilustrações;
+. Gosta de assistir filmes de aventura e fantasia;
+
 <div align="center">
 
 ![images](./src/images/historia-usuario.png)

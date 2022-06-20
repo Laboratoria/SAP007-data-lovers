@@ -20,7 +20,6 @@ function iniciarPagina() {
 }
 
 iniciarPagina();
-// limparFiltros();
 
 function iniciarSeletorEspecie() {
   const especiesPersonagens = buscarEspeciesPersonagens();
@@ -126,7 +125,8 @@ function filtrarPersonagemInputPesquisa() {
   carregarImagens(personagens);
 }
 
-// function limparFiltros() {
-//   window.location.reload(); //recarrega a página
-// }
-// botaoLimpar.addEventListener("click", limparFiltros);
+function limparFiltros() {
+  window.location.reload(); //recarrega a página
+}
+const botaoLimpar = document.getElementById("btn-limpar");
+botaoLimpar.addEventListener("click", limparFiltros);

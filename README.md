@@ -144,7 +144,7 @@ A página inicial contém na barra de navegação opções das páginas de “Fi
 ## 5. Implementações futuras
 
 - Adicionar uma página de curiosidades.
-- Implementação de um tradutor de Libras na tela.
+- Implementação de um tradutor de Libras na tela (feito: 20/06/2022) ✔️
 - Menu hamburguer para responsividade em telas pequenas.
 - Modal nos cards onde apareça mais informações sobre os filmes e os personagens.
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personagens</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/personagens.css" />
+</head>
+
+<body>
+    <nav class="menu-topo">
+        <ul>
+            <li><a href="./index.html">INÍCIO</a></li>
+            <li><a href="./filmes.html">FILMES</a></li>
+            <li><a href="#" id="selecionado">PERSONAGENS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="./images/wallpaper-totoro-personagens.jpg" alt="Personagens Studio Ghibli" class="img-topo" />
+        <div class="filtro">
+            <div class="filtros-personagens seletores radios">
+                <div class="grupo-radio">
+                    <div class="grupo-input-radio">
+                        <label for="personagens-nome-crescente">A-Z</label>
+                        <input type="radio" name="ordem-alfabetica" value="crescente" id="personagens-nome-crescente"
+                            checked />
+                    </div>
+
+                    <div class="grupo-input-radio">
+                        <label for="personagens-nome-decrescente">Z-A</label>
+                        <input type="radio" name="ordem-alfabetica" value="decrescente"
+                            id="personagens-nome-decrescente" />
+                    </div>
+                </div>
+                <select name="genero" id="seletor-generos">
+                    <option value="valor1" selected disabled>Gênero</option>
+                </select>
+
+                <select name="especie" id="seletor-especies">
+                    <option value="valor1" selected disabled>Espécie</option>
+                </select>
+            </div>
+        </div>
+
+        <section>
+            <div class="conteudo-pesquisa">
+                <div>
+                    <input type="search" id="input-pesquisa" class="input-pesquisa" placeholder="Pesquise" autocomplete="on" spellcheck="true" />
+                    <button type="reset" id="btn-limpar" class="btn-limpar">Limpar</button>
+                </div>
+                <span id="contador"></span>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <ul class="cartoes" id="grupo-cartoes">
+            <!-- <li class="itens-cartao">
+              <div class="cartao"></div>
+            </li> -->
+        </ul>
+    </main>
+
+    <footer>
+        <div class="sobre-mim">
+            <p>Desenvolvido por Dayanne Maryssol</p>
+            <p>
+                <a href="https://www.laboratoria.la/br" target="_blank">SAP007 - LABORATORIA</a>
+            </p>
+        </div>
+
+        <figure>
+            <a href="https://github.com/Maryssun" target="_blank">
+                <img class="logo-github" src="images/logo-github.png" alt="Imagem Totoro" />
+            </a>
+            <a href="https://www.linkedin.com/in/dayannemaryssol/" target="_blank">
+                <img class="logo-linkedin" src="images/logo-linkedin.png" alt="Imagem Totoro" />
+            </a>
+        </figure>
+
+        <figure>
+            <a href="https://www.ghibli.jp/" target="_blank">
+                <img class="personagem-footer" src="images/img-footer.png" alt="Imagem Totoro" />
+            </a>
+        </figure>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+    <script src="./js/personagens.js" type="module"></script>
+</body>
+
+</html>

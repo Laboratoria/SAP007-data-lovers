@@ -1,616 +1,178 @@
-# Data Lovers
+<div align="center">
 
+# Data Lovers <img src="https://s6.gifyu.com/images/My_No_Face_costume_-removebg-preview.png" width="65" height="65" /> Studio Ghibli
+
+<img src="https://s6.gifyu.com/images/-4dbf08ec31009d07.gif" width="50%" />
+
+</div>
+ 
+ ***
 ## Índice
 
-- [1. Preâmbulo](#1-preâmbulo)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-considerações-gerais)
-- [5. Critérios mínimos de aceitação do
-  projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Considerações técnicas](#7-considerações-técnicas)
-- [8. Pistas, dicas e leituras
-  complementares](#8-pistas-dicas-e-leituras-complementares)
-- [9. Checklist](#9-checklist)
+- [1. O Projeto](#1-O-projeto)
+- [2. História de usuário](#2-História-de-usuario)
+- [3. Protótipo](#3-Protótipo)
+- [4. Projeto final](#4-Projeto-final)
+- [5. Implementações futuras](#5-Implementações-futuras)
+- [6. Projeto - II](#6-Projeto-II)
+- [7. Autora](#7-Autora)
+
 
 ---
 
-## 1. Preâmbulo
+## 1. Sobre o projeto
 
-Segundo a
-[Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read)
-90% dos dados que existem hoje foram gerados durante os últimos dois anos. A
-cada dia geramos 2.5 milhões de terabytes de dados, uma cifra sem precedentes.
+<div align="center">
+<img src="https://i.pinimg.com/originals/3f/58/38/3f5838171d06234cc6fecfb86ef0737f.gif" width="45%"  />
 
-Apesar disso, os dados por si só são de pouca utilidade. Para que essas grandes
-quantidades de dados se convertam em **informação** compreensível para os
-usuários, precisamos entender e processar estes dados. Uma forma simples de
-fazer isso é criando _interfaces_ e _visualizações_.
+Desenvolvido por [Dayanne Maryssol](https://www.linkedin.com/in/dayannemaryssol/), durante o Bootcamp da Laboratória da turma 007.
+</div>
 
-Na imagem seguinte, você pode ver como os dados que estão na parte esquerda
-podem ser usados para construir a interface amigável e compreensível que está na
-parte direita.
+O objetivo principal deste projeto foi aprender a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita. A temática escolhida foi o universo do - [Studio Ghibli](https://pt.wikipedia.org/wiki/Studio_Ghibli), que é um estúdio japonês de animação, muito conhecido por seus filmes como **Meu Amigo Totoro, A Viagem de Chihiro, O Castelo Animado**, entre outros grandes sucessos.
+As animações são bem recebidas em todo o mundo e algumas receberam várias nomeações e prêmios. De todo esse fandom há um grupo que deseja interagir e ver as informações das animações e seus personagens.
 
-![json-interface](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+O site comporta dados a respeito do filme e dos personagens, para que o usuário possa filtrar, ordenar e buscar por informações de seu interesse. O público alvo são jovens a partir de 12 anos, pois, ainda que o público alvo do Studio Ghibli englobe crianças por conta das animações, é necessário que o usuário possa ler e interpretar as informações apresentadas.
 
-## 2. Resumo do projeto
-
-Neste projeto você **construirá uma _página web_ para visualizar um _conjunto
-(set) de dados_** que se adeque às necessidades de seu usuário.
-
-Como entregável final terá uma página web que permita **visualizar dados,
-filtrá-los, ordená-los e fazer algum cálculo agregado**. Por cálculo agregado
-nos referimos aos diversos cálculos que podem ser feitos com os dados para
-mostrar a informação mais relevante para os usuários (médias, valores máximos e
-mínimos, etc).
-
-Para este projeto trazemos uma série de dados de _temáticas diferentes_ para que
-você explore e decida com qual delas deseja trabalhar. Escolhemos
-especificamente estes conjuntos de dados porque cremos que se adequem bem a esta
-etapa de sua aprendizagem.
-
-Uma vez que você defina sua área de interesse, busque entender quem é seu
-usuário e o que exatamente ele necessita saber ou ver, para que assim possa
-construir a interface que o ajude a interagir e entender melhor os dados.
-
-Este são os dados que propomos:
-
-- [Pokémon](src/data/pokemon/pokemon.json): Neste conjunto você encontrará uma
-  lista com os 151 Pokémon da região de Kanto, com suas respectivas estatísticas
-  utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-
-  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
-
-- [League of Legends - Challenger leaderboard](src/data/lol/lol.json): Este
-  conjunto mostra a lista de jogadores de uma liga do jogo League of Legends
-  (LoL).
-
-  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt-BR.md)
-
-- [Rick and Morty](src/data/rickandmorty/rickandmorty.json). Lista de
-  personagens da série Rick & Morty. Você pode revisar a documentação da API
-  neste [link](https://rickandmortyapi.com).
-
-  - [Pesquisa com seguidores de Rick and Morty](src/data/rickandmorty/README.pt-BR.md)
-
-- [Jogos Olímpicos do Rio de Janeiro](src/data/athletes/athletes.json).
-  Este conjunto nos fornece a lista de atletas que conquistaram medalhas nas
-  Olimpíadas do Rio de Janeiro.
-
-  - [Pesquisa com stakeholders dos Jogos Olímpicos do Rio de Janeiro](src/data/athletes/README.pt-BR.md)
-
-- [Studio Ghibli](src/data/ghibli/ghibli.json).
-  Lista de animações e personagens do [Studio Ghibli](https://ghiblicollection.com/).
-  - [Pesquisa com seguidores de Studio Ghibli](src/data/ghibli/README.pt-BR.md)
-
-O objetivo principal deste projeto é que aprenda a desenhar e construir uma
-interface web onde se possa visualizar e manipular dados, entendendo o que o
-usuário necessita.
-
-## 3. Objetivos de aprendizagem
-
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
-
-### HTML
-
-- [ ] **Uso de HTML semântico**
-
-    <details><summary>Links</summary><p>
-
-  - [HTML semántico](https://curriculum.laboratoria.la/pt/topics/html/02-html5/02-semantic-html)
-  - [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-  </p></details>
-
-### CSS
-
-- [ ] **Uso de seletores de CSS**
-
-    <details><summary>Links</summary><p>
-
-  - [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/01-css/01-intro-css)
-  - [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
-  </p></details>
-
-- [ ] **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
-
-    <details><summary>Links</summary><p>
-
-  - [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/01-css/02-boxmodel-and-display)
-  - [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  - [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  - [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  - [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-  </p></details>
-
-- [ ] **Uso de flexbox en CSS**
-
-    <details><summary>Links</summary><p>
-
-  - [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  - [Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
-  - [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-  </p></details>
-
-### Web APIs
-
-- [ ] **Uso de seletores de DOM**
-
-    <details><summary>Links</summary><p>
-
-  - [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/02-dom/03-1-dom-methods-selection)
-  - [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  - [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-  </p></details>
-
-- [ ] **Gerenciamento de eventos de DOM**
-
-    <details><summary>Links</summary><p>
-
-  - [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  - [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  - [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  - [El objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-  </p></details>
-
-- [ ] **Manipulação dinâmica de DOM**
-
-    <details><summary>Links</summary><p>
-
-  - [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  - [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  - [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  - [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  - [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  - [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-  </p></details>
-
-### JavaScript
-
-- [ ] **Diferenciar entre tipos de dados primitivos e não primitivos**
-
-- [ ] **Manipular arrays (filter, map, sort, reduce)**
-
-    <details><summary>Links</summary><p>
-
-  - [Arrays](https://curriculum.laboratoria.la/pt/topics/javascript/04-arrays)
-  - [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  - [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  - [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  - [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  - [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-  </p></details>
-
-- [ ] **Manipular objects (key | value)**
-
-    <details><summary>Links</summary><p>
-
-  - [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/05-objects/01-objects)
-  </p></details>
-
-- [ ] **Variáveis (declaração, atribuição, escopo)**
-
-    <details><summary>Links</summary><p>
-
-  - [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/01-values-variables-and-types)
-  - [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/02-variables)
-  </p></details>
-
-- [ ] **Uso de condicionais (if-else, switch, operador ternário)**
-
-    <details><summary>Links</summary><p>
-
-  - [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  - [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-  </p></details>
-
-- [ ] **Uso de laços (for, for..of, while)**
-
-    <details><summary>Links</summary><p>
-
-  - [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/02-loops)
-  - [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-  </p></details>
-
-- [ ] **Uso de funções (parâmetros, argumentos, valor de retorno)**
-
-    <details><summary>Links</summary><p>
-
-  - [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
-  - [Funções clásicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
-  - [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
-  - [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-  </p></details>
-
-- [ ] **Testes unitários**
-
-    <details><summary>Links</summary><p>
-
-  - [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-  </p></details>
-
-- [ ] **Uso ES modules**
-
-    <details><summary>Links</summary><p>
-
-  - [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  - [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-  </p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura | Semântica)**
-
-- [ ] **Diferença entre expression e statements**
-
-### Git e GitHub
-
-- [ ] **Git: Instalação e configuração**
-
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
-
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
-- [ ] **GitHub: Implantação com GitHub Pages**
-
-    <details><summary>Links</summary><p>
-
-  - [Site oficial do GitHub Pages](https://pages.github.com/)
-  </p></details>
-
-- [ ] **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
-
-### user-centricity
-
-- [ ] **Desenhar a aplicação pensando e entendendo a usuária**
-
-### product-design
-
-- [ ] **Criar protótipos para obter feedback e iterar**
-
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-### research
-
-- [ ] **Planejar e executar testes de usabilidade**
-
-## 4. Considerações gerais
-
-- Este projeto será executado em duplas.
-- Este projeto será entregue através do GitHub e a interface deve ser publicada
-  no [GitHub Pages](https://pages.github.com/).
-- Tempo para completá-lo: Tome como referencia 4 semanas.
-
-## 5. Critérios mínimos de aceitação do projeto
-
-Os critérios considerados para que tenha terminado este projeto são:
-
-### Definição de produto
-
-Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
-contando como foi o processo de desenho e como você acredita que o produto possa
-resolver o problema (ou problemas) de seu usuário.
-
-### Histórias de usuário
-
-Uma vez que entenda a necessidade dos usuários, escreva as [Historias de
-Usuario](https://pt.wikipedia.org/wiki/Hist%C3%B3ria_de_usu%C3%A1rio) que
-representem tudo que o usuário precisa fazer/ver. As **histórias de usuário**
-devem ser o resultado de seu processo de investigação/pesquisa de seus usuários.
-
-Não esqueça de incluir a definição de pronto (_definition of done_) e os
-critérios de aceitação para cada uma.
-
-Na medida do possível, termine uma história de usuário antes de passar para a
-seguinte (cumpra com as definições de pronto + critérios de aceitação).
-
-### Desenho de interface do usuário
-
-#### Protótipo de baixa fidelidade
-
-Durante seu trabalho você deverá fazer e iterar rascunhos de sua solução usando
-lápis e papel. Recomendamos que fotografe todas as iterações que fizer, suba
-para seu repositório e as mencione no `README.md`.
-
-#### Protótipo de alta fidelidade
-
-O passo seguinte é desenhar sua Interface de Usuário (UI - _User Interface_).
-Para isso você deverá aprender a usar alguma ferramenta de _visual design_. Nós
-recomendamos [Figma](https://www.figma.com/) que é uma ferramenta que funciona
-no navegador e no qual é possível criar uma conta gratuita. Mas você é livre
-para usar outros editores gráficos como Illustrator, Photoshop, PowerPoint,
-Keynote, etc. Lembre-se de usar a identidade gráfica correspondente ao arquivo
-de dados que escolher.
-
-O protótipo deve apresentar o que seria _ideal_ em sua solução. Digamos que é o
-que desejaria implementar se tivesse tempo ilimitado para hackear. Não se
-esqueça de incluir em seu protótipo os fundamentos de _visual design_.
-
-#### Testes de usabilidade
-
-Durante o desafio você deverá fazer testes de usabilidade com usuários
-diferentes, e com base nos resultados desses testes, iterar seus desenhos de
-interface. Conte-nos quais problemas de usabilidade você detectou através dos
-testes e como os resolveu na proposta final.
-
-### Implementação da interface de usuário (HTML/CSS/JS)
-
-Após desenhar sua interface de usuário, deverá trabalhar na sua implementação.
-**Não** é necessário que construa a interface exatamente da mesma forma que
-desenhou. Terá um tempo limitado para trabalhar no projeto, então você deve
-priorizar as tarefas.
-
-No mínimo, sua implementação deverá:
-
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
-4. Que a interface siga os fundamentos de _visual design_.
-
-### Testes unitários
-
-O _boilerplate_ do projeto não inclui testes unitários. Assim, você terá que
-escrever seus próprios testes para as funções encarregadas de _processar_,
-_filtrar_ e _ordenar_ os dados, assim como _calcular_ estatísticas.
-
-Seus testes unitários devem ter cobertura mínima de 70% de _statements_
-(_sentenças_), _functions_ (_funções_), _lines_ (_linhas_), e _branches_
-(_ramos_) do arquivo `src/data.js`, que irá conter suas funções e que está
-detalhado na seção de [Considerações técnicas](#srcdatajs).
-
-## 6. Hacker edition
-
-As seções chamadas _Hacker Edition_ são **opcionais**. Se já tiver terminado
-todos os requisitos anteriores e tiver tempo, pode tentar completá-las. Dessa
-forma, você pode aprofundar e/ou exercitar mais os objetivos de aprendizagem
-deste projeto.
-
-Features/características extra sugeridas:
-
-- Ao invés de consumir dados estáticos do repositório, pode fazer isso de forma
-  dinâmica, carregando um arquivo JSON com `fetch`. A pasta `src/data` contém
-  uma versão `.js` e uma `.json` de cada conjunto de dados.
-- Adicione à sua interface visualização de dados em forma de gráficos. Para
-  isso, recomendamos explorar bibliotecas de gráficos como
-  [Chart.js](https://www.chartjs.org/) ou [Google
-  Charts](https://developers.google.com/chart/).
-- 100% de cobertura nos testes.
-
-## 7. Considerações técnicas
-
-A lógica do projeto deve estar implementada somente em JavaScript (ES6), HTML e
-CSS. Neste projeto não está permitido o uso de bibliotecas e frameworks, apenas
-[vanilla
-JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-com exceção das bibliotecas para gráficos (ver [_Parte
-opcional_](#6-hacker-edition) acima).
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, assim
-como toda a configuração de dependências:
-
-```text
-.
-├── EXTRA.md
-├── README.md
-├── package.json
-├── src
-|  ├── data (de acordo com o data que forem trabalhar)
-|  |  ├── lol
-|  |  |  ├── lol.js
-|  |  |  ├── lol.json
-|  |  |  └── README.md
-|  |  ├── pokemon
-|  |  |  ├── pokemon.js
-|  |  |  ├── pokemon.json
-|  |  |  └── README.md
-|  |  └── rickandmorty
-|  |  |  ├── rickandmorty.js
-|  |  |  ├── rickandmorty.json
-|  |  |  └── README.md
-|  |  └── athletes
-|  |  |  ├── athletes.js
-|  |  |  ├── athletes.json
-|  |  |  └── README.md
-|  |  └── ghibli
-|  |  |  ├── ghibli.js
-|  |  |  ├── ghibli.json
-|  |  |  └── README.md
-|  ├── data.js
-|  ├── index.html
-|  ├── main.js
-|  └── style.css
-└── test
-   └── data.spec.js
-
-directory: 7 file: 20
-```
-
-### `src/index.html`
-
-Como no projeto anterior, existe um arquivo `index.html`. Como já sabe, aqui
-entra a página que vai ser exibida ao usuário. Também serve para indicar quais
-scripts serão utilizados e juntar tudo o que foi feito.
-
-### `src/main.js`
-
-Recomendamos que utilize `src/main.js` para todos os códigos que tenham a ver
-com a exibição dos dados na tela. Com isto nos referimos basicamente à interação
-com o DOM. Operações como criação de nós, registro de manejadores de eventos
-(_event listeners_ ou _event handlers_) e etc.
-
-Esta não é a única forma de dividir seu código. Pode utilizar mais arquivos e
-pastas, sempre e quando a estrutura estiver clara para suas colegas.
-
-Neste arquivo você encontrará uma série de _imports comentados_. Para carregar
-diferentes fontes de dados, você deverá "descomentar" esses _imports_. Cada um
-destes _imports_ criará uma variável `data` com os dados correspondentes à fonte
-escolhida.
-
-Por exemplo, se "descomentamos" a seguinte linha:
-
-```js
-// import data from './data/pokemon/pokemon.js';
-```
-
-A linha ficaria assim:
-
-```js
-import data from "./data/pokemon/pokemon.js";
-```
-
-E agora teríamos a variável `data` disponível em `src/main.js`.
-
-### `src/data.js`
-
-O coração deste projeto é a manipulação de dados através de arrays e objetos.
-
-Recomendamos que este arquivo contenha toda a funcionalidade que corresponda a
-obter, processar e manipular dados (suas funções):
-
-- `filterData(data, condition)`: esta função receberia os dados e nos retornaria
-  os que cumprem com a condição.
-
-- `sortData(data, sortBy, sortOrder)`: esta função recebe três parâmetros. O
-  primeiro, `data`, nos entrega os dados. O segundo, `sortBy`, diz respeito a
-  qual das informações quer usar para ordenar. O terceiro, `sortOrder`, indica
-  se quer ordenar de maneira crescente ou decrescente.
-
-- `computeStats(data)`: essa função nos permite fazer cálculos estatísticos
-  básicos para serem exibidos de acordo com o que os dados permitem.
-
-Estes nomes de funções e parâmetros são somente referência, o que vocês decidirem
-utilizar vai depender da sua implementação.
-
-Estas funções devem ser
-[_puras_](https://imasters.com.br/desenvolvimento/serie-js-e-vida-pure-functions-funcoes-puras)
-e independentes do DOM. Estas funções serão depois usadas a partir do arquivo
-`src/main.js`, ao carregar a página e a cada vez que o usuário interagir com a
-interface (cliques, seleções, filtros, ordenação, etc).
-
-### `src/data`
-
-Nesta pasta estão os dados de diferentes fontes. Você vai encontrar uma pasta
-para cada fonte, e dentro de cada pasta estão dois arquivos: um com a extensão
-`.js` e outro `.json`. Ambos os arquivos contém os mesmos dados; a diferença é
-que podemos usar o `.js` com uma tag `<script>`, enquanto o `.json` servirá
-para, opcionalmnente, ser carregado de forma assíncrona com
-[`fetch()`](https://developer.mozilla.org/pt-br/docs/Web/API/Fetch_API) (ver
-seção da [_Parte Opcional_](#6-hacker-edition)).
-
-### `test/data.spec.js`
-
-Você também deverá fazer os teste unitários das funções implementadas no arquivo
-`data.js`.
+O site permite que o usuário filtre os filmes por diretor e ano de lançamento, ordene os filmes por ordem alfabética, pesquise os filmes de seu interesse e recarregue a página quando lhe for conveniente. A página dos personagens, por sua vez, permite que o usuário filtre-os por gênero e espécie e os ordene por ordem alfabética, bem como pesquise os personagens e recarregue a página.
 
 ---
 
-## 8. Pistas, dicas e leituras complementares
+## 2. Pesquisa
 
-### Primeiros passos
+Utilizei o Google Forms como ferramenta para realizar a pesquisa visando descobrir qual é a idade dos usuários e quais seriam os seus interesses na aplicação web que seria desenvolvida.
 
-Antes de começar a escrever o código, você deve definir seu produto com base no
-conhecimento que puder obter a respeito de seus usuários. Estas perguntas podem
-ajudar:
 
-- Quem são os usuários principais do produto?
-- Quais são os objetivos dos usuários com relação ao produto?
-- Quais são os dados mais relevantes que querem ver na interface e por quê?
-- Quando utilizam ou utilizariam o produto?
-- Toda sua investigação prévia deve ter como resultado as histórias de usuário
-  de seu projeto.
-- Não faça os protótipos de alta fidelidade de todas as suas histórias. Comece
-  somente pela que necessite para seu Sprint 1.
+Obtivemos os seguintes resultados:
 
-Quando estiver pronta para codar, sugerimos começar desta forma:
+<div align-items="center">
 
-1. Uma das integrantes da dupla deve fazer um 🍴 [fork](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) do repositório de sua turma e irá adicionar a outra integrante da dupla como [colaboradora do repositório](https://docs.github.com/pt/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
-2. :arrow*down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   seu \_fork* para seu computador (cópia local).
-3. Instale as dependências do projeto com o comando `npm install`, assumindo que
-   já tenha instalado o [Node.js](https://nodejs.org/) (que inclui
-   [npm](https://docs.npmjs.com/)).
-4. Se tudo correr bem, deve ser capaz de executar os :traffic_light: testes
-   unitários (unit tests) com o comando `npm test`.
-5. Para ver a interface de seu programa no navegador, utilize o comando `npm start` para subir o servidor web no endereço `http://localhost:5000`.
-6. Comece a codar! :rocket:
+![print-idade](./src/images/idade-readme-pesquisa.png)
 
----
+</div><br>
 
-### Conteúdo de referência
+* 40,7% dos usuários tem entre 16-21 anos e mais de 30% tem entre 22-33 anos.*
 
-#### UX Design (Experiência do usuário)
+<div align-items="center">
 
-- Pesquisa com usuarios / entrevistas
-- Princípios de design/UI
+![print-fans](./src/images/fans-readme-pesquisa.png)
 
-#### Desenvolvimento Front-End
+</div><br>
 
-- Unidade de testes do curso de JavaScript do LMS.
-- Unidade de arrays do curso de JavaScript do LMS.
-- Unidade de objetos do curso de JavaScript do LMS.
-- Unidade de funções do curso de JavaScript do LMS.
-- Unidade de DOM do curso de JavaScript do LMS.
-- [Array no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [Array.sort no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-- [Array.map no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [Array.filter no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filtro)
-- [Array.reduce no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-- [Array.forEach no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-- [Object.keys no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
-- [Object.entries no
-  MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
-- [Fetch API no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [json.org](https://json.org/json-pt.html)
-- [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-- [Tipos de Dados](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures)
-- [Modulos:
-  Export](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-- [Modulos:
-  Import](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
+* 53,7% já conhecem as animações e se declaram fãs das animações.*
+  
+<div align-items="center">
 
-#### Ferramentas
+![images](./src/images/readme-pesquisa.png)
 
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Node.js](https://nodejs.org/)
-- [Jest](https://jestjs.io/)
+</div><br>
 
-#### Organização do trabalho
+* Parte significativa dos entrevistados afirmaram ter interesse em pesquisar filmes por diretor, ano de lançamento e por ordem alfabética dos personagens.*
 
-- [Histórias de Usuário](https://www.youtube.com/watch?v=sEtiCJfXTE8)
-- [Definição de pronto](https://www.youtube.com/watch?v=Kfss63Q42F8)
-- [Critérios de
-  aceitação](https://medium.com/@karladiasn/user-stories-e-crit%C3%A9rios-de-aceita%C3%A7%C3%A3o-317c48403fcd)
-- [Guia para Data
-  Lovers](https://docs.google.com/presentation/d/1bOq8ns5wsvXdksdqYL3aQoxzFQsXTVlyvlV-yxI2oBM/present?token=AC4w5VhHBbEEA9u2w8bm3Ey1Cse349frbg%3A1567540902700&includes_info_params=1&eisi=CM_ytPW4teQCFQrJgQodeTcEZg#slide=id.g5282e1a53f_1_106)
+### História de usuário
+
+# Quem são os usuários?
+
+. Crianças a partir dos 7 anos que já iniciaram a leitura e escrita;
+. Pessoas com deficiência visual;
+. Fãs e simpatizantes de animes e mangás;
+. Pessoas que gostam de histórias relacionadas a cultura japonesa;
+. Consome conteúdo de qualidade, criativo, ilustrações;
+. Gosta de assistir filmes de aventura e fantasia;
+
+<div align="center">
+
+![images](./src/images/historia-usuario.png)
+
+</div><br>
+
+**Definição de produto:** o usuário precisa escolher como quer ordenar as animações, bem como filtrar os personagens e os filmes, obtendo um cálculo da porcentagem que cada opção representa em relação a todas as animações.
 
 ---
 
-## 9. Checklist
+## 3.Protótipo
 
-- [ ] Usar VanillaJS.
-- [ ] Passa pelo linter (`npm run pretest`)
-- [ ] Passa pelos testes (`npm test`)
-- [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
-      branches.
-- [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
-- [ ] Inclui histórias de usuário no `README.md`.
-- [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
-- [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
-      `README.md`.
-- [ ] UI: Mostra lista/tabela/etc com dados e/ou indicadores.
-- [ ] UI: Permite ordenar dados por um ou mais campos (asc e desc).
-- [ ] UI: Permite filtrar dados com base em uma condição.
-- [ ] UI: É _responsivo_.
+No início do projeto, utilizei o [Canva](https://www.canva.com/) como ferramenta para esboçar um protótipo de baixa fidelidade. O wireframe foi elaborado com a finalidade de permitir que a navegação do usuário se dê pelas seguintes páginas: a página inicial, a página dos filmes e a página dos personagens, bem como o link para os perfil da autora e o link para o site da Laboratoria no rodapé.
+
+- A pagina inicial:
+
+<div align="center">
+
+![images](./src/images/prototipo-pagina-inicial.png)
+
+</div><br>
+
+- A página de Filmes: 
+
+<div align="center">
+
+![images](./src/images/prototipo-pag-filmes.png)
+
+</div><br>
+
+- A página de Personagens:
+
+<div align="center">
+
+![images](./src/images/prototipo-pag-personagens.png)
+
+</div><br>
+
+* Cada página possui destaque no menu de referência para orientação de navegação. Quando o usuário estiver na página de Filmes, o menu ficará destacado, como podemos ver no protótipo.
+
+- A definição da paleta de cores foi baseada em tons de azul, seguindo a identidade visual do Studio, assim como a sua logo, foi minha inspiração principal.
+
+<div align="center">
+
+![images](./src/images/paleta-cor-readme.png)
+
+</div><br>
+
+---
+
+## 4. Projeto final
+
+A página inicial contém na barra de navegação opções das páginas de “Filmes” e “Personagens”. O logo utilizado encaminha o usuário para a página oficial do estúdio em uma nova janela.
+
+<div align="center">
+
+![images](./src/images/datapersonagens.gif)
+
+</div>
+
+---
+
+## 5. Implementações futuras
+
+- Adicionar uma página de curiosidades.
+- Implementação de um tradutor de Libras na tela (feito: 20/06/2022) ✔️
+- Menu hamburguer para responsividade em telas pequenas.
+- Modal nos cards onde apareça mais informações sobre os filmes e os personagens.
+
+---
+
+## 6. Projeto II
+
+- Tive a oportunidade de desenvolver um segundo [projeto](https://github.com/leticiaantunesjpeg/SAP007-data-lovers) junto com minha colega [Leticia Antunes](https://github.com/leticiaantunesjpeg).
+
+- Fizemos uma [pesquisa](https://www.canva.com/design/DAE3-YMQvbE/view?utm_content=DAE3-YMQvbE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) com os usuários para a idealização do produto.
+
+- Planejamos o design através do Canva e ficou [assim](https://www.canva.com/design/DAE4EHzgZD0/lDFEg3JauA7tJ4q-WJ3EQQ/view?utm_content=DAE4EHzgZD0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink).
+
+- Nos organizamos através da ferramenta [Trello](https://trello.com/b/jfg3MgmE/data-lovers).
+
+- E aqui você encontra o resultado: https://leticiaantunesjpeg.github.io/SAP007-data-lovers/
+
+---
+
+## 7. Sobre a autora
+
+ <div align="center">
+    <img alt="Dayanne Maryssol" height="150" src="https://avatars.githubusercontent.com/u/92697749?v=4"> 
+ </div>
+ 
+  <h3 align="center"><a href="https://github.com/Maryssun">Dayanne Maryssol</a></h3>
+  <h4 align="center">Projeto do Bootcamp da <em><a href="https://hub.laboratoria.la/br">Laboratoria</a></em></h4>
+  <div align="center">
+    <a href = "mailto:maryssol.dayanne@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+    <a href="https://www.linkedin.com/in/dayannemaryssol/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  </div>

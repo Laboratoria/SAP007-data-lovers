@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/comparador-imagem.js"></script>
+
+</head>
+
+<body>
+    <nav class="menu-topo">
+        <a href="https://www.ghibli.jp/" target="_blank">
+            <img class="logo-sg" src="./images//logo-sg.png" alt="Logo Studio Ghibli">
+        </a>
+
+        <ul>
+            <li><a href="./filmes.html">FILMES</a></li>
+            <li><a href="./personagens.html">PERSONAGENS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="imagem-inclinada">
+            <figure>
+                <img class="img-inicial-totoro" src="./images/totoro-inicial.png" alt="Totoro">
+            </figure>
+            <div class="inclinacao inclinacao-azul-clara"></div>
+            <div class="inclinacao inclinacao-azul-escura"></div>
+        </div>
+    </main>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+
 </html>

@@ -1,0 +1,63 @@
+body {
+  overflow: hidden;
+  background-image: linear-gradient( to right, #bddaec, #bddaec, #fff, #fff );
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-sg {
+  height: 100px;
+}
+
+.menu-topo {
+  background-color: transparent;
+}
+
+.menu-topo ul li a {
+  color: #000;
+}
+
+.menu-topo ul li a:hover {
+  color: #33a4e1;
+}
+
+.studio-ghibli-informacoes {
+  float: left;
+  display: flex;
+  align-items: center; 
+}
+
+.studio-ghibli-informacoes section {
+  max-width: 440px;
+  max-height: 440px;
+}
+
+.inclinacao {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+figure {
+  z-index: 2;
+  position: absolute;
+  right: 10vw;
+  bottom: 0;
+}
+
+.inclinacao-azul-escura {
+  border-top: 80vh solid transparent;
+  border-right: 60vw solid #008dda;
+}
+
+.inclinacao-azul-clara {
+  border-top: 80vh solid transparent;
+  border-right: 65vw solid #7fcbf6;
+}

@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>RICK AND MORTY WIKI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="stylecard.css" />
+  <link rel="stylesheet" href="responsivo.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="imagens/cabecalho.png" alt="cabeçalho" />
+    <h1 class="titlesite">RICK AND MORTY WIKI</h1>
+    <nav class="headerMenu">
+      <a class="buttonlink" type="button" href="indexpag2.html">HOME</a>
+      <a class="buttonlink" type="button" href="index.html">PERSONAGENS</a>
+      <a class="buttonlink" type="button"
+        href="https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Rick_and_Morty"> EPISÓDIOS </a>
+    </nav>
+  </header>
+
+    <form class="filtersCharacters">
+      <select id="selectFilterLife" class="filter status">
+      <option value="" selected hidden>Status de vida</option>
+      <option value="Alive">Vivo</option>
+      <option value="Dead">Morto</option>
+      <option value="unknown">Desconhecido</option>
+    </select>
+
+    <select id="selectFilterSpecies" class="filter species">
+      <option value="" selected hidden>Espécie</option>
+      <option value="Human">Humano</option>
+      <option value="Alien">Alienígena</option>
+      <option value="Humanoid">Humanoide</option>
+      <option value="unknown">Desconhecido</option>
+      <option value="Poopybutthole">Poopybutthole</option>
+      <option value="Mytholog">Mytholog</option>
+      <option value="Animal">Animal</option>
+      <option value="Vampire">Vampiro</option>
+      <option value="Robot">Robô</option>
+      <option value="Cronenberg">Cronenberg</option>
+      <option value="Disease">Doença</option>
+      <option value="Parasite">Parasita</option>
+    </select>
+
+    <select id="selectFilterGender" class="filter gender">
+      <option value="" selected hidden>Gênero</option>
+      <option value="Male">Homem</option>
+      <option value="Female">Mulher</option>
+      <option value="unknown">Desconhecido</option>
+      <option value="Genderless">Sem gênero</option>
+    </select>
+
+    <button class="btn-Ordem" id="btn-ordemA">A-Z</button>
+    <button class="btn-Ordem" id="btn-ordemZ">Z-A</button>
+    <button class="btn-Ordem" id="btn-limpar">Limpar</button>
+
+    <input
+       class="pesquisa"
+       type="text"
+       name="searchBar"
+       id="searchBar"
+       placeholder="pesquisar"
+       />
+
+    <img class="imgfiltros"src="imagens/2200.gif" alt="pesquisar" />
+    <button class="voltarAoTopo">Voltar ao topo</button>
+    </form>
+
+    <section class="calculoAGregado" id="statistics"></section>
+
+  <main class="central-container">
+    <section class="cards-container" id="card">
+    </section>
+  </main>
+
+  <footer>
+    <p class="rodapeparagrafo">DEVELOPED BY
+      <a href="https://github.com/daianeex" target="_blank">
+        <strong class="github">@daianeex </a></strong> And <strong><a href="https://github.com/IsaSoaresFr"
+          target="_blank">
+          <strong class="github">@IsaSoaresFr</strong>
+        </a>
+    </p>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

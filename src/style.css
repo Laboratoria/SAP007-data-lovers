@@ -1,0 +1,201 @@
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0C0F14;
+    color:#BFBFBF;
+    font-size: 1em;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1C1F24;
+    padding: 1%;
+    width: 98%;
+    border-bottom:#C8D258 solid 2px;
+   }
+
+  .titlesite {
+    color: #12B0C9;
+    font-size: 28px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+    background-color: #0C0F14;
+    width:350px;
+    height: 20px;
+   }
+
+  .filtersCharacters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #C8D258;
+    font-size: 18px;
+  }
+
+  .filter {
+    font: normal 18px serif;
+    color:#BFBFBF;
+    background-color: #0C0F14;
+    border-color: #C8D258 solid 2px;
+    border-radius: 5%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .btn-Ordem {
+    font: normal 20px serif;
+    background-color:#1C1F24;
+    color: #C8D258;
+    border-style: none;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    cursor: pointer;
+   }
+   .btn-Ordem:hover {
+    opacity: 0.6;;
+   }
+
+  .pesquisa {
+    background-color: #0C0F14;
+    color: #BFBFBF;
+    border-style: solid;
+    border-color: #C8D258;
+    height:30px;
+  }
+
+  .btnMenu {
+    background-image: url(../imagens/button.png);
+  }
+
+  a, link {
+    color: #BFBFBF;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 0.7;;
+
+  }
+  b, strong {
+    color: #C8D258;
+  }
+
+  .voltarAoTopo {background-image: linear-gradient(to right, #00c3ff 0%, #ffff1c  51%, #00c3ff  100%)}
+  .voltarAoTopo {
+  position: fixed;
+  right: 10%;
+  bottom: 3.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #1C1F24;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+  .voltarAoTopo:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  }
+
+.calculoAGregado {
+  font-family: serif 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1C1F24;
+  padding: 1%;
+  width: 98%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1C1F24;
+  margin-top: #C8D258 solid 2px;
+}
+
+@media (max-width: 600px) {
+  .titlesite {
+    font-size: 75%;
+  }
+
+  .btnhome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .infos {
+    font-size: 75%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 80%;
+  }
+
+  .filterspersonagens {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 80%;
+    margin: 25px;
+  }
+
+  .imgfiltros {
+    display: none;
+  }
+
+  .voltarAoTopo {
+    font-size: 70%;
+    width: 20%;
+    right: 4px;
+    padding: 1rem;
+
+  }
+  .card {
+    width: 70%;
+  }
+  .name-title {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .voltarAoTopo {
+    right: 2%;
+  }
+
+}
+
+@media (max-width: 809px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 80%;
+    width: 150px;
+    height:100px;
+    font-size: 113%
+}
+}

@@ -3,20 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  height: 400px;
-  margin: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
+  height: 22em;
+  width: 12.5em;
+  border-radius: 0.313em;
+  margin: 0.313em 0.625em 1.25em 1.188em;
   color: #BFBFBF;
   position: relative;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  border-bottom-left-radius: 2%;
-  border-top-left-radius: 2%;
-  border-top-right-radius:2% ;
-  border-bottom-right-radius: 2%;
-
 }
 
 .front {
@@ -35,7 +29,7 @@
   text-align: center;
   transform: rotateY(180deg);
   background-color: #1C1F24;
-  border-radius: 2% 2% 2% 2%;
+  border-radius: 0.313em;
 }
 
 .card:hover {
@@ -52,16 +46,16 @@
 
 .imgcard {
   position: center;
-  width: 174px;
-  height: 170px;
-  border-radius: 5%;
+  width: 10.5em;
+  height: 9.5em;
+  border-radius: 0.313em;
 }
 
 .imgfiltros {
   border-bottom: #C8D258 solid 2px;
 }
 
-.name-title {
+.nameTitle {
   align-items: center;
   height: 8%;
   width: 100%;
